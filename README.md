@@ -80,3 +80,9 @@ Il testo viene sottoposto a escape; sono supportati solo `[testo](url)` e `**gra
 2. Aggiungere in cima a `resoconti` in `data/resoconti/index.json` la voce `{ id, mese, titolo, periodo, aggiornato, sommario, copertina, stato }` (`copertina` = URL pbs.twimg.com; `stato` facoltativo, es. «in corso»; toglierlo al mese chiuso).
 3. Creare la pagina: copiare `resoconti/2026-10.html` in `resoconti/AAAA-MM.html` e aggiornare `<title>` e le descrizioni (il contenuto arriva dal JSON).
 4. Provare in locale con `python3 -m http.server` e pubblicare su `main`.
+
+### Cache
+
+- I dati JSON (`data/tracker.json`, `data/resoconti/*.json`) sono letti con `fetch(..., { cache: "no-cache" })`: l'aggiornamento quotidiano basta modificarli, non serve altro.
+- CSS e JS sono richiamati con `?v=AAAAMMGG<lettera>` (es. `style.css?v=20261023b`) in `index.html`, `resoconti/page.tpl` e nelle pagine dei mesi. Quando si modifica CSS o JS, aumentare la versione in tutti questi file.
+- Tutte le icone SVG inline hanno `width`/`height` espliciti, così restano piccole anche con un CSS vecchio o assente.

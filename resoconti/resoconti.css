@@ -1,3 +1,16 @@
+/* Pulsanti in testata (pagine dei resoconti) */
+.top-right { display: flex; align-items: center; gap: 8px 18px; flex-wrap: wrap; justify-content: flex-end; }
+.top-link { display: inline-flex; align-items: center; gap: 7px; padding: 7px 13px; border-radius: 99px; border: 1px solid color-mix(in srgb, var(--link) 35%, transparent); background: color-mix(in srgb, var(--link) 10%, transparent); color: var(--text); font-size: 14px; font-weight: 600; white-space: nowrap; transition: border-color .15s, background .15s; }
+.top-link svg { width: 16px; height: 16px; color: var(--link); }
+.top-link:hover { text-decoration: none; border-color: var(--link); background: color-mix(in srgb, var(--link) 18%, transparent); }
+@media (max-width: 640px) {
+  .top-right { width: 100%; justify-content: flex-start; gap: 6px 10px; }
+  .top-link { font-size: 13px; padding: 6px 11px; }
+}
+
+.top svg { max-width: 18px; max-height: 18px; }
+.top .brand img { max-width: 36px; max-height: 36px; }
+
 /* Resoconti mensili: stile di lettura (si appoggia a ../style.css) */
 .kicker { display: inline-flex; align-items: center; gap: 8px; margin: 0 0 10px; color: var(--link); font: 600 13px/1.2 var(--font); letter-spacing: .08em; text-transform: uppercase; }
 .kicker svg { width: 16px; height: 16px; }

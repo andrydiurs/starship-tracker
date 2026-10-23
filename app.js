@@ -17,10 +17,11 @@
     chevronR: '<path d="m9 18 6-6-6-6"/>',
     check: '<path d="M20 6 9 17l-5-5"/>',
     play: '<path d="M6 4l14 8-14 8z" fill="currentColor" stroke="none"/>',
+    book: '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>',
     link: '<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>'
   };
   function svg(name) {
-    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (P[name] || "") + "</svg>";
+    return '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (P[name] || "") + "</svg>";
   }
   function ico(name, extra) {
     return '<span class="ico ' + (extra || "") + '">' + svg(name) + "</span>";
@@ -113,7 +114,7 @@
     return arr.map(function (n) { return { data: n.data, titolo: n.testo, sez: DA_NOME[n.sez], nc: n.nc, src: n.src }; });
   }
   function renderNotizie(D) {
-    var h = '<div class="card accented acc-notizie">' + head(2, "notizie", "Ultime notizie");
+    var h = '<div class="card accented acc-notizie">' + head(2, "notizie", "Ultime notizie").replace(/<\/div>$/, '<a class="pill-link" href="resoconti/">' + svg("book") + "Resoconti mensili" + svg("chevronR") + "</a></div>");
     h += lista(newsItems(D.NEWS.slice(0, 6)));
     if (D.NEWS.length > 6) h += more("Notizie precedenti", lista(newsItems(D.NEWS.slice(6))));
     $("notizie").innerHTML = h + "</div>";
