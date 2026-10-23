@@ -40,3 +40,43 @@ It works on any static host as is (GitHub Pages, Netlify, …). The only externa
 Only real posts, with the original `pbs.twimg.com` URL (for videos, the `amplify_video_thumb` frame).
 `app.js` builds `?format=jpg&name=small` for the thumbnail and `name=large` for the enlarged view.
 If an image doesn't load, a placeholder appears and tapping it opens the post on X.
+
+## Resoconti mensili
+
+Sezione narrativa, un articolo per mese, raggiungibile dal link «Resoconti mensili» in testata.
+
+- `resoconti/index.html`: archivio (legge `data/resoconti/index.json`, mesi dal più recente).
+- `resoconti/AAAA-MM.html`: pagina del mese; è il template `resoconti/page.tpl` compilato. Il JS ricava il mese dal nome del file (oppure da `?m=AAAA-MM`).
+- `resoconti/resoconti.js` e `resoconti/resoconti.css`: rendering e stile di lettura (si appoggiano a `../style.css`).
+- `data/resoconti/AAAA-MM.json`: contenuto del mese.
+
+### Formato di `data/resoconti/AAAA-MM.json`
+
+```json
+{
+  "id": "2026-10", "mese": "Ottobre 2026", "titolo": "…", "occhiello": "Resoconto mensile",
+  "periodo": "1-23 ottobre 2026", "aggiornato": "23 ott 2026, 10:30",
+  "nota": "Copre gli eventi dal … (aggiornato al …)", "sommario": "una frase per l'archivio",
+  "intro": ["paragrafo", "paragrafo"],
+  "sezioni": [
+    { "k": "siti|prototipi|test|lanci", "titolo": "Cantieri", "sottotitolo": "…",
+      "blocchi": [
+        { "p": "Testo con [link](https://…) e **grassetto**" },
+        { "x": { "autore": "@utente", "data": "4 ott", "ora": "05:45", "testo": "didascalia in italiano",
+                 "url": "https://x.com/…/status/…",
+                 "immagini": [ { "tipo": "foto|video", "url": "https://pbs.twimg.com/….jpg", "w": 2048, "h": 1366 } ] } }
+      ] }
+  ],
+  "novembre": { "titolo": "Cosa aspettarsi a …", "blocchi": [ { "p": "…" } ] },
+  "fonti": [ { "label": "…", "url": "https://…" } ]
+}
+```
+
+Il testo viene sottoposto a escape; sono supportati solo `[testo](url)` e `**grassetto**`. Date e orari in ora di Roma.
+
+### Aggiungere un mese
+
+1. Creare `data/resoconti/AAAA-MM.json` nel formato sopra.
+2. Aggiungere in cima a `resoconti` in `data/resoconti/index.json` la voce `{ id, mese, titolo, periodo, aggiornato, sommario, copertina, stato }` (`copertina` = URL pbs.twimg.com; `stato` facoltativo, es. «in corso»; toglierlo al mese chiuso).
+3. Creare la pagina: copiare `resoconti/2026-10.html` in `resoconti/AAAA-MM.html` e aggiornare `<title>` e le descrizioni (il contenuto arriva dal JSON).
+4. Provare in locale con `python3 -m http.server` e pubblicare su `main`.

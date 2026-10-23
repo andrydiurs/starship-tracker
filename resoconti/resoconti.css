@@ -1,0 +1,83 @@
+/* Resoconti mensili: stile di lettura (si appoggia a ../style.css) */
+.kicker { display: inline-flex; align-items: center; gap: 8px; margin: 0 0 10px; color: var(--link); font: 600 13px/1.2 var(--font); letter-spacing: .08em; text-transform: uppercase; }
+.kicker svg { width: 16px; height: 16px; }
+
+.report-grid { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 28px; align-items: start; }
+.report-toc { position: sticky; top: 88px; display: flex; flex-direction: column; gap: 6px; }
+.toc-label { margin: 0 0 4px; color: var(--text3); font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.report-toc nav { display: flex; flex-direction: column; gap: 4px; }
+.toc-item { display: flex; align-items: center; gap: 10px; padding: 7px 10px; border-radius: 12px; color: var(--text2); font-weight: 500; font-size: 15px; border: 1px solid transparent; transition: background .15s, color .15s; }
+.toc-item:hover { text-decoration: none; color: var(--text); background: rgba(255,255,255,.04); border-color: var(--line); }
+.toc-back { display: inline-flex; align-items: center; gap: 8px; margin-top: 12px; padding: 0 10px; font-size: 14px; font-weight: 600; }
+.toc-back svg { width: 16px; height: 16px; }
+
+.report { display: flex; flex-direction: column; gap: 24px; min-width: 0; max-width: 820px; }
+.report-hero { padding: 34px 40px 30px; }
+.report-hero h1, .archive-hero h1 { margin: 0 0 16px; font: 700 40px/1.12 var(--font-head); letter-spacing: -.01em; max-width: 22ch; }
+.report-note { display: flex; gap: 10px; align-items: flex-start; margin: 0 0 22px; padding: 11px 14px; border-radius: 12px; background: color-mix(in srgb, var(--link) 8%, transparent); border: 1px solid color-mix(in srgb, var(--link) 25%, transparent); color: var(--text2); font-size: 14px; line-height: 1.5; max-width: 70ch; }
+.report-note svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--link); margin-top: 1px; }
+.report-meta { margin: 18px 0 0; color: var(--text3); font-size: 13px; }
+
+.report-sec { padding: 30px 40px; scroll-margin-top: 84px; }
+.report-sec .sec-head { margin-bottom: 18px; }
+.report-sec .sec-head h2 { font-size: 30px; }
+
+.prose { max-width: 70ch; font-size: 18px; line-height: 1.75; color: #dfe6f3; }
+.prose p { margin: 0 0 1.1em; }
+.prose p:last-child { margin-bottom: 0; }
+.prose a { text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--link) 40%, transparent); text-underline-offset: 3px; }
+.prose a:hover { text-decoration-color: var(--link); }
+.prose.lead p:first-child { font-size: 20px; line-height: 1.65; color: var(--text); }
+.prose.lead p:first-child::first-letter { float: left; font: 700 3.3em/0.85 var(--font-head); padding: 6px 10px 0 0; color: var(--link); }
+
+/* Post X nel testo */
+.rfig { margin: 1.6em 0; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 14px; overflow: hidden; background: rgba(255,255,255,.03); }
+.rfig .xmedia { aspect-ratio: 16 / 10; max-height: 520px; }
+.rfig .xmedia.n1 { max-height: 520px; }
+.rfig figcaption { padding: 12px 16px 13px; display: flex; flex-direction: column; gap: 6px; }
+.rfig-text { margin: 0 !important; font-size: 15px; line-height: 1.5; color: var(--text); }
+.rfig .xmeta { font-size: 13px; }
+.rfig .xlink { margin-left: auto; padding: 0; text-decoration: none !important; }
+
+.rfonti { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 8px 20px; }
+.rfonti a { display: inline-flex; gap: 6px; align-items: baseline; font-size: 14.5px; }
+.rfonti svg { width: 13px; height: 13px; flex-shrink: 0; position: relative; top: 2px; }
+
+.month-nav { display: flex; justify-content: space-between; gap: 12px; font-weight: 600; font-size: 15px; padding: 0 4px; }
+
+/* Archivio */
+.archive-hero { padding: 30px 36px; }
+.lead-small { margin: 0; color: var(--text2); font-size: 17px; max-width: 70ch; }
+.archive-list { display: flex; flex-direction: column; gap: 16px; }
+.archive-item { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 24px; padding: 18px; color: var(--text); transition: border-color .15s, transform .15s; }
+.archive-item:hover { text-decoration: none; border-color: var(--line2); transform: translateY(-2px); }
+.archive-cover { border-radius: 12px; aspect-ratio: 16 / 10; cursor: pointer; }
+.archive-body { display: flex; flex-direction: column; gap: 8px; padding: 4px 0; min-width: 0; }
+.archive-month { display: flex; align-items: center; gap: 10px; color: var(--link); font-weight: 600; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
+.archive-title { font: 700 26px/1.2 var(--font-head); }
+.archive-sum { color: var(--text2); font-size: 16px; line-height: 1.6; max-width: 65ch; }
+.archive-meta { color: var(--text3); font-size: 13px; }
+.archive-cta { display: inline-flex; align-items: center; gap: 4px; color: var(--link); font-weight: 600; font-size: 15px; margin-top: auto; }
+.archive-cta svg { width: 16px; height: 16px; }
+
+@media (max-width: 900px) {
+  .report-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .report-toc { position: static; }
+  .report-toc nav { flex-direction: row; flex-wrap: wrap; gap: 6px; }
+  .toc-item { padding: 5px 10px 5px 6px; border-color: var(--line); background: rgba(255,255,255,.03); font-size: 14px; }
+  .toc-back, .toc-label { display: none; }
+  .report { max-width: none; }
+  .archive-item { grid-template-columns: 220px minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  .report-hero, .report-sec, .archive-hero { padding: 20px 18px; }
+  .report-hero h1, .archive-hero h1 { font-size: 29px; }
+  .report-sec .sec-head h2 { font-size: 24px; }
+  .prose { font-size: 17px; line-height: 1.7; }
+  .prose.lead p:first-child { font-size: 18px; }
+  .rfig { margin: 1.3em -6px; }
+  .toc-item .ico.sm { width: 24px; height: 24px; border-radius: 7px; }
+  .toc-item .ico.sm svg { width: 14px; height: 14px; }
+  .archive-item { grid-template-columns: minmax(0, 1fr); gap: 14px; padding: 14px; }
+  .archive-title { font-size: 22px; }
+}

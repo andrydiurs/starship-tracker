@@ -1,0 +1,545 @@
+{
+ "id": "2026-10",
+ "mese": "Ottobre 2026",
+ "titolo": "Ottobre 2026: Starship si prepara alla doppia cattura",
+ "occhiello": "Resoconto mensile",
+ "periodo": "1-23 ottobre 2026",
+ "aggiornato": "23 ott 2026, 10:30",
+ "nota": "Copre gli eventi dal 1° al 23 ottobre (aggiornato al 23 ott). Date e orari in ora di Roma; le date provvisorie (NET) e le indiscrezioni sono indicate come non ufficiali.",
+ "sommario": "Un mese senza lanci ma decisivo: S42 e B22 verso il Flight 15, l'annuncio della prima doppia cattura, la Florida che si avvicina e la FAA che apre la strada a centinaia di lanci l'anno.",
+ "intro": [
+  "Ottobre è stato un mese senza lanci di Starship, ma tutt'altro che tranquillo. Dopo il [Flight 14 del 28 settembre](https://www.nasaspaceflight.com/2026/09/starship-14-orbit-flight-15/), il primo a raggiungere l'orbita e a rilasciare 26 satelliti Starlink V3, SpaceX ha passato quattro settimane a preparare il salto successivo: il Flight 15, con cui proverà per la prima volta ad afferrare con i «chopsticks» della torre sia il booster Super Heavy sia la Ship. Lo ha confermato Elon Musk durante la [presentazione dei risultati del terzo trimestre, il 20 ottobre](https://www.space.com/space-exploration/launches-spacecraft/spacex-will-attempt-1st-ever-double-starship-rocket-catch-on-next-test-launch-a-profound-technology-milestone-elon-musk-says), definendo il successo «più probabile che no».",
+  "Intanto a Starbase il lavoro si è svolto su più fronti contemporaneamente. Il Pad 2 è stato messo a punto per accogliere Booster 22, la Ship 42 è tornata inaspettatamente a Massey's per nuove prove, la Ship 40 recuperata dall'Oceano Indiano è rientrata a casa, e la coppia probabilmente destinata al Flight 16, Booster 23 e Ship 43, ha iniziato le sue campagne di test. Sullo sfondo, la Florida si avvicina al primo lancio dal LC-39A e la FAA ha avviato la revisione ambientale che potrebbe portare Starbase fino a 456 lanci l'anno. Le date restano però provvisorie: il Flight 15 è indicato «non prima dell'8 novembre» solo da documenti non ufficiali, e al 23 ottobre la modifica della licenza FAA necessaria per le catture non era ancora stata emessa."
+ ],
+ "sezioni": [
+  {
+   "k": "siti",
+   "titolo": "Cantieri",
+   "sottotitolo": "Pad, Gigabay e la corsa della Florida",
+   "blocchi": [
+    {
+     "p": "Il mese si è aperto con il Pad 2 ancora segnato dal decollo del Flight 14. Le foto aeree di inizio ottobre mostrano la rampa dopo aver «affrontato 33 motori Raptor» pochi giorni prima, con una nuova piattaforma di lavoro attorno al supporto di lancio. Nelle settimane successive le segnalazioni della community hanno parlato di un nuovo meccanismo di quick disconnect, nuovi punti di scarico criogenico e prove dei chopsticks con simulazioni di cattura: dettagli [non confermati da SpaceX](https://mlym.gregtech.eu/post/37352106), ma coerenti con quanto si è visto alla fine del mese."
+    },
+    {
+     "x": {
+      "autore": "@RGVaerialphotos",
+      "data": "4 ott",
+      "ora": "05:45",
+      "testo": "Il Pad 2 pochi giorni dopo il Flight 14, con la nuova piattaforma di lavoro sul supporto di lancio.",
+      "url": "https://x.com/RGVaerialphotos/status/2106591567930925423",
+      "immagini": [
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HTwdsecaIAAK_9e.jpg",
+        "w": 2431,
+        "h": 1621
+       }
+      ]
+     }
+    },
+    {
+     "p": "Tra il 20 e il 22 ottobre, infatti, il Pad 2 è diventato il centro dell'attenzione. SpaceX ha azionato il sistema di diluvio a piena portata e lo ha ripetuto [circa otto-dieci minuti dopo](https://x.com/NASASpaceflight/status/2112677434462289957), un intervallo che corrisponde al rientro del booster dopo il lancio. Sono seguiti lo [spurgo dei quick disconnect del booster (BQD)](https://x.com/NASASpaceflight/status/2112967167767433728) e [nuove prove su BQD e morse di ritenuta](https://x.com/NASASpaceflight/status/2113436572485882104): in pratica la rampa è stata preparata per l'arrivo di B22."
+    },
+    {
+     "p": "A poche centinaia di metri, il Pad 1 continua la sua lunga trasformazione. Le modifiche vanno avanti «da quasi un anno», come notava RGVaerialphotos il 4 ottobre ([post](https://x.com/RGVaerialphotos/status/2106746164054036904)), con la speranza, del tutto non ufficiale, di un ritorno in servizio la prossima estate. Al lotto Sanchez prendono forma il nuovo supporto di lancio, il deflettore di fiamma e il braccio SQD, mentre la community ha seguito il montaggio della gru Kobelco CK2000, il getto della rampa del flame trench e la posa delle gambe del nuovo supporto ([non confermato](https://mlym.gregtech.eu/post/37352106)). Il 22 ottobre VickiCocks15 ha ripreso la [quarta gamba sollevata in posizione](https://x.com/VickiCocks15/status/2113345461247504510), e un pezzo del vecchio top deck sembra destinato a essere [esposto allo Starship Park](https://x.com/RGVaerialphotos/status/2113059154374115463)."
+    },
+    {
+     "x": {
+      "autore": "@RGVaerialphotos",
+      "data": "11 ott",
+      "ora": "16:00",
+      "testo": "Supporto di lancio, deflettore di fiamma e braccio SQD del nuovo Pad 1 in costruzione al lotto Sanchez.",
+      "url": "https://x.com/RGVaerialphotos/status/2109282882913194062",
+      "immagini": [
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HUUPRsLaYAAhTit.jpg",
+        "w": 1200,
+        "h": 800
+       },
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HUUPRsSboAA7eiP.jpg",
+        "w": 1200,
+        "h": 800
+       },
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HUUPRscbwAAYJxq.jpg",
+        "w": 1200,
+        "h": 800
+       }
+      ]
+     }
+    },
+    {
+     "p": "Il cantiere che più cambia di settimana in settimana è però la Gigabay, il grande edificio che dovrebbe moltiplicare la capacità di assemblaggio di Ship e booster. Il 7 ottobre NASASpaceflight ha messo a confronto il render di SpaceX con la Starbase reale; il 15 ottobre è stato [sollevato il primo carroponte](https://x.com/LabPadre/status/2110757891556676032) e il 17 una delle quattro gru a torre era [quasi smontata](https://x.com/RGVaerialphotos/status/2111326727133917568). A fine mese, secondo VickiCocks15, la grande gru LR11000 [lavora ormai dentro l'edificio](https://x.com/VickiCocks15/status/2113387553172890095)."
+    },
+    {
+     "x": {
+      "autore": "@NASASpaceflight",
+      "data": "7 ott",
+      "ora": "04:02",
+      "testo": "«Starbase: dal render alla realtà»: il render di SpaceX accanto alla vista reale di Colleen Liedtke.",
+      "url": "https://x.com/NASASpaceflight/status/2107652712649097316",
+      "immagini": [
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HT_ij1XWUAATlC1.jpg",
+        "w": 1920,
+        "h": 1080
+       },
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HT_ikkHWMAAGZHE.jpg",
+        "w": 3839,
+        "h": 2160
+       }
+      ]
+     }
+    },
+    {
+     "x": {
+      "autore": "@RGVaerialphotos",
+      "data": "22 ott",
+      "ora": "02:01",
+      "testo": "La Gigabay di Starbase vista lunedì 19 ottobre.",
+      "url": "https://x.com/RGVaerialphotos/status/2113058124815073507",
+      "immagini": [
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HVMXKC-aUAANn9_.jpg",
+        "w": 4096,
+        "h": 2731
+       }
+      ]
+     }
+    },
+    {
+     "p": "Più a nord, a McGregor, i banchi di prova dei Raptor non si sono fermati: il 7 ottobre un'accensione è durata [557 secondi](https://www.basenor.com/blogs/news/spacex-raptor-hits-557-second-test-fire-second-longest-ever), la seconda più lunga mai registrata secondo fonti NSF. A Massey's, invece, la community segnala l'ampliamento del sito, una nuova strada e un possibile banco per booster a 35 motori ([non confermato](https://mlym.gregtech.eu/post/37352106))."
+    },
+    {
+     "p": "La notizia più importante per i cantieri è arrivata però dalla Florida. Il 1° ottobre Julianna Scheiman di SpaceX ha spiegato che al LC-39A del Kennedy Space Center «le cose vanno molto bene»: la costruzione principale è finita e si passa ai collaudi di accettazione e di attivazione, con almeno un altro lancio da Starbase prima del debutto in Florida ([Space.com](https://www.space.com/space-exploration/launches-spacecraft/things-are-going-super-well-at-39a-spacex-gearing-up-to-launch-starship-from-florida-for-1st-time)). La chiatta «You'll Thank Me Later» ha fatto la spola con il Texas: il 14 ottobre è [rientrata a Cape Canaveral](https://x.com/NASASpaceflight/status/2110364961084211412) con hardware Starship, compresi il supporto di lavoro della Ship e lo Starlink loader, e alla Gigabay di Roberts Road due baie dovrebbero essere pronte per i veicoli del Flight 16 ([NSF](https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/))."
+    },
+    {
+     "x": {
+      "autore": "@NASASpaceflight",
+      "data": "15 ott",
+      "ora": "14:38",
+      "testo": "Starship sulla costa est: il supporto di lavoro della Ship scaricato dalla chiatta You'll Thank Me Later al KSC.",
+      "url": "https://x.com/NASASpaceflight/status/2110711877470728387",
+      "immagini": [
+       {
+        "tipo": "video",
+        "url": "https://pbs.twimg.com/amplify_video_thumb/2110711743949242368/img/C5FKN_vdpcb3M-CO.jpg",
+        "w": 1144,
+        "h": 640
+       }
+      ]
+     }
+    },
+    {
+     "p": "Sul piano normativo, il 14 ottobre la FAA ha avviato un PEIS, la revisione ambientale programmatica che potrebbe consentire a Starbase fino a 456 lanci e 912 atterraggi l'anno, contro i 25 lanci autorizzati oggi. Una prima fase porterebbe il limite a 100 lanci senza vincoli di orario ([Space.com](https://www.space.com/space-exploration/launches-spacecraft/spacex-wants-to-launch-starship-more-than-450-times-per-year-from-south-texas)); i commenti pubblici restano aperti fino al 30 novembre ([Space Foundation](https://www.spacefoundation.org/2026/10/21/washington-updates-boosting-starship-cadence/)). Lo stesso giorno si è chiusa la consultazione sul SEIS per i due pad di SLC-37 a Cape Canaveral, che prevede fino a 76 lanci l'anno ([Federal Register](https://www.govinfo.gov/content/pkg/FR-2026-09-29/html/2026-19897.htm)). Nulla di tutto questo è ancora approvato: sono i primi passi di un iter lungo."
+    }
+   ]
+  },
+  {
+   "k": "prototipi",
+   "titolo": "Prototipi",
+   "sottotitolo": "Due coppie V3 in parallelo e il ritorno di Ship 40",
+   "blocchi": [
+    {
+     "p": "All'inizio di ottobre la Mega Bay 1 ospitava tre generazioni di booster in fila: Booster 22, ormai destinato al Flight 15, Booster 23, impilato il 25 settembre, e Booster 24, ancora in costruzione. Nel corso del mese il primo ha ricevuto tutti i motori ed è rimasto in attesa del trasferimento al Pad 2 per lo static fire ([NSF, 18 ott](https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/)). Un trasporto dalla produzione alla rampa era stato annunciato per il 19 ottobre ([post](https://x.com/VickiCocks15/status/2111933481445933115)), ma la chiusura stradale è stata [revocata](https://x.com/VickiCocks15/status/2112455749708485037) e al 23 ottobre B22 non si era ancora mosso."
+    },
+    {
+     "x": {
+      "autore": "@RGVaerialphotos",
+      "data": "4 ott",
+      "ora": "05:43",
+      "testo": "Booster 23 (prima immagine), Booster 22 e Booster 24 (seconda immagine) in Mega Bay 1, giovedì 2 ottobre.",
+      "url": "https://x.com/RGVaerialphotos/status/2106590891679101152",
+      "immagini": [
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HTwdNIXa8AAtRhx.jpg",
+        "w": 2024,
+        "h": 1349
+       },
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HTwdNITbMAAz4q1.jpg",
+        "w": 1646,
+        "h": 1097
+       }
+      ]
+     }
+    },
+    {
+     "p": "La sorpresa del mese è stata la Ship 42. Era ormai pronta a raggiungere Massey's per lo static fire quando SpaceX le ha tolto tutti e sei i motori e l'ha riportata sul banco criogenico per la terza volta, con un test del «thrust ram» completato il 9 ottobre ([NSF, 9 ott](https://www.nasaspaceflight.com/2026/10/ship-40-returns-ship-42-more-testing/)). SpaceX non ha spiegato il motivo. NASASpaceflight ipotizza modifiche interne legate allo spegnimento del Raptor Vacuum visto nel Flight 14, che Musk ha attribuito a un problema software del computer di quel solo motore ([NSF, 18 ott](https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/))."
+    },
+    {
+     "p": "Il 7 ottobre, dopo 75 giorni in mare a bordo della nave Forte, è rientrata a Brownsville la Ship 40: la protagonista del Flight 13 e la prima Ship sopravvissuta intatta a un ammaraggio nell'Oceano Indiano, portata a terra orizzontalmente su una culla e carrelli SPMT ([NSF](https://www.nasaspaceflight.com/2026/10/ship-40-returns-ship-42-more-testing/)). Il 13 ottobre era già di nuovo in verticale dentro la Mega Bay 2, come ha mostrato la stessa [SpaceX](https://x.com/SpaceX/status/2110126570233094527), accolta dalle Ship 42, 43 e 44 ([foto NSF](https://x.com/NASASpaceflight/status/2110128292649173424)). Ora la attendono ispezioni approfondite."
+    },
+    {
+     "x": {
+      "autore": "@JerryPikePhoto",
+      "data": "7 ott",
+      "ora": "19:46",
+      "testo": "«Ritorno al mittente»: Ship 40 arriva a Starbase dopo 75 giorni in mare.",
+      "url": "https://x.com/JerryPikePhoto/status/2107890275288859012",
+      "immagini": [
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HUC6CGpWMAAVCku.jpg",
+        "w": 3692,
+        "h": 2767
+       }
+      ]
+     }
+    },
+    {
+     "x": {
+      "autore": "@colleenadastra",
+      "data": "13 ott",
+      "ora": "03:45",
+      "testo": "Ship 40 di nuovo in verticale dentro la Mega Bay 2, quasi 80 giorni e oltre 12.000 miglia nautiche dopo il lancio.",
+      "url": "https://x.com/colleenadastra/status/2109822709152493736",
+      "immagini": [
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HUeXMuSXoAAMjRR.jpg",
+        "w": 2303,
+        "h": 4096
+       },
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HUeXMuJXMAAm99d.jpg",
+        "w": 4096,
+        "h": 2305
+       },
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HUeXMuWWcAEGcni.jpg",
+        "w": 2303,
+        "h": 4096
+       }
+      ]
+     }
+    },
+    {
+     "p": "La seconda coppia V3 è avanzata in parallelo. Booster 23 è uscito verso Massey's nella notte del 12 ottobre per le [prove criogeniche](https://x.com/colleenadastra/status/2110017696578290091), compresa una prova estesa di 12 ore, ed è rientrato in Mega Bay 1 il 18 per l'installazione dei motori. La sua destinazione in Florida non è ufficiale ([NSF](https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/)). La Ship 43, impilata il 15 settembre, il 22 ottobre ha [provato i movimenti dei flap](https://x.com/VickiCocks15/status/2113302224948396525) ed è partita per Massey's: potrebbe essere la prima Ship a volare dal KSC (non ufficiale)."
+    },
+    {
+     "x": {
+      "autore": "@RGVaerialphotos",
+      "data": "17 ott",
+      "ora": "07:24",
+      "testo": "Booster 24 riceve il serbatoio LOX di atterraggio mentre, dietro, Booster 22 attende di uscire per lo static fire.",
+      "url": "https://x.com/RGVaerialphotos/status/2111327584122437857",
+      "immagini": [
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HUzwveqbQAA5V8W.jpg",
+        "w": 4096,
+        "h": 3180
+       }
+      ]
+     }
+    },
+    {
+     "x": {
+      "autore": "@RGVaerialphotos",
+      "data": "22 ott",
+      "ora": "06:58",
+      "testo": "«Ciao, Ship 43!»: la Ship in viaggio verso Massey's, vista dall'alto il 22 ottobre.",
+      "url": "https://x.com/RGVaerialphotos/status/2113132905941848427",
+      "immagini": [
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HVNbKQSbQAAOqHy.jpg",
+        "w": 2560,
+        "h": 1440
+       }
+      ]
+     }
+    },
+    {
+     "p": "Dietro di loro la catena di montaggio continua. Nella Mega Bay 2 la Ship 44 riceve tubi di trasferimento e flap e, secondo le stime di NSF potrebbe essere pronta a febbraio 2027 per un ipotetico Flight 17. Booster 24 ha ricevuto il serbatoio LOX di atterraggio. Il 23 ottobre, infine, VickiCocks15 ha ripreso l'uscita dalla Starfactory della sezione ogiva/carico della Ship 45. NSF nota che proprio quell'unico turntable rallenta la produzione delle Ship: un motivo in più per cui la Gigabay è così attesa ([NSF](https://www.nasaspaceflight.com/2026/10/ship-40-returns-ship-42-more-testing/))."
+    },
+    {
+     "x": {
+      "autore": "@VickiCocks15",
+      "data": "23 ott",
+      "ora": "02:37",
+      "testo": "Ship 45, o almeno il suo inizio: la sezione ogiva/carico esce dalla Starfactory verso la Mega Bay 2.",
+      "url": "https://x.com/VickiCocks15/status/2113429611295989952",
+      "immagini": [
+       {
+        "tipo": "video",
+        "url": "https://pbs.twimg.com/amplify_video_thumb/2113428891691782144/img/YDi868TG2WaGywnF.jpg",
+        "w": 1920,
+        "h": 1080
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "k": "test",
+   "titolo": "Test",
+   "sottotitolo": "Prove criogeniche, diluvio e l'attesa dello static fire",
+   "blocchi": [
+    {
+     "p": "Il calendario dei test di ottobre racconta un programma che lavora su due coppie di veicoli insieme. Il 7 ottobre, a McGregor, l'accensione di 557 secondi di un Raptor è stata, secondo NSF, la seconda più lunga di sempre ([fonte NSF via Basenor](https://www.basenor.com/blogs/news/spacex-raptor-hits-557-second-test-fire-second-longest-ever)). Due giorni dopo, a Massey's, la Ship 42 senza motori ha affrontato la sua terza campagna criogenica, questa volta con il thrust ram che simula la spinta dei Raptor ([NSF](https://www.nasaspaceflight.com/2026/10/ship-40-returns-ship-42-more-testing/))."
+    },
+    {
+     "x": {
+      "autore": "@JerryPikePhoto",
+      "data": "9 ott",
+      "ora": "23:13",
+      "testo": "«Intanto a Massey's... la Ship 42 si copre di brina!»",
+      "url": "https://x.com/JerryPikePhoto/status/2108667205122486716",
+      "immagini": [
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HUN9dJBWoAA5P4l.jpg",
+        "w": 4096,
+        "h": 2732
+       }
+      ]
+     }
+    },
+    {
+     "p": "A metà mese è toccato a Booster 23: il 15 ottobre il booster è rimasto coperto di brina per una prova criogenica estesa di circa 12 ore, prima di tornare in Mega Bay 1 il 18 ([NSF](https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/)). Non tutto è andato liscio sui banchi: il serbatoio di test S43.1, usato per le prove strutturali della Ship 43, ne è uscito con qualche ammaccatura sull'ogiva. Secondo RGVaerialphotos, comunque, «si è visto di peggio»."
+    },
+    {
+     "x": {
+      "autore": "@colleenadastra",
+      "data": "15 ott",
+      "ora": "23:26",
+      "testo": "«Super Heavy super ghiacciato»: Booster 23 durante la prova criogenica a Massey's.",
+      "url": "https://x.com/colleenadastra/status/2110844779269689598",
+      "immagini": [
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HUs6A-4XMAEZsN-.jpg",
+        "w": 2303,
+        "h": 4096
+       },
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HUs6CyUWYAAcZMJ.jpg",
+        "w": 4096,
+        "h": 2303
+       }
+      ]
+     }
+    },
+    {
+     "x": {
+      "autore": "@RGVaerialphotos",
+      "data": "16 ott",
+      "ora": "06:01",
+      "testo": "Qualche ammaccatura sull'ogiva del serbatoio di test S43.1 dopo le prove della notte.",
+      "url": "https://x.com/RGVaerialphotos/status/2110944223516385648",
+      "immagini": [
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HUuUe0cawAAG11u.jpg",
+        "w": 4096,
+        "h": 2924
+       }
+      ]
+     }
+    },
+    {
+     "p": "L'ultima settimana è stata dedicata al Pad 2. Dopo le prove di diluvio con doppio azionamento, a distanza di circa otto minuti come al ritorno del booster, e quelle su BQD e morse ([NSF](https://x.com/NASASpaceflight/status/2113436572485882104), [video](https://x.com/VickiCocks15/status/2113427093430120758)), la rampa è apparsa pulita e pronta. VickiCocks15 riferisce voci, non confermate, di alcuni test con una Ship prima dell'arrivo del booster, per verificare binari e meccanismi di cattura."
+    },
+    {
+     "x": {
+      "autore": "@VickiCocks15",
+      "data": "20 ott",
+      "ora": "23:19",
+      "testo": "«Pulito come un fischietto e pronto? Portatemi un booster!» Il Pad 2 il 20 ottobre.",
+      "url": "https://x.com/VickiCocks15/status/2112655085981335614",
+      "immagini": [
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HVGoEi3XYAAac25.jpg",
+        "w": 1920,
+        "h": 1080
+       }
+      ]
+     }
+    },
+    {
+     "x": {
+      "autore": "@RoughRidersShow",
+      "data": "22 ott",
+      "ora": "00:31",
+      "testo": "Pad 2: di nuovo il diluvio, a simulare un lancio e una cattura otto minuti dopo.",
+      "url": "https://x.com/RoughRidersShow/status/2113035561032429954",
+      "immagini": [
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HVMCpCPWcAAPr0N.jpg",
+        "w": 2048,
+        "h": 1536
+       }
+      ]
+     }
+    },
+    {
+     "p": "Il 22 ottobre la Ship 43 è [arrivata a Massey's](https://x.com/ENNEPS/status/2113196842645119416) per la sua campagna criogenica, e sono comparse le restrizioni di volo (TFR) per «test ad alta energia» a Starbase dal 23 ottobre al 5 novembre, più una [seconda per Massey's](https://x.com/SpaceNotices/status/2113280849336570207). NASASpaceflight si aspetta a breve le [chiusure stradali per portare B22 in rampa e lo static fire](https://x.com/NASASpaceflight/status/2113278976680665325). Al 23 ottobre, però, né B22 né S42 hanno ancora acceso i motori: è il passaggio che manca prima del Flight 15."
+    }
+   ]
+  },
+  {
+   "k": "lanci",
+   "titolo": "Lanci",
+   "sottotitolo": "Nessun volo, ma molte date: verso il Flight 15",
+   "blocchi": [
+    {
+     "p": "In ottobre non ci sono stati lanci: il contatore resta fermo a 14 voli, con il Flight 14 del 28 settembre come riferimento. È stato il primo volo orbitale (262 × 275 km), con 26 Starlink V3 rilasciati e un ammaraggio nel Pacifico dopo circa tre ore, nonostante un Raptor Vacuum spento in salita. Il booster B21 ha completato un ammaraggio morbido nel Golfo prima dell'attivazione intenzionale del sistema di terminazione ([NSF](https://www.nasaspaceflight.com/2026/09/starship-14-orbit-flight-15/))."
+    },
+    {
+     "p": "Quello che è cambiato, e parecchio, sono le date. A inizio mese documenti di pianificazione provvisori indicavano il Flight 15 «non prima del» 19 ottobre e il Flight 16 non prima del 30 ottobre ([Space.com](https://www.space.com/space-exploration/launches-spacecraft/things-are-going-super-well-at-39a-spacex-gearing-up-to-launch-starship-from-florida-for-1st-time)). L'8 ottobre una nuova slide CADENA ha spostato tutto di alcune settimane: Flight 15 da Starbase NET 8 novembre, Flight 16 (Starlink 30-1, probabilmente dal KSC) NET 10 dicembre. Sono date non ufficiali, confermate senza variazioni anche da una [nuova slide del 22 ottobre](https://x.com/SpaceNotices/status/2113267719768526963)."
+    },
+    {
+     "x": {
+      "autore": "@LabPadre",
+      "data": "8 ott",
+      "ora": "17:34",
+      "testo": "Nuova presentazione CADENA: NET 8 novembre per il Flight 15 e 10 dicembre per Starlink 30-1 (non ufficiale).",
+      "url": "https://x.com/LabPadre/status/2108219574776656252",
+      "immagini": [
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HUHmiBxXQAAisCL.jpg",
+        "w": 768,
+        "h": 574
+       }
+      ]
+     }
+    },
+    {
+     "p": "Il 13 ottobre è passato anche un anniversario simbolico: [due anni dalla prima cattura di un booster](https://x.com/NASASpaceflight/status/2110063635338797465), quella di Booster 12 nel Flight 5. Il Flight 15 punta a ripeterla e ad aggiungere la Ship. In un'intervista ripresa da NSF, Musk aveva indicato il lancio «entro quattro-sei settimane», prima del Thanksgiving del 26 novembre ([NSF](https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/))."
+    },
+    {
+     "x": {
+      "autore": "@RGVaerialphotos",
+      "data": "14 ott",
+      "ora": "05:25",
+      "testo": "«Buon anniversario, Booster 12»: due anni dalla prima cattura con i chopsticks.",
+      "url": "https://x.com/RGVaerialphotos/status/2110210453117051343",
+      "immagini": [
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HUj4kKcaoAA7hDP.jpg",
+        "w": 4096,
+        "h": 2731
+       }
+      ]
+     }
+    },
+    {
+     "p": "Il 20 ottobre, nella call sui risultati del terzo trimestre, SpaceX ha ufficializzato il piano. Il Flight 14 è stata la [prima missione Starship con ricavi](https://x.com/SpaceX/status/2112638276389790102). Musk ha confermato il tentativo di doppia cattura sul prossimo volo: se riuscisse, sarebbe «la prima volta che un lanciatore orbitale viene recuperato completamente» ([Space.com](https://www.space.com/space-exploration/launches-spacecraft/spacex-will-attempt-1st-ever-double-starship-rocket-catch-on-next-test-launch-a-profound-technology-milestone-elon-musk-says)). Gwynne Shotwell ha parlato di un «confronto significativo e costruttivo con la FAA» e si aspetta che la licenza del Flight 15 includa il rientro al sito di lancio e la cattura di entrambi gli stadi. Ha anche anticipato il primo riutilizzo di una Ship e il test di rifornimento in orbita per l'inizio del 2027, mentre Musk ha parlato di una cadenza settimanale nella prima metà del 2027 ([Ars Technica](https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/)), un obiettivo da prendere con la consueta prudenza."
+    },
+    {
+     "x": {
+      "autore": "@SpaceX",
+      "data": "20 ott",
+      "ora": "22:13",
+      "testo": "SpaceX, highlights del terzo trimestre 2026: la prima missione Starship con ricavi ha portato in orbita 26 Starlink V3.",
+      "url": "https://x.com/SpaceX/status/2112638276389790102",
+      "immagini": [
+       {
+        "tipo": "foto",
+        "url": "https://pbs.twimg.com/media/HVGY6WqbEAAZNpZ.jpg",
+        "w": 2478,
+        "h": 3240
+       }
+      ]
+     }
+    },
+    {
+     "p": "Resta l'incognita normativa. La licenza attuale copre il profilo del Flight 14, e cambiare missione per tentare il rientro sopra la terraferma e la cattura della Ship richiede l'approvazione della FAA ([NSF](https://www.nasaspaceflight.com/2026/10/ship-40-returns-ship-42-more-testing/)); al 23 ottobre la modifica non risultava ancora emessa. Lo stesso giorno NASASpaceflight ha descritto un doppio flusso di lavoro: il Flight 15 a metà novembre dal Pad 2, mentre i veicoli del Flight 16 si preparano al viaggio verso il 39A."
+    },
+    {
+     "x": {
+      "autore": "@NASASpaceflight",
+      "data": "23 ott",
+      "ora": "05:08",
+      "testo": "Doppio flusso: Flight 15 a metà novembre dal Pad 2, i veicoli del Flight 16 diretti al KSC.",
+      "url": "https://x.com/NASASpaceflight/status/2113467549333537053",
+      "immagini": [
+       {
+        "tipo": "video",
+        "url": "https://pbs.twimg.com/amplify_video_thumb/2113466445136859137/img/N4e9STaJrSdGkfHJ.jpg",
+        "w": 1920,
+        "h": 1080
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "novembre": {
+  "titolo": "Cosa aspettarsi a novembre",
+  "blocchi": [
+   {
+    "p": "Le prossime settimane dovrebbero essere le più intense dell'anno. Il primo passo atteso è lo static fire di Booster 22 al Pad 2, nella finestra delle restrizioni di volo attive fino al 5 novembre; poi toccherà alla Ship 42, che deve riavere i suoi sei motori e accenderli a Massey's. Solo dopo, se tutto va bene, arriveranno il trasferimento in rampa, l'impilamento e la prova generale del conto alla rovescia."
+   },
+   {
+    "p": "Per il Flight 15 la data di riferimento resta l'8 novembre secondo la slide CADENA, ma NASASpaceflight parla ormai di metà novembre e Musk di «prima del Thanksgiving» (26 novembre). Tutto dipende anche dalla FAA, che deve emettere la modifica della licenza per il rientro e la cattura di entrambi gli stadi. Il volo, se partirà, tenterà la prima doppia cattura della storia, con il booster prima e la Ship poi."
+   },
+   {
+    "p": "In parallelo andranno seguite le prove criogeniche della Ship 43 e i motori di Booster 23, il possibile primo viaggio della chiatta con un veicolo verso la Florida e i collaudi del LC-39A, in vista di un Flight 16 indicato in modo non ufficiale per il 10 dicembre. Sul fronte normativo, il PEIS di Starbase prevede incontri pubblici il 17, il 18 (online) e il 19 novembre, con commenti aperti fino al 30 ([Space.com](https://www.space.com/space-exploration/launches-spacecraft/spacex-wants-to-launch-starship-more-than-450-times-per-year-from-south-texas))."
+   }
+  ]
+ },
+ "fonti": [
+  {
+   "label": "NASASpaceflight, 9 ott: Ship 40 torna a casa, Ship 42 di nuovo in prova",
+   "url": "https://www.nasaspaceflight.com/2026/10/ship-40-returns-ship-42-more-testing/"
+  },
+  {
+   "label": "NASASpaceflight, 18 ott: le tappe dei Flight 15 e 16",
+   "url": "https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/"
+  },
+  {
+   "label": "Space.com, 7 ott: «Le cose vanno molto bene al 39A»",
+   "url": "https://www.space.com/space-exploration/launches-spacecraft/things-are-going-super-well-at-39a-spacex-gearing-up-to-launch-starship-from-florida-for-1st-time"
+  },
+  {
+   "label": "Space.com, 14 ott: il PEIS FAA per Starbase",
+   "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-wants-to-launch-starship-more-than-450-times-per-year-from-south-texas"
+  },
+  {
+   "label": "Space.com, 20 ott: Musk annuncia la doppia cattura",
+   "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-will-attempt-1st-ever-double-starship-rocket-catch-on-next-test-launch-a-profound-technology-milestone-elon-musk-says"
+  },
+  {
+   "label": "Ars Technica, 21 ott: cattura sul prossimo volo e cadenza",
+   "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
+  },
+  {
+   "label": "Space Foundation, 21 ott: aggiornamenti da Washington",
+   "url": "https://www.spacefoundation.org/2026/10/21/washington-updates-boosting-starship-cadence/"
+  },
+  {
+   "label": "Federal Register: SEIS per SLC-37",
+   "url": "https://www.govinfo.gov/content/pkg/FR-2026-09-29/html/2026-19897.htm"
+  },
+  {
+   "label": "Basenor (fonte NSF): Raptor da 557 secondi",
+   "url": "https://www.basenor.com/blogs/news/spacex-raptor-hits-557-second-test-fire-second-longest-ever"
+  },
+  {
+   "label": "Thread community, ottobre 2026 (non confermato)",
+   "url": "https://mlym.gregtech.eu/post/37352106"
+  }
+ ]
+}
