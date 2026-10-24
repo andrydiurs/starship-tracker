@@ -1,14 +1,14 @@
 {
-  "ULTIMO_AGGIORNAMENTO": "23 ott 2026, 09:10",
+  "ULTIMO_AGGIORNAMENTO": "24 ott 2026, 08:39",
   "PROSSIMO_VOLO": {
     "volo": "Flight 15",
     "veicoli": "Super Heavy B22 + Ship 42",
     "netBreve": "8 nov",
-    "net": "Slide CADENA, non ufficiale · NSF: metà novembre",
+    "net": "Slide CADENA, non ufficiale · NSF: metà novembre · NASA: «a novembre»",
     "sito": "Starbase, Pad 2",
     "obiettivo": "Doppia cattura in torre: Super Heavy e Ship",
     "licenzaBreve": "Non emessa",
-    "licenzaFaa": "Modifica della licenza attesa, non ancora emessa al 23 ott",
+    "licenzaFaa": "Modifica della licenza attesa, non ancora emessa al 24 ott",
     "licenzaSrc": {
       "label": "Ars Technica, 21 ott",
       "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
@@ -21,7 +21,7 @@
       "titolo": "Ship 42",
       "versione": "V3",
       "stato": {
-        "label": "Test pre-volo",
+        "label": "Pronta per lo static fire",
         "tone": "accent"
       },
       "milestones": [
@@ -39,20 +39,20 @@
           "nome": "Motori installati",
           "fatto": false,
           "data": "n.d.",
-          "nota": "rimossi prima dello static fire, reinstallazione da confermare",
+          "nota": "@VickiCocks15 la indica «pronta per lo static fire» (23 ott); reinstallazione dei motori da confermare",
           "src": {
-            "label": "NSF, 18 ott",
-            "url": "https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/"
+            "label": "@VickiCocks15, 23 ott",
+            "url": "https://x.com/VickiCocks15/status/2113588436112142572"
           }
         },
         {
           "nome": "Static fire",
           "fatto": false,
           "data": "atteso",
-          "nota": "a Massey's; TFR su Massey's dal 23 ott (non confermato)",
+          "nota": "supporto per lo static fire riportato in produzione (22 ott); trasporto verso Massey's previsto nella notte 24-25 ott, forse S42 (non confermato)",
           "src": {
-            "label": "NSF, 18 ott",
-            "url": "https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/"
+            "label": "@VickiCocks15, 24 ott",
+            "url": "https://x.com/VickiCocks15/status/2113756980510588938"
           }
         },
         {
@@ -80,7 +80,7 @@
       "titolo": "Super Heavy B22",
       "versione": "V3",
       "stato": {
-        "label": "Attende lo static fire",
+        "label": "Rollout verso il Pad 2",
         "tone": "accent"
       },
       "milestones": [
@@ -107,20 +107,20 @@
           "nome": "Static fire",
           "fatto": false,
           "data": "atteso",
-          "nota": "TFR «high energy testing» 23 ott-5 nov",
+          "nota": "NSF: possibile nel weekend; TFR 23 ott-5 nov; attrezzo di sollevamento pronto in Mega Bay 1 (23 ott)",
           "src": {
-            "label": "@NASASpaceflight",
-            "url": "https://x.com/NASASpaceflight/status/2113278976680665325"
+            "label": "@NASASpaceflight, 23 ott",
+            "url": "https://x.com/NASASpaceflight/status/2113617185218429437"
           }
         },
         {
           "nome": "Trasferimento in rampa",
           "fatto": false,
-          "data": "atteso a giorni",
-          "nota": "Pad 2 pronto, deluge e BQD testati il 20-22 ott",
+          "data": "24 ott (previsto)",
+          "nota": "avviso stradale slittato: 24 ott 2-6 CDT (9-13 ora di Roma)",
           "src": {
-            "label": "@NASASpaceflight",
-            "url": "https://x.com/NASASpaceflight/status/2112967167767433728"
+            "label": "@VickiCocks15, 24 ott",
+            "url": "https://x.com/VickiCocks15/status/2113756980510588938"
           }
         },
         {
@@ -136,6 +136,60 @@
     }
   },
   "NEWS": [
+    {
+      "data": "24 ott",
+      "sez": "Test",
+      "testo": "Rollout di B22 al Pad 2 slittato al 24 ott (9-13 ora di Roma); static fire forse nel weekend",
+      "src": {
+        "label": "@VickiCocks15",
+        "url": "https://x.com/VickiCocks15/status/2113756980510588938"
+      }
+    },
+    {
+      "data": "23 ott",
+      "sez": "Lanci",
+      "testo": "NASA: Flight 15 a novembre con Raptor migliorati; nel Q4 prime catture V3 e primo volo dalla Florida",
+      "src": {
+        "label": "TeslaNorth / NASA",
+        "url": "https://teslanorth.com/2026/10/23/starship-moon-lander-cabin-nasa/"
+      }
+    },
+    {
+      "data": "23 ott",
+      "sez": "Prototipi",
+      "testo": "Ship 43 inizia le prove criogeniche a Massey's (2ª prova il 24 ott)",
+      "src": {
+        "label": "Next Spaceflight",
+        "url": "https://nextspaceflight.com/starship/"
+      }
+    },
+    {
+      "data": "23 ott",
+      "sez": "Siti",
+      "testo": "KSC: SpaceX propone un campus Starship di circa 400 acri a Roberts Road, con banco di test",
+      "src": {
+        "label": "WESH",
+        "url": "https://www.wesh.com/article/kennedy-space-center-spacex-starship-factory-expansion/74233005"
+      }
+    },
+    {
+      "data": "23 ott",
+      "sez": "Prototipi",
+      "testo": "Ship 45: la sezione di prua entra in Mega Bay 2",
+      "src": {
+        "label": "@LabPadre",
+        "url": "https://x.com/LabPadre/status/2113587677304095012"
+      }
+    },
+    {
+      "data": "23 ott",
+      "sez": "Siti",
+      "testo": "Pad 1: sollevate nuove sezioni del muro del flame trench",
+      "src": {
+        "label": "@NASASpaceflight",
+        "url": "https://x.com/NASASpaceflight/status/2113664154762457446"
+      }
+    },
     {
       "data": "23 ott",
       "sez": "Lanci",
@@ -209,31 +263,13 @@
         "label": "@LabPadre",
         "url": "https://x.com/LabPadre/status/2110757891556676032"
       }
-    },
-    {
-      "data": "14 ott",
-      "sez": "Siti",
-      "testo": "La FAA avvia il PEIS per fino a 456 lanci l'anno da Starbase (oggi 25)",
-      "src": {
-        "label": "Space.com",
-        "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-wants-to-launch-starship-more-than-450-times-per-year-from-south-texas"
-      }
-    },
-    {
-      "data": "13 ott",
-      "sez": "Prototipi",
-      "testo": "Ship 40, la prima Ship recuperata, è di nuovo a Starbase in Mega Bay 2",
-      "src": {
-        "label": "@SpaceX",
-        "url": "https://x.com/SpaceX/status/2110126570233094527"
-      }
     }
   ],
   "IN_BREVE": {
-    "siti": "Il Pad 2 di Starbase è pronto ad accogliere B22, mentre il Pad 1 viene ricostruito e la Gigabay riceve i primi carroponti. In Florida il LC-39A è in collaudo per il primo lancio, atteso a dicembre (non confermato).",
-    "prototipi": "Due coppie V3 in preparazione: B22/S42 per il Flight 15 e, probabilmente, B23/S43 per il Flight 16. Nessun booster V3 è stato recuperato finora; S40 è l'unica Ship tornata a Starbase.",
-    "test": "Settimana dedicata al Pad 2 (deluge, BQD, morsetti) e alle prove crio di B23 e S43. Prossimo passo atteso: lo static fire di B22, con TFR attiva dal 23 ott al 5 nov.",
-    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. Il Flight 15 è atteso a novembre con il primo tentativo di doppia cattura; la modifica della licenza FAA non è ancora stata emessa."
+    "siti": "Il Pad 2 attende B22, mentre il Pad 1 procede veloce con i muri del flame trench e a Massey's cresce il secondo sito di test. In Florida, una bozza NASA descrive un campus SpaceX di circa 400 acri a Roberts Road con un banco di test Starship.",
+    "prototipi": "Due coppie V3 in preparazione: B22/S42 per il Flight 15 e, probabilmente, B23/S43 per il Flight 16. S43 è in prova criogenica a Massey's; la prua di S45 è entrata in Mega Bay 2 accanto a S44.",
+    "test": "B22 è atteso al Pad 2 il 24 ott per lo static fire a 33 motori (TFR fino al 5 nov); la notte successiva è previsto un trasporto verso Massey's, forse S42. S43 ha iniziato le prove crio il 23 ott.",
+    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. Il Flight 15 è atteso a novembre (confermato anche dalla NASA il 23 ott) con il primo tentativo di doppia cattura; la modifica della licenza FAA non è ancora stata emessa."
   },
   "SITI": [
     {
@@ -243,12 +279,12 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "Pronto per B22: deluge, BQD e morsetti testati",
-      "ultimo": "Test del deluge completo (ripetuto dopo circa 8-10 min, a simulare il ritorno del booster), spurgo delle BQD e test dei morsetti in vista di B22",
-      "data": "20-22 ott",
+      "breve": "Pronto per B22, rollout previsto il 24 ott",
+      "ultimo": "Deluge, BQD e morsetti testati il 20-22 ott; rollout di B22 dal sito di produzione previsto il 24 ott (2-6 CDT) per lo static fire",
+      "data": "20-24 ott",
       "src": {
-        "label": "@NASASpaceflight",
-        "url": "https://x.com/NASASpaceflight/status/2112967167767433728"
+        "label": "@VickiCocks15",
+        "url": "https://x.com/VickiCocks15/status/2113756980510588938"
       }
     },
     {
@@ -258,12 +294,12 @@
         "label": "In ricostruzione",
         "tone": "accent"
       },
-      "breve": "In ricostruzione sul modello del Pad 2",
-      "ultimo": "In ricostruzione per eguagliare il Pad 2; un pezzo del vecchio top deck sarà esposto allo Starship Park",
-      "data": "18-22 ott",
+      "breve": "Ricostruzione rapida: muri del flame trench in posa",
+      "ultimo": "In ricostruzione per eguagliare il Pad 2; il 23 ott sollevate altre sezioni del muro del flame trench (NSF: «ne manca una»); foto aerea del cantiere del 23 ott",
+      "data": "18-23 ott",
       "src": {
-        "label": "NSF / @RGVaerialphotos",
-        "url": "https://x.com/RGVaerialphotos/status/2113059154374115463"
+        "label": "@RGVaerialphotos",
+        "url": "https://x.com/RGVaerialphotos/status/2113718018236645565"
       }
     },
     {
@@ -273,12 +309,12 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "B22 pronto al trasferimento, B23 riceve i motori",
-      "ultimo": "B22 con motori installati, in attesa del trasferimento al pad; B23 rientrato per installare i motori; B24 riceve il serbatoio LOX di atterraggio",
-      "data": "17-18 ott",
+      "breve": "Attrezzo di sollevamento pronto per B22",
+      "ultimo": "Il 23 ott sollevato l'attrezzo di sollevamento del booster, da agganciare a B22 per la campagna di test dei motori; B23 riceve i motori; B24 in costruzione",
+      "data": "17-23 ott",
       "src": {
         "label": "@RGVaerialphotos",
-        "url": "https://x.com/RGVaerialphotos/status/2111327584122437857"
+        "url": "https://x.com/RGVaerialphotos/status/2113834862339617215"
       }
     },
     {
@@ -288,12 +324,12 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "Ospita S40, S42 e S44; S43 uscita verso Massey's",
-      "ultimo": "Ospita S40 (recuperata), S42 e S44; S43 uscita verso Massey's. L'unico turntable rallenta la produzione delle Ship",
-      "data": "9-22 ott",
+      "breve": "Ospita S40, S42, S44 e la prua di S45",
+      "ultimo": "Prua di S45 entrata il 23 ott e calata sul meccanismo PEZ; S42 pronta per lo static fire, S44 e S45 in lavorazione; S43 a Massey's",
+      "data": "9-23 ott",
       "src": {
-        "label": "NASASpaceflight",
-        "url": "https://www.nasaspaceflight.com/2026/10/ship-40-returns-ship-42-more-testing/"
+        "label": "@VickiCocks15",
+        "url": "https://x.com/VickiCocks15/status/2113588436112142572"
       }
     },
     {
@@ -304,11 +340,11 @@
         "tone": "accent"
       },
       "breve": "Primo carroponte installato, gru a torre in smontaggio",
-      "ultimo": "Primo carroponte in posizione (15 ott); una delle 4 gru a torre quasi smontata (17 ott); foto aggiornate al 22 ott. Obiettivo SpaceX: completamento entro fine 2026",
-      "data": "15-22 ott",
+      "ultimo": "Primo carroponte in posizione (15 ott); una delle 4 gru a torre quasi smontata (17 ott); gru LR11000 al lavoro dentro l'edificio (22 ott); nuova foto aerea del 23 ott. Obiettivo SpaceX: completamento entro fine 2026",
+      "data": "15-23 ott",
       "src": {
         "label": "@RGVaerialphotos",
-        "url": "https://x.com/RGVaerialphotos/status/2113058124815073507"
+        "url": "https://x.com/RGVaerialphotos/status/2113721129051312383"
       }
     },
     {
@@ -318,12 +354,12 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "S43 in prova criogenica",
-      "ultimo": "S43 arrivata per le prove crio (22 ott); ammaccature sul naso del serbatoio di test S43.1 (16 ott)",
-      "data": "16-22 ott",
+      "breve": "S43 in prova criogenica, secondo sito in costruzione",
+      "ultimo": "S43 in prove crio dal 23 ott (2ª prova il 24 ott); lavori sul secondo sito di test ben avviati (foto 23 ott); supporto per lo static fire delle Ship riportato in produzione il 22 ott",
+      "data": "22-24 ott",
       "src": {
         "label": "@RGVaerialphotos",
-        "url": "https://x.com/RGVaerialphotos/status/2113136772989456877"
+        "url": "https://x.com/RGVaerialphotos/status/2113716045722591368"
       }
     },
     {
@@ -363,12 +399,12 @@
         "label": "In costruzione",
         "tone": "accent"
       },
-      "breve": "Esterno quasi finito, 2 baie pronte per il Flight 16",
-      "ultimo": "Esterno quasi completato; due baie dovrebbero essere pronte per i controlli dei veicoli del Flight 16. Supporto di trasporto Ship e Starlink loader consegnati via chiatta (15 ott)",
-      "data": "15-18 ott",
+      "breve": "Esterno quasi finito; proposto campus da 400 acri",
+      "ultimo": "Esterno quasi completato; due baie dovrebbero essere pronte per i veicoli del Flight 16. Bozza di valutazione ambientale NASA (13 ott, resa nota il 23 ott): campus da circa 167 a 400 acri con fabbriche, payload processing e un banco di test Starship («Project Ignition»)",
+      "data": "15-23 ott",
       "src": {
-        "label": "NASASpaceflight",
-        "url": "https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/"
+        "label": "WESH",
+        "url": "https://www.wesh.com/article/kennedy-space-center-spacex-starship-factory-expansion/74233005"
       }
     },
     {
@@ -430,6 +466,16 @@
   },
   "NORMATIVO": [
     {
+      "data": "13-23 ott",
+      "atto": "NASA bozza PEA Roberts Road (KSC)",
+      "breve": "Campus SpaceX da circa 400 acri, con banco di test",
+      "dettaglio": "Bozza preliminare di valutazione ambientale programmatica del 13 ott, resa nota il 23 ott: espansione da circa 167 a 400 acri, nuovi edifici e un banco per prove in pressione e accensioni («Project Ignition»). Non è un'approvazione",
+      "src": {
+        "label": "WESH",
+        "url": "https://www.wesh.com/article/kennedy-space-center-spacex-starship-factory-expansion/74233005"
+      }
+    },
+    {
       "data": "21 ott",
       "atto": "Commenti PEIS Starbase",
       "breve": "Commenti aperti fino al 30 nov",
@@ -467,12 +513,12 @@
       "versione": "V3",
       "volo": "Flight 15",
       "stato": "Test",
-      "breve": "Motori installati, attende lo static fire",
-      "note": "Prove crio 9-10 set; motori installati; in attesa del trasferimento al Pad 2 per lo static fire a 33 motori",
-      "data": "22 ott",
+      "breve": "Rollout al Pad 2 previsto il 24 ott",
+      "note": "Prove crio 9-10 set; motori installati; attrezzo di sollevamento pronto (23 ott); rollout al Pad 2 slittato al 24 ott per lo static fire a 33 motori",
+      "data": "24 ott",
       "src": {
-        "label": "NSF",
-        "url": "https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/"
+        "label": "@VickiCocks15",
+        "url": "https://x.com/VickiCocks15/status/2113756980510588938"
       }
     },
     {
@@ -481,12 +527,12 @@
       "versione": "V3",
       "volo": "Flight 15",
       "stato": "Test",
-      "breve": "Motori rimossi, manca lo static fire",
-      "note": "Test chopsticks al Pad 2 (11-12 set); motori rimossi e ulteriore prova crio a Massey's (9 ott); manca lo static fire",
-      "data": "18 ott",
+      "breve": "Pronta per lo static fire a Massey's",
+      "note": "Test chopsticks al Pad 2 (11-12 set); motori rimossi e ulteriore prova crio a Massey's (9 ott); indicata «pronta per lo static fire» il 23 ott. Trasporto verso Massey's previsto nella notte 24-25 ott (non confermato che sia S42)",
+      "data": "23 ott",
       "src": {
-        "label": "NSF",
-        "url": "https://www.nasaspaceflight.com/2026/10/ship-40-returns-ship-42-more-testing/"
+        "label": "@VickiCocks15",
+        "url": "https://x.com/VickiCocks15/status/2113588436112142572"
       }
     },
     {
@@ -496,12 +542,12 @@
       "volo": "Flight 16 (prob.)",
       "voloNc": true,
       "stato": "Test",
-      "breve": "In prova criogenica a Massey's",
-      "note": "Arrivata a Massey's il 22 ott per la campagna crio; possibile prima Ship lanciata dal KSC",
-      "data": "22 ott",
+      "breve": "Prove criogeniche in corso a Massey's",
+      "note": "Arrivata a Massey's il 22 ott; 1ª prova crio il 23 ott, 2ª il 24 ott. Possibile prima Ship lanciata dal KSC",
+      "data": "24 ott",
       "src": {
-        "label": "@RGVaerialphotos",
-        "url": "https://x.com/RGVaerialphotos/status/2113136772989456877"
+        "label": "Next Spaceflight",
+        "url": "https://nextspaceflight.com/starship/"
       }
     },
     {
@@ -540,12 +586,12 @@
       "versione": "V3",
       "volo": "n.d.",
       "stato": "In costruzione",
-      "breve": "Naso in costruzione allo Starfactory",
-      "note": "Naso impilato sulla stiva di carico allo Starfactory",
-      "data": "9 ott",
+      "breve": "Prua entrata in Mega Bay 2",
+      "note": "Sezione di prua uscita dalla Starfactory il 22 ott ed entrata in Mega Bay 2 il 23 ott, sul meccanismo PEZ",
+      "data": "23 ott",
       "src": {
-        "label": "NSF",
-        "url": "https://www.nasaspaceflight.com/2026/10/ship-40-returns-ship-42-more-testing/"
+        "label": "@LabPadre",
+        "url": "https://x.com/LabPadre/status/2113587677304095012"
       }
     },
     {
@@ -668,20 +714,44 @@
       "tipo": "Static fire (atteso)",
       "luogo": "Pad 2",
       "esito": "Atteso",
-      "nota": "TFR «high energy testing» attiva; mancano ancora le chiusure stradali",
+      "nota": "TFR «high energy testing» attiva; rollout al Pad 2 previsto il 24 ott, static fire forse nel weekend (NSF)",
       "nc": true,
       "src": {
         "label": "@NASASpaceflight",
-        "url": "https://x.com/NASASpaceflight/status/2113278976680665325"
+        "url": "https://x.com/NASASpaceflight/status/2113617185218429437"
+      }
+    },
+    {
+      "data": "24 ott",
+      "veicolo": "Ship 43",
+      "tipo": "Prova crio (2ª)",
+      "luogo": "Massey's",
+      "esito": "In corso",
+      "nota": "Seconda prova della campagna",
+      "src": {
+        "label": "Next Spaceflight",
+        "url": "https://nextspaceflight.com/starship/"
+      }
+    },
+    {
+      "data": "23 ott",
+      "veicolo": "Ship 43",
+      "tipo": "Prova crio (1ª)",
+      "luogo": "Massey's",
+      "esito": "Completato",
+      "nota": "Prima prova criogenica della Ship del probabile Flight 16",
+      "src": {
+        "label": "Next Spaceflight",
+        "url": "https://nextspaceflight.com/starship/"
       }
     },
     {
       "data": "22 ott",
       "veicolo": "Ship 43",
-      "tipo": "Prova crio",
+      "tipo": "Arrivo e test dei flap",
       "luogo": "Massey's",
-      "esito": "In corso",
-      "nota": "Inizio della campagna crio",
+      "esito": "Completato",
+      "nota": "Arrivo a Massey's per la campagna crio; prova dei movimenti dei flap",
       "src": {
         "label": "@RGVaerialphotos",
         "url": "https://x.com/RGVaerialphotos/status/2113136772989456877"
@@ -945,126 +1015,215 @@
       "title": "Ars Technica: Starship e call Q3",
       "site": "arstechnica.com",
       "href": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
+    },
+    {
+      "title": "NASA: aggiornamento Artemis del 23 ott (piani e tappe SpaceX)",
+      "site": "nasa.gov",
+      "href": "https://www.nasa.gov/blogs/missions/2026/10/23/nasa-shares-artemis-acceleration-plans-for-moon-missions/"
+    },
+    {
+      "title": "Next Spaceflight: test Starship e chiusure stradali",
+      "site": "nextspaceflight.com",
+      "href": "https://nextspaceflight.com/starship/"
     }
   ],
   "X_POSTS": {
     "siti": [
       {
-        "autore": "@VickiCocks15",
-        "data": "22 ott",
-        "ora": "23:50",
-        "testo": "Gigabay: la gru LR11000 dei pannelli di rivestimento ora lavora dentro l'edificio",
-        "url": "https://x.com/VickiCocks15/status/2113387553172890095",
-        "media": "video",
-        "id": "2113387553172890095",
+        "autore": "@RGVaerialphotos",
+        "data": "23 ott",
+        "ora": "21:43",
+        "testo": "Foto aerea del cantiere del nuovo Pad 1",
+        "url": "https://x.com/RGVaerialphotos/status/2113718018236645565",
+        "media": "foto",
+        "id": "2113718018236645565",
         "immagini": [
           {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2113385967058862080/img/hVzaqRGPKKXQCq3B.jpg",
-            "w": 1280,
-            "h": 720
-          }
-        ]
-      },
-      {
-        "autore": "@VickiCocks15",
-        "data": "22 ott",
-        "ora": "21:03",
-        "testo": "Pad 1: sollevata in posizione la quarta gamba del supporto di lancio",
-        "url": "https://x.com/VickiCocks15/status/2113345461247504510",
-        "media": "video",
-        "id": "2113345461247504510",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2113344606834225152/img/HzHLAvMWj38cBqAX.jpg",
-            "w": 1280,
-            "h": 720
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVVvM6fW0AAr9Fl.jpg",
+            "w": 2730,
+            "h": 4096
           }
         ]
       },
       {
         "autore": "@RGVaerialphotos",
-        "data": "22 ott",
-        "ora": "02:01",
-        "testo": "La Gigabay di Starbase vista lunedì 19 ott",
-        "url": "https://x.com/RGVaerialphotos/status/2113058124815073507",
+        "data": "23 ott",
+        "ora": "21:56",
+        "testo": "La Gigabay di Starbase vista dall'alto il 23 ott",
+        "url": "https://x.com/RGVaerialphotos/status/2113721129051312383",
         "media": "foto",
-        "id": "2113058124815073507",
+        "id": "2113721129051312383",
         "immagini": [
           {
             "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVMXKC-aUAANn9_.jpg",
+            "url": "https://pbs.twimg.com/media/HVVyIyFWQAAMeLD.jpg",
             "w": 4096,
-            "h": 2731
+            "h": 3015
           }
         ]
       },
       {
         "autore": "@RGVaerialphotos",
-        "data": "17 ott",
-        "ora": "07:21",
-        "testo": "Gigabay: quasi finito lo smontaggio di una delle quattro gru a torre",
-        "url": "https://x.com/RGVaerialphotos/status/2111326727133917568",
+        "data": "23 ott",
+        "ora": "21:39",
+        "testo": "Il sito di lancio di Starbase dall'alto, 23 ott",
+        "url": "https://x.com/RGVaerialphotos/status/2113717080885428548",
         "media": "foto",
-        "id": "2111326727133917568",
+        "id": "2113717080885428548",
         "immagini": [
           {
             "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HUzwSvlbQAAkNG8.jpg",
+            "url": "https://pbs.twimg.com/media/HVVubdmXUAAhbWx.jpg",
             "w": 4096,
-            "h": 2731
+            "h": 2448
+          }
+        ]
+      },
+      {
+        "autore": "@RGVaerialphotos",
+        "data": "23 ott",
+        "ora": "21:35",
+        "testo": "Massey's: sito di test n. 1 e cantiere del sito n. 2",
+        "url": "https://x.com/RGVaerialphotos/status/2113716045722591368",
+        "media": "foto",
+        "id": "2113716045722591368",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVVtYcfXwAALJOx.jpg",
+            "w": 4096,
+            "h": 2797
+          }
+        ]
+      },
+      {
+        "autore": "@VickiCocks15",
+        "data": "23 ott",
+        "ora": "18:57",
+        "testo": "Pad 1: sollevata un'altra sezione del muro del flame trench",
+        "url": "https://x.com/VickiCocks15/status/2113676195661250959",
+        "media": "video",
+        "id": "2113676195661250959",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2113676018384883712/img/dTbjN4Hu-XRVcr_n.jpg",
+            "w": 1280,
+            "h": 720
           }
         ]
       },
       {
         "autore": "@NASASpaceflight",
-        "data": "15 ott",
-        "ora": "14:38",
-        "testo": "KSC: scaricato il supporto di lavoro della Ship dalla chiatta You'll Thank Me Later",
-        "url": "https://x.com/NASASpaceflight/status/2110711877470728387",
+        "data": "23 ott",
+        "ora": "18:09",
+        "testo": "Pad 1: prosegue la posa dei muri del flame trench",
+        "url": "https://x.com/NASASpaceflight/status/2113664154762457446",
         "media": "video",
-        "id": "2110711877470728387",
+        "id": "2113664154762457446",
         "immagini": [
           {
             "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2110711743949242368/img/C5FKN_vdpcb3M-CO.jpg",
-            "w": 1144,
-            "h": 640
-          }
-        ]
-      },
-      {
-        "autore": "@RGVaerialphotos",
-        "data": "11 ott",
-        "ora": "16:00",
-        "testo": "Supporto di lancio, deflettore e braccio SQD del nuovo Pad 1 in costruzione al lotto Sanchez",
-        "url": "https://x.com/RGVaerialphotos/status/2109282882913194062",
-        "media": "3 foto",
-        "id": "2109282882913194062",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HUUPRsLaYAAhTit.jpg",
-            "w": 1200,
-            "h": 800
-          },
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HUUPRsSboAA7eiP.jpg",
-            "w": 1200,
-            "h": 800
-          },
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HUUPRscbwAAYJxq.jpg",
-            "w": 1200,
-            "h": 800
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2113663995030675456/img/06zbEvN_3i4BdJfZ.jpg",
+            "w": 1112,
+            "h": 624
           }
         ]
       }
     ],
     "prototipi": [
+      {
+        "autore": "@RGVaerialphotos",
+        "data": "24 ott",
+        "ora": "05:27",
+        "testo": "Attrezzo di sollevamento per B22 in Mega Bay 1; supporto static fire delle Ship tornato in produzione",
+        "url": "https://x.com/RGVaerialphotos/status/2113834862339617215",
+        "media": "2 foto",
+        "id": "2113834862339617215",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVXY5SCacAADfbX.jpg",
+            "w": 762,
+            "h": 508
+          },
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVXY5R-bQAAsW_R.jpg",
+            "w": 4096,
+            "h": 2731
+          }
+        ]
+      },
+      {
+        "autore": "@RGVaerialphotos",
+        "data": "23 ott",
+        "ora": "21:33",
+        "testo": "Ship 43 sul supporto di test a Massey's",
+        "url": "https://x.com/RGVaerialphotos/status/2113715340517470305",
+        "media": "foto",
+        "id": "2113715340517470305",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVVs0QHWAAEzo55.jpg",
+            "w": 3498,
+            "h": 2428
+          }
+        ]
+      },
+      {
+        "autore": "@NASASpaceflight",
+        "data": "23 ott",
+        "ora": "20:59",
+        "testo": "Prime immagini della Cabin 1 della Starship lunare",
+        "url": "https://x.com/NASASpaceflight/status/2113706877230219493",
+        "media": "video",
+        "id": "2113706877230219493",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2113706844585660416/img/R0VjvWyVyxjqRAuj.jpg",
+            "w": 1112,
+            "h": 636
+          }
+        ]
+      },
+      {
+        "autore": "@VickiCocks15",
+        "data": "23 ott",
+        "ora": "13:08",
+        "testo": "Prua di S45 in Mega Bay 2; S42 pronta per lo static fire, S43 a Massey's",
+        "url": "https://x.com/VickiCocks15/status/2113588436112142572",
+        "media": "video",
+        "id": "2113588436112142572",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2113587829741629440/img/ivl8tK4AtJnYgC2k.jpg",
+            "w": 1280,
+            "h": 720
+          }
+        ]
+      },
+      {
+        "autore": "@LabPadre",
+        "data": "23 ott",
+        "ora": "13:05",
+        "testo": "La sezione di prua di Ship 45 entra in Mega Bay 2",
+        "url": "https://x.com/LabPadre/status/2113587677304095012",
+        "media": "video",
+        "id": "2113587677304095012",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2113587062397911040/img/9DJGY6pXQZeI_Rn0.jpg",
+            "w": 1280,
+            "h": 720
+          }
+        ]
+      },
       {
         "autore": "@VickiCocks15",
         "data": "23 ott",
@@ -1081,112 +1240,60 @@
             "h": 1080
           }
         ]
+      }
+    ],
+    "test": [
+      {
+        "autore": "@VickiCocks15",
+        "data": "24 ott",
+        "ora": "00:18",
+        "testo": "Rollout verso il pad slittato e nuovo avviso Produzione-Massey's",
+        "url": "https://x.com/VickiCocks15/status/2113756980510588938",
+        "media": "foto",
+        "id": "2113756980510588938",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVWSnK8W4AAna60.png",
+            "w": 402,
+            "h": 247
+          }
+        ]
       },
       {
         "autore": "@VickiCocks15",
-        "data": "22 ott",
-        "ora": "18:11",
-        "testo": "Ship 43 prova i movimenti dei flap",
-        "url": "https://x.com/VickiCocks15/status/2113302224948396525",
-        "media": "video",
-        "id": "2113302224948396525",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2113302066537869312/img/DM9el2zAaYfD9BLk.jpg",
-            "w": 1280,
-            "h": 720
-          }
-        ]
-      },
-      {
-        "autore": "@RGVaerialphotos",
-        "data": "22 ott",
-        "ora": "06:58",
-        "testo": "Ship 43 in viaggio verso Massey's, vista dall'alto",
-        "url": "https://x.com/RGVaerialphotos/status/2113132905941848427",
+        "data": "23 ott",
+        "ora": "17:00",
+        "testo": "Pubblicato l'avviso stradale Produzione-Pad per la notte",
+        "url": "https://x.com/VickiCocks15/status/2113646646424997928",
         "media": "foto",
-        "id": "2113132905941848427",
+        "id": "2113646646424997928",
         "immagini": [
           {
             "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVNbKQSbQAAOqHy.jpg",
-            "w": 2560,
-            "h": 1440
-          }
-        ]
-      },
-      {
-        "autore": "@RGVaerialphotos",
-        "data": "17 ott",
-        "ora": "07:24",
-        "testo": "Booster 24 riceve il serbatoio LOX di atterraggio; dietro, B22 attende lo static fire",
-        "url": "https://x.com/RGVaerialphotos/status/2111327584122437857",
-        "media": "foto",
-        "id": "2111327584122437857",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HUzwveqbQAA5V8W.jpg",
-            "w": 4096,
-            "h": 3180
+            "url": "https://pbs.twimg.com/media/HVUuTbGWMAAGHHZ.png",
+            "w": 395,
+            "h": 157
           }
         ]
       },
       {
         "autore": "@NASASpaceflight",
-        "data": "13 ott",
-        "ora": "23:59",
-        "testo": "In Mega Bay 2 le Ship 42, 43 e 44 accanto alla Ship 40 recuperata",
-        "url": "https://x.com/NASASpaceflight/status/2110128292649173424",
+        "data": "23 ott",
+        "ora": "15:03",
+        "testo": "Flight 15: B22 verso il Pad 2 per un possibile static fire nel weekend",
+        "url": "https://x.com/NASASpaceflight/status/2113617185218429437",
         "media": "foto",
-        "id": "2110128292649173424",
+        "id": "2113617185218429437",
         "immagini": [
           {
             "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HUiuJejW0AARGUT.jpg",
-            "w": 1200,
-            "h": 675
+            "url": "https://pbs.twimg.com/media/HVUTjfpWMAAhboa.jpg",
+            "w": 4096,
+            "h": 2303
           }
         ]
       },
-      {
-        "autore": "@SpaceX",
-        "data": "13 ott",
-        "ora": "23:52",
-        "testo": "Ship 40, prima Ship tornata al sito di lancio, ora in verticale in una Mega Bay",
-        "url": "https://x.com/SpaceX/status/2110126570233094527",
-        "media": "video e 3 foto",
-        "id": "2110126570233094527",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2110126064164810752/img/9mCwJO-xLi5gtV7F.jpg",
-            "w": 4096,
-            "h": 2160
-          },
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HUisgwDWQAABgNQ.jpg",
-            "w": 4096,
-            "h": 2304
-          },
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HUispKnWUAANUAB.jpg",
-            "w": 4096,
-            "h": 2731
-          },
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HUistOkXgAAGPyY.jpg",
-            "w": 4096,
-            "h": 2304
-          }
-        ]
-      }
-    ],
-    "test": [
       {
         "autore": "@VickiCocks15",
         "data": "23 ott",
@@ -1237,60 +1344,77 @@
             "h": 1080
           }
         ]
-      },
-      {
-        "autore": "@ENNEPS",
-        "data": "22 ott",
-        "ora": "11:12",
-        "testo": "Ship 43 arrivata a Massey's per la campagna di prove criogeniche",
-        "url": "https://x.com/ENNEPS/status/2113196842645119416",
-        "media": "video",
-        "id": "2113196842645119416",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2113196022977466368/img/SGpIlWpjUlz8lNBy.jpg",
-            "w": 1920,
-            "h": 1080
-          }
-        ]
-      },
-      {
-        "autore": "@RoughRidersShow",
-        "data": "22 ott",
-        "ora": "00:31",
-        "testo": "Pad 2: diluvio che simula un lancio e una cattura otto minuti dopo",
-        "url": "https://x.com/RoughRidersShow/status/2113035561032429954",
-        "media": "foto",
-        "id": "2113035561032429954",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVMCpCPWcAAPr0N.jpg",
-            "w": 2048,
-            "h": 1536
-          }
-        ]
-      },
-      {
-        "autore": "@efraser77",
-        "data": "16 ott",
-        "ora": "05:46",
-        "testo": "Timelapse delle prove di cattura con i chopsticks",
-        "url": "https://x.com/efraser77/status/2110940473024205010",
-        "media": "video",
-        "id": "2110940473024205010",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2110939608959827968/img/rcudreqqe91opQI9.jpg",
-            "w": 1920,
-            "h": 1080
-          }
-        ]
       }
     ],
     "lanci": [
+      {
+        "autore": "@NASASpaceflight",
+        "data": "24 ott",
+        "ora": "04:35",
+        "testo": "Starbase e la Luna: video riassuntivo",
+        "url": "https://x.com/NASASpaceflight/status/2113821637908877638",
+        "media": "video",
+        "id": "2113821637908877638",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2113821563334053889/img/w0aUYXXC7Nz55Yvv.jpg",
+            "w": 1096,
+            "h": 640
+          }
+        ]
+      },
+      {
+        "autore": "@NASASpaceflight",
+        "data": "23 ott",
+        "ora": "21:12",
+        "testo": "Tappe SpaceX: nel Q4 2026 prime catture V3, pad 39A e primo volo dalla Florida",
+        "url": "https://x.com/NASASpaceflight/status/2113710275132117395",
+        "media": "foto",
+        "id": "2113710275132117395",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVVoOodXkAADN4v.jpg",
+            "w": 1116,
+            "h": 639
+          }
+        ]
+      },
+      {
+        "autore": "@NASASpaceflight",
+        "data": "23 ott",
+        "ora": "20:56",
+        "testo": "Foto della Starfactory all'evento NASA: Raptor aggiornati per il Flight 15",
+        "url": "https://x.com/NASASpaceflight/status/2113706046992613501",
+        "media": "foto",
+        "id": "2113706046992613501",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVVkXQ-XYAE2eT0.jpg",
+            "w": 1116,
+            "h": 748
+          }
+        ]
+      },
+      {
+        "autore": "@NASASpaceflight",
+        "data": "23 ott",
+        "ora": "20:41",
+        "testo": "Artemis III: Orion attraccherà a una Starship V3 in orbita bassa",
+        "url": "https://x.com/NASASpaceflight/status/2113702447029826049",
+        "media": "foto",
+        "id": "2113702447029826049",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVVgd6aXcAAjL3M.jpg",
+            "w": 1116,
+            "h": 748
+          }
+        ]
+      },
       {
         "autore": "@NASASpaceflight",
         "data": "23 ott",
@@ -1322,57 +1446,6 @@
             "url": "https://pbs.twimg.com/media/HVPVUlKXMAAz1HZ.jpg",
             "w": 1440,
             "h": 1076
-          }
-        ]
-      },
-      {
-        "autore": "@SpaceX",
-        "data": "20 ott",
-        "ora": "22:13",
-        "testo": "Q3 2026: prima missione Starship con ricavi, 26 Starlink V3 in orbita",
-        "url": "https://x.com/SpaceX/status/2112638276389790102",
-        "media": "foto",
-        "id": "2112638276389790102",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVGY6WqbEAAZNpZ.jpg",
-            "w": 2478,
-            "h": 3240
-          }
-        ]
-      },
-      {
-        "autore": "@NASASpaceflight",
-        "data": "14 ott",
-        "ora": "15:39",
-        "testo": "La chiatta You'll Thank Me Later torna a Cape Canaveral con hardware Starship",
-        "url": "https://x.com/NASASpaceflight/status/2110364961084211412",
-        "media": "video",
-        "id": "2110364961084211412",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2110364386682351616/img/ONHgr9iU4cVjBs66.jpg",
-            "w": 1144,
-            "h": 648
-          }
-        ]
-      },
-      {
-        "autore": "@NASASpaceflight",
-        "data": "13 ott",
-        "ora": "19:42",
-        "testo": "Due anni dalla prima cattura di un booster; il Flight 15 punta a ripeterla",
-        "url": "https://x.com/NASASpaceflight/status/2110063635338797465",
-        "media": "video",
-        "id": "2110063635338797465",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2110062982298214401/img/_4wnEmeicSKAd-yP.jpg",
-            "w": 1784,
-            "h": 1000
           }
         ]
       }
@@ -1463,12 +1536,20 @@
           "label": "Licenza FAA",
           "value": "Nessuna licenza dal 39A trovata",
           "badge": "neutral"
+        },
+        {
+          "label": "Piano NASA/SpaceX",
+          "value": "Tabella del 23 ott: completamento del pad 39A e primo volo da Cape Canaveral nel Q4 2026"
         }
       ],
       "fonti": [
         {
           "label": "NSF, 18 ott",
           "url": "https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/"
+        },
+        {
+          "label": "@NASASpaceflight, 23 ott",
+          "url": "https://x.com/NASASpaceflight/status/2113710275132117395"
         }
       ],
       "dettagli": "Missione indicata come Starlink 30-1 (non confermato). Trasporto via chiatta «You'll Thank Me Later», controlli nella Gigabay di Roberts Road, static fire del booster al 39A."
@@ -1480,6 +1561,10 @@
         {
           "label": "Data",
           "value": "NET 8 nov 2026 (CADENA, non ufficiale); Musk: prima del Thanksgiving (26 nov)"
+        },
+        {
+          "label": "NASA, 23 ott",
+          "value": "Parsons: Flight 15 a novembre con miglioramenti ai Raptor; prime catture di booster e Ship V3 nel Q4 2026"
         },
         {
           "label": "Missione",
@@ -1502,6 +1587,10 @@
         {
           "label": "Ars Technica, 21 ott",
           "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
+        },
+        {
+          "label": "TeslaNorth, 23 ott",
+          "url": "https://teslanorth.com/2026/10/23/starship-moon-lander-cabin-nasa/"
         }
       ]
     }
