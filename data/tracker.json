@@ -1,5 +1,5 @@
 {
-  "ULTIMO_AGGIORNAMENTO": "25 ott 2026, 08:41",
+  "ULTIMO_AGGIORNAMENTO": "26 ott 2026, 08:40",
   "PROSSIMO_VOLO": {
     "volo": "Flight 15",
     "veicoli": "Super Heavy B22 + Ship 42",
@@ -8,7 +8,7 @@
     "sito": "Starbase, Pad 2",
     "obiettivo": "Doppia cattura in torre: Super Heavy e Ship",
     "licenzaBreve": "Non emessa",
-    "licenzaFaa": "Modifica della licenza attesa, non ancora emessa al 25 ott",
+    "licenzaFaa": "Modifica della licenza attesa, non ancora emessa al 26 ott",
     "licenzaSrc": {
       "label": "Ars Technica, 21 ott",
       "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
@@ -21,7 +21,7 @@
       "titolo": "Ship 42",
       "versione": "V3",
       "stato": {
-        "label": "In attesa dello static fire",
+        "label": "In viaggio verso Massey's per lo static fire",
         "tone": "accent"
       },
       "milestones": [
@@ -39,20 +39,20 @@
           "nome": "Motori installati",
           "fatto": false,
           "data": "n.d.",
-          "nota": "@VickiCocks15 la indica «pronta per lo static fire» (23 ott); reinstallazione dei motori da confermare",
+          "nota": "non confermato ufficialmente; S42 va a Massey's proprio per lo static fire (26 ott), quindi i motori dovrebbero essere a bordo",
           "src": {
-            "label": "@VickiCocks15, 23 ott",
-            "url": "https://x.com/VickiCocks15/status/2113588436112142572"
+            "label": "@VickiCocks15, 26 ott",
+            "url": "https://x.com/VickiCocks15/status/2114534121431257442"
           }
         },
         {
           "nome": "Static fire",
           "fatto": false,
-          "data": "atteso",
-          "nota": "trasporto Produzione→Massey's slittato alla notte 25-26 ott (26 ott 4:00-10:30 ora di Roma): secondo @VickiCocks15 dovrebbe essere S42 per lo static fire (ipotesi, non confermato)",
+          "data": "atteso a Massey's",
+          "nota": "il 26 ott il supporto di test è arrivato in Mega Bay 2, S42 è stata caricata e nella mattinata italiana è partita per Massey's per lo static fire; S43 ha lasciato il posto rientrando in produzione",
           "src": {
-            "label": "@VickiCocks15, 25 ott",
-            "url": "https://x.com/VickiCocks15/status/2114141841251819581"
+            "label": "@NASASpaceflight, 26 ott",
+            "url": "https://x.com/NASASpaceflight/status/2114568166651428965"
           }
         },
         {
@@ -80,8 +80,8 @@
       "titolo": "Super Heavy B22",
       "versione": "V3",
       "stato": {
-        "label": "Sul Pad 2, static fire atteso",
-        "tone": "accent"
+        "label": "Static fire riuscito, rientro in Mega Bay 1",
+        "tone": "success"
       },
       "milestones": [
         {
@@ -105,22 +105,22 @@
         },
         {
           "nome": "Static fire",
-          "fatto": false,
-          "data": "25 ott (atteso)",
-          "nota": "Ordinanza del sindaco: chiusura per test il 25 ott 6-18 CDT (12-24 ora di Roma), riserva il 26 ott; pad «pronto» con BQD agganciati e porte blindate chiuse (24 ott)",
+          "fatto": true,
+          "data": "25 ott",
+          "nota": "static fire completo a 33 motori, circa 16 s, alle 14:22 ora di Roma; confermato da SpaceX. @mcrs987: «sembrava a piena durata, si vede chiaramente la riduzione di spinta negli ultimi secondi»",
           "src": {
-            "label": "@VickiCocks15, 24 ott",
-            "url": "https://x.com/VickiCocks15/status/2114068594879529440"
+            "label": "@SpaceX, 25 ott",
+            "url": "https://x.com/SpaceX/status/2114444137067844004"
           }
         },
         {
           "nome": "Trasferimento in rampa",
           "fatto": true,
-          "data": "24 ott",
-          "nota": "rollout notturno al Pad 2 e sollevamento sul supporto di lancio (OLM) all'alba texana del 24 ott",
+          "data": "24-26 ott",
+          "nota": "rollout al Pad 2 il 24 ott; dopo lo static fire, il 26 ott B22 è stato sollevato dai chopsticks fino all'altezza di cattura e poi posato sul ringwall di trasporto per tornare in Mega Bay 1 per i preparativi finali",
           "src": {
-            "label": "@NASASpaceflight, 24 ott",
-            "url": "https://x.com/NASASpaceflight/status/2113992853093601306"
+            "label": "@RGVaerialphotos, 26 ott",
+            "url": "https://x.com/RGVaerialphotos/status/2114612462184178003"
           }
         },
         {
@@ -137,21 +137,58 @@
   },
   "NEWS": [
     {
-      "data": "25 ott",
+      "data": "26 ott",
       "sez": "Test",
-      "testo": "Static fire di B22 atteso oggi: chiusura 12-24 ora di Roma, riserva il 26 ott",
+      "testo": "B22 sollevato ad altezza di cattura, poi sul carrello: torna in Mega Bay 1 per i preparativi finali",
+      "src": {
+        "label": "@RGVaerialphotos",
+        "url": "https://x.com/RGVaerialphotos/status/2114612462184178003"
+      }
+    },
+    {
+      "data": "26 ott",
+      "sez": "Prototipi",
+      "testo": "Doppio trasporto: S42 parte per Massey's per lo static fire, S43 rientra in produzione",
+      "src": {
+        "label": "@NASASpaceflight",
+        "url": "https://x.com/NASASpaceflight/status/2114568166651428965"
+      }
+    },
+    {
+      "data": "26 ott",
+      "sez": "Prototipi",
+      "testo": "Ship 45: la sezione della cupola anteriore arriva in Mega Bay 2",
       "src": {
         "label": "@VickiCocks15",
-        "url": "https://x.com/VickiCocks15/status/2114068594879529440"
+        "url": "https://x.com/VickiCocks15/status/2114496160027349138"
+      }
+    },
+    {
+      "data": "25 ott",
+      "sez": "Test",
+      "testo": "B22: static fire completo a 33 motori (circa 16 s, 14:22 ora di Roma), confermato da SpaceX",
+      "src": {
+        "label": "@SpaceX",
+        "url": "https://x.com/SpaceX/status/2114444137067844004"
+      }
+    },
+    {
+      "data": "25 ott",
+      "sez": "Lanci",
+      "testo": "NSF: il Flight 16 dal 39A potrebbe slittare a fine gennaio (stima, non ufficiale)",
+      "nc": true,
+      "src": {
+        "label": "NSF",
+        "url": "https://www.nasaspaceflight.com/2026/10/roberts-road-expansion-flight-16/"
       }
     },
     {
       "data": "25 ott",
       "sez": "Prototipi",
-      "testo": "Trasporti nella notte 25-26 ott: forse S43 torna in produzione e S42 va a Massey's (non confermato)",
+      "testo": "Ship 44 sul supporto centrale di Mega Bay 2; Ship 45 riportata dentro la baia",
       "src": {
         "label": "@VickiCocks15",
-        "url": "https://x.com/VickiCocks15/status/2114141841251819581"
+        "url": "https://x.com/VickiCocks15/status/2114473397363102068"
       }
     },
     {
@@ -243,32 +280,13 @@
         "label": "@NASASpaceflight",
         "url": "https://x.com/NASASpaceflight/status/2113467549333537053"
       }
-    },
-    {
-      "data": "22 ott",
-      "sez": "Test",
-      "testo": "TFR a Starbase dal 23 ott al 5 nov: probabile static fire di B22",
-      "nc": true,
-      "src": {
-        "label": "@NASASpaceflight",
-        "url": "https://x.com/NASASpaceflight/status/2113278976680665325"
-      }
-    },
-    {
-      "data": "22 ott",
-      "sez": "Prototipi",
-      "testo": "Ship 43 arriva a Massey's per le prove criogeniche",
-      "src": {
-        "label": "@RGVaerialphotos",
-        "url": "https://x.com/RGVaerialphotos/status/2113136772989456877"
-      }
     }
   ],
   "IN_BREVE": {
-    "siti": "B22 è sul supporto di lancio del Pad 2, pronto per lo static fire con le gru LR11000 abbassate per sicurezza. Il Pad 1 procede con i muri del flame trench e a Massey's cresce il secondo sito di test; in Florida è in discussione il campus SpaceX di circa 400 acri a Roberts Road.",
-    "prototipi": "Due coppie V3 in preparazione: B22/S42 per il Flight 15 e, probabilmente, B23/S43 per il Flight 16. S43 ha concluso diverse prove crio a Massey's; B24 ha ricevuto l'ultima sezione del corpo e S45 è su un nuovo supporto in Mega Bay 2.",
-    "test": "B22 è sul Pad 2 dal 24 ott: lo static fire a 33 motori è atteso oggi, 25 ott (chiusura 12-24 ora di Roma), con riserva il 26 ott. Nella notte 25-26 ott sono previsti trasporti tra produzione e Massey's, forse per lo static fire di S42 (non confermato).",
-    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. Il Flight 15 è atteso a novembre (NET 8 nov su slide non ufficiale) con il primo tentativo di doppia cattura; la modifica della licenza FAA non è ancora stata emessa."
+    "siti": "Il Pad 2 ha ospitato con successo lo static fire di B22 il 25 ott e il 26 ott ha restituito il booster alla Mega Bay 1. Massey's accoglie ora S42 per il suo static fire; in Florida la Gigabay di Roberts Road si prepara a B23 e S43, mentre il 39A completa i collaudi.",
+    "prototipi": "S42 è in viaggio verso Massey's per lo static fire del Flight 15 e S43 è rientrata in produzione per motori e assemblaggio finale. In Mega Bay 2 S44 è passata sul supporto centrale e S45 ha ricevuto la cupola anteriore; B24 ha il corpo completo.",
+    "test": "Il 25 ott B22 ha completato uno static fire a piena durata con 33 motori (circa 16 s, 14:22 ora di Roma), confermato da SpaceX. Il 26 ott il booster è stato sollevato ad altezza di cattura e rimandato in Mega Bay 1; ora tocca allo static fire di S42 a Massey's.",
+    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. Il Flight 15 resta atteso a novembre (NET 8 nov su slide non ufficiale) con la prima doppia cattura; la modifica della licenza FAA non è ancora stata emessa. Per NSF il Flight 16 dal 39A potrebbe arrivare a fine gennaio."
   },
   "SITI": [
     {
@@ -278,12 +296,12 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "B22 sul supporto di lancio, static fire atteso il 25 ott",
-      "ultimo": "B22 arrivato il 24 ott dopo il rollout notturno e sollevato dai chopsticks sul supporto di lancio; gru abbassate, BQD agganciati e porte blindate chiuse. Chiusura per test il 25 ott 6-18 CDT (12-24 ora di Roma), riserva il 26 ott",
-      "data": "24-25 ott",
+      "breve": "Static fire di B22 riuscito, booster rimandato in Mega Bay 1",
+      "ultimo": "Il 25 ott i chopsticks sono stati alzati in posizione di lancio, il DSS testato e il carrello BTR spostato al cancello D1; static fire completo a 33 motori alle 14:22 ora di Roma. Il 26 ott i chopsticks hanno sollevato B22 fino all'altezza di cattura (non succedeva dai tempi di B15) e poi sul ringwall di trasporto",
+      "data": "25-26 ott",
       "src": {
-        "label": "@VickiCocks15",
-        "url": "https://x.com/VickiCocks15/status/2114125029298585833"
+        "label": "@RGVaerialphotos",
+        "url": "https://x.com/RGVaerialphotos/status/2114612462184178003"
       }
     },
     {
@@ -308,12 +326,12 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "B22 uscito; B24 riceve l'ultima sezione",
-      "ultimo": "B22 uscito per il Pad 2 all'alba del 24 ott; il carrello di trasporto (BTR) è rientrato dopo oltre 24 ore; la sezione F3:4 di B24 è entrata il 24 ott e completa il corpo del booster; attrezzi PEZ della prua di S45 rimossi",
-      "data": "23-24 ott",
+      "breve": "B22 in rientro per i preparativi finali; corpo di B24 completo",
+      "ultimo": "B22 in rientro dal Pad 2 il 26 ott per i preparativi finali al volo; la sezione F3:4 di B24 è entrata il 24 ott e completa il corpo del booster",
+      "data": "24-26 ott",
       "src": {
-        "label": "@VickiCocks15",
-        "url": "https://x.com/VickiCocks15/status/2114069967607881863"
+        "label": "@RGVaerialphotos",
+        "url": "https://x.com/RGVaerialphotos/status/2114612462184178003"
       }
     },
     {
@@ -323,12 +341,12 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "S45 su un supporto alternativo; S42 verso Massey's?",
-      "ultimo": "Il 24 ott è arrivato un supporto alternativo e la prua di S45 vi è stata posata all'ingresso; S44 in lavorazione; S42 potrebbe partire per Massey's nella notte 25-26 ott (non confermato)",
-      "data": "23-25 ott",
+      "breve": "S42 partita, S43 rientrata; S44 al centro, cupola per S45",
+      "ultimo": "25 ott: S44 spostata sul supporto centrale e S45 riportata dentro dopo una notte nel ring yard. 26 ott: arriva la cupola anteriore di S45; il supporto di test carica S42 per Massey's mentre S43 rientra dalla prova crio",
+      "data": "25-26 ott",
       "src": {
         "label": "@VickiCocks15",
-        "url": "https://x.com/VickiCocks15/status/2114124378610737526"
+        "url": "https://x.com/VickiCocks15/status/2114534121431257442"
       }
     },
     {
@@ -353,12 +371,12 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "Crio di S43 concluse, scambio di Ship atteso",
-      "ultimo": "S43 ha fatto più cicli criogenici per circa 10 ore il 23 ott; avviso stradale Massey's↔Produzione per il 26 ott 4:00-10:30 ora di Roma (forse S43 rientra e arriva S42, non confermato); secondo sito di test in costruzione",
-      "data": "23-25 ott",
+      "breve": "S43 rientrata, arriva S42 per lo static fire",
+      "ultimo": "S43 ha lasciato Massey's nella notte texana del 25-26 ott dopo la campagna crio (conclusa il 23 ott); S42 in viaggio per prenderne il posto e fare lo static fire. Secondo sito di test in costruzione",
+      "data": "23-26 ott",
       "src": {
-        "label": "@VickiCocks15",
-        "url": "https://x.com/VickiCocks15/status/2114141841251819581"
+        "label": "@RGVaerialphotos",
+        "url": "https://x.com/RGVaerialphotos/status/2114609355538714943"
       }
     },
     {
@@ -383,12 +401,12 @@
         "label": "Collaudi",
         "tone": "accent"
       },
-      "breve": "Costruzione finita, collaudi in corso",
-      "ultimo": "SpaceX: costruzione principale finita, ora collaudi di accettazione e operativi. Almeno un altro lancio da Starbase prima della Florida",
-      "data": "1 ott",
+      "breve": "Collaudi dei sistemi; tetto rinforzato e più metano",
+      "ultimo": "Tetto rinforzato sulla torre per le catture di Ship (12 ott); aggiunti due serbatoi di metano liquido (circa 5.000 t, 3,8 stack) e più azoto per il deluge; collaudi di attivazione in corso. Static fire di B23 al 39A forse a metà dicembre (stima NSF)",
+      "data": "25 ott",
       "src": {
-        "label": "Space.com",
-        "url": "https://www.space.com/space-exploration/launches-spacecraft/things-are-going-super-well-at-39a-spacex-gearing-up-to-launch-starship-from-florida-for-1st-time"
+        "label": "NSF",
+        "url": "https://www.nasaspaceflight.com/2026/10/roberts-road-expansion-flight-16/"
       }
     },
     {
@@ -398,12 +416,12 @@
         "label": "In costruzione",
         "tone": "accent"
       },
-      "breve": "Esterno quasi finito; proposto campus da 400 acri",
-      "ultimo": "Esterno quasi completato; due baie dovrebbero essere pronte per i veicoli del Flight 16. Bozza di valutazione ambientale NASA (13 ott, resa nota il 23 ott): campus da circa 167 a 400 acri con fabbriche, payload processing e un banco di test Starship («Project Ignition»)",
-      "data": "15-23 ott",
+      "breve": "Pronta ad accogliere B23 e S43; proposto campus da 400 acri",
+      "ultimo": "SpaceX prepara la Gigabay per B23 e S43. Bozza di valutazione ambientale per passare da 167 a quasi 400 acri: banchi di static fire per Ship («Project Ignition»), payload processing, nuova strada e probabilmente altre Gigabay. Seguiranno consultazione pubblica e approvazioni",
+      "data": "23-25 ott",
       "src": {
-        "label": "WESH",
-        "url": "https://www.wesh.com/article/kennedy-space-center-spacex-starship-factory-expansion/74233005"
+        "label": "NSF",
+        "url": "https://www.nasaspaceflight.com/2026/10/roberts-road-expansion-flight-16/"
       }
     },
     {
@@ -413,12 +431,12 @@
         "label": "In costruzione",
         "tone": "accent"
       },
-      "breve": "Due pad in costruzione; consultazione FAA chiusa",
-      "ultimo": "Previsti due pad. Consultazione pubblica FAA (SEIS) per fino a 76 lanci l'anno chiusa il 14 ott. Torre 37A: 4 moduli su 9 a luglio",
-      "data": "29 set-14 ott",
+      "breve": "37A avanza, serbatoi in posa; 37B solo fondazioni",
+      "ultimo": "Due serbatoi da 1.700 m³ (LOX e metano) già in posa; 37A forse operativo tra un anno o più, di 37B solo le fondazioni. Consultazione FAA (fino a 76 lanci l'anno) chiusa il 14 ott",
+      "data": "14-25 ott",
       "src": {
-        "label": "Federal Register",
-        "url": "https://www.govinfo.gov/content/pkg/FR-2026-09-29/html/2026-19897.htm"
+        "label": "NSF",
+        "url": "https://www.nasaspaceflight.com/2026/10/roberts-road-expansion-flight-16/"
       }
     },
     {
@@ -512,12 +530,12 @@
       "versione": "V3",
       "volo": "Flight 15",
       "stato": "Test",
-      "breve": "Sul Pad 2, static fire atteso il 25 ott",
-      "note": "Prove crio 9-10 set; motori installati; rollout notturno e sollevamento sul supporto di lancio del Pad 2 il 24 ott. Static fire a 33 motori atteso il 25 ott (riserva 26 ott)",
-      "data": "24 ott",
+      "breve": "Static fire completo; rientro in Mega Bay 1",
+      "note": "Prove crio 9-10 set; rollout al Pad 2 il 24 ott; static fire completo a 33 motori il 25 ott (circa 16 s), confermato da SpaceX. Il 26 ott sollevato ad altezza di cattura e rimandato in Mega Bay 1 per i preparativi finali",
+      "data": "26 ott",
       "src": {
-        "label": "@NASASpaceflight",
-        "url": "https://x.com/NASASpaceflight/status/2113992853093601306"
+        "label": "@SpaceX",
+        "url": "https://x.com/SpaceX/status/2114444137067844004"
       }
     },
     {
@@ -526,12 +544,12 @@
       "versione": "V3",
       "volo": "Flight 15",
       "stato": "Test",
-      "breve": "Verso Massey's per lo static fire (atteso)",
-      "note": "Test chopsticks al Pad 2 (11-12 set); ulteriore prova crio a Massey's (9 ott); «pronta per lo static fire» (23 ott). Trasporto Produzione→Massey's previsto nella notte 25-26 ott: ipotesi @VickiCocks15 che sia S42 (non confermato)",
-      "data": "25 ott",
+      "breve": "In viaggio verso Massey's per lo static fire",
+      "note": "Test chopsticks al Pad 2 (11-12 set); ulteriore prova crio a Massey's (9 ott). Il 26 ott caricata sul supporto di test in Mega Bay 2 e partita per Massey's per lo static fire",
+      "data": "26 ott",
       "src": {
         "label": "@VickiCocks15",
-        "url": "https://x.com/VickiCocks15/status/2114141841251819581"
+        "url": "https://x.com/VickiCocks15/status/2114534121431257442"
       }
     },
     {
@@ -541,12 +559,12 @@
       "volo": "Flight 16 (prob.)",
       "voloNc": true,
       "stato": "Test",
-      "breve": "Prove crio concluse, possibile rientro in produzione",
-      "note": "Arrivata a Massey's il 22 ott; più cicli crio per circa 10 ore il 23 ott (seconda prova segnalata il 24 ott). Possibile rientro in produzione nella notte 25-26 ott (non confermato). Possibile prima Ship lanciata dal KSC",
-      "data": "25 ott",
+      "breve": "Crio concluse, rientrata in produzione",
+      "note": "Prove crio a Massey's concluse il 23 ott; rientrata in produzione il 26 ott per motori e assemblaggio finale. Stime NSF: static fire a metà dicembre, spedizione al KSC tra inizio e metà gennaio",
+      "data": "26 ott",
       "src": {
-        "label": "@ENNEPS",
-        "url": "https://x.com/ENNEPS/status/2113884113765646669"
+        "label": "@NASASpaceflight",
+        "url": "https://x.com/NASASpaceflight/status/2114568166651428965"
       }
     },
     {
@@ -556,12 +574,12 @@
       "volo": "Flight 16 (prob.)",
       "voloNc": true,
       "stato": "Test",
-      "breve": "Crio completata, installazione motori",
-      "note": "Prova crio di 12 h completata; rientrato in Mega Bay 1 il 18 ott per l'installazione dei motori. Destinato alla Florida (non confermato)",
-      "data": "18 ott",
+      "breve": "Installazione motori; static fire forse al 39A",
+      "note": "Prova crio completata il 15 ott; in Mega Bay 1 per i motori. Stime NSF: pronto per lo static fire a fine novembre, possibile static fire al 39A a metà dicembre",
+      "data": "25 ott",
       "src": {
         "label": "NSF",
-        "url": "https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/"
+        "url": "https://www.nasaspaceflight.com/2026/10/roberts-road-expansion-flight-16/"
       }
     },
     {
@@ -571,12 +589,12 @@
       "volo": "Flight 17?",
       "voloNc": true,
       "stato": "In costruzione",
-      "breve": "In costruzione in Mega Bay 2",
-      "note": "In Mega Bay 2; tubi di trasferimento e flap in installazione. Pronta forse a febbraio 2027 (stima NSF)",
-      "data": "9 ott",
+      "breve": "Sul supporto centrale di Mega Bay 2",
+      "note": "Il 25 ott spostata sul supporto centrale di Mega Bay 2; tubi di trasferimento e flap in installazione. Pronta forse a febbraio 2027 (stima NSF)",
+      "data": "25 ott",
       "src": {
-        "label": "NSF",
-        "url": "https://www.nasaspaceflight.com/2026/10/ship-40-returns-ship-42-more-testing/"
+        "label": "@VickiCocks15",
+        "url": "https://x.com/VickiCocks15/status/2114473397363102068"
       }
     },
     {
@@ -585,12 +603,12 @@
       "versione": "V3",
       "volo": "n.d.",
       "stato": "In costruzione",
-      "breve": "Su supporto alternativo in Mega Bay 2",
-      "note": "Prua uscita dalla Starfactory il 22 ott, in Mega Bay 2 dal 23 ott; il 24 ott spostata su un supporto alternativo all'ingresso della baia",
-      "data": "24 ott",
+      "breve": "Arriva la cupola anteriore",
+      "note": "Prua in Mega Bay 2 dal 23 ott; nella notte 24-25 ott spostata nel ring yard e poi riportata dentro il 25 ott; il 26 ott arriva la sezione della cupola anteriore",
+      "data": "26 ott",
       "src": {
         "label": "@VickiCocks15",
-        "url": "https://x.com/VickiCocks15/status/2114124378610737526"
+        "url": "https://x.com/VickiCocks15/status/2114496160027349138"
       }
     },
     {
@@ -708,15 +726,51 @@
   ],
   "TEST": [
     {
-      "data": "25 ott (riserva 26)",
-      "veicolo": "Booster 22",
+      "data": "prossimi giorni",
+      "veicolo": "Ship 42",
       "tipo": "Static fire (atteso)",
-      "luogo": "Pad 2",
+      "luogo": "Massey's",
       "esito": "Atteso",
-      "nota": "B22 sul supporto di lancio dal 24 ott; ordinanza del sindaco per test il 25 ott 6-18 CDT (12-24 ora di Roma), riserva il 26 ott",
+      "nota": "S42 in trasferimento a Massey's il 26 ott proprio per lo static fire; data non ancora annunciata",
       "src": {
         "label": "@VickiCocks15",
-        "url": "https://x.com/VickiCocks15/status/2114068594879529440"
+        "url": "https://x.com/VickiCocks15/status/2114534121431257442"
+      }
+    },
+    {
+      "data": "26 ott",
+      "veicolo": "Ship 42 / Ship 43",
+      "tipo": "Trasporti Produzione↔Massey's",
+      "luogo": "Massey's",
+      "esito": "In corso",
+      "nota": "S43 rientrata in produzione; S42 in viaggio verso Massey's",
+      "src": {
+        "label": "@RGVaerialphotos",
+        "url": "https://x.com/RGVaerialphotos/status/2114609355538714943"
+      }
+    },
+    {
+      "data": "26 ott",
+      "veicolo": "Booster 22",
+      "tipo": "Sollevamento ad altezza di cattura e rientro",
+      "luogo": "Pad 2",
+      "esito": "Completato",
+      "nota": "Chopsticks fino all'altezza di cattura (non accadeva dai tempi di B15), poi posa sul ringwall di trasporto per tornare in Mega Bay 1",
+      "src": {
+        "label": "@RGVaerialphotos",
+        "url": "https://x.com/RGVaerialphotos/status/2114612462184178003"
+      }
+    },
+    {
+      "data": "25 ott",
+      "veicolo": "Booster 22",
+      "tipo": "Static fire a 33 motori",
+      "luogo": "Pad 2",
+      "esito": "Completato",
+      "nota": "Piena durata, circa 16 s, accensione alle 14:22 ora di Roma; @mcrs987 nota la riduzione di spinta pulita negli ultimi secondi. Confermato da SpaceX",
+      "src": {
+        "label": "@SpaceX",
+        "url": "https://x.com/SpaceX/status/2114444137067844004"
       }
     },
     {
@@ -732,25 +786,12 @@
       }
     },
     {
-      "data": "26 ott",
-      "veicolo": "Ship 42 / Ship 43",
-      "tipo": "Trasporti Produzione↔Massey's",
-      "luogo": "Massey's",
-      "esito": "Atteso",
-      "nota": "Avviso stradale 26 ott 4:00-10:30 ora di Roma; ipotesi: S42 a Massey's per lo static fire, S43 di ritorno",
-      "nc": true,
-      "src": {
-        "label": "@VickiCocks15",
-        "url": "https://x.com/VickiCocks15/status/2114141841251819581"
-      }
-    },
-    {
-      "data": "24 ott",
+      "data": "23-24 ott",
       "veicolo": "Ship 43",
       "tipo": "Prova crio (2ª)",
       "luogo": "Massey's",
-      "esito": "In corso",
-      "nota": "Seconda prova della campagna",
+      "esito": "Completato",
+      "nota": "Seconda prova della campagna; NSF indica la campagna conclusa il 23 ott",
       "src": {
         "label": "Next Spaceflight",
         "url": "https://nextspaceflight.com/starship/"
@@ -1015,6 +1056,11 @@
       "href": "https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/"
     },
     {
+      "title": "NSF: espansione di Roberts Road e preparativi del Flight 16",
+      "site": "nasaspaceflight.com",
+      "href": "https://www.nasaspaceflight.com/2026/10/roberts-road-expansion-flight-16/"
+    },
+    {
       "title": "SpaceX: aggiornamenti Starship",
       "site": "spacex.com",
       "href": "https://www.spacex.com/updates/starship/"
@@ -1050,430 +1096,436 @@
       "href": "https://nextspaceflight.com/starship/"
     },
     {
-      "title": "Ordinanza del sindaco di Starbase per i test di B22 (25-26 ott)",
-      "site": "x.com/VickiCocks15",
-      "href": "https://x.com/VickiCocks15/status/2114068594879529440"
+      "title": "SpaceX: video dello static fire di B22 (25 ott)",
+      "site": "x.com/SpaceX",
+      "href": "https://x.com/SpaceX/status/2114444137067844004"
     }
   ],
   "X_POSTS": {
     "siti": [
       {
+        "autore": "@RGVaerialphotos",
+        "data": "26 ott",
+        "ora": "05:29",
+        "testo": "Pad 2: B22 sollevato dal supporto di lancio",
+        "url": "https://x.com/RGVaerialphotos/status/2114575209894388007",
+        "media": "foto",
+        "id": "2114575209894388007",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVh66nrbsAA21Vs.jpg",
+            "w": 3840,
+            "h": 2160
+          }
+        ]
+      },
+      {
+        "autore": "@VickiCocks15",
+        "data": "26 ott",
+        "ora": "02:57",
+        "testo": "Pad 2: i chopsticks scendono e si chiudono attorno a B22",
+        "url": "https://x.com/VickiCocks15/status/2114536890846060822",
+        "media": "video",
+        "id": "2114536890846060822",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114536552655167488/img/2HFrfJRQDHfcEMb7.jpg",
+            "w": 1280,
+            "h": 720
+          }
+        ]
+      },
+      {
+        "autore": "@RGVaerialphotos",
+        "data": "25 ott",
+        "ora": "19:45",
+        "testo": "Il data center del sito SpaceX visto dall'alto",
+        "url": "https://x.com/RGVaerialphotos/status/2114428025869910259",
+        "media": "foto",
+        "id": "2114428025869910259",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVfV6XeW0AA3f77.jpg",
+            "w": 4096,
+            "h": 2731
+          }
+        ]
+      },
+      {
+        "autore": "@RGVaerialphotos",
+        "data": "25 ott",
+        "ora": "18:30",
+        "testo": "Starbase Weekly in diretta: foto aerea di un cantiere di fondazione",
+        "url": "https://x.com/RGVaerialphotos/status/2114409152566992994",
+        "media": "foto",
+        "id": "2114409152566992994",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVfVNu0X0AA3qVF.jpg",
+            "w": 3608,
+            "h": 2406
+          }
+        ]
+      },
+      {
+        "autore": "@LabPadre",
+        "data": "25 ott",
+        "ora": "13:37",
+        "testo": "Il ringwall di trasporto si allontana dal Pad 2 prima del test",
+        "url": "https://x.com/LabPadre/status/2114335419785679308",
+        "media": "video",
+        "id": "2114335419785679308",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114335137450143744/img/hdkbpWHvz5KOQq-M.jpg",
+            "w": 1280,
+            "h": 720
+          }
+        ]
+      },
+      {
         "autore": "@VickiCocks15",
         "data": "25 ott",
-        "ora": "00:41",
-        "testo": "Pad 2: gru abbassate, booster sul supporto, BQD agganciati e porte blindate chiuse",
-        "url": "https://x.com/VickiCocks15/status/2114125029298585833",
+        "ora": "11:47",
+        "testo": "Chopsticks alzati in posizione di lancio e test del DSS",
+        "url": "https://x.com/VickiCocks15/status/2114307908540489739",
         "media": "video",
-        "id": "2114125029298585833",
+        "id": "2114307908540489739",
         "immagini": [
           {
             "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2114124691241603072/img/KQ4nJkh1KKGwc_iH.jpg",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114307649730662400/img/4KaxFvDy3ZZ6sKgy.jpg",
             "w": 1280,
             "h": 720
-          }
-        ]
-      },
-      {
-        "autore": "@VickiCocks15",
-        "data": "24 ott",
-        "ora": "20:58",
-        "testo": "Le due gru LR11000 abbassate in vista dei test di B22",
-        "url": "https://x.com/VickiCocks15/status/2114069009708773504",
-        "media": "video",
-        "id": "2114069009708773504",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2114068650764148736/img/1Qqts7FRl9tpse8Z.jpg",
-            "w": 1280,
-            "h": 720
-          }
-        ]
-      },
-      {
-        "autore": "@ENNEPS",
-        "data": "24 ott",
-        "ora": "16:02",
-        "testo": "Buongiorno Starbase: il sito di lancio all'alba",
-        "url": "https://x.com/ENNEPS/status/2113994643977486716",
-        "media": "video",
-        "id": "2113994643977486716",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2113994578466308096/img/fqdonVDlieRHKLFI.jpg",
-            "w": 1920,
-            "h": 1080
-          }
-        ]
-      },
-      {
-        "autore": "@RGVaerialphotos",
-        "data": "23 ott",
-        "ora": "21:43",
-        "testo": "Foto aerea del cantiere del nuovo Pad 1",
-        "url": "https://x.com/RGVaerialphotos/status/2113718018236645565",
-        "media": "foto",
-        "id": "2113718018236645565",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVVvM6fW0AAr9Fl.jpg",
-            "w": 2730,
-            "h": 4096
-          }
-        ]
-      },
-      {
-        "autore": "@RGVaerialphotos",
-        "data": "23 ott",
-        "ora": "21:56",
-        "testo": "La Gigabay di Starbase vista dall'alto il 23 ott",
-        "url": "https://x.com/RGVaerialphotos/status/2113721129051312383",
-        "media": "foto",
-        "id": "2113721129051312383",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVVyIyFWQAAMeLD.jpg",
-            "w": 4096,
-            "h": 3015
-          }
-        ]
-      },
-      {
-        "autore": "@RGVaerialphotos",
-        "data": "23 ott",
-        "ora": "21:35",
-        "testo": "Massey's: sito di test n. 1 e cantiere del sito n. 2",
-        "url": "https://x.com/RGVaerialphotos/status/2113716045722591368",
-        "media": "foto",
-        "id": "2113716045722591368",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVVtYcfXwAALJOx.jpg",
-            "w": 4096,
-            "h": 2797
           }
         ]
       }
     ],
     "prototipi": [
       {
+        "autore": "@RGVaerialphotos",
+        "data": "26 ott",
+        "ora": "07:45",
+        "testo": "Ship 43 è rientrata da Massey's: ora tocca a Ship 42",
+        "url": "https://x.com/RGVaerialphotos/status/2114609355538714943",
+        "media": "video",
+        "id": "2114609355538714943",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114609025484800000/img/uzcqj2ptmuXf29zA.jpg",
+            "w": 2560,
+            "h": 1440
+          }
+        ]
+      },
+      {
+        "autore": "@NASASpaceflight",
+        "data": "26 ott",
+        "ora": "05:18",
+        "testo": "Ship 43 imbocca la Highway 4 sotto la Luna",
+        "url": "https://x.com/NASASpaceflight/status/2114572229958574344",
+        "media": "video",
+        "id": "2114572229958574344",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114572166893051904/img/aiaTHUNU3tW06NVp.jpg",
+            "w": 1104,
+            "h": 620
+          }
+        ]
+      },
+      {
+        "autore": "@NASASpaceflight",
+        "data": "26 ott",
+        "ora": "05:01",
+        "testo": "Doppio trasporto: S43 (Flight 16) rientra, S42 (Flight 15) va a Massey's",
+        "url": "https://x.com/NASASpaceflight/status/2114568166651428965",
+        "media": "video",
+        "id": "2114568166651428965",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114567980231053312/img/EitC83F_WspGNa1A.jpg",
+            "w": 1112,
+            "h": 620
+          }
+        ]
+      },
+      {
+        "autore": "@VickiCocks15",
+        "data": "26 ott",
+        "ora": "02:46",
+        "testo": "Il supporto di test arriva in Mega Bay 2 per portare S42 allo static fire",
+        "url": "https://x.com/VickiCocks15/status/2114534121431257442",
+        "media": "video",
+        "id": "2114534121431257442",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114533899518779392/img/vdhMidJHhgrFsM8w.jpg",
+            "w": 1280,
+            "h": 720
+          }
+        ]
+      },
+      {
+        "autore": "@VickiCocks15",
+        "data": "26 ott",
+        "ora": "00:15",
+        "testo": "Ship 45 cresce: arriva la cupola anteriore in Mega Bay 2",
+        "url": "https://x.com/VickiCocks15/status/2114496160027349138",
+        "media": "video",
+        "id": "2114496160027349138",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114495907634831360/img/jU8dGUhcHLUKdm65.jpg",
+            "w": 1280,
+            "h": 720
+          }
+        ]
+      },
+      {
         "autore": "@mcrs987",
-        "data": "25 ott",
-        "ora": "05:19",
-        "testo": "Modello 3D di Starship a tutta altezza, con vista interna",
-        "url": "https://x.com/mcrs987/status/2114210194427203858",
-        "media": "2 foto",
-        "id": "2114210194427203858",
+        "data": "26 ott",
+        "ora": "06:14",
+        "testo": "Modello 3D: serbatoio e condotto del metano liquido",
+        "url": "https://x.com/mcrs987/status/2114586467775152237",
+        "media": "foto",
+        "id": "2114586467775152237",
         "immagini": [
           {
             "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVcu8UhXIAEby0-.jpg",
-            "w": 2848,
-            "h": 2144
-          },
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVcu5EpWEAAVH-8.jpg",
-            "w": 874,
-            "h": 2076
-          }
-        ]
-      },
-      {
-        "autore": "@VickiCocks15",
-        "data": "25 ott",
-        "ora": "00:38",
-        "testo": "Arriva un supporto alternativo in Mega Bay 2: Ship 45 posata all'ingresso",
-        "url": "https://x.com/VickiCocks15/status/2114124378610737526",
-        "media": "video",
-        "id": "2114124378610737526",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2114124252857151488/img/h5yE9__O-FNJKUxi.jpg",
-            "w": 1280,
-            "h": 720
-          }
-        ]
-      },
-      {
-        "autore": "@VickiCocks15",
-        "data": "24 ott",
-        "ora": "21:24",
-        "testo": "Rimossi da Mega Bay 1 gli attrezzi PEZ della prua di S45",
-        "url": "https://x.com/VickiCocks15/status/2114075529892733139",
-        "media": "video",
-        "id": "2114075529892733139",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2114075199318446080/img/UoRPVgWrVBB0WSl-.jpg",
-            "w": 1280,
-            "h": 720
-          }
-        ]
-      },
-      {
-        "autore": "@VickiCocks15",
-        "data": "24 ott",
-        "ora": "21:02",
-        "testo": "B24: la sezione F3:4 entra in Mega Bay 1 e completa il corpo",
-        "url": "https://x.com/VickiCocks15/status/2114069967607881863",
-        "media": "video",
-        "id": "2114069967607881863",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2114069617912008704/img/mVMe9YULpMqcLq36.jpg",
-            "w": 1280,
-            "h": 720
-          }
-        ]
-      },
-      {
-        "autore": "@ENNEPS",
-        "data": "24 ott",
-        "ora": "08:43",
-        "testo": "Ship 43: più cicli crio in 10 ore a Massey's",
-        "url": "https://x.com/ENNEPS/status/2113884113765646669",
-        "media": "video",
-        "id": "2113884113765646669",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2113883927588855808/img/ICrtDMt8hOJvh2hr.jpg",
-            "w": 1920,
-            "h": 1080
-          }
-        ]
-      },
-      {
-        "autore": "@VickiCocks15",
-        "data": "24 ott",
-        "ora": "20:46",
-        "testo": "Il carrello di trasporto del booster rientra in Mega Bay 1 dopo oltre 24 ore",
-        "url": "https://x.com/VickiCocks15/status/2114065984214417481",
-        "media": "video",
-        "id": "2114065984214417481",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2114065738646331393/img/El4yFx4a7xET2XfR.jpg",
-            "w": 1280,
-            "h": 720
+            "url": "https://pbs.twimg.com/media/HViE-j_WgAAC5Mk.jpg",
+            "w": 1842,
+            "h": 2056
           }
         ]
       }
     ],
     "test": [
       {
+        "autore": "@SpaceX",
+        "data": "25 ott",
+        "ora": "20:49",
+        "testo": "Static fire a piena durata con 33 motori per il booster del Flight 15",
+        "url": "https://x.com/SpaceX/status/2114444137067844004",
+        "media": "2 video",
+        "id": "2114444137067844004",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114442950600015872/img/ZlS2P1zA1XoYpvu9.jpg",
+            "w": 3840,
+            "h": 2160
+          },
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114442993151229953/img/u9-AQorDCh3sesXn.jpg",
+            "w": 3840,
+            "h": 2160
+          }
+        ]
+      },
+      {
         "autore": "@RoughRidersShow",
         "data": "25 ott",
-        "ora": "05:44",
-        "testo": "Telecamere pronte per il possibile static fire di B22",
-        "url": "https://x.com/RoughRidersShow/status/2114216609204117533",
+        "ora": "17:01",
+        "testo": "La telecamera NSF davanti al Pad 2 è sopravvissuta allo static fire",
+        "url": "https://x.com/RoughRidersShow/status/2114386967236612300",
         "media": "foto",
-        "id": "2114216609204117533",
+        "id": "2114386967236612300",
         "immagini": [
           {
             "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVc0yE8XsAAsSG5.jpg",
+            "url": "https://pbs.twimg.com/media/HVfPvKrW0AErPX6.jpg",
             "w": 2048,
             "h": 1536
           }
         ]
       },
       {
-        "autore": "@VickiCocks15",
+        "autore": "@wvmattz",
         "data": "25 ott",
-        "ora": "01:47",
-        "testo": "Avviso stradale 25-26 ott: forse S43 rientra e S42 va a Massey's",
-        "url": "https://x.com/VickiCocks15/status/2114141841251819581",
-        "media": "foto",
-        "id": "2114141841251819581",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVbwQEXW0AAWoUu.png",
-            "w": 403,
-            "h": 236
-          }
-        ]
-      },
-      {
-        "autore": "@VickiCocks15",
-        "data": "24 ott",
-        "ora": "20:56",
-        "testo": "Ordinanza del sindaco per i test del booster: 25 ott, riserva 26 ott",
-        "url": "https://x.com/VickiCocks15/status/2114068594879529440",
-        "media": "foto",
-        "id": "2114068594879529440",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVat6-fXkAAX2yh.png",
-            "w": 675,
-            "h": 416
-          }
-        ]
-      },
-      {
-        "autore": "@LabPadre",
-        "data": "24 ott",
-        "ora": "20:36",
-        "testo": "B22 sollevato sul supporto di lancio dopo il trasferimento notturno",
-        "url": "https://x.com/LabPadre/status/2114063568735768864",
+        "ora": "15:50",
+        "testo": "Replay multi-angolo dello static fire di B22",
+        "url": "https://x.com/wvmattz/status/2114369055129833584",
         "media": "video",
-        "id": "2114063568735768864",
+        "id": "2114369055129833584",
         "immagini": [
           {
             "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2114063107282583552/img/uMyR4JT7EZ7gOP-t.jpg",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114368887894441984/img/sK79NZXumMWzQK_Q.jpg",
+            "w": 1920,
+            "h": 1080
+          }
+        ]
+      },
+      {
+        "autore": "@VickiCocks15",
+        "data": "25 ott",
+        "ora": "15:10",
+        "testo": "Lo static fire di B22: avvicinamento accelerato, accensione a velocità reale",
+        "url": "https://x.com/VickiCocks15/status/2114359041774465474",
+        "media": "video",
+        "id": "2114359041774465474",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114358767156449280/img/89r-zm_D-t85jOs-.jpg",
             "w": 1280,
             "h": 720
           }
         ]
       },
       {
-        "autore": "@ENNEPS",
-        "data": "24 ott",
-        "ora": "18:48",
-        "testo": "Il «Chopstick Hug» di B22 al Pad 2",
-        "url": "https://x.com/ENNEPS/status/2114036398521041326",
+        "autore": "@NASASpaceflight",
+        "data": "25 ott",
+        "ora": "14:24",
+        "testo": "Flight 15: static fire di Booster 22!",
+        "url": "https://x.com/NASASpaceflight/status/2114347288739098706",
         "media": "video",
-        "id": "2114036398521041326",
+        "id": "2114347288739098706",
         "immagini": [
           {
             "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2114034657666678784/img/5ioKeWRt74WLg_FD.jpg",
-            "w": 1920,
-            "h": 1080
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114347185550626816/img/i8UYncP-HTOjbnOA.jpg",
+            "w": 1104,
+            "h": 620
           }
         ]
       },
       {
-        "autore": "@NASASpaceflight",
-        "data": "24 ott",
-        "ora": "15:55",
-        "testo": "B22 in volo sui chopsticks verso il supporto del Pad 2",
-        "url": "https://x.com/NASASpaceflight/status/2113992853093601306",
-        "media": "video",
-        "id": "2113992853093601306",
+        "autore": "@mcrs987",
+        "data": "25 ott",
+        "ora": "14:37",
+        "testo": "L'unico uccello per niente turbato dallo static fire",
+        "url": "https://x.com/mcrs987/status/2114350693976834399",
+        "media": "foto",
+        "id": "2114350693976834399",
         "immagini": [
           {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2113992589888139264/img/bB8CVzITzFXv4AFu.jpg",
-            "w": 1920,
-            "h": 1080
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVeuv1vXoAAK7tm.jpg",
+            "w": 1077,
+            "h": 911
           }
         ]
       }
     ],
     "lanci": [
       {
-        "autore": "@mcrs987",
-        "data": "25 ott",
-        "ora": "05:49",
-        "testo": "Render dello stack completo di Starship",
-        "url": "https://x.com/mcrs987/status/2114217755889078558",
-        "media": "foto",
-        "id": "2114217755889078558",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVc11vJXMAAPGdw.jpg",
-            "w": 2048,
-            "h": 1152
-          }
-        ]
-      },
-      {
-        "autore": "@mcrs987",
-        "data": "25 ott",
-        "ora": "05:33",
-        "testo": "Render: vista dal basso di booster e Ship",
-        "url": "https://x.com/mcrs987/status/2114213679067771212",
-        "media": "foto",
-        "id": "2114213679067771212",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVcyIeYWgAAYDWm.jpg",
-            "w": 3340,
-            "h": 2066
-          }
-        ]
-      },
-      {
-        "autore": "@ENNEPS",
-        "data": "24 ott",
-        "ora": "14:13",
-        "testo": "B22 arriva al Pad 2 per la campagna di test del Flight 15",
-        "url": "https://x.com/ENNEPS/status/2113967218405081234",
+        "autore": "@RGVaerialphotos",
+        "data": "26 ott",
+        "ora": "07:57",
+        "testo": "B22 sul ringwall di trasporto: torna in Mega Bay 1 per i preparativi finali al volo",
+        "url": "https://x.com/RGVaerialphotos/status/2114612462184178003",
         "media": "video",
-        "id": "2113967218405081234",
+        "id": "2114612462184178003",
         "immagini": [
           {
             "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2113965967302594560/img/Sv8GULJS9qUSDtzK.jpg",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114611777719910401/img/cvKXMBzJ6OeS9pDs.jpg",
+            "w": 3840,
+            "h": 2160
+          }
+        ]
+      },
+      {
+        "autore": "@RGVaerialphotos",
+        "data": "26 ott",
+        "ora": "05:49",
+        "testo": "Booster 22 sollevato ad altezza di cattura",
+        "url": "https://x.com/RGVaerialphotos/status/2114580247240982591",
+        "media": "foto",
+        "id": "2114580247240982591",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVh97ShaIAAhZ2k.jpg",
+            "w": 1360,
+            "h": 765
+          }
+        ]
+      },
+      {
+        "autore": "@mcrs987",
+        "data": "26 ott",
+        "ora": "05:35",
+        "testo": "B22 portato in cima alla torre: i Raptor visti dalle telecamere NSF",
+        "url": "https://x.com/mcrs987/status/2114576555041317267",
+        "media": "foto",
+        "id": "2114576555041317267",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVh7_4YWQAA4NEl.jpg",
+            "w": 3298,
+            "h": 1856
+          }
+        ]
+      },
+      {
+        "autore": "@RoughRidersShow",
+        "data": "26 ott",
+        "ora": "05:07",
+        "testo": "Telecamere NSF schierate per la notte dei doppi trasporti",
+        "url": "https://x.com/RoughRidersShow/status/2114569635597066658",
+        "media": "foto",
+        "id": "2114569635597066658",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVh13_OWYAALTh0.jpg",
+            "w": 2048,
+            "h": 1536
+          }
+        ]
+      },
+      {
+        "autore": "@NASASpaceflight",
+        "data": "25 ott",
+        "ora": "23:07",
+        "testo": "B22 completa lo static fire in vista del Flight 15 di novembre",
+        "url": "https://x.com/NASASpaceflight/status/2114478974818459882",
+        "media": "video",
+        "id": "2114478974818459882",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114478861119332353/img/AXpDlOdlSig_Jp5J.jpg",
             "w": 1920,
             "h": 1080
           }
         ]
       },
       {
-        "autore": "@NASASpaceflight",
-        "data": "24 ott",
-        "ora": "04:35",
-        "testo": "Starbase e la Luna: video riassuntivo",
-        "url": "https://x.com/NASASpaceflight/status/2113821637908877638",
-        "media": "video",
-        "id": "2113821637908877638",
+        "autore": "@RGVaerialphotos",
+        "data": "26 ott",
+        "ora": "03:19",
+        "testo": "Riepilogo Starbase, a partire dallo static fire di B22",
+        "url": "https://x.com/RGVaerialphotos/status/2114542394565935287",
+        "media": "2 video",
+        "id": "2114542394565935287",
         "immagini": [
           {
             "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2113821563334053889/img/w0aUYXXC7Nz55Yvv.jpg",
-            "w": 1096,
-            "h": 640
-          }
-        ]
-      },
-      {
-        "autore": "@NASASpaceflight",
-        "data": "23 ott",
-        "ora": "21:12",
-        "testo": "Tappe SpaceX: nel Q4 2026 prime catture V3, pad 39A e primo volo dalla Florida",
-        "url": "https://x.com/NASASpaceflight/status/2113710275132117395",
-        "media": "foto",
-        "id": "2113710275132117395",
-        "immagini": [
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114539781657116673/img/wg6JD0hBLPCObNLv.jpg",
+            "w": 3840,
+            "h": 2160
+          },
           {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVVoOodXkAADN4v.jpg",
-            "w": 1116,
-            "h": 639
-          }
-        ]
-      },
-      {
-        "autore": "@NASASpaceflight",
-        "data": "23 ott",
-        "ora": "20:56",
-        "testo": "Foto della Starfactory all'evento NASA: Raptor aggiornati per il Flight 15",
-        "url": "https://x.com/NASASpaceflight/status/2113706046992613501",
-        "media": "foto",
-        "id": "2113706046992613501",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVVkXQ-XYAE2eT0.jpg",
-            "w": 1116,
-            "h": 748
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2114540366166953984/img/DBc8tUghPlKHQ65e.jpg",
+            "w": 3840,
+            "h": 2160
           }
         ]
       }
@@ -1558,7 +1610,7 @@
         },
         {
           "label": "Data",
-          "value": "NET 10 dic 2026 (CADENA, non ufficiale)"
+          "value": "NET 10 dic 2026 (CADENA, non ufficiale); stima NSF del 25 ott: fine gennaio 2027"
         },
         {
           "label": "Licenza FAA",
@@ -1578,9 +1630,13 @@
         {
           "label": "@NASASpaceflight, 23 ott",
           "url": "https://x.com/NASASpaceflight/status/2113710275132117395"
+        },
+        {
+          "label": "NSF, 25 ott",
+          "url": "https://www.nasaspaceflight.com/2026/10/roberts-road-expansion-flight-16/"
         }
       ],
-      "dettagli": "Missione indicata come Starlink 30-1 (non confermato). Trasporto via chiatta «You'll Thank Me Later», controlli nella Gigabay di Roberts Road, static fire del booster al 39A."
+      "dettagli": "Missione indicata come Starlink 30-1 (non confermato). Stime NSF: B23 pronto per lo static fire a fine novembre (possibile static fire al 39A a metà dicembre), S43 static fire a metà dicembre e spedizione al KSC a inizio-metà gennaio, poi WDR e primo volo dal 39A forse a fine gennaio. Trasporto via chiatta «You'll Thank Me Later», controlli nella Gigabay di Roberts Road."
     },
     {
       "titolo": "Dettagli Flight 15",
@@ -1589,6 +1645,10 @@
         {
           "label": "Data",
           "value": "NET 8 nov 2026 (CADENA, non ufficiale); Musk: prima del Thanksgiving (26 nov)"
+        },
+        {
+          "label": "Static fire",
+          "value": "B22 completato il 25 ott (33 motori, piena durata); S42 in arrivo a Massey's per il suo static fire (26 ott)"
         },
         {
           "label": "NASA, 23 ott",
@@ -1627,6 +1687,14 @@
         {
           "label": "@mcrs987, 24 ott",
           "url": "https://x.com/mcrs987/status/2114006934965657905"
+        },
+        {
+          "label": "@SpaceX, 25 ott",
+          "url": "https://x.com/SpaceX/status/2114444137067844004"
+        },
+        {
+          "label": "@mcrs987, 25 ott (static fire)",
+          "url": "https://x.com/mcrs987/status/2114347537440416231"
         }
       ]
     }
