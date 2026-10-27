@@ -91,7 +91,7 @@
       var x = q[b.booster] || {};
       var fr = b.fhRuolo || (/laterale FH/i.test(x.note || "") ? "laterale" : /core centrale FH/i.test(x.note || "") ? "core" : null);
       var last = b.voli[b.voli.length - 1] || {}, first = b.voli[0] || {};
-      return { booster: b.booster, nome: b.nome, stato: stato, fh: b.fh, fhRuolo: fr, ruolo: RUOLO[fr] || null, voli: b.nVoli, perAnno: x.perAnno || {}, note: x.note || null,
+      return { booster: b.booster, nome: b.nome, stato: stato, fh: b.fh, fhRuolo: fr, ruolo: RUOLO[fr] || null, voli: b.nVoli, perAnno: x.perAnno || {}, note: x.note || null, statoFile: x.stato || null,
                primo: first.data, primoM: first.missione, ultimo: last.data, ultimoM: last.missione, lista: b.voli };
     }
     return D.falcon9.attivi.map(function (b) { return map(b, "Attivo"); })
@@ -139,20 +139,22 @@
         var t = riep(y).pad;
         return { type: "bar", labels: t.map(function (x) { return x.label; }),
           datasets: [{ label: "Lanci", data: t.map(function (x) { return x.valore; }), backgroundColor: t.map(function (x, i) { return PALETTE[i % PALETTE.length]; }), borderRadius: 6 }],
-          opts: { plugins: { legend: { display: false } } } };
+          opts: { plugins: { legend: { display: false } } },
+          nota: riep(y).contatiDallaLista ? "Il file non ha un riepilogo dei pad per il " + y + ": conteggio della colonna «Pad» della lista lanci." : "" };
       } },
     { id: "atterraggi", tab: "lanci", title: "Atterraggi per piattaforma", years: function () { return anniCon("atterraggi"); },
       build: function (y) {
         var r = riep(y), t = r.atterraggi, tot = r.atterraggiTotali || {};
-        var mare = { ASOG: 1, JRTI: 1, OCISLY: 1 };
+        var mare = /^(ASOG|JRTI|OCISLY)\b/;
         var note = [];
         if (tot.Mare != null) note.push("in mare " + nf(tot.Mare));
         if (tot.Terra != null) note.push("a terra " + nf(tot.Terra));
         if (tot["Non recuperati"] != null) note.push("non recuperati " + nf(tot["Non recuperati"]));
         return { type: "bar", labels: t.map(function (x) { return x.label; }),
-          datasets: [{ label: "Atterraggi", data: t.map(function (x) { return x.valore; }), backgroundColor: t.map(function (x) { return mare[x.label] ? C.prototipi : x.label === "Mechazilla" ? C.test : C.siti; }), borderRadius: 6 }],
+          datasets: [{ label: "Atterraggi", data: t.map(function (x) { return x.valore; }), backgroundColor: t.map(function (x) { return mare.test(x.label) ? C.prototipi : x.label === "Mechazilla" ? C.test : C.siti; }), borderRadius: 6 }],
           opts: { plugins: { legend: { display: false } } },
-          nota: "Blu: navi drone in mare · giallo: zone di atterraggio a terra" + (note.length ? ". " + y + ": " + note.join(", ") + "." : ".") };
+          nota: "Blu: navi drone in mare · giallo: zone di atterraggio a terra" + (note.length ? ". " + y + ": " + note.join(", ") + "." : ".") +
+            (r.contatiDallaLista ? " Il file non ha un riepilogo degli atterraggi per il " + y + ": conteggio della colonna «Atterraggio» della lista lanci." : "") };
       } },
 
     { id: "abbonati", tab: "starlink", title: "Abbonati Starlink nel tempo", sub: "Solo le rilevazioni presenti nel file", wide: true,
@@ -160,6 +162,7 @@
         var all = D.starlink.abbonati, a = abbOk(), esclusi = all.filter(function (x) { return x.daVerificare; });
         var pts = a.map(function (x) { var m = parseISO(x.data); return { x: Date.UTC(+m[1], +m[2] - 1, +m[3]), y: x.abbonati, r: x }; });
         var nota = a.length + " rilevazioni a intervalli irregolari, da " + fMeseAnno(a[0].data) + " al " + (a[a.length - 1].dataEsatta ? fData(a[a.length - 1].dataEsatta) : fMeseAnno(a[a.length - 1].data)) + " (ultimo dato nel file). Nessun punto è stimato.";
+        if (!esclusi.length && D.starlink.abbonatiNota) nota += " Nota del file: " + D.starlink.abbonatiNota;
         if (esclusi.length) nota += " Escluso dal grafico: " + esclusi.map(function (x) { return NF.format(x.abbonati) + " (" + fMeseAnno(x.data) + ")"; }).join(", ") + ", segnalato nel file come «Da verificare»" + (esclusi[0].nota ? " (" + esclusi[0].nota.replace(/^da verificare:\s*/i, "") + ")" : "") + ".";
         return { type: "line", datasets: [{ label: "Abbonati", data: pts, borderColor: C.prossimo, backgroundColor: alpha(C.prossimo, .15), fill: true, tension: .25, pointRadius: 4, pointHoverRadius: 6 }],
           opts: { parsing: false, plugins: { legend: { display: false }, tooltip: { callbacks: { title: function (it) { return abbQuando(it[0].raw.r); }, label: function (it) { return NF.format(it.raw.y) + " abbonati"; }, afterLabel: function (it) { return it.raw.r.nota || ""; } } } },
@@ -258,14 +261,14 @@
   var TABLES = [
     { id: "t-lanci", tab: "lanci", title: "Tutti i lanci", years: function () { return anniLanci(); }, rows: lanciRows, cols: LANCI_COLS,
       filters: ["tipologia", "vettore", "pad", "mese"], sort: ["n", -1], open: true,
-      note: "Anni 2021–2023: booster, tipologia e orbita dal 2022; pad e atterraggio dal foglio «Pad & atterragi» (2022–2023)." },
+      note: "Orbita di rilascio solo per il 2021–2023 (colonna assente nelle liste 2024–2026). Pad e atterraggio 2022–2023 dal foglio «Pad & atterragi»." },
 
     { id: "t-starlink", tab: "starlink", title: "Missioni Starlink: satelliti per missione", years: function () { return Object.keys(D.starlink.liste).map(Number).sort(function (a, b) { return b - a; }); },
       rows: function (y) { return D.starlink.liste[String(y)]; },
       cols: [{ key: "missione", label: "Missione" }, { key: "satelliti", label: "Satelliti", type: "num" }, { key: "dtc", label: "Di cui Direct to Cell", type: "num" }, { key: "massaKg", label: "Massa (kg)", type: "num" }, { key: "mese", label: "Mese", type: "num" }],
       sort: null },
     { id: "t-gusci", tab: "starlink", title: "Gusci orbitali", rows: function () { return D.starlink.gusci; },
-      cols: [{ key: "guscio", label: "Guscio" }, { key: "inclinazione", label: "Inclinazione" }, { key: "altitudine", label: "Altitudine" }, { key: "previsti", label: "Previsti", type: "num" }, { key: "lanciati", label: "Lanciati", type: "num" }, { key: "ultimoLancio", label: "Ultimo lancio" }] },
+      cols: [{ key: "guscio", label: "Guscio" }, { key: "inclinazione", label: "Inclinazione" }, { key: "altitudine", label: "Altitudine" }, { key: "previsti", label: "Previsti", type: "num" }, { key: "lanciati", label: "Lanciati", type: "num" }, { key: "ultimoLancio", label: "Ultimo lancio" }, { key: "nota", label: "Nota", wrap: true }] },
     { id: "t-abbonati", tab: "starlink", title: "Abbonati Starlink", rows: function () { return D.starlink.abbonati; },
       cols: [{ key: "data", label: "Mese", type: "month" }, { key: "abbonati", label: "Abbonati", type: "num" }, { key: "stato", label: "Stato", type: "tag" }, { key: "nota", label: "Fonte / nota", wrap: true }],
       prep: function (r) { r.stato = r.daVerificare ? "Da verificare" : "OK"; return r; }, sort: ["data", -1],
@@ -274,7 +277,7 @@
       cols: [{ key: "mese", label: "Mese", nosort: true }].concat(D_ANNI_SAT()), nosearch: true },
 
     { id: "t-booster", tab: "falcon9", title: "Booster Falcon 9", rows: function () { return boosters(); },
-      cols: [{ key: "booster", label: "Booster" }, { key: "stato", label: "Stato", type: "tag" }, { key: "ruolo", label: "Ruolo FH" }, { key: "voli", label: "Voli", type: "num" },
+      cols: [{ key: "booster", label: "Booster" }, { key: "stato", label: "Stato", type: "tag" }, { key: "statoFile", label: "Stato (tabella 2026)" }, { key: "ruolo", label: "Ruolo FH" }, { key: "voli", label: "Voli", type: "num" },
              { key: "a2020", label: "2020", type: "num" }, { key: "a2021", label: "2021", type: "num" }, { key: "a2022", label: "2022", type: "num" }, { key: "a2023", label: "2023", type: "num" },
              { key: "a2024", label: "2024", type: "num" }, { key: "a2025", label: "2025", type: "num" }, { key: "a2026", label: "2026", type: "num" },
              { key: "primo", label: "Primo volo", type: "date" }, { key: "ultimoM", label: "Ultima missione" }, { key: "ultimo", label: "Data", type: "date" }, { key: "note", label: "Note" }],
@@ -302,7 +305,7 @@
         anni.forEach(function (y) { riep(y).tipologie.forEach(function (t) { (map[t.label] = map[t.label] || { tipologia: t.label })["a" + y] = t.valore; }); });
         return Object.keys(map).map(function (k) { return map[k]; });
       }, cols: function () { return [{ key: "tipologia", label: "Tipologia" }].concat(anniCon("tipologie").map(function (y) { return { key: "a" + y, label: String(y), type: "num" }; })); }, nosearch: true,
-      note: "Le etichette cambiano tra gli anni (es. «SpaceForce & NRO» nel 2023, «Transporter» poi raggruppato in «Rideshare»)." },
+      note: "Il riepilogo 2021 raggruppa Commerciale, NASA e Space Force & NRO in «Enti terzi»; dal 2024 «Transporter» è raggruppato in «Rideshare»." },
     { id: "t-rideshare", tab: "archivio", title: "Satelliti nelle missioni rideshare", years: function () { return ["2026", "2025", "2024"].filter(function (y) { return riep(y).rideshare && riep(y).rideshare.length; }); },
       rows: function (y) { return riep(y).rideshare; }, cols: [{ key: "missione", label: "Missione" }, { key: "satelliti", label: "Satelliti", type: "num" }], nosearch: true },
     { id: "t-modifiche", tab: "archivio", title: "Registro modifiche del file", rows: function () { return D.modifiche; },

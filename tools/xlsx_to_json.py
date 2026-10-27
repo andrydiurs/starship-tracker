@@ -215,12 +215,24 @@ def f9_utilizzati(ws):
     hdr, rows = block(ws, "Falcon 9 utilizzati e attivi", max_cols=14)
     out = []
     for x in rows:
-        b = {"booster": x.get("Booster"), "perAnno": {}, "totale": x.get("Totale voli"), "note": x.get("Note")}
+        b = {"booster": x.get("Booster"), "perAnno": {}, "totale": x.get("Totale voli"), "note": x.get("Note"), "stato": x.get("Stato")}
         for h in hdr:
             m = re.match(r"N voli (\d{4})", h)
             if m and x.get(h) is not None:
                 b["perAnno"][m.group(1)] = x.get(h)
         out.append(b)
+    return out
+
+
+def f9_utilizzati_conteggi(ws):
+    pos = find_title(ws, "Booster in tabella", exact=False)
+    if not pos:
+        return {}
+    r, c = pos
+    out = {}
+    while ws.cell(r, c).value is not None:
+        out[txt(ws.cell(r, c).value)] = num(ws.cell(r, c + 1).value)
+        r += 1
     return out
 
 
@@ -230,7 +242,8 @@ def archivio_lanci(wb):
     ws = wb["Lanci"]
     A = {}
     COLS = {"#": "n", "Missione": "missione", "Intervallo": "intervallo", "Partenza": "partenza",
-            "Booster": "booster", "Tipologia": "tipologia", "Orbita di rilascio": "orbita"}
+            "Booster": "booster", "Tipologia": "tipologia", "Orbita di rilascio": "orbita",
+            "Pad": "pad", "Atterraggio": "atterraggio"}
     for anno in (2021, 2022, 2023):
         pos = find_title(ws, "Lanci %d" % anno)
         if not pos:
@@ -251,7 +264,7 @@ def archivio_lanci(wb):
                 continue
             x = {"n": num(ws.cell(r, cols["n"]).value), "missione": nome,
                  "intervallo": secs(ws.cell(r, cols["intervallo"]).value), "partenza": part}
-            for k in ("booster", "tipologia", "orbita"):
+            for k in ("booster", "tipologia", "orbita", "pad", "atterraggio"):
                 if k in cols:
                     x[k] = txt(ws.cell(r, cols[k]).value)
             rows.append(x)
@@ -272,6 +285,8 @@ def archivio_lanci(wb):
             elif att and last:
                 last["altri"].append(att)
         for x in A[anno]:
+            if x.get("pad"):
+                continue
             p = pads.get(x["missione"])
             if not p and x.get("n") in byn and byn[x["n"]]["partenza"] == x["partenza"]:
                 # nome scritto diversamente: abbina per numero lancio + stessa data/ora
@@ -301,6 +316,9 @@ def riepiloghi_lanci_sheet(wb):
     R = {}
     _, rows = block(ws, "Distribuzione missioni 2023", ["k", "v"])
     R["tipologie2023"] = [x for x in kv(rows) if x["label"].upper() != "TOTALE"]
+    _, rows = block(ws, "Distribuzione missioni 2022", ["k", "v"])
+    R["tipologie2022"] = [x for x in kv(rows) if x["label"].upper() != "TOTALE"]
+    R["tipologie2022Totale"] = next((x["valore"] for x in kv(rows) if x["label"].upper() == "TOTALE"), None)
     _, rows = block(ws, "Lanci 2021: Starlink / enti terzi", ["k", "v"])
     R["tipologieTitolo2021"] = [x for x in kv(rows) if x["label"].upper() != "TOTALE"]
     R["tipologieTitolo2021Totale"] = next((x["valore"] for x in kv(rows) if x["label"].upper() == "TOTALE"), None)
@@ -340,6 +358,15 @@ def starlink(wb):
     S["missioni"]["perAnno"] = per(f9)
     S["missioni"]["perAnnoConStarship"] = per(tutti)
     _, rows = block(ws, "Gusci Orbitali", ["guscio", "inclinazione", "altitudine", "previsti", "lanciati", "ultimoLancio"])
+    # nota senza intestazione nella colonna dopo «Ultimo lancio» (es. Shell 5)
+    pos = find_title(ws, "Gusci Orbitali")
+    if pos:
+        for i, g in enumerate(rows):
+            n = txt(ws.cell(pos[0] + 2 + i, pos[1] + 6).value)
+            if n:
+                g["nota"] = n
+            if g.get("ultimoLancio") in ("—", "-", "–"):
+                g["ultimoLancio"] = None
     S["gusci"] = rows
     _, rows = block(ws, "Abbonati", ["data", "abbonati", "nota"], max_cols=3)
     ab = []
@@ -357,6 +384,15 @@ def starlink(wb):
                 y["dataEsatta"] = dmy(m.group(1))
         ab.append(y)
     S["abbonati"] = ab
+    # eventuale nota testuale sotto la tabella (es. valore escluso dalla serie)
+    pos = find_title(ws, "Abbonati")
+    if pos:
+        r = pos[0] + 2 + len(rows)
+        for rr in range(r, r + 4):
+            v = txt(ws.cell(rr, pos[1]).value)
+            if v and v.lower().startswith("nota"):
+                S["abbonatiNota"] = re.sub(r"(?i)^nota:\s*", "", v)
+                break
     liste = {}
     for anno in (2026, 2025, 2024, 2023):
         hdr, rows = block(ws, "Starlink lanciati per missione %d" % anno, max_cols=6)
@@ -500,6 +536,62 @@ def note_dati(out):
         v = voli.get(u["booster"])
         if v is not None and u.get("totale") is not None and v != u["totale"]:
             note.append("Booster %s: %s voli nel foglio Falcon 9 ma %s nella tabella «Falcon 9 utilizzati e attivi»." % (u["booster"], v, u["totale"]))
+    # --- coerenza liste vs riepiloghi
+    for anno in sorted(out["lanci"]):
+        rows, r = out["lanci"][anno], out["riepiloghi"].get(anno, {})
+        cnt = {}
+        for x in rows:
+            if x.get("tipologia"):
+                cnt[x["tipologia"]] = cnt.get(x["tipologia"], 0) + 1
+        if cnt and r.get("tipologie"):
+            for t in r["tipologie"]:
+                if t["label"] in cnt and cnt[t["label"]] != t["valore"]:
+                    note.append("Lanci %s: «%s» = %s nel riepilogo, ma %d nella colonna Tipologia della lista." % (anno, t["label"], _n(t["valore"]), cnt[t["label"]]))
+                if t["label"] not in cnt and t["valore"] and t["label"].lower() in {k.lower() for k in cnt}:
+                    note.append("Lanci %s: etichetta «%s» scritta diversamente tra riepilogo e lista." % (anno, t["label"]))
+        pc = {}
+        for x in rows:
+            if x.get("pad"):
+                pc[x["pad"]] = pc.get(x["pad"], 0) + 1
+        if pc and r.get("pad") and not r.get("contatiDallaLista"):
+            for t in r["pad"]:
+                if pc.get(t["label"], 0) != t["valore"]:
+                    note.append("Lanci %s: pad «%s» = %s nel riepilogo, ma %d nella lista." % (anno, t["label"], _n(t["valore"]), pc.get(t["label"], 0)))
+        tot = (r.get("padTotali") or {}).get("Totale") or r.get("tipologieTotale")
+        if tot is not None and tot != len(rows):
+            note.append("Lanci %s: totale riepilogo %s ma la lista ha %d lanci." % (anno, _n(tot), len(rows)))
+    # missioni Starlink per anno vs lista lanci
+    ms = {x["anno"]: x["valore"] for x in out["starlink"]["missioni"]["perAnno"]}
+    for anno, rows in out["lanci"].items():
+        if int(anno) in ms and rows and all(x.get("tipologia") for x in rows):
+            n = sum(1 for x in rows if (x.get("tipologia") or "").lower().startswith("starlink"))
+            if n != ms[int(anno)]:
+                note.append("Starlink %s: %s missioni nella tabella «Missioni Starlink», ma %d lanci Starlink nella lista (tipologia Starlink + Starlink Rideshare)." % (anno, _n(ms[int(anno)]), n))
+    sat = out["starlink"]["satelliti"]
+    sp = sum(x["valore"] or 0 for x in sat["perAnno"])
+    if sat.get("totale") is not None and sp != sat["totale"]:
+        note.append("Satelliti Starlink: totale %s ma la somma per anno è %s." % (_n(sat["totale"]), _n(sp)))
+    # booster: stato della tabella «utilizzati e attivi» vs foglio Falcon 9
+    att = {b["booster"] for b in out["falcon9"]["attivi"]}
+    per = {b["booster"] for b in out["falcon9"]["persi"]}
+    for u in out["f9Utilizzati2026"]:
+        st = (u.get("stato") or "")
+        if st.startswith("Attivo") and u["booster"] in per:
+            note.append("Booster %s: «Attivo» nella tabella «Falcon 9 utilizzati e attivi» ma tra i persi nel foglio Falcon 9." % u["booster"])
+        if st.startswith("Consumato") and u["booster"] in att:
+            note.append("Booster %s: «%s» ma tra gli attivi nel foglio Falcon 9." % (u["booster"], st))
+    c = out.get("f9UtilizzatiConteggi") or {}
+    U = out["f9Utilizzati2026"]
+    calc = {"Booster in tabella": len(U),
+            "Booster attivi": sum(1 for u in U if (u.get("stato") or "").startswith("Attivo")),
+            "Consumati nel 2026": sum(1 for u in U if (u.get("stato") or "").startswith("Consumato") and "2026" in u["stato"]),
+            "Con almeno un volo nel 2026": sum(1 for u in U if (u["perAnno"].get("2026") or 0) > 0)}
+    for k, v in c.items():
+        kk = next((x for x in calc if k.startswith(x)), None)
+        if kk and v is not None and v != calc[kk]:
+            note.append("Tabella «Falcon 9 utilizzati e attivi»: «%s» = %s, ma contando le righe risulta %d." % (k, _n(v), calc[kk]))
+    if c.get("Booster attivi") is not None and c["Booster attivi"] != len(att):
+        note.append("Booster attivi: %s nella tabella «Falcon 9 utilizzati e attivi», %d nel foglio Falcon 9." % (_n(c["Booster attivi"]), len(att)))
     return note
 
 
@@ -524,8 +616,23 @@ def main():
     riep["2023"]["tipologie"] = extra["tipologie2023"]
     riep["2023"]["perMese"] = extra["perMese2023"]
     riep["2022"]["perMese"] = extra["perMese2022"]
+    if extra["tipologie2022"]:
+        riep["2022"]["tipologie"] = extra["tipologie2022"]
+        riep["2022"]["tipologieTotale"] = extra["tipologie2022Totale"]
     riep["2021"] = {}
     archivio_extra = {"lanciPerAnnoFoglioLanci": extra["perAnno"]}
+    # 2021: nessun riepilogo pad/atterraggi nel file -> conteggio delle colonne Pad/Atterraggio della lista
+    l21 = lanci.get("2021") or []
+    if l21 and all(x.get("pad") for x in l21):
+        cp, ca = {}, {}
+        for x in l21:
+            cp[x["pad"]] = cp.get(x["pad"], 0) + 1
+            if x.get("atterraggio"):
+                ca[x["atterraggio"]] = ca.get(x["atterraggio"], 0) + 1
+        srt = lambda d: [{"label": k, "valore": v} for k, v in sorted(d.items(), key=lambda kv_: (-kv_[1], kv_[0]))]
+        riep["2021"]["pad"], riep["2021"]["padTotali"] = srt(cp), {"Totale": len(l21)}
+        riep["2021"]["atterraggi"] = srt(ca)
+        riep["2021"]["contatiDallaLista"] = True
     # riepilogo "Lanci 2021: Starlink / enti terzi": usato come tipologie 2021 solo se il
     # totale coincide con le righe della lista 2021 (in una versione del file valeva 61 = 2022).
     t21 = extra["tipologieTitolo2021Totale"]
@@ -556,6 +663,7 @@ def main():
         "riepiloghi": riep,
         "vettori": vettori(wb["Lanci 2026"]),
         "f9Utilizzati2026": f9_utilizzati(wb["Lanci 2026"]),
+        "f9UtilizzatiConteggi": f9_utilizzati_conteggi(wb["Lanci 2026"]),
         "falcon9": falcon9(wb),
         "starlink": starlink(wb),
         "dragon": dragon(wb),
