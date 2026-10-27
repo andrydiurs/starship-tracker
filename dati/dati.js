@@ -250,8 +250,8 @@
                 label: function (it) { return it.dataset.label + ": " + it.raw + (it.raw === 1 ? " volo" : " voli"); } } } } },
           nota: b.filter(function (x) { return x.stato === "Attivo"; }).length + " booster attivi e " + b.filter(function (x) { return x.stato !== "Attivo"; }).length +
             " persi o non recuperati (✕), dal foglio Falcon 9. FH core = core centrale Falcon Heavy, FH lat. = booster laterale. Atterraggi presi dalle liste dei lanci 2021–2026 abbinando booster e missione: " +
-            nf(tot - ign) + " voli su " + nf(tot) + " hanno l'atterraggio; " + nf(ign) + " sono «Sconosciuto» (" + nf(pre) + " prima del 2021, " + nf(ign - pre) +
-            " dal 2021 senza un atterraggio attribuibile a quel booster nelle liste: vedi «Note sui dati» nell'archivio). Booster laterali Falcon Heavy dalle sotto-righe ↳ delle liste." };
+            nf(tot - ign) + " voli su " + nf(tot) + " hanno l'atterraggio; " + nf(ign) + " sono «Sconosciuto» (" + (ign === pre ? "tutti voli prima del 2021: le liste dei lanci del file partono dal 2021" :
+            nf(pre) + " prima del 2021, " + nf(ign - pre) + " dal 2021 senza un atterraggio attribuibile a quel booster nelle liste: vedi «Note sui dati» nell'archivio") + "). Booster laterali Falcon Heavy dalle sotto-righe ↳ delle liste." };
       } },
 
     { id: "dragonUso", tab: "dragon", title: "Missioni per capsula Dragon",
@@ -405,7 +405,7 @@
     archivio: function () {
       var items = [];
       (D.meta.avvisi || []).concat(D.meta.note || []).forEach(function (a) { items.push(esc(a)); });
-      if (!items.length) items.push("Nessuna incoerenza trovata dai controlli automatici (liste dei lanci contro riepiloghi di tipologie, pad e atterraggi, totali per anno, missioni e satelliti Starlink, stato dei booster).");
+      if (!items.length) items.push("Nessuna incoerenza trovata dai controlli automatici (liste dei lanci contro riepiloghi di tipologie, pad e atterraggi, totali per anno, missioni e satelliti Starlink, stato dei booster, voli dei booster del foglio Falcon 9 contro le liste dei lanci).");
       return '<div><div class="sec-head"><h3>Note sui dati</h3></div><ul class="oddities">' + items.map(function (x) { return "<li>" + x + "</li>"; }).join("") + "</ul></div>";
     }
   };
