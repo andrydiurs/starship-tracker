@@ -226,21 +226,34 @@ def f9_utilizzati(ws):
 
 # ---------------------------------------------------------------- archivio 2021–2023
 def archivio_lanci(wb):
+    """Tabelle 'Lanci 2021/2022/2023' del foglio Lanci, colonne trovate per intestazione."""
     ws = wb["Lanci"]
     A = {}
-    # (anno, col #, col missione, col intervallo, col partenza, col booster, col tipologia, col orbita)
-    for anno, c, extra in ((2021, 1, None), (2022, 8, None), (2023, 15, (21, 22, 23))):
+    COLS = {"#": "n", "Missione": "missione", "Intervallo": "intervallo", "Partenza": "partenza",
+            "Booster": "booster", "Tipologia": "tipologia", "Orbita di rilascio": "orbita"}
+    for anno in (2021, 2022, 2023):
+        pos = find_title(ws, "Lanci %d" % anno)
+        if not pos:
+            warn("tabella non trovata: Lanci / Lanci %d" % anno)
+            A[anno] = []
+            continue
+        r0, c0 = pos
+        cols, c = {}, c0
+        while ws.cell(r0 + 1, c).value is not None:
+            h = txt(ws.cell(r0 + 1, c).value)
+            if h in COLS and COLS[h] not in cols:
+                cols[COLS[h]] = c
+            c += 1
         rows = []
-        for r in range(3, ws.max_row + 1):
-            nome, part = txt(ws.cell(r, c + 1).value), clean(ws.cell(r, c + 3).value)
+        for r in range(r0 + 2, ws.max_row + 1):
+            nome, part = txt(ws.cell(r, cols["missione"]).value), clean(ws.cell(r, cols["partenza"]).value)
             if not nome or not part:
                 continue
-            x = {"n": num(ws.cell(r, c).value), "missione": nome,
-                 "intervallo": secs(ws.cell(r, c + 2).value), "partenza": part}
-            if extra:
-                x["booster"] = txt(ws.cell(r, extra[0]).value)
-                x["tipologia"] = txt(ws.cell(r, extra[1]).value)
-                x["orbita"] = txt(ws.cell(r, extra[2]).value)
+            x = {"n": num(ws.cell(r, cols["n"]).value), "missione": nome,
+                 "intervallo": secs(ws.cell(r, cols["intervallo"]).value), "partenza": part}
+            for k in ("booster", "tipologia", "orbita"):
+                if k in cols:
+                    x[k] = txt(ws.cell(r, cols[k]).value)
             rows.append(x)
         A[anno] = rows
     # Pad e atterraggi 2022–2023
@@ -315,16 +328,35 @@ def starlink(wb):
             S["satelliti"]["totaleGen1"] = x.get("Totale")
         if str(x["Mese"]).upper() == "TOTALE GEN2":
             S["satelliti"]["totaleGen2"] = x.get("Totale")
-    hdr, rows = block(ws, "Missioni Starlink")
+    hdr, rows = block(ws, "Missioni Starlink", exact=False)
     anniM = [h for h in hdr[1:] if re.fullmatch(r"\d{4}", h)]
     S["missioni"] = {"anni": sorted(int(a) for a in anniM),
                      "perMese": [{"mese": x["Mese"], **{a: x.get(a) for a in anniM}} for x in rows if x["Mese"] in MESI]}
-    tot = next((x for x in rows if str(x["Mese"]).upper() == "TOTALE"), None)
-    S["missioni"]["perAnno"] = sorted(({"anno": int(a), "valore": tot.get(a)} for a in anniM), key=lambda y: y["anno"]) if tot else []
+    # righe totale: "Totale Falcon 9" e "Totale Falcon 9 + Starship" (nei file vecchi solo "Totale")
+    tots = {str(x["Mese"]).strip(): x for x in rows if str(x["Mese"]).upper().startswith("TOTALE")}
+    f9 = tots.get("Totale Falcon 9") or tots.get("Totale")
+    tutti = tots.get("Totale Falcon 9 + Starship")
+    per = lambda t: sorted(({"anno": int(a), "valore": t.get(a)} for a in anniM), key=lambda y: y["anno"]) if t else []
+    S["missioni"]["perAnno"] = per(f9)
+    S["missioni"]["perAnnoConStarship"] = per(tutti)
     _, rows = block(ws, "Gusci Orbitali", ["guscio", "inclinazione", "altitudine", "previsti", "lanciati", "ultimoLancio"])
     S["gusci"] = rows
-    _, rows = block(ws, "Abbonati", ["data", "abbonati"])
-    S["abbonati"] = [x for x in rows if x.get("abbonati") is not None]
+    _, rows = block(ws, "Abbonati", ["data", "abbonati", "nota"], max_cols=3)
+    ab = []
+    for x in rows:
+        if x.get("abbonati") is None:
+            continue
+        y = {"data": x["data"], "abbonati": x["abbonati"]}
+        nota = txt(x.get("nota"))
+        if nota:
+            y["nota"] = nota.lstrip("⚠").strip()
+            if "da verificare" in nota.lower():
+                y["daVerificare"] = True
+            m = re.search(r"\bal (\d{1,2}/\d{1,2}/\d{4})", nota)
+            if m:
+                y["dataEsatta"] = dmy(m.group(1))
+        ab.append(y)
+    S["abbonati"] = ab
     liste = {}
     for anno in (2026, 2025, 2024, 2023):
         hdr, rows = block(ws, "Starlink lanciati per missione %d" % anno, max_cols=6)
@@ -363,8 +395,10 @@ def falcon9(wb):
                 m = re.match(r"^(.*?):\s*(\d{1,2}/\d{1,2}/\d{4})\s*$", v)
                 voli.append({"n": n, "missione": (m.group(1).strip() if m else v), "data": dmy(m.group(2)) if m else None})
             code = re.search(r"B\d{4}", nome)
+            ruolo = ("core" if re.match(r"^FH-c:", nome) else "laterale" if re.match(r"^FH:", nome)
+                     else "ex" if "ex FH" in nome else "fh" if "FH" in nome else None)
             res.append({"nome": nome, "booster": code.group(0) if code else nome,
-                        "fh": "FH" in nome, "voli": voli, "nVoli": len(voli)})
+                        "fh": "FH" in nome, "fhRuolo": ruolo, "voli": voli, "nVoli": len(voli)})
         return res
     pos_att = find_title(ws, "Booster attivi")
     pos_persi = find_title(ws, "Booster distrutti")
@@ -423,6 +457,52 @@ def modifiche(wb):
 
 
 # ---------------------------------------------------------------- main
+MESI_IT = ["gen", "feb", "mar", "apr", "mag", "giu", "lug", "ago", "set", "ott", "nov", "dic"]
+
+
+def _n(v):
+    return "{:,}".format(v).replace(",", ".") if isinstance(v, int) else str(v)
+
+
+def note_dati(out):
+    """Controlli di completezza/coerenza sui dati esportati: elenco di note leggibili
+    per la sezione «Note sui dati». Si svuota da sola quando il file viene corretto."""
+    note = []
+    for g in out["starlink"]["gusci"]:
+        if g.get("previsti") is not None and g.get("lanciati") is None:
+            note.append("Gusci orbitali: «%s» ha %s satelliti previsti, ma «lanciati» e «ultimo lancio» sono vuoti nel file." % (g["guscio"], _n(g["previsti"])))
+    for x in out["starlink"]["abbonati"]:
+        if x.get("daVerificare"):
+            y, m = x["data"][:4], int(x["data"][5:7])
+            note.append("Abbonati Starlink: il valore %s (%s %s) è segnalato «Da verificare» nel file%s; è escluso dal grafico e dal numero chiave, resta visibile in tabella." % (
+                _n(x["abbonati"]), MESI_IT[m - 1], y, (" (" + re.sub(r"(?i)^da verificare:\s*", "", x["nota"]) + ")") if x.get("nota") else ""))
+    campi = (("booster", "booster"), ("tipologia", "tipologia"), ("orbita", "orbita di rilascio"), ("pad", "pad di lancio"))
+    for anno in sorted(out["lanci"]):
+        rows = out["lanci"][anno]
+        for k, nome in campi:
+            vuoti = [r for r in rows if r.get(k) in (None, "")]
+            if not vuoti:
+                continue
+            if len(vuoti) == len(rows):
+                if k == "pad":
+                    note.append("Lanci %s: pad di lancio e atterraggio non presenti nel file." % anno)
+                elif k == "booster":
+                    note.append("Lanci %s: booster, tipologia e orbita non presenti nel file." % anno)
+                continue
+            es = ", ".join(r.get("missione") or "?" for r in vuoti[:4])
+            note.append("Lanci %s: %d lanci su %d senza %s (es. %s%s)." % (anno, len(vuoti), len(rows), nome, es, "…" if len(vuoti) > 4 else ""))
+    for anno in sorted(out["riepiloghi"]):
+        for r in out["riepiloghi"][anno].get("rideshare") or []:
+            if not isinstance(r.get("satelliti"), (int, float)):
+                note.append("Rideshare %s: «%s» senza numero di satelliti (%s)." % (anno, r.get("missione"), r.get("satelliti")))
+    voli = {b["booster"]: b["nVoli"] for b in out["falcon9"]["attivi"] + out["falcon9"]["persi"]}
+    for u in out["f9Utilizzati2026"]:
+        v = voli.get(u["booster"])
+        if v is not None and u.get("totale") is not None and v != u["totale"]:
+            note.append("Booster %s: %s voli nel foglio Falcon 9 ma %s nella tabella «Falcon 9 utilizzati e attivi»." % (u["booster"], v, u["totale"]))
+    return note
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("xlsx", nargs="?", default="/workspace/SpaceX_aggiornato.xlsx")
@@ -445,12 +525,17 @@ def main():
     riep["2023"]["perMese"] = extra["perMese2023"]
     riep["2022"]["perMese"] = extra["perMese2022"]
     riep["2021"] = {}
-    # il riepilogo intitolato "Lanci 2021: Starlink / enti terzi" ha totale 61 = lanci 2022:
-    # lo esportiamo con il suo titolo originale, senza attribuirlo a un anno.
-    archivio_extra = {"riepilogoStarlinkEntiTerzi": {"titoloNelFile": "Lanci 2021: Starlink / enti terzi",
-                                                      "voci": extra["tipologieTitolo2021"],
-                                                      "totale": extra["tipologieTitolo2021Totale"]},
-                      "lanciPerAnnoFoglioLanci": extra["perAnno"]}
+    archivio_extra = {"lanciPerAnnoFoglioLanci": extra["perAnno"]}
+    # riepilogo "Lanci 2021: Starlink / enti terzi": usato come tipologie 2021 solo se il
+    # totale coincide con le righe della lista 2021 (in una versione del file valeva 61 = 2022).
+    t21 = extra["tipologieTitolo2021Totale"]
+    if t21 is not None and t21 == len(lanci["2021"]):
+        riep["2021"]["tipologie"] = extra["tipologieTitolo2021"]
+        riep["2021"]["tipologieTotale"] = t21
+    elif t21 is not None:
+        warn("Riepilogo 'Lanci 2021: Starlink / enti terzi': totale %s ma la lista 2021 ha %d lanci" % (t21, len(lanci["2021"])))
+        archivio_extra["riepilogoStarlinkEntiTerzi"] = {"titoloNelFile": "Lanci 2021: Starlink / enti terzi",
+                                                        "voci": extra["tipologieTitolo2021"], "totale": t21}
 
     # controllo coerenza: righe tabella vs totale riepilogo
     for anno in ("2026", "2025", "2024"):
@@ -478,10 +563,11 @@ def main():
         "archivio": archivio_extra,
         "modifiche": mod,
     }
+    out["meta"]["note"] = note_dati(out)
     with open(a.out, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, separators=(",", ":"))
-    print("Scritto %s (%d KB). Lanci: %s. Avvisi: %d" % (
-        a.out, os.path.getsize(a.out) // 1024, ", ".join("%s=%d" % (k, len(v)) for k, v in sorted(lanci.items())), len(WARN)))
+    print("Scritto %s (%d KB). Lanci: %s. Avvisi: %d. Note sui dati: %d" % (
+        a.out, os.path.getsize(a.out) // 1024, ", ".join("%s=%d" % (k, len(v)) for k, v in sorted(lanci.items())), len(WARN), len(out["meta"]["note"])))
 
 
 if __name__ == "__main__":

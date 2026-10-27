@@ -46,6 +46,9 @@
     var m = parseISO(s); if (!m) return s || "";
     return (+m[3]) + " " + MESI[+m[2] - 1].toLowerCase() + " " + m[1];
   }
+  function fMln(v) { return v == null ? "—" : v >= 1e6 ? new Intl.NumberFormat("it-IT", { maximumFractionDigits: 1 }).format(v / 1e6) + " mln" : NF.format(v); }
+  function abbOk() { return D.starlink.abbonati.filter(function (x) { return !x.daVerificare; }); }
+  function abbQuando(x) { return x.dataEsatta ? "al " + fData(x.dataEsatta) : fMeseAnno(x.data); }
   function fMeseAnno(s) { var m = parseISO(s); return m ? MESI_B[+m[2] - 1] + " " + m[1] : s; }
   function fDur(sec) {
     if (sec == null) return "—";
@@ -56,7 +59,7 @@
   // ---------- Colori del sito ----------
   var C = { lanci: "#a78bfa", prototipi: "#38bdf8", test: "#fb7a3c", siti: "#f5b544", prossimo: "#34d399", notizie: "#f472b6", info: "#60a5fa", neutral: "#94a3b8", bad: "#f87171", warn: "#fbbf24" };
   var PALETTE = [C.lanci, C.prototipi, C.siti, C.test, C.prossimo, C.notizie, C.info, C.warn, C.neutral, C.bad];
-  var TIPO_COL = { "Starlink": C.prossimo, "Commerciale": C.prototipi, "Space Force & NRO": C.siti, "SpaceForce & NRO": C.siti, "Rideshare": C.notizie, "Transporter": C.notizie, "Starlink Rideshare": "#6ee7b7", "Dragon": C.info, "NASA": C.warn, "Test Starship": C.test, "Starfall": C.neutral };
+  var TIPO_COL = { "Starlink": C.prossimo, "Commerciale": C.prototipi, "Space Force & NRO": C.siti, "SpaceForce & NRO": C.siti, "Rideshare": C.notizie, "Transporter": C.notizie, "Starlink Rideshare": "#6ee7b7", "Starlink rideshare": "#6ee7b7", "Enti terzi": C.prototipi, "Dragon": C.info, "NASA": C.warn, "Test Starship": C.test, "Starfall": C.neutral };
   var VETT_COL = { "Falcon 1": C.neutral, "Falcon 9": C.lanci, "F9": C.lanci, "Falcon Heavy": C.siti, "FH": C.siti, "Starship": C.test, "Atlas V": C.info, "Ariane 64": C.notizie };
   function colFor(map, label, i) { return map[label] || PALETTE[i % PALETTE.length]; }
   function alpha(hex, a) {
@@ -79,13 +82,16 @@
   function riep(y) { return D.riepiloghi[String(y)] || {}; }
   function anniCon(key) { return anniLanci().filter(function (y) { var r = riep(y)[key]; return r && r.length; }); }
   function sum(arr, f) { return arr.reduce(function (s, x) { var v = f ? f(x) : x; return s + (typeof v === "number" ? v : 0); }, 0); }
+  var RUOLO = { core: "FH core centrale", laterale: "FH laterale", ex: "Ex FH", fh: "FH" };
+  var RUOLO_BREVE = { core: " (FH core)", laterale: " (FH lat.)", ex: " (ex FH)", fh: " (FH)" };
   function boosters() {
     var q = {};
     (D.f9Utilizzati2026 || []).forEach(function (b) { q[b.booster] = b; });
     function map(b, stato) {
       var x = q[b.booster] || {};
+      var fr = b.fhRuolo || (/laterale FH/i.test(x.note || "") ? "laterale" : /core centrale FH/i.test(x.note || "") ? "core" : null);
       var last = b.voli[b.voli.length - 1] || {}, first = b.voli[0] || {};
-      return { booster: b.booster, nome: b.nome, stato: stato, fh: b.fh, voli: b.nVoli, perAnno: x.perAnno || {}, note: x.note || null,
+      return { booster: b.booster, nome: b.nome, stato: stato, fh: b.fh, fhRuolo: fr, ruolo: RUOLO[fr] || null, voli: b.nVoli, perAnno: x.perAnno || {}, note: x.note || null,
                primo: first.data, primoM: first.missione, ultimo: last.data, ultimoM: last.missione, lista: b.voli };
     }
     return D.falcon9.attivi.map(function (b) { return map(b, "Attivo"); })
@@ -151,13 +157,15 @@
 
     { id: "abbonati", tab: "starlink", title: "Abbonati Starlink nel tempo", sub: "Solo le rilevazioni presenti nel file", wide: true,
       build: function () {
-        var a = D.starlink.abbonati;
-        var pts = a.map(function (x) { var m = parseISO(x.data); return { x: Date.UTC(+m[1], +m[2] - 1, +m[3]), y: x.abbonati, d: x.data }; });
+        var all = D.starlink.abbonati, a = abbOk(), esclusi = all.filter(function (x) { return x.daVerificare; });
+        var pts = a.map(function (x) { var m = parseISO(x.data); return { x: Date.UTC(+m[1], +m[2] - 1, +m[3]), y: x.abbonati, r: x }; });
+        var nota = a.length + " rilevazioni a intervalli irregolari, da " + fMeseAnno(a[0].data) + " al " + (a[a.length - 1].dataEsatta ? fData(a[a.length - 1].dataEsatta) : fMeseAnno(a[a.length - 1].data)) + " (ultimo dato nel file). Nessun punto è stimato.";
+        if (esclusi.length) nota += " Escluso dal grafico: " + esclusi.map(function (x) { return NF.format(x.abbonati) + " (" + fMeseAnno(x.data) + ")"; }).join(", ") + ", segnalato nel file come «Da verificare»" + (esclusi[0].nota ? " (" + esclusi[0].nota.replace(/^da verificare:\s*/i, "") + ")" : "") + ".";
         return { type: "line", datasets: [{ label: "Abbonati", data: pts, borderColor: C.prossimo, backgroundColor: alpha(C.prossimo, .15), fill: true, tension: .25, pointRadius: 4, pointHoverRadius: 6 }],
-          opts: { parsing: false, plugins: { legend: { display: false }, tooltip: { callbacks: { title: function (it) { return fMeseAnno(it[0].raw.d); }, label: function (it) { return NF.format(it.raw.y) + " abbonati"; } } } },
+          opts: { parsing: false, plugins: { legend: { display: false }, tooltip: { callbacks: { title: function (it) { return abbQuando(it[0].raw.r); }, label: function (it) { return NF.format(it.raw.y) + " abbonati"; }, afterLabel: function (it) { return it.raw.r.nota || ""; } } } },
             scales: { x: { type: "linear", ticks: { maxTicksLimit: 8, callback: function (v) { var d = new Date(v); return MESI_B[d.getUTCMonth()] + " " + d.getUTCFullYear(); } } },
                       y: { beginAtZero: true, ticks: { callback: function (v) { return v >= 1e6 ? NF.format(v / 1e6) + " mln" : NF.format(v); } } } } },
-          nota: a.length + " rilevazioni con date irregolari, da " + fMeseAnno(a[0].data) + " a " + fMeseAnno(a[a.length - 1].data) + " (ultimo dato nel file). Nessun punto è stimato." };
+          nota: nota };
       } },
     { id: "satAnno", tab: "starlink", title: "Satelliti Starlink lanciati per anno", sub: "2019–2026",
       build: function () {
@@ -174,18 +182,24 @@
           datasets: [{ label: "Satelliti " + y, data: t.map(function (x) { return x[String(y)]; }), backgroundColor: alpha(C.prossimo, .65), borderRadius: 5 }],
           opts: { plugins: { legend: { display: false } } } };
       } },
-    { id: "missStarlink", tab: "starlink", title: "Missioni Starlink per anno", sub: "Dati disponibili 2022–2026",
+    { id: "missStarlink", tab: "starlink", title: "Missioni Starlink per anno", sub: function () { var t = D.starlink.missioni.perAnno; return t.length ? t[0].anno + "–" + t[t.length - 1].anno : ""; },
       build: function () {
-        var t = D.starlink.missioni.perAnno;
-        return { type: "bar", labels: t.map(function (x) { return String(x.anno); }),
-          datasets: [{ label: "Missioni", data: t.map(function (x) { return x.valore; }), backgroundColor: alpha(C.lanci, .75), borderRadius: 6 }],
-          opts: { plugins: { legend: { display: false } } } };
+        var t = D.starlink.missioni.perAnno, ts = D.starlink.missioni.perAnnoConStarship || [], ss = {};
+        ts.forEach(function (x) { ss[x.anno] = x.valore; });
+        var extra = t.map(function (x) { var v = ss[x.anno]; return v != null && x.valore != null && v > x.valore ? v - x.valore : null; });
+        var ds = [{ label: "Falcon 9", data: t.map(function (x) { return x.valore; }), backgroundColor: alpha(C.lanci, .75), borderRadius: 6 }];
+        var conS = extra.some(function (v) { return v; });
+        if (conS) ds.push({ label: "Starship", data: extra, backgroundColor: C.test, borderRadius: 6 });
+        var note = t.filter(function (x, i) { return extra[i]; }).map(function (x) { return x.anno + ": " + nf(x.valore) + " con Falcon 9, " + nf(ss[x.anno]) + " contando anche Starship"; });
+        return { type: "bar", labels: t.map(function (x) { return String(x.anno); }), datasets: ds,
+          opts: { scales: { x: { stacked: true }, y: { stacked: true } }, plugins: { legend: { display: conS } } },
+          nota: note.length ? note.join("; ") + " (righe «Totale Falcon 9» e «Totale Falcon 9 + Starship»)." : "" };
       } },
 
     { id: "booster", tab: "falcon9", title: "Riutilizzo booster Falcon 9: voli per booster", sub: "Ordinati per numero di voli", wide: true, tall: true,
       build: function () {
         var b = boosters().slice().sort(function (a, c) { return c.voli - a.voli || a.booster.localeCompare(c.booster); });
-        var lab = b.map(function (x) { return x.booster + (x.fh ? " (FH)" : ""); });
+        var lab = b.map(function (x) { return x.booster + (RUOLO_BREVE[x.fhRuolo] || (x.fh ? " (FH)" : "")); });
         function ds(stato, label, col) {
           return { label: label, data: b.map(function (x) { return x.stato === stato ? x.voli : null; }), backgroundColor: col, borderRadius: 4, grouped: false, barThickness: 12 };
         }
@@ -193,7 +207,7 @@
           datasets: [ds("Attivo", "Attivi", C.prossimo), ds("Perso / non recuperato", "Persi / non recuperati", alpha(C.bad, .75))],
           opts: { indexAxis: "y", scales: { y: { ticks: { autoSkip: false, font: { size: 11 } } }, x: { position: "top", beginAtZero: true } },
             plugins: { tooltip: { callbacks: { label: function (it) { var x = b[it.dataIndex]; return x.stato + ": " + it.raw + " voli · ultimo " + (x.ultimoM || "") + " " + (x.ultimo ? fData(x.ultimo) : ""); } } } } },
-          nota: b.filter(function (x) { return x.stato === "Attivo"; }).length + " booster attivi e " + b.filter(function (x) { return x.stato !== "Attivo"; }).length + " persi o non recuperati (foglio Falcon 9). (FH) = usato come Falcon Heavy." };
+          nota: b.filter(function (x) { return x.stato === "Attivo"; }).length + " booster attivi e " + b.filter(function (x) { return x.stato !== "Attivo"; }).length + " persi o non recuperati (foglio Falcon 9). FH core = core centrale Falcon Heavy, FH lat. = booster laterale." };
       } },
 
     { id: "dragonUso", tab: "dragon", title: "Missioni per capsula Dragon",
@@ -244,7 +258,7 @@
   var TABLES = [
     { id: "t-lanci", tab: "lanci", title: "Tutti i lanci", years: function () { return anniLanci(); }, rows: lanciRows, cols: LANCI_COLS,
       filters: ["tipologia", "vettore", "pad", "mese"], sort: ["n", -1], open: true,
-      note: "Anni 2021–2023: tipologia, booster e orbita solo per il 2023; pad e atterraggio dal foglio «Pad & atterragi» (2022–2023)." },
+      note: "Anni 2021–2023: booster, tipologia e orbita dal 2022; pad e atterraggio dal foglio «Pad & atterragi» (2022–2023)." },
 
     { id: "t-starlink", tab: "starlink", title: "Missioni Starlink: satelliti per missione", years: function () { return Object.keys(D.starlink.liste).map(Number).sort(function (a, b) { return b - a; }); },
       rows: function (y) { return D.starlink.liste[String(y)]; },
@@ -253,17 +267,19 @@
     { id: "t-gusci", tab: "starlink", title: "Gusci orbitali", rows: function () { return D.starlink.gusci; },
       cols: [{ key: "guscio", label: "Guscio" }, { key: "inclinazione", label: "Inclinazione" }, { key: "altitudine", label: "Altitudine" }, { key: "previsti", label: "Previsti", type: "num" }, { key: "lanciati", label: "Lanciati", type: "num" }, { key: "ultimoLancio", label: "Ultimo lancio" }] },
     { id: "t-abbonati", tab: "starlink", title: "Abbonati Starlink", rows: function () { return D.starlink.abbonati; },
-      cols: [{ key: "data", label: "Mese", type: "month" }, { key: "abbonati", label: "Abbonati", type: "num" }], sort: ["data", -1] },
+      cols: [{ key: "data", label: "Mese", type: "month" }, { key: "abbonati", label: "Abbonati", type: "num" }, { key: "stato", label: "Stato", type: "tag" }, { key: "nota", label: "Fonte / nota", wrap: true }],
+      prep: function (r) { r.stato = r.daVerificare ? "Da verificare" : "OK"; return r; }, sort: ["data", -1],
+      note: "Le date sono quelle della colonna «Data» del file (mese); la data esatta, quando c'è, è nella nota." },
     { id: "t-satmese", tab: "starlink", title: "Satelliti Starlink per mese e anno", rows: function () { return D.starlink.satelliti.perMese; },
       cols: [{ key: "mese", label: "Mese", nosort: true }].concat(D_ANNI_SAT()), nosearch: true },
 
     { id: "t-booster", tab: "falcon9", title: "Booster Falcon 9", rows: function () { return boosters(); },
-      cols: [{ key: "booster", label: "Booster" }, { key: "stato", label: "Stato", type: "tag" }, { key: "voli", label: "Voli", type: "num" },
+      cols: [{ key: "booster", label: "Booster" }, { key: "stato", label: "Stato", type: "tag" }, { key: "ruolo", label: "Ruolo FH" }, { key: "voli", label: "Voli", type: "num" },
              { key: "a2020", label: "2020", type: "num" }, { key: "a2021", label: "2021", type: "num" }, { key: "a2022", label: "2022", type: "num" }, { key: "a2023", label: "2023", type: "num" },
              { key: "a2024", label: "2024", type: "num" }, { key: "a2025", label: "2025", type: "num" }, { key: "a2026", label: "2026", type: "num" },
              { key: "primo", label: "Primo volo", type: "date" }, { key: "ultimoM", label: "Ultima missione" }, { key: "ultimo", label: "Data", type: "date" }, { key: "note", label: "Note" }],
       prep: function (r) { for (var y = 2020; y <= 2026; y++) r["a" + y] = r.perAnno[String(y)]; return r; },
-      filters: ["stato"], sort: ["voli", -1], open: true, note: "Voli per anno solo per i booster della tabella «Falcon 9 utilizzati e attivi» (foglio Lanci 2026)." },
+      filters: ["stato", "ruolo"], sort: ["voli", -1], open: true, note: "Voli per anno solo per i booster della tabella «Falcon 9 utilizzati e attivi» (foglio Lanci 2026)." },
     { id: "t-voli", tab: "falcon9", title: "Tutti i voli per booster", rows: function () {
         var out = []; boosters().forEach(function (b) { b.lista.forEach(function (v) { out.push({ booster: b.booster, stato: b.stato, n: v.n, missione: v.missione, data: v.data }); }); }); return out;
       }, cols: [{ key: "booster", label: "Booster" }, { key: "n", label: "Volo n.", type: "num" }, { key: "missione", label: "Missione" }, { key: "data", label: "Data", type: "date" }, { key: "stato", label: "Stato", type: "tag" }],
@@ -288,8 +304,7 @@
       }, cols: function () { return [{ key: "tipologia", label: "Tipologia" }].concat(anniCon("tipologie").map(function (y) { return { key: "a" + y, label: String(y), type: "num" }; })); }, nosearch: true,
       note: "Le etichette cambiano tra gli anni (es. «SpaceForce & NRO» nel 2023, «Transporter» poi raggruppato in «Rideshare»)." },
     { id: "t-rideshare", tab: "archivio", title: "Satelliti nelle missioni rideshare", years: function () { return ["2026", "2025", "2024"].filter(function (y) { return riep(y).rideshare && riep(y).rideshare.length; }); },
-      rows: function (y) { return riep(y).rideshare; }, cols: [{ key: "missione", label: "Missione" }, { key: "satelliti", label: "Satelliti", type: "num" }], nosearch: true,
-      note: "«???» = numero non indicato nel file." },
+      rows: function (y) { return riep(y).rideshare; }, cols: [{ key: "missione", label: "Missione" }, { key: "satelliti", label: "Satelliti", type: "num" }], nosearch: true },
     { id: "t-modifiche", tab: "archivio", title: "Registro modifiche del file", rows: function () { return D.modifiche; },
       cols: [{ key: "data", label: "Data", type: "date" }, { key: "foglio", label: "Foglio" }, { key: "descrizione", label: "Descrizione", wrap: true }] }
   ];
@@ -301,7 +316,7 @@
     var last = L.slice().sort(function (a, b) { return (a.partenza || "").localeCompare(b.partenza || ""); }).pop() || {};
     var tip = {}; (r.tipologie || []).forEach(function (t) { tip[t.label] = t.valore; });
     var sat = D.starlink.satelliti, sat26 = (sat.perAnno.filter(function (x) { return String(x.anno) === y; })[0] || {}).valore;
-    var ab = D.starlink.abbonati[D.starlink.abbonati.length - 1] || {};
+    var ab = abbOk().slice().sort(function (a, c) { return (a.dataEsatta || a.data).localeCompare(c.dataEsatta || c.data); }).pop() || {};
     var at = r.atterraggiTotali || {};
     var b = boosters().slice().sort(function (a, c) { return c.voli - a.voli; })[0] || {};
     var rec = (r.record || []).filter(function (x) { return /Riutilizzo/i.test(x.record); })[0];
@@ -310,7 +325,7 @@
       { acc: "lanci", icon: "lanci", l: "Lanci 2026", v: nf(r.padTotali && r.padTotali.Totale), d: "di cui " + nf(tip.Starlink) + " Starlink · " + nf(r.padTotali && r.padTotali.Falliti) + " falliti" },
       { acc: "lanci", icon: "calendar", l: "Ultimo lancio", v: esc(last.missione || "—"), d: fData(last.partenza) + (last.booster ? " · " + esc(last.booster) : "") },
       { acc: "prossimo", icon: "starlink", l: "Satelliti Starlink 2026", v: nf(sat26), d: nf(sat.totale) + " lanciati dal 2019" },
-      { acc: "prossimo", icon: "users", l: "Abbonati Starlink", v: nf(ab.abbonati), d: "ultimo dato: " + fMeseAnno(ab.data) },
+      { acc: "prossimo", icon: "users", l: "Abbonati Starlink", v: fMln(ab.abbonati), d: "ultimo dato: " + esc(abbQuando(ab)) },
       { acc: "test", icon: "target", l: "Recuperi booster 2026", v: nf(at["Tot recuperi F9"]) + "<small> / " + nf(at["Tot tentativi"]) + "</small>", d: "tentativi di recupero riusciti" },
       { acc: "test", icon: "booster", l: "Booster più usato", v: esc(b.booster || "—") + "<small> · " + nf(b.voli) + " voli</small>", d: b.ultimoM ? "ultimo: " + esc(b.ultimoM) + " (" + fData(b.ultimo) + ")" : "" },
       { acc: "test", icon: "recycle", l: "Riutilizzo più rapido 2026", v: esc(rec ? rec.valore : "—"), d: rec && rec.booster ? "booster " + esc(rec.booster) : "" },
@@ -344,9 +359,8 @@
       return h ? '<div><div class="sec-head"><h3>Utilizzi capsule equipaggio</h3></div><div class="minis">' + h + "</div></div>" : "";
     },
     archivio: function () {
-      var r = D.archivio && D.archivio.riepilogoStarlinkEntiTerzi, items = [];
-      (D.meta.avvisi || []).forEach(function (a) { items.push(esc(a)); });
-      if (r) items.push("Il riepilogo intitolato «" + esc(r.titoloNelFile) + "» ha totale " + nf(r.totale) + ", che corrisponde ai lanci del 2022 e non del 2021 (31): mostrato solo qui, non nei grafici.");
+      var items = [];
+      (D.meta.avvisi || []).concat(D.meta.note || []).forEach(function (a) { items.push(esc(a)); });
       if (!items.length) return "";
       return '<div><div class="sec-head"><h3>Note sui dati</h3></div><ul class="oddities">' + items.map(function (x) { return "<li>" + x + "</li>"; }).join("") + "</ul></div>";
     }
@@ -356,6 +370,7 @@
   var chartState = {}, charts = {};
   function chartBox(c) {
     var ys = c.years ? c.years() : null;
+    if (typeof c.sub === "function") c.sub = c.sub();
     chartState[c.id] = ys ? ys[0] : null;
     var seg = ys && ys.length > 1 ? '<div class="seg sm" role="group" aria-label="Anno">' + ys.map(function (y, i) {
       return '<button type="button" data-chart="' + c.id + '" data-year="' + y + '" aria-pressed="' + (i === 0) + '">' + y + "</button>";
@@ -439,7 +454,7 @@
     if (c.type === "date") return "<td>" + fData(v) + "</td>";
     if (c.type === "month") return "<td>" + esc(fMeseAnno(v)) + "</td>";
     if (c.type === "tag") {
-      var col = TIPO_COL[v] || (/^Attivo/.test(v) ? C.prossimo : /Perso/.test(v) ? C.bad : v === "Cargo" ? C.siti : v === "Equipaggio" ? C.prototipi : C.neutral);
+      var col = TIPO_COL[v] || (/^Attivo/.test(v) || v === "OK" ? C.prossimo : v === "Da verificare" ? C.warn : /Perso/.test(v) ? C.bad : v === "Cargo" ? C.siti : v === "Equipaggio" ? C.prototipi : C.neutral);
       return '<td><span class="tag" style="--tc:' + col + '">' + esc(v) + "</span></td>";
     }
     return "<td" + (c.wrap ? ' class="wrap"' : "") + ">" + esc(v) + "</td>";
