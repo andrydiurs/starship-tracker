@@ -131,33 +131,58 @@ def kv(rows, k="k", v="v"):
 
 
 # ---------------------------------------------------------------- lanci annuali
-def missioni(ws, first_row=3):
-    """Tabella A–I (#, Missione, Intervallo, Partenza, Booster, Tipologia, Pad, Atterraggio, Vettore).
+MISS_COLS = {"#": "n", "Missione": "missione", "Intervallo": "intervallo", "Partenza": "partenza",
+             "Booster": "booster", "Tipologia": "tipologia", "Pad": "pad", "Atterraggio": "atterraggio",
+             "Vettore": "vettore", "Orbita di rilascio": "orbita"}
+
+
+def header_cols(ws, r_hdr, c0, mapping):
+    """Colonne trovate per intestazione (riga r_hdr, da c0 fino alla prima cella vuota)."""
+    cols, c = {}, c0
+    while ws.cell(r_hdr, c).value is not None:
+        h = txt(ws.cell(r_hdr, c).value)
+        if h in mapping and mapping[h] not in cols:
+            cols[mapping[h]] = c
+        c += 1
+    return cols
+
+
+def missioni(ws, anno):
+    """Tabella «Missioni <anno>»: colonne trovate per intestazione (non per posizione).
     Le sotto-righe Falcon Heavy '↳ …' diventano 'altriBooster' della riga principale."""
+    pos = find_title(ws, "Missioni %d" % anno)
+    if not pos:
+        warn("tabella non trovata: %s / Missioni %d" % (ws.title, anno))
+        return []
+    r0, c0 = pos
+    cols = header_cols(ws, r0 + 1, c0, MISS_COLS)
+    for k in ("missione", "partenza"):
+        if k not in cols:
+            warn("%s: colonna «%s» non trovata" % (ws.title, k))
+            return []
+    g = lambda r, k: ws.cell(r, cols[k]).value if k in cols else None
     out = []
-    for r in range(first_row, ws.max_row + 1):
-        nome = txt(ws.cell(r, 2).value)
+    for r in range(r0 + 2, ws.max_row + 1):
+        nome = txt(g(r, "missione"))
         if not nome:
+            # sotto-riga FH senza «↳» (es. Lanci 2024): solo booster/atterraggio, nessuna data
+            if out and not clean(g(r, "partenza")) and (txt(g(r, "booster")) or txt(g(r, "atterraggio"))):
+                out[-1].setdefault("altriBooster", []).append(
+                    {"booster": txt(g(r, "booster")), "atterraggio": txt(g(r, "atterraggio"))})
+                out[-1]["sottoRigheSenzaMarcatore"] = True
             continue
         if nome.startswith("↳"):
             if out:
                 out[-1].setdefault("altriBooster", []).append(
-                    {"booster": txt(ws.cell(r, 5).value), "atterraggio": txt(ws.cell(r, 8).value)})
+                    {"booster": txt(g(r, "booster")), "atterraggio": txt(g(r, "atterraggio"))})
             continue
-        part = clean(ws.cell(r, 4).value)
+        part = clean(g(r, "partenza"))
         if not part:
             continue
-        out.append({
-            "n": num(ws.cell(r, 1).value),
-            "missione": nome,
-            "intervallo": secs(ws.cell(r, 3).value),
-            "partenza": part,
-            "booster": txt(ws.cell(r, 5).value),
-            "tipologia": txt(ws.cell(r, 6).value),
-            "pad": txt(ws.cell(r, 7).value),
-            "atterraggio": txt(ws.cell(r, 8).value),
-            "vettore": txt(ws.cell(r, 9).value),
-        })
+        x = {"n": num(g(r, "n")), "missione": nome, "intervallo": secs(g(r, "intervallo")), "partenza": part}
+        for k in ("booster", "tipologia", "pad", "atterraggio", "vettore", "orbita"):
+            x[k] = txt(g(r, k))
+        out.append(x)
     return out
 
 
@@ -166,7 +191,17 @@ ATT_TOT = {"Non recuperati", "Fallimenti", "Mare", "Terra", "Tot recuperi", "Tot
            "Tot tentativi", "Tot atterraggi", "Totale"}
 
 
+def is_nota(x):
+    return x["label"].strip().lower().startswith("nota") and x.get("valore") is None
+
+
+def note_of(rows):
+    n = [re.sub(r"(?i)^nota:\s*", "", x["label"].strip()) for x in rows if is_nota(x)]
+    return " ".join(n) or None
+
+
 def split_tot(rows, totset):
+    rows = [x for x in rows if not is_nota(x)]
     voci = [x for x in rows if x["label"] not in totset]
     tot = {x["label"]: x["valore"] for x in rows if x["label"] in totset}
     return voci, tot
@@ -178,8 +213,10 @@ def riepiloghi_anno(ws, anno):
     R["pad"], R["padTotali"] = split_tot(kv(rows), PAD_TOT)
     _, rows = block(ws, "Piattaforme atterraggio %d" % anno, ["k", "v"])
     R["atterraggi"], R["atterraggiTotali"] = split_tot(kv(rows), ATT_TOT)
+    if note_of(kv(rows)):
+        R["atterraggiNota"] = note_of(kv(rows))
     _, rows = block(ws, "Distribuzione missioni %d" % anno, ["k", "v"])
-    R["tipologie"] = [x for x in kv(rows) if x["label"].upper() != "TOTALE"]
+    R["tipologie"] = [x for x in kv(rows) if x["label"].upper() != "TOTALE" and not is_nota(x)]
     R["tipologieTotale"] = next((x["valore"] for x in kv(rows) if x["label"].upper() == "TOTALE"), None)
     _, rows = block(ws, "Lanci %d per mese" % anno, ["k", "v"])
     R["perMese"] = [x for x in kv(rows) if x["label"] in MESI]
@@ -251,12 +288,7 @@ def archivio_lanci(wb):
             A[anno] = []
             continue
         r0, c0 = pos
-        cols, c = {}, c0
-        while ws.cell(r0 + 1, c).value is not None:
-            h = txt(ws.cell(r0 + 1, c).value)
-            if h in COLS and COLS[h] not in cols:
-                cols[COLS[h]] = c
-            c += 1
+        cols = header_cols(ws, r0 + 1, c0, COLS)
         rows = []
         for r in range(r0 + 2, ws.max_row + 1):
             nome, part = txt(ws.cell(r, cols["missione"]).value), clean(ws.cell(r, cols["partenza"]).value)
@@ -271,17 +303,23 @@ def archivio_lanci(wb):
         A[anno] = rows
     # Pad e atterraggi 2022–2023
     wp = wb["Pad & atterragi"]
-    for anno, c in ((2022, 1), (2023, 7)):
+    for anno in (2022, 2023):
+        pos = find_title(wp, "Lanci %d" % anno)
+        pc = header_cols(wp, pos[0] + 1, pos[1], MISS_COLS) if pos else {}
+        if not all(k in pc for k in ("n", "missione", "partenza", "pad", "atterraggio")):
+            if any(not x.get("pad") for x in A[anno]):
+                warn("Pad & atterragi: tabella «Lanci %d» non trovata o senza colonne attese" % anno)
+            continue
         pads, byn, last = {}, {}, None
-        for r in range(3, wp.max_row + 1):
-            nome = txt(wp.cell(r, c + 1).value)
-            att = txt(wp.cell(r, c + 4).value)
+        for r in range(pos[0] + 2, wp.max_row + 1):
+            nome = txt(wp.cell(r, pc["missione"]).value)
+            att = txt(wp.cell(r, pc["atterraggio"]).value)
             if nome:
-                last = {"pad": txt(wp.cell(r, c + 3).value), "atterraggio": att, "altri": [], "nome": nome,
-                        "partenza": clean(wp.cell(r, c + 2).value)}
+                last = {"pad": txt(wp.cell(r, pc["pad"]).value), "atterraggio": att, "altri": [], "nome": nome,
+                        "partenza": clean(wp.cell(r, pc["partenza"]).value)}
                 pads[nome] = last
-                if num(wp.cell(r, c).value) is not None:
-                    byn[num(wp.cell(r, c).value)] = last
+                if num(wp.cell(r, pc["n"]).value) is not None:
+                    byn[num(wp.cell(r, pc["n"]).value)] = last
             elif att and last:
                 last["altri"].append(att)
         for x in A[anno]:
@@ -308,18 +346,25 @@ def riepiloghi_pad_archivio(wp, anno):
     R["pad"], R["padTotali"] = split_tot(kv(rows), PAD_TOT)
     _, rows = block(wp, "Piattaforme atterraggio %d" % anno, ["k", "v"])
     R["atterraggi"], R["atterraggiTotali"] = split_tot(kv(rows), ATT_TOT)
+    if note_of(kv(rows)):
+        R["atterraggiNota"] = note_of(kv(rows))
     return R
 
 
 def riepiloghi_lanci_sheet(wb):
     ws = wb["Lanci"]
     R = {}
-    _, rows = block(ws, "Distribuzione missioni 2023", ["k", "v"])
-    R["tipologie2023"] = [x for x in kv(rows) if x["label"].upper() != "TOTALE"]
-    _, rows = block(ws, "Distribuzione missioni 2022", ["k", "v"])
-    R["tipologie2022"] = [x for x in kv(rows) if x["label"].upper() != "TOTALE"]
-    R["tipologie2022Totale"] = next((x["valore"] for x in kv(rows) if x["label"].upper() == "TOTALE"), None)
-    _, rows = block(ws, "Lanci 2021: Starlink / enti terzi", ["k", "v"])
+    for anno in (2021, 2022, 2023):
+        if not find_title(ws, "Distribuzione missioni %d" % anno):
+            continue
+        _, rows = block(ws, "Distribuzione missioni %d" % anno, ["k", "v"])
+        R["tipologie%d" % anno] = [x for x in kv(rows) if x["label"].upper() != "TOTALE" and not is_nota(x)]
+        R["tipologie%dTotale" % anno] = next((x["valore"] for x in kv(rows) if x["label"].upper() == "TOTALE"), None)
+    if not find_title(ws, "Lanci 2021: Starlink / enti terzi"):
+        R["tipologieTitolo2021"], R["tipologieTitolo2021Totale"] = [], None
+        rows = []
+    else:
+        _, rows = block(ws, "Lanci 2021: Starlink / enti terzi", ["k", "v"])
     R["tipologieTitolo2021"] = [x for x in kv(rows) if x["label"].upper() != "TOTALE"]
     R["tipologieTitolo2021Totale"] = next((x["valore"] for x in kv(rows) if x["label"].upper() == "TOTALE"), None)
     for anno in (2022, 2023):
@@ -417,13 +462,15 @@ def falcon9(wb):
     ws = wb["Falcon 9"]
 
     def matrice(title_row_label, col_from, col_to):
+        r_t = find_title(ws, title_row_label)[0]
+        r_h = r_t + 1  # riga dei nomi booster, sotto il titolo
         res = []
         for c in range(col_from, col_to + 1):
-            nome = txt(ws.cell(3, c).value)
+            nome = txt(ws.cell(r_h, c).value)
             if not nome:
                 continue
             voli = []
-            for r in range(4, ws.max_row + 1):
+            for r in range(r_h + 1, ws.max_row + 1):
                 v = txt(ws.cell(r, c).value)
                 if not v:
                     continue
@@ -557,6 +604,22 @@ def note_dati(out):
             for t in r["pad"]:
                 if pc.get(t["label"], 0) != t["valore"]:
                     note.append("Lanci %s: pad «%s» = %s nel riepilogo, ma %d nella lista." % (anno, t["label"], _n(t["valore"]), pc.get(t["label"], 0)))
+        # atterraggi: riepilogo vs lista (righe principali + sotto-righe FH)
+        ac = {}
+        for x in rows:
+            vals = [x.get("atterraggio")] + [b.get("atterraggio") for b in x.get("altriBooster", [])] + list(x.get("altriAtterraggi", []))
+            for v in vals:
+                if v:
+                    k = "__fallito" if "fallito" in v.lower() else "__no" if v.upper() == "NO" else v
+                    ac[k] = ac.get(k, 0) + 1
+        if ac and r.get("atterraggi") and not r.get("contatiDallaLista"):
+            for t in r["atterraggi"]:
+                if isinstance(t.get("valore"), int) and ac.get(t["label"], 0) != t["valore"]:
+                    note.append("Lanci %s: atterraggi «%s» = %s nel riepilogo, ma %d nella lista (sotto-righe FH incluse)." % (anno, t["label"], _n(t["valore"]), ac.get(t["label"], 0)))
+            at = r.get("atterraggiTotali") or {}
+            for chiave, k in (("Non recuperati", "__no"), ("Fallimenti", "__fallito")):
+                if isinstance(at.get(chiave), int) and at[chiave] != ac.get(k, 0):
+                    note.append("Lanci %s: «%s» = %s nel riepilogo, ma %d nella lista." % (anno, chiave, _n(at[chiave]), ac.get(k, 0)))
         tot = (r.get("padTotali") or {}).get("Totale") or r.get("tipologieTotale")
         if tot is not None and tot != len(rows):
             note.append("Lanci %s: totale riepilogo %s ma la lista ha %d lanci." % (anno, _n(tot), len(rows)))
@@ -605,25 +668,29 @@ def main():
     lanci, riep = {}, {}
     for anno in (2026, 2025, 2024):
         ws = wb["Lanci %d" % anno]
-        lanci[str(anno)] = missioni(ws)
+        lanci[str(anno)] = missioni(ws, anno)
         riep[str(anno)] = riepiloghi_anno(ws, anno)
     arch, wp = archivio_lanci(wb)
     for anno, rows in arch.items():
         lanci[str(anno)] = rows
-    for anno in (2022, 2023):
-        riep[str(anno)] = riepiloghi_pad_archivio(wp, anno)
+    for anno in (2021, 2022, 2023):
+        if find_title(wp, "Pad di lancio %d" % anno):
+            riep[str(anno)] = riepiloghi_pad_archivio(wp, anno)
     extra = riepiloghi_lanci_sheet(wb)
-    riep["2023"]["tipologie"] = extra["tipologie2023"]
+    riep["2023"]["tipologie"] = extra.get("tipologie2023", [])
+    if extra.get("tipologie2023Totale") is not None:
+        riep["2023"]["tipologieTotale"] = extra["tipologie2023Totale"]
     riep["2023"]["perMese"] = extra["perMese2023"]
     riep["2022"]["perMese"] = extra["perMese2022"]
-    if extra["tipologie2022"]:
-        riep["2022"]["tipologie"] = extra["tipologie2022"]
-        riep["2022"]["tipologieTotale"] = extra["tipologie2022Totale"]
-    riep["2021"] = {}
+    riep.setdefault("2021", {})
+    for anno in ("2021", "2022"):
+        if extra.get("tipologie" + anno):
+            riep[anno]["tipologie"] = extra["tipologie" + anno]
+            riep[anno]["tipologieTotale"] = extra["tipologie%sTotale" % anno]
     archivio_extra = {"lanciPerAnnoFoglioLanci": extra["perAnno"]}
     # 2021: nessun riepilogo pad/atterraggi nel file -> conteggio delle colonne Pad/Atterraggio della lista
     l21 = lanci.get("2021") or []
-    if l21 and all(x.get("pad") for x in l21):
+    if not riep["2021"].get("pad") and l21 and all(x.get("pad") for x in l21):
         cp, ca = {}, {}
         for x in l21:
             cp[x["pad"]] = cp.get(x["pad"], 0) + 1
@@ -636,7 +703,9 @@ def main():
     # riepilogo "Lanci 2021: Starlink / enti terzi": usato come tipologie 2021 solo se il
     # totale coincide con le righe della lista 2021 (in una versione del file valeva 61 = 2022).
     t21 = extra["tipologieTitolo2021Totale"]
-    if t21 is not None and t21 == len(lanci["2021"]):
+    if riep["2021"].get("tipologie"):
+        pass  # «Distribuzione missioni 2021» presente nel file
+    elif t21 is not None and t21 == len(lanci["2021"]):
         riep["2021"]["tipologie"] = extra["tipologieTitolo2021"]
         riep["2021"]["tipologieTotale"] = t21
     elif t21 is not None:

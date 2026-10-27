@@ -150,10 +150,12 @@
         if (tot.Mare != null) note.push("in mare " + nf(tot.Mare));
         if (tot.Terra != null) note.push("a terra " + nf(tot.Terra));
         if (tot["Non recuperati"] != null) note.push("non recuperati " + nf(tot["Non recuperati"]));
+        if (tot.Fallimenti) note.push("atterraggi falliti " + nf(tot.Fallimenti));
         return { type: "bar", labels: t.map(function (x) { return x.label; }),
-          datasets: [{ label: "Atterraggi", data: t.map(function (x) { return x.valore; }), backgroundColor: t.map(function (x) { return mare.test(x.label) ? C.prototipi : x.label === "Mechazilla" ? C.test : C.siti; }), borderRadius: 6 }],
+          datasets: [{ label: "Atterraggi", data: t.map(function (x) { return x.valore; }), backgroundColor: t.map(function (x) { return /fallito/i.test(x.label) ? C.bad : mare.test(x.label) ? C.prototipi : x.label === "Mechazilla" ? C.test : C.siti; }), borderRadius: 6 }],
           opts: { plugins: { legend: { display: false } } },
           nota: "Blu: navi drone in mare · giallo: zone di atterraggio a terra" + (note.length ? ". " + y + ": " + note.join(", ") + "." : ".") +
+            (r.atterraggiNota ? " Nota del file: " + r.atterraggiNota.replace(/^./, function (c) { return c.toUpperCase(); }) + "." : "") +
             (r.contatiDallaLista ? " Il file non ha un riepilogo degli atterraggi per il " + y + ": conteggio della colonna «Atterraggio» della lista lanci." : "") };
       } },
 
@@ -260,8 +262,8 @@
   ];
   var TABLES = [
     { id: "t-lanci", tab: "lanci", title: "Tutti i lanci", years: function () { return anniLanci(); }, rows: lanciRows, cols: LANCI_COLS,
-      filters: ["tipologia", "vettore", "pad", "mese"], sort: ["n", -1], open: true,
-      note: "Orbita di rilascio solo per il 2021–2023 (colonna assente nelle liste 2024–2026). Pad e atterraggio 2022–2023 dal foglio «Pad & atterragi»." },
+      filters: ["tipologia", "vettore", "orbita", "pad", "mese"], sort: ["n", -1], open: true,
+      note: "Le missioni Falcon Heavy mostrano tutti i booster e i rispettivi atterraggi (laterali inclusi). Pad e atterraggio 2022–2023 dal foglio «Pad & atterragi»." },
 
     { id: "t-starlink", tab: "starlink", title: "Missioni Starlink: satelliti per missione", years: function () { return Object.keys(D.starlink.liste).map(Number).sort(function (a, b) { return b - a; }); },
       rows: function (y) { return D.starlink.liste[String(y)]; },
@@ -305,7 +307,7 @@
         anni.forEach(function (y) { riep(y).tipologie.forEach(function (t) { (map[t.label] = map[t.label] || { tipologia: t.label })["a" + y] = t.valore; }); });
         return Object.keys(map).map(function (k) { return map[k]; });
       }, cols: function () { return [{ key: "tipologia", label: "Tipologia" }].concat(anniCon("tipologie").map(function (y) { return { key: "a" + y, label: String(y), type: "num" }; })); }, nosearch: true,
-      note: "Il riepilogo 2021 raggruppa Commerciale, NASA e Space Force & NRO in «Enti terzi»; dal 2024 «Transporter» è raggruppato in «Rideshare»." },
+      note: "Dal 2024 «Transporter» e gli altri voli condivisi sono raggruppati in «Rideshare»." },
     { id: "t-rideshare", tab: "archivio", title: "Satelliti nelle missioni rideshare", years: function () { return ["2026", "2025", "2024"].filter(function (y) { return riep(y).rideshare && riep(y).rideshare.length; }); },
       rows: function (y) { return riep(y).rideshare; }, cols: [{ key: "missione", label: "Missione" }, { key: "satelliti", label: "Satelliti", type: "num" }], nosearch: true },
     { id: "t-modifiche", tab: "archivio", title: "Registro modifiche del file", rows: function () { return D.modifiche; },
@@ -364,7 +366,7 @@
     archivio: function () {
       var items = [];
       (D.meta.avvisi || []).concat(D.meta.note || []).forEach(function (a) { items.push(esc(a)); });
-      if (!items.length) return "";
+      if (!items.length) items.push("Nessuna incoerenza trovata dai controlli automatici (liste dei lanci contro riepiloghi di tipologie, pad e atterraggi, totali per anno, missioni e satelliti Starlink, stato dei booster).");
       return '<div><div class="sec-head"><h3>Note sui dati</h3></div><ul class="oddities">' + items.map(function (x) { return "<li>" + x + "</li>"; }).join("") + "</ul></div>";
     }
   };
