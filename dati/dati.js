@@ -177,11 +177,12 @@
         if (tot.Terra != null) note.push("a terra " + nf(tot.Terra));
         if (tot["Non recuperati"] != null) note.push("non recuperati " + nf(tot["Non recuperati"]));
         if (tot.Fallimenti) note.push("atterraggi falliti " + nf(tot.Fallimenti));
+        if (tot["Tot booster"] != null) note.push("booster volati " + nf(tot["Tot booster"]));
         return { type: "bar", labels: t.map(function (x) { return x.label; }),
           datasets: [{ label: "Atterraggi", data: t.map(function (x) { return x.valore; }), backgroundColor: t.map(function (x) { return attInfo(x.label).c; }), borderRadius: 6 }],
           opts: { plugins: { legend: { display: false } } },
           nota: "Stessi colori del grafico dei booster: azzurro/viola/verde acqua le tre navi drone (OCISLY, JRTI, ASOG), toni di giallo-ambra le zone LZ a terra, arancio Mechazilla, rosso gli atterraggi falliti" + (note.length ? ". " + y + ": " + note.join(", ") + "." : ".") +
-            (r.atterraggiNota ? " Nota del file: " + r.atterraggiNota.replace(/^./, function (c) { return c.toUpperCase(); }) + "." : "") +
+            (r.atterraggiNota ? " Nota del file: " + r.atterraggiNota.replace(/^./, function (c) { return c.toUpperCase(); }).replace(/\.\s*$/, "") + "." : "") +
             (r.contatiDallaLista ? " Il file non ha un riepilogo degli atterraggi per il " + y + ": conteggio della colonna «Atterraggio» della lista lanci." : "") };
       } },
 
@@ -250,7 +251,7 @@
           nota: b.filter(function (x) { return x.stato === "Attivo"; }).length + " booster attivi e " + b.filter(function (x) { return x.stato !== "Attivo"; }).length +
             " persi o non recuperati (✕), dal foglio Falcon 9. FH core = core centrale Falcon Heavy, FH lat. = booster laterale. Atterraggi presi dalle liste dei lanci 2021–2026 abbinando booster e missione: " +
             nf(tot - ign) + " voli su " + nf(tot) + " hanno l'atterraggio; " + nf(ign) + " sono «Sconosciuto» (" + nf(pre) + " prima del 2021, " + nf(ign - pre) +
-            " dal 2021 senza un atterraggio attribuibile a quel booster nelle liste, soprattutto booster laterali Falcon Heavy 2022–2023: vedi «Note sui dati»)." };
+            " dal 2021 senza un atterraggio attribuibile a quel booster nelle liste: vedi «Note sui dati» nell'archivio). Booster laterali Falcon Heavy dalle sotto-righe ↳ delle liste." };
       } },
 
     { id: "dragonUso", tab: "dragon", title: "Missioni per capsula Dragon",
@@ -345,7 +346,7 @@
         anni.forEach(function (y) { riep(y).tipologie.forEach(function (t) { (map[t.label] = map[t.label] || { tipologia: t.label })["a" + y] = t.valore; }); });
         return Object.keys(map).map(function (k) { return map[k]; });
       }, cols: function () { return [{ key: "tipologia", label: "Tipologia" }].concat(anniCon("tipologie").map(function (y) { return { key: "a" + y, label: String(y), type: "num" }; })); }, nosearch: true,
-      note: "Dal 2024 «Transporter» e gli altri voli condivisi sono raggruppati in «Rideshare»." },
+      note: "Stesse 9 categorie per ogni anno; «Rideshare» comprende i voli condivisi (ex «Transporter»), «Starfall» è una categoria a sé." },
     { id: "t-rideshare", tab: "archivio", title: "Satelliti nelle missioni rideshare", years: function () { return ["2026", "2025", "2024"].filter(function (y) { return riep(y).rideshare && riep(y).rideshare.length; }); },
       rows: function (y) { return riep(y).rideshare; }, cols: [{ key: "missione", label: "Missione" }, { key: "satelliti", label: "Satelliti", type: "num" }], nosearch: true },
     { id: "t-modifiche", tab: "archivio", title: "Registro modifiche del file", rows: function () { return D.modifiche; },
@@ -369,7 +370,7 @@
       { acc: "lanci", icon: "calendar", l: "Ultimo lancio", v: esc(last.missione || "—"), d: fData(last.partenza) + (last.booster ? " · " + esc(last.booster) : "") },
       { acc: "prossimo", icon: "starlink", l: "Satelliti Starlink 2026", v: nf(sat26), d: nf(sat.totale) + " lanciati dal 2019" },
       { acc: "prossimo", icon: "users", l: "Abbonati Starlink", v: fMln(ab.abbonati), d: "ultimo dato: " + esc(abbQuando(ab)) },
-      { acc: "test", icon: "target", l: "Recuperi booster 2026", v: nf(at["Tot recuperi F9"]) + "<small> / " + nf(at["Tot tentativi"]) + "</small>", d: "tentativi di recupero riusciti" },
+      { acc: "test", icon: "target", l: "Recuperi booster 2026", v: nf(at["Tot recuperi"] != null ? at["Tot recuperi"] : at["Tot recuperi F9"]) + "<small> / " + nf(at["Tot tentativi"]) + "</small>", d: "tentativi di recupero riusciti" },
       { acc: "test", icon: "booster", l: "Booster più usato", v: esc(b.booster || "—") + "<small> · " + nf(b.voli) + " voli</small>", d: b.ultimoM ? "ultimo: " + esc(b.ultimoM) + " (" + fData(b.ultimo) + ")" : "" },
       { acc: "test", icon: "recycle", l: "Riutilizzo più rapido 2026", v: esc(rec ? rec.valore : "—"), d: rec && rec.booster ? "booster " + esc(rec.booster) : "" },
       { acc: "prototipi", icon: "dragon", l: "Missioni Dragon 2026", v: nf(tip.Dragon), d: nf(dm.length) + " voli Dragon in archivio, " + D.dragon.capsule.length + " capsule" }

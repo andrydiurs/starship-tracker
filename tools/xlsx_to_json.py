@@ -187,7 +187,7 @@ def missioni(ws, anno):
 
 
 PAD_TOT = {"Totale", "Falliti", "Missioni operative"}
-ATT_TOT = {"Non recuperati", "Fallimenti", "Mare", "Terra", "Tot recuperi", "Tot recuperi F9",
+ATT_TOT = {"Non recuperati", "Fallimenti", "Mare", "Terra", "Tot recuperi", "Tot recuperi F9", "Tot booster",
            "Tot tentativi", "Tot atterraggi", "Totale"}
 
 
@@ -292,6 +292,11 @@ def archivio_lanci(wb):
         rows = []
         for r in range(r0 + 2, ws.max_row + 1):
             nome, part = txt(ws.cell(r, cols["missione"]).value), clean(ws.cell(r, cols["partenza"]).value)
+            if nome and nome.startswith("↳") and not part and rows:
+                # sotto-riga booster laterale Falcon Heavy
+                bb = txt(ws.cell(r, cols["booster"]).value) if "booster" in cols else None
+                rows[-1].setdefault("altriBooster", []).append({"booster": bb, "atterraggio": txt(ws.cell(r, cols["atterraggio"]).value) if "atterraggio" in cols else None})
+                continue
             if not nome or not part:
                 continue
             x = {"n": num(ws.cell(r, cols["n"]).value), "missione": nome,
@@ -314,7 +319,9 @@ def archivio_lanci(wb):
         for r in range(pos[0] + 2, wp.max_row + 1):
             nome = txt(wp.cell(r, pc["missione"]).value)
             att = txt(wp.cell(r, pc["atterraggio"]).value)
-            if nome:
+            if nome and nome.startswith("↳") and last:
+                last["altri"].append(att)
+            elif nome:
                 last = {"pad": txt(wp.cell(r, pc["pad"]).value), "atterraggio": att, "altri": [], "nome": nome,
                         "partenza": clean(wp.cell(r, pc["partenza"]).value)}
                 pads[nome] = last
@@ -332,8 +339,15 @@ def archivio_lanci(wb):
                 warn("%d #%s: nome diverso tra fogli (stessa data): '%s' (Lanci) / '%s' (Pad & atterragi)" % (anno, x["n"], x["missione"], p["nome"]))
             if p:
                 x["pad"], x["atterraggio"] = p["pad"], p["atterraggio"]
-                if p["altri"]:
+                ab = x.get("altriBooster") or []
+                if p["altri"] and len(ab) == len(p["altri"]) and all(b.get("atterraggio") is None for b in ab):
+                    # sotto-righe ↳ nello stesso ordine nei due fogli
+                    for b, a2 in zip(ab, p["altri"]):
+                        b["atterraggio"] = a2
+                elif p["altri"]:
                     x["altriAtterraggi"] = p["altri"]
+                    if ab:
+                        warn("%d %s: %d sotto-righe FH nel foglio Lanci ma %d in Pad & atterragi" % (anno, x["missione"], len(ab), len(p["altri"])))
         senza = [x["missione"] for x in A[anno] if "pad" not in x]
         if senza:
             warn("%d: %d missioni senza pad in 'Pad & atterragi': %s" % (anno, len(senza), ", ".join(senza[:5])))
@@ -561,9 +575,10 @@ def atterraggi_booster(out):
         for x in rows:
             items = [(x.get("booster"), x.get("atterraggio"))] + [(a.get("booster"), a.get("atterraggio")) for a in (x.get("altriBooster") or [])]
             multi = len(items) == 1 and len(re.findall(r"B\d{4}", x.get("booster") or "")) > 1
+            fhsub = len(items) > 1 or bool(x.get("altriAtterraggi"))
             for b, at in items:
                 for bb in re.findall(r"B\d{4}", b or ""):
-                    idx.setdefault(bb, []).append({"m": x.get("missione"), "d": (x.get("partenza") or "")[:10], "a": None if multi else at, "anno": anno, "usato": False})
+                    idx.setdefault(bb, []).append({"m": x.get("missione"), "d": (x.get("partenza") or "")[:10], "a": None if multi else at, "anno": anno, "usato": False, "fhSub": fhsub})
     note, primo = [], min(out["lanci"]) if out["lanci"] else "9999"
     senza = []
     for grp in ("attivi", "persi"):
@@ -594,7 +609,7 @@ def atterraggi_booster(out):
         d0 = dt.date.fromisoformat(v["data"])
         for L in idx.values():
             for e in L:
-                if e.get("ref") and e["d"] and abs((dt.date.fromisoformat(e["d"]) - d0).days) <= 1 and (
+                if e.get("ref") and not e.get("fhSub") and e["d"] and abs((dt.date.fromisoformat(e["d"]) - d0).days) <= 1 and (
                         _nm(v["missione"]) in _nm(e["m"]) or _nm(e["m"]) in _nm(v["missione"])):
                     for r in e["ref"]:
                         if not r.get("attAmbiguo"):
