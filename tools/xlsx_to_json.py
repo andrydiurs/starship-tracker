@@ -547,6 +547,87 @@ def _n(v):
     return "{:,}".format(v).replace(",", ".") if isinstance(v, int) else str(v)
 
 
+# ---------------------------------------------------------------- atterraggi per booster
+def _nm(s):
+    return re.sub(r"[^a-z0-9]", "", (s or "").lower())
+
+
+def atterraggi_booster(out):
+    """Aggiunge a ogni volo della matrice Falcon 9 l'atterraggio preso dalle liste dei lanci
+    (stesso booster + stessa missione, oppure stesso booster e data entro 1 giorno).
+    Nessun abbinamento -> atterraggio None (segmento «Sconosciuto»). Restituisce le incoerenze."""
+    idx = {}
+    for anno, rows in out["lanci"].items():
+        for x in rows:
+            items = [(x.get("booster"), x.get("atterraggio"))] + [(a.get("booster"), a.get("atterraggio")) for a in (x.get("altriBooster") or [])]
+            multi = len(items) == 1 and len(re.findall(r"B\d{4}", x.get("booster") or "")) > 1
+            for b, at in items:
+                for bb in re.findall(r"B\d{4}", b or ""):
+                    idx.setdefault(bb, []).append({"m": x.get("missione"), "d": (x.get("partenza") or "")[:10], "a": None if multi else at, "anno": anno, "usato": False})
+    note, primo = [], min(out["lanci"]) if out["lanci"] else "9999"
+    senza = []
+    for grp in ("attivi", "persi"):
+        for b in out["falcon9"][grp]:
+            cnt = {}
+            for v in b["voli"]:
+                e = None
+                if v.get("data") and v["data"][:4] >= primo:
+                    cand = idx.get(b["booster"], [])
+                    e = next((c for c in cand if _nm(c["m"]) == _nm(v["missione"])), None)
+                    if e is None and v.get("data"):
+                        d0 = dt.date.fromisoformat(v["data"])
+                        e = next((c for c in cand if c["d"] and abs((dt.date.fromisoformat(c["d"]) - d0).days) <= 1), None)
+                        if e is not None:
+                            a1, a2 = _nm(e["m"]), _nm(v["missione"])
+                            if a1 not in a2 and a2 not in a1:
+                                note.append("Booster %s: il %s il foglio Falcon 9 indica «%s», la lista Lanci %s «%s» (stessa data, nome diverso)." % (b["booster"], _data_it(v["data"]), v["missione"], e["anno"], e["m"]))
+                    if e is None:
+                        senza.append((b["booster"], v))
+                if e is not None:
+                    e["usato"] = True
+                    e.setdefault("ref", []).append(v)
+                v["atterraggio"] = e["a"] if e else None
+    # Missioni Falcon Heavy 2022-2023: la lista ha una sola riga (un booster) ma il foglio Falcon 9
+    # ha anche i laterali -> l'atterraggio della riga non si può attribuire a un booster preciso.
+    ambigui = []
+    for bb, v in senza:
+        d0 = dt.date.fromisoformat(v["data"])
+        for L in idx.values():
+            for e in L:
+                if e.get("ref") and e["d"] and abs((dt.date.fromisoformat(e["d"]) - d0).days) <= 1 and (
+                        _nm(v["missione"]) in _nm(e["m"]) or _nm(e["m"]) in _nm(v["missione"])):
+                    for r in e["ref"]:
+                        if not r.get("attAmbiguo"):
+                            ambigui.append("%s (%s, nella lista: %s)" % (e["m"], _data_it(e["d"]), e["a"]))
+                        r["attAmbiguo"], r["atterraggio"] = True, None
+    for grp in ("attivi", "persi"):
+        for b in out["falcon9"][grp]:
+            cnt = {}
+            for v in b["voli"]:
+                k = v["atterraggio"] or "__ignoto"
+                cnt[k] = cnt.get(k, 0) + 1
+            b["atterraggi"] = cnt
+    if ambigui:
+        note.append("Falcon Heavy: per %d missioni la lista dei lanci ha una sola riga con un solo booster e un solo atterraggio, mentre il foglio Falcon 9 indica anche i booster laterali; l'atterraggio non è attribuibile a un booster preciso ed è mostrato come «Sconosciuto»: %s." % (len(ambigui), "; ".join(ambigui)))
+    if senza:
+        el = "; ".join("%s %s (%s)" % (bb, v["missione"], _data_it(v["data"])) for bb, v in senza)
+        note.append("Falcon 9: %d voli dal %s presenti nel foglio Falcon 9 ma non trovati per quel booster nelle liste dei lanci, quindi senza atterraggio: %s." % (len(senza), primo, el))
+    noti = {b["booster"] for g in ("attivi", "persi") for b in out["falcon9"][g]}
+    for bb, L in sorted(idx.items()):
+        for e in L:
+            if not e["usato"]:
+                note.append("Lista Lanci %s: %s su «%s» (%s) non compare %s." % (e["anno"], bb, e["m"], _data_it(e["d"]),
+                            "tra i voli di quel booster nel foglio Falcon 9" if bb in noti else "nel foglio Falcon 9 (booster assente dalla matrice)"))
+    return note
+
+
+def _data_it(iso):
+    try:
+        return dt.date.fromisoformat(iso[:10]).strftime("%d/%m/%Y")
+    except Exception:
+        return iso or "?"
+
+
 def note_dati(out):
     """Controlli di completezza/coerenza sui dati esportati: elenco di note leggibili
     per la sezione «Note sui dati». Si svuota da sola quando il file viene corretto."""
@@ -740,7 +821,8 @@ def main():
         "archivio": archivio_extra,
         "modifiche": mod,
     }
-    out["meta"]["note"] = note_dati(out)
+    nb = atterraggi_booster(out)
+    out["meta"]["note"] = note_dati(out) + nb
     with open(a.out, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, separators=(",", ":"))
     print("Scritto %s (%d KB). Lanci: %s. Avvisi: %d. Note sui dati: %d" % (

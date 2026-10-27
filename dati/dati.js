@@ -84,6 +84,32 @@
   function sum(arr, f) { return arr.reduce(function (s, x) { var v = f ? f(x) : x; return s + (typeof v === "number" ? v : 0); }, 0); }
   var RUOLO = { core: "FH core centrale", laterale: "FH laterale", ex: "Ex FH", fh: "FH" };
   var RUOLO_BREVE = { core: " (FH core)", laterale: " (FH lat.)", ex: " (ex FH)", fh: " (FH)" };
+  // Colori dei luoghi di atterraggio (stessi in tutti i grafici)
+  var ATT = [
+    { k: "OCISLY", l: "OCISLY – Of Course I Still Love You", c: "#38bdf8" },
+    { k: "JRTI", l: "JRTI – Just Read the Instructions", c: "#a78bfa" },
+    { k: "ASOG", l: "ASOG – A Shortfall of Gravitas", c: "#2dd4bf" },
+    { k: "LZ-1", l: "LZ-1", c: "#fef08a" },
+    { k: "LZ-2", l: "LZ-2", c: "#facc15" },
+    { k: "LZ-4", l: "LZ-4", c: "#f59e0b" },
+    { k: "LZ-40", l: "LZ-40", c: "#c2700a" },
+    { k: "Mechazilla", l: "Mechazilla (torre)", c: "#fb7a3c" },
+    { k: "NO", l: "Expended / non recuperato", c: "#f472b6" },
+    { k: "Fallito", l: "Atterraggio fallito", c: "#ef4444" },
+    { k: "__ignoto", l: "Sconosciuto / prima del 2021", c: "#475569" }
+  ];
+  function attKey(raw) { if (!raw || raw === "__ignoto") return "__ignoto"; return /fallit/i.test(raw) ? "Fallito" : raw.trim(); }
+  function attInfo(raw) {
+    var k = attKey(raw);
+    for (var i = 0; i < ATT.length; i++) if (ATT[i].k === k) return ATT[i];
+    return { k: k, l: k, c: C.neutral };
+  }
+  function attBreve(m) {
+    var ord = ATT.map(function (a) { return a.k; }), agg = {};
+    Object.keys(m || {}).forEach(function (r) { var k = attKey(r); agg[k] = (agg[k] || 0) + m[r]; });
+    return Object.keys(agg).sort(function (a, b) { return (ord.indexOf(a) + 1 || 99) - (ord.indexOf(b) + 1 || 99); })
+      .map(function (k) { return (k === "__ignoto" ? "Sconosciuto" : k === "NO" ? "Non recup." : k) + " " + agg[k]; }).join(" · ");
+  }
   function boosters() {
     var q = {};
     (D.f9Utilizzati2026 || []).forEach(function (b) { q[b.booster] = b; });
@@ -92,7 +118,8 @@
       var fr = b.fhRuolo || (/laterale FH/i.test(x.note || "") ? "laterale" : /core centrale FH/i.test(x.note || "") ? "core" : null);
       var last = b.voli[b.voli.length - 1] || {}, first = b.voli[0] || {};
       return { booster: b.booster, nome: b.nome, stato: stato, fh: b.fh, fhRuolo: fr, ruolo: RUOLO[fr] || null, voli: b.nVoli, perAnno: x.perAnno || {}, note: x.note || null, statoFile: x.stato || null,
-               primo: first.data, primoM: first.missione, ultimo: last.data, ultimoM: last.missione, lista: b.voli };
+               primo: first.data, primoM: first.missione, ultimo: last.data, ultimoM: last.missione, lista: b.voli,
+               atterraggi: b.atterraggi || {}, attTesto: attBreve(b.atterraggi) };
     }
     return D.falcon9.attivi.map(function (b) { return map(b, "Attivo"); })
       .concat(D.falcon9.persi.map(function (b) { return map(b, "Perso / non recuperato"); }));
@@ -145,16 +172,15 @@
     { id: "atterraggi", tab: "lanci", title: "Atterraggi per piattaforma", years: function () { return anniCon("atterraggi"); },
       build: function (y) {
         var r = riep(y), t = r.atterraggi, tot = r.atterraggiTotali || {};
-        var mare = /^(ASOG|JRTI|OCISLY)\b/;
-        var note = [];
+            var note = [];
         if (tot.Mare != null) note.push("in mare " + nf(tot.Mare));
         if (tot.Terra != null) note.push("a terra " + nf(tot.Terra));
         if (tot["Non recuperati"] != null) note.push("non recuperati " + nf(tot["Non recuperati"]));
         if (tot.Fallimenti) note.push("atterraggi falliti " + nf(tot.Fallimenti));
         return { type: "bar", labels: t.map(function (x) { return x.label; }),
-          datasets: [{ label: "Atterraggi", data: t.map(function (x) { return x.valore; }), backgroundColor: t.map(function (x) { return /fallito/i.test(x.label) ? C.bad : mare.test(x.label) ? C.prototipi : x.label === "Mechazilla" ? C.test : C.siti; }), borderRadius: 6 }],
+          datasets: [{ label: "Atterraggi", data: t.map(function (x) { return x.valore; }), backgroundColor: t.map(function (x) { return attInfo(x.label).c; }), borderRadius: 6 }],
           opts: { plugins: { legend: { display: false } } },
-          nota: "Blu: navi drone in mare · giallo: zone di atterraggio a terra" + (note.length ? ". " + y + ": " + note.join(", ") + "." : ".") +
+          nota: "Stessi colori del grafico dei booster: azzurro/viola/verde acqua le tre navi drone (OCISLY, JRTI, ASOG), toni di giallo-ambra le zone LZ a terra, arancio Mechazilla, rosso gli atterraggi falliti" + (note.length ? ". " + y + ": " + note.join(", ") + "." : ".") +
             (r.atterraggiNota ? " Nota del file: " + r.atterraggiNota.replace(/^./, function (c) { return c.toUpperCase(); }) + "." : "") +
             (r.contatiDallaLista ? " Il file non ha un riepilogo degli atterraggi per il " + y + ": conteggio della colonna «Atterraggio» della lista lanci." : "") };
       } },
@@ -201,18 +227,30 @@
           nota: note.length ? note.join("; ") + " (righe «Totale Falcon 9» e «Totale Falcon 9 + Starship»)." : "" };
       } },
 
-    { id: "booster", tab: "falcon9", title: "Riutilizzo booster Falcon 9: voli per booster", sub: "Ordinati per numero di voli", wide: true, tall: true,
+    { id: "booster", tab: "falcon9", title: "Riutilizzo booster Falcon 9: voli e atterraggi per booster", sub: "Ordinati per numero di voli · colori = luogo di atterraggio", wide: true, tall: true,
       build: function () {
         var b = boosters().slice().sort(function (a, c) { return c.voli - a.voli || a.booster.localeCompare(c.booster); });
-        var lab = b.map(function (x) { return x.booster + (RUOLO_BREVE[x.fhRuolo] || (x.fh ? " (FH)" : "")); });
-        function ds(stato, label, col) {
-          return { label: label, data: b.map(function (x) { return x.stato === stato ? x.voli : null; }), backgroundColor: col, borderRadius: 4, grouped: false, barThickness: 12 };
-        }
-        return { type: "bar", labels: lab, height: Math.max(320, b.length * 17 + 60),
-          datasets: [ds("Attivo", "Attivi", C.prossimo), ds("Perso / non recuperato", "Persi / non recuperati", alpha(C.bad, .75))],
-          opts: { indexAxis: "y", scales: { y: { ticks: { autoSkip: false, font: { size: 11 } } }, x: { position: "top", beginAtZero: true } },
-            plugins: { tooltip: { callbacks: { label: function (it) { var x = b[it.dataIndex]; return x.stato + ": " + it.raw + " voli · ultimo " + (x.ultimoM || "") + " " + (x.ultimo ? fData(x.ultimo) : ""); } } } } },
-          nota: b.filter(function (x) { return x.stato === "Attivo"; }).length + " booster attivi e " + b.filter(function (x) { return x.stato !== "Attivo"; }).length + " persi o non recuperati (foglio Falcon 9). FH core = core centrale Falcon Heavy, FH lat. = booster laterale." };
+        var lab = b.map(function (x) { return x.booster + (x.stato === "Attivo" ? "" : " ✕") + (RUOLO_BREVE[x.fhRuolo] || (x.fh ? " (FH)" : "")); });
+        var agg = b.map(function (x) { var o = {}; Object.keys(x.atterraggi).forEach(function (r) { var k = attKey(r); o[k] = (o[k] || 0) + x.atterraggi[r]; }); return o; });
+        var chiavi = {};
+        agg.forEach(function (o) { Object.keys(o).forEach(function (k) { chiavi[k] = 1; }); });
+        var ord = ATT.map(function (a) { return a.k; });
+        var ks = Object.keys(chiavi).sort(function (a, c) { return (ord.indexOf(a) + 1 || 99) - (ord.indexOf(c) + 1 || 99); });
+        var ds = ks.map(function (k) { var a = attInfo(k);
+          return { label: a.l, data: agg.map(function (o) { return o[k] || null; }), backgroundColor: a.c, borderWidth: 0, barThickness: 12, stack: "v" }; });
+        var mobile = window.matchMedia("(max-width: 640px)").matches;
+        var ign = sum(agg, function (o) { return o.__ignoto || 0; }), tot = sum(b, function (x) { return x.voli; });
+        var pre = sum(b, function (x) { return x.lista.filter(function (v) { return v.data && v.data < "2021"; }).length; });
+        return { type: "bar", labels: lab, height: Math.max(360, b.length * (mobile ? 19 : 17) + (mobile ? 230 : 110)), datasets: ds,
+          opts: { indexAxis: "y", scales: { y: { stacked: true, ticks: { autoSkip: false, font: { size: 11 } } }, x: { stacked: true, position: "top", beginAtZero: true } },
+            plugins: { legend: { labels: { padding: mobile ? 8 : 12, font: { size: mobile ? 11 : 12 } } },
+              tooltip: { filter: function (it) { return it.raw; }, callbacks: {
+                title: function (it) { var x = b[it[0].dataIndex]; return x.booster + " · " + x.stato + (x.ruolo ? " · " + x.ruolo : "") + " · " + x.voli + " voli"; },
+                label: function (it) { return it.dataset.label + ": " + it.raw + (it.raw === 1 ? " volo" : " voli"); } } } } },
+          nota: b.filter(function (x) { return x.stato === "Attivo"; }).length + " booster attivi e " + b.filter(function (x) { return x.stato !== "Attivo"; }).length +
+            " persi o non recuperati (✕), dal foglio Falcon 9. FH core = core centrale Falcon Heavy, FH lat. = booster laterale. Atterraggi presi dalle liste dei lanci 2021–2026 abbinando booster e missione: " +
+            nf(tot - ign) + " voli su " + nf(tot) + " hanno l'atterraggio; " + nf(ign) + " sono «Sconosciuto» (" + nf(pre) + " prima del 2021, " + nf(ign - pre) +
+            " dal 2021 senza un atterraggio attribuibile a quel booster nelle liste, soprattutto booster laterali Falcon Heavy 2022–2023: vedi «Note sui dati»)." };
       } },
 
     { id: "dragonUso", tab: "dragon", title: "Missioni per capsula Dragon",
@@ -279,16 +317,16 @@
       cols: [{ key: "mese", label: "Mese", nosort: true }].concat(D_ANNI_SAT()), nosearch: true },
 
     { id: "t-booster", tab: "falcon9", title: "Booster Falcon 9", rows: function () { return boosters(); },
-      cols: [{ key: "booster", label: "Booster" }, { key: "stato", label: "Stato", type: "tag" }, { key: "statoFile", label: "Stato (tabella 2026)" }, { key: "ruolo", label: "Ruolo FH" }, { key: "voli", label: "Voli", type: "num" },
+      cols: [{ key: "booster", label: "Booster" }, { key: "stato", label: "Stato", type: "tag" }, { key: "statoFile", label: "Stato (tabella 2026)" }, { key: "ruolo", label: "Ruolo FH" }, { key: "voli", label: "Voli", type: "num" }, { key: "attTesto", label: "Atterraggi" },
              { key: "a2020", label: "2020", type: "num" }, { key: "a2021", label: "2021", type: "num" }, { key: "a2022", label: "2022", type: "num" }, { key: "a2023", label: "2023", type: "num" },
              { key: "a2024", label: "2024", type: "num" }, { key: "a2025", label: "2025", type: "num" }, { key: "a2026", label: "2026", type: "num" },
              { key: "primo", label: "Primo volo", type: "date" }, { key: "ultimoM", label: "Ultima missione" }, { key: "ultimo", label: "Data", type: "date" }, { key: "note", label: "Note" }],
       prep: function (r) { for (var y = 2020; y <= 2026; y++) r["a" + y] = r.perAnno[String(y)]; return r; },
-      filters: ["stato", "ruolo"], sort: ["voli", -1], open: true, note: "Voli per anno solo per i booster della tabella «Falcon 9 utilizzati e attivi» (foglio Lanci 2026)." },
+      filters: ["stato", "ruolo"], sort: ["voli", -1], open: true, note: "Voli per anno solo per i booster della tabella «Falcon 9 utilizzati e attivi» (foglio Lanci 2026). Atterraggi: dalle liste dei lanci 2021–2026; «Sconosciuto» = voli prima del 2021 o senza atterraggio attribuibile." },
     { id: "t-voli", tab: "falcon9", title: "Tutti i voli per booster", rows: function () {
-        var out = []; boosters().forEach(function (b) { b.lista.forEach(function (v) { out.push({ booster: b.booster, stato: b.stato, n: v.n, missione: v.missione, data: v.data }); }); }); return out;
-      }, cols: [{ key: "booster", label: "Booster" }, { key: "n", label: "Volo n.", type: "num" }, { key: "missione", label: "Missione" }, { key: "data", label: "Data", type: "date" }, { key: "stato", label: "Stato", type: "tag" }],
-      filters: ["booster", "stato"], sort: ["data", -1] },
+        var out = []; boosters().forEach(function (b) { b.lista.forEach(function (v) { out.push({ booster: b.booster, stato: b.stato, n: v.n, missione: v.missione, data: v.data, atterraggio: v.atterraggio || (v.data && v.data < "2021" ? "Sconosciuto (prima del 2021)" : "Sconosciuto") }); }); }); return out;
+      }, cols: [{ key: "booster", label: "Booster" }, { key: "n", label: "Volo n.", type: "num" }, { key: "missione", label: "Missione" }, { key: "data", label: "Data", type: "date" }, { key: "atterraggio", label: "Atterraggio" }, { key: "stato", label: "Stato", type: "tag" }],
+      filters: ["booster", "atterraggio", "stato"], sort: ["data", -1] },
 
     { id: "t-dragon", tab: "dragon", title: "Missioni Dragon", rows: function () { return dragonMissioni(); },
       cols: [{ key: "capsula", label: "Capsula" }, { key: "tipo", label: "Tipo", type: "tag" }, { key: "missione", label: "Missione" }, { key: "partenza", label: "Partenza", type: "date" }, { key: "rientro", label: "Rientro", type: "date" }, { key: "durata", label: "Durata" }, { key: "turnaround", label: "Turnaround" }, { key: "caricoKg", label: "Carico su (kg)", type: "num" }],
