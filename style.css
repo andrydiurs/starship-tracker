@@ -289,5 +289,6 @@ svg { flex-shrink: 0; }
 .pill-link { margin-left: auto; display: inline-flex; align-items: center; gap: 7px; padding: 6px 10px 6px 12px; border-radius: 99px; border: 1px solid color-mix(in srgb, var(--accent, var(--link)) 40%, transparent); background: color-mix(in srgb, var(--accent, var(--link)) 10%, transparent); color: var(--text); font-size: 14px; font-weight: 600; line-height: 1.2; white-space: nowrap; transition: border-color .15s, background .15s; }
 .pill-link svg { width: 16px; height: 16px; color: var(--accent, var(--link)); }
 .pill-link svg:last-child { width: 14px; height: 14px; margin-left: -2px; }
+.pill-link + .pill-link { margin-left: 0; }
 .pill-link:hover { text-decoration: none; border-color: var(--accent, var(--link)); background: color-mix(in srgb, var(--accent, var(--link)) 18%, transparent); }
 @media (max-width: 640px) { .pill-link { font-size: 13px; padding: 5px 9px 5px 10px; } }

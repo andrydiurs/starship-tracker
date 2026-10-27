@@ -84,5 +84,24 @@ Il testo viene sottoposto a escape; sono supportati solo `[testo](url)` e `**gra
 ### Cache
 
 - I dati JSON (`data/tracker.json`, `data/resoconti/*.json`) sono letti con `fetch(..., { cache: "no-cache" })`: l'aggiornamento quotidiano basta modificarli, non serve altro.
-- CSS e JS sono richiamati con `?v=AAAAMMGG<lettera>` (es. `style.css?v=20261023b`) in `index.html`, `resoconti/page.tpl` e nelle pagine dei mesi. Quando si modifica CSS o JS, aumentare la versione in tutti questi file.
+- CSS e JS sono richiamati con `?v=AAAAMMGG<lettera>` (es. `style.css?v=20261027a`) in `index.html`, `resoconti/page.tpl`, nelle pagine dei mesi e in `dati/index.html`. Quando si modifica CSS o JS, aumentare la versione in tutti questi file.
 - Tutte le icone SVG inline hanno `width`/`height` espliciti, così restano piccole anche con un CSS vecchio o assente.
+
+## Dati SpaceX (`dati/`)
+
+Pagina con grafici e tabelle costruiti dal file Excel di Master Dati (`SpaceX_aggiornato.xlsx`).
+
+- `dati/index.html`, `dati/dati.css`, `dati/dati.js`: pagina, stile e logica (grafici con Chart.js da CDN, tabelle con ricerca, filtri e ordinamento).
+- `data/spacex.json`: dati generati, **non modificarlo a mano**.
+- `tools/xlsx_to_json.py`: convertitore. Legge il file Excel (solo lettura, valori calcolati) e riscrive il JSON. Non aggiunge né stima numeri: copia solo ciò che è nel file.
+
+Per aggiornare dopo una nuova versione del file Excel:
+
+```bash
+python3 -m pip install openpyxl          # una volta sola
+python3 tools/xlsx_to_json.py /percorso/SpaceX_aggiornato.xlsx --out data/spacex.json
+```
+
+Il convertitore stampa eventuali avvisi (es. nomi di missione diversi tra fogli); finiscono anche in `meta.avvisi` e sono mostrati nella scheda «Archivio» della pagina. La data «Dati aggiornati al» viene dal foglio «Modifiche».
+
+Grafici e tabelle sono descritti negli array `CHARTS` e `TABLES` in `dati/dati.js`: per aggiungerne uno basta una nuova voce con `id`, `tab`, `title` e una funzione `build`.

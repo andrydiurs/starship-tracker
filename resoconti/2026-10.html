@@ -14,8 +14,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css?v=20261023b">
-  <link rel="stylesheet" href="resoconti.css?v=20261023b">
+  <link rel="stylesheet" href="../style.css?v=20261027a">
+  <link rel="stylesheet" href="resoconti.css?v=20261027a">
 </head>
 <body>
   <div class="stars" aria-hidden="true"></div>
@@ -49,6 +49,6 @@
     </figure>
   </dialog>
 
-  <script src="resoconti.js?v=20261023b" defer></script>
+  <script src="resoconti.js?v=20261027a" defer></script>
 </body>
 </html>
