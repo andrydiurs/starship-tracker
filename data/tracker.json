@@ -1,5 +1,5 @@
 {
-  "ULTIMO_AGGIORNAMENTO": "27 ott 2026, 08:38",
+  "ULTIMO_AGGIORNAMENTO": "28 ott 2026, 08:50",
   "PROSSIMO_VOLO": {
     "volo": "Flight 15",
     "veicoli": "Super Heavy B22 + Ship 42",
@@ -8,7 +8,7 @@
     "sito": "Starbase, Pad 2",
     "obiettivo": "Doppia cattura in torre: Super Heavy e Ship",
     "licenzaBreve": "Non emessa",
-    "licenzaFaa": "Modifica della licenza attesa, non ancora emessa al 27 ott",
+    "licenzaFaa": "Modifica della licenza attesa, non ancora emessa al 28 ott",
     "licenzaSrc": {
       "label": "Ars Technica, 21 ott",
       "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
@@ -21,7 +21,7 @@
       "titolo": "Ship 42",
       "versione": "V3",
       "stato": {
-        "label": "Static fire a 1 motore completato a Massey's",
+        "label": "Static fire a 6 motori completato a Massey's",
         "tone": "success"
       },
       "milestones": [
@@ -37,29 +37,29 @@
         },
         {
           "nome": "Motori installati",
-          "fatto": false,
-          "data": "almeno 1 (27 ott)",
-          "nota": "lo static fire monomotore del 27 ott conferma almeno un Raptor a bordo; set completo di 6 motori non confermato",
+          "fatto": true,
+          "data": "entro il 27 ott",
+          "nota": "set completo di 6 Raptor (3 a livello del mare e 3 RVac) confermato dallo static fire a sei motori del 27 ott",
           "src": {
             "label": "@NASASpaceflight, 27 ott",
-            "url": "https://x.com/NASASpaceflight/status/2114904512217694216"
+            "url": "https://x.com/NASASpaceflight/status/2115198496521195971"
           }
         },
         {
           "nome": "Static fire",
           "fatto": true,
-          "data": "27 ott (1 motore)",
-          "nota": "static fire a un solo motore a Massey's nella notte tra 26 e 27 ott (sera texana del 26, poco dopo le 03:00 ora di Roma); per @LabPadre «una buona accensione». Non è noto se seguiranno accensioni con più motori; avviso stradale Produzione→Massey's per il 28 ott 5:59-10:00 ora di Roma",
+          "data": "27 ott (1 e 6 motori)",
+          "nota": "dopo l'accensione a un motore nella notte tra 26 e 27 ott, il 27 ott verso le 22:46 ora di Roma S42 ha fatto lo static fire a sei motori a Massey's. Per NSF entrambi i test sono completati e la strada verso il Flight 15 a novembre è aperta; SpaceX non ha ancora commentato",
           "src": {
             "label": "@NASASpaceflight, 27 ott",
-            "url": "https://x.com/NASASpaceflight/status/2114904512217694216"
+            "url": "https://x.com/NASASpaceflight/status/2115231900961005856"
           }
         },
         {
           "nome": "Trasferimento in rampa",
           "fatto": false,
           "data": "n.d.",
-          "nota": "al Pad 2 solo per test chopsticks l'11-12 set; dal 26 ott al Pad 2 c'è S43 per prove di cattura in vista del Flight 15",
+          "nota": "al Pad 2 solo per test chopsticks l'11-12 set; S43 ha concluso le prove di cattura al Pad 2 ed è tornata in produzione il 28 ott",
           "src": {
             "label": "Teslarati",
             "url": "https://www.teslarati.com/spacex-starship-tower-catch-flight-15/"
@@ -136,6 +136,42 @@
     }
   },
   "NEWS": [
+    {
+      "data": "28 ott",
+      "sez": "Prototipi",
+      "testo": "Ship 43 torna in produzione dopo le prove con i chopsticks al Pad 2; Booster 23 di nuovo verso Massey's per prove crio. Per NSF la coppia volerà dal 39A (Flight 16)",
+      "src": {
+        "label": "@NASASpaceflight",
+        "url": "https://x.com/NASASpaceflight/status/2115298718035370428"
+      }
+    },
+    {
+      "data": "27 ott",
+      "sez": "Test",
+      "testo": "Ship 42: static fire a sei motori a Massey's (verso le 22:46 ora di Roma). Entrambi i veicoli del Flight 15 hanno ora completato lo static fire",
+      "src": {
+        "label": "@NASASpaceflight",
+        "url": "https://x.com/NASASpaceflight/status/2115198496521195971"
+      }
+    },
+    {
+      "data": "27 ott",
+      "sez": "Siti",
+      "testo": "Florida: niente lanci Falcon 9 per almeno sei settimane mentre SpaceX prepara il debutto di Starship al KSC",
+      "src": {
+        "label": "Tallahassee Democrat",
+        "url": "https://www.tallahassee.com/story/tech/science/space/2026/10/27/spacex-falcon-9-rocket-launches-paused-florida-starship/92440625007/"
+      }
+    },
+    {
+      "data": "27 ott",
+      "sez": "Siti",
+      "testo": "McGregor: possibile esplosione di un serbatoio COPV la notte del 27 ott (non confermato). @mcrs987: è un banco di prova dove serbatoi di test vengono distrutti di tanto in tanto",
+      "src": {
+        "label": "@mcrs987",
+        "url": "https://x.com/mcrs987/status/2115080433058611231"
+      }
+    },
     {
       "data": "27 ott",
       "sez": "Test",
@@ -262,31 +298,13 @@
         "label": "@VickiCocks15",
         "url": "https://x.com/VickiCocks15/status/2114124378610737526"
       }
-    },
-    {
-      "data": "24 ott",
-      "sez": "Test",
-      "testo": "Rollout di B22 al Pad 2 slittato al 24 ott (9-13 ora di Roma); static fire forse nel weekend",
-      "src": {
-        "label": "@VickiCocks15",
-        "url": "https://x.com/VickiCocks15/status/2113756980510588938"
-      }
-    },
-    {
-      "data": "23 ott",
-      "sez": "Lanci",
-      "testo": "NASA: Flight 15 a novembre con Raptor migliorati; nel Q4 prime catture V3 e primo volo dalla Florida",
-      "src": {
-        "label": "TeslaNorth / NASA",
-        "url": "https://teslanorth.com/2026/10/23/starship-moon-lander-cabin-nasa/"
-      }
     }
   ],
   "IN_BREVE": {
-    "siti": "Il Pad 2, liberato da B22 nella notte del 26 ott, ospita ora S43 per le prove di cattura con i chopsticks. A Massey's S42 ha fatto il suo primo static fire; nuova foto aerea della Gigabay texana. In Florida la Gigabay di Roberts Road si prepara a B23 e S43, mentre il 39A completa i collaudi.",
-    "prototipi": "S42 è a Massey's per la campagna di static fire del Flight 15; S43 è al Pad 2 per prove di cattura. B22 è in Mega Bay 1 per i preparativi finali, S44 e S45 avanzano in Mega Bay 2 e B24 ha il corpo completo. Musk annuncia un Raptor 4 da 300 t; @mcrs987 ricorda che il Raptor 3 è ancora sotto i 280 t promessi.",
-    "test": "Dopo lo static fire completo di B22 (25 ott), nella notte tra 26 e 27 ott S42 ha completato a Massey's uno static fire a un solo motore. In contemporanea S43 è stata sollevata dai chopsticks del Pad 2 per prove di cattura; un nuovo avviso stradale Produzione→Massey's è previsto il 28 ott (5:59-10:00 ora di Roma).",
-    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. Il Flight 15 resta atteso a novembre (NET 8 nov su slide non ufficiale) con la prima doppia cattura: entrambi i veicoli hanno ora fatto uno static fire, ma la modifica della licenza FAA non è ancora stata emessa. Per NSF il Flight 16 dal 39A potrebbe arrivare a fine gennaio."
+    "siti": "A Massey's S42 ha completato lo static fire a sei motori e sta arrivando B23 per nuove prove crio; il sito 2 avanza. Al Pad 2 si sono concluse le prove di cattura di S43, al Pad 1 proseguono i lavori sul flame trench. In Florida Falcon 9 si ferma per almeno sei settimane per preparare Starship al KSC.",
+    "prototipi": "S42 ha completato gli static fire a uno e sei motori; B22 è in Mega Bay 1 per i preparativi finali del Flight 15. S43 è tornata in produzione e B23 va a Massey's: per NSF voleranno insieme dal 39A (Flight 16). S44 e S45 avanzano in Mega Bay 2, B24 ha il corpo completo.",
+    "test": "Il 27 ott S42 ha fatto lo static fire a sei motori a Massey's, dopo quello a un motore della notte precedente: entrambi i veicoli del Flight 15 hanno ora completato lo static fire. S43 ha concluso le prove di cattura al Pad 2 e B23 torna a Massey's per le prove crio. A McGregor possibile esplosione di un COPV (non confermato).",
+    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. Il Flight 15 resta atteso a novembre (NET 8 nov su slide non ufficiale) con la prima doppia cattura: B22 e S42 hanno completato gli static fire, ma la modifica della licenza FAA non è ancora stata emessa. Per NSF il Flight 16 dal 39A potrebbe arrivare a fine gennaio."
   },
   "SITI": [
     {
@@ -296,12 +314,12 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "B22 rientrato; S43 al Pad 2 per prove di cattura",
-      "ultimo": "Static fire di B22 il 25 ott; nella notte tra 25 e 26 ott B22 sollevato ad altezza di cattura e rimandato in Mega Bay 1. Il 26 ott arriva S43 dalla produzione (avviso stradale 16-21 ora di Roma); nella notte tra 26 e 27 ott i chopsticks l'hanno sollevata per prove di cattura in vista del Flight 15. Chiusura di riserva del 26 ott revocata",
-      "data": "25-27 ott",
+      "breve": "S43 rientrata in produzione dopo le prove di cattura",
+      "ultimo": "Static fire di B22 il 25 ott; nella notte tra 25 e 26 ott B22 sollevato ad altezza di cattura e rimandato in Mega Bay 1. Il 26 ott arriva S43 dalla produzione (avviso stradale 16-21 ora di Roma); nella notte tra 26 e 27 ott i chopsticks l'hanno sollevata per prove di cattura in vista del Flight 15. Chiusura di riserva del 26 ott revocata. Il 28 ott S43 ha lasciato il Pad 2 ed è tornata al sito di produzione",
+      "data": "25-28 ott",
       "src": {
-        "label": "@RGVaerialphotos",
-        "url": "https://x.com/RGVaerialphotos/status/2114875305244369184"
+        "label": "@NASASpaceflight",
+        "url": "https://x.com/NASASpaceflight/status/2115298718035370428"
       }
     },
     {
@@ -311,12 +329,12 @@
         "label": "In ricostruzione",
         "tone": "accent"
       },
-      "breve": "Ricostruzione rapida: muri del flame trench in posa",
-      "ultimo": "In ricostruzione per eguagliare il Pad 2; il 23 ott sollevate altre sezioni del muro del flame trench (NSF: «ne manca una»); foto aerea del cantiere del 23 ott",
-      "data": "18-23 ott",
+      "breve": "Proseguono i lavori sul flame trench",
+      "ultimo": "In ricostruzione per eguagliare il Pad 2; il 23 ott sollevate altre sezioni del muro del flame trench (NSF: «ne manca una»); foto aerea del cantiere del 23 ott; il 27 ott nuova foto aerea: i lavori sul flame trench continuano",
+      "data": "18-27 ott",
       "src": {
         "label": "@RGVaerialphotos",
-        "url": "https://x.com/RGVaerialphotos/status/2113718018236645565"
+        "url": "https://x.com/RGVaerialphotos/status/2115005582826684812"
       }
     },
     {
@@ -371,12 +389,12 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "Static fire a un motore di S42",
-      "ultimo": "S43 ha lasciato Massey's nella notte tra 25 e 26 ott; S42 è arrivata il 26 ott e nella notte tra 26 e 27 ott (poco dopo le 03:00 ora di Roma) ha fatto uno static fire a un motore. Nuovo avviso stradale Produzione→Massey's il 28 ott 5:59-10:00 ora di Roma (scopo non noto). Secondo sito di test in costruzione",
-      "data": "26-27 ott",
+      "breve": "Static fire a 6 motori di S42; arriva B23",
+      "ultimo": "S42 è arrivata il 26 ott; static fire a un motore nella notte tra 26 e 27 ott e a sei motori il 27 ott verso le 22:46 ora di Roma. Il 28 ott B23 è in viaggio verso Massey's per nuove prove crio. Il cantiere del sito 2 avanza accanto al sito 1 (foto del 26 ott). Non confermato: i simulatori di spinta di booster e Ship potrebbero essere portati qui per lo stoccaggio. Spazio aereo riservato dalla FAA per «high energy testing» dal 23 ott al 6 nov (secondo The Space Road)",
+      "data": "26-28 ott",
       "src": {
         "label": "@NASASpaceflight",
-        "url": "https://x.com/NASASpaceflight/status/2114904512217694216"
+        "url": "https://x.com/NASASpaceflight/status/2115198496521195971"
       }
     },
     {
@@ -386,12 +404,12 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "Test Raptor 3 continui; 557 s il 7 ott",
-      "ultimo": "Continui movimenti di Raptor 3 da e verso i banchi di prova; il 7 ott un test da 557 s sul banco nord",
-      "data": "7-21 ott",
+      "breve": "Possibile esplosione di un COPV (non confermato)",
+      "ultimo": "Nella notte texana del 26 ott (05:26 ora di Roma del 27 ott) sembra essere esploso un serbatoio composito ad alta pressione (COPV); lo riportano solo un repost di @kmreed e iXBT, non confermato. @mcrs987 spiega che è un banco di collaudo dove vengono distrutti serbatoi di test di tanto in tanto. Il 7 ott un test Raptor 3 da 557 s sul banco nord",
+      "data": "7-27 ott",
       "src": {
-        "label": "Basenor (fonte NSF)",
-        "url": "https://www.basenor.com/blogs/news/spacex-raptor-hits-557-second-test-fire-second-longest-ever"
+        "label": "@mcrs987",
+        "url": "https://x.com/mcrs987/status/2115080433058611231"
       }
     },
     {
@@ -401,12 +419,12 @@
         "label": "Collaudi",
         "tone": "accent"
       },
-      "breve": "Collaudi dei sistemi; tetto rinforzato e più metano",
-      "ultimo": "Tetto rinforzato sulla torre per le catture di Ship (12 ott); aggiunti due serbatoi di metano liquido (circa 5.000 t, 3,8 stack) e più azoto per il deluge; collaudi di attivazione in corso. Static fire di B23 al 39A forse a metà dicembre (stima NSF)",
-      "data": "25 ott",
+      "breve": "Collaudi; Falcon 9 fermo in Florida per preparare Starship",
+      "ultimo": "Tetto rinforzato sulla torre per le catture di Ship (12 ott); aggiunti due serbatoi di metano liquido (circa 5.000 t, 3,8 stack) e più azoto per il deluge; collaudi di attivazione in corso. Static fire di B23 al 39A forse a metà dicembre (stima NSF). Il 27 ott: niente lanci Falcon 9 dalla Florida per almeno sei settimane mentre SpaceX prepara il debutto di Starship al KSC (Kiko Dontchev, 21 ott)",
+      "data": "25-27 ott",
       "src": {
-        "label": "NSF",
-        "url": "https://www.nasaspaceflight.com/2026/10/roberts-road-expansion-flight-16/"
+        "label": "Tallahassee Democrat",
+        "url": "https://www.tallahassee.com/story/tech/science/space/2026/10/27/spacex-falcon-9-rocket-launches-paused-florida-starship/92440625007/"
       }
     },
     {
@@ -456,6 +474,16 @@
     }
   ],
   "NON_CONFERMATI": [
+    {
+      "titolo": "McGregor",
+      "data": "27 ott",
+      "testo": "Possibile esplosione di un serbatoio COPV ad alta pressione verso le 05:26 ora di Roma; riportata solo da un repost di @kmreed e da iXBT"
+    },
+    {
+      "titolo": "Massey's",
+      "data": "27 ott",
+      "testo": "I simulatori di spinta di booster e Ship potrebbero essere spostati a Massey's per lo stoccaggio (@RGVaerialphotos)"
+    },
     {
       "titolo": "Pad 2",
       "data": "9-19 ott",
@@ -544,12 +572,12 @@
       "versione": "V3",
       "volo": "Flight 15",
       "stato": "Test",
-      "breve": "Static fire a un motore completato a Massey's",
-      "note": "Test chopsticks al Pad 2 (11-12 set); ulteriore prova crio a Massey's (9 ott). Partita per Massey's il 26 ott; nella notte tra 26 e 27 ott (poco dopo le 03:00 ora di Roma) static fire a un solo motore, «una buona accensione» per @LabPadre",
+      "breve": "Static fire a 1 e 6 motori completati a Massey's",
+      "note": "Test chopsticks al Pad 2 (11-12 set); ulteriore prova crio a Massey's (9 ott). Partita per Massey's il 26 ott; nella notte tra 26 e 27 ott (poco dopo le 03:00 ora di Roma) static fire a un solo motore, «una buona accensione» per @LabPadre. Il 27 ott verso le 22:46 ora di Roma static fire a sei motori: per NSF completati entrambi i test, strada aperta al Flight 15 a novembre (SpaceX non ha ancora commentato)",
       "data": "27 ott",
       "src": {
         "label": "@NASASpaceflight",
-        "url": "https://x.com/NASASpaceflight/status/2114904512217694216"
+        "url": "https://x.com/NASASpaceflight/status/2115231900961005856"
       }
     },
     {
@@ -559,12 +587,12 @@
       "volo": "Flight 16 (prob.)",
       "voloNc": true,
       "stato": "Test",
-      "breve": "Al Pad 2 per prove di cattura con i chopsticks",
-      "note": "Prove crio a Massey's concluse il 23 ott; rientrata in produzione nella notte tra 25 e 26 ott e nel pomeriggio texano del 26 ott portata al Pad 2; sollevata dai chopsticks nella notte tra 26 e 27 ott per prove di cattura in vista del Flight 15 (NSF: «TPS superbo»). Stime NSF: static fire a metà dicembre, spedizione al KSC tra inizio e metà gennaio",
-      "data": "27 ott",
+      "breve": "Tornata in produzione dopo le prove di cattura",
+      "note": "Prove crio a Massey's concluse il 23 ott; rientrata in produzione nella notte tra 25 e 26 ott e nel pomeriggio texano del 26 ott portata al Pad 2; sollevata dai chopsticks nella notte tra 26 e 27 ott per prove di cattura in vista del Flight 15 (NSF: «TPS superbo»). Stime NSF: static fire a metà dicembre, spedizione al KSC tra inizio e metà gennaio. Il 28 ott è tornata al sito di produzione; per NSF andrà via mare al KSC con B23 per il primo volo dal 39A (non confermato da SpaceX)",
+      "data": "28 ott",
       "src": {
-        "label": "@RGVaerialphotos",
-        "url": "https://x.com/RGVaerialphotos/status/2114951781818245449"
+        "label": "@NASASpaceflight",
+        "url": "https://x.com/NASASpaceflight/status/2115298718035370428"
       }
     },
     {
@@ -574,12 +602,12 @@
       "volo": "Flight 16 (prob.)",
       "voloNc": true,
       "stato": "Test",
-      "breve": "Installazione motori; static fire forse al 39A",
-      "note": "Prova crio completata il 15 ott; in Mega Bay 1 per i motori. Stime NSF: pronto per lo static fire a fine novembre, possibile static fire al 39A a metà dicembre",
-      "data": "25 ott",
+      "breve": "Verso Massey's per nuove prove crio",
+      "note": "Prova crio completata il 15 ott; in Mega Bay 1 per i motori. Stime NSF: pronto per lo static fire a fine novembre, possibile static fire al 39A a metà dicembre. Il 28 ott è in viaggio verso Massey's per nuove prove criogeniche; SpaceX porta avanti in parallelo Flight 15 e 16. Per NSF andrà al KSC con S43 per il primo volo dal 39A (non confermato)",
+      "data": "28 ott",
       "src": {
-        "label": "NSF",
-        "url": "https://www.nasaspaceflight.com/2026/10/roberts-road-expansion-flight-16/"
+        "label": "@NASASpaceflight",
+        "url": "https://x.com/NASASpaceflight/status/2115307440803594436"
       }
     },
     {
@@ -727,27 +755,38 @@
   "TEST": [
     {
       "data": "27 ott",
+      "veicolo": "Ship 42",
+      "tipo": "Static fire (6 motori)",
+      "luogo": "Massey's",
+      "esito": "Completato",
+      "nota": "Verso le 22:46 ora di Roma, il giorno dopo l'accensione a un motore. Per NSF entrambi i test di S42 sono completati; SpaceX non ha ancora commentato. Spazio aereo riservato dalla FAA per «high energy testing» dal 23 ott al 6 nov (The Space Road)",
+      "src": {
+        "label": "@NASASpaceflight",
+        "url": "https://x.com/NASASpaceflight/status/2115198496521195971"
+      }
+    },
+    {
+      "data": "27 ott",
       "veicolo": "Ship 43",
       "tipo": "Prove di cattura con i chopsticks",
       "luogo": "Pad 2",
-      "esito": "In corso",
-      "nota": "Arrivata al Pad 2 il 26 ott e sollevata dai chopsticks nella notte tra 26 e 27 ott (circa 01:00 ora di Roma) per simulare la cattura della Ship del Flight 15; esito non comunicato",
+      "esito": "Completato",
+      "nota": "Arrivata al Pad 2 il 26 ott e sollevata dai chopsticks nella notte tra 26 e 27 ott per simulare la cattura della Ship del Flight 15; il 28 ott è tornata in produzione. Esito non comunicato da SpaceX",
       "src": {
-        "label": "@RGVaerialphotos",
-        "url": "https://x.com/RGVaerialphotos/status/2114875305244369184"
+        "label": "@NASASpaceflight",
+        "url": "https://x.com/NASASpaceflight/status/2115298718035370428"
       }
     },
     {
       "data": "28 ott",
-      "veicolo": "n.d.",
-      "tipo": "Trasporto Produzione→Massey's",
+      "veicolo": "Booster 23",
+      "tipo": "Trasporto Produzione→Massey's (prove crio)",
       "luogo": "Massey's",
-      "esito": "Atteso",
-      "nota": "Avviso stradale 27 ott 23:59 - 28 ott 04:00 CDT (28 ott 5:59-10:00 ora di Roma); veicolo e scopo non annunciati",
-      "nc": true,
+      "esito": "In corso",
+      "nota": "Avviso stradale del 28 ott 5:59-10:00 ora di Roma: il veicolo è B23, diretto a Massey's per nuove prove criogeniche in vista del Flight 16",
       "src": {
-        "label": "@FelixSchlang / City of Starbase",
-        "url": "https://x.com/FelixSchlang/status/2114744627869655181"
+        "label": "@NASASpaceflight",
+        "url": "https://x.com/NASASpaceflight/status/2115307440803594436"
       }
     },
     {
@@ -1134,10 +1173,81 @@
       "title": "Live NSF dello static fire di Ship 42 (YouTube)",
       "site": "youtube.com",
       "href": "https://www.youtube.com/live/t8RZHIfgQ3A"
+    },
+    {
+      "title": "Forum NASASpaceflight: discussioni Starship (non confermato)",
+      "site": "forum.nasaspaceflight.com",
+      "href": "https://forum.nasaspaceflight.com/"
+    },
+    {
+      "title": "Jonathan McDowell (@planet4589): dati Starlink e lanci",
+      "site": "x.com/planet4589",
+      "href": "https://x.com/planet4589"
+    },
+    {
+      "title": "NSF: static fire a sei motori di Ship 42 (27 ott)",
+      "site": "x.com/NASASpaceflight",
+      "href": "https://x.com/NASASpaceflight/status/2115231900961005856"
+    },
+    {
+      "title": "The Space Road: quando vola il Flight 15",
+      "site": "thespaceroad.com",
+      "href": "https://thespaceroad.com/articles/when-is-starship-flight-15/"
     }
   ],
   "X_POSTS": {
     "siti": [
+      {
+        "autore": "@RGVaerialphotos",
+        "data": "28 ott",
+        "ora": "00:34",
+        "testo": "Massey's: sito di test 1 e cantiere del sito 2",
+        "url": "https://x.com/RGVaerialphotos/status/2115225719899050331",
+        "media": "foto",
+        "id": "2115225719899050331",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVrKj4obMAAn-Lt.jpg",
+            "w": 4096,
+            "h": 2731
+          }
+        ]
+      },
+      {
+        "autore": "@RGVaerialphotos",
+        "data": "27 ott",
+        "ora": "17:00",
+        "testo": "I simulatori di spinta di booster e Ship, forse diretti a Massey's",
+        "url": "https://x.com/RGVaerialphotos/status/2115111281342529992",
+        "media": "foto",
+        "id": "2115111281342529992",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVnCUQSbMAEA89E.jpg",
+            "w": 2358,
+            "h": 1572
+          }
+        ]
+      },
+      {
+        "autore": "@RGVaerialphotos",
+        "data": "27 ott",
+        "ora": "10:00",
+        "testo": "Pad 1: continuano i lavori sul flame trench",
+        "url": "https://x.com/RGVaerialphotos/status/2115005582826684812",
+        "media": "foto",
+        "id": "2115005582826684812",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVnBnCcbwAAUJFH.jpg",
+            "w": 4096,
+            "h": 2731
+          }
+        ]
+      },
       {
         "autore": "@RGVaerialphotos",
         "data": "27 ott",
@@ -1194,66 +1304,77 @@
             "h": 241
           }
         ]
-      },
+      }
+    ],
+    "prototipi": [
       {
-        "autore": "@RoughRidersShow",
-        "data": "26 ott",
-        "ora": "11:13",
-        "testo": "All'ingresso di Massey's: S43 esce a destra, S42 entra a sinistra",
-        "url": "https://x.com/RoughRidersShow/status/2114661753938223593",
-        "media": "2 foto",
-        "id": "2114661753938223593",
+        "autore": "@NASASpaceflight",
+        "data": "28 ott",
+        "ora": "05:24",
+        "testo": "Flight 16: S43 torna in produzione dopo i test con i chopsticks, B23 verso Massey's",
+        "url": "https://x.com/NASASpaceflight/status/2115298718035370428",
+        "media": "video",
+        "id": "2115298718035370428",
         "immagini": [
           {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVjJpxJWMAALk17.jpg",
-            "w": 2048,
-            "h": 1536
-          },
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2115298450484920320/img/DRWZMO5ddTd9n5GM.jpg",
+            "w": 1112,
+            "h": 624
+          }
+        ]
+      },
+      {
+        "autore": "@NASASpaceflight",
+        "data": "28 ott",
+        "ora": "05:59",
+        "testo": "Arriva Booster 23: SpaceX porta avanti in parallelo Flight 15 e 16",
+        "url": "https://x.com/NASASpaceflight/status/2115307440803594436",
+        "media": "video",
+        "id": "2115307440803594436",
+        "immagini": [
           {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVjJpxHXkAAW7np.jpg",
-            "w": 2048,
-            "h": 1536
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2115307395345784832/img/toSPtB697EiDuHdU.jpg",
+            "w": 1112,
+            "h": 624
           }
         ]
       },
       {
         "autore": "@RGVaerialphotos",
-        "data": "26 ott",
-        "ora": "05:29",
-        "testo": "Pad 2: B22 sollevato dal supporto di lancio",
-        "url": "https://x.com/RGVaerialphotos/status/2114575209894388007",
-        "media": "foto",
-        "id": "2114575209894388007",
+        "data": "28 ott",
+        "ora": "06:18",
+        "testo": "Booster 23 di nuovo diretto a Massey's",
+        "url": "https://x.com/RGVaerialphotos/status/2115312218590126505",
+        "media": "video",
+        "id": "2115312218590126505",
         "immagini": [
           {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVh66nrbsAA21Vs.jpg",
-            "w": 3840,
-            "h": 2160
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2115312114298654720/img/45WwvTRmJ8YoB0Fq.jpg",
+            "w": 2560,
+            "h": 1440
           }
         ]
       },
       {
-        "autore": "@VickiCocks15",
-        "data": "26 ott",
-        "ora": "02:57",
-        "testo": "Pad 2: i chopsticks scendono e si chiudono attorno a B22",
-        "url": "https://x.com/VickiCocks15/status/2114536890846060822",
-        "media": "video",
-        "id": "2114536890846060822",
+        "autore": "@mcrs987",
+        "data": "27 ott",
+        "ora": "14:57",
+        "testo": "McGregor: il banco di collaudo dei COPV e una pila di serbatoi distrutti",
+        "url": "https://x.com/mcrs987/status/2115080433058611231",
+        "media": "foto",
+        "id": "2115080433058611231",
         "immagini": [
           {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2114536552655167488/img/2HFrfJRQDHfcEMb7.jpg",
-            "w": 1280,
-            "h": 720
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVpGYTXWkAAlQok.jpg",
+            "w": 878,
+            "h": 1147
           }
         ]
-      }
-    ],
-    "prototipi": [
+      },
       {
         "autore": "@RGVaerialphotos",
         "data": "27 ott",
@@ -1299,83 +1420,83 @@
             "h": 620
           }
         ]
-      },
-      {
-        "autore": "@VickiCocks15",
-        "data": "26 ott",
-        "ora": "17:50",
-        "testo": "S42 esce da Mega Bay 2 per Massey's, seguita da una sezione di poppa: tre Ship in fila",
-        "url": "https://x.com/VickiCocks15/status/2114761707113619536",
-        "media": "video",
-        "id": "2114761707113619536",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2114760355993796608/img/D7vW4fo6ez74DWhH.jpg",
-            "w": 1280,
-            "h": 720
-          }
-        ]
-      },
-      {
-        "autore": "@VickiCocks15",
-        "data": "26 ott",
-        "ora": "18:06",
-        "testo": "Ship 43 sollevata dal supporto crio mentre B22 rientrava",
-        "url": "https://x.com/VickiCocks15/status/2114765698526527535",
-        "media": "video",
-        "id": "2114765698526527535",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2114765628057804800/img/t69XTqVuS642oFLI.jpg",
-            "w": 1280,
-            "h": 720
-          }
-        ]
-      },
-      {
-        "autore": "@mcrs987",
-        "data": "26 ott",
-        "ora": "19:09",
-        "testo": "Raptor: «di fatto le stesse prestazioni del Raptor 2»",
-        "url": "https://x.com/mcrs987/status/2114781384757956971",
-        "media": "foto",
-        "id": "2114781384757956971",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVk2S6jW0AAsn5z.jpg",
-            "w": 1220,
-            "h": 230
-          }
-        ]
-      },
-      {
-        "autore": "@ENNEPS",
-        "data": "26 ott",
-        "ora": "13:07",
-        "testo": "Notte di scambi: S43 torna in Mega Bay 2, S42 arriva a Massey's",
-        "url": "https://x.com/ENNEPS/status/2114690454742573196",
-        "media": "2 video",
-        "id": "2114690454742573196",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2114689595304493057/img/YG1SGFZwrV2cK-7G.jpg",
-            "w": 1920,
-            "h": 1080
-          },
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2114689622022279168/img/xyy5pYqTe823JC03.jpg",
-            "w": 1920,
-            "h": 1080
-          }
-        ]
       }
     ],
     "test": [
+      {
+        "autore": "@NASASpaceflight",
+        "data": "27 ott",
+        "ora": "22:46",
+        "testo": "Flight 15: Ship 42 fa uno static fire a sei motori",
+        "url": "https://x.com/NASASpaceflight/status/2115198496521195971",
+        "media": "video",
+        "id": "2115198496521195971",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2115198475038007297/img/_0M1tqL0Q39KpbbM.jpg",
+            "w": 1104,
+            "h": 632
+          }
+        ]
+      },
+      {
+        "autore": "@CeaserG33",
+        "data": "27 ott",
+        "ora": "23:31",
+        "testo": "S42 chiude uno static fire completo a 6 motori a Massey's",
+        "url": "https://x.com/CeaserG33/status/2115209746819305572",
+        "media": "2 foto",
+        "id": "2115209746819305572",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVq7-twXQAAKvaP.jpg",
+            "w": 4096,
+            "h": 2305
+          },
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVq7-t5XYAAAW2q.jpg",
+            "w": 4096,
+            "h": 2303
+          }
+        ]
+      },
+      {
+        "autore": "@gatewaytomarz",
+        "data": "28 ott",
+        "ora": "00:17",
+        "testo": "Static fire di S42 ✅",
+        "url": "https://x.com/gatewaytomarz/status/2115221260871311449",
+        "media": "foto",
+        "id": "2115221260871311449",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVrGhtuXwAA2wME.jpg",
+            "w": 1366,
+            "h": 2048
+          }
+        ]
+      },
+      {
+        "autore": "@cnunezimages",
+        "data": "28 ott",
+        "ora": "02:17",
+        "testo": "Static fire di S42, 27 ottobre 2026",
+        "url": "https://x.com/cnunezimages/status/2115251603074859199",
+        "media": "foto",
+        "id": "2115251603074859199",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HVriFdGXsAAm5My.jpg",
+            "w": 4096,
+            "h": 2596
+          }
+        ]
+      },
       {
         "autore": "@RGVaerialphotos",
         "data": "27 ott",
@@ -1409,83 +1530,26 @@
             "h": 1080
           }
         ]
-      },
-      {
-        "autore": "@NASASpaceflight",
-        "data": "27 ott",
-        "ora": "03:18",
-        "testo": "Flight 15: Ship 42 completa uno static fire a un motore",
-        "url": "https://x.com/NASASpaceflight/status/2114904512217694216",
-        "media": "video",
-        "id": "2114904512217694216",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2114904475424923648/img/Ine5Xn_yKwSH7oC9.jpg",
-            "w": 1112,
-            "h": 624
-          }
-        ]
-      },
-      {
-        "autore": "@RoughRidersShow",
-        "data": "27 ott",
-        "ora": "01:35",
-        "testo": "Massey's chiuso per il possibile static fire di S42: telecamere in posizione",
-        "url": "https://x.com/RoughRidersShow/status/2114878614793793605",
-        "media": "2 foto",
-        "id": "2114878614793793605",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVmO4-VWQAAqsoU.jpg",
-            "w": 2048,
-            "h": 1536
-          },
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVmO4-YXMAA0H_A.jpg",
-            "w": 2048,
-            "h": 1536
-          }
-        ]
-      },
-      {
-        "autore": "@RGVaerialphotos",
-        "data": "27 ott",
-        "ora": "01:22",
-        "testo": "Ship 43 in aria sui chopsticks",
-        "url": "https://x.com/RGVaerialphotos/status/2114875305244369184",
-        "media": "foto",
-        "id": "2114875305244369184",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVmL4FEWgAA2XsF.jpg",
-            "w": 1920,
-            "h": 1080
-          }
-        ]
-      },
-      {
-        "autore": "@wvmattz",
-        "data": "27 ott",
-        "ora": "01:04",
-        "testo": "S43 sollevata al Pad 2 per le prove di cattura",
-        "url": "https://x.com/wvmattz/status/2114870892463321257",
-        "media": "video",
-        "id": "2114870892463321257",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2114870813773946880/img/ExQ-pFGkdIFlQCxG.jpg",
-            "w": 1920,
-            "h": 1080
-          }
-        ]
       }
     ],
     "lanci": [
+      {
+        "autore": "@NASASpaceflight",
+        "data": "28 ott",
+        "ora": "00:59",
+        "testo": "S42 ha completato gli static fire a uno e sei motori: via libera al Flight 15 a novembre",
+        "url": "https://x.com/NASASpaceflight/status/2115231900961005856",
+        "media": "video",
+        "id": "2115231900961005856",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2115231105422884864/img/xIBecFpqcVGmoaTE.jpg",
+            "w": 1920,
+            "h": 1080
+          }
+        ]
+      },
       {
         "autore": "@NASASpaceflight",
         "data": "27 ott",
@@ -1568,23 +1632,6 @@
             "url": "https://pbs.twimg.com/amplify_video_thumb/2114611777719910401/img/cvKXMBzJ6OeS9pDs.jpg",
             "w": 3840,
             "h": 2160
-          }
-        ]
-      },
-      {
-        "autore": "@NASASpaceflight",
-        "data": "25 ott",
-        "ora": "23:07",
-        "testo": "B22 completa lo static fire in vista del Flight 15 di novembre",
-        "url": "https://x.com/NASASpaceflight/status/2114478974818459882",
-        "media": "video",
-        "id": "2114478974818459882",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2114478861119332353/img/AXpDlOdlSig_Jp5J.jpg",
-            "w": 1920,
-            "h": 1080
           }
         ]
       }
@@ -1697,9 +1744,13 @@
         {
           "label": "@NASASpaceflight, 26 ott",
           "url": "https://x.com/NASASpaceflight/status/2114798577293635905"
+        },
+        {
+          "label": "@NASASpaceflight, 28 ott",
+          "url": "https://x.com/NASASpaceflight/status/2115298718035370428"
         }
       ],
-      "dettagli": "Missione indicata come Starlink 30-1 (non confermato). Stime NSF: B23 pronto per lo static fire a fine novembre (possibile static fire al 39A a metà dicembre), S43 static fire a metà dicembre e spedizione al KSC a inizio-metà gennaio, poi WDR e primo volo dal 39A forse a fine gennaio. Trasporto via chiatta «You'll Thank Me Later», controlli nella Gigabay di Roberts Road. Il 26-27 ott S43 è stata al Pad 2 per prove di cattura con i chopsticks in vista del Flight 15."
+      "dettagli": "Missione indicata come Starlink 30-1 (non confermato). Stime NSF: B23 pronto per lo static fire a fine novembre (possibile static fire al 39A a metà dicembre), S43 static fire a metà dicembre e spedizione al KSC a inizio-metà gennaio, poi WDR e primo volo dal 39A forse a fine gennaio. Trasporto via chiatta «You'll Thank Me Later», controlli nella Gigabay di Roberts Road. Il 26-27 ott S43 è stata al Pad 2 per prove di cattura con i chopsticks; il 28 ott è tornata in produzione mentre B23 è andato a Massey's per nuove prove crio. Il 28 ott NSF conferma che la coppia B23/S43 dovrebbe andare via mare al KSC per il primo volo dal 39A (non confermato da SpaceX)."
     },
     {
       "titolo": "Dettagli Flight 15",
@@ -1711,7 +1762,7 @@
         },
         {
           "label": "Static fire",
-          "value": "B22 completato il 25 ott (33 motori, piena durata); S42 static fire a un motore a Massey's il 27 ott"
+          "value": "B22 completato il 25 ott (33 motori, piena durata); S42 a un motore nella notte tra 26 e 27 ott e a sei motori il 27 ott a Massey's"
         },
         {
           "label": "NASA, 23 ott",
@@ -1719,7 +1770,7 @@
         },
         {
           "label": "Raptor",
-          "value": "«Raptor migliorati» citati dalla NASA: secondo @mcrs987 una versione aggiornata del Raptor 3, esternamente identica. Il 26 ott Musk ha annunciato un Raptor 4 da 300 t di spinta; @mcrs987 osserva che il Raptor 3 è ancora circa 30 t sotto i 280 t promessi"
+          "value": "«Raptor migliorati» citati dalla NASA: secondo @mcrs987 una versione aggiornata del Raptor 3, esternamente identica. Il 26 ott Musk ha annunciato un Raptor 4 da 300 t di spinta; @mcrs987 osserva che il Raptor 3 è ancora circa 30 t sotto i 280 t promessi. Il 27 ott @mcrs987: il 100% del Raptor 3 corrisponde a circa 250 t, ma nelle accensioni prolungate si resterà realisticamente intorno a 230 t"
         },
         {
           "label": "Missione",
@@ -1766,6 +1817,14 @@
         {
           "label": "@mcrs987, 26 ott (Raptor)",
           "url": "https://x.com/mcrs987/status/2114724912912838871"
+        },
+        {
+          "label": "@NASASpaceflight, 27 ott (6 motori S42)",
+          "url": "https://x.com/NASASpaceflight/status/2115231900961005856"
+        },
+        {
+          "label": "@mcrs987, 27 ott (spinta R3)",
+          "url": "https://x.com/mcrs987/status/2115112863136432595"
         }
       ]
     }
