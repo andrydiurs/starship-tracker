@@ -363,7 +363,7 @@
     var ab = abbOk().slice().sort(function (a, c) { return (a.dataEsatta || a.data).localeCompare(c.dataEsatta || c.data); }).pop() || {};
     var at = r.atterraggiTotali || {};
     var b = boosters().slice().sort(function (a, c) { return c.voli - a.voli; })[0] || {};
-    var rec = (r.record || []).filter(function (x) { return /Riutilizzo/i.test(x.record); })[0];
+    var rec = D.recordRiutilizzo; // record assoluto (tutti gli anni), calcolato da tools/xlsx_to_json.py
     var dm = dragonMissioni();
     var K = [
       { acc: "lanci", icon: "lanci", l: "Lanci 2026", v: nf(r.padTotali && r.padTotali.Totale), d: "di cui " + nf(tip.Starlink) + " Starlink · " + nf(r.padTotali && r.padTotali.Falliti) + " falliti" },
@@ -372,7 +372,7 @@
       { acc: "prossimo", icon: "users", l: "Abbonati Starlink", v: fMln(ab.abbonati), d: "ultimo dato: " + esc(abbQuando(ab)) },
       { acc: "test", icon: "target", l: "Recuperi booster 2026", v: nf(at["Tot recuperi"] != null ? at["Tot recuperi"] : at["Tot recuperi F9"]) + "<small> / " + nf(at["Tot tentativi"]) + "</small>", d: "tentativi di recupero riusciti" },
       { acc: "test", icon: "booster", l: "Booster più usato", v: esc(b.booster || "—") + "<small> · " + nf(b.voli) + " voli</small>", d: b.ultimoM ? "ultimo: " + esc(b.ultimoM) + " (" + fData(b.ultimo) + ")" : "" },
-      { acc: "test", icon: "recycle", l: "Riutilizzo più rapido 2026", v: esc(rec ? rec.valore : "—"), d: rec && rec.booster ? "booster " + esc(rec.booster) : "" },
+      { acc: "test", icon: "recycle", l: "Riutilizzo più rapido", v: esc(rec ? rec.valore : "—"), d: rec ? "record assoluto · " + esc(rec.booster) + " (" + esc(rec.a.missione) + ", " + fData((rec.a.partenza || "").slice(0, 10)) + ")" : "" },
       { acc: "prototipi", icon: "dragon", l: "Missioni Dragon 2026", v: nf(tip.Dragon), d: nf(dm.length) + " voli Dragon in archivio, " + D.dragon.capsule.length + " capsule" }
     ];
     return '<div class="kpis">' + K.map(function (k) {

@@ -754,6 +754,54 @@ def note_dati(out):
     return note
 
 
+# ---------------------------------------------------------------- record assoluto di riutilizzo
+def _secs_yearly(v):
+    m = re.match(r"^(\d+)g (\d+)h (\d+)m$", v or "")
+    return (int(m.group(1)) * 86400 + int(m.group(2)) * 3600 + int(m.group(3)) * 60) if m else None
+
+
+def record_riutilizzo(lanci, riep, soglia_sospetta=2 * 86400):
+    """Riutilizzo Falcon piu' rapido su TUTTI gli anni delle liste Lanci (2021-2026): minimo intervallo tra
+    due voli consecutivi dello stesso booster (data e ora di partenza). Intervalli sotto 2 giorni sono
+    considerati sospetti (errori di dati): esclusi dal record ed elencati in 'esclusi' + avviso."""
+    voli = {}
+    for anno, L in lanci.items():
+        for x in L:
+            items = [x.get("booster")] + [a.get("booster") for a in (x.get("altriBooster") or [])]
+            for it in items:
+                for b in set(re.findall(r"B\d{4}", it or "")):
+                    if x.get("partenza"):
+                        voli.setdefault(b, []).append((x["partenza"], x.get("missione")))
+    coppie, esclusi = [], []
+    for b, v in voli.items():
+        v.sort()
+        for (t1, m1), (t2, m2) in zip(v, v[1:]):
+            sec = int((dt.datetime.fromisoformat(t2) - dt.datetime.fromisoformat(t1)).total_seconds())
+            c = {"booster": b, "secondi": sec, "valore": fmt_secs(sec),
+                 "da": {"missione": m1, "partenza": t1}, "a": {"missione": m2, "partenza": t2}}
+            (esclusi if sec < soglia_sospetta else coppie).append(c)
+    if not coppie:
+        return None
+    coppie.sort(key=lambda c: c["secondi"])
+    rec = coppie[0]
+    for c in esclusi:
+        warn("Riutilizzo Falcon sospetto (< 2 giorni, escluso dal record): %s tra «%s» (%s) e «%s» (%s) = %s" % (
+            c["booster"], c["da"]["missione"], _data_it(c["da"]["partenza"]), c["a"]["missione"], _data_it(c["a"]["partenza"]), c["valore"]))
+    # controllo incrociato con i record annuali del foglio (formula «Riutilizzo Falcon 9»)
+    annuali = []
+    for anno, r in riep.items():
+        for x in r.get("record", []):
+            if re.match(r"Riutilizzo Falcon", x.get("record") or "") and _secs_yearly(x.get("valore")) is not None:
+                annuali.append((_secs_yearly(x["valore"]), anno, x.get("booster")))
+    if annuali:
+        mn = min(annuali)
+        if mn[0] != rec["secondi"]:
+            warn("Riutilizzo Falcon: record assoluto calcolato %s (%s) diverso dal minimo dei record annuali del file %s (%s, %s)" % (
+                rec["valore"], rec["booster"], fmt_secs(mn[0]), mn[2], mn[1]))
+    rec["esclusi"] = esclusi
+    return rec
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("xlsx", nargs="?", default="/workspace/SpaceX_aggiornato.xlsx")
@@ -836,6 +884,7 @@ def main():
         "archivio": archivio_extra,
         "modifiche": mod,
     }
+    out["recordRiutilizzo"] = record_riutilizzo(lanci, riep)
     nb = atterraggi_booster(out)
     out["meta"]["note"] = note_dati(out) + nb
     with open(a.out, "w", encoding="utf-8") as f:
