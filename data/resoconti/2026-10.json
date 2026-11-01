@@ -881,6 +881,646 @@
    ]
   }
  ],
+ "timeline": {
+  "titolo": "Verso il Flight 15: test e spostamenti",
+  "sottotitolo": "Ship 42 e Booster 22 (Flight 15), poi Ship 43 e Booster 23 (Flight 16), con le prove del sistema ad acqua al Pad 2. Dal 3 settembre ai prossimi passi, da sinistra a destra. Orari in ora di Roma.",
+  "mesi": [
+   "Prima di ottobre",
+   "Ottobre 2026",
+   "Prossimi passi"
+  ],
+  "corsie": [
+   {
+    "id": "S42",
+    "nome": "Ship 42",
+    "tag": "Flight 15"
+   },
+   {
+    "id": "B22",
+    "nome": "Booster 22",
+    "tag": "Flight 15"
+   },
+   {
+    "id": "PAD",
+    "nome": "Pad 2 · Sistema ad acqua",
+    "tag": "Pad"
+   },
+   {
+    "id": "S43",
+    "nome": "Ship 43",
+    "tag": "Flight 16"
+   },
+   {
+    "id": "B23",
+    "nome": "Booster 23",
+    "tag": "Flight 16"
+   }
+  ],
+  "colonne": [
+   {
+    "d": "3–4 set",
+    "m": 0
+   },
+   {
+    "d": "9–10 set",
+    "m": 0
+   },
+   {
+    "d": "11–12 set",
+    "m": 0
+   },
+   {
+    "d": "15 set",
+    "m": 0
+   },
+   {
+    "d": "25 set",
+    "m": 0
+   },
+   {
+    "d": "9 ott",
+    "m": 1
+   },
+   {
+    "d": "~10 ott",
+    "m": 1
+   },
+   {
+    "d": "12 ott",
+    "s": "notte",
+    "m": 1
+   },
+   {
+    "d": "entro metà ott",
+    "m": 1
+   },
+   {
+    "d": "15 ott",
+    "m": 1
+   },
+   {
+    "d": "18 ott",
+    "m": 1
+   },
+   {
+    "d": "19 ott",
+    "s": "annunciato, slittato",
+    "m": 1
+   },
+   {
+    "d": "20 ott",
+    "m": 1
+   },
+   {
+    "d": "21 ott",
+    "m": 1
+   },
+   {
+    "d": "22 ott",
+    "m": 1,
+    "w": 2
+   },
+   {
+    "d": "23 ott",
+    "m": 1
+   },
+   {
+    "d": "24 ott",
+    "s": "notte",
+    "m": 1
+   },
+   {
+    "d": "25 ott",
+    "s": "14:22",
+    "m": 1
+   },
+   {
+    "d": "26 ott",
+    "m": 1,
+    "w": 2
+   },
+   {
+    "d": "27 ott",
+    "m": 1,
+    "w": 3
+   },
+   {
+    "d": "28 ott",
+    "s": "17:10",
+    "m": 1
+   },
+   {
+    "d": "28–29 ott",
+    "s": "notte",
+    "m": 1
+   },
+   {
+    "d": "29 ott",
+    "m": 1
+   },
+   {
+    "d": "30 ott",
+    "s": "mattina",
+    "m": 1
+   },
+   {
+    "d": "dal 1° nov",
+    "m": 2
+   }
+  ],
+  "eventi": [
+   {
+    "d": "3–4 set",
+    "c": "S42",
+    "k": "test",
+    "t": "Prova criogenica a Massey's",
+    "tr": true,
+    "fonte": {
+     "label": "NSF, 9 ott",
+     "url": "https://www.nasaspaceflight.com/2026/10/ship-40-returns-ship-42-more-testing/"
+    }
+   },
+   {
+    "d": "9–10 set",
+    "c": "B22",
+    "k": "test",
+    "t": "Prova criogenica a Massey's",
+    "x": "Prova completa e parziale",
+    "tr": true,
+    "fonte": {
+     "label": "Inter Space Sky Way",
+     "url": "https://interspaceskyway.com/2026/09/09/flight-15-pairing-endure-testing-at-masseys/"
+    }
+   },
+   {
+    "d": "11–12 set",
+    "c": "S42",
+    "k": "test",
+    "t": "Prova chopsticks al Pad 2",
+    "x": "Sollevata in posizione di cattura simulata, braccio SQD collegato",
+    "tr": true,
+    "fonte": {
+     "label": "Teslarati",
+     "url": "https://www.teslarati.com/spacex-starship-tower-catch-flight-15/"
+    }
+   },
+   {
+    "d": "15 set",
+    "c": "S43",
+    "k": "tappa",
+    "t": "Ship 43 impilata",
+    "fonte": {
+     "label": "Nel resoconto",
+     "ref": "#prototipi"
+    }
+   },
+   {
+    "d": "25 set",
+    "c": "B23",
+    "k": "tappa",
+    "t": "Booster 23 impilato",
+    "fonte": {
+     "label": "Nel resoconto",
+     "ref": "#prototipi"
+    }
+   },
+   {
+    "d": "9 ott",
+    "c": "S42",
+    "k": "test",
+    "t": "3ª prova criogenica a Massey's, con thrust ram",
+    "x": "Tolti prima tutti e 6 i motori. SpaceX non ha spiegato il motivo",
+    "fonte": {
+     "label": "NSF, 9 ott",
+     "url": "https://www.nasaspaceflight.com/2026/10/ship-40-returns-ship-42-more-testing/"
+    }
+   },
+   {
+    "d": "~10 ott",
+    "c": "S42",
+    "k": "spost",
+    "t": "Rientro in produzione",
+    "nc": true,
+    "tr": true,
+    "fonte": {
+     "label": "NSF, 9 ott",
+     "url": "https://www.nasaspaceflight.com/2026/10/ship-40-returns-ship-42-more-testing/"
+    }
+   },
+   {
+    "d": "12 ott",
+    "c": "B23",
+    "k": "spost",
+    "t": "Esce verso Massey's",
+    "x": "Per le prove criogeniche",
+    "fonte": {
+     "label": "@colleenadastra",
+     "url": "https://x.com/colleenadastra/status/2110017696578290091"
+    }
+   },
+   {
+    "d": "entro metà ott",
+    "c": "B22",
+    "k": "tappa",
+    "t": "Riceve tutti i motori",
+    "x": "Secondo NSF (18 ott)",
+    "fonte": {
+     "label": "NSF, 18 ott",
+     "url": "https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/"
+    }
+   },
+   {
+    "d": "15 ott",
+    "c": "B23",
+    "k": "test",
+    "t": "Prova criogenica estesa di ~12 ore",
+    "x": "A Massey's, coperto di brina",
+    "fonte": {
+     "label": "@colleenadastra",
+     "url": "https://x.com/colleenadastra/status/2110844779269689598"
+    }
+   },
+   {
+    "d": "18 ott",
+    "c": "B23",
+    "k": "spost",
+    "t": "Rientra in Mega Bay 1",
+    "x": "Per l'installazione dei motori",
+    "fonte": {
+     "label": "NSF, 18 ott",
+     "url": "https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/"
+    }
+   },
+   {
+    "d": "19 ott",
+    "c": "B22",
+    "k": "spost",
+    "t": "Trasferimento al Pad 2 slittato",
+    "x": "Annunciato per il 19 ott, rimandato più volte dopo la revoca della chiusura stradale",
+    "nc": true,
+    "fonte": {
+     "label": "@VickiCocks15",
+     "url": "https://x.com/VickiCocks15/status/2111933481445933115"
+    },
+    "altre": [
+     {
+      "label": "Revoca chiusura stradale",
+      "url": "https://x.com/VickiCocks15/status/2112455749708485037"
+     }
+    ]
+   },
+   {
+    "d": "20 ott",
+    "c": "PAD",
+    "k": "test",
+    "t": "Deluge a piena portata, due volte",
+    "x": "Ripetuto dopo ~8–10 min: simula il rientro del booster. Il resoconto indica 20–22 ott",
+    "fonte": {
+     "label": "@NASASpaceflight",
+     "url": "https://x.com/NASASpaceflight/status/2112677434462289957"
+    }
+   },
+   {
+    "d": "21 ott",
+    "c": "PAD",
+    "k": "test",
+    "t": "Spurgo dei quick disconnect del booster (BQD)",
+    "tr": true,
+    "fonte": {
+     "label": "@NASASpaceflight",
+     "url": "https://x.com/NASASpaceflight/status/2112967167767433728"
+    }
+   },
+   {
+    "d": "22 ott",
+    "c": "PAD",
+    "k": "test",
+    "t": "Prove su BQD e morse di ritenuta",
+    "x": "E di nuovo il deluge con doppio azionamento (a ~8 min). Pad pronto per B22",
+    "fonte": {
+     "label": "@NASASpaceflight",
+     "url": "https://x.com/NASASpaceflight/status/2113436572485882104"
+    }
+   },
+   {
+    "d": "22 ott",
+    "c": "S43",
+    "k": "spost",
+    "t": "Arriva a Massey's",
+    "fonte": {
+     "label": "@ENNEPS",
+     "url": "https://x.com/ENNEPS/status/2113196842645119416"
+    }
+   },
+   {
+    "d": "22 ott",
+    "c": "S43",
+    "k": "test",
+    "t": "Prova dei movimenti dei flap",
+    "fonte": {
+     "label": "@VickiCocks15",
+     "url": "https://x.com/VickiCocks15/status/2113302224948396525"
+    }
+   },
+   {
+    "d": "23 ott",
+    "c": "S43",
+    "k": "test",
+    "t": "2 prove criogeniche a Massey's",
+    "x": "Campagna completata",
+    "fonte": {
+     "label": "NSF, 30 ott",
+     "url": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
+    }
+   },
+   {
+    "d": "24 ott",
+    "c": "B22",
+    "k": "spost",
+    "t": "Rollout dalla Mega Bay 1 al Pad 2",
+    "x": "Sollevato dai chopsticks sul supporto di lancio",
+    "fonte": {
+     "label": "@NASASpaceflight",
+     "url": "https://x.com/NASASpaceflight/status/2113992853093601306"
+    }
+   },
+   {
+    "d": "25 ott",
+    "c": "B22",
+    "k": "test",
+    "t": "Static fire a 33 Raptor, ~15 s",
+    "x": "Piena durata, confermato da SpaceX",
+    "fonte": {
+     "label": "@SpaceX",
+     "url": "https://x.com/SpaceX/status/2114444137067844004"
+    }
+   },
+   {
+    "d": "25 ott",
+    "c": "PAD",
+    "k": "test",
+    "t": "La rampa regge lo static fire di B22",
+    "x": "Sopravvissuta perfino la telecamera NSF davanti al pad",
+    "fonte": {
+     "label": "@RoughRidersShow",
+     "url": "https://x.com/RoughRidersShow/status/2114386967236612300"
+    }
+   },
+   {
+    "d": "26 ott",
+    "c": "B22",
+    "k": "test",
+    "t": "Sollevato ad altezza di cattura",
+    "x": "Poi posato sul carrello di trasporto",
+    "fonte": {
+     "label": "@RGVaerialphotos",
+     "url": "https://x.com/RGVaerialphotos/status/2114580247240982591"
+    }
+   },
+   {
+    "d": "26 ott",
+    "c": "B22",
+    "k": "spost",
+    "t": "Rientra in Mega Bay 1",
+    "x": "Per i preparativi finali",
+    "fonte": {
+     "label": "NSF, 30 ott",
+     "url": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
+    }
+   },
+   {
+    "d": "26 ott",
+    "c": "S42",
+    "k": "spost",
+    "t": "Parte per Massey's",
+    "x": "Per gli static fire",
+    "fonte": {
+     "label": "NSF, 30 ott",
+     "url": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
+    }
+   },
+   {
+    "d": "26 ott",
+    "c": "S43",
+    "k": "spost",
+    "t": "Rientra da Massey's",
+    "x": "3 trasferimenti in ~7 ore",
+    "fonte": {
+     "label": "NSF, 30 ott",
+     "url": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
+    }
+   },
+   {
+    "d": "26 ott",
+    "c": "S43",
+    "k": "spost",
+    "t": "Portata al Pad 2",
+    "x": "Su supporto di trasporto",
+    "fonte": {
+     "label": "NSF, 30 ott",
+     "url": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
+    }
+   },
+   {
+    "d": "27 ott",
+    "c": "S42",
+    "k": "test",
+    "t": "Static fire a 1 Raptor (~03:00)",
+    "x": "Simula il deorbit burn, con propellente scaldato nei serbatoi",
+    "fonte": {
+     "label": "@RGVaerialphotos",
+     "url": "https://x.com/RGVaerialphotos/status/2114945183792119869"
+    }
+   },
+   {
+    "d": "27 ott",
+    "c": "S42",
+    "k": "test",
+    "t": "Static fire a 6 Raptor, ~60 s (~22:46)",
+    "x": "Durata normale per le Ship Block 3",
+    "fonte": {
+     "label": "@NASASpaceflight",
+     "url": "https://x.com/NASASpaceflight/status/2115198496521195971"
+    }
+   },
+   {
+    "d": "27 ott",
+    "c": "S43",
+    "k": "test",
+    "t": "SOLLEVAMENTO ad altezza di cattura (notte 26→27)",
+    "x": "Collegato il braccio SQD per provare la messa in sicurezza",
+    "hl": true,
+    "fonte": {
+     "label": "@RGVaerialphotos",
+     "url": "https://x.com/RGVaerialphotos/status/2114875305244369184"
+    }
+   },
+   {
+    "d": "27 ott",
+    "c": "S43",
+    "k": "test",
+    "t": "2ª prova: chopsticks senza stabilizzatori",
+    "x": "I «pusher» la allineano prima dell'aggancio",
+    "fonte": {
+     "label": "NSF, 30 ott",
+     "url": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
+    }
+   },
+   {
+    "d": "27 ott",
+    "c": "S43",
+    "k": "spost",
+    "t": "Rientra in Mega Bay 2 per i motori",
+    "x": "Static fire atteso a dicembre. Altre fonti: 28 ott",
+    "fonte": {
+     "label": "NSF, 30 ott",
+     "url": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
+    }
+   },
+   {
+    "d": "27 ott",
+    "c": "B23",
+    "k": "spost",
+    "t": "Torna a Massey's",
+    "x": ">2 giorni allo stand criogenico senza test visibili: forse prova di pressione (ipotesi NSF). Altre fonti: 28 ott",
+    "nc": true,
+    "fonte": {
+     "label": "NSF, 30 ott",
+     "url": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
+    }
+   },
+   {
+    "d": "28 ott",
+    "c": "S42",
+    "k": "tappa",
+    "t": "SpaceX conferma: static fire completati",
+    "x": "Entrambi i veicoli del Flight 15 pronti",
+    "fonte": {
+     "label": "@SpaceX",
+     "url": "https://x.com/SpaceX/status/2115476295169814978"
+    }
+   },
+   {
+    "d": "28 ott",
+    "c": "B22",
+    "k": "tappa",
+    "t": "Raceway aperto: in arrivo l'FTS",
+    "x": "Segnalato da @mcrs987",
+    "nc": true,
+    "fonte": {
+     "label": "@mcrs987",
+     "url": "https://x.com/mcrs987/status/2115473239883284498"
+    }
+   },
+   {
+    "d": "28–29 ott",
+    "c": "S42",
+    "k": "spost",
+    "t": "Lascia Massey's, torna in produzione",
+    "fonte": {
+     "label": "@BMBuildersMARS",
+     "url": "https://x.com/BMBuildersMARS/status/2115661268795154724"
+    }
+   },
+   {
+    "d": "29 ott",
+    "c": "S42",
+    "k": "spost",
+    "t": "Entra in Mega Bay 2",
+    "x": "Ispezioni finali, cariche FTS, poi i satelliti Starlink",
+    "fonte": {
+     "label": "NSF, 30 ott",
+     "url": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
+    }
+   },
+   {
+    "d": "30 ott",
+    "c": "B23",
+    "k": "spost",
+    "t": "Rientra in Mega Bay 1 da Massey's",
+    "x": "Antenna abbassata per passare dalla porta (video NSF 31 ott)",
+    "fonte": {
+     "label": "@LabPadre",
+     "url": "https://x.com/LabPadre/status/2116093506200453375"
+    },
+    "altre": [
+     {
+      "label": "Video NSF, 31 ott",
+      "url": "https://x.com/NASASpaceflight/status/2116651530208313722"
+     }
+    ]
+   },
+   {
+    "d": "30 ott",
+    "c": "PAD",
+    "k": "tappa",
+    "t": "Sfiati e saldature sui chopsticks",
+    "x": "In preparazione della doppia cattura (sera, ora del Texas)",
+    "nc": true,
+    "fonte": {
+     "label": "@BMBuildersMARS",
+     "url": "https://x.com/BMBuildersMARS/status/2116409894299402653"
+    }
+   },
+   {
+    "d": "dal 1° nov",
+    "c": "S42",
+    "k": "tappa",
+    "t": "Ispezioni, cariche FTS, Starlink",
+    "x": "Poi trasferimento al Pad 2 e impilamento su B22",
+    "nc": true,
+    "fonte": {
+     "label": "NSF, 30 ott",
+     "url": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
+    }
+   },
+   {
+    "d": "dal 1° nov",
+    "c": "B22",
+    "k": "tappa",
+    "t": "Installazione dell'FTS",
+    "x": "Poi impilamento con la S42",
+    "nc": true,
+    "fonte": {
+     "label": "@mcrs987",
+     "url": "https://x.com/mcrs987/status/2115473239883284498"
+    }
+   },
+   {
+    "d": "dal 1° nov",
+    "c": "S43",
+    "k": "tappa",
+    "t": "Static fire atteso a dicembre",
+    "x": "Dopo l'installazione dei motori",
+    "nc": true,
+    "fonte": {
+     "label": "NSF, 25 ott",
+     "url": "https://www.nasaspaceflight.com/2026/10/roberts-road-expansion-flight-16/"
+    }
+   },
+   {
+    "d": "dal 1° nov",
+    "c": "B23",
+    "k": "tappa",
+    "t": "Static fire: stima NSF fine novembre",
+    "x": "Possibile al 39A a metà dicembre",
+    "nc": true,
+    "tr": true,
+    "fonte": {
+     "label": "NSF, 31 ott",
+     "url": "https://x.com/NASASpaceflight/status/2116651530208313722"
+    }
+   }
+  ],
+  "avviso": {
+   "testo": "Flight 15: NET 12 novembre (non ufficiale). La modifica di licenza FAA per le catture non era ancora emessa al 1° novembre. Dopo le ispezioni la S42 va al Pad 2 per essere impilata su B22.",
+   "fonte": {
+    "label": "@SpaceNotices, 29 ott",
+    "url": "https://x.com/SpaceNotices/status/2115815059381469690"
+   }
+  },
+  "nota": "~ = data approssimata. † = dato che viene dal Starship Tracker (tracker.json), non dal resoconto. Tratteggio = non confermato o ipotesi. Dove le fonti divergono: Ship 43 e Booster 23 il 27 ott nel resoconto (28 ott in altre fonti); static fire B22 ~15 s nel resoconto (~16 s nel tracker); antenna abbassata attribuita a Booster 23, come nel resoconto; deluge 20–22 ott nel resoconto (20 ott nel tracker)."
+ },
  "novembre": {
   "titolo": "Cosa aspettarsi il mese prossimo",
   "blocchi": [

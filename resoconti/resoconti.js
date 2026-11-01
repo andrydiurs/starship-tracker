@@ -14,6 +14,7 @@
     ext: '<path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>',
     chevronR: '<path d="m9 18 6-6-6-6"/>',
     play: '<path d="M6 4l14 8-14 8z" fill="currentColor" stroke="none"/>',
+    timeline: '<circle cx="12" cy="12" r="3"/><path d="M3 12h6"/><path d="M15 12h6"/><path d="M12 3v3"/><path d="M12 18v3"/>',
     info: '<circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>'
   };
   function svg(n) { return '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (P[n] || "") + "</svg>"; }
@@ -57,6 +58,67 @@
     }).join("");
   }
 
+
+  // ---------- Timeline orizzontale (dati: R.timeline) ----------
+  var TLK = { test: "Test", spost: "Spostamento", tappa: "Tappa" };
+  function tlMark(k) {
+    var s = '<svg class="tl-mk" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">';
+    if (k === "test") s += '<circle cx="8" cy="8" r="5.5" fill="currentColor"/>';
+    else if (k === "spost") s += '<path d="M1.5 4.5H8.5V1.5L14.5 8L8.5 14.5V11.5H1.5Z" fill="currentColor"/>';
+    else s += '<rect x="2.5" y="2.5" width="11" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="2.4"/>';
+    return s + "</svg>";
+  }
+  function okUrl(u) { return /^https:\/\//.test(u || ""); }
+  function tlEvent(e) {
+    var f = e.fonte || {}, ext = okUrl(f.url), intl = !ext && /^#[a-z]+$/.test(f.ref || "");
+    var full = e.t + (e.x ? ". " + e.x : "") + (e.nc ? " (non confermato)" : "") + (e.tr ? " (dato dal tracker, non dal resoconto)" : "") + (ext || intl ? " — Fonte: " + f.label : "");
+    var h = '<div class="tl-ev k-' + e.k + (e.nc ? " nc" : "") + (e.hl ? " hl" : "") + '" title="' + esc(full) + '">' + tlMark(e.k) + '<div class="tl-tx"><p class="tl-t">' + esc(e.t) + (e.tr ? '<sup title="Dato dal tracker, non dal resoconto">†</sup>' : "") + "</p>";
+    if (e.x) h += '<p class="tl-d">' + esc(e.x) + "</p>";
+    if (e.nc) h += '<span class="tl-bd">non confermato</span>';
+    if (ext) h += '<a class="tl-src" href="' + esc(f.url) + '" target="_blank" rel="noopener noreferrer" aria-label="' + esc(e.t + " — apri la fonte: " + f.label) + '">' + svg("ext") + "<span>" + esc(f.label) + "</span></a>";
+    else if (intl) h += '<a class="tl-src tl-int" href="' + esc(f.ref) + '" aria-label="' + esc(e.t + " — vai al paragrafo del resoconto") + '">' + svg("chevronR") + "<span>" + esc(f.label) + "</span></a>";
+    if (e.altre && e.altre.length) h += '<span class="tl-alt">' + e.altre.filter(function (a) { return okUrl(a.url); }).map(function (a) { return '<a href="' + esc(a.url) + '" target="_blank" rel="noopener noreferrer">+ ' + esc(a.label) + "</a>"; }).join("") + "</span>";
+    return h + "</div></div>";
+  }
+  function renderTimeline(T) {
+    var N = T.colonne.length, colIdx = {};
+    T.colonne.forEach(function (c, i) { colIdx[c.d] = i + 2; });
+    var h = '<section class="card accented acc-test report-sec tl-sec" id="timeline"><div class="sec-head">' + ico("timeline") + "<h2>" + esc(T.titolo) + '</h2><p class="sub">' + esc(T.sottotitolo) + "</p></div>";
+    if (T.avviso) h += '<p class="tl-warn">' + svg("info") + "<span>" + esc(T.avviso.testo) + (okUrl(T.avviso.fonte && T.avviso.fonte.url) ? ' <a href="' + esc(T.avviso.fonte.url) + '" target="_blank" rel="noopener noreferrer">' + esc(T.avviso.fonte.label) + "</a>" : "") + "</span></p>";
+    h += '<div class="tl-bar"><p class="tl-hint">' + svg("ext") + "<span><strong>Tocca un evento per aprire la fonte.</strong> Scorri verso destra per avanzare nel tempo.</span></p>" + '<div class="tl-nav"><button type="button" data-tl="-1" aria-label="Indietro nel tempo">←</button><button type="button" data-tl="1" aria-label="Avanti nel tempo">→</button></div></div>';
+    h += '<ul class="tl-legend" aria-label="Legenda">' +
+      '<li class="tl-lg k-test">' + tlMark("test") + "<b>Test</b> cryo, static fire, deluge, sollevamento</li>" +
+      '<li class="tl-lg k-spost">' + tlMark("spost") + "<b>Spostamento</b> rollout, rientri, trasferimenti</li>" +
+      '<li class="tl-lg k-tappa">' + tlMark("tappa") + "<b>Tappa</b> o altro</li>" +
+      '<li class="tl-lg"><span class="tl-dash"></span><b>Non confermato</b> o ipotesi</li></ul>';
+    h += '<div class="tl-scroll" tabindex="0" role="region" aria-label="Timeline orizzontale, scorrevole"><div class="tl-grid" style="--n:' + N + ";grid-template-columns:var(--lw) " + T.colonne.map(function (c) { return "calc(var(--cw) * " + (c.w || 1) + ")"; }).join(" ") + '">';
+    h += '<div class="tl-corner"></div>';
+    // mesi
+    var run = [];
+    T.colonne.forEach(function (c, i) { if (!run.length || run[run.length - 1].m !== c.m) run.push({ m: c.m, a: i + 2, b: i + 3 }); else run[run.length - 1].b = i + 3; });
+    run.forEach(function (r) { h += '<div class="tl-month" style="grid-column:' + r.a + " / " + r.b + '"><span>' + esc(T.mesi[r.m] || "") + "</span></div>"; });
+    T.colonne.forEach(function (c, i) { h += '<div class="tl-date" style="grid-column:' + (i + 2) + '"><b>' + esc(c.d) + "</b>" + (c.s ? "<i>" + esc(c.s) + "</i>" : "") + "</div>"; });
+    T.corsie.forEach(function (l, r) {
+      var row = r + 3;
+      h += '<div class="tl-lane tl-l-' + l.id + '" style="grid-row:' + row + '"><b>' + esc(l.nome) + "</b><i>" + esc(l.tag) + "</i></div>";
+      T.colonne.forEach(function (c, i) {
+        var evs = T.eventi.filter(function (e) { return e.c === l.id && e.d === c.d; });
+        h += '<div class="tl-cell tl-l-' + l.id + (evs.length ? "" : " empty") + '" style="grid-row:' + row + ";grid-column:" + (i + 2) + '">' + evs.map(tlEvent).join("") + "</div>";
+      });
+    });
+    h += "</div></div>";
+    if (T.nota) h += '<p class="tl-note">' + esc(T.nota) + "</p>";
+    return h + "</section>";
+  }
+  function wireTimeline(root) {
+    var sc = root.querySelector(".tl-scroll");
+    if (!sc) return;
+    root.querySelector(".tl-nav").addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-tl]");
+      if (b) sc.scrollBy({ left: +b.getAttribute("data-tl") * Math.max(240, sc.clientWidth * 0.75), behavior: "smooth" });
+    });
+  }
+
   // ---------- Pagina del mese ----------
   function renderMese(R, idx) {
     document.title = R.titolo + " · Resoconti · Starship Tracker";
@@ -65,13 +127,14 @@
     R.sezioni.forEach(function (s) { s.blocchi.forEach(function (b) { if (b.x) nx++; }); });
     var toc = R.sezioni.map(function (s) {
       return '<a class="toc-item acc-' + s.k + '" href="#' + s.k + '">' + ico(s.k, "sm") + "<span>" + esc(s.titolo) + "</span></a>";
-    }).join("") + '<a class="toc-item acc-prossimo" href="#novembre">' + ico("prossimo", "sm") + "<span>" + esc(R.novembre.titolo) + "</span></a>";
+    }).join("") + (R.timeline ? '<a class="toc-item acc-test" href="#timeline">' + ico("timeline", "sm") + "<span>" + esc(R.timeline.titolo) + "</span></a>" : "") + '<a class="toc-item acc-prossimo" href="#novembre">' + ico("prossimo", "sm") + "<span>" + esc(R.novembre.titolo) + "</span></a>";
     var h = '<div class="report-grid"><aside class="report-toc" aria-label="Indice"><p class="toc-label">In questo resoconto</p><nav>' + toc + '</nav><a class="toc-back" href="./">' + svg("book") + "Tutti i resoconti</a></aside>";
     h += '<article class="report">';
     h += '<header class="card report-hero"><p class="kicker">' + svg("book") + esc(R.occhiello) + " · " + esc(R.mese) + "</p><h1>" + esc(R.titolo) + '</h1><p class="report-note">' + svg("info") + "<span>" + rich(R.nota) + '</span></p><div class="prose lead">' + R.intro.map(function (p) { return "<p>" + rich(p) + "</p>"; }).join("") + '</div><p class="report-meta">' + esc(R.periodo) + " · " + R.sezioni.length + " sezioni · " + nx + " post da X</p></header>";
     R.sezioni.forEach(function (s) {
       h += '<section class="card accented acc-' + s.k + ' report-sec" id="' + s.k + '"><div class="sec-head">' + ico(s.k) + "<h2>" + esc(s.titolo) + "</h2>" + (s.sottotitolo ? '<p class="sub">' + esc(s.sottotitolo) + "</p>" : "") + '</div><div class="prose">' + blocchi(s.blocchi, s.k) + "</div></section>";
     });
+    if (R.timeline) h += renderTimeline(R.timeline);
     h += '<section class="card accented acc-prossimo report-sec" id="novembre"><div class="sec-head">' + ico("prossimo") + "<h2>" + esc(R.novembre.titolo) + '</h2></div><div class="prose">' + blocchi(R.novembre.blocchi, "prossimo") + "</div></section>";
     if (R.fonti && R.fonti.length) {
       h += '<section class="card report-sec" id="fonti"><div class="sec-head">' + ico("notizie", "sm acc-notizie") + '<h3>Fonti principali</h3></div><ul class="rfonti">' + R.fonti.map(function (f) {
@@ -86,6 +149,7 @@
     h += "</article></div>";
     $("app").innerHTML = h;
     wireImages($("app"));
+    wireTimeline($("app"));
   }
 
   // ---------- Archivio ----------

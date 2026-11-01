@@ -74,6 +74,10 @@ Sezione narrativa, un articolo per mese, raggiungibile dal link «Resoconti mens
 
 Il testo viene sottoposto a escape; sono supportati solo `[testo](url)` e `**grassetto**`. Date e orari in ora di Roma.
 
+### Timeline orizzontale (facoltativa)
+
+Se il JSON del mese contiene la chiave `timeline`, `resoconti.js` disegna prima della sezione «Cosa aspettarsi» (id `#timeline`) una timeline orizzontale con corsie (righe) e date (colonne). Campi: `titolo`, `sottotitolo`, `mesi[]`, `corsie[{id,nome,tag}]` (id usati: S42, B22, PAD, S43, B23), `colonne[{d, s?, m, w?}]` (`m` = indice in `mesi`, `w` = larghezza in colonne), `eventi[{d, c, k: test|spost|tappa, t, x?, nc?, tr?, hl?, fonte:{label,url}|{label,ref:"#sezione"}, altre?[]}]`, `avviso`, `nota`. Le fonti devono venire solo dal resoconto, dai report e da `tracker.json`; `~` = data approssimata, `†` (`tr`) = dato dal tracker, `nc` = non confermato (tratteggio).
+
 ### Aggiungere un mese
 
 1. Creare `data/resoconti/AAAA-MM.json` nel formato sopra.
