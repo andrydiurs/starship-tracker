@@ -1,5 +1,5 @@
 {
-  "ULTIMO_AGGIORNAMENTO": "31 ott 2026, 08:50",
+  "ULTIMO_AGGIORNAMENTO": "1 nov 2026, 08:50",
   "PROSSIMO_VOLO": {
     "volo": "Flight 15",
     "veicoli": "Super Heavy B22 + Ship 42",
@@ -8,7 +8,7 @@
     "sito": "Starbase, Pad 2",
     "obiettivo": "Doppia cattura in torre: Super Heavy e Ship",
     "licenzaBreve": "Non emessa",
-    "licenzaFaa": "Modifica della licenza attesa, non ancora emessa al 31 ott; nessun NOTAM né avviso marittimo per il lancio",
+    "licenzaFaa": "Modifica della licenza attesa, non ancora emessa al 1 nov; nessun NOTAM né avviso marittimo per il lancio",
     "licenzaSrc": {
       "label": "Ars Technica, 21 ott",
       "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
@@ -137,6 +137,42 @@
     }
   },
   "NEWS": [
+    {
+      "data": "1 nov",
+      "sez": "Lanci",
+      "testo": "@mcrs987 pubblica la sua stima della traiettoria di rientro della Ship verso Starbase: resterebbe a sud del confine USA quasi fino all'avvicinamento finale (stima non ufficiale, non confermato)",
+      "src": {
+        "label": "@mcrs987, 1 nov",
+        "url": "https://x.com/mcrs987/status/2116667427799146955"
+      }
+    },
+    {
+      "data": "31 ott",
+      "sez": "Prototipi",
+      "testo": "Booster 24: la sezione del serbatoio del metano è stata sollevata per l'impilamento in Mega Bay 1, ripresa dalla porta aperta",
+      "src": {
+        "label": "@efraser77, 31 ott",
+        "url": "https://x.com/efraser77/status/2116351708150497473"
+      }
+    },
+    {
+      "data": "31 ott",
+      "sez": "Siti",
+      "testo": "Pad 1: lavori sul quick disconnect del booster con pipe rack e gru, e infissione di palancole per uno scavo (riepilogo NSF)",
+      "src": {
+        "label": "NSF Starbase summary, 31 ott",
+        "url": "https://www.youtube.com/watch?v=Ztup1nOdKc8"
+      }
+    },
+    {
+      "data": "31 ott",
+      "sez": "Siti",
+      "testo": "Gigabay: SpaceX proietta uno spettacolo luminoso di Halloween sulla facciata",
+      "src": {
+        "label": "@NASASpaceflight, 1 nov",
+        "url": "https://x.com/NASASpaceflight/status/2116722145137229906"
+      }
+    },
     {
       "data": "30 ott",
       "sez": "Prototipi",
@@ -383,10 +419,10 @@
     }
   ],
   "IN_BREVE": {
-    "siti": "La Mega Bay 2 è al completo con cinque Ship (S40, S42, S43, S44, S45) e B23 è rientrato in Mega Bay 1. A Massey's arrivano nuovi serbatoi di azoto e parte un secondo Supercrusher; al Pad 1 sono posati i supporti del flame trench. Per NSF il Flight 16 dal 39A non arriverà prima di dicembre.",
-    "prototipi": "S42 è in Mega Bay 2 per ispezioni finali, FTS e carico Starlink; B22 è in Mega Bay 1 per i preparativi finali. B23 è rientrato in Mega Bay 1 e S43 attende i motori per uno static fire a dicembre: voleranno insieme dal 39A (Flight 16). S44 ha i raceway, S45 avanza.",
-    "test": "Entrambi i veicoli del Flight 15 hanno completato gli static fire. B23 è rimasto oltre due giorni a Massey's senza test visibili e il 30 ott è rientrato. Nessun nuovo test Raptor a McGregor.",
-    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. Il Flight 15 con la prima doppia cattura resta NET 12 nov (slide CADENA non ufficiale): B22 e S42 sono pronti, ma al 31 ott non ci sono licenza FAA, NOTAM o avvisi marittimi. Per NSF il Flight 16 dal 39A non arriverà prima di dicembre."
+    "siti": "La Mega Bay 2 è al completo con cinque Ship (S40, S42, S43, S44, S45) e in Mega Bay 1 si impila il serbatoio del metano di B24. Al Pad 1 lavori sul QD del booster e palancole per uno scavo; il 31 ott spettacolo di Halloween sulla Gigabay. Per NSF il Flight 16 dal 39A non arriverà prima di dicembre.",
+    "prototipi": "S42 è in Mega Bay 2 per ispezioni finali, FTS e carico Starlink; B22 è in Mega Bay 1 per i preparativi finali. B23 è rientrato in Mega Bay 1 e S43 attende i motori per uno static fire a dicembre: voleranno insieme dal 39A (Flight 16). B24 impila il serbatoio del metano, S44 ha i raceway, S45 avanza.",
+    "test": "Entrambi i veicoli del Flight 15 hanno completato gli static fire. B23 è rientrato da Massey's senza test visibili; nessuna static fire nell'ultimo riepilogo NSF e nessun nuovo test Raptor a McGregor.",
+    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. Il Flight 15 con la prima doppia cattura resta NET 12 nov (slide CADENA non ufficiale): B22 e S42 sono pronti, ma al 1 nov non ci sono licenza FAA, NOTAM o avvisi marittimi. Per NSF il Flight 16 dal 39A non arriverà prima di dicembre."
   },
   "SITI": [
     {
@@ -411,12 +447,12 @@
         "label": "In ricostruzione",
         "tone": "accent"
       },
-      "breve": "Flame trench: posati i cinque supporti ad A",
-      "ultimo": "In ricostruzione per eguagliare il Pad 2; il 23 ott sollevate altre sezioni del muro del flame trench (NSF: «ne manca una»); foto aerea del cantiere del 23 ott; il 27 ott nuova foto aerea: i lavori sul flame trench continuano. NSF (stato al 23 ott): gettata una delle rampe del flame trench, installati i cinque supporti ad A e il supporto del colmo centrale, posati vari pannelli delle pareti; avanza l'alloggiamento dei drawworks alla base della torre, ma interni della torre vuoti e chopsticks lontani dall'essere operativi. Il launch mount, costruito a Sanchez, ha i primi due livelli quasi completi, piastre del deluge sollevate, flame diverter in corso e struttura primaria del nuovo braccio SQD finita",
-      "data": "18-30 ott",
+      "breve": "Lavori sul QD del booster e palancole per uno scavo",
+      "ultimo": "In ricostruzione per eguagliare il Pad 2; il 23 ott sollevate altre sezioni del muro del flame trench (NSF: «ne manca una»); foto aerea del cantiere del 23 ott; il 27 ott nuova foto aerea: i lavori sul flame trench continuano. NSF (stato al 23 ott): gettata una delle rampe del flame trench, installati i cinque supporti ad A e il supporto del colmo centrale, posati vari pannelli delle pareti; avanza l'alloggiamento dei drawworks alla base della torre, ma interni della torre vuoti e chopsticks lontani dall'essere operativi. Il launch mount, costruito a Sanchez, ha i primi due livelli quasi completi, piastre del deluge sollevate, flame diverter in corso e struttura primaria del nuovo braccio SQD finita. Riepilogo NSF del 31 ott: lavori in corso sul quick disconnect (QD) del booster con pipe rack e gru, e infissione di palancole per uno scavo",
+      "data": "18-31 ott",
       "src": {
-        "label": "NSF, 30 ott",
-        "url": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
+        "label": "NSF Starbase summary, 31 ott",
+        "url": "https://www.youtube.com/watch?v=Ztup1nOdKc8"
       }
     },
     {
@@ -426,12 +462,12 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "Rientrato B23 da Massey's; B22 nei preparativi finali",
-      "ultimo": "B22 rientrato dal Pad 2 nella notte tra 25 e 26 ott per i preparativi finali al volo; la sezione F3:4 di B24 è entrata il 24 ott e completa il corpo del booster. Il 30 ott B23 è rientrato in Mega Bay 1 da Massey's",
-      "data": "24-30 ott",
+      "breve": "B24: impilato il serbatoio del metano; B22 nei preparativi finali",
+      "ultimo": "B22 rientrato dal Pad 2 nella notte tra 25 e 26 ott per i preparativi finali al volo; la sezione F3:4 di B24 è entrata il 24 ott e completa il corpo del booster. Il 30 ott B23 è rientrato in Mega Bay 1 da Massey's. La sera del 30 ott (ora del Texas) sollevata la sezione del serbatoio del metano di B24 per l'impilamento",
+      "data": "24-31 ott",
       "src": {
-        "label": "@LabPadre, 30 ott",
-        "url": "https://x.com/LabPadre/status/2116093506200453375"
+        "label": "@efraser77, 31 ott",
+        "url": "https://x.com/efraser77/status/2116351708150497473"
       }
     },
     {
@@ -457,11 +493,11 @@
         "tone": "accent"
       },
       "breve": "Primo carroponte installato, gru a torre in smontaggio",
-      "ultimo": "Primo carroponte in posizione (15 ott); una delle 4 gru a torre quasi smontata (17 ott); gru LR11000 al lavoro dentro l'edificio (22 ott); nuove foto aeree del 23 e del 26 ott. Obiettivo SpaceX: completamento entro fine 2026. Il 31 ott SpaceX ha decorato la Gigabay per Halloween (video NSF)",
-      "data": "15-26 ott",
+      "ultimo": "Primo carroponte in posizione (15 ott); una delle 4 gru a torre quasi smontata (17 ott); gru LR11000 al lavoro dentro l'edificio (22 ott); nuove foto aeree del 23 e del 26 ott. Obiettivo SpaceX: completamento entro fine 2026. Il 31 ott SpaceX ha proiettato uno spettacolo luminoso di Halloween sulla facciata (video NSF)",
+      "data": "15-31 ott",
       "src": {
-        "label": "@RGVaerialphotos",
-        "url": "https://x.com/RGVaerialphotos/status/2114933356509151392"
+        "label": "@NASASpaceflight, 1 nov",
+        "url": "https://x.com/NASASpaceflight/status/2116722145137229906"
       }
     },
     {
@@ -556,6 +592,16 @@
     }
   ],
   "NON_CONFERMATI": [
+    {
+      "titolo": "Flight 15",
+      "data": "1 nov",
+      "testo": "Stima di @mcrs987 della traiettoria di rientro della Ship: dogleg a sud attorno allo Yucatán e avvicinamento finale da sud-ovest, quasi tutto a sud del confine USA. Stima personale, non ufficiale"
+    },
+    {
+      "titolo": "Pad (ASU)",
+      "data": "31 ott",
+      "testo": "Un camion di azoto collegato all'impianto di separazione dell'aria: per NSF forse prove di pressione, spurgo delle linee o avvio dell'impianto"
+    },
     {
       "titolo": "Massey's",
       "data": "31 ott",
@@ -705,11 +751,11 @@
       "voloNc": true,
       "stato": "Test",
       "breve": "Rientrato in Mega Bay 1 dopo la sosta a Massey's",
-      "note": "Prova crio completata il 15 ott; in Mega Bay 1 per i motori. Stime NSF: pronto per lo static fire a fine novembre, possibile static fire al 39A a metà dicembre. Il 28 ott è arrivato a Massey's per nuove prove criogeniche (nessun esito pubblico al 29 ott); @mcrs987 segnala diverse modifiche strutturali rispetto ai booster precedenti; SpaceX porta avanti in parallelo Flight 15 e 16. Per NSF andrà al KSC con S43 per il primo volo dal 39A (non confermato). Nella notte tra 29 e 30 ott è tornato al sito di produzione via Highway 4; SpaceX non ha comunicato l'esito delle prove. Per NSF è rimasto oltre due giorni allo stand crio senza test visibili (forse una prova di pressione a temperatura ambiente, non confermato); rientrato in Mega Bay 1 la mattina presto del 30 ott",
+      "note": "Prova crio completata il 15 ott; in Mega Bay 1 per i motori. Stime NSF: pronto per lo static fire a fine novembre, possibile static fire al 39A a metà dicembre. Il 28 ott è arrivato a Massey's per nuove prove criogeniche (nessun esito pubblico al 29 ott); @mcrs987 segnala diverse modifiche strutturali rispetto ai booster precedenti; SpaceX porta avanti in parallelo Flight 15 e 16. Per NSF andrà al KSC con S43 per il primo volo dal 39A (non confermato). Nella notte tra 29 e 30 ott è tornato al sito di produzione via Highway 4; SpaceX non ha comunicato l'esito delle prove. Per NSF è rimasto oltre due giorni allo stand crio senza test visibili (forse una prova di pressione a temperatura ambiente, non confermato); rientrato in Mega Bay 1 la mattina presto del 30 ott. Video NSF del 31 ott: al rientro non passava dalla porta della Mega Bay 1 ed è stata abbassata un'antenna in cima al booster; scopo della sosta a Massey's non confermato (forse un fit check o uno spostamento logistico)",
       "data": "30 ott",
       "src": {
-        "label": "@LabPadre, 30 ott",
-        "url": "https://x.com/LabPadre/status/2116093506200453375"
+        "label": "@NASASpaceflight, 31 ott",
+        "url": "https://x.com/NASASpaceflight/status/2116651530208313722"
       }
     },
     {
@@ -747,12 +793,12 @@
       "versione": "V3",
       "volo": "n.d.",
       "stato": "In costruzione",
-      "breve": "Ultima sezione del corpo in Mega Bay 1",
-      "note": "In Mega Bay 1; il 24 ott è entrata la sezione F3:4 che completa il corpo del booster. Pronto forse a inizio febbraio 2027 (stima NSF)",
-      "data": "24 ott",
+      "breve": "Impilato il serbatoio del metano in Mega Bay 1",
+      "note": "In Mega Bay 1; il 24 ott è entrata la sezione F3:4 che completa il corpo del booster. Pronto forse a inizio febbraio 2027 (stima NSF). La sera del 30 ott (ora del Texas) la sezione del serbatoio del metano è stata sollevata per l'impilamento in Mega Bay 1",
+      "data": "31 ott",
       "src": {
-        "label": "@VickiCocks15",
-        "url": "https://x.com/VickiCocks15/status/2114069967607881863"
+        "label": "@efraser77, 31 ott",
+        "url": "https://x.com/efraser77/status/2116351708150497473"
       }
     },
     {
@@ -1323,6 +1369,21 @@
   "X_POSTS": {
     "siti": [
       {
+        "autore": "@NASASpaceflight",
+        "data": "1 nov",
+        "ora": "03:41",
+        "testo": "Gli «Hallowmemes» proiettati sulla Gigabay",
+        "url": "https://x.com/NASASpaceflight/status/2116722145137229906",
+        "media": "video",
+        "id": "2116722145137229906",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2116721998759886848/img/jtoygT056r689Mc7.jpg"
+          }
+        ]
+      },
+      {
         "autore": "@BMBuildersMARS",
         "data": "31 ott",
         "ora": "07:00",
@@ -1336,21 +1397,6 @@
             "url": "https://pbs.twimg.com/media/HV7_epIWgAA0CC7.jpg",
             "w": 2048,
             "h": 1536
-          }
-        ]
-      },
-      {
-        "autore": "@NASASpaceflight",
-        "data": "31 ott",
-        "ora": "05:07",
-        "testo": "La Gigabay addobbata per Halloween",
-        "url": "https://x.com/NASASpaceflight/status/2116381421266723065",
-        "media": "video",
-        "id": "2116381421266723065",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2116381372684062720/img/HhYgdBhSXw-hDFRK.jpg"
           }
         ]
       },
@@ -1423,6 +1469,36 @@
     ],
     "prototipi": [
       {
+        "autore": "@efraser77",
+        "data": "31 ott",
+        "ora": "03:09",
+        "testo": "Serbatoio del metano di B24 sollevato in Mega Bay 1",
+        "url": "https://x.com/efraser77/status/2116351708150497473",
+        "media": "video",
+        "id": "2116351708150497473",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2116351166670118912/img/zq0PKPNfAMHW4Yri.jpg"
+          }
+        ]
+      },
+      {
+        "autore": "@RGVaerialphotos",
+        "data": "31 ott",
+        "ora": "17:37",
+        "testo": "Ship 40 saluta dalla Mega Bay 2",
+        "url": "https://x.com/RGVaerialphotos/status/2116570337257377808",
+        "media": "foto",
+        "id": "2116570337257377808",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HV-RVyhbcAAR-OU.jpg"
+          }
+        ]
+      },
+      {
         "autore": "@LabPadre",
         "data": "30 ott",
         "ora": "10:03",
@@ -1485,39 +1561,24 @@
             "url": "https://pbs.twimg.com/media/HVxWtU7WIAAIpDm.jpg"
           }
         ]
-      },
-      {
-        "autore": "@BMBuildersMARS",
-        "data": "29 ott",
-        "ora": "04:11",
-        "testo": "Ship 42 in autostrada verso la produzione",
-        "url": "https://x.com/BMBuildersMARS/status/2115642654688235590",
-        "media": "foto",
-        "id": "2115642654688235590",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVxFx6XXkAEQPmb.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@mcrs987",
-        "data": "28 ott",
-        "ora": "17:59",
-        "testo": "Richiesta di foto ravvicinate della cupola comune di B23",
-        "url": "https://x.com/mcrs987/status/2115488755968606319",
-        "media": "foto",
-        "id": "2115488755968606319",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVu5sLzX0AApAVl.jpg"
-          }
-        ]
       }
     ],
     "test": [
+      {
+        "autore": "@NASASpaceflight",
+        "data": "31 ott",
+        "ora": "23:00",
+        "testo": "Riepilogo NSF di una settimana di test per i veicoli dei prossimi due voli",
+        "url": "https://x.com/NASASpaceflight/status/2116651530208313722",
+        "media": "video",
+        "id": "2116651530208313722",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2116651257410588673/img/w5W9DPHh9wX4bTxq.jpg"
+          }
+        ]
+      },
       {
         "autore": "@FelixSchlang",
         "data": "30 ott",
@@ -1596,26 +1657,24 @@
             "h": 632
           }
         ]
-      },
-      {
-        "autore": "@gatewaytomarz",
-        "data": "28 ott",
-        "ora": "00:17",
-        "testo": "Static fire di S42 ✅",
-        "url": "https://x.com/gatewaytomarz/status/2115221260871311449",
-        "media": "foto",
-        "id": "2115221260871311449",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVrGhtuXwAA2wME.jpg",
-            "w": 1366,
-            "h": 2048
-          }
-        ]
       }
     ],
     "lanci": [
+      {
+        "autore": "@mcrs987",
+        "data": "1 nov",
+        "ora": "00:03",
+        "testo": "Stima della traiettoria di rientro della Ship su Starbase (non ufficiale)",
+        "url": "https://x.com/mcrs987/status/2116667427799146955",
+        "media": "foto",
+        "id": "2116667427799146955",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HV_pv51X0AAZBw8.jpg"
+          }
+        ]
+      },
       {
         "autore": "@FelixSchlang",
         "data": "29 ott",
@@ -1692,23 +1751,6 @@
             "url": "https://pbs.twimg.com/amplify_video_thumb/2115231105422884864/img/xIBecFpqcVGmoaTE.jpg",
             "w": 1920,
             "h": 1080
-          }
-        ]
-      },
-      {
-        "autore": "@NASASpaceflight",
-        "data": "27 ott",
-        "ora": "02:58",
-        "testo": "Flight 15: S42 si prepara allo static fire, S43 «prova» la cattura",
-        "url": "https://x.com/NASASpaceflight/status/2114899432864903527",
-        "media": "video",
-        "id": "2114899432864903527",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2114899386610102272/img/a2a3OuEfrZnkHTIp.jpg",
-            "w": 1104,
-            "h": 628
           }
         ]
       }
