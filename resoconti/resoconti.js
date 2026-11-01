@@ -72,28 +72,23 @@
   function tlEvent(e) {
     var f = e.fonte || {}, ext = okUrl(f.url), intl = !ext && /^#[a-z]+$/.test(f.ref || "");
     var full = e.t + (e.x ? ". " + e.x : "") + (e.nc ? " (non confermato)" : "") + (e.tr ? " (dato dal tracker, non dal resoconto)" : "") + (ext || intl ? " — Fonte: " + f.label : "");
+    var x = e.x || "", other = "";
+    var m = /\.?\s*Altre fonti: ([^.]+)$/.exec(x);
+    if (m) { other = m[1]; x = x.slice(0, m.index); }
     var h = '<div class="tl-ev k-' + e.k + (e.nc ? " nc" : "") + (e.hl ? " hl" : "") + '" title="' + esc(full) + '">' + tlMark(e.k) + '<div class="tl-tx"><p class="tl-t">' + esc(e.t) + (e.tr ? '<sup title="Dato dal tracker, non dal resoconto">†</sup>' : "") + "</p>";
-    if (e.x) h += '<p class="tl-d">' + esc(e.x) + "</p>";
-    if (e.nc) h += '<span class="tl-bd">non confermato</span>';
+    if (x) h += '<p class="tl-d">' + esc(x) + "</p>";
+    h += '<div class="tl-fo">';
     if (ext) h += '<a class="tl-src" href="' + esc(f.url) + '" target="_blank" rel="noopener noreferrer" aria-label="' + esc(e.t + " — apri la fonte: " + f.label) + '">' + svg("ext") + "<span>" + esc(f.label) + "</span></a>";
     else if (intl) h += '<a class="tl-src tl-int" href="' + esc(f.ref) + '" aria-label="' + esc(e.t + " — vai al paragrafo del resoconto") + '">' + svg("chevronR") + "<span>" + esc(f.label) + "</span></a>";
-    if (e.altre && e.altre.length) h += '<span class="tl-alt">' + e.altre.filter(function (a) { return okUrl(a.url); }).map(function (a) { return '<a href="' + esc(a.url) + '" target="_blank" rel="noopener noreferrer">+ ' + esc(a.label) + "</a>"; }).join("") + "</span>";
-    return h + "</div></div>";
+    if (other) h += '<span class="tl-oth" title="Altre fonti: ' + esc(other) + '">Altre: ' + esc(other) + "</span>";
+    if (e.altre && e.altre.length) h += e.altre.filter(function (a) { return okUrl(a.url); }).map(function (a) { return '<a class="tl-alt" title="' + esc(a.label) + '" href="' + esc(a.url) + '" target="_blank" rel="noopener noreferrer">+ ' + esc(a.label) + "</a>"; }).join("");
+    return h + "</div></div></div>";
   }
   function renderTimeline(T) {
-    var N = T.colonne.length, colIdx = {};
-    T.colonne.forEach(function (c, i) { colIdx[c.d] = i + 2; });
-    var h = '<section class="card accented acc-test report-sec tl-sec" id="timeline"><div class="sec-head">' + ico("timeline") + "<h2>" + esc(T.titolo) + '</h2><p class="sub">' + esc(T.sottotitolo) + "</p></div>";
-    if (T.avviso) h += '<p class="tl-warn">' + svg("info") + "<span>" + esc(T.avviso.testo) + (okUrl(T.avviso.fonte && T.avviso.fonte.url) ? ' <a href="' + esc(T.avviso.fonte.url) + '" target="_blank" rel="noopener noreferrer">' + esc(T.avviso.fonte.label) + "</a>" : "") + "</span></p>";
-    h += '<div class="tl-bar"><p class="tl-hint">' + svg("ext") + "<span><strong>Tocca un evento per aprire la fonte.</strong> Scorri verso destra per avanzare nel tempo.</span></p>" + '<div class="tl-nav"><button type="button" data-tl="-1" aria-label="Indietro nel tempo">←</button><button type="button" data-tl="1" aria-label="Avanti nel tempo">→</button></div></div>';
-    h += '<ul class="tl-legend" aria-label="Legenda">' +
-      '<li class="tl-lg k-test">' + tlMark("test") + "<b>Test</b> cryo, static fire, deluge, sollevamento</li>" +
-      '<li class="tl-lg k-spost">' + tlMark("spost") + "<b>Spostamento</b> rollout, rientri, trasferimenti</li>" +
-      '<li class="tl-lg k-tappa">' + tlMark("tappa") + "<b>Tappa</b> o altro</li>" +
-      '<li class="tl-lg"><span class="tl-dash"></span><b>Non confermato</b> o ipotesi</li></ul>';
+    var N = T.colonne.length;
+    var h = '<section class="card accented acc-test report-sec tl-sec" id="timeline"><div class="tl-head">' + ico("timeline") + "<h2>" + esc(T.titolo) + '</h2><div class="tl-nav"><button type="button" data-tl="-1" aria-label="Indietro nel tempo">←</button><button type="button" data-tl="1" aria-label="Avanti nel tempo">→</button></div></div>';
     h += '<div class="tl-scroll" tabindex="0" role="region" aria-label="Timeline orizzontale, scorrevole"><div class="tl-grid" style="--n:' + N + ";grid-template-columns:var(--lw) " + T.colonne.map(function (c) { return "calc(var(--cw) * " + (c.w || 1) + ")"; }).join(" ") + '">';
     h += '<div class="tl-corner"></div>';
-    // mesi
     var run = [];
     T.colonne.forEach(function (c, i) { if (!run.length || run[run.length - 1].m !== c.m) run.push({ m: c.m, a: i + 2, b: i + 3 }); else run[run.length - 1].b = i + 3; });
     run.forEach(function (r) { h += '<div class="tl-month" style="grid-column:' + r.a + " / " + r.b + '"><span>' + esc(T.mesi[r.m] || "") + "</span></div>"; });
@@ -107,8 +102,16 @@
       });
     });
     h += "</div></div>";
+    h += '<div class="tl-foot">';
+    h += '<ul class="tl-legend" aria-label="Legenda">' +
+      '<li class="tl-lg k-test">' + tlMark("test") + "<b>Test</b> cryo, static fire, deluge, sollevamento</li>" +
+      '<li class="tl-lg k-spost">' + tlMark("spost") + "<b>Spostamento</b> rollout, rientri, trasferimenti</li>" +
+      '<li class="tl-lg k-tappa">' + tlMark("tappa") + "<b>Tappa</b> o altro</li>" +
+      '<li class="tl-lg"><span class="tl-dash"></span><b>Non confermato</b> o ipotesi</li></ul>';
+    h += '<p class="tl-hint"><strong>Tocca un evento per aprire la fonte</strong> (si apre in una nuova scheda; il testo completo è nel suggerimento al passaggio del mouse). Scorri a destra per avanzare nel tempo. ' + esc(T.sottotitolo) + "</p>";
+    if (T.avviso) h += '<p class="tl-warn">' + svg("info") + "<span>" + esc(T.avviso.testo) + (okUrl(T.avviso.fonte && T.avviso.fonte.url) ? ' <a href="' + esc(T.avviso.fonte.url) + '" target="_blank" rel="noopener noreferrer">' + esc(T.avviso.fonte.label) + "</a>" : "") + "</span></p>";
     if (T.nota) h += '<p class="tl-note">' + esc(T.nota) + "</p>";
-    return h + "</section>";
+    return h + "</div></section>";
   }
   function wireTimeline(root) {
     var sc = root.querySelector(".tl-scroll");
