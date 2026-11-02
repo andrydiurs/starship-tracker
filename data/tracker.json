@@ -1,5 +1,5 @@
 {
-  "ULTIMO_AGGIORNAMENTO": "1 nov 2026, 08:50",
+  "ULTIMO_AGGIORNAMENTO": "2 nov 2026, 08:40",
   "PROSSIMO_VOLO": {
     "volo": "Flight 15",
     "veicoli": "Super Heavy B22 + Ship 42",
@@ -8,7 +8,7 @@
     "sito": "Starbase, Pad 2",
     "obiettivo": "Doppia cattura in torre: Super Heavy e Ship",
     "licenzaBreve": "Non emessa",
-    "licenzaFaa": "Modifica della licenza attesa, non ancora emessa al 1 nov; nessun NOTAM né avviso marittimo per il lancio",
+    "licenzaFaa": "Modifica della licenza attesa, non ancora emessa al 2 nov; nessun NOTAM né avviso marittimo per il lancio",
     "licenzaSrc": {
       "label": "Ars Technica, 21 ott",
       "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
@@ -137,6 +137,33 @@
     }
   },
   "NEWS": [
+    {
+      "data": "2 nov",
+      "sez": "Siti",
+      "testo": "Gigabay: nuova foto aerea di RGV Aerial Photography che mostra il cantiere com'era venerdì 30 ott",
+      "src": {
+        "label": "@RGVaerialphotos, 2 nov",
+        "url": "https://x.com/RGVaerialphotos/status/2117103279075398035"
+      }
+    },
+    {
+      "data": "1 nov",
+      "sez": "Prototipi",
+      "testo": "Secondo il riepilogo «Starbase This Week» nella Starfactory si costruisce un mockup di cabina Starship per HLS, anche per prove con persone a bordo (non confermato da SpaceX). Nello stesso riepilogo: S45 ha completato il serbatoio del metano in Mega Bay 2",
+      "src": {
+        "label": "@TrackingTheSB, 1 nov",
+        "url": "https://x.com/TrackingTheSB/status/2116973778219749564"
+      }
+    },
+    {
+      "data": "1 nov",
+      "sez": "Test",
+      "testo": "Rallentamento sulla Highway 4 nella notte tra domenica e lunedì (dalle 6:59 alle 11:00 ora di Roma del 2 nov) per un trasferimento da Massey's al sito di produzione; quale veicolo si sia spostato non è confermato",
+      "src": {
+        "label": "@Gatewaytomarsco, 1 nov",
+        "url": "https://x.com/Gatewaytomarsco/status/2116852652688744723"
+      }
+    },
     {
       "data": "1 nov",
       "sez": "Lanci",
@@ -422,7 +449,7 @@
     "siti": "La Mega Bay 2 è al completo con cinque Ship (S40, S42, S43, S44, S45) e in Mega Bay 1 si impila il serbatoio del metano di B24. Al Pad 1 lavori sul QD del booster e palancole per uno scavo; il 31 ott spettacolo di Halloween sulla Gigabay. Per NSF il Flight 16 dal 39A non arriverà prima di dicembre.",
     "prototipi": "S42 è in Mega Bay 2 per ispezioni finali, FTS e carico Starlink; B22 è in Mega Bay 1 per i preparativi finali. B23 è rientrato in Mega Bay 1 e S43 attende i motori per uno static fire a dicembre: voleranno insieme dal 39A (Flight 16). B24 impila il serbatoio del metano, S44 ha i raceway, S45 avanza.",
     "test": "Entrambi i veicoli del Flight 15 hanno completato gli static fire. B23 è rientrato da Massey's senza test visibili; nessuna static fire nell'ultimo riepilogo NSF e nessun nuovo test Raptor a McGregor.",
-    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. Il Flight 15 con la prima doppia cattura resta NET 12 nov (slide CADENA non ufficiale): B22 e S42 sono pronti, ma al 1 nov non ci sono licenza FAA, NOTAM o avvisi marittimi. Per NSF il Flight 16 dal 39A non arriverà prima di dicembre."
+    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. Il Flight 15 con la prima doppia cattura resta NET 12 nov (slide CADENA non ufficiale): B22 e S42 sono pronti, ma al 2 nov non ci sono licenza FAA, NOTAM o avvisi marittimi. Per NSF il Flight 16 dal 39A non arriverà prima di dicembre."
   },
   "SITI": [
     {
@@ -592,6 +619,11 @@
     }
   ],
   "NON_CONFERMATI": [
+    {
+      "titolo": "Mockup cabina HLS",
+      "data": "1 nov",
+      "testo": "Per StarshipTracking nella Starfactory si costruisce un mockup della cabina Starship per HLS, destinato anche a prove con persone a bordo. Non confermato da SpaceX"
+    },
     {
       "titolo": "Flight 15",
       "data": "1 nov",
@@ -1369,6 +1401,21 @@
   "X_POSTS": {
     "siti": [
       {
+        "autore": "@RGVaerialphotos",
+        "data": "2 nov",
+        "ora": "04:55",
+        "testo": "Il Gigabay com'era venerdì 30 ottobre",
+        "url": "https://x.com/RGVaerialphotos/status/2117103279075398035",
+        "media": "foto",
+        "id": "2117103279075398035",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HWF2LPybIAAUg0B.jpg"
+          }
+        ]
+      },
+      {
         "autore": "@NASASpaceflight",
         "data": "1 nov",
         "ora": "03:41",
@@ -1446,28 +1493,32 @@
             "url": "https://pbs.twimg.com/amplify_video_thumb/2115712955241074688/img/0uMM9EvVI2CtVi5E.jpg"
           }
         ]
-      },
-      {
-        "autore": "@RGVaerialphotos",
-        "data": "29 ott",
-        "ora": "08:04",
-        "testo": "Ship 42 e la sezione piastrellata tornano al sito di produzione",
-        "url": "https://x.com/RGVaerialphotos/status/2115701286096277589",
-        "media": "2 video",
-        "id": "2115701286096277589",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2115698557118525440/img/JcPi0ZRB6O6GSRW0.jpg"
-          },
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2115698578555641856/img/NgdeZ_gsoBwQEzZK.jpg"
-          }
-        ]
       }
     ],
     "prototipi": [
+      {
+        "autore": "@TrackingTheSB",
+        "data": "1 nov",
+        "ora": "20:20",
+        "testo": "Starbase This Week: B24 impilato, S45 avanza e un mockup di cabina HLS nella Starfactory (non confermato)",
+        "url": "https://x.com/TrackingTheSB/status/2116973778219749564",
+        "media": "foto",
+        "id": "2116973778219749564",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HWEAHjaakAAXwgD.jpg"
+          },
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HWEAICdbQAA6BxN.jpg"
+          },
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HWEAInja0AAazsa.jpg"
+          }
+        ]
+      },
       {
         "autore": "@efraser77",
         "data": "31 ott",
@@ -1542,28 +1593,24 @@
             "url": "https://pbs.twimg.com/media/HV2opHSbYAAYR0v.png"
           }
         ]
-      },
-      {
-        "autore": "@BMBuildersMARS",
-        "data": "29 ott",
-        "ora": "05:25",
-        "testo": "Ship 42 lascia Massey's e torna in produzione",
-        "url": "https://x.com/BMBuildersMARS/status/2115661268795154724",
-        "media": "2 foto",
-        "id": "2115661268795154724",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVxWtU_WgAAklRO.jpg"
-          },
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVxWtU7WIAAIpDm.jpg"
-          }
-        ]
       }
     ],
     "test": [
+      {
+        "autore": "@Gatewaytomarsco",
+        "data": "1 nov",
+        "ora": "12:19",
+        "testo": "Rallentamento sulla Highway 4 per un trasferimento da Massey's al sito di produzione",
+        "url": "https://x.com/Gatewaytomarsco/status/2116852652688744723",
+        "media": "foto",
+        "id": "2116852652688744723",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HWCSQBNW0AA4Hes.jpg"
+          }
+        ]
+      },
       {
         "autore": "@NASASpaceflight",
         "data": "31 ott",
@@ -1638,23 +1685,6 @@
           {
             "tipo": "video",
             "url": "https://pbs.twimg.com/amplify_video_thumb/2115478071058812928/img/W_xbkJetRNmjO7tf.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@NASASpaceflight",
-        "data": "27 ott",
-        "ora": "22:46",
-        "testo": "Flight 15: Ship 42 fa uno static fire a sei motori",
-        "url": "https://x.com/NASASpaceflight/status/2115198496521195971",
-        "media": "video",
-        "id": "2115198496521195971",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2115198475038007297/img/_0M1tqL0Q39KpbbM.jpg",
-            "w": 1104,
-            "h": 632
           }
         ]
       }
