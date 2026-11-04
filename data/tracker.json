@@ -1,5 +1,5 @@
 {
-  "ULTIMO_AGGIORNAMENTO": "3 nov 2026, 08:45",
+  "ULTIMO_AGGIORNAMENTO": "4 nov 2026, 08:32",
   "PROSSIMO_VOLO": {
     "volo": "Flight 15",
     "veicoli": "Super Heavy B22 + Ship 42",
@@ -8,7 +8,7 @@
     "sito": "Starbase, Pad 2",
     "obiettivo": "Doppia cattura in torre: Super Heavy e Ship",
     "licenzaBreve": "Non emessa",
-    "licenzaFaa": "Modifica della licenza attesa, non ancora emessa al 3 nov; nessun NOTAM né avviso marittimo per il lancio",
+    "licenzaFaa": "Modifica della licenza attesa, non ancora emessa al 4 nov; nessun NOTAM né avviso marittimo per il lancio",
     "licenzaSrc": {
       "label": "Ars Technica, 21 ott",
       "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
@@ -137,6 +137,33 @@
     }
   },
   "NEWS": [
+    {
+      "data": "3 nov",
+      "sez": "Siti",
+      "testo": "Pad 2: lavori sui bracci di sgancio rapido (BQD) di ossigeno liquido e metano per prepararli al Flight 15; nella notte B22 era in preparazione in Mega Bay 1",
+      "src": {
+        "label": "@VickiCocks15, 3 nov",
+        "url": "https://x.com/VickiCocks15/status/2117698839163601197"
+      }
+    },
+    {
+      "data": "3 nov",
+      "sez": "Prototipi",
+      "testo": "Ship 45: la sezione A2:3 è stata spostata dalla Starfactory alla Mega Bay 2",
+      "src": {
+        "label": "@VickiCocks15, 3 nov",
+        "url": "https://x.com/VickiCocks15/status/2117650718702305353"
+      }
+    },
+    {
+      "data": "3 nov",
+      "sez": "Test",
+      "testo": "Massey's: l'articolo di test S43.1 (ogiva, PEZ dispenser e serbatoi header) è nel Can Crusher e accanto se ne costruisce un secondo; esito delle prove non ancora noto",
+      "src": {
+        "label": "@RGVaerialphotos, 3 nov",
+        "url": "https://x.com/RGVaerialphotos/status/2117546071882702870"
+      }
+    },
     {
       "data": "2 nov",
       "sez": "Siti",
@@ -455,10 +482,10 @@
     }
   ],
   "IN_BREVE": {
-    "siti": "La Mega Bay 2 è al completo con cinque Ship (S40, S42, S43, S44, S45) e in Mega Bay 1 si impila il serbatoio del metano di B24. Al Pad 1 proseguono i lavori (foto aerea del 2 nov); il 31 ott spettacolo di Halloween sulla Gigabay. Per NSF il Flight 16 dal 39A non arriverà prima di dicembre.",
-    "prototipi": "S42 è in Mega Bay 2 per ispezioni finali, FTS e carico Starlink; B22 è in Mega Bay 1 per i preparativi finali. B23 è rientrato in Mega Bay 1 e S43 attende i motori per uno static fire a dicembre: voleranno insieme dal 39A (Flight 16). B24 impila il serbatoio del metano, S44 ha i raceway, S45 avanza.",
-    "test": "Entrambi i veicoli del Flight 15 hanno completato gli static fire. B23 è rientrato da Massey's senza test visibili; nessuna static fire nell'ultimo riepilogo NSF e nessun nuovo test Raptor a McGregor.",
-    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. Il Flight 15 con la prima doppia cattura resta NET 12 nov (slide CADENA non ufficiale): B22 e S42 sono pronti, ma al 3 nov non ci sono licenza FAA, NOTAM o avvisi marittimi. Per NSF il Flight 16 dal 39A non arriverà prima di dicembre."
+    "siti": "La Mega Bay 2 è al completo con cinque Ship (S40, S42, S43, S44, S45) e in Mega Bay 1 si impila il serbatoio del metano di B24. Al Pad 2 lavori sui BQD per il Flight 15; al Pad 1 proseguono i lavori (foto aerea del 2 nov); il 31 ott spettacolo di Halloween sulla Gigabay. Per NSF il Flight 16 dal 39A non arriverà prima di dicembre.",
+    "prototipi": "S42 è in Mega Bay 2 per ispezioni finali, FTS e carico Starlink; B22 è in Mega Bay 1 per i preparativi finali. B23 è rientrato in Mega Bay 1 e S43 attende i motori per uno static fire a dicembre: voleranno insieme dal 39A (Flight 16). B24 impila il serbatoio del metano, S44 ha i raceway, la sezione A2:3 di S45 è entrata in Mega Bay 2.",
+    "test": "Entrambi i veicoli del Flight 15 hanno completato gli static fire. A Massey's l'articolo di test S43.1 è nel Can Crusher (esito non noto) e accanto se ne costruisce un secondo; nessun nuovo test Raptor a McGregor.",
+    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. Il Flight 15 con la prima doppia cattura resta NET 12 nov (slide CADENA non ufficiale): B22 e S42 sono pronti, ma al 4 nov non ci sono licenza FAA, NOTAM o avvisi marittimi. Per NSF il Flight 16 dal 39A non arriverà prima di dicembre."
   },
   "SITI": [
     {
@@ -468,12 +495,12 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "S43 rientrata in produzione dopo le prove di cattura",
-      "ultimo": "Static fire di B22 il 25 ott; nella notte tra 25 e 26 ott B22 sollevato ad altezza di cattura e rimandato in Mega Bay 1. Il 26 ott arriva S43 dalla produzione (avviso stradale 16-21 ora di Roma); nella notte tra 26 e 27 ott i chopsticks l'hanno sollevata per prove di cattura in vista del Flight 15. Chiusura di riserva del 26 ott revocata. Il 28 ott S43 ha lasciato il Pad 2 ed è tornata al sito di produzione",
-      "data": "25-28 ott",
+      "breve": "Lavori sui BQD in vista del Flight 15",
+      "ultimo": "Static fire di B22 il 25 ott; nella notte tra 25 e 26 ott B22 sollevato ad altezza di cattura e rimandato in Mega Bay 1. Il 26 ott arriva S43 dalla produzione (avviso stradale 16-21 ora di Roma); nella notte tra 26 e 27 ott i chopsticks l'hanno sollevata per prove di cattura in vista del Flight 15. Chiusura di riserva del 26 ott revocata. Il 28 ott S43 ha lasciato il Pad 2 ed è tornata al sito di produzione. Il 3 nov lavori sui bracci di sgancio rapido (BQD) di ossigeno liquido e metano per il Flight 15",
+      "data": "25 ott-3 nov",
       "src": {
-        "label": "@NASASpaceflight",
-        "url": "https://x.com/NASASpaceflight/status/2115298718035370428"
+        "label": "@VickiCocks15, 3 nov",
+        "url": "https://x.com/VickiCocks15/status/2117698839163601197"
       }
     },
     {
@@ -543,12 +570,12 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "Nuovi serbatoi di azoto; iniziato un secondo Supercrusher",
-      "ultimo": "S42 è arrivata il 26 ott; static fire a un motore nella notte tra 26 e 27 ott e a sei motori il 27 ott, confermati da SpaceX il 28 ott. Nella notte tra 28 e 29 ott S42 è ripartita verso la produzione. B23 è arrivato il 28 ott per nuove prove crio (nessun esito pubblico finora). Il cantiere del sito 2 avanza accanto al sito 1. Non confermato: i simulatori di spinta di booster e Ship potrebbero essere portati qui per lo stoccaggio. Spazio aereo riservato dalla FAA per «high energy testing» dal 23 ott al 6 nov (secondo The Space Road). Nella notte tra 29 e 30 ott anche B23 è ripartito verso la produzione (esito delle prove crio non comunicato). NSF (30 ott): B23 è rimasto oltre due giorni allo stand crio senza test visibili (forse una prova di pressione a temperatura ambiente, non confermato). Rimossi alcuni vecchi serbatoi di azoto liquido, sostituiti da tre più grandi e da due nuovi banchi di vaporizzatori; al loro posto è iniziata la costruzione di un secondo Supercrusher per i test dei serbatoi. Chiusura stradale produzione-Massey's nella notte tra 30 e 31 ott (31 ott 05:59-10:00 ora di Roma), veicolo non comunicato",
-      "data": "26-31 ott",
+      "breve": "S43.1 nel Can Crusher; un secondo in costruzione accanto",
+      "ultimo": "S42 è arrivata il 26 ott; static fire a un motore nella notte tra 26 e 27 ott e a sei motori il 27 ott, confermati da SpaceX il 28 ott. Nella notte tra 28 e 29 ott S42 è ripartita verso la produzione. B23 è arrivato il 28 ott per nuove prove crio (nessun esito pubblico finora). Il cantiere del sito 2 avanza accanto al sito 1. Non confermato: i simulatori di spinta di booster e Ship potrebbero essere portati qui per lo stoccaggio. Spazio aereo riservato dalla FAA per «high energy testing» dal 23 ott al 6 nov (secondo The Space Road). Nella notte tra 29 e 30 ott anche B23 è ripartito verso la produzione (esito delle prove crio non comunicato). NSF (30 ott): B23 è rimasto oltre due giorni allo stand crio senza test visibili (forse una prova di pressione a temperatura ambiente, non confermato). Rimossi alcuni vecchi serbatoi di azoto liquido, sostituiti da tre più grandi e da due nuovi banchi di vaporizzatori; al loro posto è iniziata la costruzione di un secondo Supercrusher per i test dei serbatoi. Chiusura stradale produzione-Massey's nella notte tra 30 e 31 ott (31 ott 05:59-10:00 ora di Roma), veicolo non comunicato. Il 3 nov foto aerea: l'articolo di test S43.1 (ogiva, PEZ dispenser e serbatoi header) è nel Can Crusher e accanto se ne costruisce un secondo; esito non ancora noto",
+      "data": "26 ott-3 nov",
       "src": {
-        "label": "NSF, 30 ott",
-        "url": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
+        "label": "@RGVaerialphotos, 3 nov",
+        "url": "https://x.com/RGVaerialphotos/status/2117546071882702870"
       }
     },
     {
@@ -628,6 +655,11 @@
     }
   ],
   "NON_CONFERMATI": [
+    {
+      "titolo": "Pagina della missione Flight 15",
+      "data": "4 nov",
+      "testo": "@mcrs987 scrive di avere già pronte le sue grafiche da pubblicare appena uscirà la pagina della missione; un indizio che l'annuncio possa essere vicino, ma SpaceX non ha comunicato nulla (https://x.com/mcrs987/status/2117868308548456865)"
+    },
     {
       "titolo": "Starbase, area da 444 acri",
       "data": "2 nov",
@@ -825,12 +857,12 @@
       "versione": "V3",
       "volo": "n.d.",
       "stato": "In costruzione",
-      "breve": "Arriva la cupola anteriore",
-      "note": "Prua in Mega Bay 2 dal 23 ott; nella notte 24-25 ott spostata nel ring yard e poi riportata dentro il 25 ott; il 26 ott arriva la sezione della cupola anteriore. Al 30 ott sul turntable di Mega Bay 2 con ogiva, vano carico e cupola anteriore (NSF)",
-      "data": "30 ott",
+      "breve": "Sezione A2:3 in Mega Bay 2",
+      "note": "Prua in Mega Bay 2 dal 23 ott; nella notte 24-25 ott spostata nel ring yard e poi riportata dentro il 25 ott; il 26 ott arriva la sezione della cupola anteriore. Al 30 ott sul turntable di Mega Bay 2 con ogiva, vano carico e cupola anteriore (NSF). Il 3 nov la sezione A2:3 è stata spostata dalla Starfactory alla Mega Bay 2",
+      "data": "3 nov",
       "src": {
-        "label": "NSF, 30 ott",
-        "url": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
+        "label": "@VickiCocks15, 3 nov",
+        "url": "https://x.com/VickiCocks15/status/2117650718702305353"
       }
     },
     {
@@ -1415,6 +1447,21 @@
   "X_POSTS": {
     "siti": [
       {
+        "autore": "@VickiCocks15",
+        "data": "3 nov",
+        "ora": "20:22",
+        "testo": "Pad 2: lavori sui BQD di ossigeno liquido e metano per il Flight 15",
+        "url": "https://x.com/VickiCocks15/status/2117698839163601197",
+        "media": "video",
+        "id": "2117698839163601197",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2117698558283468801/img/Dxgl60TZ0pAoVBRq.jpg"
+          }
+        ]
+      },
+      {
         "autore": "@RGVaerialphotos",
         "data": "2 nov",
         "ora": "12:00",
@@ -1492,24 +1539,24 @@
             "h": 1536
           }
         ]
-      },
-      {
-        "autore": "@StarbaseTX",
-        "data": "30 ott",
-        "ora": "00:17",
-        "testo": "I Cybertruck della nuova polizia municipale di Starbase",
-        "url": "https://x.com/StarbaseTX/status/2115946059679600959",
-        "media": "foto",
-        "id": "2115946059679600959",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HV1Zt7LWYAA4YoI.jpg"
-          }
-        ]
       }
     ],
     "prototipi": [
+      {
+        "autore": "@VickiCocks15",
+        "data": "3 nov",
+        "ora": "17:10",
+        "testo": "Sezione A2:3 di Ship 45 spostata dalla Starfactory alla Mega Bay 2",
+        "url": "https://x.com/VickiCocks15/status/2117650718702305353",
+        "media": "video",
+        "id": "2117650718702305353",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2117650332553547776/img/TVhxQ0htok2P_pIX.jpg"
+          }
+        ]
+      },
       {
         "autore": "@TrackingTheSB",
         "data": "1 nov",
@@ -1592,24 +1639,24 @@
             "url": "https://pbs.twimg.com/media/HV2-HzzW8AAXSFi.jpg"
           }
         ]
-      },
-      {
-        "autore": "@TrackingTheSB",
-        "data": "30 ott",
-        "ora": "06:02",
-        "testo": "Booster 23 sulla Highway 4 verso la produzione",
-        "url": "https://x.com/TrackingTheSB/status/2116033100098752617",
-        "media": "foto",
-        "id": "2116033100098752617",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HV2opHSbYAAYR0v.png"
-          }
-        ]
       }
     ],
     "test": [
+      {
+        "autore": "@RGVaerialphotos",
+        "data": "3 nov",
+        "ora": "10:15",
+        "testo": "S43.1 nel Can Crusher a Massey's, un secondo in costruzione accanto",
+        "url": "https://x.com/RGVaerialphotos/status/2117546071882702870",
+        "media": "foto",
+        "id": "2117546071882702870",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HWLrwsrbcAAhNC3.jpg"
+          }
+        ]
+      },
       {
         "autore": "@Gatewaytomarsco",
         "data": "1 nov",
@@ -1686,24 +1733,24 @@
             "url": "https://pbs.twimg.com/amplify_video_thumb/2115475875122569216/img/05QhG1ixlpBhow6m.jpg"
           }
         ]
-      },
-      {
-        "autore": "@mcrs987",
-        "data": "28 ott",
-        "ora": "17:17",
-        "testo": "Le strutture d'urto blu dei Raptor di S42",
-        "url": "https://x.com/mcrs987/status/2115478149844848678",
-        "media": "video",
-        "id": "2115478149844848678",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2115478071058812928/img/W_xbkJetRNmjO7tf.jpg"
-          }
-        ]
       }
     ],
     "lanci": [
+      {
+        "autore": "@mcrs987",
+        "data": "4 nov",
+        "ora": "07:35",
+        "testo": "Grafica della Ship in avvicinamento a Starbase, pronta per quando uscirà la pagina della missione (non ufficiale)",
+        "url": "https://x.com/mcrs987/status/2117868308548456865",
+        "media": "foto",
+        "id": "2117868308548456865",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HWQt4QGXUAATTxz.jpg"
+          }
+        ]
+      },
       {
         "autore": "@mcrs987",
         "data": "1 nov",
@@ -1778,23 +1825,6 @@
           {
             "tipo": "foto",
             "url": "https://pbs.twimg.com/media/HVu_rwaWUAAOq5p.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@NASASpaceflight",
-        "data": "28 ott",
-        "ora": "00:59",
-        "testo": "S42 ha completato gli static fire a uno e sei motori: via libera al Flight 15 a novembre",
-        "url": "https://x.com/NASASpaceflight/status/2115231900961005856",
-        "media": "video",
-        "id": "2115231900961005856",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2115231105422884864/img/xIBecFpqcVGmoaTE.jpg",
-            "w": 1920,
-            "h": 1080
           }
         ]
       }
