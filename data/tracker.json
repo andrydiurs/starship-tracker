@@ -1,5 +1,5 @@
 {
-  "ULTIMO_AGGIORNAMENTO": "4 nov 2026, 08:32",
+  "ULTIMO_AGGIORNAMENTO": "5 nov 2026, 08:45",
   "PROSSIMO_VOLO": {
     "volo": "Flight 15",
     "veicoli": "Super Heavy B22 + Ship 42",
@@ -8,7 +8,7 @@
     "sito": "Starbase, Pad 2",
     "obiettivo": "Doppia cattura in torre: Super Heavy e Ship",
     "licenzaBreve": "Non emessa",
-    "licenzaFaa": "Modifica della licenza attesa, non ancora emessa al 4 nov; nessun NOTAM né avviso marittimo per il lancio",
+    "licenzaFaa": "Modifica della licenza attesa, non ancora emessa al 5 nov; nessun NOTAM né avviso marittimo per il lancio",
     "licenzaSrc": {
       "label": "Ars Technica, 21 ott",
       "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
@@ -137,6 +137,33 @@
     }
   },
   "NEWS": [
+    {
+      "data": "4 nov",
+      "sez": "Siti",
+      "testo": "KSC: secondo alcuni account X la NASA ha pubblicato un avviso di locazione senza gara per circa 55 acri a sud di Schwartz Road per uno «Static Fire Test Stand» destinato a un partner commerciale storico (non confermato: SpaceX non ha commentato)",
+      "src": {
+        "label": "@LunarCitizens, 4 nov",
+        "url": "https://x.com/LunarCitizens/status/2118126371243471011"
+      }
+    },
+    {
+      "data": "4 nov",
+      "sez": "Siti",
+      "testo": "Registrazioni statali di SpaceX (febbraio 2026): un magazzino da circa 128.500 piedi quadrati (circa 23 milioni di dollari) a McGregor e uno «Starship Park» commemorativo con edificio servizi a Starbase (circa 13,9 milioni)",
+      "src": {
+        "label": "Texas Construction Hub, 4 nov",
+        "url": "https://www.texasconstructionhub.com/stories/spacex-mcgregor-storage-starship-park-filings"
+      }
+    },
+    {
+      "data": "3 nov",
+      "sez": "Siti",
+      "testo": "Gigabay di Starbase: rimosso il braccio della terza delle quattro gru a torre, smontato dall'ultima rimasta; l'esterno dell'edificio è quasi finito",
+      "src": {
+        "label": "@efraser77 per NSF, 3 nov",
+        "url": "https://x.com/efraser77/status/2117766071575089429"
+      }
+    },
     {
       "data": "3 nov",
       "sez": "Siti",
@@ -482,10 +509,10 @@
     }
   ],
   "IN_BREVE": {
-    "siti": "La Mega Bay 2 è al completo con cinque Ship (S40, S42, S43, S44, S45) e in Mega Bay 1 si impila il serbatoio del metano di B24. Al Pad 2 lavori sui BQD per il Flight 15; al Pad 1 proseguono i lavori (foto aerea del 2 nov); il 31 ott spettacolo di Halloween sulla Gigabay. Per NSF il Flight 16 dal 39A non arriverà prima di dicembre.",
+    "siti": "Alla Gigabay di Starbase resta una sola gru a torre e l'esterno è quasi finito; la Mega Bay 2 è al completo con cinque Ship e al Pad 2 proseguono i lavori sui BQD per il Flight 15. Registrazioni statali per un magazzino a McGregor e uno «Starship Park» a Starbase; al KSC si parla di un banco static fire (non confermato). Per NSF il Flight 16 dal 39A non arriverà prima di dicembre.",
     "prototipi": "S42 è in Mega Bay 2 per ispezioni finali, FTS e carico Starlink; B22 è in Mega Bay 1 per i preparativi finali. B23 è rientrato in Mega Bay 1 e S43 attende i motori per uno static fire a dicembre: voleranno insieme dal 39A (Flight 16). B24 impila il serbatoio del metano, S44 ha i raceway, la sezione A2:3 di S45 è entrata in Mega Bay 2.",
-    "test": "Entrambi i veicoli del Flight 15 hanno completato gli static fire. A Massey's l'articolo di test S43.1 è nel Can Crusher (esito non noto) e accanto se ne costruisce un secondo; nessun nuovo test Raptor a McGregor.",
-    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. Il Flight 15 con la prima doppia cattura resta NET 12 nov (slide CADENA non ufficiale): B22 e S42 sono pronti, ma al 4 nov non ci sono licenza FAA, NOTAM o avvisi marittimi. Per NSF il Flight 16 dal 39A non arriverà prima di dicembre."
+    "test": "Entrambi i veicoli del Flight 15 hanno completato gli static fire; nessun nuovo test a Starbase dopo il 3 nov né a McGregor. Stime NSF: B23 static fire al 39A a metà dicembre, S43 a Starbase a metà dicembre. Al KSC possibile banco static fire per le Ship (non confermato).",
+    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. Il Flight 15 con la prima doppia cattura resta NET 12 nov (slide CADENA non ufficiale): B22 e S42 sono pronti, ma al 5 nov non ci sono licenza FAA, NOTAM o avvisi marittimi. Per NSF il Flight 16 dal 39A non arriverà prima di dicembre."
   },
   "SITI": [
     {
@@ -555,12 +582,12 @@
         "label": "In costruzione",
         "tone": "accent"
       },
-      "breve": "Primo carroponte installato, gru a torre in smontaggio",
-      "ultimo": "Primo carroponte in posizione (15 ott); una delle 4 gru a torre quasi smontata (17 ott); gru LR11000 al lavoro dentro l'edificio (22 ott); nuove foto aeree del 23 e del 26 ott. Obiettivo SpaceX: completamento entro fine 2026. Il 31 ott SpaceX ha proiettato uno spettacolo luminoso di Halloween sulla facciata (video NSF)",
-      "data": "15-31 ott",
+      "breve": "Esterno quasi finito: resta una sola gru a torre",
+      "ultimo": "Primo carroponte in posizione (15 ott); una delle 4 gru a torre quasi smontata (17 ott); gru LR11000 al lavoro dentro l'edificio (22 ott); nuove foto aeree del 23 e del 26 ott. Obiettivo SpaceX: completamento entro fine 2026. Il 31 ott SpaceX ha proiettato uno spettacolo luminoso di Halloween sulla facciata (video NSF). Il 3 nov (sera, ora del Texas) rimosso il braccio della terza delle quattro gru a torre, smontato dall'ultima rimasta; l'esterno dell'edificio è quasi finito (video di Erik Fraser per NSF)",
+      "data": "15 ott-3 nov",
       "src": {
-        "label": "@NASASpaceflight, 1 nov",
-        "url": "https://x.com/NASASpaceflight/status/2116722145137229906"
+        "label": "@efraser77 per NSF, 3 nov",
+        "url": "https://x.com/efraser77/status/2117766071575089429"
       }
     },
     {
@@ -586,8 +613,8 @@
         "tone": "success"
       },
       "breve": "Possibile esplosione di un COPV (non confermato)",
-      "ultimo": "Nella notte texana del 26 ott (05:26 ora di Roma del 27 ott) sembra essere esploso un serbatoio composito ad alta pressione (COPV); lo riportano solo un repost di @kmreed e iXBT, non confermato. @mcrs987 spiega che è un banco di collaudo dove vengono distrutti serbatoi di test di tanto in tanto. Il 7 ott un test Raptor 3 da 557 s sul banco nord",
-      "data": "7-27 ott",
+      "ultimo": "Nella notte texana del 26 ott (05:26 ora di Roma del 27 ott) sembra essere esploso un serbatoio composito ad alta pressione (COPV); lo riportano solo un repost di @kmreed e iXBT, non confermato. @mcrs987 spiega che è un banco di collaudo dove vengono distrutti serbatoi di test di tanto in tanto. Il 7 ott un test Raptor 3 da 557 s sul banco nord. Il 4 nov Texas Construction Hub riporta una registrazione statale di SpaceX (febbraio 2026) per un magazzino da circa 128.500 piedi quadrati (circa 23 milioni di dollari) al sito di test",
+      "data": "7 ott-4 nov",
       "src": {
         "label": "@mcrs987",
         "url": "https://x.com/mcrs987/status/2115080433058611231"
@@ -616,8 +643,8 @@
         "tone": "accent"
       },
       "breve": "Pronta per B23 e S43; proposti campus da 400 acri e gasdotto",
-      "ultimo": "SpaceX prepara la Gigabay per B23 e S43. Bozza di valutazione ambientale per passare da 167 a quasi 400 acri: banchi di static fire per Ship («Project Ignition»), payload processing, nuova strada e probabilmente altre Gigabay. Seguiranno consultazione pubblica e approvazioni. WESH (29 ott): i documenti prevedono circa 3.300 addetti a regime nel 2045 e un gasdotto di metano di poco più di 32 miglia, per evitare circa 600 autocisterne a lancio",
-      "data": "23-29 ott",
+      "ultimo": "SpaceX prepara la Gigabay per B23 e S43. Bozza di valutazione ambientale per passare da 167 a quasi 400 acri: banchi di static fire per Ship («Project Ignition»), payload processing, nuova strada e probabilmente altre Gigabay. Seguiranno consultazione pubblica e approvazioni. WESH (29 ott): i documenti prevedono circa 3.300 addetti a regime nel 2045 e un gasdotto di metano di poco più di 32 miglia, per evitare circa 600 autocisterne a lancio. Il 4 nov, secondo alcuni account X, la NASA ha pubblicato un avviso di locazione senza gara per circa 55 acri a sud di Schwartz Road per uno «Static Fire Test Stand» (non confermato)",
+      "data": "23 ott-4 nov",
       "src": {
         "label": "WESH, 29 ott",
         "url": "https://www.wesh.com/article/spacex-eyes-major-expansion-at-kennedy-space-center/74288064"
@@ -655,6 +682,11 @@
     }
   ],
   "NON_CONFERMATI": [
+    {
+      "titolo": "Banco static fire al KSC",
+      "data": "4 nov",
+      "testo": "Secondo @LunarCitizens la NASA ha pubblicato su SAM un avviso di locazione senza gara per circa 55 acri a sud di Schwartz Road per uno «Static Fire Test Stand» destinato a «un partner commerciale storico»; l'avviso non è stato verificato e SpaceX non ha commentato. Oggi le Ship non possono fare static fire in Florida (https://x.com/LunarCitizens/status/2118126371243471011)"
+    },
     {
       "titolo": "Pagina della missione Flight 15",
       "data": "4 nov",
@@ -1354,6 +1386,11 @@
   ],
   "FONTI": [
     {
+      "title": "Texas Construction Hub: registrazioni SpaceX a McGregor e Starbase (4 nov)",
+      "site": "texasconstructionhub.com",
+      "href": "https://www.texasconstructionhub.com/stories/spacex-mcgregor-storage-starship-park-filings"
+    },
+    {
       "title": "NSF: settimana intensa a Starbase, static fire e preparativi Flight 15 (30 ott)",
       "site": "nasaspaceflight.com",
       "href": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
@@ -1447,6 +1484,38 @@
   "X_POSTS": {
     "siti": [
       {
+        "autore": "@efraser77",
+        "data": "4 nov",
+        "ora": "00:49",
+        "testo": "Gigabay: rimosso il braccio della terza gru a torre, ne resta una",
+        "url": "https://x.com/efraser77/status/2117766071575089429",
+        "media": "video",
+        "id": "2117766071575089429",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2117765681534140416/img/hWi_mPZ59qiC2wk4.jpg"
+          }
+        ]
+      },
+      {
+        "autore": "@RGVaerialphotos",
+        "data": "5 nov",
+        "ora": "01:52",
+        "testo": "Starbase Xpanded in diretta",
+        "url": "https://x.com/RGVaerialphotos/status/2118144471598838038",
+        "media": "foto",
+        "id": "2118144471598838038",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HWUpHLLXkAAF6ws.jpg",
+            "w": 4096,
+            "h": 2612
+          }
+        ]
+      },
+      {
         "autore": "@VickiCocks15",
         "data": "3 nov",
         "ora": "20:22",
@@ -1503,40 +1572,6 @@
           {
             "tipo": "video",
             "url": "https://pbs.twimg.com/amplify_video_thumb/2116721998759886848/img/jtoygT056r689Mc7.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@BMBuildersMARS",
-        "data": "31 ott",
-        "ora": "07:00",
-        "testo": "Pad 2 di notte: sfiato e saldature sui chopsticks",
-        "url": "https://x.com/BMBuildersMARS/status/2116409894299402653",
-        "media": "foto",
-        "id": "2116409894299402653",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HV7_epIWgAA0CC7.jpg",
-            "w": 2048,
-            "h": 1536
-          }
-        ]
-      },
-      {
-        "autore": "@RGVaerialphotos",
-        "data": "30 ott",
-        "ora": "16:49",
-        "testo": "Starbase dal sorvolo in diretta",
-        "url": "https://x.com/RGVaerialphotos/status/2116195904445456419",
-        "media": "foto",
-        "id": "2116195904445456419",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HV489TNWsAAWFMI.jpg",
-            "w": 2048,
-            "h": 1536
           }
         ]
       }
@@ -1643,6 +1678,23 @@
     ],
     "test": [
       {
+        "autore": "@LunarCitizens",
+        "data": "5 nov",
+        "ora": "00:40",
+        "testo": "KSC: avviso NASA per 55 acri destinati a un banco static fire (non confermato)",
+        "url": "https://x.com/LunarCitizens/status/2118126371243471011",
+        "media": "foto",
+        "id": "2118126371243471011",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HWUYtAhbIAEfp4D.jpg",
+            "w": 1206,
+            "h": 1773
+          }
+        ]
+      },
+      {
         "autore": "@RGVaerialphotos",
         "data": "3 nov",
         "ora": "10:15",
@@ -1716,21 +1768,6 @@
           {
             "tipo": "foto",
             "url": "https://pbs.twimg.com/media/HVvhFoIXwAEO3xp.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@SpaceX",
-        "data": "28 ott",
-        "ora": "17:10",
-        "testo": "Static fire di Ship 42 completati, anche la simulazione di deorbit",
-        "url": "https://x.com/SpaceX/status/2115476295169814978",
-        "media": "2 video",
-        "id": "2115476295169814978",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2115475875122569216/img/05QhG1ixlpBhow6m.jpg"
           }
         ]
       }
