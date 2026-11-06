@@ -381,15 +381,91 @@
   }
 
   // ---------- Contenuti extra per scheda ----------
+  function tsUtc(s) {
+    var m = parseISO(s);
+    if (!m) return NaN;
+    return Date.UTC(+m[1], +m[2] - 1, +m[3], +(m[4] || 0), +(m[5] || 0), 0);
+  }
+  function fBreve(s) {
+    var m = parseISO(s);
+    if (!m) return "";
+    return (+m[3]) + " " + MESI_B[+m[2] - 1] + " " + m[1];
+  }
+  function fmtGiorno(sec) {
+    sec = Math.floor(sec);
+    if (!(sec >= 0)) return "—";
+    var d = Math.floor(sec / 86400), h = Math.floor(sec % 86400 / 3600), mi = Math.floor(sec % 3600 / 60);
+    return d + "g " + h + "h " + mi + "m";
+  }
+  function lanciOrdinati() {
+    var xs = [];
+    Object.keys(D.lanci || {}).forEach(function (y) {
+      (D.lanci[y] || []).forEach(function (x) { if (x && x.partenza) xs.push(x); });
+    });
+    xs.sort(function (a, b) { return a.partenza < b.partenza ? -1 : a.partenza > b.partenza ? 1 : 0; });
+    return xs;
+  }
+  function gapSec(a, b) { return (tsUtc(b.partenza) - tsUtc(a.partenza)) / 1000; }
+  function quandoCoppia(a, b) {
+    var da = fBreve(a.partenza), db = fBreve(b.partenza);
+    var when = da === db ? da : da + " → " + db;
+    var who = esc(a.missione) + " → " + esc(b.missione);
+    var boost = [];
+    if (a.booster) boost.push(String(a.booster));
+    if (b.booster && String(b.booster) !== String(a.booster || "")) boost.push(String(b.booster));
+    return when + " · " + who + (boost.length ? " · " + esc(boost.join(" → ")) : "");
+  }
+  function miniRecord(label, value, detail) {
+    return '<div class="mini"><div class="l">' + esc(label) + '</div><div class="v">' + esc(value) + '</div>' + (detail ? '<div class="d">' + detail + "</div>" : "") + "</div>";
+  }
+  // Record assoluti: stessi criteri dei record annuali del file, ma sul minimo/massimo/media
+  // di tutta la serie (non una scheda per anno). Le date escono dalle liste lanci.
+  function recordAssoluti() {
+    var xs = lanciOrdinati();
+    if (xs.length < 2) return "";
+    var cards = [];
+    var best2 = null, worst2 = null, sum2 = 0, n2 = 0;
+    for (var i = 1; i < xs.length; i++) {
+      var sec = gapSec(xs[i - 1], xs[i]);
+      if (!(sec >= 0)) continue;
+      n2++; sum2 += sec;
+      if (!best2 || sec < best2.sec) best2 = { sec: sec, a: xs[i - 1], b: xs[i] };
+      if (!worst2 || sec > worst2.sec) worst2 = { sec: sec, a: xs[i - 1], b: xs[i] };
+    }
+    var best3 = null;
+    for (var j = 2; j < xs.length; j++) {
+      var span = gapSec(xs[j - 2], xs[j]);
+      if (span >= 0 && (!best3 || span < best3.sec)) best3 = { sec: span, a: xs[j - 2], b: xs[j - 1], c: xs[j] };
+    }
+    if (best2) cards.push(miniRecord("Minor tempo tra 2 lanci", fmtGiorno(best2.sec), quandoCoppia(best2.a, best2.b)));
+    if (best3) {
+      var da3 = fBreve(best3.a.partenza), dc3 = fBreve(best3.c.partenza);
+      cards.push(miniRecord("Minor tempo tra 3 lanci", fmtGiorno(best3.sec), (da3 === dc3 ? da3 : da3 + " → " + dc3) + " · " + esc(best3.a.missione) + ", " + esc(best3.b.missione) + ", " + esc(best3.c.missione)));
+    }
+    var rec = D.recordRiutilizzo;
+    if (rec && rec.a && rec.da) {
+      var ra = fBreve(rec.da.partenza), rb = fBreve(rec.a.partenza);
+      cards.push(miniRecord("Riutilizzo Falcon 9", rec.valore, (ra && rb && ra !== rb ? ra + " → " + rb : ra || rb) + " · " + esc(rec.booster) + ", " + esc(rec.da.missione) + " → " + esc(rec.a.missione)));
+    }
+    var asog = xs.filter(function (x) {
+      var z = String(x.atterraggio || "");
+      return z.indexOf("ASOG") === 0 && z.toLowerCase().indexOf("fallito") < 0;
+    });
+    var bestA = null;
+    for (var k = 1; k < asog.length; k++) {
+      var sa = gapSec(asog[k - 1], asog[k]);
+      if (sa >= 0 && (!bestA || sa < bestA.sec)) bestA = { sec: sa, a: asog[k - 1], b: asog[k] };
+    }
+    if (bestA) cards.push(miniRecord("Minor tempo utilizzo ASOG", fmtGiorno(bestA.sec), quandoCoppia(bestA.a, bestA.b)));
+    if (n2) cards.push(miniRecord("Intervallo medio tra lanci", fmtGiorno(sum2 / n2), "media su " + nf(n2) + " intervalli · " + fBreve(xs[0].partenza) + " – " + fBreve(xs[xs.length - 1].partenza)));
+    if (worst2) cards.push(miniRecord("Maggior tempo tra 2 lanci", fmtGiorno(worst2.sec), quandoCoppia(worst2.a, worst2.b)));
+    return cards.join("");
+  }
+
   var EXTRA = {
     lanci: function () {
-      var h = "";
-      ["2026", "2025", "2024"].forEach(function (y) {
-        (riep(y).record || []).forEach(function (x) {
-          h += '<div class="mini"><div class="l">' + esc(x.record) + " · " + y + '</div><div class="v">' + esc(x.valore) + (x.booster ? " <small>(" + esc(x.booster) + ")</small>" : "") + "</div></div>";
-        });
-      });
-      return h ? '<div><div class="sec-head"><h3>Record</h3></div><div class="minis">' + h + "</div></div>" : "";
+      var h = recordAssoluti();
+      return h ? '<div><div class="sec-head"><h3>Record</h3><div class="sub">Assoluti su tutti i lanci in archivio, non divisi per anno. La riga sotto il numero dice quando è stato stabilito.</div></div><div class="minis">' + h + "</div></div>" : "";
     },
     starlink: function () {
       var s = D.starlink, h = "";
