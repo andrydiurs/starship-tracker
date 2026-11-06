@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#070b16">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Il motore Raptor: ciclo a metano e ossigeno, schema del full-flow e spinta dichiarata da Raptor 1 al Raptor 3, con il Raptor 4 come obiettivo.">
+  <meta property="og:title" content="Raptor · Starship Tracker">
+  <meta property="og:description" content="Ciclo full-flow, schema animato e cronologia della spinta dichiarata. Cifre pubbliche, non un data sheet certificato.">
+  <meta property="og:type" content="article">
+  <title>Raptor · Starship Tracker</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css?v=20261106a">
+  <link rel="stylesheet" href="raptor.css?v=20261106a">
+  <link rel="stylesheet" href="flow.css?v=20261106a">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="../" aria-label="Starship Tracker, torna al tracker">
+        <img src="../favicon.svg" alt="" width="36" height="36">
+        <span>Starship <b>Tracker</b></span>
+      </a>
+      <div class="top-right">
+        <a class="top-link" href="../"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>Torna al tracker</a>
+        <p class="updated">Scheda al <strong>6 nov 2026</strong></p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card accented acc-raptor raptor-hero" aria-labelledby="h-raptor">
+      <p class="kicker">Propulsione</p>
+      <h1 id="h-raptor">Raptor</h1>
+      <p class="raptor-lead">Il motore di Starship: metano e ossigeno liquido, ciclo a combustione stadiata a flusso completo. Non è un Merlin di Falcon 9 ridisegnato in grande.</p>
+      <p class="raptor-meta">Le spinte sono dichiarazioni pubbliche. Non sono misure certificate da SpaceX né ricalcolate dal Tracker.</p>
+    </section>
+
+    <nav class="raptor-nav" aria-label="In questa pagina">
+      <a href="#descrizione">Descrizione</a>
+      <a href="#ciclo">Schema del ciclo</a>
+      <a href="#modelli">Modelli e spinta</a>
+      <a href="#cronologia">Cronologia Raptor 3</a>
+      <a href="#fonti">Fonti</a>
+    </nav>
+
+    <section class="card accented acc-raptor raptor-sec" id="descrizione" aria-labelledby="h-descrizione">
+      <div class="sec-head acc-raptor">
+        <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v6.5c0 2-1.1 3.4-3 4.5-1.9-1.1-3-2.5-3-4.5V3z"/><path d="M10.2 15c.5 1.4 1.1 2.5 1.8 3.3.7-.8 1.3-1.9 1.8-3.3"/><path d="M7 7h2M15 7h2"/></svg></span>
+        <h2 id="h-descrizione">Breve descrizione</h2>
+      </div>
+      <div class="prose">
+        <p>Il Raptor brucia ossigeno liquido (LOX) e metano liquido. Il ciclo si chiama combustione stadiata a flusso completo, in inglese full-flow staged combustion: tutto il propellente passa da due prebruciatori, uno ricco di metano e uno ricco di ossigeno. I gas caldi muovono le turbine delle due turbopompe e poi entrano nella camera principale, dove la combustione si completa. Le turbine non hanno uno scarico a parte.</p>
+        <p>Il Merlin, che spinge Falcon 9 e Falcon Heavy, è un altro motore: cherosene RP-1 e ossigeno, ciclo a generatore di gas. Una frazione di propellente alimenta la turbina e viene espulsa fuori dalla camera. Propellenti, ciclo e impianto del Raptor non discendono da quel progetto.</p>
+        <p>Sul Super Heavy i voli recenti accendono 33 Raptor a livello del mare. Sulla Ship sono sei: tre a livello del mare e tre Raptor Vacuum, con l'ugello più ampio per il vuoto. È la disposizione descritta da SpaceX per il Flight 12, il primo con Raptor 3.</p>
+      </div>
+    </section>
+
+    <section class="card accented acc-raptor raptor-sec" id="ciclo" aria-labelledby="h-ciclo">
+      <div class="sec-head acc-raptor">
+        <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg></span>
+        <h2 id="h-ciclo">Schema del ciclo</h2>
+      </div>
+      <div class="prose">
+        <p>La tavola segue il principio, non il motore smontato. Metano e ossigeno entrano dall'alto, le pompe li mandano ai prebruciatori, ogni turbina è sullo stesso albero della propria pompa, e i due flussi gassosi si incontrano in camera. Il riquadro a destra mostra, a parte, il metano che assorbe calore dalle pareti. Forme, portate e velocità non sono in scala.</p>
+        <p class="scroll-hint">Su uno schermo stretto la tavola si scorre in orizzontale.</p>
+      </div>
+
+      <figure id="schema-animato" class="raptor-flow" data-raptor-flow>
+        <div class="raptor-flow-view" tabindex="0" role="region" aria-label="Schema del ciclo Raptor, scorribile in orizzontale">
+          <img src="assets/raptor-full-flow.svg" data-gif="assets/raptor-full-flow.gif" width="1800" height="1300" alt="Ciclo full-flow a metano e ossigeno: due pompe, due prebruciatori e due turbine collegate alle pompe. I gas arrivano insieme nella camera principale. Un riquadro separato mostra il raffreddamento delle pareti.">
+        </div>
+        <div class="raptor-flow-controls">
+          <button type="button" data-flow-toggle hidden aria-pressed="false">Avvia animazione</button>
+          <a href="assets/raptor-full-flow.gif">GIF a piena dimensione</a>
+          <a href="assets/raptor-full-flow.svg">Schema statico SVG</a>
+          <span data-flow-status>Schema statico. Sul telefono puoi scorrere la tavola.</span>
+        </div>
+        <figcaption>
+          Tavola originale di Rivoluzione Spaziale, 11 ottobre 2026. Disegno ospitato qui senza modifiche.
+          Licenza <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+          <a href="https://paolozamparutti197-cpu.github.io/rivoluzione-spaziale/monografie/starship/06-raptor-ciclo.html">Pagina di origine della tavola</a>.
+          L'animazione serve a seguire i percorsi: non è un disegno costruttivo e non attribuisce al Raptor pressioni o temperature.
+          <noscript> Senza JavaScript resta lo schema statico; la GIF è nel link qui sopra.</noscript>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="card accented acc-raptor raptor-sec" id="modelli" aria-labelledby="h-modelli">
+      <div class="sec-head acc-raptor">
+        <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16v-4"/><path d="M12 16V8"/><path d="M17 16v-6"/></svg></span>
+        <h2 id="h-modelli">Modelli e spinta</h2>
+      </div>
+      <div class="callout"><b>Come leggere i numeri.</b> La cifra grande è la spinta a livello del mare, in tonnellate-forza (sulle schede SpaceX, tf). Per Raptor 1 e 2 è stabile tra le fonti. Per il Raptor 3 le dichiarazioni sono scese nel tempo: in evidenza c'è l'ultima, di Musk, sul valore raggiungibile in modo affidabile. Il Raptor 4 non è un motore presentato. Scala delle barre: 300 t.</div>
+      <div class="gen-grid">
+        <article class="gen-card">
+          <p class="gen-k">Voli suborbitali e fino a B4 / S20</p>
+          <h3>Raptor 1</h3>
+          <p class="gen-thrust">185<small>t</small></p>
+          <p class="gen-thrust-note">livello del mare · dichiarata <span class="badge t-neutral">pubblica</span></p>
+          <div class="thrust-bar" role="img" aria-label="185 tonnellate su una scala di 300"><i style="width:61.7%"></i></div>
+          <p class="gen-body">Musk, all'aggiornamento di Starbase del 10 febbraio 2022, indicava 185 t per il Raptor 1. La stessa cifra, con massa 2.080 kg e impulso specifico 350 s, è nella scheda SpaceX del 3 agosto 2024. NASASpaceflight assegna questo motore ai voli suborbitali e ai veicoli fino a Booster 4 e Ship 20.</p>
+          <p class="gen-src"><a class="fonte" href="https://arstechnica.com/science/2022/02/elon-musk-provides-an-update-on-starship-its-been-mindbogglingly-difficult/" target="_blank" rel="noopener noreferrer">Ars Technica, 11 feb 2022</a> · <a class="fonte" href="https://www.nasaspaceflight.com/2024/08/flight-5-6-preparations-raptor-3/" target="_blank" rel="noopener noreferrer">NSF, 3 ago 2024</a></p>
+        </article>
+
+        <article class="gen-card">
+          <p class="gen-k">Dai primi voli orbitali · da B7 / S24</p>
+          <h3>Raptor 2</h3>
+          <p class="gen-thrust">230<small>t</small></p>
+          <p class="gen-thrust-note">livello del mare · dichiarata <span class="badge t-neutral">pubblica</span></p>
+          <div class="thrust-bar" role="img" aria-label="230 tonnellate su una scala di 300"><i style="width:76.7%"></i></div>
+          <p class="gen-body">Nella stessa occasione del 2022 Musk parlava di almeno 230 t per il Raptor 2. SpaceX, il 3 agosto 2024, pubblica 230 t, massa 1.630 kg e impulso specifico 347 s. Nel testo su Starship V3 del 12 maggio 2026 la variante per il vuoto della generazione precedente è indicata a 258 t. NSF: in volo da Booster 7 e Ship 24.</p>
+          <p class="gen-src"><a class="fonte" href="https://arstechnica.com/science/2022/02/elon-musk-provides-an-update-on-starship-its-been-mindbogglingly-difficult/" target="_blank" rel="noopener noreferrer">Ars Technica, 11 feb 2022</a> · <a class="fonte" href="https://www.spacex.com/updates/starship-v3" target="_blank" rel="noopener noreferrer">SpaceX, 12 mag 2026</a></p>
+        </article>
+
+        <article class="gen-card">
+          <p class="gen-k">In volo dal Flight 12 · 22 mag 2026</p>
+          <h3>Raptor 3</h3>
+          <p class="gen-thrust">~230<small>t</small></p>
+          <p class="gen-thrust-note">affidabili, livello del mare · Musk, 26 ott 2026 <span class="badge t-warning">stima</span></p>
+          <div class="thrust-bar" role="img" aria-label="circa 230 tonnellate su una scala di 300"><i style="width:76.7%"></i></div>
+          <p class="gen-body">Non è un numero unico. SpaceX ha scritto 280 t il 3 agosto 2024 e 250 t il 12 maggio 2026 (vuoto 275 t, massa 1.525 kg). Il 26 ottobre 2026 Musk dice che in modo affidabile si arriva a circa 230 t, come il Raptor 2. A parità di spinta dichiarata il motore è più leggero e senza gli scudi termici esterni. Il dettaglio è nella cronologia.</p>
+          <p class="gen-src"><a class="fonte" href="https://x.com/elonmusk/status/2114767355045871828" target="_blank" rel="noopener noreferrer">@elonmusk, 26 ott 2026</a> · <a class="fonte" href="#cronologia">cronologia</a></p>
+        </article>
+
+        <article class="gen-card is-future">
+          <p class="gen-k">Non presentato · solo un obiettivo</p>
+          <h3>Raptor 4</h3>
+          <p class="gen-thrust">300<small>t</small></p>
+          <p class="gen-thrust-note">livello del mare · obiettivo <span class="badge t-accent">futuro</span></p>
+          <div class="thrust-bar is-goal" role="img" aria-label="obiettivo 300 tonnellate, non una misura"><i style="width:100%"></i></div>
+          <p class="gen-body">Il 26 ottobre 2026 Musk scrive che il Raptor 4 farà 300 t a livello del mare e, si spera, con una massa simile al Raptor 3. Non c'è una scheda SpaceX, né una foto del motore. È un traguardo detto in pubblico, non una spinta misurata.</p>
+          <p class="gen-src"><a class="fonte" href="https://x.com/elonmusk/status/2114718275238277610" target="_blank" rel="noopener noreferrer">@elonmusk, 26 ott 2026</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card accented acc-raptor raptor-sec" id="cronologia" aria-labelledby="h-cronologia">
+      <div class="sec-head acc-raptor">
+        <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+        <h2 id="h-cronologia">Raptor 3, spinta dichiarata</h2>
+        <div class="sub">Le cifre cambiano a seconda di chi parla e di quando. Barre in scala fino a 300 t.</div>
+      </div>
+      <ol class="tl3">
+        <li>
+          <time datetime="2023-05">mag 2023</time>
+          <article class="tl3-card">
+            <div class="tl3-head">
+              <p class="tl3-thrust"><b>269</b><small>t</small></p>
+              <span class="badge t-neutral">test dichiarato</span>
+            </div>
+            <div class="thrust-bar" role="img" aria-label="269 tonnellate su 300"><i style="width:89.7%"></i></div>
+            <p>Il 13 maggio 2023 Musk annuncia il primo risultato pubblico legato al Raptor V3: 350 bar in camera e 269 t di spinta. È l'esito di un'accensione di prova, non la scheda del motore di volo.</p>
+            <p><a class="fonte" href="https://x.com/elonmusk/status/1657249739925258240" target="_blank" rel="noopener noreferrer">fonte · @elonmusk, 13 mag 2023</a></p>
+          </article>
+        </li>
+        <li>
+          <time datetime="2024-08">ago 2024</time>
+          <article class="tl3-card">
+            <div class="tl3-head">
+              <p class="tl3-thrust"><b>280</b><small>t</small></p>
+              <span class="badge t-accent">scheda SpaceX</span>
+            </div>
+            <div class="thrust-bar" role="img" aria-label="280 tonnellate su 300"><i style="width:93.3%"></i></div>
+            <p>Il 3 agosto 2024 SpaceX presenta il Raptor 3 a livello del mare: 280 t, impulso specifico 350 s, massa 1.525 kg, 1.720 kg con l'hardware lato veicolo. Nelle dichiarazioni di quella fase l'obiettivo resta spesso 300 t. Non è la cifra con cui il motore volerà due anni dopo.</p>
+            <p><a class="fonte" href="https://x.com/SpaceX/status/1819772716339339664" target="_blank" rel="noopener noreferrer">fonte · @SpaceX, 3 ago 2024</a> · <a class="fonte" href="https://www.nasaspaceflight.com/2024/08/flight-5-6-preparations-raptor-3/" target="_blank" rel="noopener noreferrer">NSF</a></p>
+          </article>
+        </li>
+        <li>
+          <time datetime="2026-05">mag 2026</time>
+          <article class="tl3-card">
+            <div class="tl3-head">
+              <p class="tl3-thrust"><b>250</b><small>t</small></p>
+              <span class="badge t-accent">prima del Flight 12</span>
+            </div>
+            <div class="thrust-bar" role="img" aria-label="250 tonnellate su 300"><i style="width:83.3%"></i></div>
+            <p>Il 12 maggio 2026, prima del debutto della Starship V3, SpaceX scrive che il Raptor 3 a livello del mare produce 250 t, su dalle 230 t del Raptor 2. Il vuoto passa da 258 t a 275 t. La massa del motore a livello del mare scende da 1.630 kg a 1.525 kg. Il Flight 12 parte il 22 maggio con i Raptor 3: la pagina del volo non ripubblica la spinta.</p>
+            <p><a class="fonte" href="https://www.spacex.com/updates/starship-v3" target="_blank" rel="noopener noreferrer">fonte · SpaceX, Introducing Starship V3</a> · <a class="fonte" href="https://www.spacex.com/launches/starship-flight-12/" target="_blank" rel="noopener noreferrer">Flight 12</a></p>
+          </article>
+        </li>
+        <li>
+          <time datetime="2026-10-07">7 ott 2026</time>
+          <article class="tl3-card tl3-dur">
+            <div class="tl3-head">
+              <p class="tl3-thrust"><b>557</b><small>s</small></p>
+              <span class="badge t-neutral">durata, non spinta</span>
+            </div>
+            <p>A McGregor, banco nord, un Raptor resta acceso 557 secondi: poco più di nove minuti. È una prova di affidabilità, non una misura di spinta. I resoconti che citano NASASpaceflight confermano durata e banco, e non indicano la versione. Che fosse un Raptor 3 non risulta verificato nelle fonti pubbliche consultate.</p>
+            <p><a class="fonte" href="https://www.basenor.com/blogs/news/spacex-raptor-hits-557-second-test-fire-second-longest-ever" target="_blank" rel="noopener noreferrer">fonte · Basenor (cita NSF), 7 ott 2026</a></p>
+          </article>
+        </li>
+        <li>
+          <time datetime="2026-10-26">26 ott 2026</time>
+          <article class="tl3-card">
+            <div class="tl3-head">
+              <p class="tl3-thrust"><b>~230</b><small>t</small></p>
+              <span class="badge t-warning">Musk · stima</span>
+            </div>
+            <div class="thrust-bar" role="img" aria-label="circa 230 tonnellate su 300"><i style="width:76.7%"></i></div>
+            <p>Musk: con il Raptor 3 si arriva in modo affidabile a circa 230 t-forza. Lo stesso giorno indica il Raptor 4 come il motore da 300 t a livello del mare. @mcrs987, già citato nel Tracker, leggeva il Raptor 3 circa 30 t sotto le 280 promesse e il giorno dopo precisava: intorno a 250 t al 100% nominale, e circa 230 t nelle accensioni lunghe. È un'analisi sua, non una scheda SpaceX. Il numero ~230 t di questa riga è quello di Musk.</p>
+            <p><a class="fonte" href="https://x.com/elonmusk/status/2114767355045871828" target="_blank" rel="noopener noreferrer">fonte · @elonmusk, ~230 t</a> · <a class="fonte" href="https://x.com/elonmusk/status/2114718275238277610" target="_blank" rel="noopener noreferrer">Raptor 4, 300 t</a> · <a class="fonte" href="https://x.com/mcrs987/status/2114724912912838871" target="_blank" rel="noopener noreferrer">@mcrs987, 26 ott</a> · <a class="fonte" href="https://x.com/mcrs987/status/2115112863136432595" target="_blank" rel="noopener noreferrer">@mcrs987, 27 ott</a></p>
+          </article>
+        </li>
+      </ol>
+    </section>
+
+    <section class="card raptor-sec" id="fonti" aria-labelledby="h-fonti">
+      <div class="sec-head">
+        <h2 id="h-fonti">Fonti</h2>
+      </div>
+      <ul class="src-list">
+        <li><a href="https://www.spacex.com/updates/starship-v3" target="_blank" rel="noopener noreferrer">SpaceX, Introducing Starship V3 (12 mag 2026): 250 t / 275 t</a></li>
+        <li><a href="https://www.spacex.com/launches/starship-flight-12/" target="_blank" rel="noopener noreferrer">SpaceX, Flight 12 (22 mag 2026): primo volo con Raptor 3</a></li>
+        <li><a href="https://x.com/SpaceX/status/1819772716339339664" target="_blank" rel="noopener noreferrer">@SpaceX, 3 ago 2024: Raptor 3, 280 t</a></li>
+        <li><a href="https://www.nasaspaceflight.com/2024/08/flight-5-6-preparations-raptor-3/" target="_blank" rel="noopener noreferrer">NASASpaceflight, ago 2024: schede Raptor 1, 2 e 3 e quali veicoli li hanno usati</a></li>
+        <li><a href="https://arstechnica.com/science/2022/02/elon-musk-provides-an-update-on-starship-its-been-mindbogglingly-difficult/" target="_blank" rel="noopener noreferrer">Ars Technica, 11 feb 2022: Raptor 1 a 185 t, Raptor 2 ad almeno 230 t</a></li>
+        <li><a href="https://www.nasaspaceflight.com/2022/01/raptor-2-starbase-update/" target="_blank" rel="noopener noreferrer">NASASpaceflight, gen 2022: cita Musk su 185 t e 230+ t</a></li>
+        <li><a href="https://x.com/elonmusk/status/1657249739925258240" target="_blank" rel="noopener noreferrer">@elonmusk, 13 mag 2023: 350 bar, 269 t</a></li>
+        <li><a href="https://x.com/elonmusk/status/2114767355045871828" target="_blank" rel="noopener noreferrer">@elonmusk, 26 ott 2026: circa 230 t affidabili con il Raptor 3</a></li>
+        <li><a href="https://x.com/elonmusk/status/2114718275238277610" target="_blank" rel="noopener noreferrer">@elonmusk, 26 ott 2026: Raptor 4, 300 t</a></li>
+        <li><a href="https://x.com/mcrs987/status/2114724912912838871" target="_blank" rel="noopener noreferrer">@mcrs987, 26 ott 2026: lettura non ufficiale, circa 30 t sotto le 280</a></li>
+        <li><a href="https://x.com/mcrs987/status/2115112863136432595" target="_blank" rel="noopener noreferrer">@mcrs987, 27 ott 2026: 250 t nominali, circa 230 t nelle accensioni lunghe</a></li>
+        <li><a href="https://www.basenor.com/blogs/news/spacex-raptor-hits-557-second-test-fire-second-longest-ever" target="_blank" rel="noopener noreferrer">Basenor (fonte NSF), 7 ott 2026: accensione da 557 s, variante non indicata</a></li>
+        <li><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0, licenza della tavola del ciclo</a></li>
+        <li><a href="https://paolozamparutti197-cpu.github.io/rivoluzione-spaziale/monografie/starship/06-raptor-ciclo.html" target="_blank" rel="noopener noreferrer">Rivoluzione Spaziale, pagina di origine della tavola (solo il disegno)</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Cifre di spinta dichiarate in pubblico, non dati certificati di ingegneria. La tavola del ciclo è di Rivoluzione Spaziale, licenza CC BY 4.0, disegno non modificato. Il testo di questa pagina è del Tracker.</p>
+  </footer>
+
+  <script src="flow.js?v=20261106a" defer></script>
+</body>
+</html>

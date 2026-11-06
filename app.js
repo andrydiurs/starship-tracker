@@ -17,6 +17,7 @@
     chevronR: '<path d="m9 18 6-6-6-6"/>',
     check: '<path d="M20 6 9 17l-5-5"/>',
     play: '<path d="M6 4l14 8-14 8z" fill="currentColor" stroke="none"/>',
+    engine: '<path d="M9 3h6v6.5c0 2-1.1 3.4-3 4.5-1.9-1.1-3-2.5-3-4.5V3z"/><path d="M10.2 15c.5 1.4 1.1 2.5 1.8 3.3.7-.8 1.3-1.9 1.8-3.3"/><path d="M7 7h2M15 7h2"/>',
     chart: '<path d="M3 3v18h18"/><path d="M7 16v-4"/><path d="M12 16V8"/><path d="M17 16v-7"/>',
     book: '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>',
     link: '<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>'
@@ -115,7 +116,11 @@
     return arr.map(function (n) { return { data: n.data, titolo: n.testo, sez: DA_NOME[n.sez], nc: n.nc, src: n.src }; });
   }
   function renderNotizie(D) {
-    var h = '<div class="card accented acc-notizie">' + head(2, "notizie", "Ultime notizie").replace(/<\/div>$/, '<a class="pill-link" href="resoconti/">' + svg("book") + "Resoconti mensili" + svg("chevronR") + '</a><a class="pill-link" href="dati/">' + svg("chart") + "Dati SpaceX" + svg("chevronR") + "</a></div>");
+    var pills = '<span class="pill-row">' +
+      '<a class="pill-link" href="raptor/">' + svg("engine") + "Raptor" + svg("chevronR") + "</a>" +
+      '<a class="pill-link" href="resoconti/">' + svg("book") + "Resoconti mensili" + svg("chevronR") + "</a>" +
+      '<a class="pill-link" href="dati/">' + svg("chart") + "Dati SpaceX" + svg("chevronR") + "</a></span>";
+    var h = '<div class="card accented acc-notizie">' + head(2, "notizie", "Ultime notizie").replace(/<\/div>$/, pills + "</div>");
     h += lista(newsItems(D.NEWS.slice(0, 6)));
     if (D.NEWS.length > 6) h += more("Notizie precedenti", lista(newsItems(D.NEWS.slice(6))));
     $("notizie").innerHTML = h + "</div>";

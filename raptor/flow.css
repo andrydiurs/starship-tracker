@@ -1,0 +1,79 @@
+/* Lettore della tavola full-flow. Colori e pulsanti allineati al Tracker. */
+.raptor-flow {
+  margin: 18px 0 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #0a111d;
+  color: var(--text);
+  max-width: 100%;
+  min-width: 0;
+  scroll-margin-top: 84px;
+}
+.raptor-flow .raptor-flow-view {
+  overflow: auto;
+  max-width: 100%;
+  background: #0a111d;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line2) transparent;
+}
+.raptor-flow .raptor-flow-view:focus-visible { outline: 2px solid var(--link); outline-offset: -2px; }
+.raptor-flow .raptor-flow-view img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+}
+.raptor-flow.is-zoomed .raptor-flow-view img { width: 1800px; min-width: 1800px; }
+.raptor-flow .raptor-flow-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px 10px;
+  flex-wrap: wrap;
+  padding: 14px 16px;
+  border-top: 1px solid var(--line);
+  font: 14px/1.45 var(--font);
+}
+.raptor-flow .raptor-flow-controls button,
+.raptor-flow .raptor-flow-controls a {
+  font: 600 14px/1.2 var(--font);
+  color: var(--text);
+  background: color-mix(in srgb, var(--link) 12%, #121a2e);
+  border: 1px solid color-mix(in srgb, var(--link) 35%, transparent);
+  border-radius: 99px;
+  padding: 8px 14px;
+  min-height: 40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.raptor-flow .raptor-flow-controls button:hover,
+.raptor-flow .raptor-flow-controls a:hover {
+  background: color-mix(in srgb, var(--link) 22%, #121a2e);
+  text-decoration: none;
+}
+.raptor-flow .raptor-flow-controls button:disabled { opacity: .55; cursor: not-allowed; }
+.raptor-flow .raptor-flow-controls [data-flow-status] {
+  color: var(--text3);
+  font-size: 13px;
+  font-weight: 500;
+  flex: 1 1 220px;
+}
+.raptor-flow figcaption {
+  font: 14px/1.6 var(--font);
+  color: var(--text2);
+  margin: 0;
+  padding: 14px 16px 16px;
+  border-top: 1px solid var(--line);
+  overflow-wrap: anywhere;
+}
+.raptor-flow figcaption a { color: var(--link); }
+.raptor-flow [hidden] { display: none !important; }
+@media (max-width: 720px) {
+  .raptor-flow .raptor-flow-view img { min-width: 1000px; }
+  .raptor-flow .raptor-flow-controls { padding: 12px; gap: 8px; }
+  .raptor-flow figcaption { padding: 12px; }
+}
