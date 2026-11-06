@@ -91,6 +91,16 @@ Se il JSON del mese contiene la chiave `timeline`, `resoconti.js` disegna prima 
 - CSS e JS sono richiamati con `?v=AAAAMMGG<lettera>` (es. `style.css?v=20261027a`) in `index.html`, `resoconti/page.tpl`, nelle pagine dei mesi e in `dati/index.html`. Quando si modifica CSS o JS, aumentare la versione in tutti questi file.
 - Tutte le icone SVG inline hanno `width`/`height` espliciti, così restano piccole anche con un CSS vecchio o assente.
 
+## Raptor (`raptor/`)
+
+Scheda sul motore, aperta dal pulsante «Raptor» accanto a «Ultime notizie».
+
+- `raptor/index.html`: descrizione, schema del ciclo, schede Raptor 1–4 con la spinta in evidenza. Sul Raptor 3 la barra a colori elenca le dichiarazioni (269, 280, 250, ~230 t).
+- `raptor/raptor.css`, `raptor/flow.css`, `raptor/flow.js`: pagina e controlli schema statico ↔ GIF.
+- `raptor/assets/`: tavola SVG e GIF originali di Rivoluzione Spaziale, disegno non modificato, licenza CC BY 4.0 (`ATTRIBUTION.txt`). Non ripubblicare il testo di quell'articolo.
+
+Le spinte in pagina sono dichiarazioni pubbliche, con fonte. Non sono dati certificati di ingegneria.
+
 ## Dati SpaceX (`dati/`)
 
 Pagina con grafici e tabelle costruiti dal file Excel di Master Dati (`SpaceX_aggiornato.xlsx`).

@@ -1,0 +1,15 @@
+Tavola originale Rivoluzione Spaziale
+Titolo: «Raptor: il principio del ciclo full-flow»
+Data della tavola: 11 ottobre 2026
+Licenza: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+Pagina di origine:
+https://paolozamparutti197-cpu.github.io/rivoluzione-spaziale/monografie/starship/06-raptor-ciclo.html
+
+File (disegno non modificato):
+- raptor-full-flow.svg
+- raptor-full-flow.gif
+
+Il testo dell'articolo e la veste del libro non sono ripubblicati.
+I controlli (schema statico / animazione, ingrandimento) sono adattati al tema scuro di Starship Tracker.
