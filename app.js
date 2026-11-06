@@ -19,6 +19,7 @@
     play: '<path d="M6 4l14 8-14 8z" fill="currentColor" stroke="none"/>',
     chart: '<path d="M3 3v18h18"/><path d="M7 16v-4"/><path d="M12 16V8"/><path d="M17 16v-7"/>',
     book: '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>',
+    anatomia: '<path d="m12 2 10 5-10 5L2 7l10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/>',
     link: '<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>'
   };
   function svg(name) {
@@ -115,7 +116,7 @@
     return arr.map(function (n) { return { data: n.data, titolo: n.testo, sez: DA_NOME[n.sez], nc: n.nc, src: n.src }; });
   }
   function renderNotizie(D) {
-    var h = '<div class="card accented acc-notizie">' + head(2, "notizie", "Ultime notizie").replace(/<\/div>$/, '<a class="pill-link" href="resoconti/">' + svg("book") + "Resoconti mensili" + svg("chevronR") + '</a><a class="pill-link" href="dati/">' + svg("chart") + "Dati SpaceX" + svg("chevronR") + "</a></div>");
+    var h = '<div class="card accented acc-notizie">' + head(2, "notizie", "Ultime notizie").replace(/<\/div>$/, '<span class="pill-row"><a class="pill-link" href="resoconti/">' + svg("book") + "Resoconti mensili" + svg("chevronR") + '</a><a class="pill-link" href="dati/">' + svg("chart") + "Dati SpaceX" + svg("chevronR") + '</a><a class="pill-link" href="anatomia/">' + svg("anatomia") + "Anatomia" + svg("chevronR") + "</a></span></div>");
     h += lista(newsItems(D.NEWS.slice(0, 6)));
     if (D.NEWS.length > 6) h += more("Notizie precedenti", lista(newsItems(D.NEWS.slice(6))));
     $("notizie").innerHTML = h + "</div>";

@@ -109,3 +109,12 @@ python3 tools/xlsx_to_json.py /percorso/SpaceX_aggiornato.xlsx --out data/spacex
 Il convertitore stampa eventuali avvisi (es. nomi di missione diversi tra fogli); finiscono anche in `meta.avvisi` e sono mostrati nella scheda «Archivio» della pagina. La data «Dati aggiornati al» viene dal foglio «Modifiche».
 
 Grafici e tabelle sono descritti negli array `CHARTS` e `TABLES` in `dati/dati.js`: per aggiungerne uno basta una nuova voce con `id`, `tab`, `title` e una funzione `build`.
+
+## Anatomia (`anatomia/`)
+
+Pagina statica, Fase 1: Ship, Super Heavy e Raptor. Embed Sketchfab solo con licenza CC BY 4.0, schemi SVG indicativi disegnati per il sito, e link esterni (spaccato Raptor, PDF, thread di @mcrs987). Nessun GLB nel repository e nessun render di artisti X ospitato o incorporato.
+
+- `anatomia/index.html`, `anatomia/anatomia.css`, `anatomia/anatomia.js`
+- Dal tracker: link «Anatomia» in testata e tra le pillole di «Ultime notizie».
+- Su desktop il low-poly della Ship e il Raptor semplificato partono da soli; Super Heavy V3 e Ship S25 restano su richiesta (modelli pesanti). Sul telefono parte tutto su richiesta.
+- Meta `noindex` come il resto del sito. Il testo è in `anatomia/index.html`, non in `tracker.json`.
