@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="it" class="no-js">
+<head>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta charset="utf-8">
+  <script>document.documentElement.className = document.documentElement.className.replace("no-js", "js");</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#070b16">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Anatomia di Starship: Ship, Super Heavy e Raptor in modelli 3D CC BY, schemi e link. Approssimazioni della community, non un CAD SpaceX.">
+  <meta property="og:title" content="Anatomia · Starship Tracker">
+  <meta property="og:description" content="Ship, Super Heavy e Raptor: modelli ruotabili, schemi esterni e fonti. Non è un CAD ufficiale.">
+  <meta property="og:type" content="website">
+  <title>Anatomia · Starship Tracker</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css?v=20261106a">
+  <link rel="stylesheet" href="anatomia.css?v=20261106a">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="../" aria-label="Starship Tracker, torna al tracker">
+        <img src="../favicon.svg" alt="" width="36" height="36">
+        <span>Starship <b>Tracker</b></span>
+      </a>
+      <div class="top-right">
+        <a class="top-link" href="../"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>Torna al tracker</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap" id="app">
+    <noscript><p class="card">Senza JavaScript le tre parti restano una sotto l'altra e i modelli si aprono su Sketchfab dai link. Testo, schemi e fonti si leggono lo stesso.</p></noscript>
+
+    <section class="card anat-hero">
+      <p class="kicker"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 10 5-10 5L2 7l10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>Ship · Super Heavy · Raptor</p>
+      <h1>Anatomia</h1>
+      <p class="anat-pills"><span class="badge t-neutral">Fase 1</span><span class="badge t-accent">CC BY 4.0</span><span class="chip">nessun file 3D ospitato qui</span></p>
+      <p class="lead-small">Come sono fatti lo stadio Ship, il booster Super Heavy e il motore Raptor: modelli da ruotare, schemi esterni e link. È una guida per orientarsi, non un manuale di officina.</p>
+      <div class="callout anat-warn"><b>Non è un CAD ufficiale.</b> Sono approssimazioni della community, non disegni SpaceX. Gli interni e le tubazioni non sono accurati. In questa Fase 1 non c'è uno spaccato interattivo delle tubazioni: solo esterni da ruotare, schemi e link.</div>
+      <p class="note">Il visore è di Sketchfab e il file resta lì. Su schermo largo il modello leggero della Ship e il Raptor semplificato partono da soli; Super Heavy V3 e la coppia S25/B9, più pesanti, partono solo se li carichi. Sul telefono parte tutto su richiesta. Trascina per ruotare. Le immagini e i video pubblicati su X non sono copiati su questo sito.</p>
+    </section>
+
+    <nav class="tabs anat-tabs" id="anat-tabs" role="tablist" aria-label="Parti del veicolo">
+      <button class="tab acc-prototipi" id="tab-ship" role="tab" type="button" aria-selected="true" aria-controls="ship" data-tab="ship" tabindex="0"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span>Ship</button>
+      <button class="tab acc-lanci" id="tab-booster" role="tab" type="button" aria-selected="false" aria-controls="booster" data-tab="booster" tabindex="-1"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="14" rx="1"/><path d="M9 8 4 10v3l5-1.2"/><path d="M15 8 20 10v3l-5-1.2"/><path d="M8 21h8"/><path d="M10 17h4"/></svg></span>Booster</button>
+      <button class="tab acc-test" id="tab-raptor" role="tab" type="button" aria-selected="false" aria-controls="raptor" data-tab="raptor" tabindex="-1"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>Raptor</button>
+    </nav>
+
+    <section id="ship" class="anat-panel is-on" data-panel role="tabpanel" aria-labelledby="tab-ship">
+      <div class="card accented acc-prototipi">
+        <div class="sec-head acc-prototipi">
+          <span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span>
+          <h2>Ship</h2>
+          <div class="sub">Stadio superiore</div>
+        </div>
+        <p class="pv-lead">Due modelli con la stessa licenza, due usi diversi. Il primo è leggero e va bene anche sul telefono. Il secondo è la coppia Ship 25 e Booster 9, un prototipo del 2023: l'autore ci ha messo un interno e ha scritto che non è accurato.</p>
+
+        <article class="model" id="modello-lowpoly">
+          <h3>SpaceX Starship leggero</h3>
+          <p class="model-meta"><span class="badge t-accent">CC BY 4.0</span><span class="chip">circa 20 mila facce</span><span class="chip">MartianDays</span></p>
+          <p>Vista d'insieme dello stack, pochi poligoni, comoda da ruotare. Non è una versione precisa e non ha un numero di serie: serve a riconoscere ogiva, corpo, flap e base motori.</p>
+          <div class="viewer-frame" data-autoload="1" data-src="https://sketchfab.com/models/a8a0b69f776841a1a465cd9fb3762fd2/embed?autostart=0&amp;autospin=0&amp;ui_theme=dark&amp;dnt=1" data-title="SpaceX Starship, modello leggero di MartianDays su Sketchfab">
+            <button type="button" class="viewer-load" data-load>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
+              <strong>Carica e ruota</strong>
+              <span>Modello leggero. Su schermo largo parte da solo.</span>
+            </button>
+          </div>
+          <p class="attrib"><a href="https://sketchfab.com/3d-models/spacex-starship-a8a0b69f776841a1a465cd9fb3762fd2" target="_blank" rel="noopener noreferrer">SpaceX Starship</a> di <a href="https://sketchfab.com/MartianDays" target="_blank" rel="noopener noreferrer">MartianDays</a> su Sketchfab · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> · incorporato senza modifiche.</p>
+        </article>
+
+        <article class="model" id="modello-s25">
+          <h3>Ship S25 e Booster 9</h3>
+          <p class="model-meta"><span class="badge t-accent">CC BY 4.0</span><span class="badge t-warning">interno non accurato</span><span class="chip">circa 885 mila facce</span><span class="chip">Clarence365</span></p>
+          <p>Prototipo storico dell'epoca dei primi voli integrati (modello pubblicato nel 2023): hot-staging, cioè la separazione a caldo, e la coppia S25/B9. L'autore indica un interno, ma scrive che non è accurato. Non descrive il veicolo di oggi e non va letto come tubazioni vere.</p>
+          <div class="viewer-frame is-heavy" data-src="https://sketchfab.com/models/f76be07d358f454b8396d4e8f1cc5329/embed?autostart=0&amp;autospin=0&amp;ui_theme=dark&amp;dnt=1" data-title="SpaceX Starship Ship S25 e Booster 9, modello di Clarence365 su Sketchfab">
+            <button type="button" class="viewer-load" data-load>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
+              <strong>Carica e ruota</strong>
+              <span>Modello pesante: parte solo se lo chiedi. L'interno non è accurato.</span>
+            </button>
+          </div>
+          <p class="attrib"><a href="https://sketchfab.com/3d-models/spacex-starship-ship-s25-booster-9-f76be07d358f454b8396d4e8f1cc5329" target="_blank" rel="noopener noreferrer">SpaceX Starship Ship S25 &amp; Booster 9</a> di <a href="https://sketchfab.com/clarence365" target="_blank" rel="noopener noreferrer">Clarence365</a> su Sketchfab · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> · incorporato senza modifiche. Nota dell'autore: interno presente, ma non accurato.</p>
+        </article>
+
+        <figure class="schema">
+          <svg class="schema-svg" viewBox="0 0 320 640" aria-hidden="true">
+            <path class="hull" stroke-width="2" d="M118 150 C118 78 160 42 160 42 C160 42 202 78 202 150 L202 455 C202 498 184 520 160 532 C136 520 118 498 118 455 Z"/>
+            <path class="tile" fill="none" stroke-width="1.4" stroke-dasharray="3 7" d="M132 168 V430"/>
+            <path class="ctrl" stroke-width="2" stroke-linejoin="round" d="M200 188 L268 228 L260 250 L196 218 Z"/>
+            <path class="ctrl" stroke-width="2" stroke-linejoin="round" d="M198 360 L286 452 L272 486 L190 412 Z"/>
+            <path class="eng" stroke-width="2" stroke-linejoin="round" d="M136 528 L126 590 C142 614 178 614 194 590 L184 528 Z"/>
+            <g class="mark" stroke-width="1.5"><circle cx="160" cy="56" r="12"/><text x="160" y="57" text-anchor="middle" dominant-baseline="central">1</text></g>
+            <g class="mark" stroke-width="1.5"><circle cx="268" cy="214" r="12"/><text x="268" y="215" text-anchor="middle" dominant-baseline="central">2</text></g>
+            <g class="mark" stroke-width="1.5"><circle cx="160" cy="300" r="12"/><text x="160" y="301" text-anchor="middle" dominant-baseline="central">3</text></g>
+            <g class="mark" stroke-width="1.5"><circle cx="286" cy="448" r="12"/><text x="286" y="449" text-anchor="middle" dominant-baseline="central">4</text></g>
+            <g class="mark" stroke-width="1.5"><circle cx="160" cy="578" r="12"/><text x="160" y="579" text-anchor="middle" dominant-baseline="central">5</text></g>
+          </svg>
+          <figcaption>
+            <ol>
+              <li><span class="n">1</span><span><b>Ogiva.</b> In cima, nelle descrizioni pubbliche, stanno anche i serbatoi header usati in atterraggio. Qui non sono disegnati.</span></li>
+              <li><span class="n ctrl">2</span><span><b>Flap anteriore.</b> Se ne vede uno: l'altro lato è speculare. Servono al rientro, insieme a quelli posteriori.</span></li>
+              <li><span class="n">3</span><span><b>Corpo.</b> Serbatoi principali, senza spaccato. La descrizione pubblica più ripetuta mette l'ossigeno liquido avanti e il metano dietro. Il tratteggio a sinistra ricorda il lato piastrellato, quello sopravento: non è la posa reale delle piastrelle.</span></li>
+              <li><span class="n ctrl">4</span><span><b>Flap posteriore.</b> Più grande di quello anteriore. Posizione e forma cambiano tra le versioni.</span></li>
+              <li><span class="n eng">5</span><span><b>Sezione motori.</b> Sui voli integrati più documentati: tre Raptor a livello del mare e tre per il vuoto. Il numero può cambiare; lo schema non fissa una configurazione.</span></li>
+            </ol>
+            <p class="note">Schema esterno disegnato per questa pagina, non in scala e non legato a un numero di serie. Ciano il corpo, viola i flap, arancio i motori.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="booster" class="anat-panel" data-panel role="tabpanel" aria-labelledby="tab-booster">
+      <div class="card accented acc-lanci">
+        <div class="sec-head acc-lanci">
+          <span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="14" rx="1"/><path d="M9 8 4 10v3l5-1.2"/><path d="M15 8 20 10v3l-5-1.2"/><path d="M8 21h8"/><path d="M10 17h4"/></svg></span>
+          <h2>Super Heavy</h2>
+          <div class="sub">Il booster, primo stadio</div>
+        </div>
+        <p class="pv-lead">Il modello qui sotto è un Super Heavy V3 visto da fuori: 33 Raptor 3 e tre grid fin, come li ha messi l'autore. È pesante e lui stesso lo indica per i render, non per il tempo reale. Non contiene tubazioni interne accurate. Per il Booster 9 dell'epoca IFT c'è il modello <a href="#modello-s25">Ship S25 e Booster 9</a>.</p>
+
+        <article class="model" id="modello-shv3">
+          <h3>Super Heavy V3</h3>
+          <p class="model-meta"><span class="badge t-accent">CC BY 4.0</span><span class="badge t-warning">modello pesante</span><span class="chip">circa 3,8 milioni di facce</span><span class="chip">Ijsz23</span></p>
+          <p>Esterno del primo stadio V3. L'autore descrive 33 Raptor 3 molto dettagliati, in anelli da 3, 10 e 20, e tre grid fin. Nota sua: non è ottimizzato per i giochi o per l'uso in tempo reale, solo per i render. Su telefono conviene caricarlo solo se la connessione regge.</p>
+          <div class="viewer-frame is-heavy" data-src="https://sketchfab.com/models/12c91924d743465aac22f29ad8ba2e45/embed?autostart=0&amp;autospin=0&amp;ui_theme=dark&amp;dnt=1" data-title="SpaceX Starship Superheavy V3, modello di Ijsz23 su Sketchfab">
+            <button type="button" class="viewer-load" data-load>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
+              <strong>Carica e ruota</strong>
+              <span>Circa 3,8 milioni di facce. Parte solo su richiesta.</span>
+            </button>
+          </div>
+          <p class="attrib"><a href="https://sketchfab.com/3d-models/spacex-starship-superheavy-v3-12c91924d743465aac22f29ad8ba2e45" target="_blank" rel="noopener noreferrer">SpaceX Starship Superheavy V3</a> di <a href="https://sketchfab.com/Ijsz23" target="_blank" rel="noopener noreferrer">Ijsz23</a> su Sketchfab · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> · incorporato senza modifiche.</p>
+        </article>
+
+        <figure class="schema">
+          <svg class="schema-svg" viewBox="0 0 320 640" aria-hidden="true">
+            <path class="hull" stroke-width="2" d="M92 78 h136 v32 h-136 Z"/>
+            <path class="ctrl" stroke-width="2" stroke-linejoin="round" d="M96 128 L36 140 L36 184 L96 172 Z"/>
+            <path class="ctrl" stroke-width="2" stroke-linejoin="round" d="M224 128 L284 140 L284 184 L224 172 Z"/>
+            <path class="hull" stroke-width="2" d="M108 108 h104 v390 h-104 Z"/>
+            <path class="eng" stroke-width="2" d="M96 498 h128 v78 h-128 Z"/>
+            <g class="eng" fill="none" stroke-width="1.6">
+              <circle cx="124" cy="528" r="8"/><circle cx="148" cy="528" r="8"/><circle cx="172" cy="528" r="8"/><circle cx="196" cy="528" r="8"/>
+              <circle cx="136" cy="550" r="8"/><circle cx="160" cy="550" r="8"/><circle cx="184" cy="550" r="8"/>
+            </g>
+            <g class="mark" stroke-width="1.5"><circle cx="160" cy="58" r="12"/><text x="160" y="59" text-anchor="middle" dominant-baseline="central">1</text></g>
+            <g class="mark" stroke-width="1.5"><circle cx="36" cy="162" r="12"/><text x="36" y="163" text-anchor="middle" dominant-baseline="central">2</text></g>
+            <g class="mark" stroke-width="1.5"><circle cx="160" cy="300" r="12"/><text x="160" y="301" text-anchor="middle" dominant-baseline="central">3</text></g>
+            <g class="mark" stroke-width="1.5"><circle cx="252" cy="536" r="12"/><text x="252" y="537" text-anchor="middle" dominant-baseline="central">4</text></g>
+          </svg>
+          <figcaption>
+            <ol>
+              <li><span class="n">1</span><span><b>Anello in cima.</b> Sulle versioni con hot-staging (separazione a caldo) sta qui, sopra il booster. La forma esatta cambia e questo rettangolo non la misura.</span></li>
+              <li><span class="n ctrl">2</span><span><b>Grid fin.</b> Quattro sulle prime versioni. Il modello V3 di questa pagina ne mostra tre, in linea con le ricostruzioni del Block 2/3. Non è un conteggio fatto da noi su un volo.</span></li>
+              <li><span class="n">3</span><span><b>Corpo.</b> Anche qui, nelle descrizioni pubbliche, l'ossigeno liquido sta avanti e il metano dietro. Nessun tubo è disegnato.</span></li>
+              <li><span class="n eng">4</span><span><b>Sezione dei 33 motori.</b> I cerchi sono un promemoria, non i 33 Raptor. Nel modello V3 l'autore li dispone in anelli da 3, 10 e 20.</span></li>
+            </ol>
+            <p class="note">Stessi colori dello schema Ship. Indicativo, non in scala. I thread sui grid fin e sulle tubazioni sono link, più sotto.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="raptor" class="anat-panel" data-panel role="tabpanel" aria-labelledby="tab-raptor">
+      <div class="card accented acc-test">
+        <div class="sec-head acc-test">
+          <span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
+          <h2>Raptor</h2>
+          <div class="sub">Motore a metano e ossigeno liquido</div>
+        </div>
+        <p class="pv-lead">SpaceX lo descrive in pubblico come un motore a ciclo a combustione stadiata a flusso completo (full-flow staged combustion). Il modello 3D di questa pagina è una semplificazione vecchia: mostra una sagoma, non la differenza tra Raptor 2, Raptor 3, livello del mare e vuoto. Per l'interno si esce dal sito, verso uno spaccato didattico e un disegno A4.</p>
+
+        <article class="model" id="modello-raptor">
+          <h3>Raptor semplificato</h3>
+          <p class="model-meta"><span class="badge t-accent">CC BY 4.0</span><span class="chip">circa 36 mila facce</span><span class="chip">Yandery_Kempff</span></p>
+          <p>Utile per ruotare ugello e corpo. Non è un esploso e non va usato per leggere tubi, valvole o la generazione del motore.</p>
+          <div class="viewer-frame" data-autoload="1" data-src="https://sketchfab.com/models/1baab906e4774f93b024bfd81f2671f2/embed?autostart=0&amp;autospin=0&amp;ui_theme=dark&amp;dnt=1" data-title="Raptor Engine, modello semplificato di Yandery_Kempff su Sketchfab">
+            <button type="button" class="viewer-load" data-load>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
+              <strong>Carica e ruota</strong>
+              <span>Modello leggero e semplificato. Su schermo largo parte da solo.</span>
+            </button>
+          </div>
+          <p class="attrib"><a href="https://sketchfab.com/3d-models/raptor-engine-1baab906e4774f93b024bfd81f2671f2" target="_blank" rel="noopener noreferrer">RAPTOR ENGINE</a> di <a href="https://sketchfab.com/Yandery_Kempff" target="_blank" rel="noopener noreferrer">Yandery_Kempff</a> su Sketchfab · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> · incorporato senza modifiche.</p>
+        </article>
+
+        <figure class="schema">
+          <svg class="schema-svg" viewBox="0 0 320 560" aria-hidden="true">
+            <path class="hull" stroke-width="2" d="M124 70 h72 v130 h-72 Z"/>
+            <circle class="ctrl" stroke-width="2" cx="230" cy="110" r="28"/>
+            <circle class="ctrl" stroke-width="2" cx="230" cy="168" r="22"/>
+            <path class="hull" stroke-width="2" d="M136 200 h48 l14 70 h-76 Z"/>
+            <path class="eng" stroke-width="2" stroke-linejoin="round" d="M142 270 L78 500 L242 500 L178 270 Z"/>
+            <g class="mark" stroke-width="1.5"><circle cx="230" cy="78" r="12"/><text x="230" y="79" text-anchor="middle" dominant-baseline="central">1</text></g>
+            <g class="mark" stroke-width="1.5"><circle cx="160" cy="230" r="12"/><text x="160" y="231" text-anchor="middle" dominant-baseline="central">2</text></g>
+            <g class="mark" stroke-width="1.5"><circle cx="160" cy="470" r="12"/><text x="160" y="471" text-anchor="middle" dominant-baseline="central">3</text></g>
+          </svg>
+          <figcaption>
+            <ol>
+              <li><span class="n ctrl">1</span><span><b>Turbopompe.</b> Due cerchi per ricordare che stanno in testa al motore. Non sono il layout vero di ossigeno e metano.</span></li>
+              <li><span class="n">2</span><span><b>Camera di combustione.</b> Blocco unico, senza iniettori né canali di raffreddamento.</span></li>
+              <li><span class="n eng">3</span><span><b>Ugello.</b> Una forma sola, di proposito generica: quello a livello del mare è più corto, quello per il vuoto più lungo.</span></li>
+            </ol>
+            <p class="note">Sagoma didattica, non uno spaccato. Il disegno del Raptor 2 è il PDF qui sotto.</p>
+          </figcaption>
+        </figure>
+
+        <h3 class="tools-title">Schemi e strumenti fuori dal sito</h3>
+        <div class="ext-grid">
+          <article class="ext-card">
+            <p class="k">Spaccato didattico</p>
+            <h3>Spaccato interattivo del Raptor</h3>
+            <p>Esploso interattivo su raptor.tbots.space: uno stack 3D schematico, ispirato a fonti pubbliche, non un CAD e non un file da ospitare qui.</p>
+            <p class="ext-links"><a href="https://raptor.tbots.space/" target="_blank" rel="noopener noreferrer">Apri lo spaccato</a></p>
+          </article>
+          <article class="ext-card">
+            <p class="k">Schema 2D · MIT</p>
+            <h3>Disegno A4 del Raptor 2</h3>
+            <p>Dal progetto Anatomy di Ryan Hansen. Il software è sotto licenza MIT e la scheda community indica il disegno come MIT. È uno schema della community, non un disegno SpaceX. Il PDF non è copiato su questo sito.</p>
+            <p class="ext-links">
+              <a href="https://skills.wheresryan.sh/anatomy/print/raptor-engine-drawing-a4.pdf" target="_blank" rel="noopener noreferrer">Apri il PDF</a>
+              <a href="https://skills.wheresryan.sh/anatomy/community/wheresryan22/raptor-engine" target="_blank" rel="noopener noreferrer">Scheda del disegno</a>
+              <a href="https://github.com/wheresryan22/anatomy" target="_blank" rel="noopener noreferrer">Progetto</a>
+            </p>
+          </article>
+        </div>
+        <p class="note">I thread di @mcrs987 sul Raptor 3, sulle emissioni e sul fuel header sono nella lista <a href="#fonti-x">Fonti su X</a>. Si apre il post, non si incorpora il video.</p>
+      </div>
+    </section>
+
+    <section class="card" id="fonti-x">
+      <div class="sec-head">
+        <span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
+        <h2>Fonti su X</h2>
+        <div class="sub">@mcrs987 · reverse-engineering, non SpaceX</div>
+      </div>
+      <p class="pv-lead">TheSpaceEngineer (<a href="https://x.com/mcrs987" target="_blank" rel="noopener noreferrer">@mcrs987</a>) pubblica renderizzazioni, video e analisi strutturali. Sono ricostruzioni sue, non comunicazioni ufficiali. Da qui si esce solo con un link: nessun fotogramma è ospitato sul tracker. Le date sono quelle del post, in UTC.</p>
+
+      <div class="src-group">
+        <h3>Raptor</h3>
+        <ul class="src-list">
+          <li id="x-raptor3">
+            <div class="src-top"><span class="when">23 set 2025</span><a class="ttl" href="https://x.com/mcrs987/status/1970473224812265883" target="_blank" rel="noopener noreferrer">Rotazione 3D del Raptor 3</a></div>
+            <p>Il motore ruotato, interno ed esterno, in un video di circa mezzo minuto. Il modello è dell'autore e non si scarica da questa pagina.</p>
+          </li>
+          <li id="x-emissioni">
+            <div class="src-top"><span class="when">20 ott 2026</span><a class="ttl" href="https://x.com/mcrs987/status/2112562936329695502" target="_blank" rel="noopener noreferrer">Emissioni e motori sulla Ship</a></div>
+            <p>Schemi e cifre sulle emissioni dei Raptor e su una configurazione a nove motori della Ship. È la lettura dell'autore, non una scheda di volo.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="src-group">
+        <h3>Tubazioni e header</h3>
+        <ul class="src-list">
+          <li id="x-tube">
+            <div class="src-top"><span class="when">19 ott 2026</span><a class="ttl" href="https://x.com/mcrs987/status/2112017040953545185" target="_blank" rel="noopener noreferrer">Transfer tube</a></div>
+            <p>Foto e analisi della transfer tube, la tubazione di trasferimento. È il tipo di dettaglio che in Fase 1 non è modellato nel visore.</p>
+          </li>
+          <li id="x-spacer">
+            <div class="src-top"><span class="when">14 ott 2026</span><a class="ttl" href="https://x.com/mcrs987/status/2110251714196419065" target="_blank" rel="noopener noreferrer">Spacer e fuel header</a></div>
+            <p>Reverse-engineering dello spacer e dell'allineamento tra transfer tube e fuel header.</p>
+          </li>
+          <li id="x-etch">
+            <div class="src-top"><span class="when">6 nov 2026</span><a class="ttl" href="https://x.com/mcrs987/status/2118535064040419423" target="_blank" rel="noopener noreferrer">Numeri incisi sul fuel header</a></div>
+            <p>Numeri di motore incisi al laser sul barrel del fuel header, con il media originale sul post.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="src-group">
+        <h3>Veicolo e grid fin</h3>
+        <ul class="src-list">
+          <li id="x-gridfin">
+            <div class="src-top"><span class="when">17 dic 2024</span><a class="ttl" href="https://x.com/mcrs987/status/1868856377369936212" target="_blank" rel="noopener noreferrer">Grid fin Block 2 e Block 3</a></div>
+            <p>Thread con render di dettaglio sui grid fin delle versioni Block 2 e Block 3.</p>
+          </li>
+          <li id="x-breakup">
+            <div class="src-top"><span class="when">18 gen 2025</span><a class="ttl" href="https://x.com/mcrs987/status/1880527467641032742" target="_blank" rel="noopener noreferrer">Rottura del veicolo</a></div>
+            <p>Analisi e simulazione 3D della rottura del veicolo. È un'animazione dell'autore, non un modello da ruotare qui.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Modelli 3D incorporati da Sketchfab, licenza Creative Commons Attribution 4.0: autore, scheda e licenza sono sotto ogni visore. Gli schemi SVG sono stati disegnati per questa pagina, sono indicativi e non sono in scala. Lo spaccato del Raptor, il PDF di Ryan Hansen e i post di @mcrs987 sono solo link. Approssimazioni della community, non materiale ufficiale SpaceX. Gli interni e le tubazioni non sono accurati; la Fase 1 non ha tubazioni interattive.</p>
+  </footer>
+
+  <script src="anatomia.js?v=20261106a" defer></script>
+</body>
+</html>

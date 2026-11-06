@@ -1,0 +1,135 @@
+/* Anatomia (si appoggia a ../style.css). Fase 1: embed Sketchfab + schemi. */
+
+.top-right { display: flex; align-items: center; gap: 8px 18px; flex-wrap: wrap; justify-content: flex-end; }
+.top-link { display: inline-flex; align-items: center; gap: 7px; padding: 7px 13px; border-radius: 99px; border: 1px solid color-mix(in srgb, var(--link) 35%, transparent); background: color-mix(in srgb, var(--link) 10%, transparent); color: var(--text); font-size: 14px; font-weight: 600; white-space: nowrap; transition: border-color .15s, background .15s; }
+.top-link svg { width: 16px; height: 16px; color: var(--link); }
+.top-link:hover { text-decoration: none; border-color: var(--link); background: color-mix(in srgb, var(--link) 18%, transparent); }
+.top svg { max-width: 18px; max-height: 18px; }
+.top .brand img { max-width: 36px; max-height: 36px; }
+@media (max-width: 640px) {
+  .top-right { width: 100%; justify-content: flex-start; gap: 6px 10px; }
+  .top-link { font-size: 13px; padding: 6px 11px; }
+}
+
+.kicker { display: inline-flex; align-items: center; gap: 8px; margin: 0 0 10px; color: var(--link); font: 600 13px/1.2 var(--font); letter-spacing: .08em; text-transform: uppercase; }
+.kicker svg { width: 16px; height: 16px; }
+.anat-hero { padding: 28px 32px 26px; }
+.anat-hero h1 { margin: 0 0 8px; font: 700 40px/1.12 var(--font-head); letter-spacing: -.01em; }
+.anat-pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; }
+.anat-hero .lead-small { margin: 0 0 16px; color: var(--text2); font-size: 17px; max-width: 68ch; }
+.anat-warn { --accent: var(--warn); }
+.anat-hero .note { max-width: 72ch; }
+
+.anat-tabs { top: 64px; }
+.anat-tabs .tab { min-height: 48px; }
+
+.js .anat-panel { display: none; }
+.js .anat-panel.is-on { display: flex; flex-direction: column; gap: 16px; }
+.anat-panel, .model, #fonti-x { scroll-margin-top: 156px; }
+
+.model + .model { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line); }
+.model h3 { margin: 0 0 8px; font: 600 22px/1.25 var(--font-head); }
+.model-meta { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+.model > p { margin: 0 0 12px; color: var(--text2); max-width: 72ch; }
+
+.viewer-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  min-height: 240px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(140px 90px at 50% 42%, rgba(125, 211, 252, .14), transparent 70%),
+    linear-gradient(180deg, #10182c, #0a1020);
+}
+.viewer-frame.is-heavy { border-color: color-mix(in srgb, var(--warn) 50%, var(--line)); }
+.viewer-frame iframe {
+  position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
+  opacity: 0; background: #0a1020;
+}
+.viewer-frame.is-live iframe { opacity: 1; }
+.viewer-frame.is-live .viewer-load { visibility: hidden; }
+.viewer-load {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
+  width: 100%; padding: 16px; border: 0; cursor: pointer;
+  background: transparent; color: var(--text); text-align: center;
+}
+.viewer-load svg { width: 28px; height: 28px; color: var(--link); margin-bottom: 4px; }
+.viewer-load strong { font: 600 18px/1.3 var(--font-head); }
+.viewer-load span { color: var(--text2); font-size: 14px; max-width: 36ch; }
+.viewer-load:hover strong { color: var(--link); }
+.viewer-load:disabled { cursor: progress; }
+.viewer-load:disabled strong { color: var(--text2); }
+.attrib { margin: 8px 0 0; color: var(--text3); font-size: 13px; line-height: 1.5; max-width: 78ch; }
+.attrib a { font-weight: 600; }
+
+.no-js .viewer-load { display: none; }
+.no-js .viewer-frame { aspect-ratio: auto; min-height: 0; border: 0; background: none; }
+
+.schema {
+  display: grid;
+  grid-template-columns: minmax(180px, 260px) minmax(0, 1fr);
+  gap: 8px 28px;
+  align-items: center;
+  margin: 18px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.schema-svg { width: 100%; height: auto; display: block; }
+.schema-svg .hull { fill: color-mix(in srgb, var(--link) 14%, transparent); stroke: var(--link); }
+.schema-svg .ctrl { fill: color-mix(in srgb, var(--c-lanci) 18%, transparent); stroke: var(--c-lanci); }
+.schema-svg .eng { fill: color-mix(in srgb, var(--c-test) 18%, transparent); stroke: var(--c-test); }
+.schema-svg .tile { stroke: var(--text3); }
+.schema-svg .mark circle { fill: #0c1324; stroke: var(--text2); }
+.schema-svg .mark text { fill: var(--text); font: 700 13px/1 var(--font-head); }
+.schema figcaption { min-width: 0; }
+.schema ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.schema li { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 10px; align-items: start; color: var(--text2); font-size: 14.5px; }
+.schema li b { color: var(--text); font-weight: 600; }
+.schema .n {
+  width: 28px; height: 28px; border-radius: 50%;
+  display: grid; place-items: center;
+  font: 700 13px/1 var(--font-head); color: var(--text);
+  border: 1.5px solid var(--line2); background: rgba(255,255,255,.04);
+}
+.schema .n.ctrl { border-color: color-mix(in srgb, var(--c-lanci) 65%, transparent); color: var(--c-lanci); }
+.schema .n.eng { border-color: color-mix(in srgb, var(--c-test) 65%, transparent); color: var(--c-test); }
+.schema .note { margin-top: 12px; }
+
+.tools-title { margin: 22px 0 10px; font: 600 18px/1.3 var(--font-head); }
+.ext-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 4px; }
+.ext-card {
+  display: flex; flex-direction: column; gap: 6px; align-items: flex-start;
+  padding: 16px 16px 14px; border-radius: 12px; min-width: 0;
+  border: 1px solid var(--line); background: rgba(255,255,255,.03); color: var(--text);
+}
+.ext-card .k { margin: 0; color: var(--link); font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.ext-card h3 { margin: 0; font: 600 18px/1.3 var(--font-head); }
+.ext-card p { margin: 0; color: var(--text2); font-size: 14.5px; }
+.ext-links { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: auto; padding-top: 8px; font-weight: 600; font-size: 14px; }
+
+.src-group { margin-top: 18px; }
+.src-group h3 { margin: 0 0 4px; font: 600 17px/1.3 var(--font-head); }
+.src-list { list-style: none; margin: 0; padding: 0; }
+.src-list li { padding: 12px 0; border-top: 1px solid var(--line); }
+.src-top { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; }
+.src-list .when { color: var(--text3); font-size: 13px; font-variant-numeric: tabular-nums; }
+.src-list .ttl { font-weight: 600; }
+.src-list p { margin: 4px 0 0; color: var(--text2); font-size: 14.5px; max-width: 75ch; }
+
+@media (max-width: 800px) {
+  .anat-hero { padding: 22px 18px; }
+  .anat-hero h1 { font-size: 32px; }
+  .schema { grid-template-columns: minmax(0, 1fr); }
+  .schema-svg { max-width: 240px; margin: 0 auto; }
+  .ext-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  .anat-panel, .model, #fonti-x { scroll-margin-top: 108px; }
+  .anat-tabs { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .anat-tabs .tab { padding: 6px 8px; justify-content: center; gap: 6px; font-size: 13.5px; }
+  .viewer-frame { aspect-ratio: 4 / 3; min-height: 220px; }
+  .model h3 { font-size: 19px; }
+}
