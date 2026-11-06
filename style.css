@@ -285,7 +285,104 @@ dialog#viewer figcaption a { font-weight: 600; }
 svg { flex-shrink: 0; }
 .sec-head svg, .badge svg, a svg, button svg { max-width: 28px; max-height: 28px; }
 
-/* Pulsanti accanto a «Ultime notizie»: Resoconti, Dati SpaceX, Raptor */
+/* Menù delle pagine: colonna a sinistra da 960px, tendina sotto. Vedi nav.js */
+.site-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 18px 12px;
+  background: rgba(8, 12, 24, 0.94);
+  border-right: 1px solid var(--line);
+  z-index: 30;
+}
+.site-nav-label {
+  margin: 6px 10px 10px;
+  color: var(--text3);
+  font: 600 11px/1 var(--font);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.site-nav a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  color: var(--text2);
+  font: 600 15px/1.2 var(--font);
+}
+.site-nav a:hover {
+  text-decoration: none;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--line);
+}
+.site-nav a[aria-current="page"] {
+  color: var(--text);
+  background: color-mix(in srgb, var(--link) 14%, transparent);
+  border-color: color-mix(in srgb, var(--link) 45%, transparent);
+}
+.site-nav a svg { width: 18px; height: 18px; color: var(--link); }
+.nav-toggle {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 6px 12px;
+  border-radius: 99px;
+  border: 1px solid var(--line2);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  font: 600 14px/1 var(--font);
+  cursor: pointer;
+}
+.nav-toggle svg { width: 18px; height: 18px; }
+.nav-toggle:hover { border-color: var(--link); background: color-mix(in srgb, var(--link) 12%, transparent); }
+@media (min-width: 960px) {
+  .site-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 228px;
+  }
+  body:has(.site-nav) { padding-left: 228px; }
+}
+@media (max-width: 959px) {
+  .nav-toggle { display: inline-flex; }
+  .site-nav {
+    display: none;
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    top: calc(var(--header-h, 72px) + 8px);
+    width: auto;
+    max-height: min(70vh, 420px);
+    overflow: auto;
+    padding: 10px;
+    border: 1px solid var(--line2);
+    border-radius: 16px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
+    z-index: 30;
+  }
+  body.nav-open .site-nav { display: flex; }
+  body.nav-open .nav-toggle {
+    border-color: var(--link);
+    background: color-mix(in srgb, var(--link) 16%, transparent);
+  }
+  body.nav-open::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(2, 5, 12, 0.45);
+    z-index: 25;
+  }
+  .top { z-index: 40; }
+}
+
+/* Pulsanti accanto a «Ultime notizie»: non più usati, il menù è in nav.js */
 .pill-row { margin-left: auto; display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
 .pill-link { margin-left: auto; display: inline-flex; align-items: center; gap: 7px; padding: 6px 10px 6px 12px; border-radius: 99px; border: 1px solid color-mix(in srgb, var(--accent, var(--link)) 40%, transparent); background: color-mix(in srgb, var(--accent, var(--link)) 10%, transparent); color: var(--text); font-size: 14px; font-weight: 600; line-height: 1.2; white-space: nowrap; transition: border-color .15s, background .15s; }
 .pill-row .pill-link { margin-left: 0; }
