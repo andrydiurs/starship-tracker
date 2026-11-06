@@ -88,12 +88,13 @@ Se il JSON del mese contiene la chiave `timeline`, `resoconti.js` disegna prima 
 ### Cache
 
 - I dati JSON (`data/tracker.json`, `data/resoconti/*.json`) sono letti con `fetch(..., { cache: "no-cache" })`: l'aggiornamento quotidiano basta modificarli, non serve altro.
-- CSS e JS sono richiamati con `?v=AAAAMMGG<lettera>` (es. `style.css?v=20261027a`) in `index.html`, `resoconti/page.tpl`, nelle pagine dei mesi e in `dati/index.html`. Quando si modifica CSS o JS, aumentare la versione in tutti questi file.
+- CSS e JS sono richiamati con `?v=AAAAMMGG<lettera>` (es. `style.css?v=20261027a`) in `index.html`, `resoconti/page.tpl`, nelle pagine dei mesi, in `dati/index.html` e in `raptor/index.html`. Quando si modifica CSS o JS, aumentare la versione in tutti questi file.
+- `nav.js` disegna il menù delle pagine (Tracker, Raptor, Resoconti, Dati SpaceX) su tutte le pagine. Da 960px è una colonna a sinistra; sotto, un pulsante «Menù». La voce della pagina corrente ha `aria-current="page"`.
 - Tutte le icone SVG inline hanno `width`/`height` espliciti, così restano piccole anche con un CSS vecchio o assente.
 
 ## Raptor (`raptor/`)
 
-Scheda sul motore, aperta dal pulsante «Raptor» accanto a «Ultime notizie».
+Scheda sul motore, aperta dal menù «Raptor» (colonna a sinistra, o tendina «Menù» su schermi stretti).
 
 - `raptor/index.html`: descrizione, schema del ciclo, schede Raptor 1–4 con la spinta in evidenza. Sul Raptor 3 la barra a colori elenca le dichiarazioni (269, 280, 250, ~230 t).
 - `raptor/raptor.css`, `raptor/flow.css`, `raptor/flow.js`: pagina e controlli schema statico ↔ GIF.

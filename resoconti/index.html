@@ -15,10 +15,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css?v=20261101b">
+  <link rel="stylesheet" href="../style.css?v=20261106c">
   <link rel="stylesheet" href="resoconti.css?v=20261101b">
 </head>
 <body>
+  <script src="../nav.js?v=20261106c"></script>
   <div class="stars" aria-hidden="true"></div>
   <header class="top">
     <div class="wrap top-inner">

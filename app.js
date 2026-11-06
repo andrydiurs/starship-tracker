@@ -116,11 +116,7 @@
     return arr.map(function (n) { return { data: n.data, titolo: n.testo, sez: DA_NOME[n.sez], nc: n.nc, src: n.src }; });
   }
   function renderNotizie(D) {
-    var pills = '<span class="pill-row">' +
-      '<a class="pill-link" href="raptor/">' + svg("engine") + "Raptor" + svg("chevronR") + "</a>" +
-      '<a class="pill-link" href="resoconti/">' + svg("book") + "Resoconti mensili" + svg("chevronR") + "</a>" +
-      '<a class="pill-link" href="dati/">' + svg("chart") + "Dati SpaceX" + svg("chevronR") + "</a></span>";
-    var h = '<div class="card accented acc-notizie">' + head(2, "notizie", "Ultime notizie").replace(/<\/div>$/, pills + "</div>");
+    var h = '<div class="card accented acc-notizie">' + head(2, "notizie", "Ultime notizie");
     h += lista(newsItems(D.NEWS.slice(0, 6)));
     if (D.NEWS.length > 6) h += more("Notizie precedenti", lista(newsItems(D.NEWS.slice(6))));
     $("notizie").innerHTML = h + "</div>";
