@@ -40,6 +40,7 @@
 .mini .l { color: var(--text3); font-size: 12.5px; }
 .mini .v { font-weight: 600; font-size: 16px; }
 .mini .v small { color: var(--text2); font-weight: 500; }
+.mini .d { color: var(--text2); font-size: 12.5px; line-height: 1.4; margin-top: 4px; }
 
 /* Tabelle */
 details.tbl { border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.02); }
