@@ -24,7 +24,7 @@
 .prose a { text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--link) 40%, transparent); text-underline-offset: 3px; }
 .scroll-hint { display: none; margin: 0; color: var(--text3); font-size: 14px; }
 
-.gen-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.gen-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; align-items: start; }
 .gen-card { background: rgba(255,255,255,.03); border: 1px solid var(--line); border-radius: 14px; padding: 16px 16px 14px; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
 .gen-card.is-future { border-style: dashed; }
 .gen-card h3 { margin: 0; font: 700 20px/1.2 var(--font-head); }
@@ -34,23 +34,17 @@
 .gen-thrust-note { margin: 0; color: var(--text3); font-size: 13px; }
 .gen-body { margin: 4px 0 0; color: var(--text2); font-size: 14.5px; line-height: 1.55; }
 .gen-src { margin: auto 0 0; padding-top: 6px; }
+.gen-src.stack { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
 .thrust-bar { height: 8px; border-radius: 99px; background: rgba(148,163,184,.18); overflow: hidden; }
 .thrust-bar > i { display: block; height: 100%; width: 0; border-radius: 99px; background: linear-gradient(90deg, var(--accent), #fdba74); }
 .thrust-bar.is-goal > i { background: repeating-linear-gradient(90deg, color-mix(in srgb, var(--accent) 35%, transparent) 0 7px, transparent 7px 11px); }
 
-.tl3 { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
-.tl3 > li { display: grid; grid-template-columns: 108px minmax(0, 1fr); gap: 8px 16px; }
-.tl3 time { padding-top: 18px; color: var(--accent); font: 700 14px/1.3 var(--font-head); }
-.tl3-card { border-top: 1px solid var(--line); padding: 16px 0 18px; min-width: 0; }
-.tl3 > li:first-child .tl3-card { border-top: 0; padding-top: 8px; }
-.tl3 > li:first-child time { padding-top: 10px; }
-.tl3-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 12px; }
-.tl3-thrust { margin: 0; font: 700 32px/1 var(--font-head); color: var(--text); }
-.tl3-thrust b { color: var(--accent); }
-.tl3-thrust small { margin-left: 3px; font-size: 16px; color: var(--text2); font-weight: 600; }
-.tl3-card p { margin: 8px 0 0; color: var(--text2); font-size: 15px; line-height: 1.55; max-width: 68ch; }
-.tl3-card .thrust-bar { margin-top: 10px; max-width: 420px; }
-.tl3-dur .tl3-thrust b { color: var(--c-prototipi); }
+.evo { display: flex; gap: 3px; height: 14px; border-radius: 99px; overflow: hidden; background: rgba(148,163,184,.12); }
+.evo > i { flex: var(--w) 1 10px; background: var(--c); }
+.evo-key { list-style: none; display: flex; gap: 3px; margin: 0; padding: 0; }
+.evo-key li { flex: var(--w) 1 0; min-width: 0; }
+.evo-key b { display: block; color: var(--c); font: 700 13px/1.2 var(--font-head); }
+.evo-key span { display: block; color: var(--text3); font-size: 11px; line-height: 1.3; }
 
 .src-list { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px 18px; }
 .src-list a { font-size: 14.5px; }
@@ -66,8 +60,6 @@
   .top-link { font-size: 13px; padding: 6px 11px; }
   .raptor-hero h1 { font-size: 30px; }
   .raptor-lead, .prose { font-size: 16.5px; }
-  .tl3 > li { grid-template-columns: 1fr; gap: 0; }
-  .tl3 time { padding: 14px 0 0; }
-  .tl3 > li:first-child time { padding-top: 0; }
   .gen-thrust { font-size: 36px; }
+  .evo-key b { font-size: 12px; }
 }

@@ -95,7 +95,7 @@ Se il JSON del mese contiene la chiave `timeline`, `resoconti.js` disegna prima 
 
 Scheda sul motore, aperta dal pulsante «Raptor» accanto a «Ultime notizie».
 
-- `raptor/index.html`: descrizione, schema del ciclo, schede Raptor 1–4 con la spinta in evidenza, cronologia delle dichiarazioni sul Raptor 3.
+- `raptor/index.html`: descrizione, schema del ciclo, schede Raptor 1–4 con la spinta in evidenza. Sul Raptor 3 la barra a colori elenca le dichiarazioni (269, 280, 250, ~230 t).
 - `raptor/raptor.css`, `raptor/flow.css`, `raptor/flow.js`: pagina e controlli schema statico ↔ GIF.
 - `raptor/assets/`: tavola SVG e GIF originali di Rivoluzione Spaziale, disegno non modificato, licenza CC BY 4.0 (`ATTRIBUTION.txt`). Non ripubblicare il testo di quell'articolo.
 
