@@ -1,21 +1,21 @@
 {
-  "ULTIMO_AGGIORNAMENTO": "6 nov 2026, 08:45",
+  "ULTIMO_AGGIORNAMENTO": "7 nov 2026, 08:50",
   "PROSSIMO_VOLO": {
     "volo": "Flight 15",
     "veicoli": "Super Heavy B22 + Ship 42",
     "netBreve": "13 nov",
-    "net": "Kiko Dontchev (VP Launch SpaceX) all'UP.Summit del 5 nov: target venerdì 13 nov (non ufficiale SpaceX) · prima slide CADENA NET 12 nov · NSF: veicoli pronti, conta l'approvazione delle catture · NASA: «a novembre»",
+    "net": "Nuova slide CADENA: NET 13 nov (prima 12 nov; indicatore del traffico aereo, non ufficiale SpaceX) · Kiko Dontchev (VP Launch SpaceX) all'UP.Summit del 5 nov: target venerdì 13 nov · NSF (6 nov): veicoli in controlli finali, decide la licenza FAA per la cattura della Ship",
     "sito": "Starbase, Pad 2",
     "obiettivo": "Doppia cattura in torre: Super Heavy e Ship",
     "licenzaBreve": "Non emessa",
-    "licenzaFaa": "Modifica della licenza attesa, non ancora emessa al 6 nov; nessun NOTAM né avviso marittimo per il lancio",
+    "licenzaFaa": "Modifica della licenza attesa (serve il permesso di riportare S42 alla torre sorvolando aree abitate), non ancora emessa al 7 nov; nessun NOTAM né avviso marittimo per il lancio",
     "licenzaSrc": {
-      "label": "Ars Technica, 21 ott",
-      "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
+      "label": "NSF, 6 nov",
+      "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
     },
     "netSrc": {
-      "label": "@SciGuySpace, 5 nov",
-      "url": "https://x.com/SciGuySpace/status/2118446089191690338"
+      "label": "NSF, 6 nov",
+      "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
     },
     "ship": {
       "titolo": "Ship 42",
@@ -80,7 +80,7 @@
       "titolo": "Super Heavy B22",
       "versione": "V3",
       "stato": {
-        "label": "Static fire riuscito, in Mega Bay 1",
+        "label": "Static fire riuscito, controlli finali in Mega Bay 1",
         "tone": "success"
       },
       "milestones": [
@@ -137,6 +137,42 @@
     }
   },
   "NEWS": [
+    {
+      "data": "6 nov",
+      "sez": "Lanci",
+      "testo": "NSF: B22 e S42 nei controlli finali per il Flight 15, nuova slide CADENA con NET 13 nov (slittamento di un giorno); decisiva la modifica della licenza FAA per la cattura della Ship",
+      "src": {
+        "label": "NSF, 6 nov",
+        "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
+      }
+    },
+    {
+      "data": "6 nov",
+      "sez": "Lanci",
+      "testo": "NSF: piano di lavoro di circa 24 ore per S42 (15-16 orbite) con punti di rientro anticipato; sarebbe la missione Starship più lunga (non confermato da SpaceX)",
+      "src": {
+        "label": "NSF, 6 nov",
+        "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
+      }
+    },
+    {
+      "data": "6 nov",
+      "sez": "Prototipi",
+      "testo": "NSF: Booster 24 completamente impilato, impilamento di Booster 25 iniziato verso il 2 nov; S44 e S45 avanzano in Mega Bay 2",
+      "src": {
+        "label": "NSF, 6 nov",
+        "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
+      }
+    },
+    {
+      "data": "6 nov",
+      "sez": "Lanci",
+      "testo": "NSF: con lo static fire di S43 a metà dicembre, il primo volo dal 39A (Flight 16) appare più probabile a inizio 2027; la FAA dovrebbe aggiungere il 39A alla licenza VOL 23-129",
+      "src": {
+        "label": "NSF, 6 nov",
+        "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
+      }
+    },
     {
       "data": "5 nov",
       "sez": "Lanci",
@@ -554,10 +590,10 @@
     }
   ],
   "IN_BREVE": {
-    "siti": "Al Pad 2 prove di chopsticks e deluge (5 nov); al LC-39A test completo del deluge d'acqua ripreso da NSF, con doppio test serale alla torre. Alla Gigabay di Starbase resta una sola gru a torre e l'esterno è quasi finito. Per NSF il Flight 16 dal 39A non arriverà prima di dicembre.",
-    "prototipi": "S42 è in Mega Bay 2 per ispezioni finali, FTS e carico Starlink; B22 è in Mega Bay 1 per i preparativi finali. B23 è rientrato in Mega Bay 1 e S43 attende i motori per uno static fire a dicembre (Flight 16 dal 39A). Sezione A3:4 di S45 in Mega Bay 2 e di B25 in Mega Bay 1 (entrambe non confermate, solo @VickiCocks15).",
+    "siti": "Al Pad 2 prove di chopsticks e deluge (5 nov); al LC-39A test completo del deluge d'acqua ripreso da NSF, con doppio test serale alla torre. Alla Gigabay di Starbase resta una sola gru a torre e l'esterno è quasi finito. Per NSF il Flight 16 dal 39A è più probabile a inizio 2027; la FAA dovrebbe aggiungere il 39A alla licenza VOL 23-129.",
+    "prototipi": "S42 è in Mega Bay 2 e B22 in Mega Bay 1 per i controlli finali del Flight 15. B23 è in Mega Bay 1 e S43 riceve i motori per uno static fire a metà dicembre (Flight 16 dal 39A). Booster 24 è completamente impilato, l'impilamento di Booster 25 è iniziato verso il 2 nov; S44 e S45 avanzano in Mega Bay 2 (NSF, 6 nov).",
     "test": "Entrambi i veicoli del Flight 15 hanno completato gli static fire. Il 5 nov: deluge completo al 39A e prove chopsticks/deluge al Pad 2; a McGregor di nuovo un Raptor 3 «2x9» in passaggio dopo oltre una settimana ferma. Stime NSF: B23 static fire al 39A a metà dicembre, S43 a Starbase a metà dicembre.",
-    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. Il Flight 15 con la prima doppia cattura ha come nuovo target il 13 nov (Kiko Dontchev all'UP.Summit, non ufficiale): B22 e S42 sono pronti, ma al 6 nov non ci sono licenza FAA, NOTAM o avvisi marittimi. Per NSF il Flight 16 dal 39A non arriverà prima di dicembre."
+    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. Il Flight 15 con la prima doppia cattura ha NET 13 nov secondo una nuova slide CADENA e Kiko Dontchev (non ufficiale): B22 e S42 sono nei controlli finali, ma al 7 nov mancano licenza FAA, NOTAM e avvisi marittimi. NSF parla di una missione di circa 24 ore (non confermato). Per NSF il Flight 16 dal 39A è più probabile a inizio 2027."
   },
   "SITI": [
     {
@@ -729,8 +765,18 @@
   "NON_CONFERMATI": [
     {
       "titolo": "Flight 15 NET 13 nov",
-      "data": "5 nov",
-      "testo": "Kiko Dontchev (VP Launch SpaceX) all'UP.Summit ha indicato come target venerdì 13 novembre per il Flight 15. Non è un annuncio ufficiale SpaceX; al 6 nov licenza FAA e NOTAM ancora assenti (https://x.com/SciGuySpace/status/2118446089191690338)"
+      "data": "6 nov",
+      "testo": "Nuova slide CADENA con NET 13 nov (prima 12 nov) e target 13 nov indicato da Kiko Dontchev all'UP.Summit. Non è un annuncio ufficiale SpaceX; al 7 nov licenza FAA e NOTAM ancora assenti (https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/)"
+    },
+    {
+      "titolo": "Flight 15 missione da 24 ore",
+      "data": "6 nov",
+      "testo": "Secondo NSF il piano di lavoro prevede circa 24 ore di volo per S42 (15-16 orbite) per riallinearsi al corridoio di rientro verso il Pad 2, con punti di rientro anticipato. Non confermato da SpaceX (https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/)"
+    },
+    {
+      "titolo": "Flight 16 a inizio 2027",
+      "data": "6 nov",
+      "testo": "Per NSF, con lo static fire di S43 atteso a metà dicembre, il primo volo dal 39A appare più probabile a inizio 2027 che entro fine anno; B23 farà lo static fire al 39A. Non confermato da SpaceX (https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/)"
     },
     {
       "titolo": "Ship 45 sezione A3:4",
@@ -876,12 +922,12 @@
       "versione": "V3",
       "volo": "Flight 15",
       "stato": "Test",
-      "breve": "Static fire completo; in Mega Bay 1",
-      "note": "Prove crio 9-10 set; rollout al Pad 2 il 24 ott; static fire completo a 33 motori il 25 ott (circa 16 s), confermato da SpaceX. Nella notte tra 25 e 26 ott sollevato ad altezza di cattura e rientrato in Mega Bay 1 per i preparativi finali. @mcrs987 (28 ott): raceway aperto, sta per ricevere il sistema di terminazione del volo (FTS)",
-      "data": "26 ott",
+      "breve": "Static fire completo; controlli finali in Mega Bay 1",
+      "note": "Prove crio 9-10 set; rollout al Pad 2 il 24 ott; static fire completo a 33 motori il 25 ott (circa 16 s), confermato da SpaceX. Nella notte tra 25 e 26 ott sollevato ad altezza di cattura e rientrato in Mega Bay 1 per i preparativi finali. @mcrs987 (28 ott): raceway aperto, sta per ricevere il sistema di terminazione del volo (FTS). NSF (6 nov): in controlli finali per il Flight 15 con NET 13 nov",
+      "data": "6 nov",
       "src": {
-        "label": "@VickiCocks15",
-        "url": "https://x.com/VickiCocks15/status/2114760295428030919"
+        "label": "NSF, 6 nov",
+        "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
       }
     },
     {
@@ -891,11 +937,11 @@
       "volo": "Flight 15",
       "stato": "Test",
       "breve": "In Mega Bay 2: ispezioni finali, FTS e carico Starlink",
-      "note": "Test chopsticks al Pad 2 (11-12 set); ulteriore prova crio a Massey's (9 ott). Partita per Massey's il 26 ott; nella notte tra 26 e 27 ott static fire a un solo motore e il 27 ott verso le 22:46 ora di Roma static fire a sei motori a piena durata. Il 28 ott SpaceX ha confermato la fine degli static fire, compresa un'accensione di un solo Raptor che simula la manovra di deorbit. Nella notte tra 28 e 29 ott è tornata in produzione per gli ultimi preparativi (Mega Bay 2 e carico Starlink V3 attesi, non confermato). Il 29 ott è entrata in Mega Bay 2. Il 30 ott NSF: in Mega Bay 2 per ispezioni finali e cariche del sistema di terminazione del volo, poi caricamento dei satelliti Starlink per il Flight 15",
-      "data": "30 ott",
+      "note": "Test chopsticks al Pad 2 (11-12 set); ulteriore prova crio a Massey's (9 ott). Partita per Massey's il 26 ott; nella notte tra 26 e 27 ott static fire a un solo motore e il 27 ott verso le 22:46 ora di Roma static fire a sei motori a piena durata. Il 28 ott SpaceX ha confermato la fine degli static fire, compresa un'accensione di un solo Raptor che simula la manovra di deorbit. Nella notte tra 28 e 29 ott è tornata in produzione per gli ultimi preparativi (Mega Bay 2 e carico Starlink V3 attesi, non confermato). Il 29 ott è entrata in Mega Bay 2. Il 30 ott NSF: in Mega Bay 2 per ispezioni finali e cariche del sistema di terminazione del volo, poi caricamento dei satelliti Starlink per il Flight 15. NSF (6 nov): ancora nei controlli finali; prossimi passi cariche FTS e carico Starlink. Piano di missione di circa 24 ore (non confermato)",
+      "data": "6 nov",
       "src": {
-        "label": "NSF, 30 ott",
-        "url": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
+        "label": "NSF, 6 nov",
+        "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
       }
     },
     {
@@ -906,11 +952,11 @@
       "voloNc": true,
       "stato": "Test",
       "breve": "In Mega Bay 2 per l'installazione dei motori",
-      "note": "Prove crio a Massey's concluse il 23 ott; rientrata in produzione nella notte tra 25 e 26 ott e nel pomeriggio texano del 26 ott portata al Pad 2; sollevata dai chopsticks nella notte tra 26 e 27 ott per prove di cattura in vista del Flight 15 (NSF: «TPS superbo»). Stime NSF: static fire a metà dicembre, spedizione al KSC tra inizio e metà gennaio. Il 28 ott è tornata al sito di produzione; per NSF andrà via mare al KSC con B23 per il primo volo dal 39A (non confermato da SpaceX). NSF (30 ott): nelle prove del 27 ott al Pad 2 è stato collegato anche l'SQD per provare la messa in sicurezza e i pusher l'hanno allineata; ora in Mega Bay 2 per ricevere i motori, static fire atteso a dicembre (non confermato)",
-      "data": "30 ott",
+      "note": "Prove crio a Massey's concluse il 23 ott; rientrata in produzione nella notte tra 25 e 26 ott e nel pomeriggio texano del 26 ott portata al Pad 2; sollevata dai chopsticks nella notte tra 26 e 27 ott per prove di cattura in vista del Flight 15 (NSF: «TPS superbo»). Stime NSF: static fire a metà dicembre, spedizione al KSC tra inizio e metà gennaio. Il 28 ott è tornata al sito di produzione; per NSF andrà via mare al KSC con B23 per il primo volo dal 39A (non confermato da SpaceX). NSF (30 ott): nelle prove del 27 ott al Pad 2 è stato collegato anche l'SQD per provare la messa in sicurezza e i pusher l'hanno allineata; ora in Mega Bay 2 per ricevere i motori, static fire atteso a dicembre (non confermato). NSF (6 nov): sta ricevendo i motori, static fire atteso a metà dicembre",
+      "data": "6 nov",
       "src": {
-        "label": "NSF, 30 ott",
-        "url": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
+        "label": "NSF, 6 nov",
+        "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
       }
     },
     {
@@ -936,11 +982,11 @@
       "voloNc": true,
       "stato": "In costruzione",
       "breve": "Raceway installati in Mega Bay 2",
-      "note": "Il 25 ott spostata sul supporto centrale di Mega Bay 2; tubi di trasferimento e flap in installazione. Pronta forse a febbraio 2027 (stima NSF). Al 30 ott ha ricevuto i raceway dopo l'impilamento finale del 20 ott (NSF)",
-      "data": "30 ott",
+      "note": "Il 25 ott spostata sul supporto centrale di Mega Bay 2; tubi di trasferimento e flap in installazione. Pronta forse a febbraio 2027 (stima NSF). Al 30 ott ha ricevuto i raceway dopo l'impilamento finale del 20 ott (NSF). NSF (6 nov): avanza in Mega Bay 2 insieme a S45",
+      "data": "6 nov",
       "src": {
-        "label": "NSF, 30 ott",
-        "url": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
+        "label": "NSF, 6 nov",
+        "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
       }
     },
     {
@@ -950,11 +996,11 @@
       "volo": "n.d.",
       "stato": "In costruzione",
       "breve": "Sezione A3:4 in Mega Bay 2 (nc)",
-      "note": "Prua in Mega Bay 2 dal 23 ott; A2:3 dalla Starfactory il 3 nov. La sera del 5 nov la sezione A3:4 è stata spostata in Mega Bay 2 (solo @VickiCocks15, non confermato).",
-      "data": "5 nov",
+      "note": "Prua in Mega Bay 2 dal 23 ott; A2:3 dalla Starfactory il 3 nov. La sera del 5 nov la sezione A3:4 è stata spostata in Mega Bay 2 (solo @VickiCocks15, non confermato). NSF (6 nov): S44 e S45 avanzano in Mega Bay 2.",
+      "data": "6 nov",
       "src": {
-        "label": "@VickiCocks15, 5 nov",
-        "url": "https://x.com/VickiCocks15/status/2118496660057633270"
+        "label": "NSF, 6 nov",
+        "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
       }
     },
     {
@@ -963,12 +1009,12 @@
       "versione": "V3",
       "volo": "n.d.",
       "stato": "In costruzione",
-      "breve": "Impilato il serbatoio del metano in Mega Bay 1",
-      "note": "In Mega Bay 1; il 24 ott è entrata la sezione F3:4 che completa il corpo del booster. Pronto forse a inizio febbraio 2027 (stima NSF). La sera del 30 ott (ora del Texas) la sezione del serbatoio del metano è stata sollevata per l'impilamento in Mega Bay 1",
-      "data": "31 ott",
+      "breve": "Completamente impilato in Mega Bay 1",
+      "note": "In Mega Bay 1; il 24 ott è entrata la sezione F3:4 che completa il corpo del booster. Pronto forse a inizio febbraio 2027 (stima NSF). La sera del 30 ott (ora del Texas) la sezione del serbatoio del metano è stata sollevata per l'impilamento in Mega Bay 1. NSF (6 nov): Booster 24 completamente impilato",
+      "data": "6 nov",
       "src": {
-        "label": "@efraser77, 31 ott",
-        "url": "https://x.com/efraser77/status/2116351708150497473"
+        "label": "NSF, 6 nov",
+        "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
       }
     },
     {
@@ -977,12 +1023,12 @@
       "versione": "V3",
       "volo": "n.d.",
       "stato": "In costruzione",
-      "breve": "Sezione A3:4 in Mega Bay 1 (nc)",
-      "note": "Il 4 nov la sezione A3:4 è stata spostata dalla Starfactory in Mega Bay 1, riportato il 5 nov (solo @VickiCocks15, non confermato).",
-      "data": "5 nov",
+      "breve": "Impilamento iniziato verso il 2 nov",
+      "note": "Il 4 nov la sezione A3:4 è stata spostata dalla Starfactory in Mega Bay 1, riportato il 5 nov (solo @VickiCocks15, non confermato). NSF (6 nov) conferma: impilamento di Booster 25 iniziato verso il 2 nov.",
+      "data": "6 nov",
       "src": {
-        "label": "@VickiCocks15, 5 nov",
-        "url": "https://x.com/VickiCocks15/status/2118353573905940912"
+        "label": "NSF, 6 nov",
+        "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
       }
     },
     {
@@ -1496,6 +1542,11 @@
   ],
   "FONTI": [
     {
+      "title": "NSF: Flight 15, doppia cattura in attesa del via libera FAA (6 nov)",
+      "site": "nasaspaceflight.com",
+      "href": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
+    },
+    {
       "title": "Eric Berger / @SciGuySpace: Dontchev target Flight 15 il 13 nov (5 nov)",
       "site": "x.com/SciGuySpace",
       "href": "https://x.com/SciGuySpace/status/2118446089191690338"
@@ -1892,6 +1943,38 @@
     ],
     "lanci": [
       {
+        "autore": "@NASASpaceflight",
+        "data": "6 nov",
+        "ora": "16:32",
+        "testo": "Forse a una settimana dal Flight 15 e dalla doppia cattura, in attesa del via libera normativo",
+        "url": "https://x.com/NASASpaceflight/status/2118728354132086946",
+        "media": "foto",
+        "id": "2118728354132086946",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/news_img/2118728397014614016/gKpa8c8d?format=jpg&name=orig",
+            "w": 1723,
+            "h": 1034
+          }
+        ]
+      },
+      {
+        "autore": "@RGVaerialphotos",
+        "data": "6 nov",
+        "ora": "14:00",
+        "testo": "Flight 15 🔜",
+        "url": "https://x.com/RGVaerialphotos/status/2118689859049058371",
+        "media": "foto",
+        "id": "2118689859049058371",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HWaw-kSaYAAFF7i.jpg"
+          }
+        ]
+      },
+      {
         "autore": "@mcrs987",
         "data": "6 nov",
         "ora": "03:44",
@@ -1937,23 +2020,6 @@
         ]
       },
       {
-        "autore": "@FelixSchlang",
-        "data": "29 ott",
-        "ora": "23:30",
-        "testo": "Pad 2 dall'alto, pronto per il Flight 15 (WAI Media)",
-        "url": "https://x.com/FelixSchlang/status/2115934294996660620",
-        "media": "foto",
-        "id": "2115934294996660620",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HV1PByxWgAAIitK.jpg",
-            "w": 2048,
-            "h": 1365
-          }
-        ]
-      },
-      {
         "autore": "@SpaceNotices",
         "data": "29 ott",
         "ora": "15:36",
@@ -1965,21 +2031,6 @@
           {
             "tipo": "foto",
             "url": "https://pbs.twimg.com/media/HVziKGzX0AA52Go.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@ryan_eminhizer",
-        "data": "29 ott",
-        "ora": "00:07",
-        "testo": "Entrambi i veicoli del Flight 15 testati, si punta alla doppia cattura",
-        "url": "https://x.com/ryan_eminhizer/status/2115581309980389853",
-        "media": "foto",
-        "id": "2115581309980389853",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVwN3wUXkAEKX7I.jpg"
           }
         ]
       }
@@ -2064,11 +2115,11 @@
         },
         {
           "label": "Data",
-          "value": "NET 10 dic 2026 (CADENA, non ufficiale); stima NSF del 25 ott: fine gennaio 2027"
+          "value": "NET 10 dic 2026 (CADENA, non ufficiale); NSF (6 nov): più probabile inizio 2027"
         },
         {
           "label": "Licenza FAA",
-          "value": "Nessuna licenza dal 39A trovata",
+          "value": "Nessuna licenza dal 39A; per NSF la FAA dovrebbe aggiungere il 39A alla licenza VOL 23-129",
           "badge": "neutral"
         },
         {
@@ -2100,9 +2151,13 @@
         {
           "label": "NSF, 28 ott",
           "url": "https://www.nasaspaceflight.com/2026/10/construction-timeline-comparisons/"
+        },
+        {
+          "label": "NSF, 6 nov",
+          "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
         }
       ],
-      "dettagli": "Missione indicata come Starlink 30-1 (non confermato). Stime NSF: B23 pronto per lo static fire a fine novembre (possibile static fire al 39A a metà dicembre), S43 static fire a metà dicembre e spedizione al KSC a inizio-metà gennaio, poi WDR e primo volo dal 39A forse a fine gennaio. Trasporto via chiatta «You'll Thank Me Later», controlli nella Gigabay di Roberts Road. Il 26-27 ott S43 è stata al Pad 2 per prove di cattura con i chopsticks; il 28 ott è tornata in produzione mentre B23 è andato a Massey's per nuove prove crio. Il 28 ott NSF conferma che la coppia B23/S43 dovrebbe andare via mare al KSC per il primo volo dal 39A (non confermato da SpaceX). Analisi NSF del 28 ott: Flight 16 dal 39A non prima di dicembre 2026."
+      "dettagli": "Missione indicata come Starlink 30-1 (non confermato). Stime NSF: B23 pronto per lo static fire a fine novembre (possibile static fire al 39A a metà dicembre), S43 static fire a metà dicembre e spedizione al KSC a inizio-metà gennaio, poi WDR e primo volo dal 39A forse a fine gennaio. Trasporto via chiatta «You'll Thank Me Later», controlli nella Gigabay di Roberts Road. Il 26-27 ott S43 è stata al Pad 2 per prove di cattura con i chopsticks; il 28 ott è tornata in produzione mentre B23 è andato a Massey's per nuove prove crio. Il 28 ott NSF conferma che la coppia B23/S43 dovrebbe andare via mare al KSC per il primo volo dal 39A (non confermato da SpaceX). Analisi NSF del 28 ott: Flight 16 dal 39A non prima di dicembre 2026. NSF (6 nov): S43 riceve i motori, static fire a metà dicembre; B23 farà lo static fire al 39A per attivare il sito; debutto dalla Florida più probabile a inizio 2027 (non confermato)."
     },
     {
       "titolo": "Dettagli Flight 15",
@@ -2110,7 +2165,11 @@
       "proprieta": [
         {
           "label": "Data",
-          "value": "Target 13 nov 2026 (Dontchev UP.Summit, non ufficiale); prima slide CADENA NET 12 nov"
+          "value": "NET 13 nov 2026 (nuova slide CADENA e Dontchev all'UP.Summit, non ufficiale); slide precedente NET 12 nov"
+        },
+        {
+          "label": "Durata",
+          "value": "Piano di circa 24 ore e 15-16 orbite per S42, con punti di rientro anticipato (NSF, 6 nov; non confermato)"
         },
         {
           "label": "Static fire",
@@ -2181,6 +2240,10 @@
         {
           "label": "@SpaceNotices, 29 ott",
           "url": "https://x.com/SpaceNotices/status/2115815059381469690"
+        },
+        {
+          "label": "NSF, 6 nov",
+          "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
         }
       ]
     }
