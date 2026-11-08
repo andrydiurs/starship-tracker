@@ -1,5 +1,5 @@
 {
-  "ULTIMO_AGGIORNAMENTO": "8 nov 2026, 08:45",
+  "ULTIMO_AGGIORNAMENTO": "8 nov 2026, 08:56",
   "PROSSIMO_VOLO": {
     "volo": "Flight 15",
     "veicoli": "Super Heavy B22 + Ship 42",
@@ -137,6 +137,60 @@
     }
   },
   "NEWS": [
+    {
+      "data": "8 nov",
+      "sez": "Siti",
+      "testo": "Tubazioni criogeniche fabbricate nel lotto Sanchez in trasferimento verso Massey's (non confermato; foto d'archivio del 2 nov)",
+      "src": {
+        "label": "@RGVaerialphotos, 8 nov",
+        "url": "https://x.com/RGVaerialphotos/status/2119314924791009349"
+      }
+    },
+    {
+      "data": "8 nov",
+      "sez": "Prototipi",
+      "testo": "Tubi di trasferimento di Ship 45 passati dalla Gigabay verso Mega Bay 2 (non confermato)",
+      "src": {
+        "label": "@VickiCocks15, 8 nov",
+        "url": "https://x.com/VickiCocks15/status/2119222088904892701"
+      }
+    },
+    {
+      "data": "7 nov",
+      "sez": "Prototipi",
+      "testo": "Ship 40 entra nella Gigabay di Starbase: primo veicolo al suo interno (NSF, foto LabPadre). Non implica che l'edificio sia operativo",
+      "src": {
+        "label": "@NASASpaceflight, 7 nov",
+        "url": "https://x.com/NASASpaceflight/status/2119185308646305839"
+      }
+    },
+    {
+      "data": "7 nov",
+      "sez": "Prototipi",
+      "testo": "Sezione A4 di Booster 24 trasferita dalla Starfactory in Mega Bay 1 per l'impilamento (non confermato)",
+      "src": {
+        "label": "@VickiCocks15, 7 nov",
+        "url": "https://x.com/VickiCocks15/status/2119097066613871062"
+      }
+    },
+    {
+      "data": "8 nov",
+      "sez": "Lanci",
+      "testo": "FAA: il piano operativo dell'8 nov non elenca ancora Starship; nessuna licenza Flight 15 emessa",
+      "src": {
+        "label": "FAA ATCSCC, 8 nov",
+        "url": "https://www.fly.faa.gov/adv/adv_spt"
+      }
+    },
+    {
+      "data": "6 nov",
+      "sez": "Test",
+      "testo": "McGregor: presunto Raptor 3 n. 144 in transito, forse di rientro da prove di sviluppo (non confermato)",
+      "src": {
+        "label": "@SpaceRhin0, 6 nov",
+        "url": "https://x.com/SpaceRhin0/status/2118807321795067924"
+      }
+    },
     {
       "data": "7 nov",
       "sez": "Lanci",
@@ -626,10 +680,10 @@
     }
   ],
   "IN_BREVE": {
-    "siti": "Al Pad 2 prove di chopsticks e deluge (5 nov); al LC-39A test completo del deluge d'acqua ripreso da NSF, con doppio test serale alla torre. Alla Gigabay di Starbase resta una sola gru a torre e l'esterno è quasi finito. Per NSF il Flight 16 dal 39A è più probabile a inizio 2027; la FAA dovrebbe aggiungere il 39A alla licenza VOL 23-129.",
-    "prototipi": "S42 è in Mega Bay 2 e B22 in Mega Bay 1 per i controlli finali del Flight 15. B23 è in Mega Bay 1 e S43 riceve i motori per uno static fire a metà dicembre (Flight 16 dal 39A). Booster 24 è completamente impilato, l'impilamento di Booster 25 è iniziato verso il 2 nov; S44 e S45 avanzano in Mega Bay 2 (NSF, 6 nov).",
-    "test": "Entrambi i veicoli del Flight 15 hanno completato gli static fire. Il 5 nov: deluge completo al 39A e prove chopsticks/deluge al Pad 2; a McGregor di nuovo un Raptor 3 «2x9» in passaggio dopo oltre una settimana ferma. Stime NSF: B23 static fire al 39A a metà dicembre, S43 a Starbase a metà dicembre.",
-    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. SpaceX ha ufficializzato il Flight 15 (B22 + S42): NET venerdì 13 nov, finestra dalle 23:45 ora di Roma, in attesa dell'approvazione normativa. Missione di oltre 22 ore con 26 Starlink V3 e prima doppia cattura in torre; primo NOTAM pubblicato il 7 nov. Per NSF il Flight 16 dal 39A è più probabile a inizio 2027."
+    "siti": "La sera del 7 nov Ship 40 è entrata nella Gigabay di Starbase, primo veicolo all'interno; tubazioni criogeniche verso Massey's (non confermato). Al Pad 2 prove di chopsticks e deluge (5 nov); al LC-39A test completo del deluge d'acqua ripreso da NSF, con doppio test serale alla torre. Alla Gigabay di Starbase resta una sola gru a torre e l'esterno è quasi finito. Per NSF il Flight 16 dal 39A è più probabile a inizio 2027; la FAA dovrebbe aggiungere il 39A alla licenza VOL 23-129.",
+    "prototipi": "S42 è in Mega Bay 2 e B22 in Mega Bay 1 per i controlli finali del Flight 15. B23 è in Mega Bay 1 e S43 riceve i motori per uno static fire a metà dicembre (Flight 16 dal 39A). Booster 24 è completamente impilato, l'impilamento di Booster 25 è iniziato verso il 2 nov; S44 e S45 avanzano in Mega Bay 2 (NSF, 6 nov). Il 7 nov Ship 40 è entrata nella Gigabay; sezione A4 di B24 in Mega Bay 1 (non confermato).",
+    "test": "Entrambi i veicoli del Flight 15 hanno completato gli static fire. Il 5 nov: deluge completo al 39A e prove chopsticks/deluge al Pad 2; a McGregor di nuovo un Raptor 3 «2x9» in passaggio dopo oltre una settimana ferma. Stime NSF: B23 static fire al 39A a metà dicembre, S43 a Starbase a metà dicembre. Il 6 nov a McGregor presunto Raptor 3 n. 144 in transito (non confermato).",
+    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. SpaceX ha ufficializzato il Flight 15 (B22 + S42): NET venerdì 13 nov, finestra dalle 23:45 ora di Roma, in attesa dell'approvazione normativa. Missione di oltre 22 ore con 26 Starlink V3 e prima doppia cattura in torre; primo NOTAM pubblicato il 7 nov. Per NSF il Flight 16 dal 39A è più probabile a inizio 2027. Il piano FAA dell'8 nov non elenca ancora Starship."
   },
   "SITI": [
     {
@@ -699,12 +753,12 @@
         "label": "In costruzione",
         "tone": "accent"
       },
-      "breve": "Esterno quasi finito: resta una sola gru a torre",
-      "ultimo": "Primo carroponte in posizione (15 ott); una delle 4 gru a torre quasi smontata (17 ott); gru LR11000 al lavoro dentro l'edificio (22 ott); nuove foto aeree del 23 e del 26 ott. Obiettivo SpaceX: completamento entro fine 2026. Il 31 ott SpaceX ha proiettato uno spettacolo luminoso di Halloween sulla facciata (video NSF). Il 3 nov (sera, ora del Texas) rimosso il braccio della terza delle quattro gru a torre, smontato dall'ultima rimasta; l'esterno dell'edificio è quasi finito (video di Erik Fraser per NSF)",
-      "data": "15 ott-3 nov",
+      "breve": "Ship 40 primo veicolo all'interno (7 nov)",
+      "ultimo": "La sera del 7 nov Ship 40 è entrata nella Gigabay, primo veicolo al suo interno (NSF, LabPadre). Non implica la piena operatività. Primo carroponte in posizione (15 ott); una delle 4 gru a torre quasi smontata (17 ott); gru LR11000 al lavoro dentro l'edificio (22 ott); nuove foto aeree del 23 e del 26 ott. Obiettivo SpaceX: completamento entro fine 2026. Il 31 ott SpaceX ha proiettato uno spettacolo luminoso di Halloween sulla facciata (video NSF). Il 3 nov (sera, ora del Texas) rimosso il braccio della terza delle quattro gru a torre, smontato dall'ultima rimasta; l'esterno dell'edificio è quasi finito (video di Erik Fraser per NSF)",
+      "data": "7 nov",
       "src": {
-        "label": "@efraser77 per NSF, 3 nov",
-        "url": "https://x.com/efraser77/status/2117766071575089429"
+        "label": "@NASASpaceflight, 7 nov",
+        "url": "https://x.com/NASASpaceflight/status/2119185308646305839"
       }
     },
     {
@@ -715,8 +769,8 @@
         "tone": "success"
       },
       "breve": "S43.1 nel Can Crusher; un secondo in costruzione accanto",
-      "ultimo": "S42 è arrivata il 26 ott; static fire a un motore nella notte tra 26 e 27 ott e a sei motori il 27 ott, confermati da SpaceX il 28 ott. Nella notte tra 28 e 29 ott S42 è ripartita verso la produzione. B23 è arrivato il 28 ott per nuove prove crio (nessun esito pubblico finora). Il cantiere del sito 2 avanza accanto al sito 1. Non confermato: i simulatori di spinta di booster e Ship potrebbero essere portati qui per lo stoccaggio. Spazio aereo riservato dalla FAA per «high energy testing» dal 23 ott al 6 nov (secondo The Space Road). Nella notte tra 29 e 30 ott anche B23 è ripartito verso la produzione (esito delle prove crio non comunicato). NSF (30 ott): B23 è rimasto oltre due giorni allo stand crio senza test visibili (forse una prova di pressione a temperatura ambiente, non confermato). Rimossi alcuni vecchi serbatoi di azoto liquido, sostituiti da tre più grandi e da due nuovi banchi di vaporizzatori; al loro posto è iniziata la costruzione di un secondo Supercrusher per i test dei serbatoi. Chiusura stradale produzione-Massey's nella notte tra 30 e 31 ott (31 ott 05:59-10:00 ora di Roma), veicolo non comunicato. Il 3 nov foto aerea: l'articolo di test S43.1 (ogiva, PEZ dispenser e serbatoi header) è nel Can Crusher e accanto se ne costruisce un secondo; esito non ancora noto",
-      "data": "26 ott-3 nov",
+      "ultimo": "8 nov: RGV segnala tubazioni criogeniche dal lotto Sanchez in arrivo (non confermato). S42 è arrivata il 26 ott; static fire a un motore nella notte tra 26 e 27 ott e a sei motori il 27 ott, confermati da SpaceX il 28 ott. Nella notte tra 28 e 29 ott S42 è ripartita verso la produzione. B23 è arrivato il 28 ott per nuove prove crio (nessun esito pubblico finora). Il cantiere del sito 2 avanza accanto al sito 1. Non confermato: i simulatori di spinta di booster e Ship potrebbero essere portati qui per lo stoccaggio. Spazio aereo riservato dalla FAA per «high energy testing» dal 23 ott al 6 nov (secondo The Space Road). Nella notte tra 29 e 30 ott anche B23 è ripartito verso la produzione (esito delle prove crio non comunicato). NSF (30 ott): B23 è rimasto oltre due giorni allo stand crio senza test visibili (forse una prova di pressione a temperatura ambiente, non confermato). Rimossi alcuni vecchi serbatoi di azoto liquido, sostituiti da tre più grandi e da due nuovi banchi di vaporizzatori; al loro posto è iniziata la costruzione di un secondo Supercrusher per i test dei serbatoi. Chiusura stradale produzione-Massey's nella notte tra 30 e 31 ott (31 ott 05:59-10:00 ora di Roma), veicolo non comunicato. Il 3 nov foto aerea: l'articolo di test S43.1 (ogiva, PEZ dispenser e serbatoi header) è nel Can Crusher e accanto se ne costruisce un secondo; esito non ancora noto",
+      "data": "8 nov",
       "src": {
         "label": "@RGVaerialphotos, 3 nov",
         "url": "https://x.com/RGVaerialphotos/status/2117546071882702870"
@@ -799,6 +853,26 @@
     }
   ],
   "NON_CONFERMATI": [
+    {
+      "titolo": "Tubazioni Sanchez → Massey's",
+      "data": "8 nov",
+      "testo": "RGV segnala il trasferimento di tubazioni criogeniche dal lotto Sanchez a Massey's; foto del 2 nov. Non confermato (https://x.com/RGVaerialphotos/status/2119314924791009349)"
+    },
+    {
+      "titolo": "Ship 45 tubi di trasferimento",
+      "data": "8 nov",
+      "testo": "Secondo @VickiCocks15 i tubi di trasferimento di S45 sono passati dalla Gigabay verso Mega Bay 2. Non confermato (https://x.com/VickiCocks15/status/2119222088904892701)"
+    },
+    {
+      "titolo": "Booster 24 sezione A4",
+      "data": "7 nov",
+      "testo": "Secondo @VickiCocks15 la sezione A4 di B24 è andata in Mega Bay 1. Non confermato (https://x.com/VickiCocks15/status/2119097066613871062)"
+    },
+    {
+      "titolo": "Raptor 3 n. 144 a McGregor",
+      "data": "6 nov",
+      "testo": "@SpaceRhin0 ipotizza il rientro del Raptor 3 n. 144 da prove di sviluppo. Non confermato (https://x.com/SpaceRhin0/status/2118807321795067924)"
+    },
     {
       "titolo": "Flight 16 a inizio 2027",
       "data": "6 nov",
@@ -1022,8 +1096,8 @@
       "volo": "n.d.",
       "stato": "In costruzione",
       "breve": "Sezione A3:4 in Mega Bay 2 (nc)",
-      "note": "Prua in Mega Bay 2 dal 23 ott; A2:3 dalla Starfactory il 3 nov. La sera del 5 nov la sezione A3:4 è stata spostata in Mega Bay 2 (solo @VickiCocks15, non confermato). NSF (6 nov): S44 e S45 avanzano in Mega Bay 2.",
-      "data": "6 nov",
+      "note": "Prua in Mega Bay 2 dal 23 ott; A2:3 dalla Starfactory il 3 nov. La sera del 5 nov la sezione A3:4 è stata spostata in Mega Bay 2 (solo @VickiCocks15, non confermato). NSF (6 nov): S44 e S45 avanzano in Mega Bay 2. 8 nov: tubi di trasferimento passati dalla Gigabay verso Mega Bay 2 (solo @VickiCocks15, non confermato).",
+      "data": "8 nov",
       "src": {
         "label": "NSF, 6 nov",
         "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
@@ -1036,8 +1110,8 @@
       "volo": "n.d.",
       "stato": "In costruzione",
       "breve": "Completamente impilato in Mega Bay 1",
-      "note": "In Mega Bay 1; il 24 ott è entrata la sezione F3:4 che completa il corpo del booster. Pronto forse a inizio febbraio 2027 (stima NSF). La sera del 30 ott (ora del Texas) la sezione del serbatoio del metano è stata sollevata per l'impilamento in Mega Bay 1. NSF (6 nov): Booster 24 completamente impilato",
-      "data": "6 nov",
+      "note": "In Mega Bay 1; il 24 ott è entrata la sezione F3:4 che completa il corpo del booster. Pronto forse a inizio febbraio 2027 (stima NSF). La sera del 30 ott (ora del Texas) la sezione del serbatoio del metano è stata sollevata per l'impilamento in Mega Bay 1. NSF (6 nov): Booster 24 completamente impilato. 7 nov: sezione A4 trasferita in Mega Bay 1 (solo @VickiCocks15, non confermato)",
+      "data": "7 nov",
       "src": {
         "label": "NSF, 6 nov",
         "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
@@ -1063,12 +1137,12 @@
       "versione": "V3",
       "volo": "Flight 13",
       "stato": "Ritirato",
-      "breve": "In ispezione in Mega Bay 2",
-      "note": "Sopravvissuta all'ammaraggio, recuperata; rientrata a Starbase il 7 ott, in Mega Bay 2 per le analisi. Al 30 ott ancora in ispezione in Mega Bay 2 (NSF)",
-      "data": "30 ott",
+      "breve": "Prima a entrare nella Gigabay (7 nov)",
+      "note": "Sopravvissuta all'ammaraggio, recuperata; rientrata a Starbase il 7 ott, in Mega Bay 2 per le analisi. Al 30 ott ancora in ispezione in Mega Bay 2 (NSF). La sera del 7 nov spostata da Mega Bay 2 nella Gigabay, primo veicolo a entrarvi (NSF, LabPadre)",
+      "data": "7 nov",
       "src": {
-        "label": "NSF, 30 ott",
-        "url": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
+        "label": "@NASASpaceflight, 7 nov",
+        "url": "https://x.com/NASASpaceflight/status/2119185308646305839"
       }
     },
     {
@@ -1157,6 +1231,18 @@
     }
   ],
   "TEST": [
+    {
+      "data": "6 nov",
+      "veicolo": "Raptor 3 n. 144 (presunto)",
+      "tipo": "Trasferimento / passaggio sul sito",
+      "luogo": "McGregor",
+      "esito": "Osservato",
+      "nota": "Presunto Raptor 3 n. 144 in transito, forse di rientro da prove di sviluppo. Identificazione ed esito non confermati.",
+      "src": {
+        "label": "@SpaceRhin0, 6 nov",
+        "url": "https://x.com/SpaceRhin0/status/2118807321795067924"
+      }
+    },
     {
       "data": "5 nov",
       "veicolo": "Pad 39A",
@@ -1681,6 +1767,16 @@
   "X_POSTS": {
     "siti": [
       {
+        "autore": "@LabPadre",
+        "data": "7 nov",
+        "ora": "22:49",
+        "testo": "Ship 40 entra nella Gigabay",
+        "url": "https://x.com/LabPadre/status/2119185564339466320",
+        "media": "foto",
+        "id": "2119185564339466320",
+        "immagini": []
+      },
+      {
         "autore": "@NASASpaceflight",
         "data": "5 nov",
         "ora": "23:40",
@@ -1774,6 +1870,21 @@
       }
     ],
     "prototipi": [
+      {
+        "autore": "@NASASpaceflight",
+        "data": "7 nov",
+        "ora": "16:37",
+        "testo": "Ship 40 sul supporto di trasporto in Mega Bay 2, prima della Gigabay",
+        "url": "https://x.com/NASASpaceflight/status/2119091921524265243",
+        "media": "foto",
+        "id": "2119091921524265243",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HWiGz4ZXAAA8S0X.jpg"
+          }
+        ]
+      },
       {
         "autore": "@VickiCocks15",
         "data": "6 nov",
@@ -1968,6 +2079,16 @@
       }
     ],
     "lanci": [
+      {
+        "autore": "@InfographicTony",
+        "data": "7 nov",
+        "ora": "14:39",
+        "testo": "Anteprima infografica del Flight 15 (non ufficiale)",
+        "url": "https://x.com/InfographicTony/status/2119062310572757210",
+        "media": "foto",
+        "id": "2119062310572757210",
+        "immagini": []
+      },
       {
         "autore": "@SpaceX",
         "data": "7 nov",
