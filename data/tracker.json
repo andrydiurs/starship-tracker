@@ -1,21 +1,21 @@
 {
-  "ULTIMO_AGGIORNAMENTO": "7 nov 2026, 08:50",
+  "ULTIMO_AGGIORNAMENTO": "8 nov 2026, 08:45",
   "PROSSIMO_VOLO": {
     "volo": "Flight 15",
     "veicoli": "Super Heavy B22 + Ship 42",
     "netBreve": "13 nov",
-    "net": "Nuova slide CADENA: NET 13 nov (prima 12 nov; indicatore del traffico aereo, non ufficiale SpaceX) · Kiko Dontchev (VP Launch SpaceX) all'UP.Summit del 5 nov: target venerdì 13 nov · NSF (6 nov): veicoli in controlli finali, decide la licenza FAA per la cattura della Ship",
+    "net": "Ufficiale SpaceX (7 nov): NET venerdì 13 nov, finestra di 75 minuti dalle 23:45 ora di Roma (16:45 CT), in attesa dell'approvazione normativa · primo NOTAM pubblicato il 7 nov (lancio nel pomeriggio CST) · missione di oltre 22 ore, circa 14 orbite a ~275 km, 26 Starlink V3, poi cattura di Ship e booster",
     "sito": "Starbase, Pad 2",
     "obiettivo": "Doppia cattura in torre: Super Heavy e Ship",
     "licenzaBreve": "Non emessa",
-    "licenzaFaa": "Modifica della licenza attesa (serve il permesso di riportare S42 alla torre sorvolando aree abitate), non ancora emessa al 7 nov; nessun NOTAM né avviso marittimo per il lancio",
+    "licenzaFaa": "SpaceX (7 nov): lancio «in attesa dell'approvazione normativa». La modifica della licenza FAA per riportare S42 alla torre non risulta ancora emessa all'8 nov. Primo NOTAM pubblicato il 7 nov (copre parte dell'area di rientro di emergenza nell'Oceano Indiano)",
     "licenzaSrc": {
-      "label": "NSF, 6 nov",
-      "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
+      "label": "SpaceX, 7 nov",
+      "url": "https://www.spacex.com/launches/starship-flight-15"
     },
     "netSrc": {
-      "label": "NSF, 6 nov",
-      "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
+      "label": "SpaceX, 7 nov",
+      "url": "https://www.spacex.com/launches/starship-flight-15"
     },
     "ship": {
       "titolo": "Ship 42",
@@ -137,6 +137,42 @@
     }
   },
   "NEWS": [
+    {
+      "data": "7 nov",
+      "sez": "Lanci",
+      "testo": "SpaceX ufficializza il Flight 15: NET venerdì 13 nov, finestra di 75 minuti dalle 23:45 ora di Roma, in attesa dell'approvazione normativa. Primo tentativo di cattura sia della Ship sia del Super Heavy V3",
+      "src": {
+        "label": "@SpaceX, 7 nov",
+        "url": "https://x.com/SpaceX/status/2119093662957060389"
+      }
+    },
+    {
+      "data": "7 nov",
+      "sez": "Lanci",
+      "testo": "Pagina missione SpaceX: S42 resterà in orbita oltre 22 ore (circa 14 orbite a ~275 km), rilascerà 26 Starlink V3 (3 con telecamere per ispezionare lo scudo termico) e tornerà a Starbase per la cattura circa 22 h 32 min dopo il decollo",
+      "src": {
+        "label": "SpaceX, 7 nov",
+        "url": "https://www.spacex.com/launches/starship-flight-15"
+      }
+    },
+    {
+      "data": "7 nov",
+      "sez": "Lanci",
+      "testo": "Pubblicato il primo NOTAM per il Flight 15: indica un lancio nel pomeriggio (ora del Texas) e copre parte dell'area di rientro di emergenza nell'Oceano Indiano",
+      "src": {
+        "label": "@SpaceNotices, 7 nov",
+        "url": "https://x.com/SpaceNotices/status/2119030771352731650"
+      }
+    },
+    {
+      "data": "7 nov",
+      "sez": "Lanci",
+      "testo": "@mcrs987 pubblica la sua simulazione 3D del profilo del Flight 15, con le viste dai principali punti di osservazione; nota che nel caso di rientro anticipato tardivo mostrato da SpaceX la Ship scenderebbe sulle stesse aree degli ultimi booster V1",
+      "src": {
+        "label": "@mcrs987, 7 nov",
+        "url": "https://x.com/mcrs987/status/2119185826995491001"
+      }
+    },
     {
       "data": "6 nov",
       "sez": "Lanci",
@@ -593,7 +629,7 @@
     "siti": "Al Pad 2 prove di chopsticks e deluge (5 nov); al LC-39A test completo del deluge d'acqua ripreso da NSF, con doppio test serale alla torre. Alla Gigabay di Starbase resta una sola gru a torre e l'esterno è quasi finito. Per NSF il Flight 16 dal 39A è più probabile a inizio 2027; la FAA dovrebbe aggiungere il 39A alla licenza VOL 23-129.",
     "prototipi": "S42 è in Mega Bay 2 e B22 in Mega Bay 1 per i controlli finali del Flight 15. B23 è in Mega Bay 1 e S43 riceve i motori per uno static fire a metà dicembre (Flight 16 dal 39A). Booster 24 è completamente impilato, l'impilamento di Booster 25 è iniziato verso il 2 nov; S44 e S45 avanzano in Mega Bay 2 (NSF, 6 nov).",
     "test": "Entrambi i veicoli del Flight 15 hanno completato gli static fire. Il 5 nov: deluge completo al 39A e prove chopsticks/deluge al Pad 2; a McGregor di nuovo un Raptor 3 «2x9» in passaggio dopo oltre una settimana ferma. Stime NSF: B23 static fire al 39A a metà dicembre, S43 a Starbase a metà dicembre.",
-    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. Il Flight 15 con la prima doppia cattura ha NET 13 nov secondo una nuova slide CADENA e Kiko Dontchev (non ufficiale): B22 e S42 sono nei controlli finali, ma al 7 nov mancano licenza FAA, NOTAM e avvisi marittimi. NSF parla di una missione di circa 24 ore (non confermato). Per NSF il Flight 16 dal 39A è più probabile a inizio 2027."
+    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. SpaceX ha ufficializzato il Flight 15 (B22 + S42): NET venerdì 13 nov, finestra dalle 23:45 ora di Roma, in attesa dell'approvazione normativa. Missione di oltre 22 ore con 26 Starlink V3 e prima doppia cattura in torre; primo NOTAM pubblicato il 7 nov. Per NSF il Flight 16 dal 39A è più probabile a inizio 2027."
   },
   "SITI": [
     {
@@ -763,16 +799,6 @@
     }
   ],
   "NON_CONFERMATI": [
-    {
-      "titolo": "Flight 15 NET 13 nov",
-      "data": "6 nov",
-      "testo": "Nuova slide CADENA con NET 13 nov (prima 12 nov) e target 13 nov indicato da Kiko Dontchev all'UP.Summit. Non è un annuncio ufficiale SpaceX; al 7 nov licenza FAA e NOTAM ancora assenti (https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/)"
-    },
-    {
-      "titolo": "Flight 15 missione da 24 ore",
-      "data": "6 nov",
-      "testo": "Secondo NSF il piano di lavoro prevede circa 24 ore di volo per S42 (15-16 orbite) per riallinearsi al corridoio di rientro verso il Pad 2, con punti di rientro anticipato. Non confermato da SpaceX (https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/)"
-    },
     {
       "titolo": "Flight 16 a inizio 2027",
       "data": "6 nov",
@@ -1943,6 +1969,51 @@
     ],
     "lanci": [
       {
+        "autore": "@SpaceX",
+        "data": "7 nov",
+        "ora": "16:44",
+        "testo": "Starship si prepara alla cattura: Flight 15 NET venerdì 13 nov, in attesa dell'approvazione normativa",
+        "url": "https://x.com/SpaceX/status/2119093662957060389",
+        "media": "video",
+        "id": "2119093662957060389",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2119092960125956096/img/Z8AJUBX8VV0RDzzY.jpg"
+          }
+        ]
+      },
+      {
+        "autore": "@mcrs987",
+        "data": "7 nov",
+        "ora": "22:50",
+        "testo": "Simulazione 3D del profilo del Flight 15 con le viste dai punti di osservazione",
+        "url": "https://x.com/mcrs987/status/2119185826995491001",
+        "media": "video",
+        "id": "2119185826995491001",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2119168255944216576/img/ENebwd0CDbFU9VF7.jpg"
+          }
+        ]
+      },
+      {
+        "autore": "@SpaceNotices",
+        "data": "7 nov",
+        "ora": "12:34",
+        "testo": "Primo NOTAM del Flight 15: lancio nel pomeriggio (ora del Texas)",
+        "url": "https://x.com/SpaceNotices/status/2119030771352731650",
+        "media": "foto",
+        "id": "2119030771352731650",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HWhPQNKX0AAp1bN.jpg"
+          }
+        ]
+      },
+      {
         "autore": "@NASASpaceflight",
         "data": "6 nov",
         "ora": "16:32",
@@ -1986,51 +2057,6 @@
           {
             "tipo": "foto",
             "url": "https://pbs.twimg.com/media/HWaMS_4X0AAg5E8.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@mcrs987",
-        "data": "4 nov",
-        "ora": "07:35",
-        "testo": "Grafica della Ship in avvicinamento a Starbase, pronta per quando uscirà la pagina della missione (non ufficiale)",
-        "url": "https://x.com/mcrs987/status/2117868308548456865",
-        "media": "foto",
-        "id": "2117868308548456865",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HWQt4QGXUAATTxz.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@mcrs987",
-        "data": "1 nov",
-        "ora": "00:03",
-        "testo": "Stima della traiettoria di rientro della Ship su Starbase (non ufficiale)",
-        "url": "https://x.com/mcrs987/status/2116667427799146955",
-        "media": "foto",
-        "id": "2116667427799146955",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HV_pv51X0AAZBw8.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@SpaceNotices",
-        "data": "29 ott",
-        "ora": "15:36",
-        "testo": "Flight 15 ora NET 12 novembre secondo una nuova slide CADENA",
-        "url": "https://x.com/SpaceNotices/status/2115815059381469690",
-        "media": "foto",
-        "id": "2115815059381469690",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HVziKGzX0AA52Go.jpg"
           }
         ]
       }
