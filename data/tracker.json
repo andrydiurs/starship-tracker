@@ -1,5 +1,5 @@
 {
-  "ULTIMO_AGGIORNAMENTO": "8 nov 2026, 08:56",
+  "ULTIMO_AGGIORNAMENTO": "9 nov 2026, 08:33",
   "PROSSIMO_VOLO": {
     "volo": "Flight 15",
     "veicoli": "Super Heavy B22 + Ship 42",
@@ -8,7 +8,7 @@
     "sito": "Starbase, Pad 2",
     "obiettivo": "Doppia cattura in torre: Super Heavy e Ship",
     "licenzaBreve": "Non emessa",
-    "licenzaFaa": "SpaceX (7 nov): lancio «in attesa dell'approvazione normativa». La modifica della licenza FAA per riportare S42 alla torre non risulta ancora emessa all'8 nov. Primo NOTAM pubblicato il 7 nov (copre parte dell'area di rientro di emergenza nell'Oceano Indiano)",
+    "licenzaFaa": "SpaceX (7 nov): lancio «in attesa dell'approvazione normativa». La modifica della licenza FAA per riportare S42 alla torre non risulta ancora emessa. Primo NOTAM pubblicato il 7 nov. Piano operativo FAA ADVZY del 9 nov ancora senza voci Starship.",
     "licenzaSrc": {
       "label": "SpaceX, 7 nov",
       "url": "https://www.spacex.com/launches/starship-flight-15"
@@ -21,7 +21,7 @@
       "titolo": "Ship 42",
       "versione": "V3",
       "stato": {
-        "label": "In Mega Bay 2: ispezioni finali, FTS e carico Starlink",
+        "label": "Controlli finali; in procinto di stacking al Pad 2 (NSF)",
         "tone": "success"
       },
       "milestones": [
@@ -58,21 +58,22 @@
         {
           "nome": "Trasferimento in rampa",
           "fatto": false,
-          "data": "n.d.",
-          "nota": "al Pad 2 solo per test chopsticks l'11-12 set. Nella notte tra 28 e 29 ott S42 ha lasciato Massey's ed è tornata in produzione per gli ultimi preparativi (Mega Bay 2 e carico degli Starlink V3 attesi, non confermato). @mcrs987: il controllo finale della Ship sarà la voce più lunga, circa una settimana e mezza. Il 29 ott S42 è entrata in Mega Bay 2 per la preparazione al volo. Il 30 ott NSF conferma: S42 in Mega Bay 2 per le ispezioni finali, le cariche del sistema di terminazione del volo (FTS) e poi il carico degli Starlink",
+          "data": "atteso",
+          "nota": "al Pad 2 solo per test chopsticks l'11-12 set. Nella notte tra 28 e 29 ott S42 ha lasciato Massey's ed è tornata in produzione. Il 29 ott entrata in Mega Bay 2 per ispezioni finali, FTS e carico Starlink (NSF 30 ott). NSF (7 nov): i sistemi del pad sono stati testati e i due veicoli (B22, S42) stanno per essere portati al Pad 2 per l'impilamento",
           "src": {
-            "label": "NSF, 30 ott",
-            "url": "https://www.nasaspaceflight.com/2026/10/spacex-static-fires-flight-15/"
+            "label": "@NASASpaceflight, 7 nov",
+            "url": "https://x.com/NASASpaceflight/status/2119217458729124052"
           }
         },
         {
           "nome": "Impilamento",
           "fatto": false,
-          "data": "n.d.",
+          "data": "atteso",
           "src": {
-            "label": "NSF, 18 ott",
-            "url": "https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/"
-          }
+            "label": "@NASASpaceflight, 7 nov",
+            "url": "https://x.com/NASASpaceflight/status/2119217458729124052"
+          },
+          "nota": "NSF (7 nov): B22 e S42 stanno per essere portati al Pad 2 per lo stacking; non ancora avvenuto"
         }
       ]
     },
@@ -80,7 +81,7 @@
       "titolo": "Super Heavy B22",
       "versione": "V3",
       "stato": {
-        "label": "Static fire riuscito, controlli finali in Mega Bay 1",
+        "label": "Controlli finali; in procinto di stacking al Pad 2 (NSF)",
         "tone": "success"
       },
       "milestones": [
@@ -126,17 +127,80 @@
         {
           "nome": "Impilamento",
           "fatto": false,
-          "data": "n.d.",
+          "data": "atteso",
           "src": {
-            "label": "@mcrs987, 28 ott",
-            "url": "https://x.com/mcrs987/status/2115473239883284498"
+            "label": "@NASASpaceflight, 7 nov",
+            "url": "https://x.com/NASASpaceflight/status/2119217458729124052"
           },
-          "nota": "@mcrs987 (28 ott): sul booster è aperto il raceway, quindi sta per essere installato il sistema di terminazione del volo (FTS)"
+          "nota": "@mcrs987 (28 ott): raceway aperto, FTS in installazione. NSF (7 nov): sistemi del pad testati; B22 e S42 stanno per essere portati al Pad 2 per lo stacking"
         }
       ]
     }
   },
   "NEWS": [
+    {
+      "data": "9 nov",
+      "sez": "Siti",
+      "testo": "Chiusura strada a Starbase lunedì 9 nov, 10:00–14:00, dalla Production al Pad. Fraser (NSF) si chiede se in quella finestra arriveranno i veicoli del Flight 15: non confermato",
+      "src": {
+        "label": "@efraser77 / NSF, 9 nov",
+        "url": "https://x.com/efraser77/status/2119609293247045714"
+      }
+    },
+    {
+      "data": "9 nov",
+      "sez": "Siti",
+      "testo": "Video notturno di Starbase di RGV Aerial Photography, con conto alla rovescia «T-115 ore al Flight 15» (conteggio dell'account, non ufficiale SpaceX)",
+      "src": {
+        "label": "@RGVaerialphotos, 9 nov",
+        "url": "https://x.com/RGVaerialphotos/status/2119628475984470444"
+      }
+    },
+    {
+      "data": "9 nov",
+      "sez": "Lanci",
+      "testo": "FAA: piano operativo ADVZY 008 del 9 nov senza voci Starship; nessuna licenza specifica per il Flight 15 trovata. F15 resta NET 13 nov in attesa di approvazione normativa",
+      "src": {
+        "label": "FAA ATCSCC, 9 nov",
+        "url": "https://www.fly.faa.gov/adv/adv_spt"
+      }
+    },
+    {
+      "data": "7 nov",
+      "sez": "Lanci",
+      "testo": "NSF: i sistemi del sito di lancio sono stati testati; B22 e S42 stanno per essere portati al Pad 2 per l'impilamento. Flight 15 potrebbe partire entro una settimana",
+      "src": {
+        "label": "@NASASpaceflight, 7 nov",
+        "url": "https://x.com/NASASpaceflight/status/2119217458729124052"
+      }
+    },
+    {
+      "data": "6-8 nov",
+      "sez": "Test",
+      "testo": "Test dei hold-down clamp del Booster al Pad 2 (6 nov; 8 nov ritratti/estesi singolarmente e poi in simultanea); SQD non ancora visto testare (non confermato)",
+      "src": {
+        "label": "@VickiCocks15, 8 nov",
+        "url": "https://x.com/VickiCocks15/status/2119580715314491576"
+      }
+    },
+    {
+      "data": "7-8 nov",
+      "sez": "Prototipi",
+      "testo": "Ship 45 sollevata in Mega Bay 2 nella notte 7-8 nov con tubi di trasferimento e, per motivi ignoti, un singolo Raptor (non confermato)",
+      "src": {
+        "label": "@VickiCocks15, 8 nov",
+        "url": "https://x.com/VickiCocks15/status/2119393358741217589"
+      }
+    },
+    {
+      "data": "6 nov",
+      "sez": "Test",
+      "testo": "Raptor 3 RVAC uscito la mattina verso i banchi di prova a McGregor (esito del test non confermato)",
+      "src": {
+        "label": "@SpaceRhin0, 6 nov",
+        "url": "https://x.com/SpaceRhin0/status/2118697009557172517"
+      }
+    },
     {
       "data": "8 nov",
       "sez": "Siti",
@@ -680,10 +744,10 @@
     }
   ],
   "IN_BREVE": {
-    "siti": "La sera del 7 nov Ship 40 è entrata nella Gigabay di Starbase, primo veicolo all'interno; tubazioni criogeniche verso Massey's (non confermato). Al Pad 2 prove di chopsticks e deluge (5 nov); al LC-39A test completo del deluge d'acqua ripreso da NSF, con doppio test serale alla torre. Alla Gigabay di Starbase resta una sola gru a torre e l'esterno è quasi finito. Per NSF il Flight 16 dal 39A è più probabile a inizio 2027; la FAA dovrebbe aggiungere il 39A alla licenza VOL 23-129.",
-    "prototipi": "S42 è in Mega Bay 2 e B22 in Mega Bay 1 per i controlli finali del Flight 15. B23 è in Mega Bay 1 e S43 riceve i motori per uno static fire a metà dicembre (Flight 16 dal 39A). Booster 24 è completamente impilato, l'impilamento di Booster 25 è iniziato verso il 2 nov; S44 e S45 avanzano in Mega Bay 2 (NSF, 6 nov). Il 7 nov Ship 40 è entrata nella Gigabay; sezione A4 di B24 in Mega Bay 1 (non confermato).",
-    "test": "Entrambi i veicoli del Flight 15 hanno completato gli static fire. Il 5 nov: deluge completo al 39A e prove chopsticks/deluge al Pad 2; a McGregor di nuovo un Raptor 3 «2x9» in passaggio dopo oltre una settimana ferma. Stime NSF: B23 static fire al 39A a metà dicembre, S43 a Starbase a metà dicembre. Il 6 nov a McGregor presunto Raptor 3 n. 144 in transito (non confermato).",
-    "lanci": "14 voli effettuati, l'ultimo il 28 set con la prima orbita. SpaceX ha ufficializzato il Flight 15 (B22 + S42): NET venerdì 13 nov, finestra dalle 23:45 ora di Roma, in attesa dell'approvazione normativa. Missione di oltre 22 ore con 26 Starlink V3 e prima doppia cattura in torre; primo NOTAM pubblicato il 7 nov. Per NSF il Flight 16 dal 39A è più probabile a inizio 2027. Il piano FAA dell'8 nov non elenca ancora Starship."
+    "siti": "9 nov: chiusura strada a Starbase 10:00–14:00 dalla Production al Pad (Fraser/NSF; se arriveranno i veicoli F15 non è confermato). Video notturno RGV di Starbase con «T-115 ore al Flight 15» (conteggio dell'account). La sera del 7 nov Ship 40 è entrata nella Gigabay, primo veicolo all'interno. Al Pad 2: hold-down clamp del Booster (6-8 nov, non confermato) e sistemi testati in vista dello stacking.",
+    "prototipi": "NSF (7 nov): B22 e S42 stanno per essere portati al Pad 2 per l'impilamento del Flight 15. S45 sollevata in Mega Bay 2 con un singolo Raptor (non confermato). B24 completamente impilato; sezione A4 in Mega Bay 1 (nc). Ship 40 nella Gigabay.",
+    "test": "6 nov: un Raptor 3 RVAC uscito verso i banchi di prova a McGregor (esito non confermato). 6-8 nov: test hold-down clamp del Booster al Pad 2 (non confermato). Entrambi i veicoli del Flight 15 hanno completato gli static fire; sistemi del pad testati (NSF, 7 nov).",
+    "lanci": "Flight 15 (B22 + S42) resta NET venerdì 13 nov, finestra dalle 23:45 ora di Roma, in attesa dell'approvazione normativa. Piano operativo FAA del 9 nov senza voci Starship; nessuna licenza F15 trovata. NSF: stacking al Pad 2 imminente. Missione di oltre 22 ore con 26 Starlink V3 e doppia cattura."
   },
   "SITI": [
     {
@@ -693,12 +757,12 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "Prove chopsticks e deluge del 5 nov; BQD in vista del Flight 15",
-      "ultimo": "Il 5 nov prove di chopsticks e deluge (timelapse RGV). Prima: lavori sui BQD di LOX e metano; static fire di B22 il 25 ott; nella notte tra 25 e 26 ott B22 sollevato ad altezza di cattura e rientrato in Mega Bay 1.",
-      "data": "5 nov",
+      "breve": "Chiusura strada 9 nov 10:00–14:00 Production→Pad; hold-down clamp (nc)",
+      "ultimo": "9 nov: chiusura strada 10:00–14:00 dalla Production al Pad (Fraser/NSF; se arriveranno i veicoli F15 non è confermato). 6-8 nov: test hold-down clamp del Booster (non confermato, @VickiCocks15). NSF (7 nov): sistemi del pad testati in vista dello stacking di B22/S42. Prima: prove chopsticks e deluge del 5 nov (timelapse RGV); lavori sui BQD; static fire B22 25 ott.",
+      "data": "9 nov",
       "src": {
-        "label": "@RGVaerialphotos, 5 nov",
-        "url": "https://x.com/RGVaerialphotos/status/2118557148183683543"
+        "label": "@efraser77 / NSF, 9 nov",
+        "url": "https://x.com/efraser77/status/2119609293247045714"
       }
     },
     {
@@ -738,12 +802,12 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "Al completo con cinque Ship; A3:4 di S45 entrata (nc)",
-      "ultimo": "La sera del 5 nov sezione A3:4 di Ship 45 spostata in Mega Bay 2 (solo @VickiCocks15, non confermato). S42 in ispezioni finali/FTS/carico Starlink; presenti anche S40, S43, S44 e S45.",
-      "data": "5 nov",
+      "breve": "S45 sollevata con un Raptor (nc); S42 nei controlli finali",
+      "ultimo": "Notte 7-8 nov: S45 sollevata con transfer tubes e un singolo Raptor (non confermato, @VickiCocks15). La sera del 5 nov sezione A3:4 di Ship 45 spostata in Mega Bay 2 (solo @VickiCocks15, non confermato). S42 in ispezioni finali/FTS/carico Starlink; presenti anche S40, S43, S44 e S45.",
+      "data": "8 nov",
       "src": {
-        "label": "@VickiCocks15, 5 nov",
-        "url": "https://x.com/VickiCocks15/status/2118496660057633270"
+        "label": "@VickiCocks15, 8 nov",
+        "url": "https://x.com/VickiCocks15/status/2119393358741217589"
       }
     },
     {
@@ -853,6 +917,21 @@
     }
   ],
   "NON_CONFERMATI": [
+    {
+      "titolo": "Veicoli Flight 15 nella chiusura strada del 9 nov",
+      "data": "9 nov",
+      "testo": "Fraser (NSF) si chiede se nella chiusura 10:00–14:00 Production→Pad arriveranno i veicoli del Flight 15. Solo una domanda: non confermato (https://x.com/efraser77/status/2119609293247045714)"
+    },
+    {
+      "titolo": "Hold-down clamp Booster al Pad 2",
+      "data": "6-8 nov",
+      "testo": "Secondo @VickiCocks15, test dei hold-down clamp del Booster al Pad 2 (6 e 8 nov); SQD non ancora visto. Non confermato (https://x.com/VickiCocks15/status/2119580715314491576)"
+    },
+    {
+      "titolo": "Ship 45 sollevata con un Raptor in Mega Bay 2",
+      "data": "7-8 nov",
+      "testo": "Secondo @VickiCocks15, S45 sollevata in Mega Bay 2 con transfer tubes e un singolo Raptor. Non confermato (https://x.com/VickiCocks15/status/2119393358741217589)"
+    },
     {
       "titolo": "Tubazioni Sanchez → Massey's",
       "data": "8 nov",
@@ -1022,12 +1101,12 @@
       "versione": "V3",
       "volo": "Flight 15",
       "stato": "Test",
-      "breve": "Static fire completo; controlli finali in Mega Bay 1",
-      "note": "Prove crio 9-10 set; rollout al Pad 2 il 24 ott; static fire completo a 33 motori il 25 ott (circa 16 s), confermato da SpaceX. Nella notte tra 25 e 26 ott sollevato ad altezza di cattura e rientrato in Mega Bay 1 per i preparativi finali. @mcrs987 (28 ott): raceway aperto, sta per ricevere il sistema di terminazione del volo (FTS). NSF (6 nov): in controlli finali per il Flight 15 con NET 13 nov",
-      "data": "6 nov",
+      "breve": "Controlli finali; in procinto di stacking al Pad 2 (NSF)",
+      "note": "Prove crio 9-10 set; rollout al Pad 2 il 24 ott; static fire completo a 33 motori il 25 ott (circa 16 s), confermato da SpaceX. Nella notte tra 25 e 26 ott sollevato ad altezza di cattura e rientrato in Mega Bay 1 per i preparativi finali. @mcrs987 (28 ott): raceway aperto, sta per ricevere il sistema di terminazione del volo (FTS). NSF (6 nov): in controlli finali per il Flight 15 con NET 13 nov NSF (7 nov): sistemi del sito di lancio testati; B22 e S42 stanno per essere portati al Pad 2 per l'impilamento",
+      "data": "7 nov",
       "src": {
-        "label": "NSF, 6 nov",
-        "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
+        "label": "@NASASpaceflight, 7 nov",
+        "url": "https://x.com/NASASpaceflight/status/2119217458729124052"
       }
     },
     {
@@ -1036,12 +1115,12 @@
       "versione": "V3",
       "volo": "Flight 15",
       "stato": "Test",
-      "breve": "In Mega Bay 2: ispezioni finali, FTS e carico Starlink",
-      "note": "Test chopsticks al Pad 2 (11-12 set); ulteriore prova crio a Massey's (9 ott). Partita per Massey's il 26 ott; nella notte tra 26 e 27 ott static fire a un solo motore e il 27 ott verso le 22:46 ora di Roma static fire a sei motori a piena durata. Il 28 ott SpaceX ha confermato la fine degli static fire, compresa un'accensione di un solo Raptor che simula la manovra di deorbit. Nella notte tra 28 e 29 ott è tornata in produzione per gli ultimi preparativi (Mega Bay 2 e carico Starlink V3 attesi, non confermato). Il 29 ott è entrata in Mega Bay 2. Il 30 ott NSF: in Mega Bay 2 per ispezioni finali e cariche del sistema di terminazione del volo, poi caricamento dei satelliti Starlink per il Flight 15. NSF (6 nov): ancora nei controlli finali; prossimi passi cariche FTS e carico Starlink. Piano di missione di circa 24 ore (non confermato)",
-      "data": "6 nov",
+      "breve": "Controlli finali; in procinto di stacking al Pad 2 (NSF)",
+      "note": "Test chopsticks al Pad 2 (11-12 set); ulteriore prova crio a Massey's (9 ott). Partita per Massey's il 26 ott; nella notte tra 26 e 27 ott static fire a un solo motore e il 27 ott verso le 22:46 ora di Roma static fire a sei motori a piena durata. Il 28 ott SpaceX ha confermato la fine degli static fire, compresa un'accensione di un solo Raptor che simula la manovra di deorbit. Nella notte tra 28 e 29 ott è tornata in produzione per gli ultimi preparativi (Mega Bay 2 e carico Starlink V3 attesi, non confermato). Il 29 ott è entrata in Mega Bay 2. Il 30 ott NSF: in Mega Bay 2 per ispezioni finali e cariche del sistema di terminazione del volo, poi caricamento dei satelliti Starlink per il Flight 15. NSF (6 nov): ancora nei controlli finali; prossimi passi cariche FTS e carico Starlink. Piano di missione di circa 24 ore (non confermato) NSF (7 nov): sistemi del sito di lancio testati; B22 e S42 stanno per essere portati al Pad 2 per l'impilamento",
+      "data": "7 nov",
       "src": {
-        "label": "NSF, 6 nov",
-        "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
+        "label": "@NASASpaceflight, 7 nov",
+        "url": "https://x.com/NASASpaceflight/status/2119217458729124052"
       }
     },
     {
@@ -1095,12 +1174,12 @@
       "versione": "V3",
       "volo": "n.d.",
       "stato": "In costruzione",
-      "breve": "Sezione A3:4 in Mega Bay 2 (nc)",
-      "note": "Prua in Mega Bay 2 dal 23 ott; A2:3 dalla Starfactory il 3 nov. La sera del 5 nov la sezione A3:4 è stata spostata in Mega Bay 2 (solo @VickiCocks15, non confermato). NSF (6 nov): S44 e S45 avanzano in Mega Bay 2. 8 nov: tubi di trasferimento passati dalla Gigabay verso Mega Bay 2 (solo @VickiCocks15, non confermato).",
+      "breve": "Sollevata in Mega Bay 2 con un Raptor (nc)",
+      "note": "Prua in Mega Bay 2 dal 23 ott; A2:3 dalla Starfactory il 3 nov. La sera del 5 nov la sezione A3:4 è stata spostata in Mega Bay 2 (solo @VickiCocks15, non confermato). NSF (6 nov): S44 e S45 avanzano in Mega Bay 2. 8 nov: tubi di trasferimento passati dalla Gigabay verso Mega Bay 2 (solo @VickiCocks15, non confermato). Notte 7-8 nov: sollevata in Mega Bay 2 con transfer tubes e un singolo Raptor (solo @VickiCocks15, non confermato)",
       "data": "8 nov",
       "src": {
-        "label": "NSF, 6 nov",
-        "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
+        "label": "@VickiCocks15, 8 nov",
+        "url": "https://x.com/VickiCocks15/status/2119393358741217589"
       }
     },
     {
@@ -1231,6 +1310,30 @@
     }
   ],
   "TEST": [
+    {
+      "data": "6-8 nov",
+      "veicolo": "Pad 2 / Booster",
+      "tipo": "Hold-down clamp",
+      "luogo": "Starbase Pad 2",
+      "esito": "Osservato (non confermato)",
+      "nota": "Secondo @VickiCocks15: test hold-down clamp del Booster (6 nov; 8 nov ritratti/estesi singolarmente e poi in simultanea). SQD non ancora visto testare.",
+      "src": {
+        "label": "@VickiCocks15, 8 nov",
+        "url": "https://x.com/VickiCocks15/status/2119580715314491576"
+      }
+    },
+    {
+      "data": "6 nov",
+      "veicolo": "Raptor 3 RVAC",
+      "tipo": "Trasferimento ai banchi di prova",
+      "luogo": "McGregor",
+      "esito": "Osservato",
+      "nota": "Un Raptor 3 RVAC uscito la mattina verso i banchi di prova a McGregor. Esito del test non confermato.",
+      "src": {
+        "label": "@SpaceRhin0, 6 nov",
+        "url": "https://x.com/SpaceRhin0/status/2118697009557172517"
+      }
+    },
     {
       "data": "6 nov",
       "veicolo": "Raptor 3 n. 144 (presunto)",
@@ -1767,6 +1870,26 @@
   "X_POSTS": {
     "siti": [
       {
+        "autore": "@RGVaerialphotos",
+        "data": "9 nov",
+        "ora": "04:09",
+        "testo": "Video notturno di Starbase, T-115 ore al Flight 15 (conteggio account)",
+        "url": "https://x.com/RGVaerialphotos/status/2119628475984470444",
+        "media": "video",
+        "id": "2119628475984470444",
+        "immagini": []
+      },
+      {
+        "autore": "@efraser77",
+        "data": "9 nov",
+        "ora": "05:20",
+        "testo": "Chiusura strada Production→Pad 10:00–14:00",
+        "url": "https://x.com/efraser77/status/2119609293247045714",
+        "media": "foto",
+        "id": "2119609293247045714",
+        "immagini": []
+      },
+      {
         "autore": "@LabPadre",
         "data": "7 nov",
         "ora": "22:49",
@@ -1870,6 +1993,26 @@
       }
     ],
     "prototipi": [
+      {
+        "autore": "@VickiCocks15",
+        "data": "8 nov",
+        "ora": "n.d.",
+        "testo": "S45 sollevata in Mega Bay 2 con tubes e un Raptor (nc)",
+        "url": "https://x.com/VickiCocks15/status/2119393358741217589",
+        "media": "foto",
+        "id": "2119393358741217589",
+        "immagini": []
+      },
+      {
+        "autore": "@NASASpaceflight",
+        "data": "7 nov",
+        "ora": "n.d.",
+        "testo": "Sistemi pad testati; B22/S42 verso stacking al Pad 2",
+        "url": "https://x.com/NASASpaceflight/status/2119217458729124052",
+        "media": "testo",
+        "id": "2119217458729124052",
+        "immagini": []
+      },
       {
         "autore": "@NASASpaceflight",
         "data": "7 nov",
@@ -1985,6 +2128,26 @@
       }
     ],
     "test": [
+      {
+        "autore": "@VickiCocks15",
+        "data": "8 nov",
+        "ora": "n.d.",
+        "testo": "Hold-down clamp Booster al Pad 2 (nc)",
+        "url": "https://x.com/VickiCocks15/status/2119580715314491576",
+        "media": "foto",
+        "id": "2119580715314491576",
+        "immagini": []
+      },
+      {
+        "autore": "@SpaceRhin0",
+        "data": "6 nov",
+        "ora": "n.d.",
+        "testo": "Raptor 3 RVAC verso i banchi a McGregor",
+        "url": "https://x.com/SpaceRhin0/status/2118697009557172517",
+        "media": "foto",
+        "id": "2118697009557172517",
+        "immagini": []
+      },
       {
         "autore": "@SpaceRhin0",
         "data": "6 nov",
