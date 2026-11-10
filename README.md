@@ -123,7 +123,6 @@ Grafici e tabelle sono descritti negli array `CHARTS` e `TABLES` in `dati/dati.j
 
 ## Voli passati
 
-- `voli/` è la pagina dei voli di prova già fatti (IFT-1 … ultimo volo): per ognuno obiettivi e risultato con icone, esito con badge, veicoli, fonte e almeno un video di @SpaceX su X.
+- `voli/` è la pagina dei voli di prova già fatti (IFT-1 … ultimo volo): per ognuno una breve descrizione con curiosità, obiettivi e risultato con icone per singolo obiettivo, veicoli, fonte e almeno un video di @SpaceX su X. Non c'è un giudizio complessivo di successo o fallimento.
 - I dati stanno in `data/voli.json`. Per aggiungere un volo si aggiunge un oggetto in fondo a `voli` (stessi campi degli altri). Ogni video è l'id di un post di @SpaceX con la sua miniatura `pbs.twimg.com`.
 - Le miniature sono leggere; l'incorporamento ufficiale di X (`widgets.js`) si carica solo quando si tocca una miniatura.
-- Esito: Successo se gli obiettivi principali sono raggiunti, Parziale se solo una parte, Fallito se il profilo di volo non è stato completato. Date e ore in ora di Roma.

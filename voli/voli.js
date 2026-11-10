@@ -52,11 +52,9 @@
   }
 
   function card(f) {
-    var tone = f.esito.tone;
-    return '<article class="card accented flight t-' + tone + '" id="ift-' + f.n + '" aria-labelledby="h-ift-' + f.n + '">' +
+    return '<article class="card accented acc-voli flight" id="ift-' + f.n + '" aria-labelledby="h-ift-' + f.n + '">' +
       '<div class="fl-head">' +
         '<h2 class="fl-title" id="h-ift-' + f.n + '">' + esc(f.ift) + " <small>" + esc(f.nome) + "</small></h2>" +
-        '<span class="badge t-' + tone + '">' + esc(f.esito.label) + "</span>" +
       "</div>" +
       '<p class="fl-when">' + esc(f.data) + ", " + esc(f.ora) + " (ora di Roma)</p>" +
       '<p class="fl-focus">' + esc(f.focus) + "</p>" +
@@ -65,11 +63,11 @@
         "<li><em>Ship</em> <b>" + esc(f.ship) + "</b></li>" +
         "<li><em>Versione</em> <b>" + esc(f.versione) + "</b> <span class=\"chip\">" + esc(f.versione_nota) + "</span></li>" +
       "</ul>" +
+      '<div class="fl-desc"><p>' + esc(f.descrizione) + '</p><p class="fl-cur"><b>Curiosità</b> ' + esc(f.curiosita) + "</p></div>" +
       '<ul class="goals" aria-label="Obiettivi e risultato">' +
         '<li class="goals-head" aria-hidden="true"><span>Obiettivi</span><span>Risultato</span></li>' +
         goalRows(f) +
       "</ul>" +
-      '<p class="fl-nota">' + esc(f.nota) + "</p>" +
       '<h3 class="vids-h">Video di @SpaceX</h3>' +
       '<div class="vids">' + videoCards(f) + "</div>" +
       '<p class="fl-src">Fonte: <a href="' + esc(f.src.url) + '" target="_blank" rel="noopener noreferrer">' + esc(f.src.label) + "</a></p>" +
@@ -78,8 +76,6 @@
 
   function render(data) {
     var voli = data.voli;
-    var tally = { success: 0, warning: 0, danger: 0 };
-    voli.forEach(function (f) { tally[f.esito.tone]++; });
     document.getElementById("updated").innerHTML = "Scheda al <strong>" + esc(data.aggiornato) + "</strong>";
 
     var legend = ["ok", "part", "fail", "skip"].map(function (k) {
@@ -87,7 +83,7 @@
     }).join("");
 
     var nav = voli.map(function (f) {
-      return '<a href="#ift-' + f.n + '" style="--tone: var(--' + (f.esito.tone === "success" ? "ok" : f.esito.tone === "warning" ? "warn" : "bad") + ')" aria-label="' + esc(f.ift + ", " + f.esito.label) + '">' + f.n + "</a>";
+      return '<a href="#ift-' + f.n + '" aria-label="' + esc(f.ift) + '">' + f.n + "</a>";
     }).join("");
 
     app.innerHTML =
@@ -95,11 +91,6 @@
         '<p class="kicker">Storico</p>' +
         '<h1 id="h-voli">Voli passati</h1>' +
         '<p class="vp-lead">I ' + voli.length + " voli di prova di Starship completa, uno per uno: gli obiettivi dichiarati, che cosa è successo davvero e un video di SpaceX su X di una fase principale.</p>" +
-        '<ul class="vp-tally">' +
-          '<li style="--tone: var(--ok)"><b>' + tally.success + "</b><span>successi</span></li>" +
-          '<li style="--tone: var(--warn)"><b>' + tally.warning + "</b><span>parziali</span></li>" +
-          '<li style="--tone: var(--bad)"><b>' + tally.danger + "</b><span>falliti</span></li>" +
-        "</ul>" +
         '<p class="vp-legend" aria-label="Legenda">' + legend + "</p>" +
       "</section>" +
       '<nav class="vp-nav" aria-label="Vai al volo">' + nav + "</nav>" +
@@ -143,7 +134,7 @@
     });
   }
 
-  fetch("../data/voli.json?v=20261110a")
+  fetch("../data/voli.json?v=20261110b")
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(render)
     .catch(function () {
