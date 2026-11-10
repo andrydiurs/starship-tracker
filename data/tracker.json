@@ -1,5 +1,5 @@
 {
-  "ULTIMO_AGGIORNAMENTO": "9 nov 2026, 08:33",
+  "ULTIMO_AGGIORNAMENTO": "10 nov 2026, 08:45",
   "PROSSIMO_VOLO": {
     "volo": "Flight 15",
     "veicoli": "Super Heavy B22 + Ship 42",
@@ -8,10 +8,10 @@
     "sito": "Starbase, Pad 2",
     "obiettivo": "Doppia cattura in torre: Super Heavy e Ship",
     "licenzaBreve": "Non emessa",
-    "licenzaFaa": "SpaceX (7 nov): lancio «in attesa dell'approvazione normativa». La modifica della licenza FAA per riportare S42 alla torre non risulta ancora emessa. Primo NOTAM pubblicato il 7 nov. Piano operativo FAA ADVZY del 9 nov ancora senza voci Starship.",
+    "licenzaFaa": "SpaceX (7 nov): lancio «in attesa dell'approvazione normativa». La modifica della licenza FAA per riportare S42 alla torre non risulta ancora emessa. Il 9 nov lancio e rientro del Flight 15 sono stati aggiunti al piano operativo FAA (NET 13 nov il lancio, 14 nov il rientro) e sono usciti gli avvisi di navigazione rimanenti, compresa la zona di cattura di S42 e un'area di rientro di emergenza vicino alle Hawaii (@SpaceNotices).",
     "licenzaSrc": {
-      "label": "SpaceX, 7 nov",
-      "url": "https://www.spacex.com/launches/starship-flight-15"
+      "label": "@SpaceNotices, 9 nov",
+      "url": "https://x.com/SpaceNotices/status/2119805321917116815"
     },
     "netSrc": {
       "label": "SpaceX, 7 nov",
@@ -21,7 +21,7 @@
       "titolo": "Ship 42",
       "versione": "V3",
       "stato": {
-        "label": "Controlli finali; in procinto di stacking al Pad 2 (NSF)",
+        "label": "Controlli finali; attesa al Pad 2 per lo stacking su B22",
         "tone": "success"
       },
       "milestones": [
@@ -81,7 +81,7 @@
       "titolo": "Super Heavy B22",
       "versione": "V3",
       "stato": {
-        "label": "Controlli finali; in procinto di stacking al Pad 2 (NSF)",
+        "label": "Al Pad 2, installato sul launch mount (10 nov)",
         "tone": "success"
       },
       "milestones": [
@@ -127,17 +127,44 @@
         {
           "nome": "Impilamento",
           "fatto": false,
-          "data": "atteso",
+          "data": "B22 sul mount il 10 nov; S42 attesa",
           "src": {
-            "label": "@NASASpaceflight, 7 nov",
-            "url": "https://x.com/NASASpaceflight/status/2119217458729124052"
+            "label": "@NASASpaceflight, 10 nov",
+            "url": "https://x.com/NASASpaceflight/status/2119997160473141572"
           },
-          "nota": "@mcrs987 (28 ott): raceway aperto, FTS in installazione. NSF (7 nov): sistemi del pad testati; B22 e S42 stanno per essere portati al Pad 2 per lo stacking"
+          "nota": "B22 ha lasciato Mega Bay 1 la sera del 9 nov (~22:07 ora di Roma), è arrivato al Pad 2 nella notte ed è stato sollevato e installato sul launch mount verso le 04:34 del 10 nov (NSF). Manca ora l'impilamento di Ship 42"
         }
       ]
     }
   },
   "NEWS": [
+    {
+      "data": "10 nov",
+      "sez": "Prototipi",
+      "testo": "Booster 22 portato al Pad 2 nella notte tra 9 e 10 nov e sollevato sul launch mount verso le 04:34 ora di Roma. NSF mostra i 33 Raptor 3 visti dal basso. Prossimo passo: impilare Ship 42",
+      "src": {
+        "label": "@NASASpaceflight, 10 nov",
+        "url": "https://x.com/NASASpaceflight/status/2119997160473141572"
+      }
+    },
+    {
+      "data": "9 nov",
+      "sez": "Lanci",
+      "testo": "Lancio e rientro del Flight 15 aggiunti al piano operativo FAA: NET 13 nov il lancio, 14 nov il rientro. È un avviso di traffico aereo, non la licenza, che resta da emettere",
+      "src": {
+        "label": "@SpaceNotices, 9 nov",
+        "url": "https://x.com/SpaceNotices/status/2119805321917116815"
+      }
+    },
+    {
+      "data": "9 nov",
+      "sez": "Lanci",
+      "testo": "Pubblicati gli avvisi di navigazione rimanenti del Flight 15: la prima zona per la cattura di Ship 42, un'area di rientro di emergenza vicino alle Hawaii se l'accensione di deorbit venisse annullata, e l'area di pericolo al lancio",
+      "src": {
+        "label": "@SpaceNotices, 9 nov",
+        "url": "https://x.com/SpaceNotices/status/2119744232415986143"
+      }
+    },
     {
       "data": "9 nov",
       "sez": "Siti",
@@ -154,15 +181,6 @@
       "src": {
         "label": "@RGVaerialphotos, 9 nov",
         "url": "https://x.com/RGVaerialphotos/status/2119628475984470444"
-      }
-    },
-    {
-      "data": "9 nov",
-      "sez": "Lanci",
-      "testo": "FAA: piano operativo ADVZY 008 del 9 nov senza voci Starship; nessuna licenza specifica per il Flight 15 trovata. F15 resta NET 13 nov in attesa di approvazione normativa",
-      "src": {
-        "label": "FAA ATCSCC, 9 nov",
-        "url": "https://www.fly.faa.gov/adv/adv_spt"
       }
     },
     {
@@ -745,9 +763,9 @@
   ],
   "IN_BREVE": {
     "siti": "9 nov: chiusura strada a Starbase 10:00–14:00 dalla Production al Pad (Fraser/NSF; se arriveranno i veicoli F15 non è confermato). Video notturno RGV di Starbase con «T-115 ore al Flight 15» (conteggio dell'account). La sera del 7 nov Ship 40 è entrata nella Gigabay, primo veicolo all'interno. Al Pad 2: hold-down clamp del Booster (6-8 nov, non confermato) e sistemi testati in vista dello stacking.",
-    "prototipi": "NSF (7 nov): B22 e S42 stanno per essere portati al Pad 2 per l'impilamento del Flight 15. S45 sollevata in Mega Bay 2 con un singolo Raptor (non confermato). B24 completamente impilato; sezione A4 in Mega Bay 1 (nc). Ship 40 nella Gigabay.",
+    "prototipi": "10 nov: B22 al Pad 2 e installato sul launch mount (NSF); Ship 42 attesa per l'impilamento. S45 sollevata in Mega Bay 2 con un singolo Raptor (non confermato). B24 completamente impilato. Ship 40 nella Gigabay.",
     "test": "6 nov: un Raptor 3 RVAC uscito verso i banchi di prova a McGregor (esito non confermato). 6-8 nov: test hold-down clamp del Booster al Pad 2 (non confermato). Entrambi i veicoli del Flight 15 hanno completato gli static fire; sistemi del pad testati (NSF, 7 nov).",
-    "lanci": "Flight 15 (B22 + S42) resta NET venerdì 13 nov, finestra dalle 23:45 ora di Roma, in attesa dell'approvazione normativa. Piano operativo FAA del 9 nov senza voci Starship; nessuna licenza F15 trovata. NSF: stacking al Pad 2 imminente. Missione di oltre 22 ore con 26 Starlink V3 e doppia cattura."
+    "lanci": "Flight 15 (B22 + S42) resta NET venerdì 13 nov, finestra dalle 23:45 ora di Roma, in attesa dell'approvazione normativa. Il 9 nov lancio e rientro sono entrati nel piano operativo FAA e sono usciti gli avvisi di navigazione, compresa la zona di cattura di S42; licenza ancora non emessa. B22 già sul launch mount."
   },
   "SITI": [
     {
@@ -1101,12 +1119,12 @@
       "versione": "V3",
       "volo": "Flight 15",
       "stato": "Test",
-      "breve": "Controlli finali; in procinto di stacking al Pad 2 (NSF)",
-      "note": "Prove crio 9-10 set; rollout al Pad 2 il 24 ott; static fire completo a 33 motori il 25 ott (circa 16 s), confermato da SpaceX. Nella notte tra 25 e 26 ott sollevato ad altezza di cattura e rientrato in Mega Bay 1 per i preparativi finali. @mcrs987 (28 ott): raceway aperto, sta per ricevere il sistema di terminazione del volo (FTS). NSF (6 nov): in controlli finali per il Flight 15 con NET 13 nov NSF (7 nov): sistemi del sito di lancio testati; B22 e S42 stanno per essere portati al Pad 2 per l'impilamento",
-      "data": "7 nov",
+      "breve": "Al Pad 2, installato sul launch mount (10 nov)",
+      "note": "Prove crio 9-10 set; rollout al Pad 2 il 24 ott; static fire completo a 33 motori il 25 ott (circa 16 s), confermato da SpaceX. Nella notte tra 25 e 26 ott sollevato ad altezza di cattura e rientrato in Mega Bay 1 per i preparativi finali. @mcrs987 (28 ott): raceway aperto, sta per ricevere il sistema di terminazione del volo (FTS). NSF (6 nov): in controlli finali per il Flight 15 con NET 13 nov NSF (7 nov): sistemi del sito di lancio testati; B22 e S42 stanno per essere portati al Pad 2 per l'impilamento. Rollout al Pad 2 la sera del 9 nov e installazione sul launch mount verso le 04:34 del 10 nov (NSF)",
+      "data": "10 nov",
       "src": {
-        "label": "@NASASpaceflight, 7 nov",
-        "url": "https://x.com/NASASpaceflight/status/2119217458729124052"
+        "label": "@NASASpaceflight, 10 nov",
+        "url": "https://x.com/NASASpaceflight/status/2119997160473141572"
       }
     },
     {
@@ -1115,7 +1133,7 @@
       "versione": "V3",
       "volo": "Flight 15",
       "stato": "Test",
-      "breve": "Controlli finali; in procinto di stacking al Pad 2 (NSF)",
+      "breve": "Controlli finali; attesa al Pad 2 per lo stacking su B22",
       "note": "Test chopsticks al Pad 2 (11-12 set); ulteriore prova crio a Massey's (9 ott). Partita per Massey's il 26 ott; nella notte tra 26 e 27 ott static fire a un solo motore e il 27 ott verso le 22:46 ora di Roma static fire a sei motori a piena durata. Il 28 ott SpaceX ha confermato la fine degli static fire, compresa un'accensione di un solo Raptor che simula la manovra di deorbit. Nella notte tra 28 e 29 ott è tornata in produzione per gli ultimi preparativi (Mega Bay 2 e carico Starlink V3 attesi, non confermato). Il 29 ott è entrata in Mega Bay 2. Il 30 ott NSF: in Mega Bay 2 per ispezioni finali e cariche del sistema di terminazione del volo, poi caricamento dei satelliti Starlink per il Flight 15. NSF (6 nov): ancora nei controlli finali; prossimi passi cariche FTS e carico Starlink. Piano di missione di circa 24 ore (non confermato) NSF (7 nov): sistemi del sito di lancio testati; B22 e S42 stanno per essere portati al Pad 2 per l'impilamento",
       "data": "7 nov",
       "src": {
@@ -1994,6 +2012,51 @@
     ],
     "prototipi": [
       {
+        "autore": "@NASASpaceflight",
+        "data": "10 nov",
+        "ora": "04:43",
+        "testo": "I 33 Raptor 3 di B22 sul launch mount",
+        "url": "https://x.com/NASASpaceflight/status/2119999436587692459",
+        "media": "foto",
+        "id": "2119999436587692459",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HWvAP1mWQAAIZ5b.jpg"
+          }
+        ]
+      },
+      {
+        "autore": "@NASASpaceflight",
+        "data": "9 nov",
+        "ora": "23:08",
+        "testo": "B22 in attesa di immettersi sulla Highway 4",
+        "url": "https://x.com/NASASpaceflight/status/2119915107534958765",
+        "media": "foto",
+        "id": "2119915107534958765",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HWtzfDrXMAAYFKV.jpg"
+          }
+        ]
+      },
+      {
+        "autore": "@NASASpaceflight",
+        "data": "9 nov",
+        "ora": "22:07",
+        "testo": "B22 si muove verso il Pad 2",
+        "url": "https://x.com/NASASpaceflight/status/2119899586005536831",
+        "media": "foto",
+        "id": "2119899586005536831",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HWtlWpHW0AEcsHj.jpg"
+          }
+        ]
+      },
+      {
         "autore": "@VickiCocks15",
         "data": "8 nov",
         "ora": "n.d.",
@@ -2040,89 +2103,6 @@
           {
             "tipo": "video",
             "url": "https://pbs.twimg.com/amplify_video_thumb/2118496530516541440/img/rfDQ3i4vBmBHvxqP.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@VickiCocks15",
-        "data": "5 nov",
-        "ora": "15:43",
-        "testo": "Sezione A3:4 di Booster 25 dalla Starfactory in Mega Bay 1 (non confermato)",
-        "url": "https://x.com/VickiCocks15/status/2118353573905940912",
-        "media": "video",
-        "id": "2118353573905940912",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2118353293277536257/img/geV4kPEFUzgXkK0e.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@VickiCocks15",
-        "data": "3 nov",
-        "ora": "17:10",
-        "testo": "Sezione A2:3 di Ship 45 spostata dalla Starfactory alla Mega Bay 2",
-        "url": "https://x.com/VickiCocks15/status/2117650718702305353",
-        "media": "video",
-        "id": "2117650718702305353",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2117650332553547776/img/TVhxQ0htok2P_pIX.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@TrackingTheSB",
-        "data": "1 nov",
-        "ora": "20:20",
-        "testo": "Starbase This Week: B24 impilato, S45 avanza e un mockup di cabina HLS nella Starfactory (non confermato)",
-        "url": "https://x.com/TrackingTheSB/status/2116973778219749564",
-        "media": "foto",
-        "id": "2116973778219749564",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HWEAHjaakAAXwgD.jpg"
-          },
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HWEAICdbQAA6BxN.jpg"
-          },
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HWEAInja0AAazsa.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@efraser77",
-        "data": "31 ott",
-        "ora": "03:09",
-        "testo": "Serbatoio del metano di B24 sollevato in Mega Bay 1",
-        "url": "https://x.com/efraser77/status/2116351708150497473",
-        "media": "video",
-        "id": "2116351708150497473",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2116351166670118912/img/zq0PKPNfAMHW4Yri.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@RGVaerialphotos",
-        "data": "31 ott",
-        "ora": "17:37",
-        "testo": "Ship 40 saluta dalla Mega Bay 2",
-        "url": "https://x.com/RGVaerialphotos/status/2116570337257377808",
-        "media": "foto",
-        "id": "2116570337257377808",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HV-RVyhbcAAR-OU.jpg"
           }
         ]
       }
@@ -2243,6 +2223,51 @@
     ],
     "lanci": [
       {
+        "autore": "@SpaceNotices",
+        "data": "9 nov",
+        "ora": "15:52",
+        "testo": "F15 nel piano operativo FAA: lancio 13 nov, rientro 14 nov",
+        "url": "https://x.com/SpaceNotices/status/2119805321917116815",
+        "media": "foto",
+        "id": "2119805321917116815",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HWsPtCjW8AAvv0p.jpg"
+          }
+        ]
+      },
+      {
+        "autore": "@SpaceNotices",
+        "data": "9 nov",
+        "ora": "11:49",
+        "testo": "Avvisi di navigazione F15, compresa la cattura di S42",
+        "url": "https://x.com/SpaceNotices/status/2119744232415986143",
+        "media": "foto",
+        "id": "2119744232415986143",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HWrYJLjXsAACa-Y.jpg"
+          }
+        ]
+      },
+      {
+        "autore": "@mcrs987",
+        "data": "9 nov",
+        "ora": "18:21",
+        "testo": "«Aspettavo da tanto un avviso di navigazione con questa forma»",
+        "url": "https://x.com/mcrs987/status/2119842930391179527",
+        "media": "foto",
+        "id": "2119842930391179527",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HWsx2i2WsAA6P_V.jpg"
+          }
+        ]
+      },
+      {
         "autore": "@InfographicTony",
         "data": "7 nov",
         "ora": "14:39",
@@ -2294,53 +2319,6 @@
           {
             "tipo": "foto",
             "url": "https://pbs.twimg.com/media/HWhPQNKX0AAp1bN.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@NASASpaceflight",
-        "data": "6 nov",
-        "ora": "16:32",
-        "testo": "Forse a una settimana dal Flight 15 e dalla doppia cattura, in attesa del via libera normativo",
-        "url": "https://x.com/NASASpaceflight/status/2118728354132086946",
-        "media": "foto",
-        "id": "2118728354132086946",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/news_img/2118728397014614016/gKpa8c8d?format=jpg&name=orig",
-            "w": 1723,
-            "h": 1034
-          }
-        ]
-      },
-      {
-        "autore": "@RGVaerialphotos",
-        "data": "6 nov",
-        "ora": "14:00",
-        "testo": "Flight 15 🔜",
-        "url": "https://x.com/RGVaerialphotos/status/2118689859049058371",
-        "media": "foto",
-        "id": "2118689859049058371",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HWaw-kSaYAAFF7i.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@mcrs987",
-        "data": "6 nov",
-        "ora": "03:44",
-        "testo": "Numeri motore laser-etch sull'header del carburante",
-        "url": "https://x.com/mcrs987/status/2118535064040419423",
-        "media": "foto",
-        "id": "2118535064040419423",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HWaMS_4X0AAg5E8.jpg"
           }
         ]
       }
