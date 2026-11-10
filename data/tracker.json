@@ -1278,7 +1278,7 @@
       "stato": "Distrutto",
       "breve": "Impatto duro nel Golfo",
       "note": "Accensione per l'atterraggio incompleta, impatto duro nel Golfo",
-      "data": "24 lug",
+      "data": "25 lug",
       "src": {
         "label": "SpaceX",
         "url": "https://www.spacex.com/launches/starship-flight-13"
@@ -1292,7 +1292,7 @@
       "stato": "Lanciato",
       "breve": "Prima Ship V3, non recuperata",
       "note": "Prima Ship V3; ammaraggio nell'Oceano Indiano, non recuperata",
-      "data": "22 mag",
+      "data": "23 mag",
       "src": {
         "label": "SpaceX",
         "url": "https://www.spacex.com/launches/starship-flight-12"
@@ -1306,7 +1306,7 @@
       "stato": "Distrutto",
       "breve": "Impatto duro; indagine FAA",
       "note": "Boostback parziale e impatto duro nel Golfo; indagine FAA sull'incidente",
-      "data": "22 mag",
+      "data": "23 mag",
       "src": {
         "label": "NBC/Reuters",
         "url": "https://www.nbcnews.com/science/space/faa-spacex-investigate-mishap-starship-booster-crash-rcna347168"
@@ -1710,7 +1710,7 @@
     },
     {
       "volo": "Flight 13",
-      "data": "24 lug 2026",
+      "data": "25 lug 2026",
       "veicoli": "B20 / S40",
       "pad": "Starbase Pad 2",
       "esito": {
@@ -1726,7 +1726,7 @@
     },
     {
       "volo": "Flight 12",
-      "data": "22 mag 2026",
+      "data": "23 mag 2026",
       "veicoli": "B19 / S39",
       "pad": "Starbase Pad 2",
       "esito": {
@@ -1742,7 +1742,7 @@
     },
     {
       "volo": "Flight 11",
-      "data": "13 ott 2025",
+      "data": "14 ott 2025",
       "veicoli": "B15-2 / S38",
       "pad": "Starbase Pad 1",
       "esito": {
@@ -1758,7 +1758,7 @@
     },
     {
       "volo": "Flight 10",
-      "data": "26 ago 2025",
+      "data": "27 ago 2025",
       "veicoli": "B16 / S37",
       "pad": "Starbase Pad 1",
       "esito": {
