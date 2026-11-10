@@ -1,0 +1,99 @@
+/* Pagina Voli passati: si appoggia a ../style.css */
+.acc-voli { --accent: var(--c-lanci); }
+
+.top-right { display: flex; align-items: center; gap: 8px 18px; flex-wrap: wrap; justify-content: flex-end; }
+.top-link { display: inline-flex; align-items: center; gap: 7px; padding: 7px 13px; border-radius: 99px; border: 1px solid color-mix(in srgb, var(--link) 35%, transparent); background: color-mix(in srgb, var(--link) 10%, transparent); color: var(--text); font-size: 14px; font-weight: 600; white-space: nowrap; transition: border-color .15s, background .15s; }
+.top-link svg { width: 16px; height: 16px; color: var(--link); }
+.top-link:hover { text-decoration: none; border-color: var(--link); background: color-mix(in srgb, var(--link) 18%, transparent); }
+.top svg { max-width: 18px; max-height: 18px; }
+.top .brand img { max-width: 36px; max-height: 36px; }
+
+.kicker { display: inline-flex; align-items: center; gap: 8px; margin: 0 0 10px; color: var(--accent, var(--link)); font: 600 13px/1.2 var(--font); letter-spacing: .08em; text-transform: uppercase; }
+.vp-hero h1 { margin: 0 0 12px; font: 700 40px/1.12 var(--font-head); letter-spacing: -.01em; }
+.vp-lead { margin: 0; max-width: 68ch; color: var(--text2); font-size: 18px; line-height: 1.6; }
+
+/* Riepilogo e legenda */
+.vp-tally { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 0; padding: 0; list-style: none; }
+.vp-tally li { display: flex; align-items: baseline; gap: 8px; padding: 8px 14px; border-radius: 12px; border: 1px solid var(--line); background: rgba(255,255,255,.03); }
+.vp-tally b { font: 700 24px/1 var(--font-head); color: var(--tone, var(--text)); }
+.vp-tally span { color: var(--text2); font-size: 14px; }
+.vp-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 16px 0 0; color: var(--text3); font-size: 13px; }
+.vp-legend span { display: inline-flex; align-items: center; gap: 6px; }
+
+/* Indice dei voli */
+.vp-nav { display: flex; flex-wrap: wrap; gap: 8px; }
+.vp-nav a { display: inline-flex; align-items: center; gap: 7px; min-height: 36px; padding: 6px 12px; border-radius: 99px; border: 1px solid var(--line); background: rgba(255,255,255,.03); color: var(--text2); font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.vp-nav a::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--tone); }
+.vp-nav a:hover { text-decoration: none; color: var(--text); border-color: color-mix(in srgb, var(--tone) 55%, transparent); }
+
+/* Scheda del volo */
+.vp-list { display: flex; flex-direction: column; gap: 22px; }
+.flight { scroll-margin-top: 84px; display: flex; flex-direction: column; gap: 14px; }
+.flight.t-success { --accent: var(--ok); }
+.flight.t-warning { --accent: var(--warn); }
+.flight.t-danger { --accent: var(--bad); }
+.fl-head { display: flex; align-items: center; justify-content: space-between; gap: 8px 14px; flex-wrap: wrap; }
+.fl-title { display: flex; align-items: baseline; gap: 6px 12px; flex-wrap: wrap; margin: 0; font: 700 26px/1.2 var(--font-head); }
+.fl-title small { color: var(--text3); font: 600 14px/1.2 var(--font); letter-spacing: .04em; }
+.fl-when { margin: 0; color: var(--text2); font-size: 14px; font-variant-numeric: tabular-nums; }
+.fl-focus { margin: 0; color: var(--text); font-size: 16.5px; line-height: 1.45; }
+.fl-veh { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.fl-veh li { display: inline-flex; align-items: baseline; gap: 6px; padding: 4px 10px; border-radius: 8px; border: 1px solid var(--line2); background: rgba(255,255,255,.025); font-size: 14px; }
+.fl-veh em { color: var(--text3); font-size: 12px; font-style: normal; text-transform: uppercase; letter-spacing: .06em; }
+.fl-veh b { font-weight: 600; }
+
+/* Obiettivi e risultato: due colonne allineate riga per riga */
+.goals { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; margin: 0; padding: 0; list-style: none; }
+.goals-head, .goal { display: contents; }
+.goals-head > span { padding: 9px 14px; background: rgba(255,255,255,.04); color: var(--text3); font: 600 12px/1.2 var(--font); letter-spacing: .08em; text-transform: uppercase; }
+.goal > .g-o, .goal > .g-r { padding: 11px 14px; border-top: 1px solid var(--line); font-size: 15px; line-height: 1.45; min-width: 0; }
+.goal > .g-o { color: var(--text); font-weight: 500; border-right: 1px solid var(--line); }
+.goal > .g-r { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 10px; align-items: start; color: var(--text2); }
+.g-lab { display: none; }
+.st { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; color: var(--tone); background: color-mix(in srgb, var(--tone) 16%, transparent); border: 1px solid color-mix(in srgb, var(--tone) 40%, transparent); margin-top: 1px; }
+.st svg { width: 13px; height: 13px; }
+.st.ok { --tone: var(--ok); } .st.part { --tone: var(--warn); } .st.fail { --tone: var(--bad); } .st.skip { --tone: var(--neutral); }
+
+.fl-nota { margin: 0; color: var(--text3); font-size: 14px; }
+
+/* Video di SpaceX */
+.vids-h { margin: 2px 0 -4px; color: var(--text3); font: 600 12px/1.2 var(--font); letter-spacing: .08em; text-transform: uppercase; }
+.vids { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+.vid { min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.vid-card { position: relative; display: block; aspect-ratio: 16 / 9; width: 100%; padding: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; cursor: pointer; background: linear-gradient(110deg, #0f172a 30%, #1e293b 50%, #0f172a 70%); background-size: 200% 100%; color: #fff; }
+.vid-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.vid-card:hover { border-color: color-mix(in srgb, var(--link) 60%, transparent); text-decoration: none; }
+.vid-card .play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 46px; height: 46px; border-radius: 50%; background: rgba(0,0,0,.55); border: 1.5px solid rgba(255,255,255,.8); display: grid; place-items: center; pointer-events: none; }
+.vid-card .play svg { width: 20px; height: 20px; margin-left: 3px; }
+.vid-card .dur { position: absolute; right: 8px; bottom: 8px; background: rgba(0,0,0,.65); color: #fff; font-size: 12px; padding: 1px 7px; border-radius: 99px; font-variant-numeric: tabular-nums; }
+.vid-meta { display: flex; align-items: center; justify-content: space-between; gap: 6px 10px; flex-wrap: wrap; font-size: 13px; }
+.vid-meta b { font-weight: 600; color: var(--text); }
+.vid-meta a { display: inline-flex; align-items: center; gap: 5px; min-height: 28px; font-weight: 600; }
+.vid-meta svg { width: 13px; height: 13px; }
+.vid-embed { min-height: 120px; }
+.vid-embed .twitter-tweet { margin: 0 !important; }
+
+.fl-src { margin: 0; font-size: 14px; }
+
+@media (max-width: 900px) {
+  .vids { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+}
+@media (max-width: 720px) {
+  /* Su schermo stretto ogni obiettivo ha il proprio risultato sotto */
+  .goals { grid-template-columns: 1fr; }
+  .goals-head { display: none; }
+  .goal { display: block; border-top: 1px solid var(--line); }
+  .goal:first-of-type { border-top: 0; }
+  .goal > .g-o, .goal > .g-r { border: 0; padding: 0 14px; }
+  .goal > .g-o { padding-top: 11px; padding-bottom: 6px; }
+  .goal > .g-r { padding-bottom: 12px; }
+  .g-lab { display: block; margin-bottom: 2px; color: var(--text3); font: 600 11px/1.2 var(--font); letter-spacing: .08em; text-transform: uppercase; }
+}
+@media (max-width: 640px) {
+  .vp-hero h1 { font-size: 30px; }
+  .vp-lead { font-size: 16.5px; }
+  .fl-title { font-size: 22px; }
+  .vids { grid-template-columns: 1fr; }
+  .top-right { width: 100%; justify-content: flex-start; gap: 6px 10px; }
+  .top-link { font-size: 13px; padding: 6px 11px; }
+}

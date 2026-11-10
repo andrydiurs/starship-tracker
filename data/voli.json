@@ -1,0 +1,875 @@
+{
+ "aggiornato": "10 nov 2026",
+ "voli": [
+  {
+   "n": 1,
+   "data": "20 apr 2023",
+   "ora": "15:33",
+   "focus": "Decollo",
+   "booster": "B7",
+   "ship": "S24",
+   "versione": "V1",
+   "esito": {
+    "label": "Parziale",
+    "tone": "warning"
+   },
+   "obiettivi": [
+    {
+     "o": "Decollo e pad liberato (obiettivo minimo dichiarato da SpaceX)",
+     "r": "Decollo riuscito. Il lancio ha danneggiato in modo pesante la rampa",
+     "s": "ok"
+    },
+    {
+     "o": "Separazione tra Booster e Ship",
+     "r": "Non tentata: diversi motori spenti, perso il controllo della spinta, veicolo in rotazione",
+     "s": "fail"
+    },
+    {
+     "o": "Booster: ammaraggio nel Golfo",
+     "r": "Non raggiunto: veicolo distrutto dal sistema di terminazione circa 4 minuti dopo il decollo",
+     "s": "fail"
+    },
+    {
+     "o": "Ship: quasi un'orbita e ammaraggio vicino alle Hawaii",
+     "r": "Non raggiunto",
+     "s": "fail"
+    }
+   ],
+   "nota": "SpaceX l'ha giudicato un successo: l'obiettivo primario era solo liberare il pad.",
+   "src": {
+    "label": "Wikipedia, Flight 1",
+    "url": "https://en.wikipedia.org/wiki/Starship_flight_test_1"
+   },
+   "video": [
+    {
+     "id": "1649043715686793218",
+     "fase": "Partenza",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1649043659910967307/img/nizVMAtP1Akxys7D.jpg",
+     "dur": 25
+    }
+   ],
+   "ift": "IFT-1",
+   "nome": "Flight 1",
+   "versione_nota": "Block 1"
+  },
+  {
+   "n": 2,
+   "data": "18 nov 2023",
+   "ora": "14:03",
+   "focus": "Hot staging",
+   "booster": "B9",
+   "ship": "S25",
+   "versione": "V1",
+   "esito": {
+    "label": "Parziale",
+    "tone": "warning"
+   },
+   "obiettivi": [
+    {
+     "o": "Hot staging (separazione con la Ship già accesa)",
+     "r": "Riuscito, per la prima volta su un veicolo di queste dimensioni",
+     "s": "ok"
+    },
+    {
+     "o": "33 Raptor del Booster accesi a durata piena",
+     "r": "Riuscito, per la prima volta",
+     "s": "ok"
+    },
+    {
+     "o": "Booster: boostback e ammaraggio nel Golfo",
+     "r": "Perso dopo il flip, all'inizio del boostback, a circa 90 km di quota",
+     "s": "fail"
+    },
+    {
+     "o": "Ship: salita fino allo spazio",
+     "r": "Raggiunti circa 150 km. Telemetria persa prima dello spegnimento motori, distrutta dal sistema di terminazione",
+     "s": "part"
+    },
+    {
+     "o": "Ship: rientro e ammaraggio vicino alle Hawaii",
+     "r": "Non raggiunto",
+     "s": "fail"
+    }
+   ],
+   "nota": "Prova del nuovo pad con deflettore d'acqua: ha funzionato, danni minimi.",
+   "src": {
+    "label": "SpaceX, Flight 2",
+    "url": "https://www.spacex.com/launches/starship-flight-2"
+   },
+   "video": [
+    {
+     "id": "1725862657780281349",
+     "fase": "Partenza",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1725862536191631361/img/eIFnIYvZ55GXnnEz.jpg",
+     "dur": 44
+    },
+    {
+     "id": "1725863437887242515",
+     "fase": "Hot staging",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1725863322476859392/img/dUaDoY0L9VpadMWy.jpg",
+     "dur": 55
+    }
+   ],
+   "ift": "IFT-2",
+   "nome": "Flight 2",
+   "versione_nota": "Block 1"
+  },
+  {
+   "n": 3,
+   "data": "14 mar 2024",
+   "ora": "14:25",
+   "focus": "Diversi test con la Ship",
+   "booster": "B10",
+   "ship": "S28",
+   "versione": "V1",
+   "esito": {
+    "label": "Parziale",
+    "tone": "warning"
+   },
+   "obiettivi": [
+    {
+     "o": "Ascesa completa con tutti i motori, hot staging",
+     "r": "Riuscita: 33 Raptor a durata piena e seconda hot staging",
+     "s": "ok"
+    },
+    {
+     "o": "Booster: boostback e ammaraggio nel Golfo",
+     "r": "Primo landing burn tentato, ma il Booster è stato perso a circa 460 m di quota",
+     "s": "part"
+    },
+    {
+     "o": "Ship: apertura e chiusura della porta del carico",
+     "r": "Riuscita",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: dimostrazione di trasferimento interno di propellente",
+     "r": "Avviata durante il coast",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: riaccensione di un Raptor nello spazio",
+     "r": "Non tentata a causa della rotazione del veicolo",
+     "s": "skip"
+    },
+    {
+     "o": "Ship: rientro e ammaraggio nell'Oceano Indiano",
+     "r": "Primo rientro dallo spazio con video Starlink, ma ultimo segnale a circa 49 minuti. Ship persa",
+     "s": "fail"
+    }
+   ],
+   "nota": "Prima Ship a completare la salita a durata piena.",
+   "src": {
+    "label": "SpaceX, Flight 3",
+    "url": "https://www.spacex.com/launches/starship-flight-3"
+   },
+   "video": [
+    {
+     "id": "1768267464062943676",
+     "fase": "Partenza",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1768267406735187968/img/yszsME8HffMRy_VD.jpg",
+     "dur": 36
+    },
+    {
+     "id": "1768268071469539708",
+     "fase": "Hot staging",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1768268008764645376/img/WQ4Rj8ZOtVIsZtNA.jpg",
+     "dur": 12
+    },
+    {
+     "id": "1768279990368612354",
+     "fase": "Rientro",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1768279869195206656/img/3cXELGZMGhxoI6b2.jpg",
+     "dur": 86
+    }
+   ],
+   "ift": "IFT-3",
+   "nome": "Flight 3",
+   "versione_nota": "Block 1"
+  },
+  {
+   "n": 4,
+   "data": "6 giu 2024",
+   "ora": "14:50",
+   "focus": "Rientro controllato con Ship e Booster",
+   "booster": "B11",
+   "ship": "S29",
+   "versione": "V1",
+   "esito": {
+    "label": "Successo",
+    "tone": "success"
+   },
+   "obiettivi": [
+    {
+     "o": "Booster: boostback e ammaraggio morbido nel Golfo",
+     "r": "Riuscito, con un motore perso poco dopo il decollo",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: rientro controllato attraverso picco di calore e massima pressione",
+     "r": "Riuscito, nonostante un forte danno al flap anteriore",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: flip, landing burn e ammaraggio nell'Oceano Indiano",
+     "r": "Ammaraggio morbido nella zona prevista, a circa 6 km dal centro",
+     "s": "ok"
+    }
+   ],
+   "nota": "Primo volo con entrambi gli stadi riusciti a tornare controllati in acqua.",
+   "src": {
+    "label": "SpaceX, Flight 4",
+    "url": "https://www.spacex.com/launches/starship-flight-4"
+   },
+   "video": [
+    {
+     "id": "1798699175573700929",
+     "fase": "Partenza",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1798699116501045248/img/s0spAxoBs6gvPxFI.jpg",
+     "dur": 33
+    },
+    {
+     "id": "1798701489097183286",
+     "fase": "Ammaraggio Booster",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1798701356192313344/img/n9UjEQeIGAtpaDMe.jpg",
+     "dur": 37
+    },
+    {
+     "id": "1798792222743122164",
+     "fase": "Rientro Ship",
+     "thumb": "https://pbs.twimg.com/ext_tw_video_thumb/1798791615215177728/pu/img/DNYBAkgGAF5xErTI.jpg",
+     "dur": 16
+    }
+   ],
+   "ift": "IFT-4",
+   "nome": "Flight 4",
+   "versione_nota": "Block 1"
+  },
+  {
+   "n": 5,
+   "data": "13 ott 2024",
+   "ora": "14:25",
+   "focus": "Cattura al volo e rientro controllato con la Ship",
+   "booster": "B12",
+   "ship": "S30",
+   "versione": "V1",
+   "esito": {
+    "label": "Successo",
+    "tone": "success"
+   },
+   "obiettivi": [
+    {
+     "o": "Booster: ritorno al sito e cattura con le braccia della torre",
+     "r": "Riuscita al primo tentativo, la prima cattura di un booster",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: rientro controllato",
+     "r": "Riuscito, nonostante danni a un flap",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: ammaraggio nell'Oceano Indiano sul bersaglio",
+     "r": "Riuscito, dopo 1 h 05 min 40 s di volo",
+     "s": "ok"
+    }
+   ],
+   "nota": "Prima cattura di un Super Heavy.",
+   "src": {
+    "label": "SpaceX, Flight 5",
+    "url": "https://www.spacex.com/launches/starship-flight-5"
+   },
+   "video": [
+    {
+     "id": "1845440879844261938",
+     "fase": "Partenza",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1845440802945892352/img/n7FLj9t8w4HZCg0n.jpg",
+     "dur": 38
+    },
+    {
+     "id": "1845442658397049011",
+     "fase": "Cattura del Booster",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1845442585206325256/img/aKpvzYSImQ6_9niU.jpg",
+     "dur": 59
+    },
+    {
+     "id": "1845457555650379832",
+     "fase": "Ammaraggio Ship",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1845457467511275524/img/G0g84HkvJFJ40eFZ.jpg",
+     "dur": 25
+    }
+   ],
+   "ift": "IFT-5",
+   "nome": "Flight 5",
+   "versione_nota": "Block 1"
+  },
+  {
+   "n": 6,
+   "data": "19 nov 2024",
+   "ora": "23:00",
+   "focus": "Cattura al volo (poi ammaraggio) e limiti strutturali della Ship",
+   "booster": "B13",
+   "ship": "S31",
+   "versione": "V1",
+   "esito": {
+    "label": "Parziale",
+    "tone": "warning"
+   },
+   "obiettivi": [
+    {
+     "o": "Booster: cattura con la torre",
+     "r": "Annullata: i controlli automatici sulla torre non sono stati superati",
+     "s": "fail"
+    },
+    {
+     "o": "Booster: piano di riserva, ammaraggio nel Golfo",
+     "r": "Ammaraggio morbido riuscito",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: riaccensione di un Raptor nello spazio",
+     "r": "Riuscita",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: rientro con meno tegole e angolo più aggressivo",
+     "r": "Riuscito, con danni minimi ai flap",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: ammaraggio nell'Oceano Indiano",
+     "r": "Riuscito, per la prima volta di giorno",
+     "s": "ok"
+    }
+   ],
+   "nota": "Ultimo volo con una Ship Block 1.",
+   "src": {
+    "label": "SpaceX, Flight 6",
+    "url": "https://www.spacex.com/launches/starship-flight-6"
+   },
+   "video": [
+    {
+     "id": "1858994002311475519",
+     "fase": "Partenza",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1858993941628231680/img/H7ObuLgaB8XHL2W8.jpg",
+     "dur": 60
+    },
+    {
+     "id": "1858995728783384815",
+     "fase": "Ammaraggio Booster",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1858995561820811267/img/sSFVyWrI9J5tKIFM.jpg",
+     "dur": 22
+    },
+    {
+     "id": "1859010620471079361",
+     "fase": "Ammaraggio Ship",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1859010556214341633/img/dSRLDWHYsqlfIFot.jpg",
+     "dur": 18
+    }
+   ],
+   "ift": "IFT-6",
+   "nome": "Flight 6",
+   "versione_nota": "Block 1"
+  },
+  {
+   "n": 7,
+   "data": "16 gen 2025",
+   "ora": "23:37",
+   "focus": "Primo volo Block 2: cattura del B14 ed esplosione della Ship 33",
+   "booster": "B14",
+   "ship": "S33",
+   "versione": "V2",
+   "esito": {
+    "label": "Parziale",
+    "tone": "warning"
+   },
+   "obiettivi": [
+    {
+     "o": "Booster: ritorno e cattura con la torre",
+     "r": "Riuscita: seconda cattura di un Super Heavy",
+     "s": "ok"
+    },
+    {
+     "o": "Ship Block 2: ascesa completa",
+     "r": "Incendio nella sezione posteriore, telemetria persa dopo circa 8 minuti e mezzo. Ship distrutta",
+     "s": "fail"
+    },
+    {
+     "o": "Ship: rilascio di 10 simulatori Starlink",
+     "r": "Non raggiunto",
+     "s": "fail"
+    },
+    {
+     "o": "Ship: ammaraggio nell'Oceano Indiano",
+     "r": "Non raggiunto",
+     "s": "fail"
+    }
+   ],
+   "nota": "Debutto della Ship Block 2, persa prima dello spegnimento motori.",
+   "src": {
+    "label": "SpaceX, Flight 7",
+    "url": "https://www.spacex.com/launches/starship-flight-7"
+   },
+   "video": [
+    {
+     "id": "1880021718661521611",
+     "fase": "Partenza",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1880021658297143296/img/d6Ovi2r6WPYPbT0z.jpg",
+     "dur": 37
+    },
+    {
+     "id": "1880024050048589841",
+     "fase": "Cattura del Booster",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1880023941583941632/img/xmykU8YGs1bDew4o.jpg",
+     "dur": 74
+    }
+   ],
+   "ift": "IFT-7",
+   "nome": "Flight 7",
+   "versione_nota": "Block 2"
+  },
+  {
+   "n": 8,
+   "data": "7 mar 2025",
+   "ora": "00:30",
+   "focus": "Come IFT-7: rilascio Starlink, test Block 2",
+   "booster": "B15",
+   "ship": "S34",
+   "versione": "V2",
+   "esito": {
+    "label": "Parziale",
+    "tone": "warning"
+   },
+   "obiettivi": [
+    {
+     "o": "Booster: ritorno e cattura con la torre",
+     "r": "Riuscita: terza cattura di un Super Heavy",
+     "s": "ok"
+    },
+    {
+     "o": "Ship Block 2: ascesa completa",
+     "r": "Evento energetico nella parte posteriore, persi diversi Raptor e il controllo. Contatto perso a circa 9 min 30 s",
+     "s": "fail"
+    },
+    {
+     "o": "Ship: rilascio di 4 simulatori Starlink",
+     "r": "Non raggiunto",
+     "s": "fail"
+    },
+    {
+     "o": "Ship: ammaraggio nell'Oceano Indiano",
+     "r": "Non raggiunto",
+     "s": "fail"
+    }
+   ],
+   "nota": "Il Booster è stato catturato, la Ship è andata perduta come nel volo precedente.",
+   "src": {
+    "label": "SpaceX, Flight 8",
+    "url": "https://www.spacex.com/launches/starship-flight-8"
+   },
+   "video": [
+    {
+     "id": "1897792820242792942",
+     "fase": "Partenza",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1897792742446567424/img/LWEQxYG3TBtnz5kN.jpg",
+     "dur": 33
+    },
+    {
+     "id": "1897794546781532408",
+     "fase": "Cattura del Booster",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1897794477990817793/img/ffbQr6DO31GRH300.jpg",
+     "dur": 49
+    }
+   ],
+   "ift": "IFT-8",
+   "nome": "Flight 8",
+   "versione_nota": "Block 2"
+  },
+  {
+   "n": 9,
+   "data": "28 mag 2025",
+   "ora": "01:36",
+   "focus": "Riuso del Booster 14 e ripetizione di IFT-7 per la Ship",
+   "booster": "B14-2",
+   "ship": "S35",
+   "versione": "V2",
+   "esito": {
+    "label": "Fallito",
+    "tone": "danger"
+   },
+   "obiettivi": [
+    {
+     "o": "Primo riuso di un Super Heavy, con 33 Raptor accesi",
+     "r": "Riuscito: ascesa a durata piena con il B14, già volato a IFT-7",
+     "s": "ok"
+    },
+    {
+     "o": "Booster: discesa con angolo d'attacco più alto e ammaraggio nel Golfo",
+     "r": "Perso poco dopo l'inizio del landing burn, a circa 6 minuti dal decollo",
+     "s": "fail"
+    },
+    {
+     "o": "Ship: rilascio di 8 simulatori Starlink",
+     "r": "Non riuscito: la porta del carico non si è aperta",
+     "s": "fail"
+    },
+    {
+     "o": "Ship: riaccensione di un Raptor nello spazio",
+     "r": "Saltata per un errore di assetto",
+     "s": "skip"
+    },
+    {
+     "o": "Ship: rientro e ammaraggio nell'Oceano Indiano",
+     "r": "Perdita di propellente e perdita di controllo. Contatto perso a circa 46 minuti, detriti nell'area prevista",
+     "s": "fail"
+    }
+   ],
+   "nota": "Primo volo con un Booster già usato.",
+   "src": {
+    "label": "SpaceX, Flight 9",
+    "url": "https://www.spacex.com/launches/starship-flight-9"
+   },
+   "video": [
+    {
+     "id": "1927509601001341037",
+     "fase": "Partenza",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1927509523129860096/img/E_zGGzoBqSCyU21Z.jpg",
+     "dur": 51
+    },
+    {
+     "id": "1927510220835635706",
+     "fase": "Hot staging",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1927510147615555584/img/k4OBbQB_koLdMmyx.jpg",
+     "dur": 34
+    }
+   ],
+   "ift": "IFT-9",
+   "nome": "Flight 9",
+   "versione_nota": "Block 2"
+  },
+  {
+   "n": 10,
+   "data": "27 ago 2025",
+   "ora": "01:30",
+   "focus": "Ripetizione del volo precedente",
+   "booster": "B16",
+   "ship": "S37",
+   "versione": "V2",
+   "esito": {
+    "label": "Successo",
+    "tone": "success"
+   },
+   "obiettivi": [
+    {
+     "o": "Booster: boostback e ammaraggio nel Golfo",
+     "r": "Riuscito, con un motore centrale disattivato di proposito nell'ultima fase",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: rilascio di 8 simulatori Starlink",
+     "r": "Riuscito: il primo rilascio di carico dalla Starship",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: riaccensione di un Raptor nello spazio",
+     "r": "Riuscita (la seconda mai fatta)",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: rientro sotto sforzo, flip e ammaraggio nell'Oceano Indiano",
+     "r": "Ammaraggio morbido sul bersaglio, nonostante il danno notevole alla sezione motori",
+     "s": "ok"
+    }
+   ],
+   "nota": "Tutti gli obiettivi principali raggiunti.",
+   "src": {
+    "label": "SpaceX, Flight 10",
+    "url": "https://www.spacex.com/launches/starship-flight-10"
+   },
+   "video": [
+    {
+     "id": "1960485359239774487",
+     "fase": "Partenza",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1960485282903474176/img/9qe3xppX4EBmsjmR.jpg",
+     "dur": 45
+    },
+    {
+     "id": "1960490432715993216",
+     "fase": "Rilascio Starlink",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1960490322850377729/img/JLRQ6cBTKNE3pAVR.jpg",
+     "dur": 56
+    },
+    {
+     "id": "1960502324050133328",
+     "fase": "Ammaraggio Ship",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1960502180693037056/img/CI8w-MGJNYdra0tE.jpg",
+     "dur": 48
+    }
+   ],
+   "ift": "IFT-10",
+   "nome": "Flight 10",
+   "versione_nota": "Block 2"
+  },
+  {
+   "n": 11,
+   "data": "14 ott 2025",
+   "ora": "01:23",
+   "focus": "Nuova configurazione motori del Super Heavy e banking dinamico della Ship",
+   "booster": "B15-2",
+   "ship": "S38",
+   "versione": "V2",
+   "esito": {
+    "label": "Successo",
+    "tone": "success"
+   },
+   "obiettivi": [
+    {
+     "o": "Booster: nuovo landing burn pensato per la generazione successiva",
+     "r": "Riuscito, con tutti i 13 motori previsti nella fase ad alta spinta",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: rilascio di 8 simulatori Starlink",
+     "r": "Riuscito",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: riaccensione di un Raptor nello spazio",
+     "r": "Riuscita (la terza mai fatta)",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: rientro sotto sforzo e banking dinamico",
+     "r": "Riuscito, con manovra che imita il ritorno a Starbase",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: ammaraggio nell'Oceano Indiano",
+     "r": "Flip, landing burn e ammaraggio morbido riusciti",
+     "s": "ok"
+    }
+   ],
+   "nota": "Ultimo volo di Block 2 e ultimo dal Pad 1 nella configurazione di allora.",
+   "src": {
+    "label": "SpaceX, Flight 11",
+    "url": "https://www.spacex.com/launches/starship-flight-11"
+   },
+   "video": [
+    {
+     "id": "1977878290489643190",
+     "fase": "Partenza",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1977878189088309248/img/vTduZ64mhY4cRWI5.jpg",
+     "dur": 43
+    },
+    {
+     "id": "1977884820484272524",
+     "fase": "Rilascio Starlink",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1977883989139652608/img/oRNE6slgHQ62CbkH.jpg",
+     "dur": 57
+    },
+    {
+     "id": "1977895039318864296",
+     "fase": "Ammaraggio Ship",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1977894881613037569/img/1aYFKT6RlXUpexWH.jpg",
+     "dur": 72
+    }
+   ],
+   "ift": "IFT-11",
+   "nome": "Flight 11",
+   "versione_nota": "Block 2"
+  },
+  {
+   "n": 12,
+   "data": "23 mag 2026",
+   "ora": "00:30",
+   "focus": "Primo volo Block 3 e primo uso del Pad 2. Suborbitale come i precedenti",
+   "booster": "B19",
+   "ship": "S39",
+   "versione": "V3",
+   "esito": {
+    "label": "Parziale",
+    "tone": "warning"
+   },
+   "obiettivi": [
+    {
+     "o": "Debutto di Starship V3, Raptor 3 e Pad 2",
+     "r": "Riuscito: un solo motore del Booster spento in salita",
+     "s": "ok"
+    },
+    {
+     "o": "Booster: boostback e ammaraggio nel Golfo",
+     "r": "Boostback parziale, poi impatto duro in mare",
+     "s": "fail"
+    },
+    {
+     "o": "Ship: salita e rilascio di 20 simulatori e 2 Starlink modificati",
+     "r": "Riuscito nonostante un RVac spento. I due Starlink hanno ripreso la Ship nello spazio",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: riaccensione di un Raptor nello spazio",
+     "r": "Non eseguita dopo il guasto di un motore in salita",
+     "s": "skip"
+    },
+    {
+     "o": "Ship: rientro, banking e ammaraggio nell'Oceano Indiano",
+     "r": "Riuscito, con atterraggio su due Raptor",
+     "s": "ok"
+    }
+   ],
+   "nota": "Il Booster è stato perso; la FAA ha dichiarato il mishap.",
+   "src": {
+    "label": "SpaceX, Flight 12",
+    "url": "https://www.spacex.com/launches/starship-flight-12"
+   },
+   "video": [
+    {
+     "id": "2057952539417461045",
+     "fase": "Partenza",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2057952449164464128/img/dsVbVmdVZURvbCx3.jpg",
+     "dur": 51
+    },
+    {
+     "id": "2057959688860229843",
+     "fase": "Rilascio satelliti",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2057959573827264512/img/J6-yWq-7RdY-gL45.jpg",
+     "dur": 78
+    },
+    {
+     "id": "2057969484879528267",
+     "fase": "Ammaraggio Ship",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2057969270215127040/img/91VSXaqtr0kIhWRg.jpg",
+     "dur": 90
+    }
+   ],
+   "ift": "IFT-12",
+   "nome": "Flight 12",
+   "versione_nota": "Block 3"
+  },
+  {
+   "n": 13,
+   "data": "25 lug 2026",
+   "ora": "00:51",
+   "focus": "Primi veri Starlink V3, ancora suborbitali",
+   "booster": "B20",
+   "ship": "S40",
+   "versione": "V3",
+   "esito": {
+    "label": "Parziale",
+    "tone": "warning"
+   },
+   "obiettivi": [
+    {
+     "o": "Ship: rilascio di 20 Starlink V3",
+     "r": "Riuscito: contatto con tutti i satelliti, rientrati dopo circa 20 minuti come previsto",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: riaccensione di un Raptor nello spazio",
+     "r": "Riuscita",
+     "s": "ok"
+    },
+    {
+     "o": "Booster: boostback e ammaraggio nel Golfo",
+     "r": "Boostback con 33 motori ma interrotto in anticipo, landing burn parziale e impatto duro",
+     "s": "fail"
+    },
+    {
+     "o": "Ship: rientro, banking e ammaraggio nell'Oceano Indiano",
+     "r": "Ammaraggio morbido, Ship rimasta intatta: scudo termico visibile per la prima volta",
+     "s": "ok"
+    }
+   ],
+   "nota": "Il tentativo del 16 luglio si era fermato a T-0 per problemi di accensione di alcuni motori.",
+   "src": {
+    "label": "SpaceX, Flight 13",
+    "url": "https://www.spacex.com/launches/starship-flight-13"
+   },
+   "video": [
+    {
+     "id": "2080788166584267075",
+     "fase": "Partenza",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2080788059776319488/img/noxLrnb24oXgLYYt.jpg",
+     "dur": 46
+    },
+    {
+     "id": "2080795033448395056",
+     "fase": "Rilascio Starlink V3",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2080794933267456000/img/neUgwFNXIgXxdEba.jpg",
+     "dur": 43
+    },
+    {
+     "id": "2080804682918764619",
+     "fase": "Ammaraggio Ship",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2080804533995786240/img/GXqDYTtBg0l7Ze50.jpg",
+     "dur": 81
+    }
+   ],
+   "ift": "IFT-13",
+   "nome": "Flight 13",
+   "versione_nota": "Block 3"
+  },
+  {
+   "n": 14,
+   "data": "28 set 2026",
+   "ora": "14:48",
+   "focus": "Primo volo orbitale e rilascio di 26 Starlink V3",
+   "booster": "B21",
+   "ship": "S41",
+   "versione": "V3",
+   "esito": {
+    "label": "Successo",
+    "tone": "success"
+   },
+   "obiettivi": [
+    {
+     "o": "Ship: entrare in orbita",
+     "r": "Riuscito con un solo Raptor, nonostante un RVac spento in salita",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: rilascio di 26 Starlink V3",
+     "r": "Riuscito: contatto con tutti i satelliti",
+     "s": "ok"
+    },
+    {
+     "o": "Ship: primo burn di deorbit e ammaraggio",
+     "r": "Riuscito: flip, landing burn e ammaraggio nel Pacifico dopo circa 3 h 08 min",
+     "s": "ok"
+    },
+    {
+     "o": "Missione di circa 6 orbite",
+     "r": "Accorciata a poco meno di 2 orbite per cautela dopo il guasto in salita",
+     "s": "part"
+    },
+    {
+     "o": "Booster: boostback e ammaraggio nel Golfo",
+     "r": "Ammaraggio controllato. Boostback volutamente spinto al limite, alcuni motori non si sono riaccesi nel landing burn",
+     "s": "ok"
+    }
+   ],
+   "nota": "Prima Starship in orbita e primo carico operativo consegnato.",
+   "src": {
+    "label": "SpaceX, Flight 14",
+    "url": "https://www.spacex.com/launches/starship-flight-14"
+   },
+   "video": [
+    {
+     "id": "2104563035486499043",
+     "fase": "Rilascio Starlink V3",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2104562900929056768/img/2tQF9u4hxT6WDVnJ.jpg",
+     "dur": 68
+    },
+    {
+     "id": "2104601695711904180",
+     "fase": "Ammaraggio Ship",
+     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2104601502752948225/img/7cfSMzaXjc1N2Jpo.jpg",
+     "dur": 89
+    }
+   ],
+   "ift": "IFT-14",
+   "nome": "Flight 14",
+   "versione_nota": "Block 3"
+  }
+ ]
+}

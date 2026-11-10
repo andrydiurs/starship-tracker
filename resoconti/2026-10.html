@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="resoconti.css?v=20261101b">
 </head>
 <body>
-  <script src="../nav.js?v=20261106c"></script>
+  <script src="../nav.js?v=20261110a"></script>
   <div class="stars" aria-hidden="true"></div>
   <header class="top">
     <div class="wrap top-inner">

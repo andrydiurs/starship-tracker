@@ -1,6 +1,6 @@
 /* Menù condiviso delle pagine del sito.
    Desktop: colonna a sinistra. Sotto i 960px: tendina dal pulsante Menù.
-   La pagina corrente si ricava dal percorso (raptor, dati, resoconti, altrimenti Tracker). */
+   La pagina corrente si ricava dal percorso (voli, raptor, dati, resoconti, altrimenti Tracker). */
 (function () {
   "use strict";
 
@@ -9,11 +9,13 @@
     engine: '<path d="M9 3h6v6.5c0 2-1.1 3.4-3 4.5-1.9-1.1-3-2.5-3-4.5V3z"/><path d="M10.2 15c.5 1.4 1.1 2.5 1.8 3.3.7-.8 1.3-1.9 1.8-3.3"/><path d="M7 7h2M15 7h2"/>',
     book: '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>',
     chart: '<path d="M3 3v18h18"/><path d="M7 16v-4"/><path d="M12 16V8"/><path d="M17 16v-7"/>',
+    rocket: '<path d="M12 3c3 2.2 5 5.6 5 9.5l-2 3.5H9l-2-3.5C7 8.6 9 5.2 12 3z"/><circle cx="12" cy="10" r="1.6"/><path d="M9 16l-2.5 4M15 16l2.5 4"/>',
     menu: '<path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/>'
   };
 
   var PAGES = [
     { id: "tracker", label: "Tracker", href: "" },
+    { id: "voli", label: "Voli passati", href: "voli/", icon: "rocket" },
     { id: "raptor", label: "Raptor", href: "raptor/", icon: "engine" },
     { id: "resoconti", label: "Resoconti", href: "resoconti/", icon: "book" },
     { id: "dati", label: "Dati SpaceX", href: "dati/", icon: "chart" }
@@ -26,7 +28,7 @@
 
   function context() {
     var path = location.pathname || "";
-    var match = path.match(/\/(raptor|dati|resoconti)(?=\/|$)/);
+    var match = path.match(/\/(voli|raptor|dati|resoconti)(?=\/|$)/);
     if (match) return { root: "../", id: match[1] };
     return { root: "", id: "tracker" };
   }

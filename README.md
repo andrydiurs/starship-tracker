@@ -89,7 +89,7 @@ Se il JSON del mese contiene la chiave `timeline`, `resoconti.js` disegna prima 
 
 - I dati JSON (`data/tracker.json`, `data/resoconti/*.json`) sono letti con `fetch(..., { cache: "no-cache" })`: l'aggiornamento quotidiano basta modificarli, non serve altro.
 - CSS e JS sono richiamati con `?v=AAAAMMGG<lettera>` (es. `style.css?v=20261027a`) in `index.html`, `resoconti/page.tpl`, nelle pagine dei mesi, in `dati/index.html` e in `raptor/index.html`. Quando si modifica CSS o JS, aumentare la versione in tutti questi file.
-- `nav.js` disegna il menù delle pagine (Tracker, Raptor, Resoconti, Dati SpaceX) su tutte le pagine. Da 960px è una colonna a sinistra; sotto, un pulsante «Menù». La voce della pagina corrente ha `aria-current="page"`.
+- `nav.js` disegna il menù delle pagine (Tracker, Voli passati, Raptor, Resoconti, Dati SpaceX) su tutte le pagine. Da 960px è una colonna a sinistra; sotto, un pulsante «Menù». La voce della pagina corrente ha `aria-current="page"`.
 - Tutte le icone SVG inline hanno `width`/`height` espliciti, così restano piccole anche con un CSS vecchio o assente.
 
 ## Raptor (`raptor/`)
@@ -120,3 +120,10 @@ python3 tools/xlsx_to_json.py /percorso/SpaceX_aggiornato.xlsx --out data/spacex
 Il convertitore stampa eventuali avvisi (es. nomi di missione diversi tra fogli); finiscono anche in `meta.avvisi` e sono mostrati nella scheda «Archivio» della pagina. La data «Dati aggiornati al» viene dal foglio «Modifiche».
 
 Grafici e tabelle sono descritti negli array `CHARTS` e `TABLES` in `dati/dati.js`: per aggiungerne uno basta una nuova voce con `id`, `tab`, `title` e una funzione `build`.
+
+## Voli passati
+
+- `voli/` è la pagina dei voli di prova già fatti (IFT-1 … ultimo volo): per ognuno obiettivi e risultato con icone, esito con badge, veicoli, fonte e almeno un video di @SpaceX su X.
+- I dati stanno in `data/voli.json`. Per aggiungere un volo si aggiunge un oggetto in fondo a `voli` (stessi campi degli altri). Ogni video è l'id di un post di @SpaceX con la sua miniatura `pbs.twimg.com`.
+- Le miniature sono leggere; l'incorporamento ufficiale di X (`widgets.js`) si carica solo quando si tocca una miniatura.
+- Esito: Successo se gli obiettivi principali sono raggiunti, Parziale se solo una parte, Fallito se il profilo di volo non è stato completato. Date e ore in ora di Roma.
