@@ -1,0 +1,328 @@
+{
+ "_nota": "Per uno slittamento basta cambiare decollo_utc (ora UTC, apertura finestra). Tutti gli eventi sono secondi rispetto al decollo (T-0), dalla timeline ufficiale SpaceX.",
+ "aggiornato": "12 nov 2026, 11:30",
+ "volo": "Flight 15",
+ "booster": "B22",
+ "ship": "S42",
+ "stato": "NET",
+ "stato_testo": "Non prima di venerdì 13 novembre, in attesa dell'approvazione normativa",
+ "decollo_utc": "2026-11-13T22:45:00Z",
+ "finestra_min": 75,
+ "faa_fine_utc": "2026-11-14T00:40:00Z",
+ "riserva_utc": "2026-11-14T22:45:00Z",
+ "diretta_min_prima": 30,
+ "obiettivo": "Primo volo con il ritorno di entrambi gli stadi alla torre: cattura del Super Heavy dopo circa 6 minuti e cattura della Ship dopo oltre 22 ore e circa 14 orbite a ~275 km, con il rilascio di 26 Starlink V3.",
+ "fonti": [
+  {
+   "nome": "SpaceX · Starship Flight 15",
+   "url": "https://www.spacex.com/launches/starship-flight-15"
+  },
+  {
+   "nome": "FAA · avvisi operativi",
+   "url": "https://www.fly.faa.gov/adv/adv_spt"
+  },
+  {
+   "nome": "Diretta su X · @SpaceX",
+   "url": "https://x.com/SpaceX"
+  }
+ ],
+ "accensioni": {
+  "booster": [
+   [
+    0,
+    139
+   ],
+   [
+    146,
+    182
+   ],
+   [
+    370,
+    395
+   ]
+  ],
+  "ship": [
+   [
+    141,
+    489
+   ],
+   [
+    1570,
+    1590
+   ],
+   [
+    77757,
+    77767
+   ],
+   [
+    81136,
+    81154
+   ]
+  ]
+ },
+ "rientro": [
+  79846,
+  81013
+ ],
+ "eventi": [
+  {
+   "id": "go_prop",
+   "t": -3000,
+   "v": "pre",
+   "nome": "Via libera al caricamento dei propellenti",
+   "desc": "Il Flight Director di SpaceX fa il sondaggio delle squadre e conferma il GO."
+  },
+  {
+   "id": "b_lox",
+   "t": -2133,
+   "v": "pre",
+   "nome": "Booster: carico di ossigeno liquido",
+   "desc": "Inizia il riempimento del LOX nel Super Heavy."
+  },
+  {
+   "id": "b_ch4",
+   "t": -2130,
+   "v": "pre",
+   "nome": "Booster: carico di metano liquido",
+   "desc": "Inizia il riempimento del metano nel Super Heavy."
+  },
+  {
+   "id": "s_lox",
+   "t": -2112,
+   "v": "pre",
+   "nome": "Ship: carico di ossigeno liquido",
+   "desc": "Inizia il riempimento del LOX nella Ship."
+  },
+  {
+   "id": "s_ch4",
+   "t": -2111,
+   "v": "pre",
+   "nome": "Ship: carico di metano liquido",
+   "desc": "Inizia il riempimento del metano nella Ship."
+  },
+  {
+   "id": "chill",
+   "t": -1300,
+   "v": "pre",
+   "nome": "Raffreddamento dei Raptor",
+   "desc": "I motori di booster e Ship vengono portati a temperatura criogenica (engine chill)."
+  },
+  {
+   "id": "b_full",
+   "t": -170,
+   "v": "pre",
+   "nome": "Booster: propellenti caricati",
+   "desc": "Fine del carico del Super Heavy."
+  },
+  {
+   "id": "s_full",
+   "t": -130,
+   "v": "pre",
+   "nome": "Ship: propellenti caricati",
+   "desc": "Fine del carico della Ship."
+  },
+  {
+   "id": "go_launch",
+   "t": -30,
+   "v": "pre",
+   "nome": "Via libera al lancio",
+   "desc": "Il Flight Director conferma il GO per il lancio."
+  },
+  {
+   "id": "deluge",
+   "t": -17,
+   "v": "pre",
+   "nome": "Attivazione del deviatore di fiamma",
+   "desc": "Parte l'acqua del flame diverter sotto la torre."
+  },
+  {
+   "id": "ignition",
+   "t": -3,
+   "v": "pre",
+   "nome": "Comando di accensione del booster",
+   "desc": "I 33 Raptor del Super Heavy ricevono il comando di avvio."
+  },
+  {
+   "id": "liftoff",
+   "t": 0,
+   "v": "both",
+   "nome": "Decollo",
+   "desc": "B22 e S42 lasciano la torre."
+  },
+  {
+   "id": "maxq",
+   "t": 58,
+   "v": "both",
+   "nome": "Max Q",
+   "desc": "Momento di massimo stress aerodinamico sul razzo."
+  },
+  {
+   "id": "meco",
+   "t": 139,
+   "v": "booster",
+   "nome": "MECO del Super Heavy",
+   "desc": "Si spegne la maggior parte dei 33 motori del booster."
+  },
+  {
+   "id": "hotstage",
+   "t": 141,
+   "v": "both",
+   "nome": "Hot-staging",
+   "desc": "La Ship accende i Raptor e si separa dal booster."
+  },
+  {
+   "id": "bb_start",
+   "t": 146,
+   "v": "booster",
+   "nome": "Inizio boostback",
+   "desc": "Il booster si gira e accende i motori per tornare verso Starbase."
+  },
+  {
+   "id": "bb_end",
+   "t": 182,
+   "v": "booster",
+   "nome": "Fine boostback",
+   "desc": "Spegnimento: il booster plana verso la torre."
+  },
+  {
+   "id": "b_land",
+   "t": 370,
+   "v": "booster",
+   "nome": "Inizio accensione di atterraggio",
+   "desc": "Il booster riaccende i motori per frenare sopra la torre."
+  },
+  {
+   "id": "b_catch",
+   "t": 395,
+   "v": "booster",
+   "nome": "Spegnimento e cattura del booster",
+   "desc": "Le chopsticks della torre afferrano il Super Heavy."
+  },
+  {
+   "id": "seco",
+   "t": 489,
+   "v": "ship",
+   "nome": "Spegnimento dei motori della Ship",
+   "desc": "Fine della salita: la Ship è vicina all'orbita."
+  },
+  {
+   "id": "oib_start",
+   "t": 1570,
+   "v": "ship",
+   "nome": "Inizio accensione di inserimento in orbita",
+   "desc": "Breve accensione per entrare in orbita a circa 275 km."
+  },
+  {
+   "id": "oib_end",
+   "t": 1590,
+   "v": "ship",
+   "nome": "Fine accensione di inserimento in orbita",
+   "desc": "La Ship è in orbita: comincia il giro di circa 14 orbite."
+  },
+  {
+   "id": "pl_start",
+   "t": 2101,
+   "v": "ship",
+   "nome": "Inizio rilascio degli Starlink",
+   "desc": "La porta si apre e partono i 26 Starlink V3."
+  },
+  {
+   "id": "pl_end",
+   "t": 4660,
+   "v": "ship",
+   "nome": "Fine rilascio degli Starlink",
+   "desc": "Rilasciati tutti i satelliti. Tre hanno telecamere per riprendere lo scudo termico."
+  },
+  {
+   "id": "chk_hi1",
+   "t": 5266,
+   "v": "ship",
+   "nome": "Primo controllo per il ritorno (Hawaii)",
+   "desc": "Punto di decisione previsto: SpaceX valuta se proseguire verso il ritorno alla torre."
+  },
+  {
+   "id": "chk_cl",
+   "t": 26135,
+   "v": "ship",
+   "nome": "Controllo intermedio per il ritorno (Cile)",
+   "desc": "Altro punto di decisione previsto lungo l'orbita."
+  },
+  {
+   "id": "chk_hi2",
+   "t": 74515,
+   "v": "ship",
+   "nome": "Ultimo controllo per il ritorno (Hawaii)",
+   "desc": "Ultima verifica prima dell'accensione di rientro."
+  },
+  {
+   "id": "deorbit_start",
+   "t": 77757,
+   "v": "ship",
+   "nome": "Inizio accensione di deorbit",
+   "desc": "La Ship frena per lasciare l'orbita e puntare verso Starbase."
+  },
+  {
+   "id": "deorbit_end",
+   "t": 77767,
+   "v": "ship",
+   "nome": "Fine accensione di deorbit",
+   "desc": "La traiettoria ora riporta la Ship verso il Texas."
+  },
+  {
+   "id": "entry",
+   "t": 79846,
+   "v": "ship",
+   "nome": "Rientro in atmosfera",
+   "desc": "Inizia il rientro: lo scudo termico affronta il plasma."
+  },
+  {
+   "id": "transonic",
+   "t": 80974,
+   "v": "ship",
+   "nome": "Velocità transonica",
+   "desc": "La Ship scende verso la velocità del suono."
+  },
+  {
+   "id": "subsonic",
+   "t": 81013,
+   "v": "ship",
+   "nome": "Velocità subsonica",
+   "desc": "La Ship cade di pancia verso la torre, guidata dai flap."
+  },
+  {
+   "id": "s_land",
+   "t": 81136,
+   "v": "ship",
+   "nome": "Inizio accensione di atterraggio",
+   "desc": "Riaccensione dei Raptor sopra Starbase."
+  },
+  {
+   "id": "flip",
+   "t": 81138,
+   "v": "ship",
+   "nome": "Manovra di raddrizzamento",
+   "desc": "La Ship passa da orizzontale a verticale."
+  },
+  {
+   "id": "eng32",
+   "t": 81146,
+   "v": "ship",
+   "nome": "Da 3 a 2 motori",
+   "desc": "Si spegne un motore dell'accensione di atterraggio."
+  },
+  {
+   "id": "eng21",
+   "t": 81153,
+   "v": "ship",
+   "nome": "Da 2 a 1 motore",
+   "desc": "Resta acceso un solo motore per l'avvicinamento alla torre."
+  },
+  {
+   "id": "s_catch",
+   "t": 81154,
+   "v": "ship",
+   "nome": "Spegnimento e cattura della Ship",
+   "desc": "Le chopsticks della torre afferrano Ship 42."
+  }
+ ]
+}

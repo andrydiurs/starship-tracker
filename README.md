@@ -126,3 +126,9 @@ Grafici e tabelle sono descritti negli array `CHARTS` e `TABLES` in `dati/dati.j
 - `voli/` è la pagina dei voli di prova già fatti (IFT-1 … ultimo volo): per ognuno una breve descrizione con curiosità, obiettivi e risultato con icone per singolo obiettivo, veicoli, fonte e almeno un video di @SpaceX su X. Non c'è un giudizio complessivo di successo o fallimento.
 - I dati stanno in `data/voli.json`. Per aggiungere un volo si aggiunge un oggetto in fondo a `voli` (stessi campi degli altri). Ogni video è l'id di un post di @SpaceX con la sua miniatura `pbs.twimg.com`.
 - Le miniature sono leggere; l'incorporamento ufficiale di X (`widgets.js`) si carica solo quando si tocca una miniatura.
+
+## Prossimo volo (`prossimo-volo/`)
+
+- Pagina dedicata al prossimo volo (ora Flight 15, B22 + S42): due conti alla rovescia (decollo e cattura della Ship), schede di Super Heavy e Ship con disegno SVG (`prossimo-volo/assets/`, realizzati per il sito) e timeline con stati fatto / in corso / prossimo calcolati sull'orologio. Orari sempre in ora di Roma via `Intl`.
+- Tutti i dati in `data/volo-prossimo.json`. **Per uno slittamento basta cambiare `decollo_utc`** (ISO UTC, apertura della finestra) e, se serve, `riserva_utc`, `faa_fine_utc`, `stato_testo` e `aggiornato`. Gli eventi (`eventi`) sono secondi rispetto a T-0 dalla timeline ufficiale SpaceX (negativi = conto alla rovescia a terra); `v` è `pre`, `booster`, `ship` o `both`. La cattura della Ship è l'evento `s_catch`, quella del booster `b_catch`. `accensioni` e `rientro` (intervalli in secondi) accendono fiamma e plasma nei disegni.
+- Test: `?t=T-600`, `?t=T+400` (o `T%2B400`), `?t=T+21:40:00`, oppure `?t=2026-11-14T20:00:00Z`; `&speed=60` accelera l'orologio.

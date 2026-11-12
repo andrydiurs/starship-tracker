@@ -1,6 +1,6 @@
 /* Menù condiviso delle pagine del sito.
    Desktop: colonna a sinistra. Sotto i 960px: tendina dal pulsante Menù.
-   La pagina corrente si ricava dal percorso (voli, raptor, dati, resoconti, altrimenti Tracker). */
+   La pagina corrente si ricava dal percorso (prossimo-volo, voli, raptor, dati, resoconti, altrimenti Tracker). */
 (function () {
   "use strict";
 
@@ -10,11 +10,13 @@
     book: '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>',
     chart: '<path d="M3 3v18h18"/><path d="M7 16v-4"/><path d="M12 16V8"/><path d="M17 16v-7"/>',
     rocket: '<path d="M12 3c3 2.2 5 5.6 5 9.5l-2 3.5H9l-2-3.5C7 8.6 9 5.2 12 3z"/><circle cx="12" cy="10" r="1.6"/><path d="M9 16l-2.5 4M15 16l2.5 4"/>',
+    live: '<circle cx="12" cy="12" r="2.2"/><path d="M8.2 15.8a5.4 5.4 0 0 1 0-7.6M15.8 8.2a5.4 5.4 0 0 1 0 7.6"/><path d="M5.3 18.7a9.5 9.5 0 0 1 0-13.4M18.7 5.3a9.5 9.5 0 0 1 0 13.4"/>',
     menu: '<path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/>'
   };
 
   var PAGES = [
     { id: "tracker", label: "Tracker", href: "" },
+    { id: "prossimo-volo", label: "Prossimo volo", href: "prossimo-volo/", icon: "live" },
     { id: "voli", label: "Voli passati", href: "voli/", icon: "rocket" },
     { id: "raptor", label: "Raptor", href: "raptor/", icon: "engine" },
     { id: "resoconti", label: "Resoconti", href: "resoconti/", icon: "book" },
@@ -28,7 +30,7 @@
 
   function context() {
     var path = location.pathname || "";
-    var match = path.match(/\/(voli|raptor|dati|resoconti)(?=\/|$)/);
+    var match = path.match(/\/(prossimo-volo|voli|raptor|dati|resoconti)(?=\/|$)/);
     if (match) return { root: "../", id: match[1] };
     return { root: "", id: "tracker" };
   }
