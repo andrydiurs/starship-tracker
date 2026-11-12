@@ -113,11 +113,11 @@
     var bk = D.riserva_utc ? new Date(D.riserva_utc) : null;
     var sim = simActive ? '<p class="sim">Simulazione attiva: orologio spostato (' + esc(simSpec || "") + (speed !== 1 ? " · velocità ×" + speed : "") + '). <a href="./">Torna all\'ora reale</a></p>' : "";
     app.innerHTML =
-      '<section class="pv-hero">' + sim +
-        '<p class="as-cats"><span class="as-cat">Prossimo volo</span><span class="as-cat alt">Starship</span></p>' +
-        '<h1>' + esc(D.volo) + ': ' + esc(D.booster) + ' e ' + esc(D.ship) + ' verso la doppia cattura</h1>' +
+      '<section class="pv-hero acc-pv">' + sim +
+        '<p class="kicker"><span class="live-dot" aria-hidden="true"></span>Prossimo volo · Starbase</p>' +
+        '<h1>' + esc(D.volo) + ' <span class="h1-veh">' + esc(D.booster) + ' + ' + esc(D.ship) + '</span></h1>' +
         '<p class="vp-lead">' + esc(D.obiettivo) + '</p>' +
-        '<p class="as-meta"><span>di <b>Starship Tracker</b></span><span class="as-meta-i"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>' + esc(D.stato) + ' ' + esc(day(t0)) + '</span><span>' + esc(D.stato_testo) + '</span></p>' +
+        '<p class="pv-status"><span class="badge t-accent">' + esc(D.stato) + ' ' + esc(day(t0)) + '</span><span>' + esc(D.stato_testo) + '</span></p>' +
       '</section>' +
       '<section class="cd-grid" aria-label="Conti alla rovescia">' +
         cdPanel("launch", "Decollo tra", "cd-launch") + cdPanel("catch", "Cattura di Ship 42 tra", "cd-catch") +
@@ -127,10 +127,8 @@
         (faa ? '; l\'avviso FAA arriva fino alle ' + fmtHM.format(faa) : '') +
         (bk ? '. Data di riserva: <b>' + esc(day(bk)) + ', ' + fmtHM.format(bk) + '</b>' : '') +
         '. Diretta su X di @SpaceX circa ' + D.diretta_min_prima + ' minuti prima (' + fmtHM.format(new Date(T0 - D.diretta_min_prima * 60000)) + ').</span></p>' +
-      '<h2 class="as-block"><span>Le fasi del volo</span></h2>' +
       '<section class="veh-grid">' + vehicleCard("booster") + vehicleCard("ship") + '</section>' +
-      '<h2 class="as-block"><span>Conto alla rovescia a terra</span></h2>' +
-      '<section class="pre-card"><p class="pre-sub">Le operazioni prima del decollo, dalla timeline ufficiale di SpaceX.</p>' +
+      '<section class="card pre-card acc-pv"><div class="sec-head"><h3>Conto alla rovescia a terra</h3><p class="sub">Le operazioni prima del decollo, dalla timeline ufficiale.</p></div>' +
         '<ol class="pre-list" id="tl-pre">' + PRE.map(function (e) {
           return '<li class="ev" data-t="' + e.t + '"><span class="ev-dot" aria-hidden="true"></span><div><span class="ev-t">' + tLabel(e.t) + '</span> <span class="ev-rome">' + when(e.t, false) + '</span><p class="ev-name">' + esc(e.nome) + '</p><p class="ev-desc">' + esc(e.desc) + '</p></div></li>';
         }).join("") + '</ol></section>' +
