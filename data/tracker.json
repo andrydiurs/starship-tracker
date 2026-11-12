@@ -1,16 +1,16 @@
 {
-  "ULTIMO_AGGIORNAMENTO": "11 nov 2026, 08:50",
+  "ULTIMO_AGGIORNAMENTO": "12 nov 2026, 08:45",
   "PROSSIMO_VOLO": {
     "volo": "Flight 15",
     "veicoli": "Super Heavy B22 + Ship 42",
     "netBreve": "13 nov",
-    "net": "Ufficiale SpaceX: NET venerdì 13 nov, finestra di 75 minuti dalle 23:45 ora di Roma (16:45 CT), in attesa dell'approvazione normativa · avviso FAA dell'11 nov: finestra primaria lancio 23:45–01:40 ora di Roma (13-14 nov), riserva il 14 nov; rientro primario 14 nov 21:56–01:14, riserva il 15 nov · missione di oltre 22 ore, circa 14 orbite a ~275 km, 26 Starlink V3, poi cattura di Ship e booster · diretta su X di @SpaceX circa 30 minuti prima",
+    "net": "Ufficiale SpaceX: NET venerdì 13 nov, finestra di 75 minuti dalle 23:45 ora di Roma (16:45 CT), in attesa dell'approvazione normativa · avviso FAA dell'11 nov: finestra primaria lancio 23:45–01:40 ora di Roma (13-14 nov), riserva il 14 nov; rientro primario 14 nov 21:56–01:14, riserva il 15 nov · missione di oltre 22 ore, circa 14 orbite a ~275 km, 26 Starlink V3, poi cattura di Ship e booster · diretta su X di @SpaceX circa 30 minuti prima · Space.com: cattura della Ship prevista sabato 14 nov verso le 22:17 ora di Roma (orario indicativo)",
     "sito": "Starbase, Pad 2",
     "obiettivo": "Doppia cattura in torre: Super Heavy e Ship",
     "licenzaBreve": "Non emessa",
-    "licenzaFaa": "SpaceX: lancio «in attesa dell'approvazione normativa». La modifica della licenza FAA per riportare S42 alla torre non risulta ancora emessa (11 nov). L'11 nov l'avviso FAA sul piano operativo ha fissato le finestre: lancio 13 nov 23:45–01:40 ora di Roma (riserva 14 nov), rientro 14 nov 21:56–01:14 (riserva 15 nov). Il 10 nov aggiornata l'area di pericolo marittimo NAVAREA IV (13 nov 23:45 – 20 nov 01:40 ora di Roma). Gli avvisi non sono la licenza.",
+    "licenzaFaa": "SpaceX: lancio «in attesa dell'approvazione normativa». La modifica della licenza FAA per riportare S42 alla torre non risulta ancora emessa (11 nov). L'11 nov l'avviso FAA sul piano operativo ha fissato le finestre: lancio 13 nov 23:45–01:40 ora di Roma (riserva 14 nov), rientro 14 nov 21:56–01:14 (riserva 15 nov). Il 10 nov aggiornata l'area di pericolo marittimo NAVAREA IV (13 nov 23:45 – 20 nov 01:40 ora di Roma). Il 12 nov un nuovo avviso FAA (ADVZY 003) conferma le stesse finestre e compare il primo NOTAM per il rientro di S42 sul Messico verso Starbase (NSF). Gli avvisi non sono la licenza: la modifica per la cattura della Ship resta non confermata.",
     "licenzaSrc": {
-      "label": "FAA ATCSCC, 11 nov",
+      "label": "FAA ATCSCC, 12 nov",
       "url": "https://www.fly.faa.gov/adv/adv_spt"
     },
     "netSrc": {
@@ -21,7 +21,7 @@
       "titolo": "Ship 42",
       "versione": "V3",
       "stato": {
-        "label": "Controlli finali; non ancora spostata al Pad 2 (11 nov)",
+        "label": "Carico di 26 Starlink V3 in corso; non ancora al Pad 2 (12 nov)",
         "tone": "success"
       },
       "milestones": [
@@ -70,10 +70,10 @@
           "fatto": false,
           "data": "attesa",
           "src": {
-            "label": "@VickiCocks15, 11 nov",
-            "url": "https://x.com/VickiCocks15/status/2120311390669766807"
+            "label": "@NASASpaceflight, 11 nov",
+            "url": "https://x.com/NASASpaceflight/status/2120641416384922015"
           },
-          "nota": "B22 è già sul launch mount (10 nov); nella notte dell'11 nov nessun movimento di Ship 42 ancora visto (@VickiCocks15)"
+          "nota": "B22 è sul launch mount dal 10 nov. La sera dell'11 nov lo Starlink Speed Loader è uscito dalla Starfactory per caricare S42 con 26 Starlink V3 (NSF); la Ship non è ancora stata trasferita al pad (12 nov)"
         }
       ]
     },
@@ -81,7 +81,7 @@
       "titolo": "Super Heavy B22",
       "versione": "V3",
       "stato": {
-        "label": "Al Pad 2: test finali di cattura fatti (10 nov)",
+        "label": "Sul launch mount al Pad 2, in attesa di S42 (12 nov)",
         "tone": "success"
       },
       "milestones": [
@@ -138,6 +138,33 @@
     }
   },
   "NEWS": [
+    {
+      "data": "12 nov",
+      "sez": "Lanci",
+      "testo": "Nuovo avviso FAA (ADVZY 003) sul Flight 15: confermate la finestra di lancio del 13 nov 23:45–01:40 ora di Roma (riserva 14 nov) e quella di rientro del 14 nov 21:56–01:14 (riserva 15 nov). Pubblicato anche il primo NOTAM per il rientro di S42 sul Messico verso la cattura a Starbase",
+      "src": {
+        "label": "@NASASpaceflight, 12 nov",
+        "url": "https://x.com/NASASpaceflight/status/2120690131929559511"
+      }
+    },
+    {
+      "data": "12 nov",
+      "sez": "Lanci",
+      "testo": "Space.com indica la cattura della Ship in torre per sabato 14 nov verso le 22:17 ora di Roma, a circa 22 ore dal lancio. La licenza FAA per la cattura della Ship non risulta ancora confermata",
+      "src": {
+        "label": "Space.com, 12 nov",
+        "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-1st-booster-ship-double-catch-full-recovery-what-time"
+      }
+    },
+    {
+      "data": "11 nov",
+      "sez": "Prototipi",
+      "testo": "Lo Starlink Speed Loader è uscito dalla Starfactory per caricare Ship 42 con 26 satelliti Starlink V3",
+      "src": {
+        "label": "@NASASpaceflight, 11 nov",
+        "url": "https://x.com/NASASpaceflight/status/2120641416384922015"
+      }
+    },
     {
       "data": "11 nov",
       "sez": "Lanci",
@@ -807,10 +834,10 @@
     }
   ],
   "IN_BREVE": {
-    "siti": "10 nov: al Pad 1 in installazione la seconda delle quattro pareti inclinate del flame trench (NSF). Nella notte dell'11 nov al Pad 2 si sente lo SQD in purge (RGV). TFR per test ad alta energia a Starbase dal 12 nov. Gigabay: ultimi pannelli esterni sollevati (non confermato).",
-    "prototipi": "10 nov: SpaceX conferma B22 al Pad 2, primo Super Heavy V3 per la cattura, con test finali di cattura e squeeze test. Ship 42 non ancora spostata (11 nov). In Mega Bay 2 Ship 45 rivestita sui transfer tubes e arrivata l'ultima sezione; B25 A5 in Mega Bay 1 (non confermato).",
-    "test": "10 nov: test finali di cattura di B22 al Pad 2, compreso uno squeeze test sospeso (SpaceX). Raptor 3 RVAC consegnato al banco a McGregor (esito non confermato). TFR per «test ad alta energia» a Starbase dal 12 nov (tipo non confermato).",
-    "lanci": "Flight 15 (B22 + S42) NET venerdì 13 nov: finestra FAA 23:45–01:40 ora di Roma, riserva il 14 nov; rientro il 14 nov. Licenza per la cattura della Ship non ancora emessa. Area di pericolo marittimo aggiornata il 10 nov."
+    "siti": "11 nov: al Pad 2 B22 ripreso dai chopsticks (non confermato). Gigabay Texas: avvistato un carroponte all'interno (@mcrs987, non confermato). Pad 1: seconda delle quattro pareti inclinate del flame trench (10 nov, NSF).",
+    "prototipi": "11 nov: lo Starlink Speed Loader carica S42 con 26 Starlink V3 (NSF). B22 sul launch mount del Pad 2, rilasciato e poi ripreso dai chopsticks la sera dell'11 nov (non confermato). S42 non ancora trasferita (12 nov).",
+    "test": "11 nov: Raptor 3 n. 286 in transito a McGregor, numero record (esito non confermato). Per Next Spaceflight (11 nov) restano solo autorizzazione e prova generale con propellenti (WDR) prima del Flight 15.",
+    "lanci": "Flight 15 (B22 + S42) NET venerdì 13 nov: finestra 23:45–01:40 ora di Roma confermata dall'avviso FAA del 12 nov, riserva il 14 nov; cattura della Ship prevista sabato 14 nov verso le 22:17 (Space.com). Primo NOTAM di rientro sul Messico. Licenza per la cattura della Ship non ancora confermata."
   },
   "SITI": [
     {
@@ -820,9 +847,9 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "Test di cattura B22 con squeeze test (10 nov); SQD in purge",
-      "ultimo": "10 nov: B22 sul launch mount e test finali di cattura, compreso squeeze test sospeso all'altezza di cattura (SpaceX); poi chopsticks rilasciati e braccio SQD riposizionato; nella notte dell'11 nov SQD in purge (RGV). TFR per test ad alta energia dal 12 nov. 9 nov: chiusura strada 10:00–14:00 dalla Production al Pad (Fraser/NSF; se arriveranno i veicoli F15 non è confermato). 6-8 nov: test hold-down clamp del Booster (non confermato, @VickiCocks15). NSF (7 nov): sistemi del pad testati in vista dello stacking di B22/S42. Prima: prove chopsticks e deluge del 5 nov (timelapse RGV); lavori sui BQD; static fire B22 25 ott.",
-      "data": "10 nov",
+      "breve": "B22 sul mount, ripreso dai chopsticks l'11 nov (nc)",
+      "ultimo": "11 nov: chopsticks hanno rilasciato e poi ripreso B22, lavori sulle grid fin conclusi (@VickiCocks15, non confermato). 10 nov: B22 sul launch mount e test finali di cattura, compreso squeeze test sospeso all'altezza di cattura (SpaceX); poi chopsticks rilasciati e braccio SQD riposizionato; nella notte dell'11 nov SQD in purge (RGV). TFR per test ad alta energia dal 12 nov. 9 nov: chiusura strada 10:00–14:00 dalla Production al Pad (Fraser/NSF; se arriveranno i veicoli F15 non è confermato). 6-8 nov: test hold-down clamp del Booster (non confermato, @VickiCocks15). NSF (7 nov): sistemi del pad testati in vista dello stacking di B22/S42. Prima: prove chopsticks e deluge del 5 nov (timelapse RGV); lavori sui BQD; static fire B22 25 ott.",
+      "data": "11 nov",
       "src": {
         "label": "@SpaceX, 10 nov",
         "url": "https://x.com/SpaceX/status/2120220290219208884"
@@ -881,7 +908,7 @@
         "tone": "accent"
       },
       "breve": "Ship 40 primo veicolo all'interno (7 nov)",
-      "ultimo": "La sera del 7 nov Ship 40 è entrata nella Gigabay, primo veicolo al suo interno (NSF, LabPadre). Non implica la piena operatività. Primo carroponte in posizione (15 ott); una delle 4 gru a torre quasi smontata (17 ott); gru LR11000 al lavoro dentro l'edificio (22 ott); nuove foto aeree del 23 e del 26 ott. Obiettivo SpaceX: completamento entro fine 2026. Il 31 ott SpaceX ha proiettato uno spettacolo luminoso di Halloween sulla facciata (video NSF). Il 3 nov (sera, ora del Texas) rimosso il braccio della terza delle quattro gru a torre, smontato dall'ultima rimasta; l'esterno dell'edificio è quasi finito (video di Erik Fraser per NSF)",
+      "ultimo": "11 nov: avvistato un carroponte all'interno (@mcrs987, non confermato). La sera del 7 nov Ship 40 è entrata nella Gigabay, primo veicolo al suo interno (NSF, LabPadre). Non implica la piena operatività. Primo carroponte in posizione (15 ott); una delle 4 gru a torre quasi smontata (17 ott); gru LR11000 al lavoro dentro l'edificio (22 ott); nuove foto aeree del 23 e del 26 ott. Obiettivo SpaceX: completamento entro fine 2026. Il 31 ott SpaceX ha proiettato uno spettacolo luminoso di Halloween sulla facciata (video NSF). Il 3 nov (sera, ora del Texas) rimosso il braccio della terza delle quattro gru a torre, smontato dall'ultima rimasta; l'esterno dell'edificio è quasi finito (video di Erik Fraser per NSF)",
       "data": "7 nov",
       "src": {
         "label": "@NASASpaceflight, 7 nov",
@@ -910,12 +937,12 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "Raptor 3 RVAC consegnato al banco (10 nov, nc)",
-      "ultimo": "10 nov mattina: Raptor 3 RVAC consegnato al banco di prova (esito non confermato, @SpaceRhin0). Il 5–6 nov Raptor 3 «2x9» avvistato in passaggio sul sito di prova (@SpaceRhin0, NSF Live McGregor), dopo oltre una settimana senza movimenti. Prima: possibile esplosione COPV 26–27 ott (non confermata); registrazione magazzino Texas Construction Hub (4 nov).",
-      "data": "10 nov",
+      "breve": "Raptor 3 n. 286 in transito (11 nov, nc)",
+      "ultimo": "11 nov: Raptor 3 n. 286 in transito, numero record (@SpaceRhin0, non confermato). 10 nov mattina: Raptor 3 RVAC consegnato al banco di prova (esito non confermato, @SpaceRhin0). Il 5–6 nov Raptor 3 «2x9» avvistato in passaggio sul sito di prova (@SpaceRhin0, NSF Live McGregor), dopo oltre una settimana senza movimenti. Prima: possibile esplosione COPV 26–27 ott (non confermata); registrazione magazzino Texas Construction Hub (4 nov).",
+      "data": "11 nov",
       "src": {
-        "label": "@SpaceRhin0, 10 nov",
-        "url": "https://x.com/SpaceRhin0/status/2120148756427653356"
+        "label": "@SpaceRhin0, 11 nov",
+        "url": "https://x.com/SpaceRhin0/status/2120646791469126008"
       }
     },
     {
@@ -980,6 +1007,21 @@
     }
   ],
   "NON_CONFERMATI": [
+    {
+      "titolo": "B22 ripreso dai chopsticks",
+      "data": "11 nov",
+      "testo": "Secondo @VickiCocks15, i chopsticks hanno rilasciato B22 e la sera dell'11 nov lo hanno ripreso; il lavoro notturno sulle grid fin sembra concluso. Non confermato (https://x.com/VickiCocks15/status/2120657506775212533)"
+    },
+    {
+      "titolo": "Raptor 3 n. 286 a McGregor",
+      "data": "11 nov",
+      "testo": "Raptor 3 numero 286 in transito, numero di serie record. Esito del test non confermato (https://x.com/SpaceRhin0/status/2120646791469126008)"
+    },
+    {
+      "titolo": "Carroponte nella Gigabay Texas",
+      "data": "11 nov",
+      "testo": "@mcrs987 mostra un carroponte all'interno della Gigabay di Starbase. Non confermato (https://x.com/mcrs987/status/2120471351127429470)"
+    },
     {
       "titolo": "Ship 45 rivestita sui transfer tubes in Mega Bay 2",
       "data": "10 nov",
@@ -1179,8 +1221,8 @@
       "versione": "V3",
       "volo": "Flight 15",
       "stato": "Test",
-      "breve": "Al Pad 2: test finali di cattura con squeeze test (10 nov)",
-      "note": "Prove crio 9-10 set; rollout al Pad 2 il 24 ott; static fire completo a 33 motori il 25 ott (circa 16 s), confermato da SpaceX. Nella notte tra 25 e 26 ott sollevato ad altezza di cattura e rientrato in Mega Bay 1 per i preparativi finali. @mcrs987 (28 ott): raceway aperto, sta per ricevere il sistema di terminazione del volo (FTS). NSF (6 nov): in controlli finali per il Flight 15 con NET 13 nov NSF (7 nov): sistemi del sito di lancio testati; B22 e S42 stanno per essere portati al Pad 2 per l'impilamento. Rollout al Pad 2 la sera del 9 nov e installazione sul launch mount verso le 04:34 del 10 nov (NSF). SpaceX (10 nov): primo Super Heavy V3 destinato al ritorno e alla cattura; test finali di cattura all'arrivo, compreso uno squeeze test sospeso all'altezza di cattura",
+      "breve": "Sul launch mount al Pad 2, in attesa di S42 (12 nov)",
+      "note": "Prove crio 9-10 set; rollout al Pad 2 il 24 ott; static fire completo a 33 motori il 25 ott (circa 16 s), confermato da SpaceX. Nella notte tra 25 e 26 ott sollevato ad altezza di cattura e rientrato in Mega Bay 1 per i preparativi finali. @mcrs987 (28 ott): raceway aperto, sta per ricevere il sistema di terminazione del volo (FTS). NSF (6 nov): in controlli finali per il Flight 15 con NET 13 nov NSF (7 nov): sistemi del sito di lancio testati; B22 e S42 stanno per essere portati al Pad 2 per l'impilamento. Rollout al Pad 2 la sera del 9 nov e installazione sul launch mount verso le 04:34 del 10 nov (NSF). SpaceX (10 nov): primo Super Heavy V3 destinato al ritorno e alla cattura; test finali di cattura all'arrivo, compreso uno squeeze test sospeso all'altezza di cattura 11 nov: rilasciato e poi ripreso dai chopsticks, lavori sulle grid fin conclusi (@VickiCocks15, non confermato).",
       "data": "10 nov",
       "src": {
         "label": "@SpaceX, 10 nov",
@@ -1193,8 +1235,8 @@
       "versione": "V3",
       "volo": "Flight 15",
       "stato": "Test",
-      "breve": "Controlli finali; non ancora spostata al Pad 2 (11 nov)",
-      "note": "Test chopsticks al Pad 2 (11-12 set); ulteriore prova crio a Massey's (9 ott). Partita per Massey's il 26 ott; nella notte tra 26 e 27 ott static fire a un solo motore e il 27 ott verso le 22:46 ora di Roma static fire a sei motori a piena durata. Il 28 ott SpaceX ha confermato la fine degli static fire, compresa un'accensione di un solo Raptor che simula la manovra di deorbit. Nella notte tra 28 e 29 ott è tornata in produzione per gli ultimi preparativi (Mega Bay 2 e carico Starlink V3 attesi, non confermato). Il 29 ott è entrata in Mega Bay 2. Il 30 ott NSF: in Mega Bay 2 per ispezioni finali e cariche del sistema di terminazione del volo, poi caricamento dei satelliti Starlink per il Flight 15. NSF (6 nov): ancora nei controlli finali; prossimi passi cariche FTS e carico Starlink. Piano di missione di circa 24 ore (non confermato) NSF (7 nov): sistemi del sito di lancio testati; B22 e S42 stanno per essere portati al Pad 2 per l'impilamento",
+      "breve": "Carico di 26 Starlink V3 in corso (11 nov)",
+      "note": "Test chopsticks al Pad 2 (11-12 set); ulteriore prova crio a Massey's (9 ott). Partita per Massey's il 26 ott; nella notte tra 26 e 27 ott static fire a un solo motore e il 27 ott verso le 22:46 ora di Roma static fire a sei motori a piena durata. Il 28 ott SpaceX ha confermato la fine degli static fire, compresa un'accensione di un solo Raptor che simula la manovra di deorbit. Nella notte tra 28 e 29 ott è tornata in produzione per gli ultimi preparativi (Mega Bay 2 e carico Starlink V3 attesi, non confermato). Il 29 ott è entrata in Mega Bay 2. Il 30 ott NSF: in Mega Bay 2 per ispezioni finali e cariche del sistema di terminazione del volo, poi caricamento dei satelliti Starlink per il Flight 15. NSF (6 nov): ancora nei controlli finali; prossimi passi cariche FTS e carico Starlink. Piano di missione di circa 24 ore (non confermato) NSF (7 nov): sistemi del sito di lancio testati; B22 e S42 stanno per essere portati al Pad 2 per l'impilamento La sera dell'11 nov lo Starlink Speed Loader è uscito dalla Starfactory per caricare 26 Starlink V3 (NSF). Al 12 nov non ancora trasferita al Pad 2.",
       "data": "7 nov",
       "src": {
         "label": "@NASASpaceflight, 7 nov",
@@ -1388,6 +1430,18 @@
     }
   ],
   "TEST": [
+    {
+      "data": "11 nov",
+      "veicolo": "Raptor 3 n. 286",
+      "tipo": "Transito verso i banchi",
+      "luogo": "McGregor",
+      "esito": "Osservato (non confermato)",
+      "nota": "Raptor 3 numero 286 visto in transito, numero di serie più alto finora secondo @SpaceRhin0. Esito del test non confermato.",
+      "src": {
+        "label": "@SpaceRhin0, 11 nov",
+        "url": "https://x.com/SpaceRhin0/status/2120646791469126008"
+      }
+    },
     {
       "data": "10 nov",
       "veicolo": "Booster 22",
@@ -1972,6 +2026,21 @@
   "X_POSTS": {
     "siti": [
       {
+        "autore": "@mcrs987",
+        "data": "11 nov",
+        "ora": "11:59",
+        "testo": "Un carroponte dentro la Gigabay (nc)",
+        "url": "https://x.com/mcrs987/status/2120471351127429470",
+        "media": "foto",
+        "id": "2120471351127429470",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HW1tcILWYAAXQq1.jpg"
+          }
+        ]
+      },
+      {
         "autore": "@NASASpaceflight",
         "data": "10 nov",
         "ora": "22:34",
@@ -2040,24 +2109,24 @@
             "url": "https://pbs.twimg.com/amplify_video_thumb/2118473482933555200/img/sALveheRoruRsaIN.jpg"
           }
         ]
-      },
-      {
-        "autore": "@RGVaerialphotos",
-        "data": "6 nov",
-        "ora": "05:12",
-        "testo": "Timelapse: prove chopsticks e deluge al Pad 2",
-        "url": "https://x.com/RGVaerialphotos/status/2118557148183683543",
-        "media": "video",
-        "id": "2118557148183683543",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2118556199486664704/img/JuDLPSPJnlzhbkTC.jpg"
-          }
-        ]
       }
     ],
     "prototipi": [
+      {
+        "autore": "@NASASpaceflight",
+        "data": "11 nov",
+        "ora": "23:14",
+        "testo": "Lo Starlink Speed Loader esce per caricare S42 con 26 Starlink V3",
+        "url": "https://x.com/NASASpaceflight/status/2120641416384922015",
+        "media": "video",
+        "id": "2120641416384922015",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2120641225598324736/img/nUJiHI-mF_F12h3n.jpg"
+          }
+        ]
+      },
       {
         "autore": "@SpaceX",
         "data": "10 nov",
@@ -2149,16 +2218,6 @@
             "url": "https://pbs.twimg.com/media/HWtlWpHW0AEcsHj.jpg"
           }
         ]
-      },
-      {
-        "autore": "@VickiCocks15",
-        "data": "8 nov",
-        "ora": "n.d.",
-        "testo": "S45 sollevata in Mega Bay 2 con tubes e un Raptor (nc)",
-        "url": "https://x.com/VickiCocks15/status/2119393358741217589",
-        "media": "foto",
-        "id": "2119393358741217589",
-        "immagini": []
       }
     ],
     "test": [
