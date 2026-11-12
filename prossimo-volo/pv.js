@@ -61,10 +61,6 @@
     return f.format(d);
   }
 
-  function svgInline(url) {
-    return fetch(url).then(function (r) { return r.ok ? r.text() : ""; }).catch(function () { return ""; });
-  }
-
   function evItem(e, vehicle) {
     var d = rome(e.t);
     var dayTxt = sameDay(d, new Date(T0)) ? "" : day(d) + ", ";
@@ -88,7 +84,9 @@
     var list = isB ? BOOST : SHIP;
     var end = isB ? BOOST_CATCH_T : CATCH_T;
     return '<article class="vcard ' + (isB ? "acc-booster" : "acc-ship") + '" id="v-' + kind + '">' +
-      '<div class="vrender" id="r-' + kind + '"><div class="vrender-art"></div>' +
+      '<div class="vrender" id="r-' + kind + '"><div class="vrender-art"><div class="vimg">' +
+        '<img src="assets/' + (isB ? "super-heavy-v3-spacex.webp" : "ship-v3-spacex.webp") + '" width="560" height="880" alt="' + (isB ? "Super Heavy V3, render ufficiale SpaceX" : "Starship V3, render ufficiale SpaceX") + '" decoding="async">' +
+        '<span class="glow-engine" aria-hidden="true"></span><span class="glow-plasma" aria-hidden="true"></span></div></div>' +
         '<span class="vstate" id="s-' + kind + '">Sulla rampa</span>' +
         '<span class="vtag">' + (isB ? "Booster " + esc(D.booster) : "Ship " + esc(D.ship.replace(/^S/, ""))) + '</span>' +
       '</div>' +
@@ -134,7 +132,7 @@
         '<ol class="pre-list" id="tl-pre">' + PRE.map(function (e) {
           return '<li class="ev" data-t="' + e.t + '"><span class="ev-dot" aria-hidden="true"></span><div><span class="ev-t">' + tLabel(e.t) + '</span> <span class="ev-rome">' + when(e.t, false) + '</span><p class="ev-name">' + esc(e.nome) + '</p><p class="ev-desc">' + esc(e.desc) + '</p></div></li>';
         }).join("") + '</ol></section>' +
-      '<section class="pv-src"><span>Fonti:</span>' + (D.fonti || []).map(function (f) { return '<a href="' + esc(f.url) + '" target="_blank" rel="noopener">' + esc(f.nome) + '</a>'; }).join("") + '</section>';
+      '<section class="pv-src"><span>Fonti:</span>' + (D.fonti || []).map(function (f) { return '<a href="' + esc(f.url) + '" target="_blank" rel="noopener">' + esc(f.nome) + '</a>'; }).join("") + '<span>Immagini: <a href="https://www.spacex.com/vehicles/starship" target="_blank" rel="noopener">SpaceX</a></span></section>';
 
     document.getElementById("updated").innerHTML = "Aggiornato: <strong>" + esc(D.aggiornato) + "</strong>";
     ["launch", "catch"].forEach(function (k) {
@@ -146,8 +144,6 @@
     });
     els.pre = [].slice.call(document.querySelectorAll("#tl-pre .ev"));
 
-    svgInline("assets/super-heavy-v3.svg").then(function (s) { els.booster.r.querySelector(".vrender-art").innerHTML = s; });
-    svgInline("assets/ship-v3.svg").then(function (s) { els.ship.r.querySelector(".vrender-art").innerHTML = s; });
   }
 
   function digits(sec, sign) {

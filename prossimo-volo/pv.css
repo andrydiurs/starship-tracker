@@ -44,28 +44,26 @@
 /* Schede dei veicoli */
 .veh-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; align-items: start; }
 .vcard { position: relative; border-radius: 20px; overflow: hidden; border: 1px solid color-mix(in srgb, var(--accent) 26%, var(--line)); background: var(--card); box-shadow: 0 20px 60px -30px color-mix(in srgb, var(--accent) 50%, transparent); }
-.vrender { position: relative; height: 400px; overflow: hidden;
+.vrender { position: relative; height: 420px; overflow: hidden; border-bottom: 1px solid var(--line);
   background:
-    radial-gradient(60% 70% at 50% 45%, color-mix(in srgb, var(--accent) 14%, transparent), transparent 70%),
-    radial-gradient(1px 1px at 12% 20%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 80% 30%, #cbd5e1 50%, transparent 51%),
-    radial-gradient(1px 1px at 30% 75%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 88% 82%, #e2e8f0 50%, transparent 51%),
-    linear-gradient(180deg, #060a14, #0b1222);
-  border-bottom: 1px solid var(--line); }
-.vrender::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 40px; background: linear-gradient(180deg, transparent, rgba(7,11,22,.6)); pointer-events: none; }
-.vrender-art { position: absolute; inset: 0; padding: 46px 8px 12px; }
-.vrender-art svg { display: block; height: 100%; width: 100%; overflow: visible; transition: transform 1.2s cubic-bezier(.2,.7,.2,1), filter .6s; filter: drop-shadow(0 10px 24px rgba(0,0,0,.55)); }
-.vrender.flying .vrender-art svg { transform: translateY(-6px); }
-.vrender.burning .vrender-art svg { animation: pv-shake .12s infinite alternate; }
-@keyframes pv-shake { from { transform: translate(-.4px, -6px); } to { transform: translate(.4px, -5.4px); } }
-.veh .ann path { fill: none; stroke: rgba(148,163,184,.45); stroke-width: 1.4; }
-.veh .ann circle { fill: var(--accent); }
-.veh .ann text { fill: #c6d0e0; font-family: var(--font); font-weight: 500; }
-.veh .ann .ann-s { fill: #8592a8; font-size: .8em; }
-.veh .flame, .veh .plasma { opacity: 0; transition: opacity .5s; transform-box: fill-box; transform-origin: 50% 0; }
-.vrender.burning .veh .flame { opacity: 1; animation: pv-flicker .09s infinite alternate; }
-.vrender.reentry .veh .plasma { opacity: 1; animation: pv-glow 1.4s ease-in-out infinite alternate; }
-@keyframes pv-flicker { from { transform: scaleY(1) scaleX(1); } to { transform: scaleY(1.08) scaleX(.96); } }
-@keyframes pv-glow { from { opacity: .7; } to { opacity: 1; } }
+    radial-gradient(55% 60% at 50% 48%, rgba(42,44,50,.55), transparent 72%),
+    radial-gradient(70% 40% at 50% 100%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 70%),
+    linear-gradient(180deg, #050608, #0a0d14); }
+.vrender::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 48px; background: linear-gradient(180deg, transparent, rgba(10,14,24,.75)); pointer-events: none; }
+.vrender-art { position: absolute; inset: 0; display: flex; justify-content: center; padding: 34px 0 0; }
+.vimg { position: relative; height: 100%; aspect-ratio: 560 / 880; transition: transform 1.2s cubic-bezier(.2,.7,.2,1); }
+.vimg img { display: block; width: 100%; height: 100%; object-fit: contain; mix-blend-mode: lighten;
+  -webkit-mask-image: linear-gradient(90deg, transparent 4%, #000 26%, #000 74%, transparent 96%), linear-gradient(180deg, transparent 0, #000 5%, #000 86%, transparent 99%);
+  -webkit-mask-composite: source-in; mask-image: linear-gradient(90deg, transparent 4%, #000 26%, #000 74%, transparent 96%), linear-gradient(180deg, transparent 0, #000 5%, #000 86%, transparent 99%); mask-composite: intersect; }
+.vrender.flying .vimg { transform: translateY(-8px); }
+.glow-engine, .glow-plasma { position: absolute; pointer-events: none; opacity: 0; transition: opacity .6s; mix-blend-mode: screen; }
+.glow-engine { left: 50%; top: 83%; width: 50%; height: 20%; transform: translateX(-50%); border-radius: 50%; background: radial-gradient(closest-side, rgba(255,214,150,.9), rgba(255,140,60,.45) 45%, transparent 100%); filter: blur(4px); }
+.acc-booster .glow-engine { top: 85%; width: 38%; }
+.glow-plasma { left: 26%; top: 4%; width: 24%; height: 86%; border-radius: 50%; background: radial-gradient(closest-side, rgba(255,140,70,.55), rgba(255,90,40,.18) 60%, transparent 100%); filter: blur(10px); }
+.vrender.burning .glow-engine { opacity: 1; animation: pv-flicker .12s infinite alternate; }
+.vrender.reentry .glow-plasma { opacity: 1; animation: pv-glow 1.4s ease-in-out infinite alternate; }
+@keyframes pv-flicker { from { opacity: .85; transform: translateX(-50%) scale(1); } to { opacity: 1; transform: translateX(-50%) scale(1.06, 1.12); } }
+@keyframes pv-glow { from { opacity: .65; } to { opacity: 1; } }
 .vstate, .vtag { position: absolute; top: 14px; z-index: 2; padding: 4px 11px; border-radius: 99px; font-size: 12.5px; font-weight: 600; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
 .vstate { left: 14px; color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, rgba(7,11,22,.6)); border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); }
 .vtag { right: 14px; color: var(--text2); background: rgba(7,11,22,.55); border: 1px solid var(--line2); letter-spacing: .04em; }
@@ -128,9 +126,9 @@
   .cd-u b { font-size: 38px; }
   .cd-sep { font-size: 30px; }
   .cd-sign { font-size: 18px; margin-top: 9px; }
-  .vrender { height: 330px; }
+  .vrender { height: 380px; }
   .vbody { padding: 16px 16px 18px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .live-dot, .ev.cur .ev-dot, .vrender.burning .vrender-art svg, .vrender.burning .veh .flame, .cd.is-live .cd-label::before { animation: none; }
+  .live-dot, .ev.cur .ev-dot, .vrender.burning .glow-engine, .vrender.reentry .glow-plasma, .cd.is-live .cd-label::before { animation: none; }
 }
