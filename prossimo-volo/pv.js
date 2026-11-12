@@ -136,15 +136,25 @@
         }).join("") + '</ol></section>' +
       '<section class="pv-src"><span>Fonti:</span>' + (D.fonti || []).map(function (f) { return '<a href="' + esc(f.url) + '" target="_blank" rel="noopener">' + esc(f.nome) + '</a>'; }).join("") + '<span>Immagini: <a href="https://www.spacex.com/vehicles/starship" target="_blank" rel="noopener">SpaceX</a></span></section>';
 
+    var mini = document.createElement("div");
+    mini.className = "cd-mini";
+    mini.id = "cd-mini";
+    mini.innerHTML = '<div class="wrap cd-mini-in">' +
+      '<div class="cdm cdm-launch"><span class="cdm-l" id="cdml-launch">Decollo tra</span><span class="cdm-d" id="cdmd-launch"></span><span class="cdm-w" id="cdmw-launch"></span></div>' +
+      '<div class="cdm cdm-catch"><span class="cdm-l" id="cdml-catch">Cattura di Ship 42 tra</span><span class="cdm-d" id="cdmd-catch"></span><span class="cdm-w" id="cdmw-catch"></span></div></div>';
+    document.body.appendChild(mini);
+    els.mini = { box: mini, ll: document.getElementById("cdml-launch"), ld: document.getElementById("cdmd-launch"), lw: document.getElementById("cdmw-launch"),
+      cl: document.getElementById("cdml-catch"), cd: document.getElementById("cdmd-catch"), cw: document.getElementById("cdmw-catch") };
     document.getElementById("updated").innerHTML = "Aggiornato: <strong>" + esc(D.aggiornato) + "</strong>";
     ["launch", "catch"].forEach(function (k) {
       els[k] = { box: document.getElementById("cd-" + k), l: document.getElementById("cdl-" + k), d: document.getElementById("cdd-" + k), w: document.getElementById("cdw-" + k) };
     });
     els.clock = document.getElementById("clock");
     ["booster", "ship"].forEach(function (k) {
-      els[k] = { r: document.getElementById("r-" + k), s: document.getElementById("s-" + k), b: document.getElementById("b-" + k), p: document.getElementById("p-" + k), n: document.getElementById("n-" + k), items: [].slice.call(document.querySelectorAll("#tl-" + k + " .ev")) };
+      els[k] = { tl: document.getElementById("tl-" + k), userAt: 0, lastCur: null, r: document.getElementById("r-" + k), s: document.getElementById("s-" + k), b: document.getElementById("b-" + k), p: document.getElementById("p-" + k), n: document.getElementById("n-" + k), items: [].slice.call(document.querySelectorAll("#tl-" + k + " .ev")) };
     });
     els.pre = [].slice.call(document.querySelectorAll("#tl-pre .ev"));
+    setupScroll();
 
   }
 
@@ -202,6 +212,8 @@
     var list = kind === "booster" ? BOOST : SHIP, e = els[kind];
     var last = list[list.length - 1].t;
     var cur = updateList(e.items, t, true);
+    var focus = cur < 0 ? 0 : (cur >= e.items.length - 1 ? e.items.length - 1 : cur);
+    if (e.lastCur !== focus) { autoScroll(kind, focus, e.lastCur === null); e.lastCur = focus; }
     var frac = Math.min(1, Math.max(0, t / last));
     e.b.style.width = (frac * 100).toFixed(2) + "%";
     e.p.textContent = t < 0 ? "In attesa del decollo" : t >= last ? "Timeline completata" : (cur >= 0 ? list[cur].nome : "");
@@ -213,6 +225,52 @@
     e.r.classList.toggle("reentry", kind === "ship" && D.rientro && t >= D.rientro[0] && t < D.rientro[1]);
     e.r.classList.toggle("flying", t >= 0 && t < last);
     e.r.classList.toggle("landed", t >= last);
+  }
+
+  function compact(sec, sign) {
+    sec = Math.max(0, Math.floor(sec));
+    var d = Math.floor(sec / 86400), rest = sec % 86400;
+    return sign + " " + (d ? d + "g " : "") + hms(rest);
+  }
+
+  /* Conti alla rovescia compatti fissi in alto, testata ridotta e scorrimento delle timeline */
+  function setupScroll() {
+    var grid = document.querySelector(".cd-grid"), header = document.querySelector("header.top"), ticking = false;
+    function update() {
+      ticking = false;
+      var y = window.pageYOffset || 0;
+      document.body.classList.toggle("pv-scrolled", y > 40);
+      var hh = header ? header.getBoundingClientRect().bottom : 0;
+      var r = grid.getBoundingClientRect();
+      var p = Math.min(1, Math.max(0, (hh + 40 - r.top) / Math.max(1, r.height)));
+      grid.style.setProperty("--shrink", p.toFixed(3));
+      var show = r.bottom < hh + 24;
+      els.mini.box.classList.toggle("show", show);
+      els.mini.box.style.top = Math.round(hh) + "px";
+      document.documentElement.style.setProperty("--mini-h", els.mini.box.offsetHeight + "px");
+    }
+    function req() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+    window.addEventListener("scroll", req, { passive: true });
+    window.addEventListener("resize", req);
+    if (window.ResizeObserver && header) new ResizeObserver(req).observe(header);
+    update();
+    ["booster", "ship"].forEach(function (k) {
+      var tl = els[k].tl;
+      ["wheel", "touchstart", "pointerdown", "keydown"].forEach(function (ev) {
+        tl.addEventListener(ev, function () { els[k].userAt = Date.now(); }, { passive: true });
+      });
+    });
+  }
+
+  function autoScroll(kind, cur, force) {
+    var e = els[kind], tl = e.tl;
+    if (!tl || tl.scrollHeight <= tl.clientHeight + 4) return;
+    if (!force && Date.now() - e.userAt < 20000) return;
+    var idx = Math.max(0, Math.min(e.items.length - 1, cur));
+    var li = e.items[idx];
+    var target = Math.max(0, li.offsetTop - 12);
+    if (Math.abs(tl.scrollTop - target) < 4) return;
+    tl.scrollTo({ top: target, behavior: force ? "auto" : "smooth" });
   }
 
   function tick() {
@@ -246,6 +304,15 @@
       setOnce(C.d, "cd", '<span class="cd-done">Orario previsto raggiunto</span>');
     }
     C.w.textContent = day(cd) + " · " + fmtHMS.format(cd) + " ora di Roma (" + tLabel(CATCH_T) + ")";
+
+    var M = els.mini;
+    if (t < 0) { M.ll.textContent = "Decollo tra"; M.ld.textContent = compact(-t, "T−"); M.lw.textContent = day(new Date(T0)) + " · " + fmtHM.format(new Date(T0)); }
+    else if (t < CATCH_T) { M.ll.textContent = "Tempo di volo"; M.ld.textContent = compact(t, "T+"); M.lw.textContent = "Decollo " + fmtHM.format(new Date(T0)); }
+    else { M.ll.textContent = "Durata prevista"; M.ld.textContent = compact(CATCH_T, "T+"); M.lw.textContent = "Decollo → cattura"; }
+    if (ct > 0) { M.cl.textContent = "Cattura di Ship 42 tra"; M.cd.textContent = compact(ct, "T−"); }
+    else { M.cl.textContent = "Cattura di Ship 42"; M.cd.textContent = "Orario raggiunto"; }
+    M.cw.textContent = day(cd) + " · " + fmtHM.format(cd);
+    M.box.classList.toggle("is-live", t >= 0 && t < CATCH_T);
 
     updateVehicle("booster", t);
     updateVehicle("ship", t);
