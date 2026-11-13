@@ -1,12 +1,12 @@
 {
  "_nota": "Per uno slittamento basta cambiare decollo_utc (ora UTC, apertura finestra). Tutti gli eventi sono secondi rispetto al decollo (T-0), dalla timeline ufficiale SpaceX.",
- "aggiornato": "13 nov 2026, 23:05",
+ "aggiornato": "14 nov 2026, 00:05",
  "volo": "Flight 15",
  "booster": "B22",
  "ship": "S42",
- "stato": "NET",
- "stato_testo": "Licenza FAA rilasciata il 13 novembre. GO per il caricamento dei propellenti dato alle 22:52.",
- "decollo_utc": "2026-11-13T22:45:00Z",
+ "stato": "Decollato",
+ "stato_testo": "Decollo alle 23:47 ora di Roma (16:47 in Texas). Super Heavy deviato su un ammaraggio nel Golfo invece della cattura; la Ship ha completato l'accensione di salita.",
+ "decollo_utc": "2026-11-13T22:47:00Z",
  "finestra_min": 75,
  "faa_fine_utc": "2026-11-14T00:40:00Z",
  "riserva_utc": "2026-11-14T22:45:00Z",
@@ -16,6 +16,10 @@
   {
    "nome": "SpaceX · Starship Flight 15",
    "url": "https://www.spacex.com/launches/starship-flight-15"
+  },
+  {
+   "nome": "SpaceX su X · Decollo",
+   "url": "https://x.com/SpaceX/status/2121374779680964991"
   },
   {
    "nome": "SpaceX su X · GO per il caricamento",
@@ -71,7 +75,7 @@
  "eventi": [
   {
    "id": "go_prop",
-   "t": -3146,
+   "t": -3266,
    "v": "pre",
    "nome": "Via libera al caricamento dei propellenti",
    "desc": "GO confermato da SpaceX su X alle 22:52 ora di Roma (circa T-52 min): le squadre hanno dato il via al caricamento di circa 5.400 tonnellate di ossigeno e metano liquidi."
