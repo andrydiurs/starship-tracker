@@ -64,10 +64,10 @@
   function evItem(e, vehicle) {
     var d = rome(e.t);
     var dayTxt = sameDay(d, new Date(T0)) ? "" : day(d) + ", ";
-    return '<li class="ev" data-t="' + e.t + '">' +
+    return '<li class="ev' + (e.anomalia ? ' anom' : '') + '" data-t="' + e.t + '"' + (e.anomalia ? ' data-anom="1"' : '') + '>' +
       '<span class="ev-dot" aria-hidden="true"></span>' +
       '<div class="ev-main">' +
-        '<div class="ev-head"><span class="ev-name">' + esc(e.nome) + '</span><span class="ev-now">In corso</span></div>' +
+        '<div class="ev-head"><span class="ev-name">' + esc(e.nome) + '</span>' + (e.anomalia ? '<span class="ev-anom">Diverso dal previsto</span>' : '') + '<span class="ev-now">In corso</span></div>' +
         '<div class="ev-time"><span class="ev-t">' + tLabel(e.t) + '</span><span class="ev-rome">' + esc(dayTxt) + when(e.t, true) + '</span></div>' +
         '<p class="ev-desc">' + esc(e.desc) + '</p>' +
       '</div></li>';
@@ -183,7 +183,8 @@
     items.forEach(function (li, i) {
       var st = i < cur ? "done" : i === cur ? (i === items.length - 1 && final ? "done" : "cur") : "next";
       if (i === cur + 1 && t >= (final ? -Infinity : -Infinity)) st = st === "next" ? "next soon" : st;
-      if (li.className !== "ev " + st) li.className = "ev " + st;
+      var cls = "ev " + (li.dataset.anom ? "anom " : "") + st;
+      if (li.className !== cls) li.className = cls;
     });
     return cur;
   }
@@ -315,7 +316,7 @@
     updateVehicle("booster", t);
     updateVehicle("ship", t);
     updateList(els.pre, t, true);
-    if (t >= 0) els.pre.forEach(function (li) { if (li.className !== "ev done") li.className = "ev done"; });
+    if (t >= 0) els.pre.forEach(function (li) { var c = "ev " + (li.dataset.anom ? "anom " : "") + "done"; if (li.className !== c) li.className = c; });
   }
 
   fetch("../data/volo-prossimo.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (data) {

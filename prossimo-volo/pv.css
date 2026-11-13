@@ -198,3 +198,11 @@ html { scroll-padding-top: calc(var(--header-h, 64px) + var(--mini-h, 60px) + 12
 @media (prefers-reduced-motion: reduce) {
   .live-dot, .ev.cur .ev-dot, .vrender.burning .glow-engine, .vrender.reentry .glow-plasma, .cd-mini.is-live .cdm-launch .cdm-l::before, .cd.is-live .cd-label::before { animation: none; }
 }
+
+/* Eventi andati diversamente dal previsto */
+.ev.anom .ev-dot, .ev.anom.done .ev-dot, .ev.anom.cur .ev-dot { border-color: #ff4d4f; background: #ff4d4f; box-shadow: 0 0 10px rgba(255,77,79,.55); animation: none; }
+.ev.anom .ev-dot::after { content: ""; position: absolute; inset: 0; border: 0; transform: none; width: auto; height: auto; left: 0; top: 0;
+  background: linear-gradient(45deg, transparent 44%, #fff 44%, #fff 56%, transparent 56%), linear-gradient(-45deg, transparent 44%, #fff 44%, #fff 56%, transparent 56%); background-size: 10px 10px; background-position: center; background-repeat: no-repeat; border-radius: 50%; }
+.ev.anom .ev-name { color: #ff8a8c; }
+.ev.anom.cur .ev-main { background: rgba(255,77,79,.10); border-color: rgba(255,77,79,.45); }
+.ev-anom { display: inline-block; margin-left: 8px; padding: 1px 8px; border-radius: 99px; font-size: 11.5px; font-weight: 700; color: #fff; background: #d9363e; vertical-align: middle; }
