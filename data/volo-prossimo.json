@@ -1,6 +1,6 @@
 {
  "_nota": "Per uno slittamento basta cambiare decollo_utc (ora UTC, apertura finestra). Tutti gli eventi sono secondi rispetto al decollo (T-0), dalla timeline ufficiale SpaceX.",
- "aggiornato": "14 nov 2026, 00:05",
+ "aggiornato": "14 nov 2026, 00:15",
  "volo": "Flight 15",
  "booster": "B22",
  "ship": "S42",
@@ -20,6 +20,10 @@
   {
    "nome": "SpaceX su X · Decollo",
    "url": "https://x.com/SpaceX/status/2121374779680964991"
+  },
+  {
+   "nome": "SpaceX su X · Super Heavy deviato nel Golfo",
+   "url": "https://x.com/SpaceX/status/2121376372576915909"
   },
   {
    "nome": "SpaceX su X · GO per il caricamento",
@@ -190,21 +194,21 @@
    "t": 182,
    "v": "booster",
    "nome": "Fine boostback",
-   "desc": "Spegnimento: il booster plana verso la torre."
+   "desc": "Spegnimento del boostback. Il booster è stato poi deviato verso un ammaraggio nel Golfo invece della torre."
   },
   {
    "id": "b_land",
    "t": 370,
    "v": "booster",
-   "nome": "Inizio accensione di atterraggio",
-   "desc": "Il booster riaccende i motori per frenare sopra la torre."
+   "nome": "Accensione di atterraggio",
+   "desc": "Il booster riaccende i motori per frenare, sopra il Golfo del Messico e non sopra la torre."
   },
   {
    "id": "b_catch",
    "t": 395,
    "v": "booster",
-   "nome": "Spegnimento e cattura del booster",
-   "desc": "Le chopsticks della torre afferrano il Super Heavy."
+   "nome": "Ammaraggio nel Golfo",
+   "desc": "Niente cattura: SpaceX ha deviato Super Heavy su un ammaraggio al largo, nel Golfo del Messico. Orario indicativo, dalla timeline prevista."
   },
   {
    "id": "seco",
@@ -332,5 +336,6 @@
    "nome": "Spegnimento e cattura della Ship",
    "desc": "Le chopsticks della torre afferrano Ship 42."
   }
- ]
+ ],
+ "booster_esito": "ammaraggio"
 }

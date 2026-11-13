@@ -93,7 +93,7 @@
       '<div class="vbody">' +
         '<div class="vtitle"><h2>' + (isB ? "Super Heavy" : "Starship") + ' <small>' + (isB ? esc(D.booster) + " · V3" : esc(D.ship) + " · V3") + '</small></h2>' +
         '<p class="vsub">' + (isB
-          ? "Salita, separazione, boostback e ritorno alla torre per la cattura: il primo tentativo con un booster V3."
+          ? (D.booster_esito === "ammaraggio" ? "Salita, separazione e boostback; la cattura prevista è stata annullata e il booster è stato deviato su un ammaraggio nel Golfo." : "Salita, separazione, boostback e ritorno alla torre per la cattura: il primo tentativo con un booster V3.")
           : "Orbita a ~275 km, rilascio di 26 Starlink V3, circa 14 orbite e ritorno a Starbase per la cattura.") + '</p></div>' +
         '<div class="vprog"><div class="vbar"><i id="b-' + kind + '"></i>' + ticks(list, end) + '</div>' +
           '<div class="vprog-txt"><span id="p-' + kind + '">0%</span><span id="n-' + kind + '"></span></div></div>' +
@@ -191,12 +191,12 @@
   function vehState(kind, t, cur, list) {
     var last = list[list.length - 1].t;
     if (t < 0) return "Sulla rampa";
-    if (t >= last) return "Sulla torre · previsto";
+    if (t >= last) return kind === "booster" && D.booster_esito === "ammaraggio" ? "Ammarato nel Golfo" : "Sulla torre · previsto";
     if (kind === "booster") {
       if (t < 139) return "Salita";
       if (t < 146) return "Separazione";
       if (inRanges(t, D.accensioni.booster)) return "Motori accesi";
-      return "Ritorno verso la torre";
+      return D.booster_esito === "ammaraggio" ? (t < 182 ? "Boostback" : "Deviato verso il Golfo") : "Ritorno verso la torre";
     }
     if (inRanges(t, D.accensioni.ship)) return "Motori accesi";
     if (D.rientro && t >= D.rientro[0] && t < D.rientro[1]) return "Rientro";
