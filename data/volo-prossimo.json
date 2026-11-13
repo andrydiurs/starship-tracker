@@ -1,11 +1,11 @@
 {
  "_nota": "Per uno slittamento basta cambiare decollo_utc (ora UTC, apertura finestra). Tutti gli eventi sono secondi rispetto al decollo (T-0), dalla timeline ufficiale SpaceX.",
- "aggiornato": "14 nov 2026, 00:15",
+ "aggiornato": "14 nov 2026, 00:38",
  "volo": "Flight 15",
  "booster": "B22",
  "ship": "S42",
  "stato": "Decollato",
- "stato_testo": "Decollo alle 23:47 ora di Roma (16:47 in Texas). Super Heavy deviato su un ammaraggio nel Golfo invece della cattura; la Ship ha completato l'accensione di salita.",
+ "stato_testo": "Decollo alle 23:47 ora di Roma (16:47 in Texas). Super Heavy deviato su un ammaraggio nel Golfo invece della cattura; la Ship è in orbita (~275 km) e dalle 00:27 sta rilasciando i 26 Starlink V3 (circa 42 minuti).",
  "decollo_utc": "2026-11-13T22:47:00Z",
  "finestra_min": 75,
  "faa_fine_utc": "2026-11-14T00:40:00Z",
@@ -20,6 +20,14 @@
   {
    "nome": "SpaceX su X · Decollo",
    "url": "https://x.com/SpaceX/status/2121374779680964991"
+  },
+  {
+   "nome": "SpaceX su X · Ship in orbita",
+   "url": "https://x.com/SpaceX/status/2121381593768186362"
+  },
+  {
+   "nome": "SpaceX su X · Rilascio degli Starlink",
+   "url": "https://x.com/SpaceX/status/2121384424558453096"
   },
   {
    "nome": "SpaceX su X · Super Heavy deviato nel Golfo",
@@ -229,21 +237,21 @@
    "t": 1590,
    "v": "ship",
    "nome": "Fine accensione di inserimento in orbita",
-   "desc": "La Ship è in orbita: comincia il giro di circa 14 orbite."
+   "desc": "Confermato da SpaceX su X alle 00:15 ora di Roma: la Ship è entrata in orbita (la seconda volta per Starship) e comincia il giro di circa 14 orbite."
   },
   {
    "id": "pl_start",
-   "t": 2101,
+   "t": 2414,
    "v": "ship",
    "nome": "Inizio rilascio degli Starlink",
-   "desc": "La porta si apre e partono i 26 Starlink V3."
+   "desc": "Confermato da SpaceX su X alle 00:27 ora di Roma (circa T+40 min): è iniziato il rilascio dei 26 Starlink V3. Orario reale, circa 5 minuti dopo la timeline prevista."
   },
   {
    "id": "pl_end",
-   "t": 4660,
+   "t": 4934,
    "v": "ship",
    "nome": "Fine rilascio degli Starlink",
-   "desc": "Rilasciati tutti i satelliti. Tre hanno telecamere per riprendere lo scudo termico."
+   "desc": "SpaceX indica una sequenza di rilascio di circa 42 minuti, quindi fine stimata intorno alle 01:09 ora di Roma. Tre satelliti hanno telecamere per riprendere lo scudo termico."
   },
   {
    "id": "chk_hi1",
