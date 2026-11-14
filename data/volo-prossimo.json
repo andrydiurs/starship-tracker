@@ -1,11 +1,11 @@
 {
   "_nota": "Per uno slittamento basta cambiare decollo_utc (ora UTC, apertura finestra). Tutti gli eventi sono secondi rispetto al decollo (T-0), dalla timeline ufficiale SpaceX.",
-  "aggiornato": "14 nov 2026, 22:06",
+  "aggiornato": "14 nov 2026, 23:08",
   "volo": "Flight 15",
   "booster": "B22",
   "ship": "S42",
-  "stato": "Decollato",
-  "stato_testo": "Decollo alle 23:47:36 ora di Roma (16:47 in Texas). Super Heavy deviato su un ammaraggio nel Golfo invece della cattura; la Ship è in orbita (orbita quasi circolare a 276 km), ha rilasciato tutti i 26 Starlink V3 e alle 06:44 SpaceX ha detto che Ship e scudo termico sono in buone condizioni, con la cattura a Starbase ancora prevista circa 22,5 ore dopo il decollo. Alle 20:18 ora di Roma SpaceX ha comunicato il GO per riportare la Ship a Starbase. Alle 21:25 ora di Roma SpaceX ha confermato che l'accensione di deorbit è andata bene e che la Ship è in rotta per il rientro, con la cattura a Starbase prevista tra circa un'ora. Alle 21:58 ora di Roma SpaceX ha comunicato che la Ship sta rientrando nell'atmosfera.",
+  "stato": "Concluso",
+  "stato_testo": "Decollo alle 23:47:36 ora di Roma (16:47 in Texas). Super Heavy deviato su un ammaraggio nel Golfo invece della cattura; la Ship è in orbita (orbita quasi circolare a 276 km), ha rilasciato tutti i 26 Starlink V3 e alle 06:44 SpaceX ha detto che Ship e scudo termico sono in buone condizioni, con la cattura a Starbase ancora prevista circa 22,5 ore dopo il decollo. Alle 20:18 ora di Roma SpaceX ha comunicato il GO per riportare la Ship a Starbase. Alle 21:25 ora di Roma SpaceX ha confermato che l'accensione di deorbit è andata bene e che la Ship è in rotta per il rientro, con la cattura a Starbase prevista tra circa un'ora. Alle 21:58 ora di Roma SpaceX ha comunicato che la Ship sta rientrando nell'atmosfera. Alle 22:18 ora di Roma la Ship ha iniziato la virata e l'avvicinamento finale a Starbase, e alle 22:21 SpaceX ha confermato: «Mechazilla catches Starship!». La Ship è stata catturata dalla torre.",
   "decollo_utc": "2026-11-13T22:47:36Z",
   "finestra_min": 75,
   "faa_fine_utc": "2026-11-14T00:40:00Z",
@@ -20,6 +20,14 @@
     {
       "nome": "Jonathan McDowell su X · Orari del volo",
       "url": "https://x.com/planet4589/status/2121412618514739506"
+    },
+    {
+      "nome": "SpaceX su X · Cattura della Ship",
+      "url": "https://x.com/SpaceX/status/2121715216597827756"
+    },
+    {
+      "nome": "SpaceX su X · Avvicinamento finale",
+      "url": "https://x.com/SpaceX/status/2121714305968304321"
     },
     {
       "nome": "SpaceX su X · Decollo",
@@ -372,9 +380,10 @@
       "t": 81154,
       "v": "ship",
       "nome": "Spegnimento e cattura della Ship",
-      "desc": "Le chopsticks della torre afferrano Ship 42."
+      "desc": "Le chopsticks della torre afferrano Ship 42. Confermato da SpaceX su X alle 22:21 ora di Roma: «Mechazilla catches Starship!»."
     }
   ],
   "booster_esito": "ammaraggio",
-  "_nota_anomalia": "Un evento con \"anomalia\": true è andato diversamente dal previsto e ha un segno rosso nella pagina."
+  "_nota_anomalia": "Un evento con \"anomalia\": true è andato diversamente dal previsto e ha un segno rosso nella pagina.",
+  "ship_esito": "cattura"
 }

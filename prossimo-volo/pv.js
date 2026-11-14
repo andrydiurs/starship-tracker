@@ -195,7 +195,7 @@
   function vehState(kind, t, cur, list) {
     var last = list[list.length - 1].t;
     if (t < 0) return "Sulla rampa";
-    if (t >= last) return kind === "booster" && D.booster_esito === "ammaraggio" ? "Ammarato nel Golfo" : "Sulla torre · previsto";
+    if (t >= last) if (kind === "booster" && D.booster_esito === "ammaraggio") return "Ammarato nel Golfo"; if (kind === "ship" && D.ship_esito === "cattura") return "Catturata dalla torre"; return "Sulla torre · previsto";
     if (kind === "booster") {
       if (t < 139) return "Salita";
       if (t < 146) return "Separazione";
