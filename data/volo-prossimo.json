@@ -1,11 +1,11 @@
 {
   "_nota": "Per uno slittamento basta cambiare decollo_utc (ora UTC, apertura finestra). Tutti gli eventi sono secondi rispetto al decollo (T-0), dalla timeline ufficiale SpaceX.",
-  "aggiornato": "14 nov 2026, 21:40",
+  "aggiornato": "14 nov 2026, 22:06",
   "volo": "Flight 15",
   "booster": "B22",
   "ship": "S42",
   "stato": "Decollato",
-  "stato_testo": "Decollo alle 23:47:36 ora di Roma (16:47 in Texas). Super Heavy deviato su un ammaraggio nel Golfo invece della cattura; la Ship è in orbita (orbita quasi circolare a 276 km), ha rilasciato tutti i 26 Starlink V3 e alle 06:44 SpaceX ha detto che Ship e scudo termico sono in buone condizioni, con la cattura a Starbase ancora prevista circa 22,5 ore dopo il decollo. Alle 20:18 ora di Roma SpaceX ha comunicato il GO per riportare la Ship a Starbase. Alle 21:25 ora di Roma SpaceX ha confermato che l'accensione di deorbit è andata bene e che la Ship è in rotta per il rientro, con la cattura a Starbase prevista tra circa un'ora.",
+  "stato_testo": "Decollo alle 23:47:36 ora di Roma (16:47 in Texas). Super Heavy deviato su un ammaraggio nel Golfo invece della cattura; la Ship è in orbita (orbita quasi circolare a 276 km), ha rilasciato tutti i 26 Starlink V3 e alle 06:44 SpaceX ha detto che Ship e scudo termico sono in buone condizioni, con la cattura a Starbase ancora prevista circa 22,5 ore dopo il decollo. Alle 20:18 ora di Roma SpaceX ha comunicato il GO per riportare la Ship a Starbase. Alle 21:25 ora di Roma SpaceX ha confermato che l'accensione di deorbit è andata bene e che la Ship è in rotta per il rientro, con la cattura a Starbase prevista tra circa un'ora. Alle 21:58 ora di Roma SpaceX ha comunicato che la Ship sta rientrando nell'atmosfera.",
   "decollo_utc": "2026-11-13T22:47:36Z",
   "finestra_min": 75,
   "faa_fine_utc": "2026-11-14T00:40:00Z",
@@ -32,6 +32,10 @@
     {
       "nome": "SpaceX su X · Rilascio degli Starlink",
       "url": "https://x.com/SpaceX/status/2121384424558453096"
+    },
+    {
+      "nome": "SpaceX su X · Rientro in corso",
+      "url": "https://x.com/SpaceX/status/2121709368945385477"
     },
     {
       "nome": "SpaceX su X · Accensione di deorbit riuscita",
@@ -319,7 +323,7 @@
       "t": 79846,
       "v": "ship",
       "nome": "Rientro in atmosfera",
-      "desc": "Inizia il rientro: lo scudo termico affronta il plasma."
+      "desc": "Inizia il rientro: lo scudo termico affronta il plasma. Confermato da SpaceX su X alle 21:58 ora di Roma: «Starship is reentering Earth’s atmosphere»."
     },
     {
       "id": "transonic",
