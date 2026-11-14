@@ -1,11 +1,11 @@
 {
  "_nota": "Per uno slittamento basta cambiare decollo_utc (ora UTC, apertura finestra). Tutti gli eventi sono secondi rispetto al decollo (T-0), dalla timeline ufficiale SpaceX.",
- "aggiornato": "14 nov 2026, 01:30",
+ "aggiornato": "14 nov 2026, 07:15",
  "volo": "Flight 15",
  "booster": "B22",
  "ship": "S42",
  "stato": "Decollato",
- "stato_testo": "Decollo alle 23:47 ora di Roma (16:47 in Texas). Super Heavy deviato su un ammaraggio nel Golfo invece della cattura; la Ship è in orbita (~275 km) e alle 01:06 SpaceX ha confermato il rilascio di tutti i 26 Starlink V3. Ora è in una lunga fase di volo orbitale (circa 21 ore); SpaceX ha alcune opzioni di deorbit anticipato, ma dice che tutti i sistemi sono nominali.",
+ "stato_testo": "Decollo alle 23:47 ora di Roma (16:47 in Texas). Super Heavy deviato su un ammaraggio nel Golfo invece della cattura; la Ship è in orbita (~275 km), ha rilasciato tutti i 26 Starlink V3 e alle 06:44 SpaceX ha detto che Ship e scudo termico sono in buone condizioni, con la cattura a Starbase ancora prevista circa 22,5 ore dopo il decollo.",
  "decollo_utc": "2026-11-13T22:47:00Z",
  "finestra_min": 75,
  "faa_fine_utc": "2026-11-14T00:40:00Z",
@@ -32,6 +32,10 @@
   {
    "nome": "SpaceX su X · Rilascio completato",
    "url": "https://x.com/SpaceX/status/2121394268652839309"
+  },
+  {
+   "nome": "SpaceX su X · Scudo termico in buone condizioni",
+   "url": "https://x.com/SpaceX/status/2121479482582441991"
   },
   {
    "nome": "SpaceX su X · Lunga fase di coast",
@@ -268,14 +272,14 @@
    "t": 5266,
    "v": "ship",
    "nome": "Primo controllo per il ritorno (Hawaii)",
-   "desc": "Punto di decisione previsto: SpaceX valuta se proseguire verso il ritorno alla torre."
+   "desc": "Punto di decisione previsto (circa 01:15 ora di Roma). Nessun annuncio specifico di SpaceX su questo controllo; la Ship è rimasta in orbita."
   },
   {
    "id": "chk_cl",
    "t": 26135,
    "v": "ship",
    "nome": "Controllo intermedio per il ritorno (Cile)",
-   "desc": "Altro punto di decisione previsto lungo l'orbita."
+   "desc": "Punto di decisione previsto (circa 07:02 ora di Roma). Nessun annuncio specifico su questo controllo; alle 06:44 SpaceX ha confermato Ship e scudo termico in buone condizioni e la cattura ancora prevista."
   },
   {
    "id": "chk_hi2",
