@@ -1,11 +1,11 @@
 {
  "_nota": "Per uno slittamento basta cambiare decollo_utc (ora UTC, apertura finestra). Tutti gli eventi sono secondi rispetto al decollo (T-0), dalla timeline ufficiale SpaceX.",
- "aggiornato": "14 nov 2026, 00:45",
+ "aggiornato": "14 nov 2026, 01:30",
  "volo": "Flight 15",
  "booster": "B22",
  "ship": "S42",
  "stato": "Decollato",
- "stato_testo": "Decollo alle 23:47 ora di Roma (16:47 in Texas). Super Heavy deviato su un ammaraggio nel Golfo invece della cattura; la Ship è in orbita (~275 km) e dalle 00:27 sta rilasciando i 26 Starlink V3 (circa 42 minuti).",
+ "stato_testo": "Decollo alle 23:47 ora di Roma (16:47 in Texas). Super Heavy deviato su un ammaraggio nel Golfo invece della cattura; la Ship è in orbita (~275 km) e alle 01:06 SpaceX ha confermato il rilascio di tutti i 26 Starlink V3. Ora è in una lunga fase di volo orbitale (circa 21 ore); SpaceX ha alcune opzioni di deorbit anticipato, ma dice che tutti i sistemi sono nominali.",
  "decollo_utc": "2026-11-13T22:47:00Z",
  "finestra_min": 75,
  "faa_fine_utc": "2026-11-14T00:40:00Z",
@@ -28,6 +28,14 @@
   {
    "nome": "SpaceX su X · Rilascio degli Starlink",
    "url": "https://x.com/SpaceX/status/2121384424558453096"
+  },
+  {
+   "nome": "SpaceX su X · Rilascio completato",
+   "url": "https://x.com/SpaceX/status/2121394268652839309"
+  },
+  {
+   "nome": "SpaceX su X · Lunga fase di coast",
+   "url": "https://x.com/SpaceX/status/2121394839954874797"
   },
   {
    "nome": "SpaceX su X · Super Heavy deviato nel Golfo",
@@ -250,10 +258,10 @@
   },
   {
    "id": "pl_end",
-   "t": 4934,
+   "t": 4761,
    "v": "ship",
    "nome": "Fine rilascio degli Starlink",
-   "desc": "SpaceX indica una sequenza di rilascio di circa 42 minuti, quindi fine stimata intorno alle 01:09 ora di Roma. Tre satelliti hanno telecamere per riprendere lo scudo termico."
+   "desc": "Confermato da SpaceX su X alle 01:06 ora di Roma: rilascio completato, tutti i 26 Starlink V3 sono in orbita. Orario reale, circa 2 minuti prima della stima."
   },
   {
    "id": "chk_hi1",
