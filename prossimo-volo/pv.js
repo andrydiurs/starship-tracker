@@ -177,11 +177,14 @@
     el.innerHTML = html;
   }
 
+  var CUR_MAX = 300;
   function updateList(items, t, final) {
     var cur = -1;
     items.forEach(function (li, i) { if (t >= +li.dataset.t) cur = i; });
     items.forEach(function (li, i) {
       var st = i < cur ? "done" : i === cur ? (i === items.length - 1 && final ? "done" : "cur") : "next";
+      // un evento resta "in corso" solo per pochi minuti, poi passa a completato
+      if (st === "cur" && t - +li.dataset.t > CUR_MAX) st = "done";
       if (i === cur + 1 && t >= (final ? -Infinity : -Infinity)) st = st === "next" ? "next soon" : st;
       var cls = "ev " + (li.dataset.anom ? "anom " : "") + st;
       if (li.className !== cls) li.className = cls;
@@ -215,7 +218,7 @@
     if (e.lastCur !== focus) { autoScroll(kind, focus, e.lastCur === null); e.lastCur = focus; }
     var frac = Math.min(1, Math.max(0, t / last));
     e.b.style.width = (frac * 100).toFixed(2) + "%";
-    e.p.textContent = t < 0 ? "In attesa del decollo" : t >= last ? "Timeline completata" : (cur >= 0 ? list[cur].nome : "");
+    e.p.textContent = t < 0 ? "In attesa del decollo" : t >= last ? "Timeline completata" : (cur >= 0 ? (t - list[cur].t > CUR_MAX ? "Ultimo evento: " + list[cur].nome : list[cur].nome) : "");
     var nxt = list[cur + 1];
     e.n.textContent = nxt ? "Prossimo: " + nxt.nome + " tra " + dur(nxt.t - t) : "Ultimo evento: " + tLabel(last);
     var stTxt = vehState(kind, t, cur, list);
