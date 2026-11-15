@@ -1,182 +1,150 @@
 {
-  "ULTIMO_AGGIORNAMENTO": "14 nov 2026, 08:45",
+  "ULTIMO_AGGIORNAMENTO": "15 nov 2026, 08:55",
   "PROSSIMO_VOLO": {
-    "volo": "Flight 15",
-    "veicoli": "Super Heavy B22 + Ship 42",
-    "netBreve": "Decollato 13 nov",
-    "net": "Decollato venerdì 13 nov alle 23:47 ora di Roma (22:47:36 UTC, @planet4589) dal Pad 2 · Super Heavy B22: cattura annullata, ammaraggio nel Golfo del Messico · Ship 42 in orbita a ~276 km, rilasciati tutti i 26 Starlink V3 · alle 06:44 SpaceX: Ship e scudo termico in buone condizioni, cattura a Starbase prevista circa 22,5 ore dopo il decollo, cioè verso le 22:15 di sabato 14 nov ora di Roma (orario indicativo) · finestra FAA di rientro 14 nov 21:56–01:14, riserva il 15 nov",
-    "sito": "Starbase, Pad 2",
-    "obiettivo": "Doppia cattura in torre: Super Heavy e Ship",
-    "licenzaBreve": "Lancio autorizzato",
-    "licenzaFaa": "Il Flight 15 è decollato il 13 nov alle 23:47 ora di Roma, quindi il lancio era autorizzato. Non abbiamo una fonte verificata sul testo della modifica di licenza per la cattura della Ship: SpaceX conferma comunque che il piano resta il ritorno alla torre di Starbase. Finestra FAA di rientro: 14 nov 21:56 – 15 nov 01:14 ora di Roma, riserva il 15 nov. SpaceX: lancio «in attesa dell'approvazione normativa». La modifica della licenza FAA per riportare S42 alla torre non risulta ancora emessa (11 nov). L'11 nov l'avviso FAA sul piano operativo ha fissato le finestre: lancio 13 nov 23:45–01:40 ora di Roma (riserva 14 nov), rientro 14 nov 21:56–01:14 (riserva 15 nov). Il 10 nov aggiornata l'area di pericolo marittimo NAVAREA IV (13 nov 23:45 – 20 nov 01:40 ora di Roma). Il 12 nov un nuovo avviso FAA (ADVZY 003) conferma le stesse finestre e compare il primo NOTAM per il rientro di S42 sul Messico verso Starbase (NSF). Gli avvisi non sono la licenza: la modifica per la cattura della Ship resta non confermata. Il 13 nov l'avviso FAA (ADVZY 022) conferma le stesse finestre e la pagina SpaceX indica ancora «in attesa dell'approvazione normativa»; il 12 nov pubblicati anche i NOTAM 11/144 e 11/145 per la data di riserva del 14 nov.",
+    "volo": "Flight 16",
+    "veicoli": "Super Heavy B23 + Ship 43 (probabili, non confermato)",
+    "netBreve": "Non annunciato",
+    "net": "SpaceX non ha ancora indicato una data per il Flight 16. Non confermato: NET 10 dic 2026 (slide CADENA, non ufficiale); NSF (6 nov) ritiene più probabile l'inizio del 2027. Dopo il Flight 15 non risultano nuovi annunci verificati.",
+    "sito": "KSC LC-39A (non confermato), primo lancio dalla Florida",
+    "obiettivo": "Non ancora annunciato da SpaceX (missione Starlink 30-1 indicata da fonti non ufficiali, non confermato)",
+    "licenzaBreve": "Non disponibile",
+    "licenzaFaa": "Per il Flight 16 non risulta alcuna licenza FAA dal 39A: secondo NSF la FAA dovrebbe aggiungere il 39A alla licenza VOL 23-129 (non confermato). Il piano NASA/SpaceX del 23 ott indicava il completamento del pad 39A e il primo volo da Cape Canaveral nel Q4 2026.",
     "licenzaSrc": {
-      "label": "SpaceX, Flight 15",
-      "url": "https://www.spacex.com/launches/starship-flight-15"
+      "label": "NSF, 6 nov",
+      "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
     },
     "netSrc": {
-      "label": "@SpaceX, 14 nov",
-      "url": "https://x.com/SpaceX/status/2121479482582441991"
+      "label": "NSF, 6 nov",
+      "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
     },
     "ship": {
-      "titolo": "Ship 42",
+      "titolo": "Ship 43 (prob.)",
       "versione": "V3",
       "stato": {
-        "label": "In orbita, cattura prevista stasera verso le 22:15 (14 nov)",
-        "tone": "success"
+        "label": "In allestimento: motori in installazione (non confermato)",
+        "tone": "neutral"
       },
       "milestones": [
         {
           "nome": "Prova criogenica",
           "fatto": true,
-          "data": "3-4 set e 9 ott",
-          "nota": "terza prova dopo la rimozione dei motori",
-          "src": {
-            "label": "NSF, 9 ott",
-            "url": "https://www.nasaspaceflight.com/2026/10/ship-40-returns-ship-42-more-testing/"
-          }
-        },
-        {
-          "nome": "Motori installati",
-          "fatto": true,
-          "data": "entro il 27 ott",
-          "nota": "set completo di 6 Raptor (3 a livello del mare e 3 RVac) confermato dallo static fire a sei motori del 27 ott",
-          "src": {
-            "label": "@NASASpaceflight, 27 ott",
-            "url": "https://x.com/NASASpaceflight/status/2115198496521195971"
-          }
-        },
-        {
-          "nome": "Static fire",
-          "fatto": true,
-          "data": "26-27 ott (1 e 6 motori)",
-          "nota": "accensione a un motore nella notte tra 26 e 27 ott e static fire a sei motori a piena durata il 27 ott a Massey's. Il 28 ott SpaceX ha confermato: static fire completati, compresa l'accensione di un solo Raptor che simula la manovra di deorbit",
-          "src": {
-            "label": "@SpaceX, 28 ott",
-            "url": "https://x.com/SpaceX/status/2115476295169814978"
-          }
-        },
-        {
-          "nome": "Trasferimento in rampa",
-          "fatto": true,
-          "data": "12 nov",
-          "nota": "Il 12 nov S42 è stata portata al Pad 2 di Starbase (SpaceX, 4 foto). In precedenza al Pad 2 solo per test chopsticks l'11-12 set; ultimi preparativi in Mega Bay 2 (ispezioni finali, FTS e carico di 26 Starlink V3).",
-          "src": {
-            "label": "@SpaceX, 13 nov",
-            "url": "https://x.com/SpaceX/status/2121044579470233638"
-          }
-        },
-        {
-          "nome": "Impilamento",
-          "fatto": true,
-          "data": "12-13 nov",
-          "src": {
-            "label": "@LabPadre, 13 nov",
-            "url": "https://x.com/LabPadre/status/2121043480411525168"
-          },
-          "nota": "Sollevata dai chopsticks la sera del 12 nov (video NSF, 23:23 ora di Roma) e impilata su B22 nella notte del 13 nov. Poi collegato il braccio SQD e comparsi quelli che sembrano marker di allineamento (TrackingTheSB, non confermato)"
-        },
-        {
-          "nome": "Decollo e orbita",
-          "fatto": true,
-          "data": "13 nov, 23:47",
-          "nota": "orbita a ~276 km, 26 Starlink V3 rilasciati",
-          "src": {
-            "label": "@SpaceX, 13 nov",
-            "url": "https://x.com/SpaceX/status/2121381593768186362"
-          }
-        },
-        {
-          "nome": "Cattura in torre",
-          "fatto": false,
-          "data": "14 nov, ~22:15",
-          "nota": "orario indicativo, circa 22,5 ore dopo il decollo",
-          "src": {
-            "label": "@SpaceX, 14 nov",
-            "url": "https://x.com/SpaceX/status/2121479482582441991"
-          }
-        }
-      ]
-    },
-    "booster": {
-      "titolo": "Super Heavy B22",
-      "versione": "V3",
-      "stato": {
-        "label": "Cattura annullata: ammaraggio nel Golfo (13 nov)",
-        "tone": "warning"
-      },
-      "milestones": [
-        {
-          "nome": "Prova criogenica",
-          "fatto": true,
-          "data": "9-10 set",
-          "src": {
-            "label": "Inter Space Sky Way",
-            "url": "https://interspaceskyway.com/2026/09/09/flight-15-pairing-endure-testing-at-masseys/"
-          }
-        },
-        {
-          "nome": "Motori installati",
-          "fatto": true,
-          "data": "entro il 18 ott",
-          "nota": "secondo fonti NSF",
+          "data": "entro il 23 ott",
+          "nota": "prove crio a Massey's concluse",
           "src": {
             "label": "NSF, 18 ott",
             "url": "https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/"
           }
         },
         {
+          "nome": "Prove di cattura al Pad 2",
+          "fatto": true,
+          "data": "26-27 ott",
+          "nota": "sollevata dai chopsticks con SQD collegato (NSF)",
+          "src": {
+            "label": "@NASASpaceflight, 27 ott",
+            "url": "https://x.com/NASASpaceflight/status/2114904512217694216"
+          }
+        },
+        {
+          "nome": "Motori installati",
+          "fatto": false,
+          "data": "in corso",
+          "nota": "NSF (6 nov): sta ricevendo i motori",
+          "src": {
+            "label": "NSF, 6 nov",
+            "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
+          }
+        },
+        {
           "nome": "Static fire",
-          "fatto": true,
-          "data": "25 ott",
-          "nota": "static fire completo a 33 motori, circa 16 s, alle 14:22 ora di Roma; confermato da SpaceX. @mcrs987: «sembrava a piena durata, si vede chiaramente la riduzione di spinta negli ultimi secondi»",
+          "fatto": false,
+          "data": "metà dic (stima NSF)",
+          "nota": "non confermato",
           "src": {
-            "label": "@SpaceX, 25 ott",
-            "url": "https://x.com/SpaceX/status/2114444137067844004"
+            "label": "NSF, 6 nov",
+            "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
+          }
+        }
+      ]
+    },
+    "booster": {
+      "titolo": "Super Heavy B23 (prob.)",
+      "versione": "V3",
+      "stato": {
+        "label": "In Mega Bay 1 dopo Massey's (non confermato)",
+        "tone": "neutral"
+      },
+      "milestones": [
+        {
+          "nome": "Prova criogenica",
+          "fatto": true,
+          "data": "15 ott",
+          "nota": "nuove prove a Massey's dal 28 ott, esito non comunicato",
+          "src": {
+            "label": "NSF, 18 ott",
+            "url": "https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/"
           }
         },
         {
-          "nome": "Trasferimento in rampa",
-          "fatto": true,
-          "data": "24-26 ott",
-          "nota": "rollout al Pad 2 il 24 ott; dopo lo static fire, nella notte tra 25 e 26 ott B22 è stato sollevato ad altezza di cattura, posato sul ringwall di trasporto ed è rientrato in Mega Bay 1 per i preparativi finali",
+          "nome": "Motori installati",
+          "fatto": false,
+          "data": "in corso",
+          "nota": "in Mega Bay 1",
           "src": {
-            "label": "@VickiCocks15, 26 ott",
-            "url": "https://x.com/VickiCocks15/status/2114760295428030919"
+            "label": "NSF, 6 nov",
+            "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
           }
         },
         {
-          "nome": "Impilamento",
-          "fatto": true,
-          "data": "12-13 nov",
+          "nome": "Static fire",
+          "fatto": false,
+          "data": "fine nov - metà dic (stima NSF)",
+          "nota": "possibile al 39A; non confermato",
           "src": {
-            "label": "@LabPadre, 13 nov",
-            "url": "https://x.com/LabPadre/status/2121043480411525168"
-          },
-          "nota": "B22 installato sul launch mount verso le 04:34 del 10 nov (NSF) e usato per i test finali di cattura, compreso uno squeeze test sospeso all'altezza di cattura (SpaceX). Ship 42 impilata su B22 nella notte del 13 nov (LabPadre, NSF)"
-        },
-        {
-          "nome": "Decollo",
-          "fatto": true,
-          "data": "13 nov, 23:47",
-          "src": {
-            "label": "@SpaceX, 13 nov",
-            "url": "https://x.com/SpaceX/status/2121374779680964991"
-          }
-        },
-        {
-          "nome": "Ammaraggio nel Golfo (cattura annullata)",
-          "fatto": true,
-          "data": "13 nov",
-          "nota": "deviato dalla torre al mare",
-          "src": {
-            "label": "@SpaceX, 13 nov",
-            "url": "https://x.com/SpaceX/status/2121376372576915909"
+            "label": "NSF, 6 nov",
+            "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
           }
         }
       ]
     }
   },
   "NEWS": [
+    {
+      "data": "15 nov",
+      "sez": "Prototipi",
+      "testo": "SpaceX sul Flight 15: B22 ha riacceso 32 dei 33 Raptor per il boostback, concluso in anticipo per poca massa di carburante (causa in indagine); l'abort automatico lo ha deviato in mare, dove ha eseguito il landing burn con i motori spenti in hover sul Golfo. Allo spegnimento è stato attivato il sistema di terminazione del volo",
+      "src": {
+        "label": "SpaceX, Flight 15",
+        "url": "https://www.spacex.com/launches/starship-flight-15"
+      }
+    },
+    {
+      "data": "14 nov",
+      "sez": "Lanci",
+      "testo": "Starlink Group 31-2, i 26 satelliti rilasciati dalla Ship, riportano un'orbita di 262 x 272 km a 30,5° secondo Celestrak (@planet4589)",
+      "src": {
+        "label": "@planet4589, 14 nov",
+        "url": "https://x.com/planet4589/status/2121717793066262824"
+      }
+    },
+    {
+      "data": "14 nov",
+      "sez": "Lanci",
+      "testo": "Ship 42 catturata dalla torre di Starbase (Pad 2) alle 22:20 ora di Roma (21:20:02 UTC) dopo 22 h 32 min 26 s di volo: per @planet4589 è il primo recupero di uno stadio superiore orbitale dopo lo Space Shuttle. SpaceX: «Mechazilla catches Starship!»",
+      "src": {
+        "label": "@SpaceX, 14 nov",
+        "url": "https://x.com/SpaceX/status/2121715216597827756"
+      }
+    },
+    {
+      "data": "14 nov",
+      "sez": "Lanci",
+      "testo": "Dopo il GO per il ritorno (20:18), la Ship ha eseguito il deorbit burn (21:25) ed è rientrata in atmosfera alle 21:58, ora di Roma",
+      "src": {
+        "label": "@SpaceX, 14 nov",
+        "url": "https://x.com/SpaceX/status/2121701161040556374"
+      }
+    },
     {
       "data": "14 nov",
       "sez": "Lanci",
@@ -955,9 +923,9 @@
   ],
   "IN_BREVE": {
     "siti": "12 nov: estensione del braccio QD della Ship per il Pad 1 in arrivo a Starbase (@CSI_Starbase). Al Pad 2 S42 impilata su B22, SQD collegato. Pad 1: seconda delle quattro pareti inclinate del flame trench (10 nov, NSF).",
-    "prototipi": "13 nov: B22 deviato su un ammaraggio nel Golfo invece della cattura (SpaceX), resti vicino alla costa (non confermato). Ship 42 in orbita, cattura prevista stasera.",
+    "prototipi": "B22 deviato in mare il 13 nov: boostback con 32 motori su 33 concluso in anticipo per poco carburante (causa in indagine, SpaceX). Ship 42 catturata il 14 nov. Per il Flight 16 probabili B23/S43, ancora in allestimento (non confermato).",
     "test": "12 nov: Raptor 134 (già su B21) di nuovo in uscita per test a McGregor (esito non confermato). Next Spaceflight: checklist del Flight 15 a 18 voci su 20, manca l'approvazione normativa finale.",
-    "lanci": "Flight 15 decollato il 13 nov alle 23:47 ora di Roma: Ship 42 in orbita a ~276 km con 26 Starlink V3 rilasciati, in buone condizioni alle 06:44 (SpaceX). Cattura della Ship a Starbase prevista stasera 14 nov verso le 22:15 (indicativo)."
+    "lanci": "Flight 15: il 14 nov alle 22:20 ora di Roma Ship 42 è stata catturata dalla torre di Starbase dopo 22 h 32 min di volo (SpaceX), la prima cattura di una Ship. Decollo il 13 nov alle 23:47, 26 Starlink V3 rilasciati. Flight 16: nessuna data annunciata (NET 10 dic non ufficiale, NSF vede più probabile inizio 2027)."
   },
   "SITI": [
     {
@@ -967,8 +935,8 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "S42 impilata su B22, SQD collegato (13 nov)",
-      "ultimo": "12-13 nov: Ship 42 portata al pad e impilata su B22; collegato il braccio SQD (TrackingTheSB, non confermato); countdown del Flight 15 in corso (NSF). 11 nov: chopsticks hanno rilasciato e poi ripreso B22, lavori sulle grid fin conclusi (@VickiCocks15, non confermato). 10 nov: B22 sul launch mount e test finali di cattura, compreso squeeze test sospeso all'altezza di cattura (SpaceX); poi chopsticks rilasciati e braccio SQD riposizionato; nella notte dell'11 nov SQD in purge (RGV). TFR per test ad alta energia dal 12 nov. 9 nov: chiusura strada 10:00–14:00 dalla Production al Pad (Fraser/NSF; se arriveranno i veicoli F15 non è confermato). 6-8 nov: test hold-down clamp del Booster (non confermato, @VickiCocks15). NSF (7 nov): sistemi del pad testati in vista dello stacking di B22/S42. Prima: prove chopsticks e deluge del 5 nov (timelapse RGV); lavori sui BQD; static fire B22 25 ott.",
+      "breve": "Ship 42 catturata dalla torre (14 nov)",
+      "ultimo": "14 nov: alle 22:20 ora di Roma i chopsticks hanno catturato Ship 42 al Pad 2 (SpaceX, @planet4589). 13 nov: lancio del Flight 15 alle 23:47. 12-13 nov: Ship 42 portata al pad e impilata su B22; collegato il braccio SQD (TrackingTheSB, non confermato); countdown del Flight 15 in corso (NSF). 11 nov: chopsticks hanno rilasciato e poi ripreso B22, lavori sulle grid fin conclusi (@VickiCocks15, non confermato). 10 nov: B22 sul launch mount e test finali di cattura, compreso squeeze test sospeso all'altezza di cattura (SpaceX); poi chopsticks rilasciati e braccio SQD riposizionato; nella notte dell'11 nov SQD in purge (RGV). TFR per test ad alta energia dal 12 nov. 9 nov: chiusura strada 10:00–14:00 dalla Production al Pad (Fraser/NSF; se arriveranno i veicoli F15 non è confermato). 6-8 nov: test hold-down clamp del Booster (non confermato, @VickiCocks15). NSF (7 nov): sistemi del pad testati in vista dello stacking di B22/S42. Prima: prove chopsticks e deluge del 5 nov (timelapse RGV); lavori sui BQD; static fire B22 25 ott.",
       "data": "13 nov",
       "src": {
         "label": "@SpaceX, 13 nov",
@@ -1128,9 +1096,14 @@
   ],
   "NON_CONFERMATI": [
     {
+      "titolo": "Flight 16: data e veicoli",
+      "data": "15 nov",
+      "testo": "Nessun annuncio SpaceX: coppia B23/S43, lancio dal LC-39A e NET 10 dic (slide CADENA) restano non confermati; NSF (6 nov) indica più probabile l'inizio del 2027 (https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/). Il forum NSF non ha thread recenti verificabili sul Flight 16"
+    },
+    {
       "titolo": "Relitto di B22 nel Golfo",
       "data": "14 nov",
-      "testo": "Secondo @mcrs987 il booster è esploso all'ammaraggio, circa un miglio al largo, e il tubo di trasferimento sporge dall'acqua, conficcato nel fondale a circa 12 m di profondità; una nave di recupero si è avvicinata ai resti. Non confermato (https://x.com/mcrs987/status/2121385822985363898)"
+      "testo": "Secondo @mcrs987 il booster è esploso all'ammaraggio, circa un miglio al largo, e il tubo di trasferimento sporge dall'acqua, conficcato nel fondale a circa 12 m di profondità; una nave di recupero si è avvicinata ai resti. Non confermato (https://x.com/mcrs987/status/2121385822985363898) Nota: SpaceX ha confermato solo che il landing burn si è concluso in mare con attivazione del FTS."
     },
     {
       "titolo": "Marker di allineamento su Ship 42",
@@ -1361,12 +1334,12 @@
       "versione": "V3",
       "volo": "Flight 15",
       "stato": "Lanciato",
-      "breve": "Volato il 13 nov, cattura annullata: ammaraggio nel Golfo",
-      "note": "Prove crio 9-10 set; rollout al Pad 2 il 24 ott; static fire completo a 33 motori il 25 ott (circa 16 s), confermato da SpaceX. Nella notte tra 25 e 26 ott sollevato ad altezza di cattura e rientrato in Mega Bay 1 per i preparativi finali. @mcrs987 (28 ott): raceway aperto, sta per ricevere il sistema di terminazione del volo (FTS). NSF (6 nov): in controlli finali per il Flight 15 con NET 13 nov NSF (7 nov): sistemi del sito di lancio testati; B22 e S42 stanno per essere portati al Pad 2 per l'impilamento. Rollout al Pad 2 la sera del 9 nov e installazione sul launch mount verso le 04:34 del 10 nov (NSF). SpaceX (10 nov): primo Super Heavy V3 destinato al ritorno e alla cattura; test finali di cattura all'arrivo, compreso uno squeeze test sospeso all'altezza di cattura 11 nov: rilasciato e poi ripreso dai chopsticks, lavori sulle grid fin conclusi (@VickiCocks15, non confermato). Nella notte del 13 nov Ship 42 è stata impilata su B22 (LabPadre, NSF). Flight 15 (13 nov, 23:47 ora di Roma): dopo il boostback SpaceX ha deviato B22 su un ammaraggio nel Golfo invece della cattura; per @mcrs987 è esploso all'impatto a circa un miglio dalla costa (non confermato).",
-      "data": "13 nov",
+      "breve": "Volato il 13 nov, ammaraggio nel Golfo (cattura non tentata)",
+      "note": "Prove crio 9-10 set; rollout al Pad 2 il 24 ott; static fire completo a 33 motori il 25 ott (circa 16 s), confermato da SpaceX. Nella notte tra 25 e 26 ott sollevato ad altezza di cattura e rientrato in Mega Bay 1 per i preparativi finali. @mcrs987 (28 ott): raceway aperto, sta per ricevere il sistema di terminazione del volo (FTS). NSF (6 nov): in controlli finali per il Flight 15 con NET 13 nov NSF (7 nov): sistemi del sito di lancio testati; B22 e S42 stanno per essere portati al Pad 2 per l'impilamento. Rollout al Pad 2 la sera del 9 nov e installazione sul launch mount verso le 04:34 del 10 nov (NSF). SpaceX (10 nov): primo Super Heavy V3 destinato al ritorno e alla cattura; test finali di cattura all'arrivo, compreso uno squeeze test sospeso all'altezza di cattura 11 nov: rilasciato e poi ripreso dai chopsticks, lavori sulle grid fin conclusi (@VickiCocks15, non confermato). Nella notte del 13 nov Ship 42 è stata impilata su B22 (LabPadre, NSF). Flight 15 (13 nov, 23:47 ora di Roma): dopo il boostback SpaceX ha deviato B22 su un ammaraggio nel Golfo invece della cattura; per @mcrs987 è esploso all'impatto a circa un miglio dalla costa (non confermato). SpaceX (pagina Flight 15): boostback con 32 motori su 33, concluso in anticipo per poca massa di carburante (causa in indagine); abort automatico, landing burn in mare con spegnimento in hover e FTS attivato allo spegnimento.",
+      "data": "15 nov",
       "src": {
-        "label": "@SpaceX, 13 nov",
-        "url": "https://x.com/SpaceX/status/2121376372576915909"
+        "label": "SpaceX, Flight 15",
+        "url": "https://www.spacex.com/launches/starship-flight-15"
       }
     },
     {
@@ -1375,12 +1348,12 @@
       "versione": "V3",
       "volo": "Flight 15",
       "stato": "Lanciato",
-      "breve": "In orbita, cattura prevista stasera 14 nov",
-      "note": "Test chopsticks al Pad 2 (11-12 set); ulteriore prova crio a Massey's (9 ott). Partita per Massey's il 26 ott; nella notte tra 26 e 27 ott static fire a un solo motore e il 27 ott verso le 22:46 ora di Roma static fire a sei motori a piena durata. Il 28 ott SpaceX ha confermato la fine degli static fire, compresa un'accensione di un solo Raptor che simula la manovra di deorbit. Nella notte tra 28 e 29 ott è tornata in produzione per gli ultimi preparativi (Mega Bay 2 e carico Starlink V3 attesi, non confermato). Il 29 ott è entrata in Mega Bay 2. Il 30 ott NSF: in Mega Bay 2 per ispezioni finali e cariche del sistema di terminazione del volo, poi caricamento dei satelliti Starlink per il Flight 15. NSF (6 nov): ancora nei controlli finali; prossimi passi cariche FTS e carico Starlink. Piano di missione di circa 24 ore (non confermato) NSF (7 nov): sistemi del sito di lancio testati; B22 e S42 stanno per essere portati al Pad 2 per l'impilamento La sera dell'11 nov lo Starlink Speed Loader è uscito dalla Starfactory per caricare 26 Starlink V3 (NSF). Al 12 nov non ancora trasferita al Pad 2. Il 12 nov portata al Pad 2 (SpaceX) e nella notte del 13 nov impilata su B22; collegato il braccio SQD e aggiunti quelli che sembrano marker di allineamento (TrackingTheSB, non confermato). Flight 15 (13 nov, 23:47 ora di Roma): in orbita a ~276 km, rilasciati i 26 Starlink V3; alle 06:44 del 14 nov in buone condizioni, cattura a Starbase prevista verso le 22:15 (SpaceX).",
+      "breve": "Catturata a Starbase il 14 nov, alle 22:20",
+      "note": "Test chopsticks al Pad 2 (11-12 set); ulteriore prova crio a Massey's (9 ott). Partita per Massey's il 26 ott; nella notte tra 26 e 27 ott static fire a un solo motore e il 27 ott verso le 22:46 ora di Roma static fire a sei motori a piena durata. Il 28 ott SpaceX ha confermato la fine degli static fire, compresa un'accensione di un solo Raptor che simula la manovra di deorbit. Nella notte tra 28 e 29 ott è tornata in produzione per gli ultimi preparativi (Mega Bay 2 e carico Starlink V3 attesi, non confermato). Il 29 ott è entrata in Mega Bay 2. Il 30 ott NSF: in Mega Bay 2 per ispezioni finali e cariche del sistema di terminazione del volo, poi caricamento dei satelliti Starlink per il Flight 15. NSF (6 nov): ancora nei controlli finali; prossimi passi cariche FTS e carico Starlink. Piano di missione di circa 24 ore (non confermato) NSF (7 nov): sistemi del sito di lancio testati; B22 e S42 stanno per essere portati al Pad 2 per l'impilamento La sera dell'11 nov lo Starlink Speed Loader è uscito dalla Starfactory per caricare 26 Starlink V3 (NSF). Al 12 nov non ancora trasferita al Pad 2. Il 12 nov portata al Pad 2 (SpaceX) e nella notte del 13 nov impilata su B22; collegato il braccio SQD e aggiunti quelli che sembrano marker di allineamento (TrackingTheSB, non confermato). Flight 15 (13 nov, 23:47 ora di Roma): in orbita a ~276 km, rilasciati i 26 Starlink V3; alle 06:44 del 14 nov in buone condizioni, cattura a Starbase prevista verso le 22:15 (SpaceX). Il 14 nov: GO per il ritorno alle 20:18, deorbit burn alle 21:25, rientro alle 21:58; cattura alle 22:20 ora di Roma (21:20:02 UTC, @planet4589) dopo 22 h 32 min 26 s di volo, la prima cattura di una Ship (SpaceX). Stato della nave dopo la cattura non ancora comunicato.",
       "data": "14 nov",
       "src": {
         "label": "@SpaceX, 14 nov",
-        "url": "https://x.com/SpaceX/status/2121479482582441991"
+        "url": "https://x.com/SpaceX/status/2121715216597827756"
       }
     },
     {
@@ -1983,6 +1956,22 @@
   ],
   "LANCI": [
     {
+      "volo": "Flight 15",
+      "data": "13 nov 2026",
+      "veicoli": "B22 / S42",
+      "pad": "Starbase Pad 2",
+      "esito": {
+        "label": "Ship catturata, booster in mare",
+        "tone": "neutral"
+      },
+      "breve": "Prima cattura di una Ship, 26 Starlink V3 rilasciati",
+      "sintesi": "Decollo il 13 nov alle 23:47 ora di Roma. Super Heavy deviato su un ammaraggio nel Golfo (cattura non tentata); Ship in orbita a ~276 km, 26 Starlink V3 rilasciati. Il 14 nov alle 22:20 ora di Roma la Ship è stata catturata dalla torre di Starbase dopo 22 h 32 min di volo",
+      "src": {
+        "label": "SpaceX, Flight 15",
+        "url": "https://www.spacex.com/launches/starship-flight-15"
+      }
+    },
+    {
       "volo": "Flight 14",
       "data": "28 set 2026",
       "veicoli": "B21 / S41",
@@ -2266,6 +2255,21 @@
     "prototipi": [
       {
         "autore": "@SpaceX",
+        "data": "13 nov",
+        "ora": "23:55",
+        "testo": "Super Heavy deviato su un ammaraggio nel Golfo",
+        "url": "https://x.com/SpaceX/status/2121376372576915909",
+        "media": "video",
+        "id": "2121376372576915909",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2121376252674367488/img/cljOHqC79eFpRygT.jpg"
+          }
+        ]
+      },
+      {
+        "autore": "@SpaceX",
         "data": "14 nov",
         "ora": "06:44",
         "testo": "Ship 42 e lo scudo termico in buone condizioni in orbita",
@@ -2336,33 +2340,6 @@
           {
             "tipo": "video",
             "url": "https://pbs.twimg.com/amplify_video_thumb/2120641225598324736/img/nUJiHI-mF_F12h3n.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@SpaceX",
-        "data": "10 nov",
-        "ora": "19:21",
-        "testo": "B22 al pad: test finali di cattura e squeeze test sospeso",
-        "url": "https://x.com/SpaceX/status/2120220290219208884",
-        "media": "foto",
-        "id": "2120220290219208884",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HWyJCAYXcAAFtkn.jpg"
-          },
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HWyJD07XwAANxuA.jpg"
-          },
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HWyJFLKWIAAOuYn.jpg"
-          },
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HWyJGbQXcAAwXqr.jpg"
           }
         ]
       }
@@ -2447,6 +2424,21 @@
     "lanci": [
       {
         "autore": "@SpaceX",
+        "data": "14 nov",
+        "ora": "22:21",
+        "testo": "Mechazilla cattura Starship",
+        "url": "https://x.com/SpaceX/status/2121715216597827756",
+        "media": "video",
+        "id": "2121715216597827756",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2121715092903596032/img/RamESGt4tVwjBYVb.jpg"
+          }
+        ]
+      },
+      {
+        "autore": "@SpaceX",
         "data": "13 nov",
         "ora": "23:48",
         "testo": "Decollo del Flight 15",
@@ -2517,21 +2509,6 @@
           {
             "tipo": "foto",
             "url": "https://pbs.twimg.com/media/HW8ZGGNXsAASzUH.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@LabPadre",
-        "data": "10 nov",
-        "ora": "23:45",
-        "testo": "Area di pericolo marittimo aggiornata per il Flight 15",
-        "url": "https://x.com/LabPadre/status/2120286827663806588",
-        "media": "foto",
-        "id": "2120286827663806588",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HWzFojeXEAAdYdm.jpg"
           }
         ]
       }

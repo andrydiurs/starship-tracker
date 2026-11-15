@@ -1,833 +1,903 @@
 {
- "aggiornato": "10 nov 2026",
- "voli": [
-  {
-   "n": 1,
-   "data": "20 apr 2023",
-   "ora": "15:33",
-   "focus": "Decollo",
-   "booster": "B7",
-   "ship": "S24",
-   "versione": "V1",
-   "obiettivi": [
+  "aggiornato": "15 nov 2026",
+  "voli": [
     {
-     "o": "Decollo e pad liberato (obiettivo minimo dichiarato da SpaceX)",
-     "r": "Decollo riuscito. Il lancio ha danneggiato in modo pesante la rampa",
-     "s": "ok"
+      "n": 1,
+      "data": "20 apr 2023",
+      "ora": "15:33",
+      "focus": "Decollo",
+      "booster": "B7",
+      "ship": "S24",
+      "versione": "V1",
+      "obiettivi": [
+        {
+          "o": "Decollo e pad liberato (obiettivo minimo dichiarato da SpaceX)",
+          "r": "Decollo riuscito. Il lancio ha danneggiato in modo pesante la rampa",
+          "s": "ok"
+        },
+        {
+          "o": "Separazione tra Booster e Ship",
+          "r": "Non tentata: diversi motori spenti, perso il controllo della spinta, veicolo in rotazione",
+          "s": "fail"
+        },
+        {
+          "o": "Booster: ammaraggio nel Golfo",
+          "r": "Non raggiunto: veicolo distrutto dal sistema di terminazione circa 4 minuti dopo il decollo",
+          "s": "fail"
+        },
+        {
+          "o": "Ship: quasi un'orbita e ammaraggio vicino alle Hawaii",
+          "r": "Non raggiunto",
+          "s": "fail"
+        }
+      ],
+      "src": {
+        "label": "Wikipedia, Flight 1",
+        "url": "https://en.wikipedia.org/wiki/Starship_flight_test_1"
+      },
+      "video": [
+        {
+          "id": "1649043715686793218",
+          "fase": "Partenza",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1649043659910967307/img/nizVMAtP1Akxys7D.jpg",
+          "dur": 25
+        }
+      ],
+      "ift": "IFT-1",
+      "nome": "Flight 1",
+      "versione_nota": "Block 1",
+      "descrizione": "Era il primo volo di prova con Super Heavy e Starship insieme. SpaceX dichiarava di misurare il risultato da quanto avrebbe imparato, e l'obiettivo minimo era staccarsi dal pad. Il profilo prevedeva quasi un'orbita, con la Ship destinata a cadere nel Pacifico a nord delle Hawaii.",
+      "curiosita": "Con 33 motori è stato lo stadio di razzo più potente mai lanciato, battendo il record del sovietico N1."
     },
     {
-     "o": "Separazione tra Booster e Ship",
-     "r": "Non tentata: diversi motori spenti, perso il controllo della spinta, veicolo in rotazione",
-     "s": "fail"
+      "n": 2,
+      "data": "18 nov 2023",
+      "ora": "14:03",
+      "focus": "Hot staging",
+      "booster": "B9",
+      "ship": "S25",
+      "versione": "V1",
+      "obiettivi": [
+        {
+          "o": "Hot staging (separazione con la Ship già accesa)",
+          "r": "Riuscito, per la prima volta su un veicolo di queste dimensioni",
+          "s": "ok"
+        },
+        {
+          "o": "33 Raptor del Booster accesi a durata piena",
+          "r": "Riuscito, per la prima volta",
+          "s": "ok"
+        },
+        {
+          "o": "Booster: boostback e ammaraggio nel Golfo",
+          "r": "Perso dopo il flip, all'inizio del boostback, a circa 90 km di quota",
+          "s": "fail"
+        },
+        {
+          "o": "Ship: salita fino allo spazio",
+          "r": "Raggiunti circa 150 km. Telemetria persa prima dello spegnimento motori, distrutta dal sistema di terminazione",
+          "s": "part"
+        },
+        {
+          "o": "Ship: rientro e ammaraggio vicino alle Hawaii",
+          "r": "Non raggiunto",
+          "s": "fail"
+        }
+      ],
+      "src": {
+        "label": "SpaceX, Flight 2",
+        "url": "https://www.spacex.com/launches/starship-flight-2"
+      },
+      "video": [
+        {
+          "id": "1725862657780281349",
+          "fase": "Partenza",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1725862536191631361/img/eIFnIYvZ55GXnnEz.jpg",
+          "dur": 44
+        },
+        {
+          "id": "1725863437887242515",
+          "fase": "Hot staging",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1725863322476859392/img/dUaDoY0L9VpadMWy.jpg",
+          "dur": 55
+        }
+      ],
+      "ift": "IFT-2",
+      "nome": "Flight 2",
+      "versione_nota": "Block 1",
+      "descrizione": "Dopo i danni al pad del primo volo, SpaceX ha aggiunto un sistema ad acqua sotto la rampa e ha provato una nuova tecnica di separazione, l'hot staging: la Ship accende i motori mentre è ancora attaccata al Booster. Si voleva anche far lavorare tutti i 33 Raptor per l'intera salita.",
+      "curiosita": "È stata la prima Starship a raggiungere lo spazio, a circa 150 km di quota e a circa 24.000 km/h."
     },
     {
-     "o": "Booster: ammaraggio nel Golfo",
-     "r": "Non raggiunto: veicolo distrutto dal sistema di terminazione circa 4 minuti dopo il decollo",
-     "s": "fail"
+      "n": 3,
+      "data": "14 mar 2024",
+      "ora": "14:25",
+      "focus": "Diversi test con la Ship",
+      "booster": "B10",
+      "ship": "S28",
+      "versione": "V1",
+      "obiettivi": [
+        {
+          "o": "Ascesa completa con tutti i motori, hot staging",
+          "r": "Riuscita: 33 Raptor a durata piena e seconda hot staging",
+          "s": "ok"
+        },
+        {
+          "o": "Booster: boostback e ammaraggio nel Golfo",
+          "r": "Primo landing burn tentato, ma il Booster è stato perso a circa 460 m di quota",
+          "s": "part"
+        },
+        {
+          "o": "Ship: apertura e chiusura della porta del carico",
+          "r": "Riuscita",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: dimostrazione di trasferimento interno di propellente",
+          "r": "Avviata durante il coast",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: riaccensione di un Raptor nello spazio",
+          "r": "Non tentata a causa della rotazione del veicolo",
+          "s": "skip"
+        },
+        {
+          "o": "Ship: rientro e ammaraggio nell'Oceano Indiano",
+          "r": "Primo rientro dallo spazio con video Starlink, ma ultimo segnale a circa 49 minuti. Ship persa",
+          "s": "fail"
+        }
+      ],
+      "src": {
+        "label": "SpaceX, Flight 3",
+        "url": "https://www.spacex.com/launches/starship-flight-3"
+      },
+      "video": [
+        {
+          "id": "1768267464062943676",
+          "fase": "Partenza",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1768267406735187968/img/yszsME8HffMRy_VD.jpg",
+          "dur": 36
+        },
+        {
+          "id": "1768268071469539708",
+          "fase": "Hot staging",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1768268008764645376/img/WQ4Rj8ZOtVIsZtNA.jpg",
+          "dur": 12
+        },
+        {
+          "id": "1768279990368612354",
+          "fase": "Rientro",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1768279869195206656/img/3cXELGZMGhxoI6b2.jpg",
+          "dur": 86
+        }
+      ],
+      "ift": "IFT-3",
+      "nome": "Flight 3",
+      "versione_nota": "Block 1",
+      "descrizione": "Il terzo volo doveva far funzionare per tutta la durata i motori della Ship e provare la porta del carico, il «Pez dispenser», con un primo test di trasferimento interno di propellente. In programma anche la prima riaccensione di un Raptor nello spazio e, per il Booster, il primo landing burn.",
+      "curiosita": "Starlink ha mostrato in diretta il primo rientro dallo spazio della Starship, con immagini attraverso il plasma."
     },
     {
-     "o": "Ship: quasi un'orbita e ammaraggio vicino alle Hawaii",
-     "r": "Non raggiunto",
-     "s": "fail"
+      "n": 4,
+      "data": "6 giu 2024",
+      "ora": "14:50",
+      "focus": "Rientro controllato con Ship e Booster",
+      "booster": "B11",
+      "ship": "S29",
+      "versione": "V1",
+      "obiettivi": [
+        {
+          "o": "Booster: boostback e ammaraggio morbido nel Golfo",
+          "r": "Riuscito, con un motore perso poco dopo il decollo",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: rientro controllato attraverso picco di calore e massima pressione",
+          "r": "Riuscito, nonostante un forte danno al flap anteriore",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: flip, landing burn e ammaraggio nell'Oceano Indiano",
+          "r": "Ammaraggio morbido nella zona prevista, a circa 6 km dal centro",
+          "s": "ok"
+        }
+      ],
+      "src": {
+        "label": "SpaceX, Flight 4",
+        "url": "https://www.spacex.com/launches/starship-flight-4"
+      },
+      "video": [
+        {
+          "id": "1798699175573700929",
+          "fase": "Partenza",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1798699116501045248/img/s0spAxoBs6gvPxFI.jpg",
+          "dur": 33
+        },
+        {
+          "id": "1798701489097183286",
+          "fase": "Ammaraggio Booster",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1798701356192313344/img/n9UjEQeIGAtpaDMe.jpg",
+          "dur": 37
+        },
+        {
+          "id": "1798792222743122164",
+          "fase": "Rientro Ship",
+          "thumb": "https://pbs.twimg.com/ext_tw_video_thumb/1798791615215177728/pu/img/DNYBAkgGAF5xErTI.jpg",
+          "dur": 16
+        }
+      ],
+      "ift": "IFT-4",
+      "nome": "Flight 4",
+      "versione_nota": "Block 1",
+      "descrizione": "SpaceX voleva dimostrare per la prima volta il rientro controllato di entrambi gli stadi. Il Booster doveva ammarare su una «torre virtuale» nel Golfo, in preparazione alla cattura del volo successivo, e la Ship fare rientro, flip e ammaraggio morbido. Per la Ship contava soprattutto capire se i flap bastassero a controllarla nel rientro ipersonico.",
+      "curiosita": "Nonostante un flap anteriore molto danneggiato, la Ship è ammarata a circa 6 km dal centro della zona bersaglio."
+    },
+    {
+      "n": 5,
+      "data": "13 ott 2024",
+      "ora": "14:25",
+      "focus": "Cattura al volo e rientro controllato con la Ship",
+      "booster": "B12",
+      "ship": "S30",
+      "versione": "V1",
+      "obiettivi": [
+        {
+          "o": "Booster: ritorno al sito e cattura con le braccia della torre",
+          "r": "Riuscita al primo tentativo, la prima cattura di un booster",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: rientro controllato",
+          "r": "Riuscito, nonostante danni a un flap",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: ammaraggio nell'Oceano Indiano sul bersaglio",
+          "r": "Riuscito, dopo 1 h 05 min 40 s di volo",
+          "s": "ok"
+        }
+      ],
+      "src": {
+        "label": "SpaceX, Flight 5",
+        "url": "https://www.spacex.com/launches/starship-flight-5"
+      },
+      "video": [
+        {
+          "id": "1845440879844261938",
+          "fase": "Partenza",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1845440802945892352/img/n7FLj9t8w4HZCg0n.jpg",
+          "dur": 38
+        },
+        {
+          "id": "1845442658397049011",
+          "fase": "Cattura del Booster",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1845442585206325256/img/aKpvzYSImQ6_9niU.jpg",
+          "dur": 59
+        },
+        {
+          "id": "1845457555650379832",
+          "fase": "Ammaraggio Ship",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1845457467511275524/img/G0g84HkvJFJ40eFZ.jpg",
+          "dur": 25
+        }
+      ],
+      "ift": "IFT-5",
+      "nome": "Flight 5",
+      "versione_nota": "Block 1",
+      "descrizione": "L'obiettivo più ambizioso fino ad allora: riportare il Booster alla base e prenderlo al volo con le braccia della torre di lancio, il sistema chiamato «Mechazilla». Prima del tentativo dovevano risultare in regola migliaia di criteri su veicolo e rampa, più un comando manuale del direttore di volo. La Ship doveva ripetere un rientro controllato fino all'ammaraggio nell'Oceano Indiano.",
+      "curiosita": "La cattura è riuscita al primo tentativo ed è stato anche il primo volo senza motori guasti."
+    },
+    {
+      "n": 6,
+      "data": "19 nov 2024",
+      "ora": "23:00",
+      "focus": "Cattura al volo (poi ammaraggio) e limiti strutturali della Ship",
+      "booster": "B13",
+      "ship": "S31",
+      "versione": "V1",
+      "obiettivi": [
+        {
+          "o": "Booster: cattura con la torre",
+          "r": "Annullata: i controlli automatici sulla torre non sono stati superati",
+          "s": "fail"
+        },
+        {
+          "o": "Booster: piano di riserva, ammaraggio nel Golfo",
+          "r": "Ammaraggio morbido riuscito",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: riaccensione di un Raptor nello spazio",
+          "r": "Riuscita",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: rientro con meno tegole e angolo più aggressivo",
+          "r": "Riuscito, con danni minimi ai flap",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: ammaraggio nell'Oceano Indiano",
+          "r": "Riuscito, per la prima volta di giorno",
+          "s": "ok"
+        }
+      ],
+      "src": {
+        "label": "SpaceX, Flight 6",
+        "url": "https://www.spacex.com/launches/starship-flight-6"
+      },
+      "video": [
+        {
+          "id": "1858994002311475519",
+          "fase": "Partenza",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1858993941628231680/img/H7ObuLgaB8XHL2W8.jpg",
+          "dur": 60
+        },
+        {
+          "id": "1858995728783384815",
+          "fase": "Ammaraggio Booster",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1858995561820811267/img/sSFVyWrI9J5tKIFM.jpg",
+          "dur": 22
+        },
+        {
+          "id": "1859010620471079361",
+          "fase": "Ammaraggio Ship",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1859010556214341633/img/dSRLDWHYsqlfIFot.jpg",
+          "dur": 18
+        }
+      ],
+      "ift": "IFT-6",
+      "nome": "Flight 6",
+      "versione_nota": "Block 1",
+      "descrizione": "Secondo tentativo di cattura del Booster e ultimo volo con una Ship di prima generazione. SpaceX ha tolto alcune tegole in punti chiave dello scudo termico e rimosso lo strato ablativo di riserva, per spingere il rientro verso i limiti con un angolo più aggressivo. La Ship doveva anche riaccendere un Raptor nello spazio.",
+      "curiosita": "A bordo c'era il primo «carico» della Starship: una banana di peluche usata come indicatore di assenza di peso."
+    },
+    {
+      "n": 7,
+      "data": "16 gen 2025",
+      "ora": "23:37",
+      "focus": "Primo volo Block 2: cattura del B14 ed esplosione della Ship 33",
+      "booster": "B14",
+      "ship": "S33",
+      "versione": "V2",
+      "obiettivi": [
+        {
+          "o": "Booster: ritorno e cattura con la torre",
+          "r": "Riuscita: seconda cattura di un Super Heavy",
+          "s": "ok"
+        },
+        {
+          "o": "Ship Block 2: ascesa completa",
+          "r": "Incendio nella sezione posteriore, telemetria persa dopo circa 8 minuti e mezzo. Ship distrutta",
+          "s": "fail"
+        },
+        {
+          "o": "Ship: rilascio di 10 simulatori Starlink",
+          "r": "Non raggiunto",
+          "s": "fail"
+        },
+        {
+          "o": "Ship: ammaraggio nell'Oceano Indiano",
+          "r": "Non raggiunto",
+          "s": "fail"
+        }
+      ],
+      "src": {
+        "label": "SpaceX, Flight 7",
+        "url": "https://www.spacex.com/launches/starship-flight-7"
+      },
+      "video": [
+        {
+          "id": "1880021718661521611",
+          "fase": "Partenza",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1880021658297143296/img/d6Ovi2r6WPYPbT0z.jpg",
+          "dur": 37
+        },
+        {
+          "id": "1880024050048589841",
+          "fase": "Cattura del Booster",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1880023941583941632/img/xmykU8YGs1bDew4o.jpg",
+          "dur": 74
+        }
+      ],
+      "ift": "IFT-7",
+      "nome": "Flight 7",
+      "versione_nota": "Block 2",
+      "descrizione": "Primo volo di una Ship Block 2, con strutture, avionica e altri sistemi aggiornati, e con la prova del sistema che rilascia 10 simulatori Starlink. SpaceX voleva anche ripetere la cattura del Booster riuscita a ottobre.",
+      "curiosita": "Per i detriti della Ship SpaceX ha collaborato con il governo delle Turks e Caicos e ha attivato una linea telefonica per segnalarli."
+    },
+    {
+      "n": 8,
+      "data": "7 mar 2025",
+      "ora": "00:30",
+      "focus": "Come IFT-7: rilascio Starlink, test Block 2",
+      "booster": "B15",
+      "ship": "S34",
+      "versione": "V2",
+      "obiettivi": [
+        {
+          "o": "Booster: ritorno e cattura con la torre",
+          "r": "Riuscita: terza cattura di un Super Heavy",
+          "s": "ok"
+        },
+        {
+          "o": "Ship Block 2: ascesa completa",
+          "r": "Evento energetico nella parte posteriore, persi diversi Raptor e il controllo. Contatto perso a circa 9 min 30 s",
+          "s": "fail"
+        },
+        {
+          "o": "Ship: rilascio di 4 simulatori Starlink",
+          "r": "Non raggiunto",
+          "s": "fail"
+        },
+        {
+          "o": "Ship: ammaraggio nell'Oceano Indiano",
+          "r": "Non raggiunto",
+          "s": "fail"
+        }
+      ],
+      "src": {
+        "label": "SpaceX, Flight 8",
+        "url": "https://www.spacex.com/launches/starship-flight-8"
+      },
+      "video": [
+        {
+          "id": "1897792820242792942",
+          "fase": "Partenza",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1897792742446567424/img/LWEQxYG3TBtnz5kN.jpg",
+          "dur": 33
+        },
+        {
+          "id": "1897794546781532408",
+          "fase": "Cattura del Booster",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1897794477990817793/img/ffbQr6DO31GRH300.jpg",
+          "dur": 49
+        }
+      ],
+      "ift": "IFT-8",
+      "nome": "Flight 8",
+      "versione_nota": "Block 2",
+      "descrizione": "Secondo volo di una Ship Block 2. SpaceX voleva trovare i limiti reali della Starship per prepararsi a riportarla un giorno al sito di lancio e catturarla. In programma c'era anche il rilascio di 4 simulatori Starlink, simili per dimensioni ai satelliti della prossima generazione.",
+      "curiosita": "Il Booster è stato catturato anche se due motori non si erano riaccesi nel boostback; uno si è poi riacceso per la cattura."
+    },
+    {
+      "n": 9,
+      "data": "28 mag 2025",
+      "ora": "01:36",
+      "focus": "Riuso del Booster 14 e ripetizione di IFT-7 per la Ship",
+      "booster": "B14-2",
+      "ship": "S35",
+      "versione": "V2",
+      "obiettivi": [
+        {
+          "o": "Primo riuso di un Super Heavy, con 33 Raptor accesi",
+          "r": "Riuscito: ascesa a durata piena con il B14, già volato a IFT-7",
+          "s": "ok"
+        },
+        {
+          "o": "Booster: discesa con angolo d'attacco più alto e ammaraggio nel Golfo",
+          "r": "Perso poco dopo l'inizio del landing burn, a circa 6 minuti dal decollo",
+          "s": "fail"
+        },
+        {
+          "o": "Ship: rilascio di 8 simulatori Starlink",
+          "r": "Non riuscito: la porta del carico non si è aperta",
+          "s": "fail"
+        },
+        {
+          "o": "Ship: riaccensione di un Raptor nello spazio",
+          "r": "Saltata per un errore di assetto",
+          "s": "skip"
+        },
+        {
+          "o": "Ship: rientro e ammaraggio nell'Oceano Indiano",
+          "r": "Perdita di propellente e perdita di controllo. Contatto perso a circa 46 minuti, detriti nell'area prevista",
+          "s": "fail"
+        }
+      ],
+      "src": {
+        "label": "SpaceX, Flight 9",
+        "url": "https://www.spacex.com/launches/starship-flight-9"
+      },
+      "video": [
+        {
+          "id": "1927509601001341037",
+          "fase": "Partenza",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1927509523129860096/img/E_zGGzoBqSCyU21Z.jpg",
+          "dur": 51
+        },
+        {
+          "id": "1927510220835635706",
+          "fase": "Hot staging",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1927510147615555584/img/k4OBbQB_koLdMmyx.jpg",
+          "dur": 34
+        }
+      ],
+      "ift": "IFT-9",
+      "nome": "Flight 9",
+      "versione_nota": "Block 2",
+      "descrizione": "Primo riutilizzo di un Super Heavy: il Booster 14, già volato a gennaio, con 29 motori già usati in volo. Doveva scendere con un angolo d'attacco più alto, per sfruttare di più l'atmosfera e usare meno propellente per il landing burn. Alla Ship toccavano il primo rilascio di carico, 8 simulatori Starlink, e la riaccensione di un Raptor.",
+      "curiosita": "Dopo il volo 8 la Ship aveva ricevuto più precarico sui giunti chiave, un nuovo sistema di spurgo con azoto e migliorie allo scarico del propellente."
+    },
+    {
+      "n": 10,
+      "data": "27 ago 2025",
+      "ora": "01:30",
+      "focus": "Ripetizione del volo precedente",
+      "booster": "B16",
+      "ship": "S37",
+      "versione": "V2",
+      "obiettivi": [
+        {
+          "o": "Booster: boostback e ammaraggio nel Golfo",
+          "r": "Riuscito, con un motore centrale disattivato di proposito nell'ultima fase",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: rilascio di 8 simulatori Starlink",
+          "r": "Riuscito: il primo rilascio di carico dalla Starship",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: riaccensione di un Raptor nello spazio",
+          "r": "Riuscita (la seconda mai fatta)",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: rientro sotto sforzo, flip e ammaraggio nell'Oceano Indiano",
+          "r": "Ammaraggio morbido sul bersaglio, nonostante il danno notevole alla sezione motori",
+          "s": "ok"
+        }
+      ],
+      "src": {
+        "label": "SpaceX, Flight 10",
+        "url": "https://www.spacex.com/launches/starship-flight-10"
+      },
+      "video": [
+        {
+          "id": "1960485359239774487",
+          "fase": "Partenza",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1960485282903474176/img/9qe3xppX4EBmsjmR.jpg",
+          "dur": 45
+        },
+        {
+          "id": "1960490432715993216",
+          "fase": "Rilascio Starlink",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1960490322850377729/img/JLRQ6cBTKNE3pAVR.jpg",
+          "dur": 56
+        },
+        {
+          "id": "1960502324050133328",
+          "fase": "Ammaraggio Ship",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1960502180693037056/img/CI8w-MGJNYdra0tE.jpg",
+          "dur": 48
+        }
+      ],
+      "ift": "IFT-10",
+      "nome": "Flight 10",
+      "versione_nota": "Block 2",
+      "descrizione": "Dopo i due voli precedenti, l'obiettivo era un volo completo: rilasciare 8 simulatori Starlink, riaccendere un Raptor nello spazio e sottoporre lo scudo termico a sforzi voluti prima dell'ammaraggio. Il Booster doveva anche simulare un motore guasto durante il landing burn.",
+      "curiosita": "Il volo era slittato di circa due mesi perché la Ship prevista era andata persa durante i test a terra."
+    },
+    {
+      "n": 11,
+      "data": "14 ott 2025",
+      "ora": "01:23",
+      "focus": "Nuova configurazione motori del Super Heavy e banking dinamico della Ship",
+      "booster": "B15-2",
+      "ship": "S38",
+      "versione": "V2",
+      "obiettivi": [
+        {
+          "o": "Booster: nuovo landing burn pensato per la generazione successiva",
+          "r": "Riuscito, con tutti i 13 motori previsti nella fase ad alta spinta",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: rilascio di 8 simulatori Starlink",
+          "r": "Riuscito",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: riaccensione di un Raptor nello spazio",
+          "r": "Riuscita (la terza mai fatta)",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: rientro sotto sforzo e banking dinamico",
+          "r": "Riuscito, con manovra che imita il ritorno a Starbase",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: ammaraggio nell'Oceano Indiano",
+          "r": "Flip, landing burn e ammaraggio morbido riusciti",
+          "s": "ok"
+        }
+      ],
+      "src": {
+        "label": "SpaceX, Flight 11",
+        "url": "https://www.spacex.com/launches/starship-flight-11"
+      },
+      "video": [
+        {
+          "id": "1977878290489643190",
+          "fase": "Partenza",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1977878189088309248/img/vTduZ64mhY4cRWI5.jpg",
+          "dur": 43
+        },
+        {
+          "id": "1977884820484272524",
+          "fase": "Rilascio Starlink",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1977883989139652608/img/oRNE6slgHQ62CbkH.jpg",
+          "dur": 57
+        },
+        {
+          "id": "1977895039318864296",
+          "fase": "Ammaraggio Ship",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/1977894881613037569/img/1aYFKT6RlXUpexWH.jpg",
+          "dur": 72
+        }
+      ],
+      "ift": "IFT-11",
+      "nome": "Flight 11",
+      "versione_nota": "Block 2",
+      "descrizione": "Ultimo volo della seconda generazione di Starship e del primo Super Heavy, e ultimo dal Pad 1 nella configurazione di allora. SpaceX ha provato un landing burn pensato per il Booster successivo e un rientro della Ship con alcune tegole tolte di proposito, più un banking dinamico che imita l'avvicinamento a Starbase dei futuri ritorni.",
+      "curiosita": "Dopo questo volo SpaceX ha rivolto l'attenzione ai veicoli V3, destinati ai primi voli orbitali, ai carichi operativi e al trasferimento di propellente."
+    },
+    {
+      "n": 12,
+      "data": "23 mag 2026",
+      "ora": "00:30",
+      "focus": "Primo volo Block 3 e primo uso del Pad 2. Suborbitale come i precedenti",
+      "booster": "B19",
+      "ship": "S39",
+      "versione": "V3",
+      "obiettivi": [
+        {
+          "o": "Debutto di Starship V3, Raptor 3 e Pad 2",
+          "r": "Riuscito: un solo motore del Booster spento in salita",
+          "s": "ok"
+        },
+        {
+          "o": "Booster: boostback e ammaraggio nel Golfo",
+          "r": "Boostback parziale, poi impatto duro in mare",
+          "s": "fail"
+        },
+        {
+          "o": "Ship: salita e rilascio di 20 simulatori e 2 Starlink modificati",
+          "r": "Riuscito nonostante un RVac spento. I due Starlink hanno ripreso la Ship nello spazio",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: riaccensione di un Raptor nello spazio",
+          "r": "Non eseguita dopo il guasto di un motore in salita",
+          "s": "skip"
+        },
+        {
+          "o": "Ship: rientro, banking e ammaraggio nell'Oceano Indiano",
+          "r": "Riuscito, con atterraggio su due Raptor",
+          "s": "ok"
+        }
+      ],
+      "src": {
+        "label": "SpaceX, Flight 12",
+        "url": "https://www.spacex.com/launches/starship-flight-12"
+      },
+      "video": [
+        {
+          "id": "2057952539417461045",
+          "fase": "Partenza",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/2057952449164464128/img/dsVbVmdVZURvbCx3.jpg",
+          "dur": 51
+        },
+        {
+          "id": "2057959688860229843",
+          "fase": "Rilascio satelliti",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/2057959573827264512/img/J6-yWq-7RdY-gL45.jpg",
+          "dur": 78
+        },
+        {
+          "id": "2057969484879528267",
+          "fase": "Ammaraggio Ship",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/2057969270215127040/img/91VSXaqtr0kIhWRg.jpg",
+          "dur": 90
+        }
+      ],
+      "ift": "IFT-12",
+      "nome": "Flight 12",
+      "versione_nota": "Block 3",
+      "descrizione": "Debutto della generazione V3: nuovo Super Heavy e nuova Ship, motori Raptor 3 e primo lancio dal Pad 2 di Starbase. Il profilo restava suborbitale, come nei voli precedenti. A bordo c'erano 20 simulatori Starlink e due Starlink modificati, con telecamere per riprendere la Ship nello spazio.",
+      "curiosita": "Il volo doveva usare il Booster 18, scartato dopo seri danni durante i test: è partito il Booster 19."
+    },
+    {
+      "n": 13,
+      "data": "25 lug 2026",
+      "ora": "00:51",
+      "focus": "Primi veri Starlink V3, ancora suborbitali",
+      "booster": "B20",
+      "ship": "S40",
+      "versione": "V3",
+      "obiettivi": [
+        {
+          "o": "Ship: rilascio di 20 Starlink V3",
+          "r": "Riuscito: contatto con tutti i satelliti, rientrati dopo circa 20 minuti come previsto",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: riaccensione di un Raptor nello spazio",
+          "r": "Riuscita",
+          "s": "ok"
+        },
+        {
+          "o": "Booster: boostback e ammaraggio nel Golfo",
+          "r": "Boostback con 33 motori ma interrotto in anticipo, landing burn parziale e impatto duro",
+          "s": "fail"
+        },
+        {
+          "o": "Ship: rientro, banking e ammaraggio nell'Oceano Indiano",
+          "r": "Ammaraggio morbido, Ship rimasta intatta: scudo termico visibile per la prima volta",
+          "s": "ok"
+        }
+      ],
+      "src": {
+        "label": "SpaceX, Flight 13",
+        "url": "https://www.spacex.com/launches/starship-flight-13"
+      },
+      "video": [
+        {
+          "id": "2080788166584267075",
+          "fase": "Partenza",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/2080788059776319488/img/noxLrnb24oXgLYYt.jpg",
+          "dur": 46
+        },
+        {
+          "id": "2080795033448395056",
+          "fase": "Rilascio Starlink V3",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/2080794933267456000/img/neUgwFNXIgXxdEba.jpg",
+          "dur": 43
+        },
+        {
+          "id": "2080804682918764619",
+          "fase": "Ammaraggio Ship",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/2080804533995786240/img/GXqDYTtBg0l7Ze50.jpg",
+          "dur": 81
+        }
+      ],
+      "ift": "IFT-13",
+      "nome": "Flight 13",
+      "versione_nota": "Block 3",
+      "descrizione": "Secondo volo V3 e primo rilascio di veri Starlink V3, ancora su traiettoria suborbitale: i 20 satelliti dovevano rientrare e disintegrarsi circa 20 minuti dopo il rilascio. SpaceX voleva anche riaccendere un Raptor nello spazio e provare il rientro con manovra di banking.",
+      "curiosita": "Per la prima volta la Ship è rimasta intera in mare dopo l'ammaraggio, mostrando lo scudo termico integro."
+    },
+    {
+      "n": 14,
+      "data": "28 set 2026",
+      "ora": "14:48",
+      "focus": "Primo volo orbitale e rilascio di 26 Starlink V3",
+      "booster": "B21",
+      "ship": "S41",
+      "versione": "V3",
+      "obiettivi": [
+        {
+          "o": "Ship: entrare in orbita",
+          "r": "Riuscito con un solo Raptor, nonostante un RVac spento in salita",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: rilascio di 26 Starlink V3",
+          "r": "Riuscito: contatto con tutti i satelliti",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: primo burn di deorbit e ammaraggio",
+          "r": "Riuscito: flip, landing burn e ammaraggio nel Pacifico dopo circa 3 h 08 min",
+          "s": "ok"
+        },
+        {
+          "o": "Missione di circa 6 orbite",
+          "r": "Accorciata a poco meno di 2 orbite per cautela dopo il guasto in salita",
+          "s": "part"
+        },
+        {
+          "o": "Booster: boostback e ammaraggio nel Golfo",
+          "r": "Ammaraggio controllato. Boostback volutamente spinto al limite, alcuni motori non si sono riaccesi nel landing burn",
+          "s": "ok"
+        }
+      ],
+      "src": {
+        "label": "SpaceX, Flight 14",
+        "url": "https://www.spacex.com/launches/starship-flight-14"
+      },
+      "video": [
+        {
+          "id": "2104563035486499043",
+          "fase": "Rilascio Starlink V3",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/2104562900929056768/img/2tQF9u4hxT6WDVnJ.jpg",
+          "dur": 68
+        },
+        {
+          "id": "2104601695711904180",
+          "fase": "Ammaraggio Ship",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/2104601502752948225/img/7cfSMzaXjc1N2Jpo.jpg",
+          "dur": 89
+        }
+      ],
+      "ift": "IFT-14",
+      "nome": "Flight 14",
+      "versione_nota": "Block 3",
+      "descrizione": "Primo volo di Starship in orbita e primo carico operativo: 26 satelliti Starlink V3. Il piano originale prevedeva circa sei orbite e un deorbit sul Pacifico a ovest del Cile dopo quasi dieci ore. Il Booster doveva spingere il boostback fino a consumare l'ossigeno liquido rimasto, per testare i limiti in vista dei ritorni alla base.",
+      "curiosita": "Dopo lo spegnimento di un motore Vacuum in salita, SpaceX ha prima controllato i sistemi e solo dopo ha dato il «go» per l'orbita."
+    },
+    {
+      "n": 15,
+      "data": "13 nov 2026",
+      "ora": "23:47",
+      "focus": "Doppio ritorno alla torre: Super Heavy e Ship, con 26 Starlink V3",
+      "booster": "B22",
+      "ship": "S42",
+      "versione": "V3",
+      "obiettivi": [
+        {
+          "o": "Booster: boostback e cattura in torre",
+          "r": "Boostback con 32 motori su 33, terminato in anticipo per poca massa di carburante (causa in indagine); abort automatico e ammaraggio offshore nel Golfo, con landing burn eseguito e FTS attivato allo spegnimento",
+          "s": "fail"
+        },
+        {
+          "o": "Ship: entrare in orbita",
+          "r": "Riuscito: burn di inserimento con un solo Raptor, orbita a ~276 km",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: rilascio di 26 Starlink V3",
+          "r": "Riuscito: contatto con ogni satellite poco dopo il rilascio",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: lunga fase in orbita, circa 22 ore",
+          "r": "Riuscito: sistemi monitorati per oltre 20 ore, poi GO per il ritorno",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: deorbit burn e rientro verso Starbase",
+          "r": "Riuscito: riaccensione di un Raptor a livello del mare, rientro e avvicinamento sul Golfo",
+          "s": "ok"
+        },
+        {
+          "o": "Ship: cattura in torre",
+          "r": "Riuscito: catturata dai chopsticks al Pad 2 alle 22:20 ora di Roma del 14 nov, dopo 22 h 32 min 26 s di volo",
+          "s": "ok"
+        }
+      ],
+      "src": {
+        "label": "SpaceX, Flight 15",
+        "url": "https://www.spacex.com/launches/starship-flight-15"
+      },
+      "video": [
+        {
+          "id": "2121374779680964991",
+          "fase": "Decollo",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/2121374662450159616/img/ageOrY8-i3IftQfP.jpg",
+          "dur": 45
+        },
+        {
+          "id": "2121376372576915909",
+          "fase": "Ammaraggio Booster",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/2121376252674367488/img/cljOHqC79eFpRygT.jpg",
+          "dur": 75
+        },
+        {
+          "id": "2121715216597827756",
+          "fase": "Cattura Ship",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/2121715092903596032/img/RamESGt4tVwjBYVb.jpg",
+          "dur": 93
+        }
+      ],
+      "ift": "IFT-15",
+      "nome": "Flight 15",
+      "versione_nota": "Block 3",
+      "descrizione": "Primo volo con il ritorno alla torre di entrambi gli stadi: il Super Heavy doveva essere catturato dopo circa sei minuti e mezzo, mentre la Ship doveva restare in orbita oltre 22 ore e tornare a Starbase. Il carico era di 26 satelliti Starlink V3.",
+      "curiosita": "La Ship è tornata nello stesso sito da cui era partita 22 ore e mezza prima, dopo un'orbita a ~276 km e un ultimo «swoosh» sul Golfo prima del flip di atterraggio."
     }
-   ],
-   "src": {
-    "label": "Wikipedia, Flight 1",
-    "url": "https://en.wikipedia.org/wiki/Starship_flight_test_1"
-   },
-   "video": [
-    {
-     "id": "1649043715686793218",
-     "fase": "Partenza",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1649043659910967307/img/nizVMAtP1Akxys7D.jpg",
-     "dur": 25
-    }
-   ],
-   "ift": "IFT-1",
-   "nome": "Flight 1",
-   "versione_nota": "Block 1",
-   "descrizione": "Era il primo volo di prova con Super Heavy e Starship insieme. SpaceX dichiarava di misurare il risultato da quanto avrebbe imparato, e l'obiettivo minimo era staccarsi dal pad. Il profilo prevedeva quasi un'orbita, con la Ship destinata a cadere nel Pacifico a nord delle Hawaii.",
-   "curiosita": "Con 33 motori è stato lo stadio di razzo più potente mai lanciato, battendo il record del sovietico N1."
-  },
-  {
-   "n": 2,
-   "data": "18 nov 2023",
-   "ora": "14:03",
-   "focus": "Hot staging",
-   "booster": "B9",
-   "ship": "S25",
-   "versione": "V1",
-   "obiettivi": [
-    {
-     "o": "Hot staging (separazione con la Ship già accesa)",
-     "r": "Riuscito, per la prima volta su un veicolo di queste dimensioni",
-     "s": "ok"
-    },
-    {
-     "o": "33 Raptor del Booster accesi a durata piena",
-     "r": "Riuscito, per la prima volta",
-     "s": "ok"
-    },
-    {
-     "o": "Booster: boostback e ammaraggio nel Golfo",
-     "r": "Perso dopo il flip, all'inizio del boostback, a circa 90 km di quota",
-     "s": "fail"
-    },
-    {
-     "o": "Ship: salita fino allo spazio",
-     "r": "Raggiunti circa 150 km. Telemetria persa prima dello spegnimento motori, distrutta dal sistema di terminazione",
-     "s": "part"
-    },
-    {
-     "o": "Ship: rientro e ammaraggio vicino alle Hawaii",
-     "r": "Non raggiunto",
-     "s": "fail"
-    }
-   ],
-   "src": {
-    "label": "SpaceX, Flight 2",
-    "url": "https://www.spacex.com/launches/starship-flight-2"
-   },
-   "video": [
-    {
-     "id": "1725862657780281349",
-     "fase": "Partenza",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1725862536191631361/img/eIFnIYvZ55GXnnEz.jpg",
-     "dur": 44
-    },
-    {
-     "id": "1725863437887242515",
-     "fase": "Hot staging",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1725863322476859392/img/dUaDoY0L9VpadMWy.jpg",
-     "dur": 55
-    }
-   ],
-   "ift": "IFT-2",
-   "nome": "Flight 2",
-   "versione_nota": "Block 1",
-   "descrizione": "Dopo i danni al pad del primo volo, SpaceX ha aggiunto un sistema ad acqua sotto la rampa e ha provato una nuova tecnica di separazione, l'hot staging: la Ship accende i motori mentre è ancora attaccata al Booster. Si voleva anche far lavorare tutti i 33 Raptor per l'intera salita.",
-   "curiosita": "È stata la prima Starship a raggiungere lo spazio, a circa 150 km di quota e a circa 24.000 km/h."
-  },
-  {
-   "n": 3,
-   "data": "14 mar 2024",
-   "ora": "14:25",
-   "focus": "Diversi test con la Ship",
-   "booster": "B10",
-   "ship": "S28",
-   "versione": "V1",
-   "obiettivi": [
-    {
-     "o": "Ascesa completa con tutti i motori, hot staging",
-     "r": "Riuscita: 33 Raptor a durata piena e seconda hot staging",
-     "s": "ok"
-    },
-    {
-     "o": "Booster: boostback e ammaraggio nel Golfo",
-     "r": "Primo landing burn tentato, ma il Booster è stato perso a circa 460 m di quota",
-     "s": "part"
-    },
-    {
-     "o": "Ship: apertura e chiusura della porta del carico",
-     "r": "Riuscita",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: dimostrazione di trasferimento interno di propellente",
-     "r": "Avviata durante il coast",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: riaccensione di un Raptor nello spazio",
-     "r": "Non tentata a causa della rotazione del veicolo",
-     "s": "skip"
-    },
-    {
-     "o": "Ship: rientro e ammaraggio nell'Oceano Indiano",
-     "r": "Primo rientro dallo spazio con video Starlink, ma ultimo segnale a circa 49 minuti. Ship persa",
-     "s": "fail"
-    }
-   ],
-   "src": {
-    "label": "SpaceX, Flight 3",
-    "url": "https://www.spacex.com/launches/starship-flight-3"
-   },
-   "video": [
-    {
-     "id": "1768267464062943676",
-     "fase": "Partenza",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1768267406735187968/img/yszsME8HffMRy_VD.jpg",
-     "dur": 36
-    },
-    {
-     "id": "1768268071469539708",
-     "fase": "Hot staging",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1768268008764645376/img/WQ4Rj8ZOtVIsZtNA.jpg",
-     "dur": 12
-    },
-    {
-     "id": "1768279990368612354",
-     "fase": "Rientro",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1768279869195206656/img/3cXELGZMGhxoI6b2.jpg",
-     "dur": 86
-    }
-   ],
-   "ift": "IFT-3",
-   "nome": "Flight 3",
-   "versione_nota": "Block 1",
-   "descrizione": "Il terzo volo doveva far funzionare per tutta la durata i motori della Ship e provare la porta del carico, il «Pez dispenser», con un primo test di trasferimento interno di propellente. In programma anche la prima riaccensione di un Raptor nello spazio e, per il Booster, il primo landing burn.",
-   "curiosita": "Starlink ha mostrato in diretta il primo rientro dallo spazio della Starship, con immagini attraverso il plasma."
-  },
-  {
-   "n": 4,
-   "data": "6 giu 2024",
-   "ora": "14:50",
-   "focus": "Rientro controllato con Ship e Booster",
-   "booster": "B11",
-   "ship": "S29",
-   "versione": "V1",
-   "obiettivi": [
-    {
-     "o": "Booster: boostback e ammaraggio morbido nel Golfo",
-     "r": "Riuscito, con un motore perso poco dopo il decollo",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: rientro controllato attraverso picco di calore e massima pressione",
-     "r": "Riuscito, nonostante un forte danno al flap anteriore",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: flip, landing burn e ammaraggio nell'Oceano Indiano",
-     "r": "Ammaraggio morbido nella zona prevista, a circa 6 km dal centro",
-     "s": "ok"
-    }
-   ],
-   "src": {
-    "label": "SpaceX, Flight 4",
-    "url": "https://www.spacex.com/launches/starship-flight-4"
-   },
-   "video": [
-    {
-     "id": "1798699175573700929",
-     "fase": "Partenza",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1798699116501045248/img/s0spAxoBs6gvPxFI.jpg",
-     "dur": 33
-    },
-    {
-     "id": "1798701489097183286",
-     "fase": "Ammaraggio Booster",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1798701356192313344/img/n9UjEQeIGAtpaDMe.jpg",
-     "dur": 37
-    },
-    {
-     "id": "1798792222743122164",
-     "fase": "Rientro Ship",
-     "thumb": "https://pbs.twimg.com/ext_tw_video_thumb/1798791615215177728/pu/img/DNYBAkgGAF5xErTI.jpg",
-     "dur": 16
-    }
-   ],
-   "ift": "IFT-4",
-   "nome": "Flight 4",
-   "versione_nota": "Block 1",
-   "descrizione": "SpaceX voleva dimostrare per la prima volta il rientro controllato di entrambi gli stadi. Il Booster doveva ammarare su una «torre virtuale» nel Golfo, in preparazione alla cattura del volo successivo, e la Ship fare rientro, flip e ammaraggio morbido. Per la Ship contava soprattutto capire se i flap bastassero a controllarla nel rientro ipersonico.",
-   "curiosita": "Nonostante un flap anteriore molto danneggiato, la Ship è ammarata a circa 6 km dal centro della zona bersaglio."
-  },
-  {
-   "n": 5,
-   "data": "13 ott 2024",
-   "ora": "14:25",
-   "focus": "Cattura al volo e rientro controllato con la Ship",
-   "booster": "B12",
-   "ship": "S30",
-   "versione": "V1",
-   "obiettivi": [
-    {
-     "o": "Booster: ritorno al sito e cattura con le braccia della torre",
-     "r": "Riuscita al primo tentativo, la prima cattura di un booster",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: rientro controllato",
-     "r": "Riuscito, nonostante danni a un flap",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: ammaraggio nell'Oceano Indiano sul bersaglio",
-     "r": "Riuscito, dopo 1 h 05 min 40 s di volo",
-     "s": "ok"
-    }
-   ],
-   "src": {
-    "label": "SpaceX, Flight 5",
-    "url": "https://www.spacex.com/launches/starship-flight-5"
-   },
-   "video": [
-    {
-     "id": "1845440879844261938",
-     "fase": "Partenza",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1845440802945892352/img/n7FLj9t8w4HZCg0n.jpg",
-     "dur": 38
-    },
-    {
-     "id": "1845442658397049011",
-     "fase": "Cattura del Booster",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1845442585206325256/img/aKpvzYSImQ6_9niU.jpg",
-     "dur": 59
-    },
-    {
-     "id": "1845457555650379832",
-     "fase": "Ammaraggio Ship",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1845457467511275524/img/G0g84HkvJFJ40eFZ.jpg",
-     "dur": 25
-    }
-   ],
-   "ift": "IFT-5",
-   "nome": "Flight 5",
-   "versione_nota": "Block 1",
-   "descrizione": "L'obiettivo più ambizioso fino ad allora: riportare il Booster alla base e prenderlo al volo con le braccia della torre di lancio, il sistema chiamato «Mechazilla». Prima del tentativo dovevano risultare in regola migliaia di criteri su veicolo e rampa, più un comando manuale del direttore di volo. La Ship doveva ripetere un rientro controllato fino all'ammaraggio nell'Oceano Indiano.",
-   "curiosita": "La cattura è riuscita al primo tentativo ed è stato anche il primo volo senza motori guasti."
-  },
-  {
-   "n": 6,
-   "data": "19 nov 2024",
-   "ora": "23:00",
-   "focus": "Cattura al volo (poi ammaraggio) e limiti strutturali della Ship",
-   "booster": "B13",
-   "ship": "S31",
-   "versione": "V1",
-   "obiettivi": [
-    {
-     "o": "Booster: cattura con la torre",
-     "r": "Annullata: i controlli automatici sulla torre non sono stati superati",
-     "s": "fail"
-    },
-    {
-     "o": "Booster: piano di riserva, ammaraggio nel Golfo",
-     "r": "Ammaraggio morbido riuscito",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: riaccensione di un Raptor nello spazio",
-     "r": "Riuscita",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: rientro con meno tegole e angolo più aggressivo",
-     "r": "Riuscito, con danni minimi ai flap",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: ammaraggio nell'Oceano Indiano",
-     "r": "Riuscito, per la prima volta di giorno",
-     "s": "ok"
-    }
-   ],
-   "src": {
-    "label": "SpaceX, Flight 6",
-    "url": "https://www.spacex.com/launches/starship-flight-6"
-   },
-   "video": [
-    {
-     "id": "1858994002311475519",
-     "fase": "Partenza",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1858993941628231680/img/H7ObuLgaB8XHL2W8.jpg",
-     "dur": 60
-    },
-    {
-     "id": "1858995728783384815",
-     "fase": "Ammaraggio Booster",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1858995561820811267/img/sSFVyWrI9J5tKIFM.jpg",
-     "dur": 22
-    },
-    {
-     "id": "1859010620471079361",
-     "fase": "Ammaraggio Ship",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1859010556214341633/img/dSRLDWHYsqlfIFot.jpg",
-     "dur": 18
-    }
-   ],
-   "ift": "IFT-6",
-   "nome": "Flight 6",
-   "versione_nota": "Block 1",
-   "descrizione": "Secondo tentativo di cattura del Booster e ultimo volo con una Ship di prima generazione. SpaceX ha tolto alcune tegole in punti chiave dello scudo termico e rimosso lo strato ablativo di riserva, per spingere il rientro verso i limiti con un angolo più aggressivo. La Ship doveva anche riaccendere un Raptor nello spazio.",
-   "curiosita": "A bordo c'era il primo «carico» della Starship: una banana di peluche usata come indicatore di assenza di peso."
-  },
-  {
-   "n": 7,
-   "data": "16 gen 2025",
-   "ora": "23:37",
-   "focus": "Primo volo Block 2: cattura del B14 ed esplosione della Ship 33",
-   "booster": "B14",
-   "ship": "S33",
-   "versione": "V2",
-   "obiettivi": [
-    {
-     "o": "Booster: ritorno e cattura con la torre",
-     "r": "Riuscita: seconda cattura di un Super Heavy",
-     "s": "ok"
-    },
-    {
-     "o": "Ship Block 2: ascesa completa",
-     "r": "Incendio nella sezione posteriore, telemetria persa dopo circa 8 minuti e mezzo. Ship distrutta",
-     "s": "fail"
-    },
-    {
-     "o": "Ship: rilascio di 10 simulatori Starlink",
-     "r": "Non raggiunto",
-     "s": "fail"
-    },
-    {
-     "o": "Ship: ammaraggio nell'Oceano Indiano",
-     "r": "Non raggiunto",
-     "s": "fail"
-    }
-   ],
-   "src": {
-    "label": "SpaceX, Flight 7",
-    "url": "https://www.spacex.com/launches/starship-flight-7"
-   },
-   "video": [
-    {
-     "id": "1880021718661521611",
-     "fase": "Partenza",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1880021658297143296/img/d6Ovi2r6WPYPbT0z.jpg",
-     "dur": 37
-    },
-    {
-     "id": "1880024050048589841",
-     "fase": "Cattura del Booster",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1880023941583941632/img/xmykU8YGs1bDew4o.jpg",
-     "dur": 74
-    }
-   ],
-   "ift": "IFT-7",
-   "nome": "Flight 7",
-   "versione_nota": "Block 2",
-   "descrizione": "Primo volo di una Ship Block 2, con strutture, avionica e altri sistemi aggiornati, e con la prova del sistema che rilascia 10 simulatori Starlink. SpaceX voleva anche ripetere la cattura del Booster riuscita a ottobre.",
-   "curiosita": "Per i detriti della Ship SpaceX ha collaborato con il governo delle Turks e Caicos e ha attivato una linea telefonica per segnalarli."
-  },
-  {
-   "n": 8,
-   "data": "7 mar 2025",
-   "ora": "00:30",
-   "focus": "Come IFT-7: rilascio Starlink, test Block 2",
-   "booster": "B15",
-   "ship": "S34",
-   "versione": "V2",
-   "obiettivi": [
-    {
-     "o": "Booster: ritorno e cattura con la torre",
-     "r": "Riuscita: terza cattura di un Super Heavy",
-     "s": "ok"
-    },
-    {
-     "o": "Ship Block 2: ascesa completa",
-     "r": "Evento energetico nella parte posteriore, persi diversi Raptor e il controllo. Contatto perso a circa 9 min 30 s",
-     "s": "fail"
-    },
-    {
-     "o": "Ship: rilascio di 4 simulatori Starlink",
-     "r": "Non raggiunto",
-     "s": "fail"
-    },
-    {
-     "o": "Ship: ammaraggio nell'Oceano Indiano",
-     "r": "Non raggiunto",
-     "s": "fail"
-    }
-   ],
-   "src": {
-    "label": "SpaceX, Flight 8",
-    "url": "https://www.spacex.com/launches/starship-flight-8"
-   },
-   "video": [
-    {
-     "id": "1897792820242792942",
-     "fase": "Partenza",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1897792742446567424/img/LWEQxYG3TBtnz5kN.jpg",
-     "dur": 33
-    },
-    {
-     "id": "1897794546781532408",
-     "fase": "Cattura del Booster",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1897794477990817793/img/ffbQr6DO31GRH300.jpg",
-     "dur": 49
-    }
-   ],
-   "ift": "IFT-8",
-   "nome": "Flight 8",
-   "versione_nota": "Block 2",
-   "descrizione": "Secondo volo di una Ship Block 2. SpaceX voleva trovare i limiti reali della Starship per prepararsi a riportarla un giorno al sito di lancio e catturarla. In programma c'era anche il rilascio di 4 simulatori Starlink, simili per dimensioni ai satelliti della prossima generazione.",
-   "curiosita": "Il Booster è stato catturato anche se due motori non si erano riaccesi nel boostback; uno si è poi riacceso per la cattura."
-  },
-  {
-   "n": 9,
-   "data": "28 mag 2025",
-   "ora": "01:36",
-   "focus": "Riuso del Booster 14 e ripetizione di IFT-7 per la Ship",
-   "booster": "B14-2",
-   "ship": "S35",
-   "versione": "V2",
-   "obiettivi": [
-    {
-     "o": "Primo riuso di un Super Heavy, con 33 Raptor accesi",
-     "r": "Riuscito: ascesa a durata piena con il B14, già volato a IFT-7",
-     "s": "ok"
-    },
-    {
-     "o": "Booster: discesa con angolo d'attacco più alto e ammaraggio nel Golfo",
-     "r": "Perso poco dopo l'inizio del landing burn, a circa 6 minuti dal decollo",
-     "s": "fail"
-    },
-    {
-     "o": "Ship: rilascio di 8 simulatori Starlink",
-     "r": "Non riuscito: la porta del carico non si è aperta",
-     "s": "fail"
-    },
-    {
-     "o": "Ship: riaccensione di un Raptor nello spazio",
-     "r": "Saltata per un errore di assetto",
-     "s": "skip"
-    },
-    {
-     "o": "Ship: rientro e ammaraggio nell'Oceano Indiano",
-     "r": "Perdita di propellente e perdita di controllo. Contatto perso a circa 46 minuti, detriti nell'area prevista",
-     "s": "fail"
-    }
-   ],
-   "src": {
-    "label": "SpaceX, Flight 9",
-    "url": "https://www.spacex.com/launches/starship-flight-9"
-   },
-   "video": [
-    {
-     "id": "1927509601001341037",
-     "fase": "Partenza",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1927509523129860096/img/E_zGGzoBqSCyU21Z.jpg",
-     "dur": 51
-    },
-    {
-     "id": "1927510220835635706",
-     "fase": "Hot staging",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1927510147615555584/img/k4OBbQB_koLdMmyx.jpg",
-     "dur": 34
-    }
-   ],
-   "ift": "IFT-9",
-   "nome": "Flight 9",
-   "versione_nota": "Block 2",
-   "descrizione": "Primo riutilizzo di un Super Heavy: il Booster 14, già volato a gennaio, con 29 motori già usati in volo. Doveva scendere con un angolo d'attacco più alto, per sfruttare di più l'atmosfera e usare meno propellente per il landing burn. Alla Ship toccavano il primo rilascio di carico, 8 simulatori Starlink, e la riaccensione di un Raptor.",
-   "curiosita": "Dopo il volo 8 la Ship aveva ricevuto più precarico sui giunti chiave, un nuovo sistema di spurgo con azoto e migliorie allo scarico del propellente."
-  },
-  {
-   "n": 10,
-   "data": "27 ago 2025",
-   "ora": "01:30",
-   "focus": "Ripetizione del volo precedente",
-   "booster": "B16",
-   "ship": "S37",
-   "versione": "V2",
-   "obiettivi": [
-    {
-     "o": "Booster: boostback e ammaraggio nel Golfo",
-     "r": "Riuscito, con un motore centrale disattivato di proposito nell'ultima fase",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: rilascio di 8 simulatori Starlink",
-     "r": "Riuscito: il primo rilascio di carico dalla Starship",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: riaccensione di un Raptor nello spazio",
-     "r": "Riuscita (la seconda mai fatta)",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: rientro sotto sforzo, flip e ammaraggio nell'Oceano Indiano",
-     "r": "Ammaraggio morbido sul bersaglio, nonostante il danno notevole alla sezione motori",
-     "s": "ok"
-    }
-   ],
-   "src": {
-    "label": "SpaceX, Flight 10",
-    "url": "https://www.spacex.com/launches/starship-flight-10"
-   },
-   "video": [
-    {
-     "id": "1960485359239774487",
-     "fase": "Partenza",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1960485282903474176/img/9qe3xppX4EBmsjmR.jpg",
-     "dur": 45
-    },
-    {
-     "id": "1960490432715993216",
-     "fase": "Rilascio Starlink",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1960490322850377729/img/JLRQ6cBTKNE3pAVR.jpg",
-     "dur": 56
-    },
-    {
-     "id": "1960502324050133328",
-     "fase": "Ammaraggio Ship",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1960502180693037056/img/CI8w-MGJNYdra0tE.jpg",
-     "dur": 48
-    }
-   ],
-   "ift": "IFT-10",
-   "nome": "Flight 10",
-   "versione_nota": "Block 2",
-   "descrizione": "Dopo i due voli precedenti, l'obiettivo era un volo completo: rilasciare 8 simulatori Starlink, riaccendere un Raptor nello spazio e sottoporre lo scudo termico a sforzi voluti prima dell'ammaraggio. Il Booster doveva anche simulare un motore guasto durante il landing burn.",
-   "curiosita": "Il volo era slittato di circa due mesi perché la Ship prevista era andata persa durante i test a terra."
-  },
-  {
-   "n": 11,
-   "data": "14 ott 2025",
-   "ora": "01:23",
-   "focus": "Nuova configurazione motori del Super Heavy e banking dinamico della Ship",
-   "booster": "B15-2",
-   "ship": "S38",
-   "versione": "V2",
-   "obiettivi": [
-    {
-     "o": "Booster: nuovo landing burn pensato per la generazione successiva",
-     "r": "Riuscito, con tutti i 13 motori previsti nella fase ad alta spinta",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: rilascio di 8 simulatori Starlink",
-     "r": "Riuscito",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: riaccensione di un Raptor nello spazio",
-     "r": "Riuscita (la terza mai fatta)",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: rientro sotto sforzo e banking dinamico",
-     "r": "Riuscito, con manovra che imita il ritorno a Starbase",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: ammaraggio nell'Oceano Indiano",
-     "r": "Flip, landing burn e ammaraggio morbido riusciti",
-     "s": "ok"
-    }
-   ],
-   "src": {
-    "label": "SpaceX, Flight 11",
-    "url": "https://www.spacex.com/launches/starship-flight-11"
-   },
-   "video": [
-    {
-     "id": "1977878290489643190",
-     "fase": "Partenza",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1977878189088309248/img/vTduZ64mhY4cRWI5.jpg",
-     "dur": 43
-    },
-    {
-     "id": "1977884820484272524",
-     "fase": "Rilascio Starlink",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1977883989139652608/img/oRNE6slgHQ62CbkH.jpg",
-     "dur": 57
-    },
-    {
-     "id": "1977895039318864296",
-     "fase": "Ammaraggio Ship",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/1977894881613037569/img/1aYFKT6RlXUpexWH.jpg",
-     "dur": 72
-    }
-   ],
-   "ift": "IFT-11",
-   "nome": "Flight 11",
-   "versione_nota": "Block 2",
-   "descrizione": "Ultimo volo della seconda generazione di Starship e del primo Super Heavy, e ultimo dal Pad 1 nella configurazione di allora. SpaceX ha provato un landing burn pensato per il Booster successivo e un rientro della Ship con alcune tegole tolte di proposito, più un banking dinamico che imita l'avvicinamento a Starbase dei futuri ritorni.",
-   "curiosita": "Dopo questo volo SpaceX ha rivolto l'attenzione ai veicoli V3, destinati ai primi voli orbitali, ai carichi operativi e al trasferimento di propellente."
-  },
-  {
-   "n": 12,
-   "data": "23 mag 2026",
-   "ora": "00:30",
-   "focus": "Primo volo Block 3 e primo uso del Pad 2. Suborbitale come i precedenti",
-   "booster": "B19",
-   "ship": "S39",
-   "versione": "V3",
-   "obiettivi": [
-    {
-     "o": "Debutto di Starship V3, Raptor 3 e Pad 2",
-     "r": "Riuscito: un solo motore del Booster spento in salita",
-     "s": "ok"
-    },
-    {
-     "o": "Booster: boostback e ammaraggio nel Golfo",
-     "r": "Boostback parziale, poi impatto duro in mare",
-     "s": "fail"
-    },
-    {
-     "o": "Ship: salita e rilascio di 20 simulatori e 2 Starlink modificati",
-     "r": "Riuscito nonostante un RVac spento. I due Starlink hanno ripreso la Ship nello spazio",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: riaccensione di un Raptor nello spazio",
-     "r": "Non eseguita dopo il guasto di un motore in salita",
-     "s": "skip"
-    },
-    {
-     "o": "Ship: rientro, banking e ammaraggio nell'Oceano Indiano",
-     "r": "Riuscito, con atterraggio su due Raptor",
-     "s": "ok"
-    }
-   ],
-   "src": {
-    "label": "SpaceX, Flight 12",
-    "url": "https://www.spacex.com/launches/starship-flight-12"
-   },
-   "video": [
-    {
-     "id": "2057952539417461045",
-     "fase": "Partenza",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2057952449164464128/img/dsVbVmdVZURvbCx3.jpg",
-     "dur": 51
-    },
-    {
-     "id": "2057959688860229843",
-     "fase": "Rilascio satelliti",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2057959573827264512/img/J6-yWq-7RdY-gL45.jpg",
-     "dur": 78
-    },
-    {
-     "id": "2057969484879528267",
-     "fase": "Ammaraggio Ship",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2057969270215127040/img/91VSXaqtr0kIhWRg.jpg",
-     "dur": 90
-    }
-   ],
-   "ift": "IFT-12",
-   "nome": "Flight 12",
-   "versione_nota": "Block 3",
-   "descrizione": "Debutto della generazione V3: nuovo Super Heavy e nuova Ship, motori Raptor 3 e primo lancio dal Pad 2 di Starbase. Il profilo restava suborbitale, come nei voli precedenti. A bordo c'erano 20 simulatori Starlink e due Starlink modificati, con telecamere per riprendere la Ship nello spazio.",
-   "curiosita": "Il volo doveva usare il Booster 18, scartato dopo seri danni durante i test: è partito il Booster 19."
-  },
-  {
-   "n": 13,
-   "data": "25 lug 2026",
-   "ora": "00:51",
-   "focus": "Primi veri Starlink V3, ancora suborbitali",
-   "booster": "B20",
-   "ship": "S40",
-   "versione": "V3",
-   "obiettivi": [
-    {
-     "o": "Ship: rilascio di 20 Starlink V3",
-     "r": "Riuscito: contatto con tutti i satelliti, rientrati dopo circa 20 minuti come previsto",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: riaccensione di un Raptor nello spazio",
-     "r": "Riuscita",
-     "s": "ok"
-    },
-    {
-     "o": "Booster: boostback e ammaraggio nel Golfo",
-     "r": "Boostback con 33 motori ma interrotto in anticipo, landing burn parziale e impatto duro",
-     "s": "fail"
-    },
-    {
-     "o": "Ship: rientro, banking e ammaraggio nell'Oceano Indiano",
-     "r": "Ammaraggio morbido, Ship rimasta intatta: scudo termico visibile per la prima volta",
-     "s": "ok"
-    }
-   ],
-   "src": {
-    "label": "SpaceX, Flight 13",
-    "url": "https://www.spacex.com/launches/starship-flight-13"
-   },
-   "video": [
-    {
-     "id": "2080788166584267075",
-     "fase": "Partenza",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2080788059776319488/img/noxLrnb24oXgLYYt.jpg",
-     "dur": 46
-    },
-    {
-     "id": "2080795033448395056",
-     "fase": "Rilascio Starlink V3",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2080794933267456000/img/neUgwFNXIgXxdEba.jpg",
-     "dur": 43
-    },
-    {
-     "id": "2080804682918764619",
-     "fase": "Ammaraggio Ship",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2080804533995786240/img/GXqDYTtBg0l7Ze50.jpg",
-     "dur": 81
-    }
-   ],
-   "ift": "IFT-13",
-   "nome": "Flight 13",
-   "versione_nota": "Block 3",
-   "descrizione": "Secondo volo V3 e primo rilascio di veri Starlink V3, ancora su traiettoria suborbitale: i 20 satelliti dovevano rientrare e disintegrarsi circa 20 minuti dopo il rilascio. SpaceX voleva anche riaccendere un Raptor nello spazio e provare il rientro con manovra di banking.",
-   "curiosita": "Per la prima volta la Ship è rimasta intera in mare dopo l'ammaraggio, mostrando lo scudo termico integro."
-  },
-  {
-   "n": 14,
-   "data": "28 set 2026",
-   "ora": "14:48",
-   "focus": "Primo volo orbitale e rilascio di 26 Starlink V3",
-   "booster": "B21",
-   "ship": "S41",
-   "versione": "V3",
-   "obiettivi": [
-    {
-     "o": "Ship: entrare in orbita",
-     "r": "Riuscito con un solo Raptor, nonostante un RVac spento in salita",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: rilascio di 26 Starlink V3",
-     "r": "Riuscito: contatto con tutti i satelliti",
-     "s": "ok"
-    },
-    {
-     "o": "Ship: primo burn di deorbit e ammaraggio",
-     "r": "Riuscito: flip, landing burn e ammaraggio nel Pacifico dopo circa 3 h 08 min",
-     "s": "ok"
-    },
-    {
-     "o": "Missione di circa 6 orbite",
-     "r": "Accorciata a poco meno di 2 orbite per cautela dopo il guasto in salita",
-     "s": "part"
-    },
-    {
-     "o": "Booster: boostback e ammaraggio nel Golfo",
-     "r": "Ammaraggio controllato. Boostback volutamente spinto al limite, alcuni motori non si sono riaccesi nel landing burn",
-     "s": "ok"
-    }
-   ],
-   "src": {
-    "label": "SpaceX, Flight 14",
-    "url": "https://www.spacex.com/launches/starship-flight-14"
-   },
-   "video": [
-    {
-     "id": "2104563035486499043",
-     "fase": "Rilascio Starlink V3",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2104562900929056768/img/2tQF9u4hxT6WDVnJ.jpg",
-     "dur": 68
-    },
-    {
-     "id": "2104601695711904180",
-     "fase": "Ammaraggio Ship",
-     "thumb": "https://pbs.twimg.com/amplify_video_thumb/2104601502752948225/img/7cfSMzaXjc1N2Jpo.jpg",
-     "dur": 89
-    }
-   ],
-   "ift": "IFT-14",
-   "nome": "Flight 14",
-   "versione_nota": "Block 3",
-   "descrizione": "Primo volo di Starship in orbita e primo carico operativo: 26 satelliti Starlink V3. Il piano originale prevedeva circa sei orbite e un deorbit sul Pacifico a ovest del Cile dopo quasi dieci ore. Il Booster doveva spingere il boostback fino a consumare l'ossigeno liquido rimasto, per testare i limiti in vista dei ritorni alla base.",
-   "curiosita": "Dopo lo spegnimento di un motore Vacuum in salita, SpaceX ha prima controllato i sistemi e solo dopo ha dato il «go» per l'orbita."
-  }
- ]
+  ]
 }
