@@ -891,6 +891,12 @@
           "fase": "Cattura Ship",
           "thumb": "https://pbs.twimg.com/amplify_video_thumb/2121715092903596032/img/RamESGt4tVwjBYVb.jpg",
           "dur": 93
+        },
+        {
+          "id": "2122368004298068305",
+          "fase": "Cattura Ship (camera di bordo)",
+          "thumb": "https://pbs.twimg.com/amplify_video_thumb/2122367103676133376/img/yzTQaoPWnW71rwM2.jpg",
+          "dur": 55
         }
       ],
       "ift": "IFT-15",

@@ -1,5 +1,5 @@
 {
-  "ULTIMO_AGGIORNAMENTO": "16 nov 2026, 08:31",
+  "ULTIMO_AGGIORNAMENTO": "17 nov 2026, 08:27",
   "PROSSIMO_VOLO": {
     "volo": "Flight 16",
     "veicoli": "Super Heavy B23 + Ship 43 (probabili, non confermato)",
@@ -110,12 +110,57 @@
   },
   "NEWS": [
     {
+      "data": "17 nov",
+      "sez": "Prototipi",
+      "testo": "In Mega Bay 1 è stato sollevato il transfer tube di Booster 25 per l'installazione (non confermato)",
+      "src": {
+        "label": "@VickiCocks15, 17 nov",
+        "url": "https://x.com/VickiCocks15/status/2122516079738056938"
+      }
+    },
+    {
+      "data": "16 nov",
+      "sez": "Siti",
+      "testo": "Al Pad 2 in prova i BQD, i collegamenti rapidi del booster sul launch mount, verso le 22:05 ora di Roma (non confermato)",
+      "src": {
+        "label": "@VickiCocks15, 16 nov",
+        "url": "https://x.com/VickiCocks15/status/2122435982700187689"
+      }
+    },
+    {
+      "data": "16 nov",
+      "sez": "Lanci",
+      "testo": "SpaceX ha pubblicato nuovi video e foto della cattura di Ship 42: due video dalla camera di bordo nell'avvicinamento finale (17:35), le viste da Mechazilla (21:30) e le foto «Starship 42 back on Earth» (22:49, ora di Roma)",
+      "src": {
+        "label": "@SpaceX, 16 nov",
+        "url": "https://x.com/SpaceX/status/2122368004298068305"
+      }
+    },
+    {
+      "data": "16 nov",
+      "sez": "Prototipi",
+      "testo": "Musk: Starship V4 sarà lunga circa 70 m (+40% circa), con oltre il 60% di propellente in più e 9 motori, cioè 3 Raptor Vacuum in più, con Raptor V4 più potenti",
+      "src": {
+        "label": "@elonmusk, 16 nov",
+        "url": "https://x.com/elonmusk/status/2122141019894383027"
+      }
+    },
+    {
       "data": "16 nov",
       "sez": "Prototipi",
       "testo": "Ship 42 è rientrata al Production Site di Starbase verso le 00:07 ora di Roma, dopo la «parata» dal Pad 2 lungo l'autostrada; accanto a lei la Ship 40, già volata (NSF)",
       "src": {
         "label": "@NASASpaceflight, 16 nov",
         "url": "https://x.com/NASASpaceflight/status/2122104257923137604"
+      }
+    },
+    {
+      "data": "15 nov",
+      "sez": "Prototipi",
+      "testo": "Musk dopo aver esaminato lo scudo termico: Ship 42 «potrebbe probabilmente rivolare con poche settimane di ricondizionamento»; per una riutilizzabilità immediata servono molte piccole modifiche",
+      "src": {
+        "label": "@elonmusk, 15 nov",
+        "url": "https://x.com/elonmusk/status/2122092374016806969"
       }
     },
     {
@@ -949,10 +994,10 @@
     }
   ],
   "IN_BREVE": {
-    "siti": "12 nov: estensione del braccio QD della Ship per il Pad 1 in arrivo a Starbase (@CSI_Starbase). Al Pad 2 S42 impilata su B22, SQD collegato. Pad 1: seconda delle quattro pareti inclinate del flame trench (10 nov, NSF).",
-    "prototipi": "Ship 42, catturata il 14 nov, è tornata al Production Site nella notte del 16 nov (NSF); una tegola staccata, flap integro (@mcrs987, non confermato). B22 deviato in mare il 13 nov: boostback concluso in anticipo per poco carburante (causa in indagine, SpaceX). Per il Flight 16 probabili B23/S43, ancora in allestimento (non confermato).",
+    "siti": "16 nov: BQD in prova al Pad 2 (@VickiCocks15, non confermato). 12 nov: estensione del braccio QD della Ship per il Pad 1 in arrivo a Starbase (@CSI_Starbase). Pad 1: seconda delle quattro pareti inclinate del flame trench (10 nov, NSF).",
+    "prototipi": "Ship 42, catturata il 14 nov, è al Production Site dal 16 nov; per Musk potrebbe rivolare con poche settimane di ricondizionamento. Musk (16 nov): Ship V4 lunga circa 70 m con 9 motori. 17 nov: transfer tube di B25 in Mega Bay 1 (non confermato). Per il Flight 16 probabili B23/S43, ancora in allestimento (non confermato).",
     "test": "12 nov: Raptor 134 (già su B21) di nuovo in uscita per test a McGregor (esito non confermato). Next Spaceflight: checklist del Flight 15 a 18 voci su 20, manca l'approvazione normativa finale.",
-    "lanci": "Flight 15: il 14 nov alle 22:20 ora di Roma Ship 42 è stata catturata dalla torre di Starbase dopo 22 h 32 min di volo (SpaceX), la prima cattura di una Ship. Decollo il 13 nov alle 23:47, 26 Starlink V3 rilasciati. Flight 16: nessuna data annunciata (NET 10 dic non ufficiale, NSF vede più probabile inizio 2027)."
+    "lanci": "Flight 15: il 14 nov alle 22:20 ora di Roma Ship 42 è stata catturata dalla torre di Starbase dopo 22 h 32 min di volo (SpaceX), la prima cattura di una Ship. Decollo il 13 nov alle 23:47, 26 Starlink V3 rilasciati. Flight 16: nessuna data annunciata (NET 10 dic non ufficiale, NSF vede più probabile inizio 2027). 16 nov: SpaceX ha pubblicato i video di bordo e dalla torre della cattura."
   },
   "SITI": [
     {
@@ -1124,8 +1169,8 @@
   "NON_CONFERMATI": [
     {
       "titolo": "Flight 16: data e veicoli",
-      "data": "15 nov",
-      "testo": "Nessun annuncio SpaceX: coppia B23/S43, lancio dal LC-39A e NET 10 dic (slide CADENA) restano non confermati; NSF (6 nov) indica più probabile l'inizio del 2027 (https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/). Il forum NSF non ha thread recenti verificabili sul Flight 16"
+      "data": "17 nov",
+      "testo": "Nessun annuncio SpaceX: coppia B23/S43, lancio dal LC-39A e NET 10 dic (slide CADENA) restano non confermati; NSF (6 nov) indica più probabile l'inizio del 2027 (https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/). Al 17 nov il forum NSF non ha thread recenti verificabili sul Flight 16"
     },
     {
       "titolo": "Relitto di B22 nel Golfo",
@@ -1214,7 +1259,7 @@
     },
     {
       "titolo": "Flight 16 a inizio 2027",
-      "data": "6 nov",
+      "data": "17 nov",
       "testo": "Per NSF, con lo static fire di S43 atteso a metà dicembre, il primo volo dal 39A appare più probabile a inizio 2027 che entro fine anno; B23 farà lo static fire al 39A. Non confermato da SpaceX (https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/)"
     },
     {
@@ -1376,7 +1421,7 @@
       "volo": "Flight 15",
       "stato": "Lanciato",
       "breve": "Catturata il 14 nov, tornata al Production Site il 16 nov",
-      "note": "Test chopsticks al Pad 2 (11-12 set); ulteriore prova crio a Massey's (9 ott). Partita per Massey's il 26 ott; nella notte tra 26 e 27 ott static fire a un solo motore e il 27 ott verso le 22:46 ora di Roma static fire a sei motori a piena durata. Il 28 ott SpaceX ha confermato la fine degli static fire, compresa un'accensione di un solo Raptor che simula la manovra di deorbit. Nella notte tra 28 e 29 ott è tornata in produzione per gli ultimi preparativi (Mega Bay 2 e carico Starlink V3 attesi, non confermato). Il 29 ott è entrata in Mega Bay 2. Il 30 ott NSF: in Mega Bay 2 per ispezioni finali e cariche del sistema di terminazione del volo, poi caricamento dei satelliti Starlink per il Flight 15. NSF (6 nov): ancora nei controlli finali; prossimi passi cariche FTS e carico Starlink. Piano di missione di circa 24 ore (non confermato) NSF (7 nov): sistemi del sito di lancio testati; B22 e S42 stanno per essere portati al Pad 2 per l'impilamento La sera dell'11 nov lo Starlink Speed Loader è uscito dalla Starfactory per caricare 26 Starlink V3 (NSF). Al 12 nov non ancora trasferita al Pad 2. Il 12 nov portata al Pad 2 (SpaceX) e nella notte del 13 nov impilata su B22; collegato il braccio SQD e aggiunti quelli che sembrano marker di allineamento (TrackingTheSB, non confermato). Flight 15 (13 nov, 23:47 ora di Roma): in orbita a ~276 km, rilasciati i 26 Starlink V3; alle 06:44 del 14 nov in buone condizioni, cattura a Starbase prevista verso le 22:15 (SpaceX). Il 14 nov: GO per il ritorno alle 20:18, deorbit burn alle 21:25, rientro alle 21:58; cattura alle 22:20 ora di Roma (21:20:02 UTC, @planet4589) dopo 22 h 32 min 26 s di volo, la prima cattura di una Ship (SpaceX). Il 15 nov verso le 19:56 ora di Roma è stata calata dalla torre e trasportata al Production Site, dove è arrivata verso le 00:07 del 16 nov (NSF). Dalle foto ravvicinate: una tegola staccata, flap anteriore integro (@mcrs987, non confermato). SpaceX non ha ancora comunicato lo stato della nave.",
+      "note": "Test chopsticks al Pad 2 (11-12 set); ulteriore prova crio a Massey's (9 ott). Partita per Massey's il 26 ott; nella notte tra 26 e 27 ott static fire a un solo motore e il 27 ott verso le 22:46 ora di Roma static fire a sei motori a piena durata. Il 28 ott SpaceX ha confermato la fine degli static fire, compresa un'accensione di un solo Raptor che simula la manovra di deorbit. Nella notte tra 28 e 29 ott è tornata in produzione per gli ultimi preparativi (Mega Bay 2 e carico Starlink V3 attesi, non confermato). Il 29 ott è entrata in Mega Bay 2. Il 30 ott NSF: in Mega Bay 2 per ispezioni finali e cariche del sistema di terminazione del volo, poi caricamento dei satelliti Starlink per il Flight 15. NSF (6 nov): ancora nei controlli finali; prossimi passi cariche FTS e carico Starlink. Piano di missione di circa 24 ore (non confermato) NSF (7 nov): sistemi del sito di lancio testati; B22 e S42 stanno per essere portati al Pad 2 per l'impilamento La sera dell'11 nov lo Starlink Speed Loader è uscito dalla Starfactory per caricare 26 Starlink V3 (NSF). Al 12 nov non ancora trasferita al Pad 2. Il 12 nov portata al Pad 2 (SpaceX) e nella notte del 13 nov impilata su B22; collegato il braccio SQD e aggiunti quelli che sembrano marker di allineamento (TrackingTheSB, non confermato). Flight 15 (13 nov, 23:47 ora di Roma): in orbita a ~276 km, rilasciati i 26 Starlink V3; alle 06:44 del 14 nov in buone condizioni, cattura a Starbase prevista verso le 22:15 (SpaceX). Il 14 nov: GO per il ritorno alle 20:18, deorbit burn alle 21:25, rientro alle 21:58; cattura alle 22:20 ora di Roma (21:20:02 UTC, @planet4589) dopo 22 h 32 min 26 s di volo, la prima cattura di una Ship (SpaceX). Il 15 nov verso le 19:56 ora di Roma è stata calata dalla torre e trasportata al Production Site, dove è arrivata verso le 00:07 del 16 nov (NSF). Dalle foto ravvicinate: una tegola staccata, flap anteriore integro (@mcrs987, non confermato). SpaceX non ha ancora comunicato lo stato della nave. Musk (15 nov): scudo termico e motori in ottimo stato, potrebbe rivolare con poche settimane di ricondizionamento. SpaceX (16 nov) ha pubblicato video di bordo e dalla torre della cattura.",
       "data": "16 nov",
       "src": {
         "label": "@NASASpaceflight, 16 nov",
@@ -1463,7 +1508,7 @@
       "volo": "n.d.",
       "stato": "In costruzione",
       "breve": "Impilamento iniziato verso il 2 nov",
-      "note": "Il 4 nov la sezione A3:4 è stata spostata dalla Starfactory in Mega Bay 1, riportato il 5 nov (solo @VickiCocks15, non confermato). NSF (6 nov) conferma: impilamento di Booster 25 iniziato verso il 2 nov.",
+      "note": "Il 4 nov la sezione A3:4 è stata spostata dalla Starfactory in Mega Bay 1, riportato il 5 nov (solo @VickiCocks15, non confermato). NSF (6 nov) conferma: impilamento di Booster 25 iniziato verso il 2 nov. 17 nov: transfer tube sollevato in Mega Bay 1 per l'installazione (@VickiCocks15, non confermato, https://x.com/VickiCocks15/status/2122516079738056938).",
       "data": "6 nov",
       "src": {
         "label": "NSF, 6 nov",
@@ -2199,6 +2244,21 @@
   "X_POSTS": {
     "siti": [
       {
+        "autore": "@VickiCocks15",
+        "data": "16 nov",
+        "ora": "22:05",
+        "testo": "I BQD in prova al Pad 2 (nc)",
+        "url": "https://x.com/VickiCocks15/status/2122435982700187689",
+        "media": "video",
+        "id": "2122435982700187689",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2122435865460772864/img/aE-UBDSDaPzpOatR.jpg"
+          }
+        ]
+      },
+      {
         "autore": "@NASASpaceflight",
         "data": "15 nov",
         "ora": "19:56",
@@ -2272,24 +2332,39 @@
             "url": "https://pbs.twimg.com/media/HW1tcILWYAAXQq1.jpg"
           }
         ]
-      },
-      {
-        "autore": "@NASASpaceflight",
-        "data": "10 nov",
-        "ora": "22:34",
-        "testo": "Pad 1: seconda parete inclinata del flame trench",
-        "url": "https://x.com/NASASpaceflight/status/2120268988621971885",
-        "media": "foto",
-        "id": "2120268988621971885",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HWy0d_WWkAAXaXu.jpg"
-          }
-        ]
       }
     ],
     "prototipi": [
+      {
+        "autore": "@VickiCocks15",
+        "data": "17 nov",
+        "ora": "03:24",
+        "testo": "Il transfer tube di Booster 25 sollevato in Mega Bay 1 (nc)",
+        "url": "https://x.com/VickiCocks15/status/2122516079738056938",
+        "media": "video",
+        "id": "2122516079738056938",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2122515947277750272/img/exqvLZsiFAN78lR8.jpg"
+          }
+        ]
+      },
+      {
+        "autore": "@SpaceX",
+        "data": "16 nov",
+        "ora": "22:49",
+        "testo": "Starship 42 di nuovo a terra",
+        "url": "https://x.com/SpaceX/status/2122446937286971592",
+        "media": "foto",
+        "id": "2122446937286971592",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HXRyDsiWAAAhXUJ.jpg"
+          }
+        ]
+      },
       {
         "autore": "@NASASpaceflight",
         "data": "16 nov",
@@ -2347,36 +2422,6 @@
           {
             "tipo": "video",
             "url": "https://pbs.twimg.com/amplify_video_thumb/2121376252674367488/img/cljOHqC79eFpRygT.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@SpaceX",
-        "data": "14 nov",
-        "ora": "06:44",
-        "testo": "Ship 42 e lo scudo termico in buone condizioni in orbita",
-        "url": "https://x.com/SpaceX/status/2121479482582441991",
-        "media": "video",
-        "id": "2121479482582441991",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2121478495096524801/img/MaqFlCXvo1tTRZcG.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@mcrs987",
-        "data": "14 nov",
-        "ora": "00:32",
-        "testo": "Il tubo di trasferimento di B22 spunta dal mare (non confermato)",
-        "url": "https://x.com/mcrs987/status/2121385822985363898",
-        "media": "foto",
-        "id": "2121385822985363898",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HXCtJYFWcAAL8fk.jpg"
           }
         ]
       }
@@ -2460,6 +2505,36 @@
     ],
     "lanci": [
       {
+        "autore": "@SpaceX",
+        "data": "16 nov",
+        "ora": "21:30",
+        "testo": "Le viste da Mechazilla della prima cattura di una Ship",
+        "url": "https://x.com/SpaceX/status/2122427170328883425",
+        "media": "video",
+        "id": "2122427170328883425",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2122421373616185344/img/bAtIv1xqa27PK-pH.jpg"
+          }
+        ]
+      },
+      {
+        "autore": "@SpaceX",
+        "data": "16 nov",
+        "ora": "17:35",
+        "testo": "A bordo di Ship 42 nell'avvicinamento finale alla cattura",
+        "url": "https://x.com/SpaceX/status/2122368004298068305",
+        "media": "video",
+        "id": "2122368004298068305",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2122367103676133376/img/yzTQaoPWnW71rwM2.jpg"
+          }
+        ]
+      },
+      {
         "autore": "@NASASpaceflight",
         "data": "16 nov",
         "ora": "00:28",
@@ -2516,36 +2591,6 @@
           {
             "tipo": "video",
             "url": "https://pbs.twimg.com/amplify_video_thumb/2121387246066569217/img/nmK86HcluJQTcgB_.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@mcrs987",
-        "data": "14 nov",
-        "ora": "01:32",
-        "testo": "Le scie della Ship e degli Starlink ripassano sopra Starbase",
-        "url": "https://x.com/mcrs987/status/2121400823548871121",
-        "media": "foto",
-        "id": "2121400823548871121",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HXC6yKNXUAETSdo.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@LabPadre",
-        "data": "13 nov",
-        "ora": "01:52",
-        "testo": "Ship 42 impilata su Booster 22, lancio atteso entro 24 ore",
-        "url": "https://x.com/LabPadre/status/2121043480411525168",
-        "media": "video",
-        "id": "2121043480411525168",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2121042713449549824/img/Wd39exPiOJAT0xkZ.jpg"
           }
         ]
       }
