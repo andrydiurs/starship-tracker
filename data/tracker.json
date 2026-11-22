@@ -1,5 +1,5 @@
 {
-  "ULTIMO_AGGIORNAMENTO": "21 nov 2026, 08:45",
+  "ULTIMO_AGGIORNAMENTO": "22 nov 2026, 08:45",
   "PROSSIMO_VOLO": {
     "volo": "Flight 16",
     "veicoli": "Super Heavy B23 + Ship 43 (probabili, non confermato)",
@@ -109,6 +109,42 @@
     }
   },
   "NEWS": [
+    {
+      "data": "21 nov",
+      "sez": "Test",
+      "testo": "Ship 44 ha completato il primo cryo proof test a Massey's il 20 nov; per @VickiCocks15 nella notte c'è stato un doppio round di prove crio (dettaglio non confermato)",
+      "src": {
+        "label": "@RGVaerialphotos, 21 nov",
+        "url": "https://x.com/RGVaerialphotos/status/2124265745681117187"
+      }
+    },
+    {
+      "data": "21 nov",
+      "sez": "Prototipi",
+      "testo": "Ship 44 e Booster 24, i veicoli del Flight 17, sono insieme a Massey's per i proof test",
+      "src": {
+        "label": "@StarshipGazer, 21 nov",
+        "url": "https://x.com/StarshipGazer/status/2124202069158674714"
+      }
+    },
+    {
+      "data": "21 nov",
+      "sez": "Prototipi",
+      "testo": "Il serbatoio LOX di atterraggio del Booster 25 è stato spostato in Mega Bay 1 il 20 nov",
+      "src": {
+        "label": "@RGVaerialphotos, 21 nov",
+        "url": "https://x.com/RGVaerialphotos/status/2124262674834071685"
+      }
+    },
+    {
+      "data": "21 nov",
+      "sez": "Siti",
+      "testo": "Pad 1: la gru LR11000 noleggiata ha sollevato un'altra sezione di parete inclinata per la trench (20 nov, non confermato)",
+      "src": {
+        "label": "@VickiCocks15, 21 nov",
+        "url": "https://x.com/VickiCocks15/status/2124131225564848270"
+      }
+    },
     {
       "data": "21 nov",
       "sez": "Siti",
@@ -1174,10 +1210,10 @@
     }
   ],
   "IN_BREVE": {
-    "siti": "20-21 nov: a Massey's Ship 44 in prova crio e Booster 24 arrivato per i proof test (NSF); il collegamento Starfactory–Gigabay avanza (@TrackingTheSB). Al Pad 2 refurbish di chopsticks e SQD dopo il Flight 15 (@VickiCocks15, nc).",
-    "prototipi": "Ship 44 e Booster 24, probabile coppia del Flight 17, sono a Massey's dal 19-20 nov (NSF). In Mega Bay 2 S45 sul work stand e sezioni di S46 (nc); nella Starfactory probabili S47, S48 e S49 in produzione (nc). Ship 42, catturata il 14 nov, resta in Mega Bay 2. Per il Flight 16 probabili B23/S43 (nc).",
-    "test": "20 nov: Ship 44 in prova criogenica a Massey's, esito non noto; Booster 24 arrivato per i proof test. A McGregor Raptor 3 n. 301 (nc); 19 nov Raptor 106 e 134 di nuovo ai test.",
-    "lanci": "Flight 15: SpaceX (19 nov) conferma l'abort sicuro del Super Heavy con ammaraggio davanti a Starbase; il 20 nov ha pubblicato le foto dei Raptor in volo. Ship 42 catturata il 14 nov. Flight 16: nessuna data annunciata (NET 10 dic non ufficiale; NSF ipotizza un volo da Starbase, nc)."
+    "siti": "20-21 nov: a Massey's Ship 44 completa il primo cryo proof con Booster 24 in attesa dei proof test; al Pad 1 sollevata un'altra parete della trench (@VickiCocks15, nc). Il collegamento Starfactory–Gigabay avanza (@TrackingTheSB).",
+    "prototipi": "Ship 44 e Booster 24, coppia del Flight 17, sono a Massey's (@StarshipGazer, 21 nov). Il serbatoio LOX di atterraggio del Booster 25 è in Mega Bay 1 (20 nov, RGV). In Mega Bay 2 S45 e sezioni di S46 (nc); nella Starfactory probabili S47-S49 (nc). Per il Flight 16 probabili B23/S43 (nc).",
+    "test": "20 nov: Ship 44 ha completato il primo cryo proof test (RGV); nella notte un secondo round, esito non confermato. A McGregor Raptor 3 n. 301 (nc).",
+    "lanci": "Flight 16: nessuna data annunciata da SpaceX; NET 10 dic solo da fonti non ufficiali (CADENA, Wikipedia al 22 nov, nc). Nessun lancio Starship nelle prossime 48 ore (FAA, 22 nov)."
   },
   "SITI": [
     {
@@ -1202,8 +1238,8 @@
         "label": "In ricostruzione",
         "tone": "accent"
       },
-      "breve": "Seconda delle 4 pareti inclinate del flame trench (10 nov)",
-      "ultimo": "17 nov: chopsticks alzati a metà torre, forse per il ritorno della struttura di servizio del launch mount (@VickiCocks15, non confermato). 12 nov: l'estensione del braccio QD della Ship per il Pad 1 avvistata in autostrada verso Starbase (@CSI_Starbase). 10 nov sera: in installazione la seconda delle quattro sezioni inclinate delle pareti del flame trench (NSF). In ricostruzione per eguagliare il Pad 2; il 23 ott sollevate altre sezioni del muro del flame trench (NSF: «ne manca una»); foto aerea del cantiere del 23 ott; il 27 ott nuova foto aerea: i lavori sul flame trench continuano. NSF (stato al 23 ott): gettata una delle rampe del flame trench, installati i cinque supporti ad A e il supporto del colmo centrale, posati vari pannelli delle pareti; avanza l'alloggiamento dei drawworks alla base della torre, ma interni della torre vuoti e chopsticks lontani dall'essere operativi. Il launch mount, costruito a Sanchez, ha i primi due livelli quasi completi, piastre del deluge sollevate, flame diverter in corso e struttura primaria del nuovo braccio SQD finita. Riepilogo NSF del 31 ott: lavori in corso sul quick disconnect (QD) del booster con pipe rack e gru, e infissione di palancole per uno scavo; il 2 nov nuova foto aerea di RGV: i lavori alla rampa proseguono",
+      "breve": "Trench: sollevata un'altra sezione di parete inclinata (20 nov, nc)",
+      "ultimo": "20 nov: la gru LR11000 noleggiata ha sollevato un'altra sezione di parete inclinata per la trench (@VickiCocks15, non confermato). 17 nov: chopsticks alzati a metà torre, forse per il ritorno della struttura di servizio del launch mount (@VickiCocks15, non confermato). 12 nov: l'estensione del braccio QD della Ship per il Pad 1 avvistata in autostrada verso Starbase (@CSI_Starbase). 10 nov sera: in installazione la seconda delle quattro sezioni inclinate delle pareti del flame trench (NSF). In ricostruzione per eguagliare il Pad 2; il 23 ott sollevate altre sezioni del muro del flame trench (NSF: «ne manca una»); foto aerea del cantiere del 23 ott; il 27 ott nuova foto aerea: i lavori sul flame trench continuano. NSF (stato al 23 ott): gettata una delle rampe del flame trench, installati i cinque supporti ad A e il supporto del colmo centrale, posati vari pannelli delle pareti; avanza l'alloggiamento dei drawworks alla base della torre, ma interni della torre vuoti e chopsticks lontani dall'essere operativi. Il launch mount, costruito a Sanchez, ha i primi due livelli quasi completi, piastre del deluge sollevate, flame diverter in corso e struttura primaria del nuovo braccio SQD finita. Riepilogo NSF del 31 ott: lavori in corso sul quick disconnect (QD) del booster con pipe rack e gru, e infissione di palancole per uno scavo; il 2 nov nuova foto aerea di RGV: i lavori alla rampa proseguono",
       "data": "10 nov",
       "src": {
         "label": "@NASASpaceflight, 10 nov",
@@ -1263,7 +1299,7 @@
         "tone": "success"
       },
       "breve": "Ship 44 in prova crio (20 nov) e Booster 24 arrivato per i proof test",
-      "ultimo": "20 nov: arriva Booster 24 per i primi proof test; la sera Ship 44 in prova criogenica, esito non noto (NSF, @TrackingTheSB). 19 nov: Ship 44 arrivata alla stazione crio verso le 22:24 (LabPadre). 17 nov (notte): i thrust sim stand di Ship e Booster hanno lasciato Massey's e sono tornati a Sanchez (@VickiCocks15, non confermato). 19 nov: ritardo stradale Production→Massey's 06:59-11:00 ora di Roma, veicolo non indicato (@LabPadre, nc). 17-18 nov: Ship 39.1, articolo di prova della sezione di coda Block 3, in demolizione (@VickiCocks15, @RGVaerialphotos, non confermato); la Ship Thrust Sim dovrebbe tornare al Production Site (RGV, nc). 8 nov: RGV segnala tubazioni criogeniche dal lotto Sanchez in arrivo (non confermato). S42 è arrivata il 26 ott; static fire a un motore nella notte tra 26 e 27 ott e a sei motori il 27 ott, confermati da SpaceX il 28 ott. Nella notte tra 28 e 29 ott S42 è ripartita verso la produzione. B23 è arrivato il 28 ott per nuove prove crio (nessun esito pubblico finora). Il cantiere del sito 2 avanza accanto al sito 1. Non confermato: i simulatori di spinta di booster e Ship potrebbero essere portati qui per lo stoccaggio. Spazio aereo riservato dalla FAA per «high energy testing» dal 23 ott al 6 nov (secondo The Space Road). Nella notte tra 29 e 30 ott anche B23 è ripartito verso la produzione (esito delle prove crio non comunicato). NSF (30 ott): B23 è rimasto oltre due giorni allo stand crio senza test visibili (forse una prova di pressione a temperatura ambiente, non confermato). Rimossi alcuni vecchi serbatoi di azoto liquido, sostituiti da tre più grandi e da due nuovi banchi di vaporizzatori; al loro posto è iniziata la costruzione di un secondo Supercrusher per i test dei serbatoi. Chiusura stradale produzione-Massey's nella notte tra 30 e 31 ott (31 ott 05:59-10:00 ora di Roma), veicolo non comunicato. Il 3 nov foto aerea: l'articolo di test S43.1 (ogiva, PEZ dispenser e serbatoi header) è nel Can Crusher e accanto se ne costruisce un secondo; esito non ancora noto",
+      "ultimo": "20-21 nov: Ship 44 ha completato il primo cryo proof (RGV) e ha proseguito con un secondo round (nc); Booster 24 presente per i proof test (@StarshipGazer). 20 nov: arriva Booster 24 per i primi proof test; la sera Ship 44 in prova criogenica, esito non noto (NSF, @TrackingTheSB). 19 nov: Ship 44 arrivata alla stazione crio verso le 22:24 (LabPadre). 17 nov (notte): i thrust sim stand di Ship e Booster hanno lasciato Massey's e sono tornati a Sanchez (@VickiCocks15, non confermato). 19 nov: ritardo stradale Production→Massey's 06:59-11:00 ora di Roma, veicolo non indicato (@LabPadre, nc). 17-18 nov: Ship 39.1, articolo di prova della sezione di coda Block 3, in demolizione (@VickiCocks15, @RGVaerialphotos, non confermato); la Ship Thrust Sim dovrebbe tornare al Production Site (RGV, nc). 8 nov: RGV segnala tubazioni criogeniche dal lotto Sanchez in arrivo (non confermato). S42 è arrivata il 26 ott; static fire a un motore nella notte tra 26 e 27 ott e a sei motori il 27 ott, confermati da SpaceX il 28 ott. Nella notte tra 28 e 29 ott S42 è ripartita verso la produzione. B23 è arrivato il 28 ott per nuove prove crio (nessun esito pubblico finora). Il cantiere del sito 2 avanza accanto al sito 1. Non confermato: i simulatori di spinta di booster e Ship potrebbero essere portati qui per lo stoccaggio. Spazio aereo riservato dalla FAA per «high energy testing» dal 23 ott al 6 nov (secondo The Space Road). Nella notte tra 29 e 30 ott anche B23 è ripartito verso la produzione (esito delle prove crio non comunicato). NSF (30 ott): B23 è rimasto oltre due giorni allo stand crio senza test visibili (forse una prova di pressione a temperatura ambiente, non confermato). Rimossi alcuni vecchi serbatoi di azoto liquido, sostituiti da tre più grandi e da due nuovi banchi di vaporizzatori; al loro posto è iniziata la costruzione di un secondo Supercrusher per i test dei serbatoi. Chiusura stradale produzione-Massey's nella notte tra 30 e 31 ott (31 ott 05:59-10:00 ora di Roma), veicolo non comunicato. Il 3 nov foto aerea: l'articolo di test S43.1 (ogiva, PEZ dispenser e serbatoi header) è nel Can Crusher e accanto se ne costruisce un secondo; esito non ancora noto",
       "data": "18 nov",
       "src": {
         "label": "@VickiCocks15, 18 nov",
@@ -1665,12 +1701,12 @@
       "volo": "Flight 17 (prob.)",
       "voloNc": true,
       "stato": "Test",
-      "breve": "A Massey's dal 19 nov, in prova crio il 20 nov (esito n.d.)",
-      "note": "18 nov: secondo @RGVaerialphotos la Ship Thrust Sim rientra al Production Site e S44 potrebbe uscire presto per la crio (non confermato). Il 25 ott spostata sul supporto centrale di Mega Bay 2; tubi di trasferimento e flap in installazione. Pronta forse a febbraio 2027 (stima NSF). Al 30 ott ha ricevuto i raceway dopo l'impilamento finale del 20 ott (NSF). NSF (6 nov): avanza in Mega Bay 2 insieme a S45 19 nov: uscita da Mega Bay 2 e arrivata alla stazione crio di Massey's verso le 22:24 per prove di pressione, crio e thrust simulator (NSF, LabPadre). 20 nov: NSF la indica per il Flight 17 con B24; la sera prova criogenica in corso (@TrackingTheSB), esito non noto.",
-      "data": "6 nov",
+      "breve": "Primo cryo proof completato il 20 nov a Massey's; secondo round in corso (nc)",
+      "note": "18 nov: secondo @RGVaerialphotos la Ship Thrust Sim rientra al Production Site e S44 potrebbe uscire presto per la crio (non confermato). Il 25 ott spostata sul supporto centrale di Mega Bay 2; tubi di trasferimento e flap in installazione. Pronta forse a febbraio 2027 (stima NSF). Al 30 ott ha ricevuto i raceway dopo l'impilamento finale del 20 ott (NSF). NSF (6 nov): avanza in Mega Bay 2 insieme a S45 19 nov: uscita da Mega Bay 2 e arrivata alla stazione crio di Massey's verso le 22:24 per prove di pressione, crio e thrust simulator (NSF, LabPadre). 20 nov: NSF la indica per il Flight 17 con B24; la sera prova criogenica in corso (@TrackingTheSB), esito non noto. 20 nov: primo cryo proof test completato (@RGVaerialphotos). Nella notte tra 20 e 21 nov doppio round di prove crio secondo @VickiCocks15 (non confermato).",
+      "data": "21 nov",
       "src": {
-        "label": "NSF, 6 nov",
-        "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
+        "label": "@RGVaerialphotos, 21 nov",
+        "url": "https://x.com/RGVaerialphotos/status/2124265745681117187"
       }
     },
     {
@@ -1694,11 +1730,11 @@
       "volo": "Flight 17 (prob.)",
       "stato": "Test",
       "breve": "A Massey's dal 20 nov per i primi proof test",
-      "note": "In Mega Bay 1; il 24 ott è entrata la sezione F3:4 che completa il corpo del booster. Pronto forse a inizio febbraio 2027 (stima NSF). La sera del 30 ott (ora del Texas) la sezione del serbatoio del metano è stata sollevata per l'impilamento in Mega Bay 1. NSF (6 nov): Booster 24 completamente impilato. 7 nov: sezione A4 trasferita in Mega Bay 1 (solo @VickiCocks15, non confermato) 20 nov: lasciata Mega Bay 1 e portato a Massey's per i primi proof test, insieme a Ship 44 (NSF, @VickiCocks15).",
-      "data": "7 nov",
+      "note": "In Mega Bay 1; il 24 ott è entrata la sezione F3:4 che completa il corpo del booster. Pronto forse a inizio febbraio 2027 (stima NSF). La sera del 30 ott (ora del Texas) la sezione del serbatoio del metano è stata sollevata per l'impilamento in Mega Bay 1. NSF (6 nov): Booster 24 completamente impilato. 7 nov: sezione A4 trasferita in Mega Bay 1 (solo @VickiCocks15, non confermato) 20 nov: lasciata Mega Bay 1 e portato a Massey's per i primi proof test, insieme a Ship 44 (NSF, @VickiCocks15). 21 nov: a Massey's insieme a Ship 44 per i proof test (@StarshipGazer).",
+      "data": "21 nov",
       "src": {
-        "label": "NSF, 6 nov",
-        "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
+        "label": "@StarshipGazer, 21 nov",
+        "url": "https://x.com/StarshipGazer/status/2124202069158674714"
       }
     },
     {
@@ -1707,12 +1743,12 @@
       "versione": "V3",
       "volo": "n.d.",
       "stato": "In costruzione",
-      "breve": "Impilamento iniziato verso il 2 nov",
-      "note": "Il 4 nov la sezione A3:4 è stata spostata dalla Starfactory in Mega Bay 1, riportato il 5 nov (solo @VickiCocks15, non confermato). NSF (6 nov) conferma: impilamento di Booster 25 iniziato verso il 2 nov. 17 nov: transfer tube sollevato in Mega Bay 1 per l'installazione (@VickiCocks15, non confermato, https://x.com/VickiCocks15/status/2122516079738056938).",
-      "data": "6 nov",
+      "breve": "Serbatoio LOX di atterraggio spostato in Mega Bay 1 (20 nov)",
+      "note": "Il 4 nov la sezione A3:4 è stata spostata dalla Starfactory in Mega Bay 1, riportato il 5 nov (solo @VickiCocks15, non confermato). NSF (6 nov) conferma: impilamento di Booster 25 iniziato verso il 2 nov. 17 nov: transfer tube sollevato in Mega Bay 1 per l'installazione (@VickiCocks15, non confermato, https://x.com/VickiCocks15/status/2122516079738056938). 20 nov: il serbatoio LOX di atterraggio è stato spostato in Mega Bay 1 (@RGVaerialphotos, @VickiCocks15).",
+      "data": "21 nov",
       "src": {
-        "label": "NSF, 6 nov",
-        "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
+        "label": "@RGVaerialphotos, 21 nov",
+        "url": "https://x.com/RGVaerialphotos/status/2124262674834071685"
       }
     },
     {
@@ -1816,15 +1852,27 @@
   ],
   "TEST": [
     {
+      "data": "20-21 nov",
+      "veicolo": "Ship 44",
+      "tipo": "Seconda prova criogenica (cryo proof #2)",
+      "luogo": "Massey's",
+      "esito": "Esito non confermato",
+      "nota": "Per @VickiCocks15 Ship 44 ha fatto un doppio round di prove crio nella notte tra 20 e 21 nov; Next Spaceflight indicava 'Ship 44 Cryogenic Proof Test #2' sabato 21 nov (non confermato).",
+      "src": {
+        "label": "@VickiCocks15, 21 nov",
+        "url": "https://x.com/VickiCocks15/status/2124133341829980506"
+      }
+    },
+    {
       "data": "20 nov",
       "veicolo": "Ship 44",
       "tipo": "Prova criogenica (cryo proof)",
       "luogo": "Massey's",
-      "esito": "In corso (esito non confermato)",
-      "nota": "La sera del 20 nov Ship 44 è in prova criogenica a Massey's (foto Casper Harris). Il 20 nov @VickiCocks15 aveva segnalato un possibile ambient proof test senza effetti visibili (non confermato).",
+      "esito": "Completato (primo cryo proof)",
+      "nota": "Il 20 nov Ship 44 ha completato il primo cryo proof test a Massey's (@RGVaerialphotos, 21 nov). La sera del 20 nov foto della prova di Casper Harris (@TrackingTheSB).",
       "src": {
-        "label": "@TrackingTheSB, 20 nov",
-        "url": "https://x.com/TrackingTheSB/status/2123906558115418275"
+        "label": "@RGVaerialphotos, 21 nov",
+        "url": "https://x.com/RGVaerialphotos/status/2124265745681117187"
       }
     },
     {
@@ -2509,6 +2557,21 @@
   "X_POSTS": {
     "siti": [
       {
+        "autore": "@VickiCocks15",
+        "data": "21 nov",
+        "ora": "14:22",
+        "testo": "Pad 1: nuova parete per la trench (nc)",
+        "url": "https://x.com/VickiCocks15/status/2124131225564848270",
+        "media": "video",
+        "id": "2124131225564848270",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2124131076666785792/img/DAjY0AdxwHP57jVO.jpg"
+          }
+        ]
+      },
+      {
         "autore": "@TrackingTheSB",
         "data": "21 nov",
         "ora": "02:41",
@@ -2582,24 +2645,39 @@
             "url": "https://pbs.twimg.com/amplify_video_thumb/2123116148761722882/img/R0inRMtLbzAuC7Ch.jpg"
           }
         ]
-      },
-      {
-        "autore": "@VickiCocks15",
-        "data": "18 nov",
-        "ora": "14:47",
-        "testo": "Thrust sim stand da Massey's a Sanchez (nc)",
-        "url": "https://x.com/VickiCocks15/status/2123050363766939919",
-        "media": "video",
-        "id": "2123050363766939919",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2123050212037984257/img/QkLrPraTtgJQ8_5w.jpg"
-          }
-        ]
       }
     ],
     "prototipi": [
+      {
+        "autore": "@StarshipGazer",
+        "data": "21 nov",
+        "ora": "19:03",
+        "testo": "Ship 44 e Booster 24 a Massey's",
+        "url": "https://x.com/StarshipGazer/status/2124202069158674714",
+        "media": "foto",
+        "id": "2124202069158674714",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HXqt2qhakAAoZok.jpg"
+          }
+        ]
+      },
+      {
+        "autore": "@RGVaerialphotos",
+        "data": "21 nov",
+        "ora": "23:04",
+        "testo": "Serbatoio LOX di atterraggio di B25 in Mega Bay 1",
+        "url": "https://x.com/RGVaerialphotos/status/2124262674834071685",
+        "media": "video",
+        "id": "2124262674834071685",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2124262488258805760/img/5lOEfOOxQggVRbIU.jpg"
+          }
+        ]
+      },
       {
         "autore": "@TrackingTheSB",
         "data": "21 nov",
@@ -2659,39 +2737,39 @@
             "url": "https://pbs.twimg.com/amplify_video_thumb/2123774530841608192/img/Kbup5Eplln0sr01o.jpg"
           }
         ]
-      },
-      {
-        "autore": "@mcrs987",
-        "data": "19 nov",
-        "ora": "04:03",
-        "testo": "S42: disco di rottura",
-        "url": "https://x.com/mcrs987/status/2123250858557075908",
-        "media": "foto",
-        "id": "2123250858557075908",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HXdNShfXYAAOXYZ.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@StarshipGazer",
-        "data": "18 nov",
-        "ora": "21:27",
-        "testo": "S42: possibile patch in lana d'acciaio su un flap (nc)",
-        "url": "https://x.com/StarshipGazer/status/2123151106159296792",
-        "media": "foto",
-        "id": "2123151106159296792",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HXbwb1oW0AAci_g.jpg"
-          }
-        ]
       }
     ],
     "test": [
+      {
+        "autore": "@RGVaerialphotos",
+        "data": "21 nov",
+        "ora": "23:16",
+        "testo": "Ship 44 ha completato il primo cryo proof",
+        "url": "https://x.com/RGVaerialphotos/status/2124265745681117187",
+        "media": "video",
+        "id": "2124265745681117187",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2124265195992440832/img/iKqB-vmKXQVQk3TQ.jpg"
+          }
+        ]
+      },
+      {
+        "autore": "@VickiCocks15",
+        "data": "21 nov",
+        "ora": "14:30",
+        "testo": "Doppio round di prove crio per Ship 44 (nc)",
+        "url": "https://x.com/VickiCocks15/status/2124133341829980506",
+        "media": "video",
+        "id": "2124133341829980506",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2124132488108785664/img/Nw2C_iPSWGTz01k_.jpg"
+          }
+        ]
+      },
       {
         "autore": "@TrackingTheSB",
         "data": "20 nov",
@@ -2751,31 +2829,6 @@
             "url": "https://pbs.twimg.com/amplify_video_thumb/2122783048961826817/img/b_gv_J1_N05h8WV-.jpg"
           }
         ]
-      },
-      {
-        "autore": "@SpaceRhin0",
-        "data": "12 nov",
-        "ora": "19:20",
-        "testo": "Raptor 134 torna ai test a McGregor (nc)",
-        "url": "https://x.com/SpaceRhin0/status/2120944847364436027",
-        "media": "foto",
-        "id": "2120944847364436027",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HW8cAAyXIAAdXJS.png"
-          }
-        ]
-      },
-      {
-        "autore": "@SpaceRhin0",
-        "data": "10 nov",
-        "ora": "14:37",
-        "testo": "Raptor 3 RVAC consegnato al banco a McGregor",
-        "url": "https://x.com/SpaceRhin0/status/2120148756427653356",
-        "media": "video",
-        "id": "2120148756427653356",
-        "immagini": []
       }
     ],
     "lanci": [
