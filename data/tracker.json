@@ -1,5 +1,5 @@
 {
-  "ULTIMO_AGGIORNAMENTO": "23 nov 2026, 08:45",
+  "ULTIMO_AGGIORNAMENTO": "24 nov 2026, 08:32",
   "PROSSIMO_VOLO": {
     "volo": "Flight 16",
     "veicoli": "Super Heavy B23 + Ship 43 (probabili, non confermato)",
@@ -109,6 +109,42 @@
     }
   },
   "NEWS": [
+    {
+      "data": "24 nov",
+      "sez": "Test",
+      "testo": "Ship 44 ha ricevuto un terzo carico criogenico a Massey's nella notte tra 23 e 24 nov; non è chiaro se il test riguardasse la ship o la tank farm, con pochi sfiati visibili (non confermato)",
+      "src": {
+        "label": "@VickiCocks15, 24 nov",
+        "url": "https://x.com/VickiCocks15/status/2125019893120520475"
+      }
+    },
+    {
+      "data": "23-24 nov",
+      "sez": "Siti",
+      "testo": "Gigabay Texas: la porta principale destra è stata chiusa per la prima volta (NSF, @RGVaerialphotos)",
+      "src": {
+        "label": "@RGVaerialphotos, 24 nov",
+        "url": "https://x.com/RGVaerialphotos/status/2125014299609645490"
+      }
+    },
+    {
+      "data": "23 nov",
+      "sez": "Prototipi",
+      "testo": "Booster 25: la sezione A2:4 è stata vista nella Gigabay, probabilmente poi entrata in Mega Bay 1; il jig del serbatoio LOX di atterraggio è comparso fuori dalla Starfactory (non confermato)",
+      "src": {
+        "label": "@VickiCocks15, 23 nov",
+        "url": "https://x.com/VickiCocks15/status/2124987683084870060"
+      }
+    },
+    {
+      "data": "23 nov",
+      "sez": "Test",
+      "testo": "Booster 24 ha completato il primo cryo proof test a Massey's (video di @VickiCocks15 e LabPadre)",
+      "src": {
+        "label": "@VickiCocks15, 23 nov",
+        "url": "https://x.com/VickiCocks15/status/2124910296649310709"
+      }
+    },
     {
       "data": "22 nov",
       "sez": "Test",
@@ -1246,10 +1282,10 @@
     }
   ],
   "IN_BREVE": {
-    "siti": "22-23 nov: a Massey's Booster 24 al primo cryo proof dopo i test di Ship 44; alla Gigabay Texas sollevata la porta frontale (@VickiCocks15, nc). Per @CSI_Starbase l'Apex Deluge del Pad 2 non avrebbe funzionato al Flight 15 (nc).",
-    "prototipi": "NSF (22-23 nov): Booster 24 e Ship 44 per il Flight 17, possibile debutto dal Pad 39A (nc). Ship 42 in Mega Bay 2: tegola persa in salita sui pin più alti e lana d'acciaio come ablativo (@mcrs987). Serbatoio LOX di atterraggio di B25 in Mega Bay 1. Per il Flight 16 probabili B23/S43 (nc).",
-    "test": "22 nov: Booster 24 al primo cryo proof test a Massey's (LOX/LN2, brina sui serbatoi), esito non comunicato. 20-21 nov: Ship 44 ha completato il primo cryo proof più un secondo round (nc).",
-    "lanci": "Flight 16: nessuna data annunciata da SpaceX; NET 10 dic solo da fonti non ufficiali (nc). Flight 17 forse dal Pad 39A (NSF, nc). Nessun lancio Starship nelle prossime 48 ore (FAA, 23 nov)."
+    "siti": "23-24 nov: alla Gigabay Texas chiusa per la prima volta la porta principale destra (NSF, RGV). A Massey's B24 ha completato il primo cryo proof e S44 ha avuto un terzo carico crio (nc).",
+    "prototipi": "Booster 24 e Ship 44 indicati da NSF per il Flight 17, possibile debutto dal Pad 39A (nc). Booster 25: sezione A2:4 vista in Gigabay, forse in Mega Bay 1 (nc). Per il Flight 16 probabili B23/S43 (nc).",
+    "test": "23 nov: Booster 24 ha completato il primo cryo proof a Massey's. 24 nov (notte): Ship 44 al terzo carico criogenico, non chiaro se test della ship o della tank farm (nc).",
+    "lanci": "Flight 16: nessuna data annunciata da SpaceX; NET 10 dic solo da fonti non ufficiali (nc). Flight 17 forse dal Pad 39A (NSF, nc). Piano FAA del 24 nov: nessuna voce Starship."
   },
   "SITI": [
     {
@@ -1319,12 +1355,12 @@
         "label": "In costruzione",
         "tone": "accent"
       },
-      "breve": "Porta frontale sollevata in posizione (23 nov, nc)",
-      "ultimo": "23 nov: la porta sul fronte della Gigabay inquadrata dalla Rover1-cam di LabPadre è stata sollevata in posizione (@VickiCocks15, non confermato). 21 nov: il collegamento tra Starfactory e Gigabay prende forma (@TrackingTheSB, foto Casper Harris). 11 nov: avvistato un carroponte all'interno (@mcrs987, non confermato). La sera del 7 nov Ship 40 è entrata nella Gigabay, primo veicolo al suo interno (NSF, LabPadre). Non implica la piena operatività. Primo carroponte in posizione (15 ott); una delle 4 gru a torre quasi smontata (17 ott); gru LR11000 al lavoro dentro l'edificio (22 ott); nuove foto aeree del 23 e del 26 ott. Obiettivo SpaceX: completamento entro fine 2026. Il 31 ott SpaceX ha proiettato uno spettacolo luminoso di Halloween sulla facciata (video NSF). Il 3 nov (sera, ora del Texas) rimosso il braccio della terza delle quattro gru a torre, smontato dall'ultima rimasta; l'esterno dell'edificio è quasi finito (video di Erik Fraser per NSF)",
-      "data": "23 nov",
+      "breve": "Porta principale destra chiusa per la prima volta (23-24 nov)",
+      "ultimo": "23-24 nov: la porta principale destra è stata chiusa per la prima volta (NSF, @RGVaerialphotos). 23 nov: la porta sul fronte della Gigabay inquadrata dalla Rover1-cam di LabPadre è stata sollevata in posizione (@VickiCocks15, non confermato). 21 nov: il collegamento tra Starfactory e Gigabay prende forma (@TrackingTheSB, foto Casper Harris). 11 nov: avvistato un carroponte all'interno (@mcrs987, non confermato). La sera del 7 nov Ship 40 è entrata nella Gigabay, primo veicolo al suo interno (NSF, LabPadre). Non implica la piena operatività. Primo carroponte in posizione (15 ott); una delle 4 gru a torre quasi smontata (17 ott); gru LR11000 al lavoro dentro l'edificio (22 ott); nuove foto aeree del 23 e del 26 ott. Obiettivo SpaceX: completamento entro fine 2026. Il 31 ott SpaceX ha proiettato uno spettacolo luminoso di Halloween sulla facciata (video NSF). Il 3 nov (sera, ora del Texas) rimosso il braccio della terza delle quattro gru a torre, smontato dall'ultima rimasta; l'esterno dell'edificio è quasi finito (video di Erik Fraser per NSF)",
+      "data": "24 nov",
       "src": {
-        "label": "@VickiCocks15, 23 nov",
-        "url": "https://x.com/VickiCocks15/status/2124664209665396766"
+        "label": "@RGVaerialphotos, 24 nov",
+        "url": "https://x.com/RGVaerialphotos/status/2125014299609645490"
       }
     },
     {
@@ -1334,12 +1370,12 @@
         "label": "Operativo",
         "tone": "success"
       },
-      "breve": "Booster 24 in primo cryo proof test (22 nov), dopo i test di Ship 44",
-      "ultimo": "22 nov (sera): Booster 24 al primo cryo proof test, brina sui serbatoi LOX e CH4 (RGV, NSF), esito non comunicato. 20-21 nov: Ship 44 ha completato il primo cryo proof (RGV) e ha proseguito con un secondo round (nc); Booster 24 presente per i proof test (@StarshipGazer). 20 nov: arriva Booster 24 per i primi proof test; la sera Ship 44 in prova criogenica, esito non noto (NSF, @TrackingTheSB). 19 nov: Ship 44 arrivata alla stazione crio verso le 22:24 (LabPadre). 17 nov (notte): i thrust sim stand di Ship e Booster hanno lasciato Massey's e sono tornati a Sanchez (@VickiCocks15, non confermato). 19 nov: ritardo stradale Production→Massey's 06:59-11:00 ora di Roma, veicolo non indicato (@LabPadre, nc). 17-18 nov: Ship 39.1, articolo di prova della sezione di coda Block 3, in demolizione (@VickiCocks15, @RGVaerialphotos, non confermato); la Ship Thrust Sim dovrebbe tornare al Production Site (RGV, nc). 8 nov: RGV segnala tubazioni criogeniche dal lotto Sanchez in arrivo (non confermato). S42 è arrivata il 26 ott; static fire a un motore nella notte tra 26 e 27 ott e a sei motori il 27 ott, confermati da SpaceX il 28 ott. Nella notte tra 28 e 29 ott S42 è ripartita verso la produzione. B23 è arrivato il 28 ott per nuove prove crio (nessun esito pubblico finora). Il cantiere del sito 2 avanza accanto al sito 1. Non confermato: i simulatori di spinta di booster e Ship potrebbero essere portati qui per lo stoccaggio. Spazio aereo riservato dalla FAA per «high energy testing» dal 23 ott al 6 nov (secondo The Space Road). Nella notte tra 29 e 30 ott anche B23 è ripartito verso la produzione (esito delle prove crio non comunicato). NSF (30 ott): B23 è rimasto oltre due giorni allo stand crio senza test visibili (forse una prova di pressione a temperatura ambiente, non confermato). Rimossi alcuni vecchi serbatoi di azoto liquido, sostituiti da tre più grandi e da due nuovi banchi di vaporizzatori; al loro posto è iniziata la costruzione di un secondo Supercrusher per i test dei serbatoi. Chiusura stradale produzione-Massey's nella notte tra 30 e 31 ott (31 ott 05:59-10:00 ora di Roma), veicolo non comunicato. Il 3 nov foto aerea: l'articolo di test S43.1 (ogiva, PEZ dispenser e serbatoi header) è nel Can Crusher e accanto se ne costruisce un secondo; esito non ancora noto",
-      "data": "22 nov",
+      "breve": "B24 ha completato il primo cryo proof (23 nov); S44 al terzo carico crio (24 nov, nc)",
+      "ultimo": "24 nov (notte): Ship 44 al terzo carico criogenico (@VickiCocks15, non confermato). 23 nov: Booster 24 ha completato il primo cryo proof (@VickiCocks15). 22 nov (sera): Booster 24 al primo cryo proof test, brina sui serbatoi LOX e CH4 (RGV, NSF), esito non comunicato. 20-21 nov: Ship 44 ha completato il primo cryo proof (RGV) e ha proseguito con un secondo round (nc); Booster 24 presente per i proof test (@StarshipGazer). 20 nov: arriva Booster 24 per i primi proof test; la sera Ship 44 in prova criogenica, esito non noto (NSF, @TrackingTheSB). 19 nov: Ship 44 arrivata alla stazione crio verso le 22:24 (LabPadre). 17 nov (notte): i thrust sim stand di Ship e Booster hanno lasciato Massey's e sono tornati a Sanchez (@VickiCocks15, non confermato). 19 nov: ritardo stradale Production→Massey's 06:59-11:00 ora di Roma, veicolo non indicato (@LabPadre, nc). 17-18 nov: Ship 39.1, articolo di prova della sezione di coda Block 3, in demolizione (@VickiCocks15, @RGVaerialphotos, non confermato); la Ship Thrust Sim dovrebbe tornare al Production Site (RGV, nc). 8 nov: RGV segnala tubazioni criogeniche dal lotto Sanchez in arrivo (non confermato). S42 è arrivata il 26 ott; static fire a un motore nella notte tra 26 e 27 ott e a sei motori il 27 ott, confermati da SpaceX il 28 ott. Nella notte tra 28 e 29 ott S42 è ripartita verso la produzione. B23 è arrivato il 28 ott per nuove prove crio (nessun esito pubblico finora). Il cantiere del sito 2 avanza accanto al sito 1. Non confermato: i simulatori di spinta di booster e Ship potrebbero essere portati qui per lo stoccaggio. Spazio aereo riservato dalla FAA per «high energy testing» dal 23 ott al 6 nov (secondo The Space Road). Nella notte tra 29 e 30 ott anche B23 è ripartito verso la produzione (esito delle prove crio non comunicato). NSF (30 ott): B23 è rimasto oltre due giorni allo stand crio senza test visibili (forse una prova di pressione a temperatura ambiente, non confermato). Rimossi alcuni vecchi serbatoi di azoto liquido, sostituiti da tre più grandi e da due nuovi banchi di vaporizzatori; al loro posto è iniziata la costruzione di un secondo Supercrusher per i test dei serbatoi. Chiusura stradale produzione-Massey's nella notte tra 30 e 31 ott (31 ott 05:59-10:00 ora di Roma), veicolo non comunicato. Il 3 nov foto aerea: l'articolo di test S43.1 (ogiva, PEZ dispenser e serbatoi header) è nel Can Crusher e accanto se ne costruisce un secondo; esito non ancora noto",
+      "data": "24 nov",
       "src": {
-        "label": "@RGVaerialphotos, 22 nov",
-        "url": "https://x.com/RGVaerialphotos/status/2124613056231817244"
+        "label": "@VickiCocks15, 24 nov",
+        "url": "https://x.com/VickiCocks15/status/2125019893120520475"
       }
     },
     {
@@ -1419,6 +1455,11 @@
     }
   ],
   "NON_CONFERMATI": [
+    {
+      "titolo": "Ship 44: terzo carico crio",
+      "data": "24 nov",
+      "testo": "Per @VickiCocks15 Ship 44 ha ricevuto un terzo carico criogenico a Massey's nella notte tra 23 e 24 nov, ma non è chiaro se sia stata testata la ship o la tank farm. Nessuna conferma (https://x.com/VickiCocks15/status/2125019893120520475)"
+    },
     {
       "titolo": "Flight 17 dal Pad 39A",
       "data": "23 nov",
@@ -1747,12 +1788,12 @@
       "volo": "Flight 17 (prob.)",
       "voloNc": true,
       "stato": "Test",
-      "breve": "Primo cryo proof completato il 20 nov a Massey's; secondo round in corso (nc)",
-      "note": "18 nov: secondo @RGVaerialphotos la Ship Thrust Sim rientra al Production Site e S44 potrebbe uscire presto per la crio (non confermato). Il 25 ott spostata sul supporto centrale di Mega Bay 2; tubi di trasferimento e flap in installazione. Pronta forse a febbraio 2027 (stima NSF). Al 30 ott ha ricevuto i raceway dopo l'impilamento finale del 20 ott (NSF). NSF (6 nov): avanza in Mega Bay 2 insieme a S45 19 nov: uscita da Mega Bay 2 e arrivata alla stazione crio di Massey's verso le 22:24 per prove di pressione, crio e thrust simulator (NSF, LabPadre). 20 nov: NSF la indica per il Flight 17 con B24; la sera prova criogenica in corso (@TrackingTheSB), esito non noto. 20 nov: primo cryo proof test completato (@RGVaerialphotos). Nella notte tra 20 e 21 nov doppio round di prove crio secondo @VickiCocks15 (non confermato). 22-23 nov: NSF (Starbase Summary) la conferma in coppia con B24 per il Flight 17, possibile debutto dal Pad 39A (non confermato).",
-      "data": "22 nov",
+      "breve": "Terzo carico criogenico a Massey's nella notte del 24 nov (nc)",
+      "note": "18 nov: secondo @RGVaerialphotos la Ship Thrust Sim rientra al Production Site e S44 potrebbe uscire presto per la crio (non confermato). Il 25 ott spostata sul supporto centrale di Mega Bay 2; tubi di trasferimento e flap in installazione. Pronta forse a febbraio 2027 (stima NSF). Al 30 ott ha ricevuto i raceway dopo l'impilamento finale del 20 ott (NSF). NSF (6 nov): avanza in Mega Bay 2 insieme a S45 19 nov: uscita da Mega Bay 2 e arrivata alla stazione crio di Massey's verso le 22:24 per prove di pressione, crio e thrust simulator (NSF, LabPadre). 20 nov: NSF la indica per il Flight 17 con B24; la sera prova criogenica in corso (@TrackingTheSB), esito non noto. 20 nov: primo cryo proof test completato (@RGVaerialphotos). Nella notte tra 20 e 21 nov doppio round di prove crio secondo @VickiCocks15 (non confermato). 22-23 nov: NSF (Starbase Summary) la conferma in coppia con B24 per il Flight 17, possibile debutto dal Pad 39A (non confermato). Notte tra 23 e 24 nov: terzo carico criogenico, non è chiaro se fosse un test della ship o della tank farm (@VickiCocks15, non confermato).",
+      "data": "24 nov",
       "src": {
-        "label": "NSF Starbase Summary, 22 nov",
-        "url": "https://www.youtube.com/watch?v=4EmPnjjNKlQ"
+        "label": "@VickiCocks15, 24 nov",
+        "url": "https://x.com/VickiCocks15/status/2125019893120520475"
       }
     },
     {
@@ -1775,12 +1816,12 @@
       "versione": "V3",
       "volo": "Flight 17 (prob.)",
       "stato": "Test",
-      "breve": "Primo cryo proof test a Massey's la sera del 22 nov (esito non comunicato)",
-      "note": "In Mega Bay 1; il 24 ott è entrata la sezione F3:4 che completa il corpo del booster. Pronto forse a inizio febbraio 2027 (stima NSF). La sera del 30 ott (ora del Texas) la sezione del serbatoio del metano è stata sollevata per l'impilamento in Mega Bay 1. NSF (6 nov): Booster 24 completamente impilato. 7 nov: sezione A4 trasferita in Mega Bay 1 (solo @VickiCocks15, non confermato) 20 nov: lasciata Mega Bay 1 e portato a Massey's per i primi proof test, insieme a Ship 44 (NSF, @VickiCocks15). 21 nov: a Massey's insieme a Ship 44 per i proof test (@StarshipGazer). 22 nov (sera, ora di Roma): primo cryo proof test a Massey's, riempito di LOX e LN2 con brina sui serbatoi LOX e CH4 (RGV, @TrackingTheSB); NSF: piena prova criogenica con frequenti sfiati. Esito non comunicato. NSF (22-23 nov): con Ship 44 per il Flight 17, possibile debutto dal Pad 39A (non confermato).",
-      "data": "22 nov",
+      "breve": "Primo cryo proof test completato a Massey's (23 nov)",
+      "note": "In Mega Bay 1; il 24 ott è entrata la sezione F3:4 che completa il corpo del booster. Pronto forse a inizio febbraio 2027 (stima NSF). La sera del 30 ott (ora del Texas) la sezione del serbatoio del metano è stata sollevata per l'impilamento in Mega Bay 1. NSF (6 nov): Booster 24 completamente impilato. 7 nov: sezione A4 trasferita in Mega Bay 1 (solo @VickiCocks15, non confermato) 20 nov: lasciata Mega Bay 1 e portato a Massey's per i primi proof test, insieme a Ship 44 (NSF, @VickiCocks15). 21 nov: a Massey's insieme a Ship 44 per i proof test (@StarshipGazer). 22 nov (sera, ora di Roma): primo cryo proof test a Massey's, riempito di LOX e LN2 con brina sui serbatoi LOX e CH4 (RGV, @TrackingTheSB); NSF: piena prova criogenica con frequenti sfiati. Esito non comunicato. NSF (22-23 nov): con Ship 44 per il Flight 17, possibile debutto dal Pad 39A (non confermato). 23 nov: primo cryo proof completato (@VickiCocks15, RGV).",
+      "data": "23 nov",
       "src": {
-        "label": "@RGVaerialphotos, 22 nov",
-        "url": "https://x.com/RGVaerialphotos/status/2124613056231817244"
+        "label": "@VickiCocks15, 23 nov",
+        "url": "https://x.com/VickiCocks15/status/2124910296649310709"
       }
     },
     {
@@ -1789,12 +1830,12 @@
       "versione": "V3",
       "volo": "n.d.",
       "stato": "In costruzione",
-      "breve": "Serbatoio LOX di atterraggio spostato in Mega Bay 1 (20 nov)",
-      "note": "Il 4 nov la sezione A3:4 è stata spostata dalla Starfactory in Mega Bay 1, riportato il 5 nov (solo @VickiCocks15, non confermato). NSF (6 nov) conferma: impilamento di Booster 25 iniziato verso il 2 nov. 17 nov: transfer tube sollevato in Mega Bay 1 per l'installazione (@VickiCocks15, non confermato, https://x.com/VickiCocks15/status/2122516079738056938). 20 nov: il serbatoio LOX di atterraggio è stato spostato in Mega Bay 1 (@RGVaerialphotos, @VickiCocks15).",
-      "data": "21 nov",
+      "breve": "Sezione A2:4 vista in Gigabay, forse in Mega Bay 1 (23 nov, nc)",
+      "note": "Il 4 nov la sezione A3:4 è stata spostata dalla Starfactory in Mega Bay 1, riportato il 5 nov (solo @VickiCocks15, non confermato). NSF (6 nov) conferma: impilamento di Booster 25 iniziato verso il 2 nov. 17 nov: transfer tube sollevato in Mega Bay 1 per l'installazione (@VickiCocks15, non confermato, https://x.com/VickiCocks15/status/2122516079738056938). 20 nov: il serbatoio LOX di atterraggio è stato spostato in Mega Bay 1 (@RGVaerialphotos, @VickiCocks15). 23 nov: sezione A2:4 vista nella Gigabay, probabilmente poi entrata in Mega Bay 1; il jig del serbatoio LOX di atterraggio è comparso fuori dalla Starfactory (@VickiCocks15, non confermato).",
+      "data": "23 nov",
       "src": {
-        "label": "@RGVaerialphotos, 21 nov",
-        "url": "https://x.com/RGVaerialphotos/status/2124262674834071685"
+        "label": "@VickiCocks15, 23 nov",
+        "url": "https://x.com/VickiCocks15/status/2124987683084870060"
       }
     },
     {
@@ -1898,12 +1939,24 @@
   ],
   "TEST": [
     {
+      "data": "24 nov",
+      "veicolo": "Ship 44",
+      "tipo": "Terzo carico criogenico",
+      "luogo": "Massey's",
+      "esito": "Esito non confermato",
+      "nota": "Nella notte tra 23 e 24 nov (ora di Roma) Ship 44 ha ricevuto un terzo carico criogenico; per @VickiCocks15 non è chiaro se il test riguardasse la ship o la tank farm, con pochi sfiati dalla ship.",
+      "src": {
+        "label": "@VickiCocks15, 24 nov",
+        "url": "https://x.com/VickiCocks15/status/2125019893120520475"
+      }
+    },
+    {
       "data": "22 nov",
       "veicolo": "Booster 24",
       "tipo": "Prima prova criogenica (cryo proof #1)",
       "luogo": "Massey's",
-      "esito": "In corso, esito non confermato",
-      "nota": "La sera del 22 nov (ora di Roma) Booster 24 è stato riempito di LOX e LN2 per il primo cryo proof test, con brina sui serbatoi LOX e CH4 (RGV, @TrackingTheSB); NSF parla di 'full cryo testing' con frequenti sfiati.",
+      "esito": "Completato (23 nov)",
+      "nota": "La sera del 22 nov (ora di Roma) Booster 24 è stato riempito di LOX e LN2 per il primo cryo proof test, con brina sui serbatoi LOX e CH4 (RGV, @TrackingTheSB); NSF parla di 'full cryo testing' con frequenti sfiati. Il 23 nov @VickiCocks15 e LabPadre hanno indicato il primo cryo completato.",
       "src": {
         "label": "@RGVaerialphotos, 22 nov",
         "url": "https://x.com/RGVaerialphotos/status/2124613056231817244"
@@ -2620,6 +2673,21 @@
   "X_POSTS": {
     "siti": [
       {
+        "autore": "@RGVaerialphotos",
+        "data": "24 nov",
+        "ora": "00:51",
+        "testo": "Gigabay: porta destra chiusa per la prima volta",
+        "url": "https://x.com/RGVaerialphotos/status/2125014299609645490",
+        "media": "video",
+        "id": "2125014299609645490",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2125014014728286208/img/OuIShiQekdzbxyTa.jpg"
+          }
+        ]
+      },
+      {
         "autore": "@VickiCocks15",
         "data": "23 nov",
         "ora": "01:39",
@@ -2693,24 +2761,24 @@
             "url": "https://pbs.twimg.com/media/HXiif_Ya4AAmFIC.jpg"
           }
         ]
-      },
-      {
-        "autore": "@LabPadre",
-        "data": "19 nov",
-        "ora": "22:24",
-        "testo": "Ship 44 alla stazione crio di Massey's",
-        "url": "https://x.com/LabPadre/status/2123527777483894958",
-        "media": "video",
-        "id": "2123527777483894958",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2123527663750885376/img/kDvofQsx95KiYO-K.jpg"
-          }
-        ]
       }
     ],
     "prototipi": [
+      {
+        "autore": "@VickiCocks15",
+        "data": "23 nov",
+        "ora": "23:05",
+        "testo": "Booster 25: sezione A2:4 in Gigabay (nc)",
+        "url": "https://x.com/VickiCocks15/status/2124987683084870060",
+        "media": "video",
+        "id": "2124987683084870060",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2124987520442077185/img/-gkmZzgQzGjiYpMO.jpg"
+          }
+        ]
+      },
       {
         "autore": "@NASASpaceflight",
         "data": "23 nov",
@@ -2785,24 +2853,39 @@
             "url": "https://pbs.twimg.com/media/HXnG9mbXwAAmE3x.jpg"
           }
         ]
-      },
-      {
-        "autore": "@mcrs987",
-        "data": "20 nov",
-        "ora": "20:49",
-        "testo": "Ship 42: TPS di sviluppo",
-        "url": "https://x.com/mcrs987/status/2123866232117997933",
-        "media": "foto",
-        "id": "2123866232117997933",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HXl9A2QXIAAwVF0.jpg"
-          }
-        ]
       }
     ],
     "test": [
+      {
+        "autore": "@VickiCocks15",
+        "data": "24 nov",
+        "ora": "01:13",
+        "testo": "Ship 44: terzo carico crio (nc)",
+        "url": "https://x.com/VickiCocks15/status/2125019893120520475",
+        "media": "video",
+        "id": "2125019893120520475",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2125019070311309314/img/hG5NNfqsABwfyQUN.jpg"
+          }
+        ]
+      },
+      {
+        "autore": "@VickiCocks15",
+        "data": "23 nov",
+        "ora": "17:57",
+        "testo": "Booster 24: primo cryo completato",
+        "url": "https://x.com/VickiCocks15/status/2124910296649310709",
+        "media": "video",
+        "id": "2124910296649310709",
+        "immagini": [
+          {
+            "tipo": "video",
+            "url": "https://pbs.twimg.com/amplify_video_thumb/2124909229693706240/img/IzXXpCNzu2tOejrI.jpg"
+          }
+        ]
+      },
       {
         "autore": "@RGVaerialphotos",
         "data": "22 nov",
@@ -2860,36 +2943,6 @@
           {
             "tipo": "video",
             "url": "https://pbs.twimg.com/amplify_video_thumb/2124265195992440832/img/iKqB-vmKXQVQk3TQ.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@VickiCocks15",
-        "data": "21 nov",
-        "ora": "14:30",
-        "testo": "Doppio round di prove crio per Ship 44 (nc)",
-        "url": "https://x.com/VickiCocks15/status/2124133341829980506",
-        "media": "video",
-        "id": "2124133341829980506",
-        "immagini": [
-          {
-            "tipo": "video",
-            "url": "https://pbs.twimg.com/amplify_video_thumb/2124132488108785664/img/Nw2C_iPSWGTz01k_.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@TrackingTheSB",
-        "data": "20 nov",
-        "ora": "23:29",
-        "testo": "Ship 44 in prova criogenica",
-        "url": "https://x.com/TrackingTheSB/status/2123906558115418275",
-        "media": "foto",
-        "id": "2123906558115418275",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HXmhnKqWQAAQlyd.jpg"
           }
         ]
       }
