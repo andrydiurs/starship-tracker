@@ -1,5 +1,5 @@
 {
-  "ULTIMO_AGGIORNAMENTO": "27 nov 2026, 08:35",
+  "ULTIMO_AGGIORNAMENTO": "28 nov 2026, 08:35",
   "PROSSIMO_VOLO": {
     "volo": "Flight 16",
     "veicoli": "Super Heavy B23 + Ship 43 (probabili, non confermato)",
@@ -109,6 +109,15 @@
     }
   },
   "NEWS": [
+    {
+      "data": "27 nov",
+      "sez": "Prototipi",
+      "testo": "Una foto di @LabPadre sul serbatoio header LOX di Booster 25 mostra, secondo @mcrs987, il rinforzo dei supporti (nervature aggiunte) applicato almeno dai booster 24 in poi, a confronto con la configurazione precedente (non confermato)",
+      "src": {
+        "label": "@mcrs987, 27 nov",
+        "url": "https://x.com/mcrs987/status/2126403319740715488"
+      }
+    },
     {
       "data": "26 nov",
       "sez": "Siti",
@@ -1382,7 +1391,7 @@
   ],
   "IN_BREVE": {
     "siti": "26 nov: banchi cryo/thrust simulator riportati a Massey's dopo i test di B24 e S44 (nc); B24 in Mega Bay 1; common dome di S46 in Mega Bay 2 (nc). 25 nov: sostituiti entrambi i puntoni dei chopstick al Pad 2 (nc). Florida: nessuna novità verificata.",
-    "prototipi": "Booster 24 in Mega Bay 1 dopo i cryo proof, B23 si prepara al passo successivo (26 nov, nc). Common dome di Ship 46 in Mega Bay 2. Per il Flight 16 probabili B23/S43 (nc).",
+    "prototipi": "27 nov: rinforzo dei supporti dell'header LOX visto su Booster 25, dai booster 24 in poi (nc). Booster 24 in Mega Bay 1 dopo i cryo proof, B23 si prepara al passo successivo (26 nov, nc). Common dome di Ship 46 in Mega Bay 2. Per il Flight 16 probabili B23/S43 (nc).",
     "test": "25 nov: due probabili RUD di Raptor a McGregor, primi dopo 5 mesi (nc). 24 nov: Ship 44 ha completato il terzo cryo proof (nc).",
     "lanci": "Flight 16: nessuna data annunciata da SpaceX; NET 10 dic solo da fonti non ufficiali (nc). Piano FAA del 26 nov: nessuna voce Starship; nessuna nuova licenza."
   },
@@ -2914,6 +2923,25 @@
     "prototipi": [
       {
         "autore": "@mcrs987",
+        "data": "27 nov",
+        "ora": "20:50",
+        "testo": "Booster 25: modifica ai supporti del serbatoio header LOX (dai booster 24 in poi)",
+        "url": "https://x.com/mcrs987/status/2126403319740715488",
+        "media": "foto",
+        "id": "2126403319740715488",
+        "immagini": [
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HYKAUZxXIAA03Ae.png"
+          },
+          {
+            "tipo": "foto",
+            "url": "https://pbs.twimg.com/media/HYKAfBqXMAEMQbG.jpg"
+          }
+        ]
+      },
+      {
+        "autore": "@mcrs987",
         "data": "26 nov",
         "ora": "20:30",
         "testo": "Ship 42: uno sguardo nella cavità di poppa",
@@ -2988,25 +3016,6 @@
           {
             "tipo": "video",
             "url": "https://pbs.twimg.com/amplify_video_thumb/2125195128390176768/img/kryMObFtk37WoCOs.jpg"
-          }
-        ]
-      },
-      {
-        "autore": "@TrackingTheSB",
-        "data": "24 nov",
-        "ora": "07:48",
-        "testo": "B24 e S44 a fine Massey's Way",
-        "url": "https://x.com/TrackingTheSB/status/2125119272477479129",
-        "media": "foto",
-        "id": "2125119272477479129",
-        "immagini": [
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HX3vvmBacAA8VvN.jpg"
-          },
-          {
-            "tipo": "foto",
-            "url": "https://pbs.twimg.com/media/HX3vzaNbcAApceB.png"
           }
         ]
       }
